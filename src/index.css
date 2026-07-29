@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --bg-alabaster: #F9F8F6;
+    --fg-charcoal: #1A1A1A;
+    --bg-taupe: #EBE5DE;
+    --fg-warm-grey: #6C6863;
+    --accent-gold: #D4AF37;
+    font-family: 'Almarai', 'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  html.dark {
+    --bg-alabaster: #0E0D0C;
+    --fg-charcoal: #F4F2ED;
+    --bg-taupe: #1A1918;
+    --fg-warm-grey: #A39E98;
+    --accent-gold: #D4AF37;
+    color-scheme: dark;
+  }
+
+  html {
+    background-color: var(--bg-alabaster);
+    color: var(--fg-charcoal);
+    scroll-behavior: smooth;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  html[dir="rtl"] {
+    font-family: 'Almarai', 'Cairo', 'Inter', -apple-system, sans-serif;
+    line-height: 1.75;
+  }
+
+  html[dir="rtl"] body {
+    letter-spacing: 0em;
+  }
+
+  /* Prevent letter tracking from breaking Arabic cursive script */
+  html[dir="rtl"] [class*="tracking-"] {
+    letter-spacing: 0em !important;
+  }
+
+  /* Ensure Arabic headings and serif titles have ample line-height to prevent line overlap */
+  html[dir="rtl"] h1,
+  html[dir="rtl"] h2,
+  html[dir="rtl"] h3,
+  html[dir="rtl"] h4,
+  html[dir="rtl"] .font-serif-luxury {
+    line-height: 1.45 !important;
+  }
+}
+
+.font-serif-luxury {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+html[dir="rtl"] .font-serif-luxury {
+  font-family: 'Amiri', 'Almarai', 'Cairo', serif;
+}
+
+.font-sans-luxury {
+  font-family: 'Almarai', 'Inter', 'Plus Jakarta Sans', sans-serif;
+}
+
+html[dir="rtl"] .font-sans-luxury {
+  font-family: 'Almarai', 'Cairo', sans-serif;
+}
+
+.writing-mode-vertical {
+  writing-mode: vertical-rl;
+}
+
+/* Drop Cap pattern for Editorial lead paragraph */
+.editorial-drop-cap::first-letter {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 4.5rem;
+  line-height: 0.8;
+  float: left;
+  margin-right: 0.75rem;
+  margin-top: 0.25rem;
+  color: var(--fg-charcoal);
+  font-weight: 700;
+}
+
+html[dir="rtl"] .editorial-drop-cap::first-letter {
+  font-family: 'Amiri', serif;
+  float: right;
+  margin-right: 0;
+  margin-left: 0.75rem;
+}
+
+/* Subtle paper texture overlay */
+.paper-noise-bg {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.035'/%3E%3C/svg%3E");
+}
+
+/* Custom luxury scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-alabaster);
+}
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--fg-charcoal);
+}
+
+/* Hide scrollbar utility for horizontal scroll areas */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
