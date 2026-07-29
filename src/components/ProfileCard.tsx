@@ -30,9 +30,9 @@ export const ProfileCard: React.FC<ProfileCardProps> = ({ profile, language }) =
         <div className="flex flex-1 flex-col items-center md:items-start ltr:md:text-left rtl:md:text-right text-center space-y-3">
           
           <div className="flex flex-wrap items-center justify-center md:justify-start gap-3">
-            <h1 className="font-serif-luxury text-3xl md:text-4xl font-bold tracking-tight text-[#1A1A1A] dark:text-[#F4F2ED]">
+            <h2 className="font-serif-luxury text-3xl md:text-4xl font-bold tracking-tight text-[#1A1A1A] dark:text-[#F4F2ED]">
               {profile.name[language]}
-            </h1>
+            </h2>
             <span className="inline-flex items-center gap-1.5 bg-[#EBE5DE] dark:bg-[#1E1D1B] px-3 py-1 text-[10px] font-mono tracking-widest text-[#6C6863] dark:text-[#A39E98] uppercase border border-[#1A1A1A]/10 dark:border-white/15">
               <MapPin className="h-3 w-3 text-[#D4AF37]" />
               {profile.location[language]}
@@ -101,4 +101,3 @@ export const ProfileCard: React.FC<ProfileCardProps> = ({ profile, language }) =
     </div>
   );
 };
-

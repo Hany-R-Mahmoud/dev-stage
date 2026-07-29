@@ -114,7 +114,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
   };
 
   return (
-    <div className="mx-auto max-w-[1600px] px-6 md:px-16 py-10 space-y-10 text-[#1A1A1A] dark:text-[#F4F2ED] font-sans-luxury" dir={isAr ? 'rtl' : 'ltr'}>
+    <main className="mx-auto max-w-[1600px] px-6 md:px-16 py-10 space-y-10 text-[#1A1A1A] dark:text-[#F4F2ED] font-sans-luxury" dir={isAr ? 'rtl' : 'ltr'}>
       
       {/* Toast Notification */}
       {savedNotification && (
@@ -132,7 +132,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
             <span>EDITORIAL CONTENT MANAGEMENT</span>
           </div>
           <h1 className="font-serif-luxury text-2xl sm:text-3xl md:text-4xl font-bold text-[#1A1A1A] dark:text-[#F4F2ED]">
-            {isAr ? 'استوديو إدارة المحتوى (Hany Lab CMS)' : 'Hany Lab Editorial CMS Studio'}
+            {isAr ? 'استوديو إدارة المحتوى (Dev Stage)' : 'Dev Stage Editorial CMS Studio'}
           </h1>
           <p className="text-sm sm:text-base text-[#6C6863] dark:text-[#A39E98] mt-1 font-sans-luxury">
             {isAr 
@@ -578,7 +578,6 @@ export const Dashboard: React.FC<DashboardProps> = ({
         </form>
       )}
 
-    </div>
+    </main>
   );
 };
-

@@ -1,6 +1,6 @@
 {
-  "name": "Remix Hany Lab Portfolio",
-  "description": "Bilingual personal portfolio and project showroom by Hany Lab featuring RTL/LTR support and interactive project showcases.",
+  "name": "Dev Stage Project Portfolio",
+  "description": "Bilingual Dev Stage project portfolio and showroom featuring RTL/LTR support and interactive project showcases.",
   "requestFramePermissions": [],
   "majorCapabilities": [
     "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"

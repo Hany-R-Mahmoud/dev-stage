@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Project, Language } from '../types';
-import { X, Calendar, User, Building, Tag, ExternalLink, Image as ImageIcon, Code, Sparkles, Feather } from 'lucide-react';
+import { X, Calendar, User, Building, Tag, Image as ImageIcon, Code, Sparkles, Feather, ListChecks, AlertTriangle, Lightbulb } from 'lucide-react';
 
 interface ProjectDetailModalProps {
   project: Project | null;
@@ -19,6 +19,9 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
 
   const isAr = language === 'ar';
   const displayImage = activeImage || project.imageSrc;
+  const hasPortfolioDetails = Boolean(
+    project.progress || project.features?.length || project.issues?.length || project.suggestions?.length,
+  );
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 lg:p-8 bg-black/80 backdrop-blur-md overflow-y-auto">
@@ -44,6 +47,11 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
             <span className="bg-[#EBE5DE] dark:bg-[#1E1D1B] text-[#6C6863] dark:text-[#A39E98] px-3 py-0.5 sm:px-3.5 sm:py-1 text-[10px] sm:text-[11px] font-mono tracking-widest uppercase border border-[#1A1A1A]/10 dark:border-white/15">
               {project.category}
             </span>
+            {project.status && (
+              <span className="text-[10px] sm:text-[11px] font-mono tracking-widest uppercase text-[#D4AF37] border border-[#D4AF37]/50 px-3 py-0.5 sm:px-3.5 sm:py-1">
+                {project.status}
+              </span>
+            )}
             <span className="text-xs font-mono text-[#D4AF37] font-bold tracking-widest ltr:ml-auto rtl:mr-auto">
               {project.year}
             </span>
@@ -159,6 +167,56 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
           {project.description[language]}
         </p>
 
+        {hasPortfolioDetails && (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {project.progress && (
+              <div className="md:col-span-2 bg-[#1A1A1A] dark:bg-[#F4F2ED] text-[#F4F2ED] dark:text-[#1A1A1A] p-5 sm:p-6 border border-[#D4AF37]/50">
+                <div className="flex items-center gap-2 text-[10px] font-mono tracking-[0.2em] uppercase text-[#D4AF37] dark:text-[#9A7A12]">
+                  <Sparkles className="h-4 w-4" />
+                  {isAr ? 'التقدم الحالي' : 'CURRENT PROGRESS'}
+                </div>
+                <p className="mt-3 text-sm sm:text-base leading-relaxed">{project.progress[language]}</p>
+              </div>
+            )}
+
+            {project.features && project.features.length > 0 && (
+              <div className="bg-[#EBE5DE]/50 dark:bg-[#1E1D1B] p-5 border border-[#1A1A1A]/15 dark:border-white/15">
+                <div className="flex items-center gap-2 text-[10px] font-mono tracking-[0.2em] uppercase text-[#D4AF37]">
+                  <ListChecks className="h-4 w-4" />
+                  {isAr ? 'الميزات' : 'FEATURES'}
+                </div>
+                <ul className="mt-3 space-y-2 text-sm leading-relaxed">
+                  {project.features.map((feature, index) => <li key={index}>• {feature[language]}</li>)}
+                </ul>
+              </div>
+            )}
+
+            {project.issues && project.issues.length > 0 && (
+              <div className="bg-[#EBE5DE]/50 dark:bg-[#1E1D1B] p-5 border border-[#1A1A1A]/15 dark:border-white/15">
+                <div className="flex items-center gap-2 text-[10px] font-mono tracking-[0.2em] uppercase text-[#D4AF37]">
+                  <AlertTriangle className="h-4 w-4" />
+                  {isAr ? 'المشكلات والصعوبات' : 'ISSUES / TROUBLES'}
+                </div>
+                <ul className="mt-3 space-y-2 text-sm leading-relaxed">
+                  {project.issues.map((issue, index) => <li key={index}>• {issue[language]}</li>)}
+                </ul>
+              </div>
+            )}
+
+            {project.suggestions && project.suggestions.length > 0 && (
+              <div className="md:col-span-2 bg-[#EBE5DE]/50 dark:bg-[#1E1D1B] p-5 border border-[#1A1A1A]/15 dark:border-white/15">
+                <div className="flex items-center gap-2 text-[10px] font-mono tracking-[0.2em] uppercase text-[#D4AF37]">
+                  <Lightbulb className="h-4 w-4" />
+                  {isAr ? 'الخطوات المقترحة' : 'SUGGESTED NEXT STEPS'}
+                </div>
+                <ul className="mt-3 space-y-2 text-sm leading-relaxed">
+                  {project.suggestions.map((suggestion, index) => <li key={index}>• {suggestion[language]}</li>)}
+                </ul>
+              </div>
+            )}
+          </div>
+        )}
+
         {/* MDX Case Study Article Content */}
         <div className="bg-[#EBE5DE]/40 dark:bg-[#1E1D1B] p-6 sm:p-8 border border-[#1A1A1A]/15 dark:border-white/15 text-[#1A1A1A] dark:text-[#F4F2ED] space-y-6">
           <div className="flex items-center justify-between text-xs font-mono text-[#D4AF37] uppercase tracking-widest border-b border-[#1A1A1A]/15 dark:border-white/15 pb-3">
@@ -178,4 +236,3 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
     </div>
   );
 };
-

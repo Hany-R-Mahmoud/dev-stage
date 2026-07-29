@@ -1,21 +1,60 @@
 import React, { useState, useEffect } from 'react';
 import { Project, Profile, Language } from './types';
-import { INITIAL_PROJECTS, INITIAL_PROFILE } from './data/mockData';
+import { PORTFOLIO_PROJECTS, PORTFOLIO_PROFILE } from './data/portfolioData';
 import { FocusRail, FocusRailItem } from './components/ui/focus-rail';
 import { Navbar } from './components/Navbar';
 import { ProfileCard } from './components/ProfileCard';
-import { ProjectDetailModal } from './components/ProjectDetailModal';
+import { ProjectDetailPage } from './components/ProjectDetailPage';
 import { Dashboard } from './components/Dashboard';
 import { ThemeWaveOverlay } from './components/ThemeWaveOverlay';
+import { toAbsoluteUrl, updateSeoMetadata } from './lib/seo';
 import { 
   Sparkles, Layers, ArrowUpRight, Feather, Filter, ChevronDown
 } from 'lucide-react';
 
+type RouteState = Readonly<{
+  view: 'portfolio' | 'dashboard';
+  projectSlug: string | null;
+  language: Language;
+}>;
+
+function readRoute(): RouteState {
+  if (typeof window === 'undefined') {
+    return { view: 'portfolio', projectSlug: null, language: 'en' };
+  }
+
+  const segments = window.location.pathname.toLowerCase().split('/').filter(Boolean);
+  const language: Language = segments[0] === 'ar' ? 'ar' : 'en';
+  const routeSegments = segments[0] === 'ar' || segments[0] === 'en' ? segments.slice(1) : segments;
+
+  if (routeSegments[0] === 'dashboard') {
+    return { view: 'dashboard', projectSlug: null, language };
+  }
+
+  if (routeSegments[0] === 'projects' && routeSegments[1]) {
+    return { view: 'portfolio', projectSlug: routeSegments[1], language };
+  }
+
+  return { view: 'portfolio', projectSlug: null, language };
+}
+
+function localizedPath(language: Language, view: 'portfolio' | 'dashboard', projectSlug?: string | null): string {
+  const prefix = language === 'ar' ? '/ar' : '/en';
+  if (view === 'dashboard') return `${prefix}/dashboard`;
+  if (projectSlug) return `${prefix}/projects/${projectSlug}`;
+  return `${prefix}/`;
+}
+
 export default function App() {
-  const [language, setLanguage] = useState<Language>('en');
+  const storageKeys = {
+    projects: 'apexyard_projects_v1',
+    profile: 'apexyard_profile_v1',
+  };
+  const initialRoute = readRoute();
+  const [language, setLanguage] = useState<Language>(initialRoute.language);
   const [theme, setTheme] = useState<'light' | 'dark'>(() => {
     if (typeof window !== 'undefined') {
-      const savedTheme = localStorage.getItem('amaal_theme') as 'light' | 'dark';
+      const savedTheme = localStorage.getItem('apexyard_theme_v1') as 'light' | 'dark';
       if (savedTheme) return savedTheme;
     }
     return 'dark';
@@ -30,7 +69,7 @@ export default function App() {
   });
 
   useEffect(() => {
-    localStorage.setItem('amaal_theme', theme);
+    localStorage.setItem('apexyard_theme_v1', theme);
     if (theme === 'dark') {
       document.documentElement.classList.add('dark');
     } else {
@@ -60,19 +99,21 @@ export default function App() {
     });
   };
 
-  // URL Path Synchronization for '/' (homepage/portfolio) and '/dashboard' (CMS)
-  const getInitialView = (): 'portfolio' | 'dashboard' => {
-    if (typeof window === 'undefined') return 'portfolio';
-    const path = window.location.pathname.toLowerCase();
-    if (path === '/dashboard') return 'dashboard';
-    return 'portfolio';
-  };
-
-  const [activeView, setActiveView] = useState<'portfolio' | 'dashboard'>(getInitialView);
+  const [activeView, setActiveView] = useState<'portfolio' | 'dashboard'>(initialRoute.view);
+  const [projectSlug, setProjectSlug] = useState<string | null>(initialRoute.projectSlug);
 
   const handleViewChange = (view: 'portfolio' | 'dashboard') => {
     setActiveView(view);
-    const targetPath = view === 'portfolio' ? '/' : '/dashboard';
+    setProjectSlug(null);
+    const targetPath = localizedPath(language, view);
+    if (window.location.pathname !== targetPath) {
+      window.history.pushState({}, '', targetPath);
+    }
+  };
+
+  const handleLanguageChange = (nextLanguage: Language) => {
+    setLanguage(nextLanguage);
+    const targetPath = localizedPath(nextLanguage, activeView, projectSlug);
     if (window.location.pathname !== targetPath) {
       window.history.pushState({}, '', targetPath);
     }
@@ -81,9 +122,10 @@ export default function App() {
   // Sync back/forward browser history buttons
   useEffect(() => {
     const handlePopState = () => {
-      const path = window.location.pathname.toLowerCase();
-      if (path === '/dashboard') setActiveView('dashboard');
-      else setActiveView('portfolio');
+      const route = readRoute();
+      setLanguage(route.language);
+      setActiveView(route.view);
+      setProjectSlug(route.projectSlug);
     };
 
     window.addEventListener('popstate', handlePopState);
@@ -91,25 +133,24 @@ export default function App() {
   }, []);
 
   const [projects, setProjects] = useState<Project[]>(() => {
-    const saved = localStorage.getItem('amaal_projects');
-    return saved ? JSON.parse(saved) : INITIAL_PROJECTS;
+    const saved = localStorage.getItem(storageKeys.projects);
+    return saved ? JSON.parse(saved) : PORTFOLIO_PROJECTS;
   });
 
   const [profile, setProfile] = useState<Profile>(() => {
-    const saved = localStorage.getItem('amaal_profile');
-    return saved ? JSON.parse(saved) : INITIAL_PROFILE;
+    const saved = localStorage.getItem(storageKeys.profile);
+    return saved ? JSON.parse(saved) : PORTFOLIO_PROFILE;
   });
 
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
-  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   // Sync state to localStorage
   useEffect(() => {
-    localStorage.setItem('amaal_projects', JSON.stringify(projects));
+    localStorage.setItem(storageKeys.projects, JSON.stringify(projects));
   }, [projects]);
 
   useEffect(() => {
-    localStorage.setItem('amaal_profile', JSON.stringify(profile));
+    localStorage.setItem(storageKeys.profile, JSON.stringify(profile));
   }, [profile]);
 
   // Handle document direction and language attributes
@@ -122,12 +163,88 @@ export default function App() {
 
   // Filter projects for the main portfolio view
   const publishedProjects = projects.filter(p => p.isPublished);
+  const projectRouteProject = projectSlug ? projects.find((project) => project.slug === projectSlug && project.isPublished) : null;
+
+  useEffect(() => {
+    if (activeView === 'dashboard') {
+      updateSeoMetadata({
+        title: language === 'ar' ? 'استوديو إدارة المحتوى — ديف ستيج' : 'Dev Stage Editorial CMS Studio',
+        description: language === 'ar' ? 'مساحة إدارة داخلية لمعرض مشاريع ديف ستيج.' : 'Internal content management workspace for the Dev Stage project portfolio.',
+        path: localizedPath(language, 'dashboard'),
+        language,
+        noindex: true,
+      });
+      return;
+    }
+
+    if (projectRouteProject) {
+      updateSeoMetadata({
+        title: `${projectRouteProject.title[language]} | Dev Stage`,
+        description: projectRouteProject.description[language],
+        path: localizedPath(language, 'portfolio', projectRouteProject.slug),
+        language,
+        type: 'article',
+        jsonLd: {
+          '@context': 'https://schema.org',
+          '@type': 'CreativeWork',
+          name: projectRouteProject.title[language],
+          headline: projectRouteProject.title[language],
+          description: projectRouteProject.description[language],
+          image: toAbsoluteUrl('/og-image.svg'),
+          url: toAbsoluteUrl(localizedPath(language, 'portfolio', projectRouteProject.slug)),
+          inLanguage: language,
+          creator: { '@type': 'Person', name: profile.name[language] },
+        },
+      });
+      return;
+    }
+
+    updateSeoMetadata({
+      title: language === 'ar' ? 'ديف ستيج — معرض المشاريع' : 'Dev Stage — Project Portfolio',
+      description: language === 'ar'
+        ? 'معرض ثنائي اللغة لمشاريع الويب والهاتف والأنظمة التي صممها وبناها هاني.'
+        : 'A bilingual project portfolio and showroom for thoughtful web, mobile, and systems work.',
+      path: localizedPath(language, 'portfolio'),
+      language,
+      jsonLd: {
+        '@context': 'https://schema.org',
+        '@type': 'CollectionPage',
+        name: language === 'ar' ? 'معرض مشاريع ديف ستيج' : 'Dev Stage Project Portfolio',
+        description: language === 'ar'
+          ? 'معرض ثنائي اللغة لمشاريع الويب والهاتف والأنظمة.'
+          : 'A bilingual portfolio of web, mobile, and systems projects.',
+        url: toAbsoluteUrl(localizedPath(language, 'portfolio')),
+        inLanguage: language,
+        author: { '@type': 'Person', name: profile.name[language] },
+        mainEntity: {
+          '@type': 'ItemList',
+          itemListElement: publishedProjects.slice(0, 50).map((project, index) => ({
+            '@type': 'ListItem',
+            position: index + 1,
+            url: toAbsoluteUrl(localizedPath(language, 'portfolio', project.slug)),
+            name: project.title[language],
+          })),
+        },
+      },
+    });
+  }, [activeView, language, profile, projectRouteProject, publishedProjects, projectSlug]);
+  const categoryLabels: Record<string, { en: string; ar: string }> = {
+    Web: { en: 'Web Projects', ar: 'مشاريع الويب' },
+    Mobile: { en: 'Mobile Projects', ar: 'مشاريع الهاتف' },
+    Tools: { en: 'Tools & Systems', ar: 'أدوات وأنظمة' },
+  };
+  const projectCategories = projects.reduce<string[]>((categories, project) => (
+    categories.includes(project.category) ? categories : [...categories, project.category]
+  ), []);
   const categories = [
     { id: 'All', en: 'All Works', ar: 'كل الأعمال' },
-    { id: 'UI/UX', en: 'UI/UX Design', ar: 'تصميم الواجهات' },
-    { id: 'Branding', en: 'Branding', ar: 'الهوية البصرية' },
-    { id: 'Architecture', en: 'Architecture', ar: 'العمارة والتصميم' },
-    { id: 'Web', en: 'Web Systems', ar: 'تطبيقات الويب' },
+    ...projectCategories
+      .sort()
+      .map((category) => ({
+        id: category,
+        en: categoryLabels[category]?.en ?? category,
+        ar: categoryLabels[category]?.ar ?? category,
+      })),
   ];
 
   const filteredProjects = selectedCategory === 'All' 
@@ -144,8 +261,7 @@ export default function App() {
     imageSrc: p.imageSrc,
     category: p.category,
     client: p.client[language],
-    href: `#${p.slug}`,
-    onClick: () => setSelectedProject(p)
+    href: localizedPath(language, 'portfolio', p.slug),
   }));
 
   return (
@@ -170,7 +286,7 @@ export default function App() {
           {/* Navigation Header */}
           <Navbar
             language={language}
-            onLanguageChange={setLanguage}
+            onLanguageChange={handleLanguageChange}
             activeView={activeView}
             onViewChange={handleViewChange}
             theme={theme}
@@ -182,7 +298,13 @@ export default function App() {
 
           {/* VIEW 1: PUBLIC PORTFOLIO SHOWCASE (/home) */}
           {activeView === 'portfolio' ? (
+            projectRouteProject ? (
+              <ProjectDetailPage project={projectRouteProject} language={language} />
+            ) : (
             <main className="relative z-10 mx-auto max-w-[1600px] px-6 md:px-16 py-8 space-y-16">
+              <h1 className="sr-only">
+                {isAr ? 'معرض مشاريع ديف ستيج' : 'Dev Stage Project Portfolio'}
+              </h1>
               
               {/* 3D FOCUS RAIL FEATURED SHOWCASE (TOP CENTERPIECE) */}
               <section className="space-y-4">
@@ -204,10 +326,6 @@ export default function App() {
                   autoPlay={true}
                   interval={10000}
                   loop={true}
-                  onSelectProject={(item) => {
-                    const found = projects.find(p => p.id === item.id);
-                    if (found) setSelectedProject(found);
-                  }}
                 />
               </section>
 
@@ -260,9 +378,9 @@ export default function App() {
                 {/* Grid Items: Immersive Image-First Presentation */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                   {filteredProjects.map((proj) => (
-                    <div
+                    <a
                       key={proj.id}
-                      onClick={() => setSelectedProject(proj)}
+                      href={localizedPath(language, 'portfolio', proj.slug)}
                       className="group relative flex flex-col justify-between overflow-hidden bg-[#F9F8F6] dark:bg-[#141312] border border-[#1A1A1A]/20 dark:border-white/20 hover:border-[#D4AF37] dark:hover:border-[#D4AF37] p-5 transition-all duration-500 hover:shadow-2xl dark:hover:shadow-[0_12px_40px_rgba(212,175,55,0.15)] cursor-pointer"
                     >
                       <div className="space-y-4">
@@ -304,7 +422,7 @@ export default function App() {
                           <ArrowUpRight className="h-4 w-4 text-[#D4AF37] ltr:group-hover:translate-x-0.5 rtl:group-hover:-translate-x-0.5 transition-transform" />
                         </span>
                       </div>
-                    </div>
+                    </a>
                   ))}
                 </div>
               </section>
@@ -313,8 +431,8 @@ export default function App() {
               <footer className="border-t border-[#1A1A1A]/15 dark:border-white/15 pt-12 pb-16 text-center text-xs text-[#6C6863] dark:text-[#A39E98] space-y-3 font-sans-luxury">
                 <p className="font-serif-luxury text-base text-[#1A1A1A] dark:text-[#F4F2ED]">
                   {isAr 
-                    ? 'هاني لاب • معرض الأعمال والمشاريع المختارة' 
-                    : 'Hany Lab • Selected Works & Project Showroom'}
+                    ? 'ديف ستيج • معرض الأعمال والمشاريع المختارة'
+                    : 'Dev Stage • Selected Works & Project Showroom'}
                 </p>
                 <p dir="ltr" className="font-mono text-[11px] text-[#6C6863] dark:text-[#A39E98] tracking-widest uppercase">
                   © {new Date().getFullYear()} {profile.name[language]} — ALL RIGHTS RESERVED.
@@ -322,6 +440,7 @@ export default function App() {
               </footer>
 
             </main>
+            )
           ) : (
             /* VIEW 2: CMS DASHBOARD (/dashboard) */
             <Dashboard
@@ -334,13 +453,6 @@ export default function App() {
           )}
         </div>
 
-      {/* Detail Case Study Modal */}
-      <ProjectDetailModal
-        project={selectedProject}
-        language={language}
-        onClose={() => setSelectedProject(null)}
-      />
     </>
   );
 }
-

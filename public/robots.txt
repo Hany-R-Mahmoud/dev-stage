@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /dashboard
+
+# The production Sitemap directive is added by `npm run seo:generate` once SITE_URL is configured.

@@ -9,7 +9,11 @@
     --bg-taupe: #EBE5DE;
     --fg-warm-grey: #6C6863;
     --accent-gold: #D4AF37;
-    font-family: 'Almarai', 'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --logo-ink: #1A1A1A;
+    --logo-front: #F9F8F6;
+    --logo-mid: #6C6863;
+    --logo-side: #C8BEB3;
+    font-family: 'Cairo', sans-serif;
   }
 
   html.dark {
@@ -18,6 +22,10 @@
     --bg-taupe: #1A1918;
     --fg-warm-grey: #A39E98;
     --accent-gold: #D4AF37;
+    --logo-ink: #0E0D0C;
+    --logo-front: #F4F2ED;
+    --logo-mid: #756E68;
+    --logo-side: #B8ACA0;
     color-scheme: dark;
   }
 
@@ -29,7 +37,7 @@
   }
 
   html[dir="rtl"] {
-    font-family: 'Almarai', 'Cairo', 'Inter', -apple-system, sans-serif;
+    font-family: 'Cairo', sans-serif;
     line-height: 1.75;
   }
 
@@ -52,20 +60,46 @@
   }
 }
 
+.dev-stage-mark {
+  overflow: visible;
+}
+
+.dev-stage-mark path {
+  stroke: var(--logo-ink);
+  stroke-linejoin: bevel;
+  stroke-width: 1.5;
+}
+
+.dev-stage-mark__gold {
+  fill: var(--accent-gold);
+}
+
+.dev-stage-mark__mid {
+  fill: var(--logo-mid);
+}
+
+.dev-stage-mark__side {
+  fill: var(--logo-side);
+}
+
+.dev-stage-mark__front {
+  fill: var(--logo-front);
+}
+
 .font-serif-luxury {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Cairo', sans-serif;
 }
 
 html[dir="rtl"] .font-serif-luxury {
-  font-family: 'Amiri', 'Almarai', 'Cairo', serif;
+  font-family: 'Cairo', sans-serif;
 }
 
 .font-sans-luxury {
-  font-family: 'Almarai', 'Inter', 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Cairo', sans-serif;
 }
 
 html[dir="rtl"] .font-sans-luxury {
-  font-family: 'Almarai', 'Cairo', sans-serif;
+  font-family: 'Cairo', sans-serif;
 }
 
 .writing-mode-vertical {
@@ -74,7 +108,7 @@ html[dir="rtl"] .font-sans-luxury {
 
 /* Drop Cap pattern for Editorial lead paragraph */
 .editorial-drop-cap::first-letter {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Cairo', sans-serif;
   font-size: 4.5rem;
   line-height: 0.8;
   float: left;
@@ -85,7 +119,7 @@ html[dir="rtl"] .font-sans-luxury {
 }
 
 html[dir="rtl"] .editorial-drop-cap::first-letter {
-  font-family: 'Amiri', serif;
+  font-family: 'Cairo', sans-serif;
   float: right;
   margin-right: 0;
   margin-left: 0.75rem;
@@ -118,4 +152,3 @@ html[dir="rtl"] .editorial-drop-cap::first-letter {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-

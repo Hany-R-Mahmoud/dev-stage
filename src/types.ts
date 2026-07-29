@@ -1,8 +1,21 @@
 export type Language = 'en' | 'ar';
 
+export type ProjectStatus = 'showcase' | 'in-progress' | 'prototype' | 'dropped' | 'internal';
+
 export interface BilingualText {
   en: string;
   ar: string;
+}
+
+export interface PortfolioRepository {
+  github?: string;
+  branch?: string;
+  sync?: 'github' | 'local-only' | 'parent-workspace' | 'not-applicable';
+}
+
+export interface PortfolioSource {
+  workspace: string;
+  last_reviewed: string;
 }
 
 export interface Project {
@@ -21,6 +34,13 @@ export interface Project {
   isPublished: boolean;
   featured: boolean;
   tags: string[];
+  status?: ProjectStatus;
+  features?: BilingualText[];
+  progress?: BilingualText;
+  issues?: BilingualText[];
+  suggestions?: BilingualText[];
+  repository?: PortfolioRepository;
+  source?: PortfolioSource;
 }
 
 export interface Profile {

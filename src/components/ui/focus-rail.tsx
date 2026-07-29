@@ -298,6 +298,7 @@ export function FocusRail({
               <a
                 href={activeItem.href || "#"}
                 onClick={(e) => {
+                  if (activeItem.href) return;
                   if (onSelectProject) {
                     e.preventDefault();
                     onSelectProject(activeItem);

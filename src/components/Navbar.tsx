@@ -1,6 +1,7 @@
 import React from 'react';
 import { Language } from '../types';
 import { Plus, Moon, Sun } from 'lucide-react';
+import { DevStageLogoMark } from './DevStageLogoMark';
 
 interface NavbarProps {
   language: Language;
@@ -30,28 +31,23 @@ export const Navbar: React.FC<NavbarProps> = ({
         ? 'border-white/10 bg-[#0E0D0C]/90 text-[#F4F2ED]' 
         : 'border-[#1A1A1A]/15 bg-[#F9F8F6]/90 text-[#1A1A1A]'
     }`}>
-      <div className="mx-auto flex max-w-[1600px] items-center justify-between px-6 py-4 md:px-16">
+      <nav aria-label={isAr ? 'التنقل الرئيسي' : 'Primary navigation'} className="mx-auto flex max-w-[1600px] items-center justify-between px-6 py-4 md:px-16">
         
         {/* Logo & Brand Monogram */}
         <button 
           onClick={() => onViewChange('portfolio')}
           className="flex items-center gap-3 text-start cursor-pointer group"
+          aria-label={isAr ? 'العودة إلى معرض ديف ستيج' : 'Return to Dev Stage portfolio'}
         >
-          <div className={`flex h-8 w-8 items-center justify-center font-serif-luxury font-bold text-base transition-colors duration-500 ${
-            isDark 
-              ? 'bg-[#F4F2ED] text-[#0E0D0C] group-hover:bg-[#D4AF37] group-hover:text-[#0E0D0C]' 
-              : 'bg-[#1A1A1A] text-[#F9F8F6] group-hover:bg-[#D4AF37] group-hover:text-[#1A1A1A]'
-          }`}>
-            {isAr ? 'هـ' : 'H'}
-          </div>
+          <DevStageLogoMark className="h-10 w-10 shrink-0 transition-transform duration-300 group-hover:-translate-y-0.5" />
           <div className="flex flex-col">
             <span className={`font-serif-luxury text-base font-bold tracking-wider uppercase leading-none ${
               isDark ? 'text-[#F4F2ED]' : 'text-[#1A1A1A]'
             }`}>
               {isAr ? (
-                <>هاني <span className="text-[#D4AF37] font-serif-luxury font-normal">لاب</span></>
+                <>ديف <span className="text-[#D4AF37] font-serif-luxury font-normal">ستيج</span></>
               ) : (
-                <>Hany <span className="text-[#D4AF37] font-serif-luxury font-normal">Lab</span></>
+                <>Dev <span className="text-[#D4AF37] font-serif-luxury font-normal">Stage</span></>
               )}
             </span>
           </div>
@@ -106,9 +102,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           </button>
 
         </div>
-      </div>
+      </nav>
     </header>
   );
 };
-
-

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0E0D0C"/>
+  <path d="M70 70h1060M70 560h1060" stroke="#D4AF37" stroke-width="2" opacity=".8"/>
+  <g transform="translate(110 196) scale(2.45)" stroke="#0E0D0C" stroke-linejoin="bevel" stroke-width="1.5">
+    <path fill="#D4AF37" d="M20 18 52 6v8L20 24Z"/>
+    <path fill="#756E68" d="M16 27 51 16v13L16 35Z"/>
+    <path fill="#B8ACA0" d="m52 16 15 7v14l-15-6Z"/>
+    <path fill="#756E68" d="m12 38 39-8v17l-39-3Z"/>
+    <path fill="#B8ACA0" d="m52 32 15 7v15l-15-6Z"/>
+    <path fill="#D4AF37" d="m32 50 19-3v25L32 80Z"/>
+    <path fill="#B8ACA0" d="m52 49 15 6v15l-15 8Z"/>
+    <path fill="#F4F2ED" fill-rule="evenodd" clip-rule="evenodd" d="M4 44 34 48v32L4 70Zm10 12v17l12 4V59Z"/>
+    <path fill="#D4AF37" d="m19 62 5 1.5V77l-5-1.5Z"/>
+  </g>
+  <text x="420" y="300" fill="#F4F2ED" font-family="Cairo, Arial, sans-serif" font-size="92" font-weight="700">Dev Stage</text>
+  <text x="424" y="366" fill="#B8ACA0" font-family="Cairo, Arial, sans-serif" font-size="30">Let the work speak for itself</text>
+</svg>

@@ -1,0 +1,14 @@
+# Dev Stage
+
+Dev Stage is Hany's bilingual project portfolio and project showroom. It presents selected web, mobile, systems, design, and developer-tool work with concise descriptions and case-study details.
+
+## Main pages
+
+- `/en/` — English portfolio home
+- `/ar/` — Arabic portfolio home
+- `/en/projects/{slug}` — English project case study
+- `/ar/projects/{slug}` — Arabic project case study
+
+## Editorial note
+
+The portfolio is a living archive of shipped experiments, product interfaces, developer tools, and systems work. Project pages are the canonical source for each project's title, description, role, year, tags, and case-study narrative.
