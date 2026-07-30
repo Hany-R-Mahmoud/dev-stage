@@ -2,15 +2,15 @@ import type { Profile, Project } from '../types';
 
 export const PORTFOLIO_PROFILE = {
   "name": {
-    "en": "Hany",
+    "en": "Hany Mahmoud",
     "ar": "هاني"
   },
   "title": {
-    "en": "Founder & Builder at Apex Yard",
+    "en": "Software Engineer | Agentic coding | React Native, Next.js & TypeScript | Fintech, Secure Auth & AI-Assisted Development",
     "ar": "مؤسس ومطور في Apex Yard"
   },
   "bio": {
-    "en": "Building projects of varied sizes and categories while exploring AI-assisted engineering.",
+    "en": "Once a doctor, always a doctor",
     "ar": "أبني مشاريع متنوعة في الحجم والمجال مع استكشاف هندسة البرمجيات بمساعدة الذكاء الاصطناعي."
   },
   "location": {
