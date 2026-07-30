@@ -251,11 +251,22 @@ const portfolioImageOverrides = {
   },
   minarets_of_cairo: {
     liveUrl: 'https://minaretes.vercel.app/',
+    logoSrc: 'https://minaretes.vercel.app/branding/minarets-logo.png',
     imageSrc: 'https://ik.imagekit.io/hrim/images/minaretes/minaretes1.png',
     galleryImages: [
       'https://ik.imagekit.io/hrim/images/minaretes/minaretes2.png',
       'https://ik.imagekit.io/hrim/images/minaretes/minaretes3.png',
       'https://ik.imagekit.io/hrim/images/minaretes/minaretes4.png',
+    ],
+  },
+  'al-rawi': {
+    liveUrl: 'https://al-rawi-rss.vercel.app/',
+    logoSrc: '/al-rawi-logo.png',
+    imageSrc: 'https://ik.imagekit.io/hrim/images/al-rawi/al-rawi1.png',
+    galleryImages: [
+      'https://ik.imagekit.io/hrim/images/al-rawi/al-rawi2.png',
+      'https://ik.imagekit.io/hrim/images/al-rawi/al-rawi3.png',
+      'https://ik.imagekit.io/hrim/images/al-rawi/al-rawi4.png',
     ],
   },
 };

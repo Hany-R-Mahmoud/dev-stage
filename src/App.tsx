@@ -198,9 +198,19 @@ export default function App() {
 
   const isAr = language === 'ar';
 
-  // Filter projects for the main portfolio view
-  const publishedProjects = projects.filter(p => p.isPublished);
-  const projectRouteProject = projectSlug ? projects.find((project) => project.slug === projectSlug && project.isPublished) : null;
+  // Public showcase entries need both a real cover image and a live destination.
+  // In-progress projects remain available in the dashboard, but should not appear
+  // in the public portfolio until their presentation is ready.
+  const hasShowcaseImage = (project: Project) => Boolean(
+    project.imageSrc && !project.imageSrc.startsWith('data:image/svg+xml'),
+  );
+  const isShowcaseReady = (project: Project) => Boolean(
+    project.isPublished && project.liveUrl && hasShowcaseImage(project),
+  );
+  const publishedProjects = projects.filter(isShowcaseReady);
+  const projectRouteProject = projectSlug
+    ? projects.find((project) => project.slug === projectSlug && isShowcaseReady(project))
+    : null;
 
   useEffect(() => {
     if (activeView === 'dashboard') {
@@ -270,7 +280,7 @@ export default function App() {
     Mobile: { en: 'Mobile Projects', ar: 'مشاريع الهاتف' },
     Tools: { en: 'Tools & Systems', ar: 'أدوات وأنظمة' },
   };
-  const projectCategories = projects.reduce<string[]>((categories, project) => (
+  const projectCategories = publishedProjects.reduce<string[]>((categories, project) => (
     categories.includes(project.category) ? categories : [...categories, project.category]
   ), []);
   const categories = [
@@ -284,17 +294,11 @@ export default function App() {
       })),
   ];
 
-  const hasRemoteCover = (project: Project) => /^https?:\/\//.test(project.imageSrc);
-  const orderProjectsByImage = (projectList: Project[]) => [
-    ...projectList.filter(hasRemoteCover),
-    ...projectList.filter((project) => !hasRemoteCover(project)),
-  ];
   const filteredProjects = selectedCategory === 'All'
-    ? orderProjectsByImage(publishedProjects)
-    : orderProjectsByImage(publishedProjects.filter(p => p.category === selectedCategory));
+    ? publishedProjects
+    : publishedProjects.filter(p => p.category === selectedCategory);
 
-  // The carousel is reserved for projects with a real cover image URL.
-  const carouselProjects = publishedProjects.filter((project) => /^https?:\/\//.test(project.imageSrc));
+  const carouselProjects = publishedProjects;
   const focusRailItems: FocusRailItem[] = carouselProjects.map(p => ({
     id: p.id,
     title: p.title[language],
@@ -405,6 +409,7 @@ export default function App() {
                       <select
                         value={selectedCategory}
                         onChange={(e) => setSelectedCategory(e.target.value)}
+                        aria-label={isAr ? 'تصفية المشاريع حسب التصنيف' : 'Filter projects by category'}
                         className="w-full bg-transparent py-2.5 ltr:pl-1 ltr:pr-9 rtl:pr-1 rtl:pl-9 text-xs font-mono tracking-wider rtl:tracking-normal uppercase text-[#1A1A1A] dark:text-[#F4F2ED] focus:outline-none cursor-pointer appearance-none font-semibold"
                       >
                         {categories.map((cat) => (
@@ -427,13 +432,15 @@ export default function App() {
                 {/* Grid Items: Immersive Image-First Presentation */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                   {filteredProjects.map((proj) => (
-                    <button
-                      type="button"
+                    <article
                       key={proj.id}
-                      onClick={() => setSelectedProject(proj)}
-                      className="group relative flex w-full flex-col justify-between overflow-hidden bg-[#F9F8F6] text-left dark:bg-[#141312] rtl:text-right border border-[#1A1A1A]/20 dark:border-white/20 hover:border-[#D4AF37] dark:hover:border-[#D4AF37] p-5 transition-all duration-500 hover:shadow-2xl dark:hover:shadow-[0_12px_40px_rgba(212,175,55,0.15)] cursor-pointer"
+                      className="group relative flex w-full flex-col overflow-hidden bg-[#F9F8F6] text-left dark:bg-[#141312] rtl:text-right border border-[#1A1A1A]/20 dark:border-white/20 hover:border-[#D4AF37] dark:hover:border-[#D4AF37] transition-all duration-500 hover:shadow-2xl dark:hover:shadow-[0_12px_40px_rgba(212,175,55,0.15)]"
                     >
-                      <div className="space-y-4">
+                      <button
+                        type="button"
+                        onClick={() => setSelectedProject(proj)}
+                        className="flex w-full flex-1 flex-col space-y-4 p-5 text-left rtl:text-right focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#D4AF37]"
+                      >
                         {/* Dominant Image Container */}
                         <div className="relative aspect-[16/10] overflow-hidden bg-[#1A1A1A] border border-[#1A1A1A]/20 dark:border-white/20">
                           <img
@@ -448,11 +455,11 @@ export default function App() {
 
                         {/* Title and Metadata */}
                         <div className="space-y-1.5">
-                          <div className="flex items-center justify-between">
-                            <span className="text-[10px] font-mono tracking-[0.2em] uppercase text-[#D4AF37] font-semibold">
+                          <div className="flex items-start justify-between gap-3">
+                            <span className="min-w-0 flex-1 text-[10px] font-mono tracking-[0.2em] uppercase text-[#D4AF37] font-semibold">
                               {proj.meta[language]}
                             </span>
-                            <span className="text-[10px] font-mono text-[#6C6863] dark:text-[#A39E98]">
+                            <span className="shrink-0 pt-0.5 text-[10px] font-mono text-[#6C6863] dark:text-[#A39E98]">
                               {proj.year}
                             </span>
                           </div>
@@ -466,16 +473,33 @@ export default function App() {
                             {proj.description[language]}
                           </p>
                         </div>
-                      </div>
+                      </button>
 
-                      <div className="flex items-center justify-between border-t border-[#1A1A1A]/10 dark:border-white/10 pt-3.5 mt-5 text-xs">
-                        <span className="font-mono text-[10px] text-[#6C6863] dark:text-[#A39E98]">{proj.client[language]}</span>
-                        <span className="flex items-center gap-1 font-mono text-xs font-bold tracking-wider text-[#1A1A1A] dark:text-[#F4F2ED] group-hover:text-[#D4AF37] transition-colors">
+                      <div className="flex items-center justify-between gap-4 border-t border-[#1A1A1A]/10 dark:border-white/10 px-5 py-3.5 text-xs">
+                        {proj.liveUrl ? (
+                          <a
+                            href={proj.liveUrl}
+                            target="_blank"
+                            rel="noreferrer"
+                            onClick={(event) => event.stopPropagation()}
+                            className="inline-flex min-h-11 items-center gap-1 font-mono text-[10px] font-semibold tracking-wider text-[#6C6863] dark:text-[#A39E98] hover:text-[#D4AF37] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37]"
+                          >
+                            {isAr ? 'زيارة الموقع' : 'VISIT WEBSITE'}
+                            <ArrowUpRight className="h-3.5 w-3.5 text-[#D4AF37]" />
+                          </a>
+                        ) : (
+                          <span className="font-mono text-[10px] text-[#6C6863] dark:text-[#A39E98]">{proj.client[language]}</span>
+                        )}
+                        <button
+                          type="button"
+                          onClick={() => setSelectedProject(proj)}
+                          className="flex min-h-11 items-center gap-1 font-mono text-xs font-bold tracking-wider text-[#1A1A1A] dark:text-[#F4F2ED] hover:text-[#D4AF37] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] transition-colors"
+                        >
                           {isAr ? 'التفاصيل' : 'DETAILS'}
                           <ArrowUpRight className="h-4 w-4 text-[#D4AF37] ltr:group-hover:translate-x-0.5 rtl:group-hover:-translate-x-0.5 transition-transform" />
-                        </span>
+                        </button>
                       </div>
-                    </button>
+                    </article>
                   ))}
                 </div>
               </section>

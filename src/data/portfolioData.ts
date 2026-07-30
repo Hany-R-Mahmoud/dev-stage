@@ -17,7 +17,7 @@ export const PORTFOLIO_PROFILE = {
     "en": "Egypt • Middle East",
     "ar": "مصر • الشرق الأوسط"
   },
-  "avatar": "/hany-mahmoud.jpg",
+  "avatar": "/hany-mahmoud.png",
   "email": "hany.r.mahmoud@gmail.com",
   "github": "https://github.com/Hany-R-Mahmoud",
   "linkedin": "https://www.linkedin.com/in/hany-r-mahmoud/",
@@ -263,6 +263,7 @@ export const PORTFOLIO_PROJECTS = [
     },
     "year": "2026",
     "liveUrl": "https://minaretes.vercel.app/",
+    "logoSrc": "https://minaretes.vercel.app/branding/minarets-logo.png",
     "imageSrc": "https://ik.imagekit.io/hrim/images/minaretes/minaretes1.png",
     "galleryImages": [
       "https://ik.imagekit.io/hrim/images/minaretes/minaretes2.png",
@@ -1528,8 +1529,8 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-al-rawi",
     "slug": "al-rawi",
     "title": {
-      "en": "al-rawi",
-      "ar": "al-rawi"
+      "en": "Al-Rawi",
+      "ar": "Al-Rawi"
     },
     "description": {
       "en": "Al-Rawi is a bilingual, local-first RSS reader. Feed subscriptions and preferences stay in the browser; fresh articles are fetched into memory and discarded when the session ends.",
@@ -1549,8 +1550,14 @@ export const PORTFOLIO_PROJECTS = [
       "ar": "المؤسس والمطور"
     },
     "year": "2026",
-    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EAR%3C%2Ftext%3E%3C%2Fsvg%3E",
-    "galleryImages": [],
+    "liveUrl": "https://al-rawi-rss.vercel.app/",
+    "logoSrc": "/al-rawi-logo.png",
+    "imageSrc": "https://ik.imagekit.io/hrim/images/al-rawi/al-rawi1.png",
+    "galleryImages": [
+      "https://ik.imagekit.io/hrim/images/al-rawi/al-rawi2.png",
+      "https://ik.imagekit.io/hrim/images/al-rawi/al-rawi3.png",
+      "https://ik.imagekit.io/hrim/images/al-rawi/al-rawi4.png"
+    ],
     "contentMDX": {
       "en": "# al-rawi\n\nAl-Rawi is a bilingual, local-first RSS reader. Feed subscriptions and preferences stay in the browser; fresh articles are fetched into memory and discarded when the session ends.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, React, TypeScript, Tailwind\n\n## Features\n\n- Next.js App Router, TypeScript, Tailwind CSS\n- LocalStorage for feed URLs, folders, and OPML-compatible subscriptions\n- Stateless Next.js routes for public RSS and article extraction\n- `rss-parser`, `iconv-lite`, `@mozilla/readability`, and `jsdom`\n- Only feed subscriptions are persisted locally.\n- Article lists and extracted article HTML are memory-only.\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n- No GitHub remote is configured; updates remain local.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
       "ar": "# al-rawi\n\nAl-Rawi is a bilingual, local-first RSS reader. Feed subscriptions and preferences stay in the browser; fresh articles are fetched into memory and discarded when the session ends.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, React, TypeScript, Tailwind\n\n## Features\n\n- Next.js App Router, TypeScript, Tailwind CSS\n- LocalStorage for feed URLs, folders, and OPML-compatible subscriptions\n- Stateless Next.js routes for public RSS and article extraction\n- `rss-parser`, `iconv-lite`, `@mozilla/readability`, and `jsdom`\n- Only feed subscriptions are persisted locally.\n- Article lists and extracted article HTML are memory-only.\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n- No GitHub remote is configured; updates remain local.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available."

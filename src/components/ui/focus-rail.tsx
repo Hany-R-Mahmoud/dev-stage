@@ -79,9 +79,7 @@ export function FocusRail({
   const lastWheelTime = React.useRef<number>(0);
 
   const count = items.length;
-  if (count === 0) return null;
-
-  const activeIndex = wrap(0, count, active);
+  const activeIndex = count > 0 ? wrap(0, count, active) : 0;
   const activeItem = items[activeIndex];
 
   // --- NAVIGATION HANDLERS ---
@@ -150,12 +148,17 @@ export function FocusRail({
 
   const visibleIndices = count === 1 ? [0] : [-2, -1, 0, 1, 2];
 
+  if (count === 0) return null;
+
   return (
     <div
       className={cn(
         "group relative flex h-[560px] md:h-[700px] w-full flex-col overflow-hidden bg-[#F9F8F6] dark:bg-[#0E0D0C] text-[#1A1A1A] dark:text-[#F4F2ED] outline-none select-none overflow-x-hidden border-t-4 border-t-[#D4AF37] border-x border-b border-[#1A1A1A]/20 dark:border-white/15 shadow-[0_4px_24px_rgba(0,0,0,0.04)] dark:shadow-[0_8px_32px_rgba(0,0,0,0.5)] font-sans-luxury transition-colors duration-300",
         className
       )}
+      aria-label={isArabic ? "معرض المشاريع المختارة" : "Featured project carousel"}
+      aria-roledescription="carousel"
+      role="region"
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
       tabIndex={0}
@@ -184,7 +187,7 @@ export function FocusRail({
       </div>
 
       {/* Main Stage */}
-      <div className="relative z-10 flex flex-1 flex-col justify-center px-4 md:px-8">
+      <div className="relative z-10 flex flex-1 flex-col justify-center px-2 sm:px-4 md:px-8">
         {/* DRAGGABLE RAIL CONTAINER */}
         <motion.div
           className="relative mx-auto flex h-[340px] md:h-[460px] w-full max-w-6xl items-center justify-center perspective-[1200px] cursor-grab active:cursor-grabbing"
@@ -217,7 +220,7 @@ export function FocusRail({
               <motion.div
                 key={absIndex}
                 className={cn(
-                  "absolute aspect-[16/10] w-[min(94vw,460px)] md:w-[620px] border bg-[#1A1A1A] dark:bg-[#0E0D0C] shadow-xl transition-all duration-300 overflow-hidden",
+                  "absolute aspect-[16/10] w-full max-w-[460px] md:w-[620px] md:max-w-none border bg-[#1A1A1A] dark:bg-[#0E0D0C] shadow-xl transition-all duration-300 overflow-hidden",
                   isCenter 
                     ? "z-20 border-2 border-[#D4AF37] shadow-[0_12px_32px_rgba(0,0,0,0.25)] ring-1 ring-[#1A1A1A]/20 dark:ring-white/20 cursor-grab active:cursor-grabbing" 
                     : "z-10 border-[#1A1A1A]/20 dark:border-white/15 cursor-pointer"
@@ -239,8 +242,16 @@ export function FocusRail({
                 style={{
                   transformStyle: "preserve-3d",
                 }}
+                role={isCenter ? undefined : "button"}
+                tabIndex={isCenter ? -1 : 0}
                 onClick={() => {
                   if (offset !== 0) {
+                    setActive((p) => p + offset);
+                  }
+                }}
+                onKeyDown={(event) => {
+                  if (offset !== 0 && (event.key === "Enter" || event.key === " ")) {
+                    event.preventDefault();
                     setActive((p) => p + offset);
                   }
                 }}
@@ -263,7 +274,7 @@ export function FocusRail({
 
         {/* Info & Controls */}
         <div className="mx-auto mt-8 flex w-full max-w-4xl flex-col items-center justify-between gap-6 md:flex-row pointer-events-auto">
-          <div className="flex flex-1 flex-col items-center text-center md:items-start ltr:md:text-left rtl:md:text-right h-28 justify-center">
+          <div className="flex min-h-28 w-full flex-1 flex-col items-center justify-center text-center md:items-start ltr:md:text-left rtl:md:text-right">
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeItem.id}
@@ -271,31 +282,21 @@ export function FocusRail({
                 animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                 exit={{ opacity: 0, y: -10, filter: "blur(4px)" }}
                 transition={{ duration: 0.3 }}
-                className="space-y-1.5"
+                className="w-full space-y-1.5"
               >
                 {activeItem.meta && (
-                  <span className="text-[10px] font-mono tracking-widest uppercase text-[#F9F8F6] dark:text-[#0E0D0C] bg-[#1A1A1A] dark:bg-[#F4F2ED] border border-[#1A1A1A] dark:border-white/20 px-3 py-1 inline-block">
+                  <span className="inline-block max-w-full break-words px-3 py-1 text-center text-[10px] font-mono tracking-widest uppercase text-[#F9F8F6] dark:text-[#0E0D0C] bg-[#1A1A1A] dark:bg-[#F4F2ED] border border-[#1A1A1A] dark:border-white/20">
                     {activeItem.meta}
                   </span>
                 )}
-                <div className="flex items-center gap-3">
+                <div className="flex items-center justify-center gap-3 md:justify-start">
                   <ProjectLogo name={activeItem.title} logoSrc={activeItem.logoSrc} className="h-9 w-9" />
                   <h2 className="font-serif-luxury text-3xl font-bold tracking-tight md:text-4xl text-[#1A1A1A] dark:text-[#F4F2ED]">
                     {activeItem.title}
                   </h2>
                 </div>
-                {activeItem.liveUrl ? (
-                  <a
-                    href={activeItem.liveUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="group inline-flex items-center gap-1.5 text-sm font-mono uppercase tracking-widest text-[#6C6863] dark:text-[#A39E98] hover:text-[#D4AF37] transition-colors"
-                  >
-                    <span>{isArabic ? 'زيارة الموقع' : 'Visit the website'}</span>
-                    <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 ltr:group-hover:translate-x-0.5 rtl:group-hover:-translate-x-0.5 rtl:-scale-x-100" />
-                  </a>
-                ) : activeItem.description ? (
-                  <p className="max-w-lg text-[#6C6863] dark:text-[#A39E98] text-sm md:text-base line-clamp-2 font-sans-luxury">
+                {activeItem.description ? (
+                  <p className="mx-auto w-full max-w-lg text-[#6C6863] dark:text-[#A39E98] text-sm md:text-base line-clamp-2 font-sans-luxury md:mx-0">
                     {activeItem.description}
                   </p>
                 ) : null}
@@ -303,7 +304,18 @@ export function FocusRail({
             </AnimatePresence>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex flex-wrap items-center justify-center gap-3 md:justify-end">
+            {activeItem.liveUrl && (
+              <a
+                href={activeItem.liveUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="group inline-flex items-center gap-1 border border-[#D4AF37] px-3 py-2 text-[10px] font-mono uppercase tracking-[0.15em] text-[#1A1A1A] dark:text-[#F4F2ED] hover:bg-[#D4AF37] hover:text-[#1A1A1A] transition-colors md:gap-1.5 md:px-4 md:py-2.5 md:text-xs md:tracking-widest"
+              >
+                <span>{isArabic ? 'زيارة الموقع' : 'Visit the website'}</span>
+                <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 ltr:group-hover:translate-x-0.5 rtl:group-hover:-translate-x-0.5 rtl:-scale-x-100" />
+              </a>
+            )}
             {(activeItem.href || onSelectProject || activeItem.onClick) && (
               <a
                 href={activeItem.href || "#"}
@@ -316,7 +328,7 @@ export function FocusRail({
                     activeItem.onClick();
                   }
                 }}
-                className="group flex items-center gap-2 bg-[#1A1A1A] dark:bg-[#F4F2ED] text-white dark:text-[#0E0D0C] hover:bg-[#D4AF37] hover:text-[#1A1A1A] dark:hover:bg-[#D4AF37] dark:hover:text-[#0E0D0C] px-6 py-2.5 text-xs font-mono uppercase tracking-[0.2em] transition-colors duration-300 shadow-md cursor-pointer border border-[#1A1A1A] dark:border-white/20"
+                className="group flex items-center gap-1 bg-[#1A1A1A] dark:bg-[#F4F2ED] text-white dark:text-[#0E0D0C] hover:bg-[#D4AF37] hover:text-[#1A1A1A] dark:hover:bg-[#D4AF37] dark:hover:text-[#0E0D0C] px-3 py-2 text-[10px] font-mono uppercase tracking-[0.15em] transition-colors duration-300 shadow-md cursor-pointer border border-[#1A1A1A] dark:border-white/20 md:gap-2 md:px-6 md:py-2.5 md:text-xs md:tracking-[0.2em]"
               >
                 <span>
                   {isArabic ? 'التفاصيل' : 'DETAILS'}
