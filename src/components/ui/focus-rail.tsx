@@ -13,6 +13,7 @@ export type FocusRailItem = {
   imageSrc: string;
   href?: string;
   liveUrl?: string;
+  logoSrc?: string;
   meta?: string;
   category?: string;
   client?: string;
@@ -278,7 +279,7 @@ export function FocusRail({
                   </span>
                 )}
                 <div className="flex items-center gap-3">
-                  <ProjectLogo name={activeItem.title} liveUrl={activeItem.liveUrl} className="h-9 w-9" />
+                  <ProjectLogo name={activeItem.title} logoSrc={activeItem.logoSrc} className="h-9 w-9" />
                   <h2 className="font-serif-luxury text-3xl font-bold tracking-tight md:text-4xl text-[#1A1A1A] dark:text-[#F4F2ED]">
                     {activeItem.title}
                   </h2>

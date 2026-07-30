@@ -66,7 +66,7 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
           </div>
 
           <div className="flex items-center gap-3">
-            <ProjectLogo name={project.title[language]} liveUrl={project.liveUrl} className="h-10 w-10" />
+            <ProjectLogo name={project.title[language]} logoSrc={project.logoSrc} className="h-10 w-10" />
             <h2 id={`project-modal-title-${project.id}`} className="font-serif-luxury text-2xl sm:text-3xl md:text-4xl font-bold text-[#1A1A1A] dark:text-[#F4F2ED] leading-tight">
               {project.title[language]}
             </h2>

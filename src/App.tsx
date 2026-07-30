@@ -150,6 +150,7 @@ export default function App() {
             description: project.description,
             client: project.client,
             liveUrl: project.liveUrl,
+            logoSrc: project.logoSrc,
             contentMDX: project.contentMDX,
             features: project.features,
             progress: project.progress,
@@ -169,6 +170,7 @@ export default function App() {
           ...JSON.parse(saved),
           title: PORTFOLIO_PROFILE.title,
           bio: PORTFOLIO_PROFILE.bio,
+          avatar: PORTFOLIO_PROFILE.avatar,
           email: PORTFOLIO_PROFILE.email,
           linkedin: PORTFOLIO_PROFILE.linkedin,
         }
@@ -299,6 +301,7 @@ export default function App() {
     meta: p.meta[language],
     imageSrc: p.imageSrc,
     liveUrl: p.liveUrl,
+    logoSrc: p.logoSrc,
     category: p.category,
     client: p.client[language],
     href: localizedPath(language, 'portfolio', p.slug),
@@ -453,7 +456,7 @@ export default function App() {
                             </span>
                           </div>
                           <div className="flex items-center gap-3">
-                            <ProjectLogo name={proj.title[language]} liveUrl={proj.liveUrl} className="h-10 w-10" />
+                            <ProjectLogo name={proj.title[language]} logoSrc={proj.logoSrc} className="h-10 w-10" />
                             <h3 className="font-serif-luxury text-2xl font-bold text-[#1A1A1A] dark:text-[#F4F2ED] group-hover:text-[#D4AF37] transition-colors duration-300">
                               {proj.title[language]}
                             </h3>

@@ -29,6 +29,7 @@ export interface Project {
   role: BilingualText;
   year: string;
   liveUrl?: string;
+  logoSrc?: string;
   imageSrc: string;
   galleryImages: string[];
   contentMDX: BilingualText;

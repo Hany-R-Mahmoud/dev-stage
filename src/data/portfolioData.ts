@@ -6,7 +6,7 @@ export const PORTFOLIO_PROFILE = {
     "ar": "هاني"
   },
   "title": {
-    "en": "Software Engineer\nAgentic coding\nReact Native, Next.js & TypeScript\nFintech, Secure Auth & AI-Assisted Development",
+    "en": "Software Engineer\nAI-Assisted Development\nReact Native, Next.js & TypeScript",
     "ar": "المؤسس والمطور"
   },
   "bio": {
@@ -17,7 +17,7 @@ export const PORTFOLIO_PROFILE = {
     "en": "Egypt • Middle East",
     "ar": "مصر • الشرق الأوسط"
   },
-  "avatar": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EHR%3C%2Ftext%3E%3C%2Fsvg%3E",
+  "avatar": "/hany-mahmoud.jpg",
   "email": "hany.r.mahmoud@gmail.com",
   "github": "https://github.com/Hany-R-Mahmoud",
   "linkedin": "https://www.linkedin.com/in/hany-r-mahmoud/",
@@ -160,6 +160,7 @@ export const PORTFOLIO_PROJECTS = [
     },
     "year": "2026",
     "liveUrl": "https://focus-session-flow.vercel.app/",
+    "logoSrc": "https://focus-session-flow.vercel.app/brand/focus-flow-mark.png",
     "imageSrc": "https://ik.imagekit.io/hrim/images/focus-flow/focus-flow1.png",
     "galleryImages": [
       "https://ik.imagekit.io/hrim/images/focus-flow/focus-flow2.png",
@@ -357,6 +358,7 @@ export const PORTFOLIO_PROJECTS = [
     },
     "year": "2026",
     "liveUrl": "https://js2next.vercel.app/",
+    "logoSrc": "https://js2next.vercel.app/brand/js2next-icon.png",
     "imageSrc": "https://ik.imagekit.io/hrim/images/js2next/js2next1.png?updatedAt=1785375141944",
     "galleryImages": [
       "https://ik.imagekit.io/hrim/images/js2next/js2next2.png?updatedAt=1785375140517",
@@ -443,6 +445,7 @@ export const PORTFOLIO_PROJECTS = [
     },
     "year": "2026",
     "liveUrl": "https://etamini.vercel.app/",
+    "logoSrc": "https://etamini.vercel.app/etamini-favicon.png",
     "imageSrc": "https://ik.imagekit.io/hrim/images/etamini/etamini1.png?updatedAt=1785378921365",
     "galleryImages": [
       "https://ik.imagekit.io/hrim/images/etamini/etamini2.png?updatedAt=1785378921423",
@@ -523,6 +526,7 @@ export const PORTFOLIO_PROJECTS = [
     },
     "year": "2026",
     "liveUrl": "https://yah-ya.vercel.app/",
+    "logoSrc": "https://yah-ya.vercel.app/brand/yahya-favicon.svg",
     "imageSrc": "https://ik.imagekit.io/hrim/images/yahya/yahya1.png",
     "galleryImages": [
       "https://ik.imagekit.io/hrim/images/yahya/yahya2.png",
@@ -809,6 +813,7 @@ export const PORTFOLIO_PROJECTS = [
     },
     "year": "2026",
     "liveUrl": "https://skills-agency.vercel.app/",
+    "logoSrc": "https://skills-agency.vercel.app/favicon.ico?favicon.0x3dzn~oxb6tn.ico",
     "imageSrc": "https://ik.imagekit.io/hrim/images/skills-agency/skills-agency1.png?updatedAt=1785378533772",
     "galleryImages": [
       "https://ik.imagekit.io/hrim/images/skills-agency/skills-agency2.png?updatedAt=1785378535198",
@@ -1203,6 +1208,7 @@ export const PORTFOLIO_PROJECTS = [
     },
     "year": "2026",
     "liveUrl": "https://spec-flow-ai.vercel.app/",
+    "logoSrc": "https://spec-flow-ai.vercel.app/favicon.svg",
     "imageSrc": "https://ik.imagekit.io/hrim/images/spec-flo/spec-flow1.png",
     "galleryImages": [
       "https://ik.imagekit.io/hrim/images/spec-flo/spec-flo2.png",
@@ -2358,6 +2364,7 @@ export const PORTFOLIO_PROJECTS = [
     },
     "year": "2026",
     "liveUrl": "https://masar-ci.vercel.app/",
+    "logoSrc": "https://masar-ci.vercel.app/masar-ci.png",
     "imageSrc": "https://ik.imagekit.io/hrim/images/masar-ci/masar-ci1.png?updatedAt=1785378253740",
     "galleryImages": [
       "https://ik.imagekit.io/hrim/images/masar-ci/masar-ci2.png?updatedAt=1785378253551"
@@ -3737,6 +3744,7 @@ export const PORTFOLIO_PROJECTS = [
     },
     "year": "2026",
     "liveUrl": "https://wajjba.vercel.app/",
+    "logoSrc": "https://wajjba.vercel.app/favicon-32x32.png?v=2",
     "imageSrc": "https://ik.imagekit.io/hrim/images/wajba/wajba1.png",
     "galleryImages": [
       "https://ik.imagekit.io/hrim/images/wajba/wajba2.png",

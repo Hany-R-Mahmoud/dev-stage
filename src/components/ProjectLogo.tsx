@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 interface ProjectLogoProps {
   name: string;
-  liveUrl?: string;
+  logoSrc?: string;
   className?: string;
 }
 
@@ -13,23 +13,12 @@ function initials(name: string) {
     .toUpperCase();
 }
 
-function faviconUrl(liveUrl?: string) {
-  if (!liveUrl) return null;
-
-  try {
-    return `${new URL(liveUrl).origin}/favicon.ico`;
-  } catch {
-    return null;
-  }
-}
-
-export const ProjectLogo: React.FC<ProjectLogoProps> = ({ name, liveUrl, className = '' }) => {
-  const favicon = faviconUrl(liveUrl);
+export const ProjectLogo: React.FC<ProjectLogoProps> = ({ name, logoSrc, className = '' }) => {
   const [hasFailed, setHasFailed] = useState(false);
 
   useEffect(() => {
     setHasFailed(false);
-  }, [favicon]);
+  }, [logoSrc]);
 
   return (
     <span
@@ -37,9 +26,9 @@ export const ProjectLogo: React.FC<ProjectLogoProps> = ({ name, liveUrl, classNa
       aria-label={`${name} logo`}
       className={`inline-flex shrink-0 items-center justify-center overflow-hidden border border-[#D4AF37]/60 bg-[#1A1A1A] text-[11px] font-mono font-bold tracking-wider text-[#D4AF37] dark:bg-[#0E0D0C] ${className}`}
     >
-      {favicon && !hasFailed ? (
+      {logoSrc && !hasFailed ? (
         <img
-          src={favicon}
+          src={logoSrc}
           alt=""
           className="h-full w-full object-contain p-1"
           onError={() => setHasFailed(true)}

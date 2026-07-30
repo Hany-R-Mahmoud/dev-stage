@@ -16,11 +16,14 @@ export const ProfileCard: React.FC<ProfileCardProps> = ({ profile, language }) =
         
         {/* Avatar with Refined Border & Grayscale to Color Hover Effect */}
         <div className="relative shrink-0 group cursor-pointer">
-          <img
-            src={profile.avatar}
-            alt={profile.name[language]}
-            className="h-24 w-24 md:h-32 md:w-32 object-cover border border-[#1A1A1A]/30 dark:border-white/30 grayscale contrast-110 group-hover:grayscale-0 group-hover:contrast-100 transition-all duration-700 shadow-md"
-          />
+          <div className="h-24 w-24 md:h-32 md:w-32 overflow-hidden border border-[#1A1A1A]/30 dark:border-white/30 shadow-md">
+            <img
+              src={profile.avatar}
+              alt={profile.name[language]}
+              className="h-full w-full object-cover grayscale contrast-110 group-hover:grayscale-0 group-hover:contrast-100 transition-all duration-700"
+              style={{ objectPosition: 'center 18%', transform: 'scaleX(-1)' }}
+            />
+          </div>
           <div className="absolute -bottom-2.5 ltr:-right-2.5 rtl:-left-2.5 bg-[#1A1A1A] dark:bg-[#F4F2ED] text-[#D4AF37] dark:text-[#0E0D0C] p-1.5 border border-[#D4AF37]">
             <Feather className="h-3.5 w-3.5" />
           </div>
@@ -46,18 +49,6 @@ export const ProfileCard: React.FC<ProfileCardProps> = ({ profile, language }) =
           <p className="max-w-2xl text-sm sm:text-base leading-relaxed text-[#6C6863] dark:text-[#A39E98] font-sans-luxury">
             {profile.bio[language]}
           </p>
-
-          {/* Skills Tags */}
-          <div className="flex flex-wrap items-center justify-center md:justify-start gap-1.5 pt-1">
-            {profile.skills.map((skill, idx) => (
-              <span
-                key={idx}
-                className="bg-[#EBE5DE]/80 dark:bg-[#1C1B1A] px-2.5 py-0.5 text-[10px] font-mono tracking-wider uppercase text-[#1A1A1A] dark:text-[#F4F2ED] border border-[#1A1A1A]/10 dark:border-white/10"
-              >
-                {skill}
-              </span>
-            ))}
-          </div>
 
           {/* Social Links */}
           <div className="flex items-center gap-3 pt-3">

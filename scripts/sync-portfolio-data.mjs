@@ -167,6 +167,7 @@ const portfolioTitleOverrides = {
 const portfolioImageOverrides = {
   focussessionflow: {
     liveUrl: 'https://focus-session-flow.vercel.app/',
+    logoSrc: 'https://focus-session-flow.vercel.app/brand/focus-flow-mark.png',
     imageSrc: 'https://ik.imagekit.io/hrim/images/focus-flow/focus-flow1.png',
     galleryImages: [
       'https://ik.imagekit.io/hrim/images/focus-flow/focus-flow2.png',
@@ -177,6 +178,7 @@ const portfolioImageOverrides = {
   },
   js2next: {
     liveUrl: 'https://js2next.vercel.app/',
+    logoSrc: 'https://js2next.vercel.app/brand/js2next-icon.png',
     imageSrc: 'https://ik.imagekit.io/hrim/images/js2next/js2next1.png?updatedAt=1785375141944',
     galleryImages: [
       'https://ik.imagekit.io/hrim/images/js2next/js2next2.png?updatedAt=1785375140517',
@@ -188,6 +190,7 @@ const portfolioImageOverrides = {
   },
   'new-etamini': {
     liveUrl: 'https://etamini.vercel.app/',
+    logoSrc: 'https://etamini.vercel.app/etamini-favicon.png',
     imageSrc: 'https://ik.imagekit.io/hrim/images/etamini/etamini1.png?updatedAt=1785378921365',
     galleryImages: [
       'https://ik.imagekit.io/hrim/images/etamini/etamini2.png?updatedAt=1785378921423',
@@ -197,6 +200,7 @@ const portfolioImageOverrides = {
   },
   'masar-ci': {
     liveUrl: 'https://masar-ci.vercel.app/',
+    logoSrc: 'https://masar-ci.vercel.app/masar-ci.png',
     imageSrc: 'https://ik.imagekit.io/hrim/images/masar-ci/masar-ci1.png?updatedAt=1785378253740',
     galleryImages: [
       'https://ik.imagekit.io/hrim/images/masar-ci/masar-ci2.png?updatedAt=1785378253551',
@@ -204,6 +208,7 @@ const portfolioImageOverrides = {
   },
   'skills-agency': {
     liveUrl: 'https://skills-agency.vercel.app/',
+    logoSrc: 'https://skills-agency.vercel.app/favicon.ico?favicon.0x3dzn~oxb6tn.ico',
     imageSrc: 'https://ik.imagekit.io/hrim/images/skills-agency/skills-agency1.png?updatedAt=1785378533772',
     galleryImages: [
       'https://ik.imagekit.io/hrim/images/skills-agency/skills-agency2.png?updatedAt=1785378535198',
@@ -213,6 +218,7 @@ const portfolioImageOverrides = {
   },
   wajba: {
     liveUrl: 'https://wajjba.vercel.app/',
+    logoSrc: 'https://wajjba.vercel.app/favicon-32x32.png?v=2',
     imageSrc: 'https://ik.imagekit.io/hrim/images/wajba/wajba1.png',
     galleryImages: [
       'https://ik.imagekit.io/hrim/images/wajba/wajba2.png',
@@ -224,6 +230,7 @@ const portfolioImageOverrides = {
   },
   yahya: {
     liveUrl: 'https://yah-ya.vercel.app/',
+    logoSrc: 'https://yah-ya.vercel.app/brand/yahya-favicon.svg',
     imageSrc: 'https://ik.imagekit.io/hrim/images/yahya/yahya1.png',
     galleryImages: [
       'https://ik.imagekit.io/hrim/images/yahya/yahya2.png',
@@ -233,6 +240,7 @@ const portfolioImageOverrides = {
   },
   'spec-flow': {
     liveUrl: 'https://spec-flow-ai.vercel.app/',
+    logoSrc: 'https://spec-flow-ai.vercel.app/favicon.svg',
     imageSrc: 'https://ik.imagekit.io/hrim/images/spec-flo/spec-flow1.png',
     galleryImages: [
       'https://ik.imagekit.io/hrim/images/spec-flo/spec-flo2.png',
@@ -340,6 +348,7 @@ const buildProject = (registryProject, apexyardRoot, index) => {
     role: { en: 'Founder & Builder', ar: 'المؤسس والمطور' },
     year: lastCommitYear(workspacePath),
     liveUrl: imageOverride.liveUrl,
+    logoSrc: imageOverride.logoSrc,
     imageSrc: imageOverride.imageSrc ?? placeholderImage(label),
     galleryImages: imageOverride.galleryImages ?? [],
     contentMDX: { en: content, ar: arabicContent },
@@ -365,7 +374,7 @@ const projects = registryProjects
 const profile = {
   name: { en: 'Hany Mahmoud', ar: 'هاني' },
   title: {
-    en: 'Software Engineer\nAgentic coding\nReact Native, Next.js & TypeScript\nFintech, Secure Auth & AI-Assisted Development',
+    en: 'Software Engineer\nAI-Assisted Development\nReact Native, Next.js & TypeScript',
     ar: 'المؤسس والمطور',
   },
   bio: {
@@ -373,7 +382,7 @@ const profile = {
     ar: 'أبني مشاريع متنوعة في الحجم والمجال مع استكشاف هندسة البرمجيات بمساعدة الذكاء الاصطناعي.',
   },
   location: { en: 'Egypt • Middle East', ar: 'مصر • الشرق الأوسط' },
-  avatar: placeholderImage('HR'),
+  avatar: '/hany-mahmoud.jpg',
   email: 'hany.r.mahmoud@gmail.com',
   github: 'https://github.com/Hany-R-Mahmoud',
   linkedin: 'https://www.linkedin.com/in/hany-r-mahmoud/',
