@@ -158,6 +158,12 @@ const placeholderImage = (label) => {
   return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
 };
 
+const portfolioTitleOverrides = {
+  'new-etamini': 'Etamini',
+  focussessionflow: 'Focus Flow',
+  'spec-flow': 'Spec Flow AI',
+};
+
 const portfolioImageOverrides = {
   focussessionflow: {
     liveUrl: 'https://focus-session-flow.vercel.app/',
@@ -286,7 +292,8 @@ const buildProject = (registryProject, apexyardRoot, index) => {
   const fallbackReadme = readText(join(apexyardRoot, registryProject.docs ?? '', 'README.md'));
   const sourceText = readme || fallbackReadme;
   const fallbackDescription = firstParagraph(sourceText) || packageJson.description || 'A project managed in this portfolio.';
-  const title = { en: projectName, ar: projectName };
+  const displayTitle = portfolioTitleOverrides[registryProject.name] ?? projectName;
+  const title = { en: displayTitle, ar: displayTitle };
   const description = bilingualText(portfolioDoc.summary, fallbackDescription);
   const stack = Array.isArray(portfolioDoc.tech_stack) && portfolioDoc.tech_stack.length > 0
     ? portfolioDoc.tech_stack
