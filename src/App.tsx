@@ -274,9 +274,14 @@ export default function App() {
       })),
   ];
 
-  const filteredProjects = selectedCategory === 'All' 
-    ? publishedProjects 
-    : publishedProjects.filter(p => p.category === selectedCategory);
+  const hasRemoteCover = (project: Project) => /^https?:\/\//.test(project.imageSrc);
+  const orderProjectsByImage = (projectList: Project[]) => [
+    ...projectList.filter(hasRemoteCover),
+    ...projectList.filter((project) => !hasRemoteCover(project)),
+  ];
+  const filteredProjects = selectedCategory === 'All'
+    ? orderProjectsByImage(publishedProjects)
+    : orderProjectsByImage(publishedProjects.filter(p => p.category === selectedCategory));
 
   // The carousel is reserved for projects with a real cover image URL.
   const carouselProjects = publishedProjects.filter((project) => /^https?:\/\//.test(project.imageSrc));
