@@ -6,11 +6,11 @@ export const PORTFOLIO_PROFILE = {
     "ar": "هاني"
   },
   "title": {
-    "en": "Software Engineer | Agentic coding | React Native, Next.js & TypeScript | Fintech, Secure Auth & AI-Assisted Development",
+    "en": "Software Engineer\nAgentic coding\nReact Native, Next.js & TypeScript\nFintech, Secure Auth & AI-Assisted Development",
     "ar": "المؤسس والمطور"
   },
   "bio": {
-    "en": "Once a doctor, always a doctor",
+    "en": "Once a surgeon, always a surgeon...",
     "ar": "أبني مشاريع متنوعة في الحجم والمجال مع استكشاف هندسة البرمجيات بمساعدة الذكاء الاصطناعي."
   },
   "location": {
@@ -18,9 +18,9 @@ export const PORTFOLIO_PROFILE = {
     "ar": "مصر • الشرق الأوسط"
   },
   "avatar": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EHR%3C%2Ftext%3E%3C%2Fsvg%3E",
-  "email": "",
+  "email": "hany.r.mahmoud@gmail.com",
   "github": "https://github.com/Hany-R-Mahmoud",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/hany-r-mahmoud/",
   "skills": [
     "TypeScript",
     "React",

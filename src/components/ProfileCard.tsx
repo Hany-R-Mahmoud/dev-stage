@@ -39,7 +39,7 @@ export const ProfileCard: React.FC<ProfileCardProps> = ({ profile, language }) =
             </span>
           </div>
 
-          <p className="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-[#D4AF37]">
+          <p className="whitespace-pre-line font-mono text-xs font-semibold uppercase leading-relaxed tracking-[0.2em] text-[#D4AF37]">
             {profile.title[language]}
           </p>
 

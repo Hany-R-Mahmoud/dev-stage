@@ -164,7 +164,13 @@ export default function App() {
   const [profile, setProfile] = useState<Profile>(() => {
     const saved = localStorage.getItem(storageKeys.profile);
     return saved
-      ? { ...JSON.parse(saved), title: PORTFOLIO_PROFILE.title }
+      ? {
+          ...JSON.parse(saved),
+          title: PORTFOLIO_PROFILE.title,
+          bio: PORTFOLIO_PROFILE.bio,
+          email: PORTFOLIO_PROFILE.email,
+          linkedin: PORTFOLIO_PROFILE.linkedin,
+        }
       : PORTFOLIO_PROFILE;
   });
 

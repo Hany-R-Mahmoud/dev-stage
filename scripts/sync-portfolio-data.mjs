@@ -357,16 +357,19 @@ const projects = registryProjects
   .map((project, index) => buildProject(project, apexyardRoot, index));
 const profile = {
   name: { en: 'Hany Mahmoud', ar: 'هاني' },
-  title: { en: 'Software Engineer | Agentic coding | React Native, Next.js & TypeScript | Fintech, Secure Auth & AI-Assisted Development', ar: 'المؤسس والمطور' },
+  title: {
+    en: 'Software Engineer\nAgentic coding\nReact Native, Next.js & TypeScript\nFintech, Secure Auth & AI-Assisted Development',
+    ar: 'المؤسس والمطور',
+  },
   bio: {
-    en: 'Once a doctor, always a doctor',
+    en: 'Once a surgeon, always a surgeon...',
     ar: 'أبني مشاريع متنوعة في الحجم والمجال مع استكشاف هندسة البرمجيات بمساعدة الذكاء الاصطناعي.',
   },
   location: { en: 'Egypt • Middle East', ar: 'مصر • الشرق الأوسط' },
   avatar: placeholderImage('HR'),
-  email: '',
+  email: 'hany.r.mahmoud@gmail.com',
   github: 'https://github.com/Hany-R-Mahmoud',
-  linkedin: '',
+  linkedin: 'https://www.linkedin.com/in/hany-r-mahmoud/',
   skills: ['TypeScript', 'React', 'Next.js', 'React Native', 'Expo', 'AI-assisted engineering'],
 };
 
