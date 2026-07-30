@@ -43,6 +43,16 @@ export function ProjectDetailPage({ project, language }: ProjectDetailPageProps)
             {project.title[language]}
           </h1>
           <p className="max-w-3xl text-lg leading-relaxed text-[#6C6863] dark:text-[#A39E98]">{project.description[language]}</p>
+          {project.liveUrl && (
+            <a
+              href={project.liveUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center border border-[#D4AF37] px-4 py-2 text-xs font-mono uppercase tracking-widest text-[#1A1A1A] dark:text-[#F4F2ED] hover:bg-[#D4AF37] hover:text-[#1A1A1A] transition-colors"
+            >
+              {isAr ? 'زيارة المشروع' : 'Visit project'} ↗
+            </a>
+          )}
           <div className="flex flex-wrap gap-x-6 gap-y-2 text-xs font-mono uppercase tracking-widest text-[#6C6863] dark:text-[#A39E98]">
             <span>{project.category}</span>
             <span>{project.year}</span>

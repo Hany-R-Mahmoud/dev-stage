@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Project, Language } from '../types';
-import { X, Calendar, User, Building, Tag, Image as ImageIcon, Code, Sparkles, Feather, ListChecks, AlertTriangle, Lightbulb } from 'lucide-react';
+import { X, Calendar, User, Building, Tag, Image as ImageIcon, Code, Sparkles, Feather, ListChecks, AlertTriangle, Lightbulb, ArrowUpRight } from 'lucide-react';
 
 interface ProjectDetailModalProps {
   project: Project | null;
@@ -67,6 +67,17 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
           <h2 id={`project-modal-title-${project.id}`} className="font-serif-luxury text-2xl sm:text-3xl md:text-4xl font-bold text-[#1A1A1A] dark:text-[#F4F2ED] leading-tight">
             {project.title[language]}
           </h2>
+          {project.liveUrl && (
+            <a
+              href={project.liveUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 border border-[#D4AF37] px-3 py-2 text-xs font-mono uppercase tracking-widest text-[#1A1A1A] dark:text-[#F4F2ED] hover:bg-[#D4AF37] hover:text-[#1A1A1A] transition-colors"
+            >
+              <span>{isAr ? 'زيارة المشروع' : 'Visit project'}</span>
+              <ArrowUpRight className="h-3.5 w-3.5" />
+            </a>
+          )}
         </div>
 
         {/* PRIMARY VISUAL SHOWCASE & GALLERY ARCHIVE */}

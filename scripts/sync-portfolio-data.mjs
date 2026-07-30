@@ -160,6 +160,7 @@ const placeholderImage = (label) => {
 
 const portfolioImageOverrides = {
   js2next: {
+    liveUrl: 'https://js2next.vercel.app/',
     imageSrc: 'https://ik.imagekit.io/hrim/images/js2next/js2next1.png?updatedAt=1785375141944',
     galleryImages: [
       'https://ik.imagekit.io/hrim/images/js2next/js2next2.png?updatedAt=1785375140517',
@@ -167,6 +168,31 @@ const portfolioImageOverrides = {
       'https://ik.imagekit.io/hrim/images/js2next/js2next4.png?updatedAt=1785375141166',
       'https://ik.imagekit.io/hrim/images/js2next/js2next5.png?updatedAt=1785375141467',
       'https://ik.imagekit.io/hrim/images/js2next/js2next6.png?updatedAt=1785375140980',
+    ],
+  },
+  'new-etamini': {
+    liveUrl: 'https://etamini.vercel.app/',
+    imageSrc: 'https://ik.imagekit.io/hrim/images/etamini/etamini1.png?updatedAt=1785378921365',
+    galleryImages: [
+      'https://ik.imagekit.io/hrim/images/etamini/etamini2.png?updatedAt=1785378921423',
+      'https://ik.imagekit.io/hrim/images/etamini/etamini3.png?updatedAt=1785378920690',
+      'https://ik.imagekit.io/hrim/images/etamini/etamini4.png?updatedAt=1785378921697',
+    ],
+  },
+  'masar-ci': {
+    liveUrl: 'https://masar-ci.vercel.app/',
+    imageSrc: 'https://ik.imagekit.io/hrim/images/masar-ci/masar-ci1.png?updatedAt=1785378253740',
+    galleryImages: [
+      'https://ik.imagekit.io/hrim/images/masar-ci/masar-ci2.png?updatedAt=1785378253551',
+    ],
+  },
+  'skills-agency': {
+    liveUrl: 'https://skills-agency.vercel.app/',
+    imageSrc: 'https://ik.imagekit.io/hrim/images/skills-agency/skills-agency1.png?updatedAt=1785378533772',
+    galleryImages: [
+      'https://ik.imagekit.io/hrim/images/skills-agency/skills-agency2.png?updatedAt=1785378535198',
+      'https://ik.imagekit.io/hrim/images/skills-agency/skills-agency3.png?updatedAt=1785378534959',
+      'https://ik.imagekit.io/hrim/images/skills-agency/skills-agency4.png?updatedAt=1785378533142',
     ],
   },
 };
@@ -267,6 +293,7 @@ const buildProject = (registryProject, apexyardRoot, index) => {
     client: { en: 'Independent', ar: 'مستقل' },
     role: { en: 'Founder & Builder', ar: 'المؤسس والمطور' },
     year: lastCommitYear(workspacePath),
+    liveUrl: imageOverride.liveUrl,
     imageSrc: imageOverride.imageSrc ?? placeholderImage(label),
     galleryImages: imageOverride.galleryImages ?? [],
     contentMDX: { en: content, ar: arabicContent },

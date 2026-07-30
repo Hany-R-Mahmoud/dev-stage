@@ -350,6 +350,7 @@ export const PORTFOLIO_PROJECTS = [
       "ar": "المؤسس والمطور"
     },
     "year": "2026",
+    "liveUrl": "https://js2next.vercel.app/",
     "imageSrc": "https://ik.imagekit.io/hrim/images/js2next/js2next1.png?updatedAt=1785375141944",
     "galleryImages": [
       "https://ik.imagekit.io/hrim/images/js2next/js2next2.png?updatedAt=1785375140517",
@@ -435,8 +436,13 @@ export const PORTFOLIO_PROJECTS = [
       "ar": "المؤسس والمطور"
     },
     "year": "2026",
-    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3ENE%3C%2Ftext%3E%3C%2Fsvg%3E",
-    "galleryImages": [],
+    "liveUrl": "https://etamini.vercel.app/",
+    "imageSrc": "https://ik.imagekit.io/hrim/images/etamini/etamini1.png?updatedAt=1785378921365",
+    "galleryImages": [
+      "https://ik.imagekit.io/hrim/images/etamini/etamini2.png?updatedAt=1785378921423",
+      "https://ik.imagekit.io/hrim/images/etamini/etamini3.png?updatedAt=1785378920690",
+      "https://ik.imagekit.io/hrim/images/etamini/etamini4.png?updatedAt=1785378921697"
+    ],
     "contentMDX": {
       "en": "# new-etamini\n\nA project managed in the Dev Stage workspace.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Vite, React, TypeScript, Tailwind, Capacitor, Vitest\n\n## Features\n\n- Current feature inventory: Unknown / verify.\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
       "ar": "# new-etamini\n\nA project managed in the Dev Stage workspace.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Vite, React, TypeScript, Tailwind, Capacitor, Vitest\n\n## Features\n\n- Current feature inventory: Unknown / verify.\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
@@ -791,8 +797,13 @@ export const PORTFOLIO_PROJECTS = [
       "ar": "المؤسس والمطور"
     },
     "year": "2026",
-    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3ESA%3C%2Ftext%3E%3C%2Fsvg%3E",
-    "galleryImages": [],
+    "liveUrl": "https://skills-agency.vercel.app/",
+    "imageSrc": "https://ik.imagekit.io/hrim/images/skills-agency/skills-agency1.png?updatedAt=1785378533772",
+    "galleryImages": [
+      "https://ik.imagekit.io/hrim/images/skills-agency/skills-agency2.png?updatedAt=1785378535198",
+      "https://ik.imagekit.io/hrim/images/skills-agency/skills-agency3.png?updatedAt=1785378534959",
+      "https://ik.imagekit.io/hrim/images/skills-agency/skills-agency4.png?updatedAt=1785378533142"
+    ],
     "contentMDX": {
       "en": "# skills-agency\n\nNext.js 16 + App Router scaffold for The Agency v2, built with TypeScript, Ant Design, SCSS modules, and spec-kit initialization for both Codex and OpenCode workflows.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, React, TypeScript\n\n## Features\n\n- spec-kit (`.specify`, `.agents`, `.opencode`)\n- `src/app`: app routes and root layout\n- `src/components`: layout, department, agent, and shared UI components\n- `src/data/skills.json`: starter agency data\n- `src/lib`: types, utilities, and future audio placeholder\n- `src/styles`: global theme tokens and Ant Design config\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
       "ar": "# skills-agency\n\nNext.js 16 + App Router scaffold for The Agency v2, built with TypeScript, Ant Design, SCSS modules, and spec-kit initialization for both Codex and OpenCode workflows.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, React, TypeScript\n\n## Features\n\n- spec-kit (`.specify`, `.agents`, `.opencode`)\n- `src/app`: app routes and root layout\n- `src/components`: layout, department, agent, and shared UI components\n- `src/data/skills.json`: starter agency data\n- `src/lib`: types, utilities, and future audio placeholder\n- `src/styles`: global theme tokens and Ant Design config\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
@@ -2330,8 +2341,11 @@ export const PORTFOLIO_PROJECTS = [
       "ar": "المؤسس والمطور"
     },
     "year": "2026",
-    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EMC%3C%2Ftext%3E%3C%2Fsvg%3E",
-    "galleryImages": [],
+    "liveUrl": "https://masar-ci.vercel.app/",
+    "imageSrc": "https://ik.imagekit.io/hrim/images/masar-ci/masar-ci1.png?updatedAt=1785378253740",
+    "galleryImages": [
+      "https://ik.imagekit.io/hrim/images/masar-ci/masar-ci2.png?updatedAt=1785378253551"
+    ],
     "contentMDX": {
       "en": "# masar-ci\n\nA project managed in the Dev Stage workspace.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Tools\n- Tech stack: Not detected\n\n## Features\n\n- Current feature inventory: Unknown / verify.\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No application manifest was detected in the workspace.\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
       "ar": "# masar-ci\n\nA project managed in the Dev Stage workspace.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Tools\n- Tech stack: Not detected\n\n## Features\n\n- Current feature inventory: Unknown / verify.\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No application manifest was detected in the workspace.\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available."

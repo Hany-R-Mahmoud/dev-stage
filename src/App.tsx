@@ -148,6 +148,7 @@ export default function App() {
             title: project.title,
             description: project.description,
             client: project.client,
+            liveUrl: project.liveUrl,
             contentMDX: project.contentMDX,
             features: project.features,
             progress: project.progress,
