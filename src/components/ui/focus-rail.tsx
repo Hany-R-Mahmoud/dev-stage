@@ -247,7 +247,7 @@ export function FocusRail({
                   src={item.imageSrc}
                   alt={item.title}
                   className={cn(
-                    "h-full w-full object-cover pointer-events-none transition-all duration-700",
+                    "h-full w-full object-fill pointer-events-none transition-all duration-700",
                     isCenter ? "grayscale-0" : "grayscale"
                   )}
                 />

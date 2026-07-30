@@ -159,6 +159,16 @@ const placeholderImage = (label) => {
 };
 
 const portfolioImageOverrides = {
+  focussessionflow: {
+    liveUrl: 'https://focus-session-flow.vercel.app/',
+    imageSrc: 'https://ik.imagekit.io/hrim/images/focus-flow/focus-flow1.png',
+    galleryImages: [
+      'https://ik.imagekit.io/hrim/images/focus-flow/focus-flow2.png',
+      'https://ik.imagekit.io/hrim/images/focus-flow/focus-flow3.png',
+      'https://ik.imagekit.io/hrim/images/focus-flow/focus-flow4.png',
+      'https://ik.imagekit.io/hrim/images/focus-flow/focus-flow5.png',
+    ],
+  },
   js2next: {
     liveUrl: 'https://js2next.vercel.app/',
     imageSrc: 'https://ik.imagekit.io/hrim/images/js2next/js2next1.png?updatedAt=1785375141944',
@@ -193,6 +203,35 @@ const portfolioImageOverrides = {
       'https://ik.imagekit.io/hrim/images/skills-agency/skills-agency2.png?updatedAt=1785378535198',
       'https://ik.imagekit.io/hrim/images/skills-agency/skills-agency3.png?updatedAt=1785378534959',
       'https://ik.imagekit.io/hrim/images/skills-agency/skills-agency4.png?updatedAt=1785378533142',
+    ],
+  },
+  wajba: {
+    liveUrl: 'https://wajjba.vercel.app/',
+    imageSrc: 'https://ik.imagekit.io/hrim/images/wajba/wajba1.png',
+    galleryImages: [
+      'https://ik.imagekit.io/hrim/images/wajba/wajba2.png',
+      'https://ik.imagekit.io/hrim/images/wajba/wajba3.png',
+      'https://ik.imagekit.io/hrim/images/wajba/wajba4.png',
+      'https://ik.imagekit.io/hrim/images/wajba/wajba5.png',
+      'https://ik.imagekit.io/hrim/images/wajba/wajba6.png',
+    ],
+  },
+  yahya: {
+    liveUrl: 'https://yah-ya.vercel.app/',
+    imageSrc: 'https://ik.imagekit.io/hrim/images/yahya/yahya1.png',
+    galleryImages: [
+      'https://ik.imagekit.io/hrim/images/yahya/yahya2.png',
+      'https://ik.imagekit.io/hrim/images/yahya/yahya3.png',
+      'https://ik.imagekit.io/hrim/images/yahya/yahya4.png',
+    ],
+  },
+  'spec-flow': {
+    liveUrl: 'https://spec-flow-ai.vercel.app/',
+    imageSrc: 'https://ik.imagekit.io/hrim/images/spec-flo/spec-flow1.png',
+    galleryImages: [
+      'https://ik.imagekit.io/hrim/images/spec-flo/spec-flo2.png',
+      'https://ik.imagekit.io/hrim/images/spec-flow3.png',
+      'https://ik.imagekit.io/hrim/images/spec-flow4.png',
     ],
   },
 };
