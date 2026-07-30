@@ -16,11 +16,11 @@ export const ProfileCard: React.FC<ProfileCardProps> = ({ profile, language }) =
         
         {/* Avatar with Refined Border & Grayscale to Color Hover Effect */}
         <div className="relative shrink-0 group cursor-pointer">
-          <div className="h-24 w-24 md:h-32 md:w-32 overflow-hidden border border-[#1A1A1A]/30 dark:border-white/30 shadow-md">
+          <div className="h-24 w-[4.125rem] md:h-32 md:w-[5.5rem] overflow-hidden border border-[#1A1A1A]/30 dark:border-white/30 shadow-md">
             <img
               src={profile.avatar}
               alt={profile.name[language]}
-              className="h-full w-full object-cover grayscale contrast-110 group-hover:grayscale-0 group-hover:contrast-100 transition-all duration-700"
+              className="h-full w-full object-contain grayscale contrast-110 group-hover:grayscale-0 group-hover:contrast-100 transition-all duration-700"
               style={{ objectPosition: 'center 18%', transform: 'scaleX(-1)' }}
             />
           </div>

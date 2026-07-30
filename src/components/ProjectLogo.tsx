@@ -24,13 +24,13 @@ export const ProjectLogo: React.FC<ProjectLogoProps> = ({ name, logoSrc, classNa
     <span
       role="img"
       aria-label={`${name} logo`}
-      className={`inline-flex shrink-0 items-center justify-center overflow-hidden border border-[#D4AF37]/60 bg-[#1A1A1A] text-[11px] font-mono font-bold tracking-wider text-[#D4AF37] dark:bg-[#0E0D0C] ${className}`}
+      className={`inline-flex shrink-0 items-center justify-center text-[11px] font-mono font-bold tracking-wider text-[#D4AF37] ${className}`}
     >
       {logoSrc && !hasFailed ? (
         <img
           src={logoSrc}
           alt=""
-          className="h-full w-full object-contain p-1"
+          className="h-full w-full object-contain"
           onError={() => setHasFailed(true)}
         />
       ) : (
