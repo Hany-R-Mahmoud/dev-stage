@@ -150,7 +150,7 @@ export function FocusRail({
   return (
     <div
       className={cn(
-        "group relative flex h-[580px] w-full flex-col overflow-hidden bg-[#F9F8F6] dark:bg-[#0E0D0C] text-[#1A1A1A] dark:text-[#F4F2ED] outline-none select-none overflow-x-hidden border-t-4 border-t-[#D4AF37] border-x border-b border-[#1A1A1A]/20 dark:border-white/15 shadow-[0_4px_24px_rgba(0,0,0,0.04)] dark:shadow-[0_8px_32px_rgba(0,0,0,0.5)] font-sans-luxury transition-colors duration-300",
+        "group relative flex h-[520px] w-full flex-col overflow-hidden bg-[#F9F8F6] dark:bg-[#0E0D0C] text-[#1A1A1A] dark:text-[#F4F2ED] outline-none select-none overflow-x-hidden border-t-4 border-t-[#D4AF37] border-x border-b border-[#1A1A1A]/20 dark:border-white/15 shadow-[0_4px_24px_rgba(0,0,0,0.04)] dark:shadow-[0_8px_32px_rgba(0,0,0,0.5)] font-sans-luxury transition-colors duration-300",
         className
       )}
       onMouseEnter={() => setIsHovering(true)}
@@ -184,7 +184,7 @@ export function FocusRail({
       <div className="relative z-10 flex flex-1 flex-col justify-center px-4 md:px-8">
         {/* DRAGGABLE RAIL CONTAINER */}
         <motion.div
-          className="relative mx-auto flex h-[340px] w-full max-w-6xl items-center justify-center perspective-[1200px] cursor-grab active:cursor-grabbing"
+          className="relative mx-auto flex h-[300px] w-full max-w-6xl items-center justify-center perspective-[1200px] cursor-grab active:cursor-grabbing"
           drag="x"
           dragConstraints={{ left: 0, right: 0 }}
           dragElastic={0.2}
@@ -214,7 +214,7 @@ export function FocusRail({
               <motion.div
                 key={absIndex}
                 className={cn(
-                  "absolute aspect-[3/4] w-[250px] md:w-[290px] border bg-[#1A1A1A] dark:bg-[#0E0D0C] shadow-xl transition-all duration-300 overflow-hidden",
+                  "absolute aspect-[16/10] w-[280px] md:w-[360px] border bg-[#1A1A1A] dark:bg-[#0E0D0C] shadow-xl transition-all duration-300 overflow-hidden",
                   isCenter 
                     ? "z-20 border-2 border-[#D4AF37] shadow-[0_12px_32px_rgba(0,0,0,0.25)] ring-1 ring-[#1A1A1A]/20 dark:ring-white/20 cursor-grab active:cursor-grabbing" 
                     : "z-10 border-[#1A1A1A]/20 dark:border-white/15 cursor-pointer"

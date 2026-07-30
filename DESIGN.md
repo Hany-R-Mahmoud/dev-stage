@@ -63,7 +63,7 @@ Spacing follows a 4px base. The working scale is 4, 8, 12, 16, 24, 32, 40, 48, 6
 
 ### Project Media Frames
 
-- **Structure**: the carousel uses a taller 3:4 showcase frame; directory cards and project detail media use a 16:10 landscape frame.
+- **Structure**: the carousel, directory cards, and project detail media use a 16:10 landscape frame suited to webpage screenshots.
 - **Surface**: dark matte backing with a restrained border so screenshots with different source ratios remain legible.
 - **Sizing**: the frame owns layout sizing; images use `object-contain` to preserve the complete supplied screenshot without distortion or unpredictable cropping.
 - **States**: default, hover scale on cards, active gallery selection, and modal thumbnail selection.
