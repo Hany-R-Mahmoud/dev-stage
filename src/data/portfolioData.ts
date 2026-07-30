@@ -241,16 +241,16 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-minarets_of_cairo",
     "slug": "minarets_of_cairo",
     "title": {
-      "en": "minarets_of_cairo",
-      "ar": "minarets_of_cairo"
+      "en": "Minaretes of Cairo",
+      "ar": "Minaretes of Cairo"
     },
     "description": {
       "en": "Minarets of Cairo is a bilingual English/Arabic field guide to Cairo's Islamic heritage. The React app presents monuments, periods, stories, walks, maps, comparisons, and personal itinerary/notebook tools through an Express + tRPC server.",
       "ar": "Minarets of Cairo is a bilingual English/Arabic field guide to Cairo's Islamic heritage. The React app presents monuments, periods, stories, walks, maps, comparisons, and personal itinerary/notebook tools through an Express + tRPC server."
     },
     "meta": {
-      "en": "Next.js • Vite • React • TypeScript • Tailwind • Vitest",
-      "ar": "Next.js • Vite • React • TypeScript • Tailwind • Vitest"
+      "en": "Vite • React • TypeScript • Tailwind • Vitest",
+      "ar": "Vite • React • TypeScript • Tailwind • Vitest"
     },
     "category": "Web",
     "client": {
@@ -262,16 +262,20 @@ export const PORTFOLIO_PROJECTS = [
       "ar": "المؤسس والمطور"
     },
     "year": "2026",
-    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EMOC%3C%2Ftext%3E%3C%2Fsvg%3E",
-    "galleryImages": [],
+    "liveUrl": "https://minaretes.vercel.app/",
+    "imageSrc": "https://ik.imagekit.io/hrim/images/minaretes/minaretes1.png",
+    "galleryImages": [
+      "https://ik.imagekit.io/hrim/images/minaretes/minaretes2.png",
+      "https://ik.imagekit.io/hrim/images/minaretes/minaretes3.png",
+      "https://ik.imagekit.io/hrim/images/minaretes/minaretes4.png"
+    ],
     "contentMDX": {
-      "en": "# minarets_of_cairo\n\nMinarets of Cairo is a bilingual English/Arabic field guide to Cairo's Islamic heritage. The React app presents monuments, periods, stories, walks, maps, comparisons, and personal itinerary/notebook tools through an Express + tRPC server.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Project structure\n- Local development\n- AI agent guide\n- Team decisions\n- ImageKit media workflow\n- Database notes\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
-      "ar": "# minarets_of_cairo\n\nMinarets of Cairo is a bilingual English/Arabic field guide to Cairo's Islamic heritage. The React app presents monuments, periods, stories, walks, maps, comparisons, and personal itinerary/notebook tools through an Express + tRPC server.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Project structure\n- Local development\n- AI agent guide\n- Team decisions\n- ImageKit media workflow\n- Database notes\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
+      "en": "# Minaretes of Cairo\n\nMinarets of Cairo is a bilingual English/Arabic field guide to Cairo's Islamic heritage. The React app presents monuments, periods, stories, walks, maps, comparisons, and personal itinerary/notebook tools through an Express + tRPC server.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Project structure\n- Local development\n- AI agent guide\n- Team decisions\n- ImageKit media workflow\n- Database notes\n- NotebookLM research enrichment workflow\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; the repository now includes a source-grounded NotebookLM enrichment workflow and 38 generated public place records.\n\n## Issues / troubles\n\n- Vitest coverage is concentrated in server/heritage.test.ts; broader client and end-to-end coverage is Unknown / verify.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
+      "ar": "# Minaretes of Cairo\n\nMinarets of Cairo is a bilingual English/Arabic field guide to Cairo's Islamic heritage. The React app presents monuments, periods, stories, walks, maps, comparisons, and personal itinerary/notebook tools through an Express + tRPC server.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Project structure\n- Local development\n- AI agent guide\n- Team decisions\n- ImageKit media workflow\n- Database notes\n- NotebookLM research enrichment workflow\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; the repository now includes a source-grounded NotebookLM enrichment workflow and 38 generated public place records.\n\n## Issues / troubles\n\n- Vitest coverage is concentrated in server/heritage.test.ts; broader client and end-to-end coverage is Unknown / verify.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
     },
     "isPublished": true,
     "featured": true,
     "tags": [
-      "Next.js",
       "Vite",
       "React",
       "TypeScript",
@@ -304,16 +308,20 @@ export const PORTFOLIO_PROJECTS = [
       {
         "en": "Database notes",
         "ar": "Database notes"
+      },
+      {
+        "en": "NotebookLM research enrichment workflow",
+        "ar": "NotebookLM research enrichment workflow"
       }
     ],
     "progress": {
-      "en": "Classified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.",
-      "ar": "Classified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence."
+      "en": "Classified as showcase-ready by Dev Stage; the repository now includes a source-grounded NotebookLM enrichment workflow and 38 generated public place records.",
+      "ar": "Classified as showcase-ready by Dev Stage; the repository now includes a source-grounded NotebookLM enrichment workflow and 38 generated public place records."
     },
     "issues": [
       {
-        "en": "No conventional test directory was detected.",
-        "ar": "No conventional test directory was detected."
+        "en": "Vitest coverage is concentrated in server/heritage.test.ts; broader client and end-to-end coverage is Unknown / verify.",
+        "ar": "Vitest coverage is concentrated in server/heritage.test.ts; broader client and end-to-end coverage is Unknown / verify."
       }
     ],
     "suggestions": [
@@ -329,7 +337,7 @@ export const PORTFOLIO_PROJECTS = [
     },
     "source": {
       "workspace": "workspace/minarets_of_cairo",
-      "last_reviewed": "2026-07-29"
+      "last_reviewed": "2026-07-30"
     }
   },
   {

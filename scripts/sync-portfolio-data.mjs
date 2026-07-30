@@ -162,6 +162,7 @@ const portfolioTitleOverrides = {
   'new-etamini': 'Etamini',
   focussessionflow: 'Focus Flow',
   'spec-flow': 'Spec Flow AI',
+  minarets_of_cairo: 'Minaretes of Cairo',
 };
 
 const portfolioImageOverrides = {
@@ -246,6 +247,15 @@ const portfolioImageOverrides = {
       'https://ik.imagekit.io/hrim/images/spec-flo/spec-flo2.png',
       'https://ik.imagekit.io/hrim/images/spec-flow3.png',
       'https://ik.imagekit.io/hrim/images/spec-flow4.png',
+    ],
+  },
+  minarets_of_cairo: {
+    liveUrl: 'https://minaretes.vercel.app/',
+    imageSrc: 'https://ik.imagekit.io/hrim/images/minaretes/minaretes1.png',
+    galleryImages: [
+      'https://ik.imagekit.io/hrim/images/minaretes/minaretes2.png',
+      'https://ik.imagekit.io/hrim/images/minaretes/minaretes3.png',
+      'https://ik.imagekit.io/hrim/images/minaretes/minaretes4.png',
     ],
   },
 };
