@@ -159,6 +159,19 @@ const placeholderImage = (label) => {
   return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
 };
 
+const portfolioImageOverrides = {
+  js2next: {
+    imageSrc: 'https://ik.imagekit.io/hrim/images/js2next/js2next1.png?updatedAt=1785375141944',
+    galleryImages: [
+      'https://ik.imagekit.io/hrim/images/js2next/js2next2.png?updatedAt=1785375140517',
+      'https://ik.imagekit.io/hrim/images/js2next/js2next3.png?updatedAt=1785375140760',
+      'https://ik.imagekit.io/hrim/images/js2next/js2next4.png?updatedAt=1785375141166',
+      'https://ik.imagekit.io/hrim/images/js2next/js2next5.png?updatedAt=1785375141467',
+      'https://ik.imagekit.io/hrim/images/js2next/js2next6.png?updatedAt=1785375140980',
+    ],
+  },
+};
+
 const lastCommitYear = (workspacePath) => {
   try {
     return execFileSync('git', ['-C', workspacePath, 'log', '-1', '--format=%cs'], {
@@ -243,6 +256,7 @@ const buildProject = (registryProject, apexyardRoot, index) => {
     issues: issues.map((issue) => issue.ar),
     suggestions: suggestions.map((suggestion) => suggestion.ar),
   });
+  const imageOverride = portfolioImageOverrides[registryProject.name] ?? {};
 
   return {
     id: `apexyard-${registryProject.name}`,
@@ -254,8 +268,8 @@ const buildProject = (registryProject, apexyardRoot, index) => {
     client: { en: 'Apex Yard / Hany-Labs', ar: 'Apex Yard / Hany-Labs' },
     role: { en: 'Founder & Builder', ar: 'المؤسس والمطور' },
     year: lastCommitYear(workspacePath),
-    imageSrc: placeholderImage(label),
-    galleryImages: [],
+    imageSrc: imageOverride.imageSrc ?? placeholderImage(label),
+    galleryImages: imageOverride.galleryImages ?? [],
     contentMDX: { en: content, ar: arabicContent },
     isPublished: true,
     featured: status === 'showcase' && index < 5,

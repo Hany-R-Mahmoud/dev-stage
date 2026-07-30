@@ -134,7 +134,17 @@ export default function App() {
 
   const [projects, setProjects] = useState<Project[]>(() => {
     const saved = localStorage.getItem(storageKeys.projects);
-    return saved ? JSON.parse(saved) : PORTFOLIO_PROJECTS;
+    if (!saved) return PORTFOLIO_PROJECTS;
+
+    const savedProjects = JSON.parse(saved) as Project[];
+    const savedById = new Map(savedProjects.map((project) => [project.id, project]));
+
+    return PORTFOLIO_PROJECTS.map((project) => {
+      const savedProject = savedById.get(project.id);
+      return savedProject
+        ? { ...savedProject, imageSrc: project.imageSrc, galleryImages: project.galleryImages }
+        : project;
+    });
   });
 
   const [profile, setProfile] = useState<Profile>(() => {
@@ -251,9 +261,9 @@ export default function App() {
     ? publishedProjects 
     : publishedProjects.filter(p => p.category === selectedCategory);
 
-  // Prepare FocusRail Items from Featured Projects
-  const featuredProjects = publishedProjects.filter(p => p.featured);
-  const focusRailItems: FocusRailItem[] = (featuredProjects.length > 0 ? featuredProjects : publishedProjects).map(p => ({
+  // The carousel is reserved for projects with a real cover image URL.
+  const carouselProjects = publishedProjects.filter((project) => /^https?:\/\//.test(project.imageSrc));
+  const focusRailItems: FocusRailItem[] = carouselProjects.map(p => ({
     id: p.id,
     title: p.title[language],
     description: p.description[language],
@@ -323,6 +333,7 @@ export default function App() {
                 {/* The FocusRail Carousel Component */}
                 <FocusRail
                   items={focusRailItems}
+                  isArabic={isAr}
                   autoPlay={true}
                   interval={10000}
                   loop={true}
@@ -389,7 +400,7 @@ export default function App() {
                           <img
                             src={proj.imageSrc}
                             alt={proj.title[language]}
-                            className="h-full w-full object-cover transition-all duration-700 group-hover:scale-105"
+                            className="h-full w-full object-contain transition-all duration-700 group-hover:scale-105"
                           />
                           <div className="absolute top-2.5 ltr:right-2.5 rtl:left-2.5 bg-[#1A1A1A]/90 dark:bg-[#0E0D0C]/90 text-[#F4F2ED] px-2.5 py-1 text-[10px] font-mono tracking-widest uppercase border border-[#D4AF37]/40">
                             {proj.category}

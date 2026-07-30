@@ -66,11 +66,11 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
         <div className={`grid grid-cols-1 ${project.galleryImages && project.galleryImages.length > 0 ? 'md:grid-cols-4' : ''} gap-4 items-start`}>
           {/* Main Visual Frame */}
           <div className={`${project.galleryImages && project.galleryImages.length > 0 ? 'md:col-span-3' : 'w-full'}`}>
-            <div className="relative overflow-hidden border-2 border-[#D4AF37]/50 dark:border-[#D4AF37]/50 h-[200px] sm:h-[280px] md:h-[340px] bg-[#1A1A1A] shadow-[0_8px_32px_rgba(0,0,0,0.25)] group w-full">
+            <div className="relative overflow-hidden border-2 border-[#D4AF37]/50 dark:border-[#D4AF37]/50 aspect-[16/10] bg-[#1A1A1A] shadow-[0_8px_32px_rgba(0,0,0,0.25)] group w-full">
               <img
                 src={displayImage}
                 alt={project.title[language]}
-                className="h-full w-full object-cover transition-all duration-500"
+                className="h-full w-full object-contain transition-all duration-500"
               />
               <div className="absolute bottom-2 ltr:left-2 rtl:right-2 bg-[#1A1A1A]/90 dark:bg-[#0E0D0C]/90 backdrop-blur-md px-2.5 py-1 border border-[#D4AF37]/40 text-[10px] font-mono tracking-widest text-[#F4F2ED] uppercase flex items-center gap-1.5">
                 <ImageIcon className="h-3 w-3 text-[#D4AF37]" />
@@ -89,25 +89,27 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
               <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-1 gap-2 max-h-[340px] overflow-y-auto ltr:pr-1 rtl:pl-1">
                 <button
                   onClick={() => setActiveImage(project.imageSrc)}
-                  className={`relative shrink-0 h-16 sm:h-20 md:h-[98px] w-full overflow-hidden border-2 transition cursor-pointer ${
+                  aria-label={`${project.title[language]} ${isAr ? 'لقطة' : 'screenshot'} 1`}
+                  className={`relative shrink-0 aspect-[16/10] w-full overflow-hidden border-2 transition cursor-pointer ${
                     displayImage === project.imageSrc 
                       ? 'border-[#D4AF37] ring-2 ring-[#D4AF37]/40 scale-[0.98]' 
                       : 'border-[#1A1A1A]/20 dark:border-white/20 opacity-70 hover:opacity-100 hover:border-[#D4AF37]/60'
                   }`}
                 >
-                  <img src={project.imageSrc} alt="" className="h-full w-full object-cover transition-all duration-500" />
+                  <img src={project.imageSrc} alt="" className="h-full w-full object-contain transition-all duration-500" />
                 </button>
                 {project.galleryImages.map((img, idx) => (
                   <button
                     key={idx}
                     onClick={() => setActiveImage(img)}
-                    className={`relative shrink-0 h-16 sm:h-20 md:h-[98px] w-full overflow-hidden border-2 transition cursor-pointer ${
+                    aria-label={`${project.title[language]} ${isAr ? 'لقطة' : 'screenshot'} ${idx + 2}`}
+                    className={`relative shrink-0 aspect-[16/10] w-full overflow-hidden border-2 transition cursor-pointer ${
                       displayImage === img 
                         ? 'border-[#D4AF37] ring-2 ring-[#D4AF37]/40 scale-[0.98]' 
                         : 'border-[#1A1A1A]/20 dark:border-white/20 opacity-70 hover:opacity-100 hover:border-[#D4AF37]/60'
                     }`}
                   >
-                    <img src={img} alt="" className="h-full w-full object-cover transition-all duration-500" />
+                    <img src={img} alt="" className="h-full w-full object-contain transition-all duration-500" />
                   </button>
                 ))}
               </div>

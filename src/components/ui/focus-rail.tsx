@@ -22,6 +22,7 @@ export type FocusRailItem = {
 
 interface FocusRailProps {
   items: FocusRailItem[];
+  isArabic?: boolean;
   initialIndex?: number;
   loop?: boolean;
   autoPlay?: boolean;
@@ -62,6 +63,7 @@ const TAP_SPRING = {
 
 export function FocusRail({
   items,
+  isArabic = false,
   initialIndex = 0,
   loop = true,
   autoPlay = true,
@@ -116,10 +118,10 @@ export function FocusRail({
 
   // Autoplay logic
   React.useEffect(() => {
-    if (!autoPlay || isHovering) return;
+    if (!autoPlay || isHovering || count < 2) return;
     const timer = setInterval(() => handleNext(), interval);
     return () => clearInterval(timer);
-  }, [autoPlay, isHovering, handleNext, interval]);
+  }, [autoPlay, isHovering, handleNext, interval, count]);
 
   // Keyboard navigation
   const onKeyDown = (e: React.KeyboardEvent) => {
@@ -143,7 +145,7 @@ export function FocusRail({
     }
   };
 
-  const visibleIndices = [-2, -1, 0, 1, 2];
+  const visibleIndices = count === 1 ? [0] : [-2, -1, 0, 1, 2];
 
   return (
     <div
@@ -212,7 +214,7 @@ export function FocusRail({
               <motion.div
                 key={absIndex}
                 className={cn(
-                  "absolute aspect-[3/4] w-[250px] md:w-[290px] border bg-[#EBE5DE] dark:bg-[#181716] shadow-xl transition-all duration-300 overflow-hidden",
+                  "absolute aspect-[16/10] w-[280px] md:w-[360px] border bg-[#1A1A1A] dark:bg-[#0E0D0C] shadow-xl transition-all duration-300 overflow-hidden",
                   isCenter 
                     ? "z-20 border-2 border-[#D4AF37] shadow-[0_12px_32px_rgba(0,0,0,0.25)] ring-1 ring-[#1A1A1A]/20 dark:ring-white/20 cursor-grab active:cursor-grabbing" 
                     : "z-10 border-[#1A1A1A]/20 dark:border-white/15 cursor-pointer"
@@ -244,7 +246,7 @@ export function FocusRail({
                   src={item.imageSrc}
                   alt={item.title}
                   className={cn(
-                    "h-full w-full object-cover pointer-events-none transition-all duration-700",
+                    "h-full w-full object-contain pointer-events-none transition-all duration-700",
                     isCenter ? "grayscale-0" : "grayscale"
                   )}
                 />
@@ -255,7 +257,7 @@ export function FocusRail({
                 {isCenter && (
                   <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between pointer-events-none">
                     <span className="text-[9px] font-mono tracking-widest uppercase px-3 py-1 bg-[#1A1A1A] dark:bg-[#F4F2ED] text-[#D4AF37] dark:text-[#0E0D0C] border border-[#1A1A1A] dark:border-white/20">
-                      {typeof document !== 'undefined' && document.documentElement.dir === 'rtl' ? 'مشروع مميز' : 'FEATURED WORK'}
+                      {isArabic ? 'مشروع مميز' : 'FEATURED WORK'}
                     </span>
                   </div>
                 )}
@@ -310,7 +312,7 @@ export function FocusRail({
                 className="group flex items-center gap-2 bg-[#1A1A1A] dark:bg-[#F4F2ED] text-white dark:text-[#0E0D0C] hover:bg-[#D4AF37] hover:text-[#1A1A1A] dark:hover:bg-[#D4AF37] dark:hover:text-[#0E0D0C] px-6 py-2.5 text-xs font-mono uppercase tracking-[0.2em] transition-colors duration-300 shadow-md cursor-pointer border border-[#1A1A1A] dark:border-white/20"
               >
                 <span>
-                  {typeof document !== 'undefined' && document.documentElement.dir === 'rtl' ? 'التفاصيل' : 'DETAILS'}
+                  {isArabic ? 'التفاصيل' : 'DETAILS'}
                 </span>
                 <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 ltr:group-hover:translate-x-0.5 rtl:group-hover:-translate-x-0.5 rtl:-scale-x-100" />
               </a>

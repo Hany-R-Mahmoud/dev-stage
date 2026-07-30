@@ -50,9 +50,29 @@ export function ProjectDetailPage({ project, language }: ProjectDetailPageProps)
           </div>
         </header>
 
-        <figure className="overflow-hidden border-2 border-[#D4AF37]/50 bg-[#1A1A1A]">
-          <img src={project.imageSrc} alt={project.title[language]} className="w-full object-cover" />
+        <figure className="aspect-[16/10] overflow-hidden border-2 border-[#D4AF37]/50 bg-[#1A1A1A]">
+          <img src={project.imageSrc} alt={project.title[language]} className="h-full w-full object-contain" />
         </figure>
+
+        {project.galleryImages.length > 0 && (
+          <section className="space-y-4" aria-labelledby="project-gallery-heading">
+            <h2 id="project-gallery-heading" className="font-serif-luxury text-2xl font-bold text-[#1A1A1A] dark:text-[#F4F2ED]">
+              {isAr ? 'معرض الصور' : 'Project gallery'}
+            </h2>
+            <div className="grid gap-4 sm:grid-cols-2">
+              {project.galleryImages.map((image, index) => (
+                <figure key={image} className="aspect-[16/10] overflow-hidden border border-[#1A1A1A]/15 dark:border-white/15 bg-[#1A1A1A]">
+                  <img
+                    src={image}
+                    alt={`${project.title[language]} ${isAr ? 'لقطة' : 'screenshot'} ${index + 2}`}
+                    loading="lazy"
+                    className="h-full w-full object-contain"
+                  />
+                </figure>
+              ))}
+            </div>
+          </section>
+        )}
 
         {project.progress && (
           <section className="border-l-2 border-[#D4AF37] bg-[#EBE5DE]/60 dark:bg-[#1E1D1B] p-5 sm:p-6">
