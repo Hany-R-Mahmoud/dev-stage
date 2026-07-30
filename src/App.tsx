@@ -168,6 +168,7 @@ export default function App() {
     return saved
       ? {
           ...JSON.parse(saved),
+          name: PORTFOLIO_PROFILE.name,
           title: PORTFOLIO_PROFILE.title,
           bio: PORTFOLIO_PROFILE.bio,
           avatar: PORTFOLIO_PROFILE.avatar,
