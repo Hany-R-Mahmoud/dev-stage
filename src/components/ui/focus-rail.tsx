@@ -11,6 +11,7 @@ export type FocusRailItem = {
   description?: string;
   imageSrc: string;
   href?: string;
+  liveUrl?: string;
   meta?: string;
   category?: string;
   client?: string;
@@ -150,7 +151,7 @@ export function FocusRail({
   return (
     <div
       className={cn(
-        "group relative flex h-[520px] w-full flex-col overflow-hidden bg-[#F9F8F6] dark:bg-[#0E0D0C] text-[#1A1A1A] dark:text-[#F4F2ED] outline-none select-none overflow-x-hidden border-t-4 border-t-[#D4AF37] border-x border-b border-[#1A1A1A]/20 dark:border-white/15 shadow-[0_4px_24px_rgba(0,0,0,0.04)] dark:shadow-[0_8px_32px_rgba(0,0,0,0.5)] font-sans-luxury transition-colors duration-300",
+        "group relative flex h-[560px] w-full flex-col overflow-hidden bg-[#F9F8F6] dark:bg-[#0E0D0C] text-[#1A1A1A] dark:text-[#F4F2ED] outline-none select-none overflow-x-hidden border-t-4 border-t-[#D4AF37] border-x border-b border-[#1A1A1A]/20 dark:border-white/15 shadow-[0_4px_24px_rgba(0,0,0,0.04)] dark:shadow-[0_8px_32px_rgba(0,0,0,0.5)] font-sans-luxury transition-colors duration-300",
         className
       )}
       onMouseEnter={() => setIsHovering(true)}
@@ -184,7 +185,7 @@ export function FocusRail({
       <div className="relative z-10 flex flex-1 flex-col justify-center px-4 md:px-8">
         {/* DRAGGABLE RAIL CONTAINER */}
         <motion.div
-          className="relative mx-auto flex h-[300px] w-full max-w-6xl items-center justify-center perspective-[1200px] cursor-grab active:cursor-grabbing"
+          className="relative mx-auto flex h-[340px] w-full max-w-6xl items-center justify-center perspective-[1200px] cursor-grab active:cursor-grabbing"
           drag="x"
           dragConstraints={{ left: 0, right: 0 }}
           dragElastic={0.2}
@@ -201,7 +202,7 @@ export function FocusRail({
             const dist = Math.abs(offset);
 
             // Dynamic transforms
-            const xOffset = offset * 320;
+            const xOffset = offset * 380;
             const zOffset = -dist * 180;
             const scale = isCenter ? 1 : 0.85;
             const rotateY = offset * -20;
@@ -214,7 +215,7 @@ export function FocusRail({
               <motion.div
                 key={absIndex}
                 className={cn(
-                  "absolute aspect-[16/10] w-[280px] md:w-[360px] border bg-[#1A1A1A] dark:bg-[#0E0D0C] shadow-xl transition-all duration-300 overflow-hidden",
+                  "absolute aspect-[16/10] w-[min(84vw,360px)] md:w-[440px] border bg-[#1A1A1A] dark:bg-[#0E0D0C] shadow-xl transition-all duration-300 overflow-hidden",
                   isCenter 
                     ? "z-20 border-2 border-[#D4AF37] shadow-[0_12px_32px_rgba(0,0,0,0.25)] ring-1 ring-[#1A1A1A]/20 dark:ring-white/20 cursor-grab active:cursor-grabbing" 
                     : "z-10 border-[#1A1A1A]/20 dark:border-white/15 cursor-pointer"
@@ -286,11 +287,21 @@ export function FocusRail({
                 <h2 className="font-serif-luxury text-3xl font-bold tracking-tight md:text-4xl text-[#1A1A1A] dark:text-[#F4F2ED]">
                   {activeItem.title}
                 </h2>
-                {activeItem.description && (
+                {activeItem.liveUrl ? (
+                  <a
+                    href={activeItem.liveUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="group inline-flex items-center gap-1.5 text-sm font-mono uppercase tracking-widest text-[#6C6863] dark:text-[#A39E98] hover:text-[#D4AF37] transition-colors"
+                  >
+                    <span>{isArabic ? 'زيارة الموقع' : 'Visit the website'}</span>
+                    <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 ltr:group-hover:translate-x-0.5 rtl:group-hover:-translate-x-0.5 rtl:-scale-x-100" />
+                  </a>
+                ) : activeItem.description ? (
                   <p className="max-w-lg text-[#6C6863] dark:text-[#A39E98] text-sm md:text-base line-clamp-2 font-sans-luxury">
                     {activeItem.description}
                   </p>
-                )}
+                ) : null}
               </motion.div>
             </AnimatePresence>
           </div>

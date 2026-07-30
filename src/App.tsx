@@ -286,6 +286,7 @@ export default function App() {
     description: p.description[language],
     meta: p.meta[language],
     imageSrc: p.imageSrc,
+    liveUrl: p.liveUrl,
     category: p.category,
     client: p.client[language],
     href: localizedPath(language, 'portfolio', p.slug),
