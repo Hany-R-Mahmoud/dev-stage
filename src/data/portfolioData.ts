@@ -7,7 +7,7 @@ export const PORTFOLIO_PROFILE = {
   },
   "title": {
     "en": "Software Engineer | Agentic coding | React Native, Next.js & TypeScript | Fintech, Secure Auth & AI-Assisted Development",
-    "ar": "مؤسس ومطور في Apex Yard"
+    "ar": "المؤسس والمطور"
   },
   "bio": {
     "en": "Once a doctor, always a doctor",
@@ -36,8 +36,8 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-bawaba",
     "slug": "bawaba",
     "title": {
-      "en": "بوابة · Bawaba",
-      "ar": "بوابة · Bawaba"
+      "en": "bawaba",
+      "ar": "bawaba"
     },
     "description": {
       "en": "A bilingual (Arabic/English, RTL/LTR) creator portfolio + project workspace.",
@@ -49,19 +49,19 @@ export const PORTFOLIO_PROJECTS = [
     },
     "category": "Web",
     "client": {
-      "en": "Apex Yard / Hany-Labs",
-      "ar": "Apex Yard / Hany-Labs"
+      "en": "Independent",
+      "ar": "مستقل"
     },
     "role": {
       "en": "Founder & Builder",
       "ar": "المؤسس والمطور"
     },
     "year": "2026",
-    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3E%D8%A8B%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EBA%3C%2Ftext%3E%3C%2Fsvg%3E",
     "galleryImages": [],
     "contentMDX": {
-      "en": "# بوابة · Bawaba\n\nA bilingual (Arabic/English, RTL/LTR) creator portfolio + project workspace.\n\n## Apex Yard snapshot\n\n- Status: in-progress\n- Category: Web\n- Tech stack: Next.js, React, TypeScript, Supabase, Tailwind\n\n## Features\n\n- Framework: Next.js 16 App Router, React 19, TypeScript strict.\n- Database: Supabase Postgres with RLS policies (see `supabase/schema.sql`).\n- Auth: Clerk with `clerkMiddleware()` protecting `/dashboard/` and\n- Design: dark-first, OKLCH tokens in `app/globals.css` (Tailwind v4\n- RTL: `LanguageProvider` (React Context) toggles `<html dir>` between\n- i18n: bilingual dictionaries in `lib/i18n/dictionaries/{ar,en}.ts` with\n\n## Progress\n\nClassified as in progress by Apex Yard; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Record the next milestone and known blockers in this portfolio document.",
-      "ar": "# بوابة · Bawaba\n\nA bilingual (Arabic/English, RTL/LTR) creator portfolio + project workspace.\n\n## Apex Yard snapshot\n\n- Status: in-progress\n- Category: Web\n- Tech stack: Next.js, React, TypeScript, Supabase, Tailwind\n\n## Features\n\n- Framework: Next.js 16 App Router, React 19, TypeScript strict.\n- Database: Supabase Postgres with RLS policies (see `supabase/schema.sql`).\n- Auth: Clerk with `clerkMiddleware()` protecting `/dashboard/` and\n- Design: dark-first, OKLCH tokens in `app/globals.css` (Tailwind v4\n- RTL: `LanguageProvider` (React Context) toggles `<html dir>` between\n- i18n: bilingual dictionaries in `lib/i18n/dictionaries/{ar,en}.ts` with\n\n## Progress\n\nClassified as in progress by Apex Yard; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Record the next milestone and known blockers in this portfolio document."
+      "en": "# bawaba\n\nA bilingual (Arabic/English, RTL/LTR) creator portfolio + project workspace.\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Web\n- Tech stack: Next.js, React, TypeScript, Supabase, Tailwind\n\n## Features\n\n- Framework: Next.js 16 App Router, React 19, TypeScript strict.\n- Database: Supabase Postgres with RLS policies (see `supabase/schema.sql`).\n- Auth: Clerk with `clerkMiddleware()` protecting `/dashboard/` and\n- Design: dark-first, OKLCH tokens in `app/globals.css` (Tailwind v4\n- RTL: `LanguageProvider` (React Context) toggles `<html dir>` between\n- i18n: bilingual dictionaries in `lib/i18n/dictionaries/{ar,en}.ts` with\n\n## Progress\n\nClassified as in progress by Dev Stage; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Record the next milestone and known blockers in this portfolio document.",
+      "ar": "# bawaba\n\nA bilingual (Arabic/English, RTL/LTR) creator portfolio + project workspace.\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Web\n- Tech stack: Next.js, React, TypeScript, Supabase, Tailwind\n\n## Features\n\n- Framework: Next.js 16 App Router, React 19, TypeScript strict.\n- Database: Supabase Postgres with RLS policies (see `supabase/schema.sql`).\n- Auth: Clerk with `clerkMiddleware()` protecting `/dashboard/` and\n- Design: dark-first, OKLCH tokens in `app/globals.css` (Tailwind v4\n- RTL: `LanguageProvider` (React Context) toggles `<html dir>` between\n- i18n: bilingual dictionaries in `lib/i18n/dictionaries/{ar,en}.ts` with\n\n## Progress\n\nClassified as in progress by Dev Stage; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Record the next milestone and known blockers in this portfolio document."
     },
     "isPublished": true,
     "featured": false,
@@ -101,8 +101,8 @@ export const PORTFOLIO_PROJECTS = [
       }
     ],
     "progress": {
-      "en": "Classified as in progress by Apex Yard; implementation and scope are still evolving.",
-      "ar": "Classified as in progress by Apex Yard; implementation and scope are still evolving."
+      "en": "Classified as in progress by Dev Stage; implementation and scope are still evolving.",
+      "ar": "Classified as in progress by Dev Stage; implementation and scope are still evolving."
     },
     "issues": [
       {
@@ -138,8 +138,8 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-focussessionflow",
     "slug": "focussessionflow",
     "title": {
-      "en": "FocusSessionFlow",
-      "ar": "FocusSessionFlow"
+      "en": "focussessionflow",
+      "ar": "focussessionflow"
     },
     "description": {
       "en": "An offline-first focus session planner for students, freelancers, and knowledge workers. Plan focused work sessions, track your time, capture distractions, and review patterns—all locally, without requiring an account or internet connection. Coordinate focus sessions with others ",
@@ -151,8 +151,8 @@ export const PORTFOLIO_PROJECTS = [
     },
     "category": "Web",
     "client": {
-      "en": "Apex Yard / Hany-Labs",
-      "ar": "Apex Yard / Hany-Labs"
+      "en": "Independent",
+      "ar": "مستقل"
     },
     "role": {
       "en": "Founder & Builder",
@@ -162,8 +162,8 @@ export const PORTFOLIO_PROJECTS = [
     "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EFO%3C%2Ftext%3E%3C%2Fsvg%3E",
     "galleryImages": [],
     "contentMDX": {
-      "en": "# FocusSessionFlow\n\nAn offline-first focus session planner for students, freelancers, and knowledge workers. Plan focused work sessions, track your time, capture distractions, and review patterns—all locally, without requiring an account or internet connection. Coordinate focus sessions with others \n\n## Apex Yard snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Supabase, Tailwind, Vitest\n\n## Features\n\n- Session Templates: Create reusable focus session templates (e.g., \"Deep Work 90min\", \"Quick Focus 25min\")\n- Active Timer: Start sessions with a countdown timer, pause/resume, and track elapsed time\n- Distraction Capture: Log distractions during sessions (phone, email, social media, thoughts, other)\n- Task Intention & Outcome: Record what you're focusing on and what you accomplished\n- Session History: View all completed sessions with details, outcomes, and distraction counts\n- Daily Review: Reflect on your focus day with session stats and personal notes\n\n## Progress\n\nClassified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- Unknown / verify — no issue inventory was found in the current repository sources.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
-      "ar": "# FocusSessionFlow\n\nAn offline-first focus session planner for students, freelancers, and knowledge workers. Plan focused work sessions, track your time, capture distractions, and review patterns—all locally, without requiring an account or internet connection. Coordinate focus sessions with others \n\n## Apex Yard snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Supabase, Tailwind, Vitest\n\n## Features\n\n- Session Templates: Create reusable focus session templates (e.g., \"Deep Work 90min\", \"Quick Focus 25min\")\n- Active Timer: Start sessions with a countdown timer, pause/resume, and track elapsed time\n- Distraction Capture: Log distractions during sessions (phone, email, social media, thoughts, other)\n- Task Intention & Outcome: Record what you're focusing on and what you accomplished\n- Session History: View all completed sessions with details, outcomes, and distraction counts\n- Daily Review: Reflect on your focus day with session stats and personal notes\n\n## Progress\n\nClassified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- Unknown / verify — no issue inventory was found in the current repository sources.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
+      "en": "# focussessionflow\n\nAn offline-first focus session planner for students, freelancers, and knowledge workers. Plan focused work sessions, track your time, capture distractions, and review patterns—all locally, without requiring an account or internet connection. Coordinate focus sessions with others \n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Supabase, Tailwind, Vitest\n\n## Features\n\n- Session Templates: Create reusable focus session templates (e.g., \"Deep Work 90min\", \"Quick Focus 25min\")\n- Active Timer: Start sessions with a countdown timer, pause/resume, and track elapsed time\n- Distraction Capture: Log distractions during sessions (phone, email, social media, thoughts, other)\n- Task Intention & Outcome: Record what you're focusing on and what you accomplished\n- Session History: View all completed sessions with details, outcomes, and distraction counts\n- Daily Review: Reflect on your focus day with session stats and personal notes\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- Unknown / verify — no issue inventory was found in the current repository sources.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
+      "ar": "# focussessionflow\n\nAn offline-first focus session planner for students, freelancers, and knowledge workers. Plan focused work sessions, track your time, capture distractions, and review patterns—all locally, without requiring an account or internet connection. Coordinate focus sessions with others \n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Supabase, Tailwind, Vitest\n\n## Features\n\n- Session Templates: Create reusable focus session templates (e.g., \"Deep Work 90min\", \"Quick Focus 25min\")\n- Active Timer: Start sessions with a countdown timer, pause/resume, and track elapsed time\n- Distraction Capture: Log distractions during sessions (phone, email, social media, thoughts, other)\n- Task Intention & Outcome: Record what you're focusing on and what you accomplished\n- Session History: View all completed sessions with details, outcomes, and distraction counts\n- Daily Review: Reflect on your focus day with session stats and personal notes\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- Unknown / verify — no issue inventory was found in the current repository sources.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
     },
     "isPublished": true,
     "featured": true,
@@ -205,8 +205,8 @@ export const PORTFOLIO_PROJECTS = [
       }
     ],
     "progress": {
-      "en": "Classified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.",
-      "ar": "Classified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence."
+      "en": "Classified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.",
+      "ar": "Classified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence."
     },
     "issues": [
       {
@@ -234,8 +234,8 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-minarets_of_cairo",
     "slug": "minarets_of_cairo",
     "title": {
-      "en": "Minarets of Cairo",
-      "ar": "Minarets of Cairo"
+      "en": "minarets_of_cairo",
+      "ar": "minarets_of_cairo"
     },
     "description": {
       "en": "Minarets of Cairo is a bilingual English/Arabic field guide to Cairo's Islamic heritage. The React app presents monuments, periods, stories, walks, maps, comparisons, and personal itinerary/notebook tools through an Express + tRPC server.",
@@ -247,8 +247,8 @@ export const PORTFOLIO_PROJECTS = [
     },
     "category": "Web",
     "client": {
-      "en": "Apex Yard / Hany-Labs",
-      "ar": "Apex Yard / Hany-Labs"
+      "en": "Independent",
+      "ar": "مستقل"
     },
     "role": {
       "en": "Founder & Builder",
@@ -258,8 +258,8 @@ export const PORTFOLIO_PROJECTS = [
     "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EMOC%3C%2Ftext%3E%3C%2Fsvg%3E",
     "galleryImages": [],
     "contentMDX": {
-      "en": "# Minarets of Cairo\n\nMinarets of Cairo is a bilingual English/Arabic field guide to Cairo's Islamic heritage. The React app presents monuments, periods, stories, walks, maps, comparisons, and personal itinerary/notebook tools through an Express + tRPC server.\n\n## Apex Yard snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Project structure\n- Local development\n- AI agent guide\n- Team decisions\n- ImageKit media workflow\n- Database notes\n\n## Progress\n\nClassified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
-      "ar": "# Minarets of Cairo\n\nMinarets of Cairo is a bilingual English/Arabic field guide to Cairo's Islamic heritage. The React app presents monuments, periods, stories, walks, maps, comparisons, and personal itinerary/notebook tools through an Express + tRPC server.\n\n## Apex Yard snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Project structure\n- Local development\n- AI agent guide\n- Team decisions\n- ImageKit media workflow\n- Database notes\n\n## Progress\n\nClassified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
+      "en": "# minarets_of_cairo\n\nMinarets of Cairo is a bilingual English/Arabic field guide to Cairo's Islamic heritage. The React app presents monuments, periods, stories, walks, maps, comparisons, and personal itinerary/notebook tools through an Express + tRPC server.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Project structure\n- Local development\n- AI agent guide\n- Team decisions\n- ImageKit media workflow\n- Database notes\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
+      "ar": "# minarets_of_cairo\n\nMinarets of Cairo is a bilingual English/Arabic field guide to Cairo's Islamic heritage. The React app presents monuments, periods, stories, walks, maps, comparisons, and personal itinerary/notebook tools through an Express + tRPC server.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Project structure\n- Local development\n- AI agent guide\n- Team decisions\n- ImageKit media workflow\n- Database notes\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
     },
     "isPublished": true,
     "featured": true,
@@ -300,8 +300,8 @@ export const PORTFOLIO_PROJECTS = [
       }
     ],
     "progress": {
-      "en": "Classified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.",
-      "ar": "Classified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence."
+      "en": "Classified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.",
+      "ar": "Classified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence."
     },
     "issues": [
       {
@@ -329,12 +329,12 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-js2next",
     "slug": "js2next",
     "title": {
-      "en": "learn-next",
-      "ar": "learn-next"
+      "en": "js2next",
+      "ar": "js2next"
     },
     "description": {
-      "en": "A project managed in the Apex Yard workspace.",
-      "ar": "A project managed in the Apex Yard workspace."
+      "en": "A project managed in the Dev Stage workspace.",
+      "ar": "A project managed in the Dev Stage workspace."
     },
     "meta": {
       "en": "Next.js • Vite • React • TypeScript • Tailwind • Vitest",
@@ -342,8 +342,8 @@ export const PORTFOLIO_PROJECTS = [
     },
     "category": "Web",
     "client": {
-      "en": "Apex Yard / Hany-Labs",
-      "ar": "Apex Yard / Hany-Labs"
+      "en": "Independent",
+      "ar": "مستقل"
     },
     "role": {
       "en": "Founder & Builder",
@@ -359,8 +359,8 @@ export const PORTFOLIO_PROJECTS = [
       "https://ik.imagekit.io/hrim/images/js2next/js2next6.png?updatedAt=1785375140980"
     ],
     "contentMDX": {
-      "en": "# learn-next\n\nA project managed in the Apex Yard workspace.\n\n## Apex Yard snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Current feature inventory: Unknown / verify.\n\n## Progress\n\nClassified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
-      "ar": "# learn-next\n\nA project managed in the Apex Yard workspace.\n\n## Apex Yard snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Current feature inventory: Unknown / verify.\n\n## Progress\n\nClassified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
+      "en": "# js2next\n\nA project managed in the Dev Stage workspace.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- 79 source-backed learning packets with three-level learner guidance and Egyptian Arabic notes.\n- 632 assessment questions with code-first practice coverage for coding and hybrid tracks.\n\n## Progress\n\nFull content rewrite applied across the packet source, Markdown previews, and shared question bank; production build passes.\n\n## Issues / troubles\n\n- 205 source claims remain pending human review; rewritten content remains draft and unpublished.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
+      "ar": "# js2next\n\nA project managed in the Dev Stage workspace.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- 79 حزمة تعليمية موثقة مع إرشاد لثلاثة مستويات وملاحظات بالعربي المصري.\n- 632 سؤال تقييم مع تغطية عملية تبدأ بالكود لمسارات البرمجة والمسارات الهجينة.\n\n## Progress\n\nتم تطبيق إعادة كتابة كاملة على مصادر الحزم ومعاينات Markdown وبنك الأسئلة؛ وبناء الإنتاج يمر بنجاح.\n\n## Issues / troubles\n\n- لا تزال 205 مطالبة مصدرية في انتظار المراجعة البشرية؛ والمحتوى المعاد كتابته مسودة وغير منشور.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
     },
     "isPublished": true,
     "featured": true,
@@ -376,18 +376,22 @@ export const PORTFOLIO_PROJECTS = [
     "status": "showcase",
     "features": [
       {
-        "en": "Current feature inventory: Unknown / verify.",
-        "ar": "Current feature inventory: Unknown / verify."
+        "en": "79 source-backed learning packets with three-level learner guidance and Egyptian Arabic notes.",
+        "ar": "79 حزمة تعليمية موثقة مع إرشاد لثلاثة مستويات وملاحظات بالعربي المصري."
+      },
+      {
+        "en": "632 assessment questions with code-first practice coverage for coding and hybrid tracks.",
+        "ar": "632 سؤال تقييم مع تغطية عملية تبدأ بالكود لمسارات البرمجة والمسارات الهجينة."
       }
     ],
     "progress": {
-      "en": "Classified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.",
-      "ar": "Classified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence."
+      "en": "Full content rewrite applied across the packet source, Markdown previews, and shared question bank; production build passes.",
+      "ar": "تم تطبيق إعادة كتابة كاملة على مصادر الحزم ومعاينات Markdown وبنك الأسئلة؛ وبناء الإنتاج يمر بنجاح."
     },
     "issues": [
       {
-        "en": "No conventional test directory was detected.",
-        "ar": "No conventional test directory was detected."
+        "en": "205 source claims remain pending human review; rewritten content remains draft and unpublished.",
+        "ar": "لا تزال 205 مطالبة مصدرية في انتظار المراجعة البشرية؛ والمحتوى المعاد كتابته مسودة وغير منشور."
       }
     ],
     "suggestions": [
@@ -403,19 +407,19 @@ export const PORTFOLIO_PROJECTS = [
     },
     "source": {
       "workspace": "workspace/js2next",
-      "last_reviewed": "2026-07-29"
+      "last_reviewed": "2026-07-30"
     }
   },
   {
     "id": "apexyard-new-etamini",
     "slug": "new-etamini",
     "title": {
-      "en": "tanstack_start_ts",
-      "ar": "tanstack_start_ts"
+      "en": "new-etamini",
+      "ar": "new-etamini"
     },
     "description": {
-      "en": "A project managed in the Apex Yard workspace.",
-      "ar": "A project managed in the Apex Yard workspace."
+      "en": "A project managed in the Dev Stage workspace.",
+      "ar": "A project managed in the Dev Stage workspace."
     },
     "meta": {
       "en": "Vite • React • TypeScript • Tailwind • Capacitor • Vitest",
@@ -423,19 +427,19 @@ export const PORTFOLIO_PROJECTS = [
     },
     "category": "Web",
     "client": {
-      "en": "Apex Yard / Hany-Labs",
-      "ar": "Apex Yard / Hany-Labs"
+      "en": "Independent",
+      "ar": "مستقل"
     },
     "role": {
       "en": "Founder & Builder",
       "ar": "المؤسس والمطور"
     },
     "year": "2026",
-    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3ETST%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3ENE%3C%2Ftext%3E%3C%2Fsvg%3E",
     "galleryImages": [],
     "contentMDX": {
-      "en": "# tanstack_start_ts\n\nA project managed in the Apex Yard workspace.\n\n## Apex Yard snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Vite, React, TypeScript, Tailwind, Capacitor, Vitest\n\n## Features\n\n- Current feature inventory: Unknown / verify.\n\n## Progress\n\nClassified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
-      "ar": "# tanstack_start_ts\n\nA project managed in the Apex Yard workspace.\n\n## Apex Yard snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Vite, React, TypeScript, Tailwind, Capacitor, Vitest\n\n## Features\n\n- Current feature inventory: Unknown / verify.\n\n## Progress\n\nClassified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
+      "en": "# new-etamini\n\nA project managed in the Dev Stage workspace.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Vite, React, TypeScript, Tailwind, Capacitor, Vitest\n\n## Features\n\n- Current feature inventory: Unknown / verify.\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
+      "ar": "# new-etamini\n\nA project managed in the Dev Stage workspace.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Vite, React, TypeScript, Tailwind, Capacitor, Vitest\n\n## Features\n\n- Current feature inventory: Unknown / verify.\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
     },
     "isPublished": true,
     "featured": true,
@@ -456,8 +460,8 @@ export const PORTFOLIO_PROJECTS = [
       }
     ],
     "progress": {
-      "en": "Classified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.",
-      "ar": "Classified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence."
+      "en": "Classified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.",
+      "ar": "Classified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence."
     },
     "issues": [
       {
@@ -485,8 +489,8 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-yahya",
     "slug": "yahya",
     "title": {
-      "en": "يحيا",
-      "ar": "يحيا"
+      "en": "yahya",
+      "ar": "yahya"
     },
     "description": {
       "en": "Arabic-first, Egypt-focused cancer awareness and navigation platform.",
@@ -498,19 +502,19 @@ export const PORTFOLIO_PROJECTS = [
     },
     "category": "Web",
     "client": {
-      "en": "Apex Yard / Hany-Labs",
-      "ar": "Apex Yard / Hany-Labs"
+      "en": "Independent",
+      "ar": "مستقل"
     },
     "role": {
       "en": "Founder & Builder",
       "ar": "المؤسس والمطور"
     },
     "year": "2026",
-    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3E%D9%8A%D8%AD%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EYA%3C%2Ftext%3E%3C%2Fsvg%3E",
     "galleryImages": [],
     "contentMDX": {
-      "en": "# يحيا\n\nArabic-first, Egypt-focused cancer awareness and navigation platform.\n\n## Apex Yard snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Capacitor, Vitest\n\n## Features\n\n- Project Structure\n- AI Agent Guide\n- Team Decisions\n- Known gaps: exact deployment pipeline, prod data-source verification, and cur test coverage details.\n\n## Progress\n\nClassified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
-      "ar": "# يحيا\n\nArabic-first, Egypt-focused cancer awareness and navigation platform.\n\n## Apex Yard snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Capacitor, Vitest\n\n## Features\n\n- Project Structure\n- AI Agent Guide\n- Team Decisions\n- Known gaps: exact deployment pipeline, prod data-source verification, and cur test coverage details.\n\n## Progress\n\nClassified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
+      "en": "# yahya\n\nArabic-first, Egypt-focused cancer awareness and navigation platform.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Capacitor, Vitest\n\n## Features\n\n- Project Structure\n- AI Agent Guide\n- Team Decisions\n- Known gaps: exact deployment pipeline, prod data-source verification, and cur test coverage details.\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
+      "ar": "# yahya\n\nArabic-first, Egypt-focused cancer awareness and navigation platform.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Capacitor, Vitest\n\n## Features\n\n- Project Structure\n- AI Agent Guide\n- Team Decisions\n- Known gaps: exact deployment pipeline, prod data-source verification, and cur test coverage details.\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
     },
     "isPublished": true,
     "featured": false,
@@ -544,8 +548,8 @@ export const PORTFOLIO_PROJECTS = [
       }
     ],
     "progress": {
-      "en": "Classified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.",
-      "ar": "Classified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence."
+      "en": "Classified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.",
+      "ar": "Classified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence."
     },
     "issues": [
       {
@@ -573,8 +577,8 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-the-agency-mobile-game",
     "slug": "the-agency-mobile-game",
     "title": {
-      "en": "The Agency: Command Ops",
-      "ar": "The Agency: Command Ops"
+      "en": "the-agency-mobile-game",
+      "ar": "the-agency-mobile-game"
     },
     "description": {
       "en": "The Agency: Command Ops is a mobile-first strategy game built with React, TypeScript, Vite, Zustand, and Capacitor for Android packaging.",
@@ -586,19 +590,19 @@ export const PORTFOLIO_PROJECTS = [
     },
     "category": "Web",
     "client": {
-      "en": "Apex Yard / Hany-Labs",
-      "ar": "Apex Yard / Hany-Labs"
+      "en": "Independent",
+      "ar": "مستقل"
     },
     "role": {
       "en": "Founder & Builder",
       "ar": "المؤسس والمطور"
     },
     "year": "2026",
-    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3ETAC%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3ETAM%3C%2Ftext%3E%3C%2Fsvg%3E",
     "galleryImages": [],
     "contentMDX": {
-      "en": "# The Agency: Command Ops\n\nThe Agency: Command Ops is a mobile-first strategy game built with React, TypeScript, Vite, Zustand, and Capacitor for Android packaging.\n\n## Apex Yard snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Vite, React, TypeScript, Capacitor\n\n## Features\n\n- 19 named specialist agents with unique roles, voice lines, skills, and department assignments\n- 6 departments that shape mission flavor, load, morale, and progression\n- Story-driven operations with multi-step decision points\n- Trust, synergy, rivalry, rank, XP, credits, and upgrade systems\n- Mobile-first single-screen UI designed to feel like a command console\n- Android packaging via Capacitor so the web app can be built into an installable APK\n\n## Progress\n\nClassified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
-      "ar": "# The Agency: Command Ops\n\nThe Agency: Command Ops is a mobile-first strategy game built with React, TypeScript, Vite, Zustand, and Capacitor for Android packaging.\n\n## Apex Yard snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Vite, React, TypeScript, Capacitor\n\n## Features\n\n- 19 named specialist agents with unique roles, voice lines, skills, and department assignments\n- 6 departments that shape mission flavor, load, morale, and progression\n- Story-driven operations with multi-step decision points\n- Trust, synergy, rivalry, rank, XP, credits, and upgrade systems\n- Mobile-first single-screen UI designed to feel like a command console\n- Android packaging via Capacitor so the web app can be built into an installable APK\n\n## Progress\n\nClassified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
+      "en": "# the-agency-mobile-game\n\nThe Agency: Command Ops is a mobile-first strategy game built with React, TypeScript, Vite, Zustand, and Capacitor for Android packaging.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Vite, React, TypeScript, Capacitor\n\n## Features\n\n- 19 named specialist agents with unique roles, voice lines, skills, and department assignments\n- 6 departments that shape mission flavor, load, morale, and progression\n- Story-driven operations with multi-step decision points\n- Trust, synergy, rivalry, rank, XP, credits, and upgrade systems\n- Mobile-first single-screen UI designed to feel like a command console\n- Android packaging via Capacitor so the web app can be built into an installable APK\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
+      "ar": "# the-agency-mobile-game\n\nThe Agency: Command Ops is a mobile-first strategy game built with React, TypeScript, Vite, Zustand, and Capacitor for Android packaging.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Vite, React, TypeScript, Capacitor\n\n## Features\n\n- 19 named specialist agents with unique roles, voice lines, skills, and department assignments\n- 6 departments that shape mission flavor, load, morale, and progression\n- Story-driven operations with multi-step decision points\n- Trust, synergy, rivalry, rank, XP, credits, and upgrade systems\n- Mobile-first single-screen UI designed to feel like a command console\n- Android packaging via Capacitor so the web app can be built into an installable APK\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
     },
     "isPublished": true,
     "featured": false,
@@ -637,8 +641,8 @@ export const PORTFOLIO_PROJECTS = [
       }
     ],
     "progress": {
-      "en": "Classified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.",
-      "ar": "Classified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence."
+      "en": "Classified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.",
+      "ar": "Classified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence."
     },
     "issues": [
       {
@@ -687,8 +691,8 @@ export const PORTFOLIO_PROJECTS = [
     },
     "category": "Web",
     "client": {
-      "en": "Apex Yard / Hany-Labs",
-      "ar": "Apex Yard / Hany-Labs"
+      "en": "Independent",
+      "ar": "مستقل"
     },
     "role": {
       "en": "Founder & Builder",
@@ -698,8 +702,8 @@ export const PORTFOLIO_PROJECTS = [
     "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3ELP%3C%2Ftext%3E%3C%2Fsvg%3E",
     "galleryImages": [],
     "contentMDX": {
-      "en": "# linkedin-project\n\nBootstrap repository for a repo-owned, semi-automated LinkedIn content workflow.\n\n## Apex Yard snapshot\n\n- Status: prototype\n- Category: Web\n- Tech stack: Vite, TypeScript, Vitest\n\n## Features\n\n- TypeScript CLI bootstrap\n- config-driven source registry\n- file-based project storage\n- seed history and manual-note paths\n- live Phase 2 source collection for GitHub Atom, RSS, and manual notes\n- `pnpm collect` now fetches live source entries and writes normalized candidates plus raw source snapshots under `data/candidates/`.\n\n## Progress\n\nClassified as a prototype by Apex Yard; evidence and scope remain early-stage.\n\n## Issues / troubles\n\n- Unknown / verify — no issue inventory was found in the current repository sources.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document.",
-      "ar": "# linkedin-project\n\nBootstrap repository for a repo-owned, semi-automated LinkedIn content workflow.\n\n## Apex Yard snapshot\n\n- Status: prototype\n- Category: Web\n- Tech stack: Vite, TypeScript, Vitest\n\n## Features\n\n- TypeScript CLI bootstrap\n- config-driven source registry\n- file-based project storage\n- seed history and manual-note paths\n- live Phase 2 source collection for GitHub Atom, RSS, and manual notes\n- `pnpm collect` now fetches live source entries and writes normalized candidates plus raw source snapshots under `data/candidates/`.\n\n## Progress\n\nClassified as a prototype by Apex Yard; evidence and scope remain early-stage.\n\n## Issues / troubles\n\n- Unknown / verify — no issue inventory was found in the current repository sources.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document."
+      "en": "# linkedin-project\n\nBootstrap repository for a repo-owned, semi-automated LinkedIn content workflow.\n\n## Project snapshot\n\n- Status: prototype\n- Category: Web\n- Tech stack: Vite, TypeScript, Vitest\n\n## Features\n\n- TypeScript CLI bootstrap\n- config-driven source registry\n- file-based project storage\n- seed history and manual-note paths\n- live Phase 2 source collection for GitHub Atom, RSS, and manual notes\n- `pnpm collect` now fetches live source entries and writes normalized candidates plus raw source snapshots under `data/candidates/`.\n\n## Progress\n\nClassified as a prototype by Dev Stage; evidence and scope remain early-stage.\n\n## Issues / troubles\n\n- Unknown / verify — no issue inventory was found in the current repository sources.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document.",
+      "ar": "# linkedin-project\n\nBootstrap repository for a repo-owned, semi-automated LinkedIn content workflow.\n\n## Project snapshot\n\n- Status: prototype\n- Category: Web\n- Tech stack: Vite, TypeScript, Vitest\n\n## Features\n\n- TypeScript CLI bootstrap\n- config-driven source registry\n- file-based project storage\n- seed history and manual-note paths\n- live Phase 2 source collection for GitHub Atom, RSS, and manual notes\n- `pnpm collect` now fetches live source entries and writes normalized candidates plus raw source snapshots under `data/candidates/`.\n\n## Progress\n\nClassified as a prototype by Dev Stage; evidence and scope remain early-stage.\n\n## Issues / troubles\n\n- Unknown / verify — no issue inventory was found in the current repository sources.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document."
     },
     "isPublished": true,
     "featured": false,
@@ -737,8 +741,8 @@ export const PORTFOLIO_PROJECTS = [
       }
     ],
     "progress": {
-      "en": "Classified as a prototype by Apex Yard; evidence and scope remain early-stage.",
-      "ar": "Classified as a prototype by Apex Yard; evidence and scope remain early-stage."
+      "en": "Classified as a prototype by Dev Stage; evidence and scope remain early-stage.",
+      "ar": "Classified as a prototype by Dev Stage; evidence and scope remain early-stage."
     },
     "issues": [
       {
@@ -766,8 +770,8 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-skills-agency",
     "slug": "skills-agency",
     "title": {
-      "en": "Skills Agency",
-      "ar": "Skills Agency"
+      "en": "skills-agency",
+      "ar": "skills-agency"
     },
     "description": {
       "en": "Next.js 16 + App Router scaffold for The Agency v2, built with TypeScript, Ant Design, SCSS modules, and spec-kit initialization for both Codex and OpenCode workflows.",
@@ -779,8 +783,8 @@ export const PORTFOLIO_PROJECTS = [
     },
     "category": "Web",
     "client": {
-      "en": "Apex Yard / Hany-Labs",
-      "ar": "Apex Yard / Hany-Labs"
+      "en": "Independent",
+      "ar": "مستقل"
     },
     "role": {
       "en": "Founder & Builder",
@@ -790,8 +794,8 @@ export const PORTFOLIO_PROJECTS = [
     "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3ESA%3C%2Ftext%3E%3C%2Fsvg%3E",
     "galleryImages": [],
     "contentMDX": {
-      "en": "# Skills Agency\n\nNext.js 16 + App Router scaffold for The Agency v2, built with TypeScript, Ant Design, SCSS modules, and spec-kit initialization for both Codex and OpenCode workflows.\n\n## Apex Yard snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, React, TypeScript\n\n## Features\n\n- spec-kit (`.specify`, `.agents`, `.opencode`)\n- `src/app`: app routes and root layout\n- `src/components`: layout, department, agent, and shared UI components\n- `src/data/skills.json`: starter agency data\n- `src/lib`: types, utilities, and future audio placeholder\n- `src/styles`: global theme tokens and Ant Design config\n\n## Progress\n\nClassified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
-      "ar": "# Skills Agency\n\nNext.js 16 + App Router scaffold for The Agency v2, built with TypeScript, Ant Design, SCSS modules, and spec-kit initialization for both Codex and OpenCode workflows.\n\n## Apex Yard snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, React, TypeScript\n\n## Features\n\n- spec-kit (`.specify`, `.agents`, `.opencode`)\n- `src/app`: app routes and root layout\n- `src/components`: layout, department, agent, and shared UI components\n- `src/data/skills.json`: starter agency data\n- `src/lib`: types, utilities, and future audio placeholder\n- `src/styles`: global theme tokens and Ant Design config\n\n## Progress\n\nClassified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
+      "en": "# skills-agency\n\nNext.js 16 + App Router scaffold for The Agency v2, built with TypeScript, Ant Design, SCSS modules, and spec-kit initialization for both Codex and OpenCode workflows.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, React, TypeScript\n\n## Features\n\n- spec-kit (`.specify`, `.agents`, `.opencode`)\n- `src/app`: app routes and root layout\n- `src/components`: layout, department, agent, and shared UI components\n- `src/data/skills.json`: starter agency data\n- `src/lib`: types, utilities, and future audio placeholder\n- `src/styles`: global theme tokens and Ant Design config\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
+      "ar": "# skills-agency\n\nNext.js 16 + App Router scaffold for The Agency v2, built with TypeScript, Ant Design, SCSS modules, and spec-kit initialization for both Codex and OpenCode workflows.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, React, TypeScript\n\n## Features\n\n- spec-kit (`.specify`, `.agents`, `.opencode`)\n- `src/app`: app routes and root layout\n- `src/components`: layout, department, agent, and shared UI components\n- `src/data/skills.json`: starter agency data\n- `src/lib`: types, utilities, and future audio placeholder\n- `src/styles`: global theme tokens and Ant Design config\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
     },
     "isPublished": true,
     "featured": false,
@@ -829,8 +833,8 @@ export const PORTFOLIO_PROJECTS = [
       }
     ],
     "progress": {
-      "en": "Classified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.",
-      "ar": "Classified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence."
+      "en": "Classified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.",
+      "ar": "Classified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence."
     },
     "issues": [
       {
@@ -866,8 +870,8 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-skills-agency-mobile",
     "slug": "skills-agency-mobile",
     "title": {
-      "en": "Skills Agency Mobile",
-      "ar": "Skills Agency Mobile"
+      "en": "skills-agency-mobile",
+      "ar": "skills-agency-mobile"
     },
     "description": {
       "en": "Native mobile app for The Agency, built with Expo, Expo Router, and React Native.",
@@ -879,8 +883,8 @@ export const PORTFOLIO_PROJECTS = [
     },
     "category": "Mobile",
     "client": {
-      "en": "Apex Yard / Hany-Labs",
-      "ar": "Apex Yard / Hany-Labs"
+      "en": "Independent",
+      "ar": "مستقل"
     },
     "role": {
       "en": "Founder & Builder",
@@ -890,8 +894,8 @@ export const PORTFOLIO_PROJECTS = [
     "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3ESAM%3C%2Ftext%3E%3C%2Fsvg%3E",
     "galleryImages": [],
     "contentMDX": {
-      "en": "# Skills Agency Mobile\n\nNative mobile app for The Agency, built with Expo, Expo Router, and React Native.\n\n## Apex Yard snapshot\n\n- Status: showcase\n- Category: Mobile\n- Tech stack: Expo, React Native, React, TypeScript\n\n## Features\n\n- React Native 0.81\n- Android Studio with Android SDK installed\n- The app resolves downloadable pack links to the live website at skills-agency.vercel.app.\n- Build artifacts, local machine metadata, and generated APK files are ignored by Git on purpose.\n\n## Progress\n\nClassified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
-      "ar": "# Skills Agency Mobile\n\nNative mobile app for The Agency, built with Expo, Expo Router, and React Native.\n\n## Apex Yard snapshot\n\n- Status: showcase\n- Category: Mobile\n- Tech stack: Expo, React Native, React, TypeScript\n\n## Features\n\n- React Native 0.81\n- Android Studio with Android SDK installed\n- The app resolves downloadable pack links to the live website at skills-agency.vercel.app.\n- Build artifacts, local machine metadata, and generated APK files are ignored by Git on purpose.\n\n## Progress\n\nClassified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
+      "en": "# skills-agency-mobile\n\nNative mobile app for The Agency, built with Expo, Expo Router, and React Native.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Mobile\n- Tech stack: Expo, React Native, React, TypeScript\n\n## Features\n\n- React Native 0.81\n- Android Studio with Android SDK installed\n- The app resolves downloadable pack links to the live website at skills-agency.vercel.app.\n- Build artifacts, local machine metadata, and generated APK files are ignored by Git on purpose.\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
+      "ar": "# skills-agency-mobile\n\nNative mobile app for The Agency, built with Expo, Expo Router, and React Native.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Mobile\n- Tech stack: Expo, React Native, React, TypeScript\n\n## Features\n\n- React Native 0.81\n- Android Studio with Android SDK installed\n- The app resolves downloadable pack links to the live website at skills-agency.vercel.app.\n- Build artifacts, local machine metadata, and generated APK files are ignored by Git on purpose.\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
     },
     "isPublished": true,
     "featured": false,
@@ -922,8 +926,8 @@ export const PORTFOLIO_PROJECTS = [
       }
     ],
     "progress": {
-      "en": "Classified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.",
-      "ar": "Classified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence."
+      "en": "Classified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.",
+      "ar": "Classified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence."
     },
     "issues": [
       {
@@ -959,8 +963,8 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-token-tracker-dashboard",
     "slug": "token-tracker-dashboard",
     "title": {
-      "en": "Token Tracker Dashboard",
-      "ar": "Token Tracker Dashboard"
+      "en": "token-tracker-dashboard",
+      "ar": "token-tracker-dashboard"
     },
     "description": {
       "en": "<div align=\"center\"> <img src=\"./public/logo.png\" alt=\"Token Tracker Dashboard logo\" width=\"96\" /> <h1>Token Tracker Dashboard</h1> <p><strong>The web command center for monitoring AI token usage, provider health, session quality, and team activity.</strong></p> <p> <img alt=\"Rea",
@@ -972,8 +976,8 @@ export const PORTFOLIO_PROJECTS = [
     },
     "category": "Web",
     "client": {
-      "en": "Apex Yard / Hany-Labs",
-      "ar": "Apex Yard / Hany-Labs"
+      "en": "Independent",
+      "ar": "مستقل"
     },
     "role": {
       "en": "Founder & Builder",
@@ -983,8 +987,8 @@ export const PORTFOLIO_PROJECTS = [
     "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3ETTD%3C%2Ftext%3E%3C%2Fsvg%3E",
     "galleryImages": [],
     "contentMDX": {
-      "en": "# Token Tracker Dashboard\n\n<div align=\"center\"> <img src=\"./public/logo.png\" alt=\"Token Tracker Dashboard logo\" width=\"96\" /> <h1>Token Tracker Dashboard</h1> <p><strong>The web command center for monitoring AI token usage, provider health, session quality, and team activity.</strong></p> <p> <img alt=\"Rea\n\n## Apex Yard snapshot\n\n- Status: in-progress\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Spend, token, latency, and throughput visibility\n- Provider integrity and health-state monitoring\n- Session investigation and triage workflows\n- Team leaderboard and usage patterns\n- Analytics views for trends, composition, and operational cadence\n- Settings and admin surfaces prepared for deeper backend wiring\n\n## Progress\n\nClassified as in progress by Apex Yard; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document.",
-      "ar": "# Token Tracker Dashboard\n\n<div align=\"center\"> <img src=\"./public/logo.png\" alt=\"Token Tracker Dashboard logo\" width=\"96\" /> <h1>Token Tracker Dashboard</h1> <p><strong>The web command center for monitoring AI token usage, provider health, session quality, and team activity.</strong></p> <p> <img alt=\"Rea\n\n## Apex Yard snapshot\n\n- Status: in-progress\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Spend, token, latency, and throughput visibility\n- Provider integrity and health-state monitoring\n- Session investigation and triage workflows\n- Team leaderboard and usage patterns\n- Analytics views for trends, composition, and operational cadence\n- Settings and admin surfaces prepared for deeper backend wiring\n\n## Progress\n\nClassified as in progress by Apex Yard; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document."
+      "en": "# token-tracker-dashboard\n\n<div align=\"center\"> <img src=\"./public/logo.png\" alt=\"Token Tracker Dashboard logo\" width=\"96\" /> <h1>Token Tracker Dashboard</h1> <p><strong>The web command center for monitoring AI token usage, provider health, session quality, and team activity.</strong></p> <p> <img alt=\"Rea\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Spend, token, latency, and throughput visibility\n- Provider integrity and health-state monitoring\n- Session investigation and triage workflows\n- Team leaderboard and usage patterns\n- Analytics views for trends, composition, and operational cadence\n- Settings and admin surfaces prepared for deeper backend wiring\n\n## Progress\n\nClassified as in progress by Dev Stage; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document.",
+      "ar": "# token-tracker-dashboard\n\n<div align=\"center\"> <img src=\"./public/logo.png\" alt=\"Token Tracker Dashboard logo\" width=\"96\" /> <h1>Token Tracker Dashboard</h1> <p><strong>The web command center for monitoring AI token usage, provider health, session quality, and team activity.</strong></p> <p> <img alt=\"Rea\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Spend, token, latency, and throughput visibility\n- Provider integrity and health-state monitoring\n- Session investigation and triage workflows\n- Team leaderboard and usage patterns\n- Analytics views for trends, composition, and operational cadence\n- Settings and admin surfaces prepared for deeper backend wiring\n\n## Progress\n\nClassified as in progress by Dev Stage; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document."
     },
     "isPublished": true,
     "featured": false,
@@ -1025,8 +1029,8 @@ export const PORTFOLIO_PROJECTS = [
       }
     ],
     "progress": {
-      "en": "Classified as in progress by Apex Yard; implementation and scope are still evolving.",
-      "ar": "Classified as in progress by Apex Yard; implementation and scope are still evolving."
+      "en": "Classified as in progress by Dev Stage; implementation and scope are still evolving.",
+      "ar": "Classified as in progress by Dev Stage; implementation and scope are still evolving."
     },
     "issues": [
       {
@@ -1054,8 +1058,8 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-token-tracker-mobile",
     "slug": "token-tracker-mobile",
     "title": {
-      "en": "Token Tracker Mobile",
-      "ar": "Token Tracker Mobile"
+      "en": "token-tracker-mobile",
+      "ar": "token-tracker-mobile"
     },
     "description": {
       "en": "<div align=\"center\"> <img src=\"./assets/images/logo.png\" alt=\"Token Tracker Mobile logo\" width=\"96\" /> <h1>Token Tracker Mobile</h1> <p><strong>The mobile companion for monitoring AI token usage, provider health, session quality, and team activity on the go.</strong></p> <p> <img",
@@ -1067,8 +1071,8 @@ export const PORTFOLIO_PROJECTS = [
     },
     "category": "Mobile",
     "client": {
-      "en": "Apex Yard / Hany-Labs",
-      "ar": "Apex Yard / Hany-Labs"
+      "en": "Independent",
+      "ar": "مستقل"
     },
     "role": {
       "en": "Founder & Builder",
@@ -1078,8 +1082,8 @@ export const PORTFOLIO_PROJECTS = [
     "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3ETTM%3C%2Ftext%3E%3C%2Fsvg%3E",
     "galleryImages": [],
     "contentMDX": {
-      "en": "# Token Tracker Mobile\n\n<div align=\"center\"> <img src=\"./assets/images/logo.png\" alt=\"Token Tracker Mobile logo\" width=\"96\" /> <h1>Token Tracker Mobile</h1> <p><strong>The mobile companion for monitoring AI token usage, provider health, session quality, and team activity on the go.</strong></p> <p> <img\n\n## Apex Yard snapshot\n\n- Status: in-progress\n- Category: Mobile\n- Tech stack: Expo, React Native, React, TypeScript\n\n## Features\n\n- Mobile-first overview of key AI operations metrics\n- Analytics and trend monitoring on smaller screens\n- Team and leaderboard visibility\n- Shared visual identity with the dashboard repo\n- Native Android build output for device testing\n- Expo Router structure for continued mobile feature delivery\n\n## Progress\n\nClassified as in progress by Apex Yard; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Record the next milestone and known blockers in this portfolio document.",
-      "ar": "# Token Tracker Mobile\n\n<div align=\"center\"> <img src=\"./assets/images/logo.png\" alt=\"Token Tracker Mobile logo\" width=\"96\" /> <h1>Token Tracker Mobile</h1> <p><strong>The mobile companion for monitoring AI token usage, provider health, session quality, and team activity on the go.</strong></p> <p> <img\n\n## Apex Yard snapshot\n\n- Status: in-progress\n- Category: Mobile\n- Tech stack: Expo, React Native, React, TypeScript\n\n## Features\n\n- Mobile-first overview of key AI operations metrics\n- Analytics and trend monitoring on smaller screens\n- Team and leaderboard visibility\n- Shared visual identity with the dashboard repo\n- Native Android build output for device testing\n- Expo Router structure for continued mobile feature delivery\n\n## Progress\n\nClassified as in progress by Apex Yard; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Record the next milestone and known blockers in this portfolio document."
+      "en": "# token-tracker-mobile\n\n<div align=\"center\"> <img src=\"./assets/images/logo.png\" alt=\"Token Tracker Mobile logo\" width=\"96\" /> <h1>Token Tracker Mobile</h1> <p><strong>The mobile companion for monitoring AI token usage, provider health, session quality, and team activity on the go.</strong></p> <p> <img\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Mobile\n- Tech stack: Expo, React Native, React, TypeScript\n\n## Features\n\n- Mobile-first overview of key AI operations metrics\n- Analytics and trend monitoring on smaller screens\n- Team and leaderboard visibility\n- Shared visual identity with the dashboard repo\n- Native Android build output for device testing\n- Expo Router structure for continued mobile feature delivery\n\n## Progress\n\nClassified as in progress by Dev Stage; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Record the next milestone and known blockers in this portfolio document.",
+      "ar": "# token-tracker-mobile\n\n<div align=\"center\"> <img src=\"./assets/images/logo.png\" alt=\"Token Tracker Mobile logo\" width=\"96\" /> <h1>Token Tracker Mobile</h1> <p><strong>The mobile companion for monitoring AI token usage, provider health, session quality, and team activity on the go.</strong></p> <p> <img\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Mobile\n- Tech stack: Expo, React Native, React, TypeScript\n\n## Features\n\n- Mobile-first overview of key AI operations metrics\n- Analytics and trend monitoring on smaller screens\n- Team and leaderboard visibility\n- Shared visual identity with the dashboard repo\n- Native Android build output for device testing\n- Expo Router structure for continued mobile feature delivery\n\n## Progress\n\nClassified as in progress by Dev Stage; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Record the next milestone and known blockers in this portfolio document."
     },
     "isPublished": true,
     "featured": false,
@@ -1118,8 +1122,8 @@ export const PORTFOLIO_PROJECTS = [
       }
     ],
     "progress": {
-      "en": "Classified as in progress by Apex Yard; implementation and scope are still evolving.",
-      "ar": "Classified as in progress by Apex Yard; implementation and scope are still evolving."
+      "en": "Classified as in progress by Dev Stage; implementation and scope are still evolving.",
+      "ar": "Classified as in progress by Dev Stage; implementation and scope are still evolving."
     },
     "issues": [
       {
@@ -1155,8 +1159,8 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-spec-flow",
     "slug": "spec-flow",
     "title": {
-      "en": "workspace",
-      "ar": "workspace"
+      "en": "spec-flow",
+      "ar": "spec-flow"
     },
     "description": {
       "en": "<div align=\"center\"> <img src=\"./artifacts/specflow-ai/public/favicon.svg\" alt=\"SpecFlow AI logo\" width=\"88\" /> <h1>SpecFlow AI</h1> <p><strong>From rough idea to review-ready stories.</strong></p> <p> SpecFlow AI turns scattered product input into a guided workflow for breakdown",
@@ -1168,19 +1172,19 @@ export const PORTFOLIO_PROJECTS = [
     },
     "category": "Tools",
     "client": {
-      "en": "Apex Yard / Hany-Labs",
-      "ar": "Apex Yard / Hany-Labs"
+      "en": "Independent",
+      "ar": "مستقل"
     },
     "role": {
       "en": "Founder & Builder",
       "ar": "المؤسس والمطور"
     },
     "year": "2026",
-    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EWO%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3ESF%3C%2Ftext%3E%3C%2Fsvg%3E",
     "galleryImages": [],
     "contentMDX": {
-      "en": "# workspace\n\n<div align=\"center\"> <img src=\"./artifacts/specflow-ai/public/favicon.svg\" alt=\"SpecFlow AI logo\" width=\"88\" /> <h1>SpecFlow AI</h1> <p><strong>From rough idea to review-ready stories.</strong></p> <p> SpecFlow AI turns scattered product input into a guided workflow for breakdown\n\n## Apex Yard snapshot\n\n- Status: showcase\n- Category: Tools\n- Tech stack: TypeScript\n\n## Features\n\n- Public landing experience for explaining the product and routing users into the app\n- Authenticated web app for running breakdown workflows\n- Express API server for auth-scoped application behavior\n- Shared API contracts and generated client packages\n- Shared database schema package for the Supabase-hosted Postgres runtime\n- Repo-owned docs in `docs/`\n\n## Progress\n\nClassified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
-      "ar": "# workspace\n\n<div align=\"center\"> <img src=\"./artifacts/specflow-ai/public/favicon.svg\" alt=\"SpecFlow AI logo\" width=\"88\" /> <h1>SpecFlow AI</h1> <p><strong>From rough idea to review-ready stories.</strong></p> <p> SpecFlow AI turns scattered product input into a guided workflow for breakdown\n\n## Apex Yard snapshot\n\n- Status: showcase\n- Category: Tools\n- Tech stack: TypeScript\n\n## Features\n\n- Public landing experience for explaining the product and routing users into the app\n- Authenticated web app for running breakdown workflows\n- Express API server for auth-scoped application behavior\n- Shared API contracts and generated client packages\n- Shared database schema package for the Supabase-hosted Postgres runtime\n- Repo-owned docs in `docs/`\n\n## Progress\n\nClassified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
+      "en": "# spec-flow\n\n<div align=\"center\"> <img src=\"./artifacts/specflow-ai/public/favicon.svg\" alt=\"SpecFlow AI logo\" width=\"88\" /> <h1>SpecFlow AI</h1> <p><strong>From rough idea to review-ready stories.</strong></p> <p> SpecFlow AI turns scattered product input into a guided workflow for breakdown\n\n## Project snapshot\n\n- Status: showcase\n- Category: Tools\n- Tech stack: TypeScript\n\n## Features\n\n- Public landing experience for explaining the product and routing users into the app\n- Authenticated web app for running breakdown workflows\n- Express API server for auth-scoped application behavior\n- Shared API contracts and generated client packages\n- Shared database schema package for the Supabase-hosted Postgres runtime\n- Repo-owned docs in `docs/`\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
+      "ar": "# spec-flow\n\n<div align=\"center\"> <img src=\"./artifacts/specflow-ai/public/favicon.svg\" alt=\"SpecFlow AI logo\" width=\"88\" /> <h1>SpecFlow AI</h1> <p><strong>From rough idea to review-ready stories.</strong></p> <p> SpecFlow AI turns scattered product input into a guided workflow for breakdown\n\n## Project snapshot\n\n- Status: showcase\n- Category: Tools\n- Tech stack: TypeScript\n\n## Features\n\n- Public landing experience for explaining the product and routing users into the app\n- Authenticated web app for running breakdown workflows\n- Express API server for auth-scoped application behavior\n- Shared API contracts and generated client packages\n- Shared database schema package for the Supabase-hosted Postgres runtime\n- Repo-owned docs in `docs/`\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
     },
     "isPublished": true,
     "featured": false,
@@ -1216,8 +1220,8 @@ export const PORTFOLIO_PROJECTS = [
       }
     ],
     "progress": {
-      "en": "Classified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.",
-      "ar": "Classified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence."
+      "en": "Classified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.",
+      "ar": "Classified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence."
     },
     "issues": [
       {
@@ -1253,8 +1257,8 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-dep-audit",
     "slug": "dep-audit",
     "title": {
-      "en": "`dep-audit` — Dependency risk and license compliance dashboard",
-      "ar": "`dep-audit` — Dependency risk and license compliance dashboard"
+      "en": "dependency-audit",
+      "ar": "dependency-audit"
     },
     "description": {
       "en": "Dependency risk and license compliance dashboard for Node.js projects.",
@@ -1266,19 +1270,19 @@ export const PORTFOLIO_PROJECTS = [
     },
     "category": "Web",
     "client": {
-      "en": "Apex Yard / Hany-Labs",
-      "ar": "Apex Yard / Hany-Labs"
+      "en": "Independent",
+      "ar": "مستقل"
     },
     "role": {
       "en": "Founder & Builder",
       "ar": "المؤسس والمطور"
     },
     "year": "2026",
-    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EDAD%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EDA%3C%2Ftext%3E%3C%2Fsvg%3E",
     "galleryImages": [],
     "contentMDX": {
-      "en": "# `dep-audit` — Dependency risk and license compliance dashboard\n\nDependency risk and license compliance dashboard for Node.js projects.\n\n## Apex Yard snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Vite, TypeScript, Vitest\n\n## Features\n\n- Monorepo support — auto-detects npm/pnpm/yarn/bun/Nx/Lerna workspaces, scans\n- Vulnerabilities — `npm audit` results, deduplicated, normalized, with\n- Outdated — `npm outdated` results with current / wanted / latest\n- License compliance — walks `nodemodules`, compares every license\n- Risk score — per-package and project-wide, with documented\n- Dependency tree — hierarchical indented tree (VS Code explorer style).\n\n## Progress\n\nClassified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
-      "ar": "# `dep-audit` — Dependency risk and license compliance dashboard\n\nDependency risk and license compliance dashboard for Node.js projects.\n\n## Apex Yard snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Vite, TypeScript, Vitest\n\n## Features\n\n- Monorepo support — auto-detects npm/pnpm/yarn/bun/Nx/Lerna workspaces, scans\n- Vulnerabilities — `npm audit` results, deduplicated, normalized, with\n- Outdated — `npm outdated` results with current / wanted / latest\n- License compliance — walks `nodemodules`, compares every license\n- Risk score — per-package and project-wide, with documented\n- Dependency tree — hierarchical indented tree (VS Code explorer style).\n\n## Progress\n\nClassified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
+      "en": "# dependency-audit\n\nDependency risk and license compliance dashboard for Node.js projects.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Vite, TypeScript, Vitest\n\n## Features\n\n- Monorepo support — auto-detects npm/pnpm/yarn/bun/Nx/Lerna workspaces, scans\n- Vulnerabilities — `npm audit` results, deduplicated, normalized, with\n- Outdated — `npm outdated` results with current / wanted / latest\n- License compliance — walks `nodemodules`, compares every license\n- Risk score — per-package and project-wide, with documented\n- Dependency tree — hierarchical indented tree (VS Code explorer style).\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
+      "ar": "# dependency-audit\n\nDependency risk and license compliance dashboard for Node.js projects.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Vite, TypeScript, Vitest\n\n## Features\n\n- Monorepo support — auto-detects npm/pnpm/yarn/bun/Nx/Lerna workspaces, scans\n- Vulnerabilities — `npm audit` results, deduplicated, normalized, with\n- Outdated — `npm outdated` results with current / wanted / latest\n- License compliance — walks `nodemodules`, compares every license\n- Risk score — per-package and project-wide, with documented\n- Dependency tree — hierarchical indented tree (VS Code explorer style).\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
     },
     "isPublished": true,
     "featured": false,
@@ -1316,13 +1320,13 @@ export const PORTFOLIO_PROJECTS = [
       }
     ],
     "progress": {
-      "en": "Classified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.",
-      "ar": "Classified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence."
+      "en": "Classified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.",
+      "ar": "Classified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence."
     },
     "issues": [
       {
-        "en": "This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.",
-        "ar": "This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace."
+        "en": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.",
+        "ar": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace."
       }
     ],
     "suggestions": [
@@ -1344,8 +1348,8 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-routine",
     "slug": "routine",
     "title": {
-      "en": "روتين (Routine) — Arabic Daily Habit Tracker",
-      "ar": "روتين (Routine) — Arabic Daily Habit Tracker"
+      "en": "routine",
+      "ar": "routine"
     },
     "description": {
       "en": "```bash pnpm install pnpm dev ```",
@@ -1357,19 +1361,19 @@ export const PORTFOLIO_PROJECTS = [
     },
     "category": "Mobile",
     "client": {
-      "en": "Apex Yard / Hany-Labs",
-      "ar": "Apex Yard / Hany-Labs"
+      "en": "Independent",
+      "ar": "مستقل"
     },
     "role": {
       "en": "Founder & Builder",
       "ar": "المؤسس والمطور"
     },
     "year": "2026",
-    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3E%D8%B1RA%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3ERO%3C%2Ftext%3E%3C%2Fsvg%3E",
     "galleryImages": [],
     "contentMDX": {
-      "en": "# روتين (Routine) — Arabic Daily Habit Tracker\n\n```bash pnpm install pnpm dev ```\n\n## Apex Yard snapshot\n\n- Status: in-progress\n- Category: Mobile\n- Tech stack: Vite, Expo, React Native, React, TypeScript, Vitest\n\n## Features\n\n- `src/storage/storage.ts` — AsyncStorage repository (habits, completions, meta). Only module touching storage.\n- `src/storage/seed.ts` — First-launch seed (Nadia's 5 habits with synthetic completion history).\n- `src/lib/dates.ts` — DateKey helpers (YYYY-MM-DD), date arithmetic\n- `src/lib/frequency.ts` — isDueOn (daily vs weekday-specific)\n- `src/lib/streaks.ts` — currentStreak, bestStreak (consecutive due days)\n- `src/lib/heatmap.ts` — dayStatus, buildHeatmap (4-week color grid)\n\n## Progress\n\nClassified as in progress by Apex Yard; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document.",
-      "ar": "# روتين (Routine) — Arabic Daily Habit Tracker\n\n```bash pnpm install pnpm dev ```\n\n## Apex Yard snapshot\n\n- Status: in-progress\n- Category: Mobile\n- Tech stack: Vite, Expo, React Native, React, TypeScript, Vitest\n\n## Features\n\n- `src/storage/storage.ts` — AsyncStorage repository (habits, completions, meta). Only module touching storage.\n- `src/storage/seed.ts` — First-launch seed (Nadia's 5 habits with synthetic completion history).\n- `src/lib/dates.ts` — DateKey helpers (YYYY-MM-DD), date arithmetic\n- `src/lib/frequency.ts` — isDueOn (daily vs weekday-specific)\n- `src/lib/streaks.ts` — currentStreak, bestStreak (consecutive due days)\n- `src/lib/heatmap.ts` — dayStatus, buildHeatmap (4-week color grid)\n\n## Progress\n\nClassified as in progress by Apex Yard; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document."
+      "en": "# routine\n\n```bash pnpm install pnpm dev ```\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Mobile\n- Tech stack: Vite, Expo, React Native, React, TypeScript, Vitest\n\n## Features\n\n- `src/storage/storage.ts` — AsyncStorage repository (habits, completions, meta). Only module touching storage.\n- `src/storage/seed.ts` — First-launch seed (Nadia's 5 habits with synthetic completion history).\n- `src/lib/dates.ts` — DateKey helpers (YYYY-MM-DD), date arithmetic\n- `src/lib/frequency.ts` — isDueOn (daily vs weekday-specific)\n- `src/lib/streaks.ts` — currentStreak, bestStreak (consecutive due days)\n- `src/lib/heatmap.ts` — dayStatus, buildHeatmap (4-week color grid)\n\n## Progress\n\nClassified as in progress by Dev Stage; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document.",
+      "ar": "# routine\n\n```bash pnpm install pnpm dev ```\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Mobile\n- Tech stack: Vite, Expo, React Native, React, TypeScript, Vitest\n\n## Features\n\n- `src/storage/storage.ts` — AsyncStorage repository (habits, completions, meta). Only module touching storage.\n- `src/storage/seed.ts` — First-launch seed (Nadia's 5 habits with synthetic completion history).\n- `src/lib/dates.ts` — DateKey helpers (YYYY-MM-DD), date arithmetic\n- `src/lib/frequency.ts` — isDueOn (daily vs weekday-specific)\n- `src/lib/streaks.ts` — currentStreak, bestStreak (consecutive due days)\n- `src/lib/heatmap.ts` — dayStatus, buildHeatmap (4-week color grid)\n\n## Progress\n\nClassified as in progress by Dev Stage; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document."
     },
     "isPublished": true,
     "featured": false,
@@ -1410,13 +1414,13 @@ export const PORTFOLIO_PROJECTS = [
       }
     ],
     "progress": {
-      "en": "Classified as in progress by Apex Yard; implementation and scope are still evolving.",
-      "ar": "Classified as in progress by Apex Yard; implementation and scope are still evolving."
+      "en": "Classified as in progress by Dev Stage; implementation and scope are still evolving.",
+      "ar": "Classified as in progress by Dev Stage; implementation and scope are still evolving."
     },
     "issues": [
       {
-        "en": "This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.",
-        "ar": "This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace."
+        "en": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.",
+        "ar": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace."
       }
     ],
     "suggestions": [
@@ -1438,102 +1442,53 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-yalla-goal",
     "slug": "yalla-goal",
     "title": {
-      "en": "GoalReviewBase",
-      "ar": "GoalReviewBase"
+      "en": "yalla-goal",
+      "ar": "yalla-goal"
     },
     "description": {
-      "en": "Turn quarterly goals into measurable outcomes, weekly check-ins, and evidence-based progress reviews.",
-      "ar": "Turn quarterly goals into measurable outcomes, weekly check-ins, and evidence-based progress reviews."
+      "en": "GoalReviewBase — turn quarterly goals into measurable outcomes with weekly check-ins, confidence scoring, evidence attachments, and progress charts. Local-first personal productivity.",
+      "ar": "GoalReviewBase — turn quarterly goals into measurable outcomes with weekly check-ins, confidence scoring, evidence attachments, and progress charts. Local-first personal productivity."
     },
     "meta": {
-      "en": "Vite • Expo • React Native • React • TypeScript • Vitest",
-      "ar": "Vite • Expo • React Native • React • TypeScript • Vitest"
+      "en": "IN-PROGRESS",
+      "ar": "IN-PROGRESS"
     },
-    "category": "Mobile",
+    "category": "Tools",
     "client": {
-      "en": "Apex Yard / Hany-Labs",
-      "ar": "Apex Yard / Hany-Labs"
+      "en": "Independent",
+      "ar": "مستقل"
     },
     "role": {
       "en": "Founder & Builder",
       "ar": "المؤسس والمطور"
     },
     "year": "2026",
-    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EGO%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EYG%3C%2Ftext%3E%3C%2Fsvg%3E",
     "galleryImages": [],
     "contentMDX": {
-      "en": "# GoalReviewBase\n\nTurn quarterly goals into measurable outcomes, weekly check-ins, and evidence-based progress reviews.\n\n## Apex Yard snapshot\n\n- Status: in-progress\n- Category: Mobile\n- Tech stack: Vite, Expo, React Native, React, TypeScript, Vitest\n\n## Features\n\n- Platform: iOS & Android (Expo SDK 54, React Native 0.81)\n- Mode: Local-first personal mode (default, no sign-up). Optional team mode with self-hosted backend.\n- Status: v1.0.0\n- iOS Simulator (Xcode) or Android Emulator, or a physical device with Expo Go\n- `APIBASEURL` — Team mode backend URL (leave empty for personal mode)\n- Settings → Export All Data (JSON): Full export including goals, milestones, and check-ins\n\n## Progress\n\nClassified as in progress by Apex Yard; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document.",
-      "ar": "# GoalReviewBase\n\nTurn quarterly goals into measurable outcomes, weekly check-ins, and evidence-based progress reviews.\n\n## Apex Yard snapshot\n\n- Status: in-progress\n- Category: Mobile\n- Tech stack: Vite, Expo, React Native, React, TypeScript, Vitest\n\n## Features\n\n- Platform: iOS & Android (Expo SDK 54, React Native 0.81)\n- Mode: Local-first personal mode (default, no sign-up). Optional team mode with self-hosted backend.\n- Status: v1.0.0\n- iOS Simulator (Xcode) or Android Emulator, or a physical device with Expo Go\n- `APIBASEURL` — Team mode backend URL (leave empty for personal mode)\n- Settings → Export All Data (JSON): Full export including goals, milestones, and check-ins\n\n## Progress\n\nClassified as in progress by Apex Yard; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document."
+      "en": "# yalla-goal\n\nGoalReviewBase — turn quarterly goals into measurable outcomes with weekly check-ins, confidence scoring, evidence attachments, and progress charts. Local-first personal productivity.\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Tools\n- Tech stack: Not detected\n\n## Features\n\n- Unknown / verify\n\n## Progress\n\nStatus recorded as in-progress.\n\n## Issues / troubles\n\n- Unknown / verify\n\n## Suggested next steps\n\n- Unknown / verify",
+      "ar": "# yalla-goal\n\nGoalReviewBase — turn quarterly goals into measurable outcomes with weekly check-ins, confidence scoring, evidence attachments, and progress charts. Local-first personal productivity.\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Tools\n- Tech stack: Not detected\n\n## Features\n\n- Unknown / verify\n\n## Progress\n\nStatus recorded as in-progress.\n\n## Issues / troubles\n\n- Unknown / verify\n\n## Suggested next steps\n\n- Unknown / verify"
     },
     "isPublished": true,
     "featured": false,
     "tags": [
-      "Vite",
-      "Expo",
-      "React Native",
-      "React",
-      "TypeScript",
-      "Vitest",
       "in-progress"
     ],
     "status": "in-progress",
-    "features": [
-      {
-        "en": "Platform: iOS & Android (Expo SDK 54, React Native 0.81)",
-        "ar": "Platform: iOS & Android (Expo SDK 54, React Native 0.81)"
-      },
-      {
-        "en": "Mode: Local-first personal mode (default, no sign-up). Optional team mode with self-hosted backend.",
-        "ar": "Mode: Local-first personal mode (default, no sign-up). Optional team mode with self-hosted backend."
-      },
-      {
-        "en": "Status: v1.0.0",
-        "ar": "Status: v1.0.0"
-      },
-      {
-        "en": "iOS Simulator (Xcode) or Android Emulator, or a physical device with Expo Go",
-        "ar": "iOS Simulator (Xcode) or Android Emulator, or a physical device with Expo Go"
-      },
-      {
-        "en": "`APIBASEURL` — Team mode backend URL (leave empty for personal mode)",
-        "ar": "`APIBASEURL` — Team mode backend URL (leave empty for personal mode)"
-      },
-      {
-        "en": "Settings → Export All Data (JSON): Full export including goals, milestones, and check-ins",
-        "ar": "Settings → Export All Data (JSON): Full export including goals, milestones, and check-ins"
-      }
-    ],
+    "features": [],
     "progress": {
-      "en": "Classified as in progress by Apex Yard; implementation and scope are still evolving.",
-      "ar": "Classified as in progress by Apex Yard; implementation and scope are still evolving."
+      "en": "Status recorded as in-progress.",
+      "ar": "Status recorded as in-progress."
     },
-    "issues": [
-      {
-        "en": "This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.",
-        "ar": "This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace."
-      }
-    ],
-    "suggestions": [
-      {
-        "en": "Record the next milestone and known blockers in this portfolio document.",
-        "ar": "Record the next milestone and known blockers in this portfolio document."
-      }
-    ],
-    "repository": {
-      "branch": "main",
-      "sync": "parent-workspace"
-    },
-    "source": {
-      "workspace": "workspace/yalla-goal",
-      "last_reviewed": "2026-07-29"
-    }
+    "issues": [],
+    "suggestions": []
   },
   {
     "id": "apexyard-al-rawi",
     "slug": "al-rawi",
     "title": {
-      "en": "Al-Rawi",
-      "ar": "Al-Rawi"
+      "en": "al-rawi",
+      "ar": "al-rawi"
     },
     "description": {
       "en": "Al-Rawi is a bilingual, local-first RSS reader. Feed subscriptions and preferences stay in the browser; fresh articles are fetched into memory and discarded when the session ends.",
@@ -1545,8 +1500,8 @@ export const PORTFOLIO_PROJECTS = [
     },
     "category": "Web",
     "client": {
-      "en": "Apex Yard / Hany-Labs",
-      "ar": "Apex Yard / Hany-Labs"
+      "en": "Independent",
+      "ar": "مستقل"
     },
     "role": {
       "en": "Founder & Builder",
@@ -1556,8 +1511,8 @@ export const PORTFOLIO_PROJECTS = [
     "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EAR%3C%2Ftext%3E%3C%2Fsvg%3E",
     "galleryImages": [],
     "contentMDX": {
-      "en": "# Al-Rawi\n\nAl-Rawi is a bilingual, local-first RSS reader. Feed subscriptions and preferences stay in the browser; fresh articles are fetched into memory and discarded when the session ends.\n\n## Apex Yard snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, React, TypeScript, Tailwind\n\n## Features\n\n- Next.js App Router, TypeScript, Tailwind CSS\n- LocalStorage for feed URLs, folders, and OPML-compatible subscriptions\n- Stateless Next.js routes for public RSS and article extraction\n- `rss-parser`, `iconv-lite`, `@mozilla/readability`, and `jsdom`\n- Only feed subscriptions are persisted locally.\n- Article lists and extracted article HTML are memory-only.\n\n## Progress\n\nClassified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n- No GitHub remote is configured; updates remain local.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
-      "ar": "# Al-Rawi\n\nAl-Rawi is a bilingual, local-first RSS reader. Feed subscriptions and preferences stay in the browser; fresh articles are fetched into memory and discarded when the session ends.\n\n## Apex Yard snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, React, TypeScript, Tailwind\n\n## Features\n\n- Next.js App Router, TypeScript, Tailwind CSS\n- LocalStorage for feed URLs, folders, and OPML-compatible subscriptions\n- Stateless Next.js routes for public RSS and article extraction\n- `rss-parser`, `iconv-lite`, `@mozilla/readability`, and `jsdom`\n- Only feed subscriptions are persisted locally.\n- Article lists and extracted article HTML are memory-only.\n\n## Progress\n\nClassified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n- No GitHub remote is configured; updates remain local.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
+      "en": "# al-rawi\n\nAl-Rawi is a bilingual, local-first RSS reader. Feed subscriptions and preferences stay in the browser; fresh articles are fetched into memory and discarded when the session ends.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, React, TypeScript, Tailwind\n\n## Features\n\n- Next.js App Router, TypeScript, Tailwind CSS\n- LocalStorage for feed URLs, folders, and OPML-compatible subscriptions\n- Stateless Next.js routes for public RSS and article extraction\n- `rss-parser`, `iconv-lite`, `@mozilla/readability`, and `jsdom`\n- Only feed subscriptions are persisted locally.\n- Article lists and extracted article HTML are memory-only.\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n- No GitHub remote is configured; updates remain local.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
+      "ar": "# al-rawi\n\nAl-Rawi is a bilingual, local-first RSS reader. Feed subscriptions and preferences stay in the browser; fresh articles are fetched into memory and discarded when the session ends.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, React, TypeScript, Tailwind\n\n## Features\n\n- Next.js App Router, TypeScript, Tailwind CSS\n- LocalStorage for feed URLs, folders, and OPML-compatible subscriptions\n- Stateless Next.js routes for public RSS and article extraction\n- `rss-parser`, `iconv-lite`, `@mozilla/readability`, and `jsdom`\n- Only feed subscriptions are persisted locally.\n- Article lists and extracted article HTML are memory-only.\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n- No GitHub remote is configured; updates remain local.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
     },
     "isPublished": true,
     "featured": false,
@@ -1596,8 +1551,8 @@ export const PORTFOLIO_PROJECTS = [
       }
     ],
     "progress": {
-      "en": "Classified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.",
-      "ar": "Classified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence."
+      "en": "Classified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.",
+      "ar": "Classified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence."
     },
     "issues": [
       {
@@ -1636,8 +1591,8 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-branch-scope",
     "slug": "branch-scope",
     "title": {
-      "en": "BranchScope — Feature Branch Change Impact Atlas",
-      "ar": "BranchScope — Feature Branch Change Impact Atlas"
+      "en": "branch-scope",
+      "ar": "branch-scope"
     },
     "description": {
       "en": "Local-first, responsive web app: Feature Branch Change Impact Atlas",
@@ -1649,19 +1604,19 @@ export const PORTFOLIO_PROJECTS = [
     },
     "category": "Web",
     "client": {
-      "en": "Apex Yard / Hany-Labs",
-      "ar": "Apex Yard / Hany-Labs"
+      "en": "Independent",
+      "ar": "مستقل"
     },
     "role": {
       "en": "Founder & Builder",
       "ar": "المؤسس والمطور"
     },
     "year": "2026",
-    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EBFB%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EBS%3C%2Ftext%3E%3C%2Fsvg%3E",
     "galleryImages": [],
     "contentMDX": {
-      "en": "# BranchScope — Feature Branch Change Impact Atlas\n\nLocal-first, responsive web app: Feature Branch Change Impact Atlas\n\n## Apex Yard snapshot\n\n- Status: in-progress\n- Category: Web\n- Tech stack: Vite, React, TypeScript, Vitest\n\n## Features\n\n- which routes, components, tests, styles, flags, and\n- a dependency + route impact graph with a hierarchical text alternative;\n- an editable evidence-based risk rubric (every score shows its formula,\n- a scoped review checklist you can use to record decisions and export.\n- Source code, diffs, logs, and imported files stay in your browser.\n- There is no account, no cloud sync, no AI call, no telemetry.\n\n## Progress\n\nClassified as in progress by Apex Yard; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No GitHub remote is configured; updates remain local.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document.",
-      "ar": "# BranchScope — Feature Branch Change Impact Atlas\n\nLocal-first, responsive web app: Feature Branch Change Impact Atlas\n\n## Apex Yard snapshot\n\n- Status: in-progress\n- Category: Web\n- Tech stack: Vite, React, TypeScript, Vitest\n\n## Features\n\n- which routes, components, tests, styles, flags, and\n- a dependency + route impact graph with a hierarchical text alternative;\n- an editable evidence-based risk rubric (every score shows its formula,\n- a scoped review checklist you can use to record decisions and export.\n- Source code, diffs, logs, and imported files stay in your browser.\n- There is no account, no cloud sync, no AI call, no telemetry.\n\n## Progress\n\nClassified as in progress by Apex Yard; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No GitHub remote is configured; updates remain local.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document."
+      "en": "# branch-scope\n\nLocal-first, responsive web app: Feature Branch Change Impact Atlas\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Web\n- Tech stack: Vite, React, TypeScript, Vitest\n\n## Features\n\n- which routes, components, tests, styles, flags, and\n- a dependency + route impact graph with a hierarchical text alternative;\n- an editable evidence-based risk rubric (every score shows its formula,\n- a scoped review checklist you can use to record decisions and export.\n- Source code, diffs, logs, and imported files stay in your browser.\n- There is no account, no cloud sync, no AI call, no telemetry.\n\n## Progress\n\nClassified as in progress by Dev Stage; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No GitHub remote is configured; updates remain local.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document.",
+      "ar": "# branch-scope\n\nLocal-first, responsive web app: Feature Branch Change Impact Atlas\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Web\n- Tech stack: Vite, React, TypeScript, Vitest\n\n## Features\n\n- which routes, components, tests, styles, flags, and\n- a dependency + route impact graph with a hierarchical text alternative;\n- an editable evidence-based risk rubric (every score shows its formula,\n- a scoped review checklist you can use to record decisions and export.\n- Source code, diffs, logs, and imported files stay in your browser.\n- There is no account, no cloud sync, no AI call, no telemetry.\n\n## Progress\n\nClassified as in progress by Dev Stage; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No GitHub remote is configured; updates remain local.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document."
     },
     "isPublished": true,
     "featured": false,
@@ -1700,8 +1655,8 @@ export const PORTFOLIO_PROJECTS = [
       }
     ],
     "progress": {
-      "en": "Classified as in progress by Apex Yard; implementation and scope are still evolving.",
-      "ar": "Classified as in progress by Apex Yard; implementation and scope are still evolving."
+      "en": "Classified as in progress by Dev Stage; implementation and scope are still evolving.",
+      "ar": "Classified as in progress by Dev Stage; implementation and scope are still evolving."
     },
     "issues": [
       {
@@ -1741,8 +1696,8 @@ export const PORTFOLIO_PROJECTS = [
     },
     "category": "Web",
     "client": {
-      "en": "Apex Yard / Hany-Labs",
-      "ar": "Apex Yard / Hany-Labs"
+      "en": "Independent",
+      "ar": "مستقل"
     },
     "role": {
       "en": "Founder & Builder",
@@ -1752,8 +1707,8 @@ export const PORTFOLIO_PROJECTS = [
     "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EDE%3C%2Ftext%3E%3C%2Fsvg%3E",
     "galleryImages": [],
     "contentMDX": {
-      "en": "# dev2ops\n\ndev2ops is a responsive React learning game for practical DevOps, SRE, infrastructure, and platform skills. Learners inspect and repair deterministic virtual systems in a browser-simulated terminal; learner commands never execute on the host or a real infrastructure service.\n\n## Apex Yard snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Project Structure\n- Local Development\n- AI Agent Guide\n- Team Decisions\n- No CI workflow, container definition, deployment manifest, or committed environment example was found. Verify deployment-specific setup before release.\n- Project Structure\n\n## Progress\n\nClassified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
-      "ar": "# dev2ops\n\ndev2ops is a responsive React learning game for practical DevOps, SRE, infrastructure, and platform skills. Learners inspect and repair deterministic virtual systems in a browser-simulated terminal; learner commands never execute on the host or a real infrastructure service.\n\n## Apex Yard snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Project Structure\n- Local Development\n- AI Agent Guide\n- Team Decisions\n- No CI workflow, container definition, deployment manifest, or committed environment example was found. Verify deployment-specific setup before release.\n- Project Structure\n\n## Progress\n\nClassified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
+      "en": "# dev2ops\n\ndev2ops is a responsive React learning game for practical DevOps, SRE, infrastructure, and platform skills. Learners inspect and repair deterministic virtual systems in a browser-simulated terminal; learner commands never execute on the host or a real infrastructure service.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Project Structure\n- Local Development\n- AI Agent Guide\n- Team Decisions\n- No CI workflow, container definition, deployment manifest, or committed environment example was found. Verify deployment-specific setup before release.\n- Project Structure\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
+      "ar": "# dev2ops\n\ndev2ops is a responsive React learning game for practical DevOps, SRE, infrastructure, and platform skills. Learners inspect and repair deterministic virtual systems in a browser-simulated terminal; learner commands never execute on the host or a real infrastructure service.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Project Structure\n- Local Development\n- AI Agent Guide\n- Team Decisions\n- No CI workflow, container definition, deployment manifest, or committed environment example was found. Verify deployment-specific setup before release.\n- Project Structure\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
     },
     "isPublished": true,
     "featured": false,
@@ -1794,8 +1749,8 @@ export const PORTFOLIO_PROJECTS = [
       }
     ],
     "progress": {
-      "en": "Classified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.",
-      "ar": "Classified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence."
+      "en": "Classified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.",
+      "ar": "Classified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence."
     },
     "issues": [
       {
@@ -1823,12 +1778,12 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-fihrist",
     "slug": "fihrist",
     "title": {
-      "en": "fihrist-bookmark-manager",
-      "ar": "fihrist-bookmark-manager"
+      "en": "fihrist",
+      "ar": "fihrist"
     },
     "description": {
-      "en": "A project managed in the Apex Yard workspace.",
-      "ar": "A project managed in the Apex Yard workspace."
+      "en": "A project managed in the Dev Stage workspace.",
+      "ar": "A project managed in the Dev Stage workspace."
     },
     "meta": {
       "en": "Next.js • Vite • React • TypeScript • Tailwind • Vitest",
@@ -1836,19 +1791,19 @@ export const PORTFOLIO_PROJECTS = [
     },
     "category": "Web",
     "client": {
-      "en": "Apex Yard / Hany-Labs",
-      "ar": "Apex Yard / Hany-Labs"
+      "en": "Independent",
+      "ar": "مستقل"
     },
     "role": {
       "en": "Founder & Builder",
       "ar": "المؤسس والمطور"
     },
     "year": "2026",
-    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EFBM%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EFI%3C%2Ftext%3E%3C%2Fsvg%3E",
     "galleryImages": [],
     "contentMDX": {
-      "en": "# fihrist-bookmark-manager\n\nA project managed in the Apex Yard workspace.\n\n## Apex Yard snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Current feature inventory: Unknown / verify.\n\n## Progress\n\nClassified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
-      "ar": "# fihrist-bookmark-manager\n\nA project managed in the Apex Yard workspace.\n\n## Apex Yard snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Current feature inventory: Unknown / verify.\n\n## Progress\n\nClassified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
+      "en": "# fihrist\n\nA project managed in the Dev Stage workspace.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Current feature inventory: Unknown / verify.\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
+      "ar": "# fihrist\n\nA project managed in the Dev Stage workspace.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Current feature inventory: Unknown / verify.\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
     },
     "isPublished": true,
     "featured": false,
@@ -1869,8 +1824,8 @@ export const PORTFOLIO_PROJECTS = [
       }
     ],
     "progress": {
-      "en": "Classified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.",
-      "ar": "Classified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence."
+      "en": "Classified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.",
+      "ar": "Classified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence."
     },
     "issues": [
       {
@@ -1898,8 +1853,8 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-galsat",
     "slug": "galsat",
     "title": {
-      "en": "جلست (Galsat)",
-      "ar": "جلست (Galsat)"
+      "en": "galsat",
+      "ar": "galsat"
     },
     "description": {
       "en": "تطبيق إدارة الإنتاجية للمحترفين عن بُعد — Desk & Desk Space Booking for Remote Workers.",
@@ -1911,19 +1866,19 @@ export const PORTFOLIO_PROJECTS = [
     },
     "category": "Web",
     "client": {
-      "en": "Apex Yard / Hany-Labs",
-      "ar": "Apex Yard / Hany-Labs"
+      "en": "Independent",
+      "ar": "مستقل"
     },
     "role": {
       "en": "Founder & Builder",
       "ar": "المؤسس والمطور"
     },
     "year": "2026",
-    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3E%D8%ACG%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EGA%3C%2Ftext%3E%3C%2Fsvg%3E",
     "galleryImages": [],
     "contentMDX": {
-      "en": "# جلست (Galsat)\n\nتطبيق إدارة الإنتاجية للمحترفين عن بُعد — Desk & Desk Space Booking for Remote Workers.\n\n## Apex Yard snapshot\n\n- Status: in-progress\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Dashboard — Real-time summary cards, quick action buttons, and recent records overview\n- Record Management (CRUD) — Create, read, update, archive, restore, and soft-delete productivity entries\n- RTL & Typography — Native Right-To-Left layout with the Almarai font family\n- Search & Filter — Debounced search, category filter, date range, and status filter\n- Data Export — Export active records as JSON, CSV, or Markdown (Obsidian-compatible)\n- n8n Webhook Sync — Send structured JSON payloads to user-configured n8n endpoints\n\n## Progress\n\nClassified as in progress by Apex Yard; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n- This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document.",
-      "ar": "# جلست (Galsat)\n\nتطبيق إدارة الإنتاجية للمحترفين عن بُعد — Desk & Desk Space Booking for Remote Workers.\n\n## Apex Yard snapshot\n\n- Status: in-progress\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Dashboard — Real-time summary cards, quick action buttons, and recent records overview\n- Record Management (CRUD) — Create, read, update, archive, restore, and soft-delete productivity entries\n- RTL & Typography — Native Right-To-Left layout with the Almarai font family\n- Search & Filter — Debounced search, category filter, date range, and status filter\n- Data Export — Export active records as JSON, CSV, or Markdown (Obsidian-compatible)\n- n8n Webhook Sync — Send structured JSON payloads to user-configured n8n endpoints\n\n## Progress\n\nClassified as in progress by Apex Yard; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n- This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document."
+      "en": "# galsat\n\nتطبيق إدارة الإنتاجية للمحترفين عن بُعد — Desk & Desk Space Booking for Remote Workers.\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Dashboard — Real-time summary cards, quick action buttons, and recent records overview\n- Record Management (CRUD) — Create, read, update, archive, restore, and soft-delete productivity entries\n- RTL & Typography — Native Right-To-Left layout with the Almarai font family\n- Search & Filter — Debounced search, category filter, date range, and status filter\n- Data Export — Export active records as JSON, CSV, or Markdown (Obsidian-compatible)\n- n8n Webhook Sync — Send structured JSON payloads to user-configured n8n endpoints\n\n## Progress\n\nClassified as in progress by Dev Stage; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n- This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document.",
+      "ar": "# galsat\n\nتطبيق إدارة الإنتاجية للمحترفين عن بُعد — Desk & Desk Space Booking for Remote Workers.\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Dashboard — Real-time summary cards, quick action buttons, and recent records overview\n- Record Management (CRUD) — Create, read, update, archive, restore, and soft-delete productivity entries\n- RTL & Typography — Native Right-To-Left layout with the Almarai font family\n- Search & Filter — Debounced search, category filter, date range, and status filter\n- Data Export — Export active records as JSON, CSV, or Markdown (Obsidian-compatible)\n- n8n Webhook Sync — Send structured JSON payloads to user-configured n8n endpoints\n\n## Progress\n\nClassified as in progress by Dev Stage; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n- This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document."
     },
     "isPublished": true,
     "featured": false,
@@ -1964,8 +1919,8 @@ export const PORTFOLIO_PROJECTS = [
       }
     ],
     "progress": {
-      "en": "Classified as in progress by Apex Yard; implementation and scope are still evolving.",
-      "ar": "Classified as in progress by Apex Yard; implementation and scope are still evolving."
+      "en": "Classified as in progress by Dev Stage; implementation and scope are still evolving.",
+      "ar": "Classified as in progress by Dev Stage; implementation and scope are still evolving."
     },
     "issues": [
       {
@@ -1973,8 +1928,8 @@ export const PORTFOLIO_PROJECTS = [
         "ar": "No conventional test directory was detected."
       },
       {
-        "en": "This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.",
-        "ar": "This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace."
+        "en": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.",
+        "ar": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace."
       }
     ],
     "suggestions": [
@@ -1996,8 +1951,8 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-hesab",
     "slug": "hesab",
     "title": {
-      "en": "Hesaab (حساب) — Offline-First Mobile POS for Kiosk Vendors",
-      "ar": "Hesaab (حساب) — Offline-First Mobile POS for Kiosk Vendors"
+      "en": "hesab",
+      "ar": "hesab"
     },
     "description": {
       "en": "> Egyptian Arabic-first mobile point-of-sale for kiosk vendors. Works fully > offline, syncs to n8n when online, renders every label in **Almarai** with > strict **RTL** layout, and stores everything in local SQLite.",
@@ -2009,19 +1964,19 @@ export const PORTFOLIO_PROJECTS = [
     },
     "category": "Mobile",
     "client": {
-      "en": "Apex Yard / Hany-Labs",
-      "ar": "Apex Yard / Hany-Labs"
+      "en": "Independent",
+      "ar": "مستقل"
     },
     "role": {
       "en": "Founder & Builder",
       "ar": "المؤسس والمطور"
     },
     "year": "2026",
-    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EH%D8%ADO%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EHE%3C%2Ftext%3E%3C%2Fsvg%3E",
     "galleryImages": [],
     "contentMDX": {
-      "en": "# Hesaab (حساب) — Offline-First Mobile POS for Kiosk Vendors\n\n> Egyptian Arabic-first mobile point-of-sale for kiosk vendors. Works fully > offline, syncs to n8n when online, renders every label in **Almarai** with > strict **RTL** layout, and stores everything in local SQLite.\n\n## Apex Yard snapshot\n\n- Status: in-progress\n- Category: Mobile\n- Tech stack: Expo, React Native, React, TypeScript\n\n## Features\n\n- Runtime: Node.js 24 / npm 10\n- Framework: Expo SDK 54 (React Native 0.81, React 19)\n- Language: TypeScript 5.9\n- Router: `expo-router` 6 (file-based, tabs, dynamic routes)\n- UI: Tamagui 1.127, Almarai typeface\n- Storage: `expo-sqlite` 16 with portable SQL migrations\n\n## Progress\n\nClassified as in progress by Apex Yard; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document.",
-      "ar": "# Hesaab (حساب) — Offline-First Mobile POS for Kiosk Vendors\n\n> Egyptian Arabic-first mobile point-of-sale for kiosk vendors. Works fully > offline, syncs to n8n when online, renders every label in **Almarai** with > strict **RTL** layout, and stores everything in local SQLite.\n\n## Apex Yard snapshot\n\n- Status: in-progress\n- Category: Mobile\n- Tech stack: Expo, React Native, React, TypeScript\n\n## Features\n\n- Runtime: Node.js 24 / npm 10\n- Framework: Expo SDK 54 (React Native 0.81, React 19)\n- Language: TypeScript 5.9\n- Router: `expo-router` 6 (file-based, tabs, dynamic routes)\n- UI: Tamagui 1.127, Almarai typeface\n- Storage: `expo-sqlite` 16 with portable SQL migrations\n\n## Progress\n\nClassified as in progress by Apex Yard; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document."
+      "en": "# hesab\n\n> Egyptian Arabic-first mobile point-of-sale for kiosk vendors. Works fully > offline, syncs to n8n when online, renders every label in **Almarai** with > strict **RTL** layout, and stores everything in local SQLite.\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Mobile\n- Tech stack: Expo, React Native, React, TypeScript\n\n## Features\n\n- Runtime: Node.js 24 / npm 10\n- Framework: Expo SDK 54 (React Native 0.81, React 19)\n- Language: TypeScript 5.9\n- Router: `expo-router` 6 (file-based, tabs, dynamic routes)\n- UI: Tamagui 1.127, Almarai typeface\n- Storage: `expo-sqlite` 16 with portable SQL migrations\n\n## Progress\n\nClassified as in progress by Dev Stage; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document.",
+      "ar": "# hesab\n\n> Egyptian Arabic-first mobile point-of-sale for kiosk vendors. Works fully > offline, syncs to n8n when online, renders every label in **Almarai** with > strict **RTL** layout, and stores everything in local SQLite.\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Mobile\n- Tech stack: Expo, React Native, React, TypeScript\n\n## Features\n\n- Runtime: Node.js 24 / npm 10\n- Framework: Expo SDK 54 (React Native 0.81, React 19)\n- Language: TypeScript 5.9\n- Router: `expo-router` 6 (file-based, tabs, dynamic routes)\n- UI: Tamagui 1.127, Almarai typeface\n- Storage: `expo-sqlite` 16 with portable SQL migrations\n\n## Progress\n\nClassified as in progress by Dev Stage; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document."
     },
     "isPublished": true,
     "featured": false,
@@ -2060,13 +2015,13 @@ export const PORTFOLIO_PROJECTS = [
       }
     ],
     "progress": {
-      "en": "Classified as in progress by Apex Yard; implementation and scope are still evolving.",
-      "ar": "Classified as in progress by Apex Yard; implementation and scope are still evolving."
+      "en": "Classified as in progress by Dev Stage; implementation and scope are still evolving.",
+      "ar": "Classified as in progress by Dev Stage; implementation and scope are still evolving."
     },
     "issues": [
       {
-        "en": "This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.",
-        "ar": "This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace."
+        "en": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.",
+        "ar": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace."
       }
     ],
     "suggestions": [
@@ -2088,8 +2043,8 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-hikayat",
     "slug": "hikayat",
     "title": {
-      "en": "Hikayat — Oral History & Folk Tale Recording Archive",
-      "ar": "Hikayat — Oral History & Folk Tale Recording Archive"
+      "en": "hikayat",
+      "ar": "hikayat"
     },
     "description": {
       "en": "Hikayat is an Arabic-first (Egyptian Arabic) web application for recording, managing, searching, and archiving oral histories and folk tales. It replaces fragmented WhatsApp groups, spreadsheets, and paper notes used by Egypt's culture sector.",
@@ -2101,19 +2056,19 @@ export const PORTFOLIO_PROJECTS = [
     },
     "category": "Web",
     "client": {
-      "en": "Apex Yard / Hany-Labs",
-      "ar": "Apex Yard / Hany-Labs"
+      "en": "Independent",
+      "ar": "مستقل"
     },
     "role": {
       "en": "Founder & Builder",
       "ar": "المؤسس والمطور"
     },
     "year": "2026",
-    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EHOH%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EHI%3C%2Ftext%3E%3C%2Fsvg%3E",
     "galleryImages": [],
     "contentMDX": {
-      "en": "# Hikayat — Oral History & Folk Tale Recording Archive\n\nHikayat is an Arabic-first (Egyptian Arabic) web application for recording, managing, searching, and archiving oral histories and folk tales. It replaces fragmented WhatsApp groups, spreadsheets, and paper notes used by Egypt's culture sector.\n\n## Apex Yard snapshot\n\n- Status: prototype\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Docker (for PostgreSQL)\n- Database: PostgreSQL 16 via Docker (local development)\n- Auth: NextAuth.js v5 beta with JWT sessions\n- ORM: Prisma for type-safe database access\n- Validation: Zod schemas for all form inputs\n- UI: Tailwind CSS 3 + custom components\n\n## Progress\n\nClassified as a prototype by Apex Yard; evidence and scope remain early-stage.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n- This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document.",
-      "ar": "# Hikayat — Oral History & Folk Tale Recording Archive\n\nHikayat is an Arabic-first (Egyptian Arabic) web application for recording, managing, searching, and archiving oral histories and folk tales. It replaces fragmented WhatsApp groups, spreadsheets, and paper notes used by Egypt's culture sector.\n\n## Apex Yard snapshot\n\n- Status: prototype\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Docker (for PostgreSQL)\n- Database: PostgreSQL 16 via Docker (local development)\n- Auth: NextAuth.js v5 beta with JWT sessions\n- ORM: Prisma for type-safe database access\n- Validation: Zod schemas for all form inputs\n- UI: Tailwind CSS 3 + custom components\n\n## Progress\n\nClassified as a prototype by Apex Yard; evidence and scope remain early-stage.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n- This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document."
+      "en": "# hikayat\n\nHikayat is an Arabic-first (Egyptian Arabic) web application for recording, managing, searching, and archiving oral histories and folk tales. It replaces fragmented WhatsApp groups, spreadsheets, and paper notes used by Egypt's culture sector.\n\n## Project snapshot\n\n- Status: prototype\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Docker (for PostgreSQL)\n- Database: PostgreSQL 16 via Docker (local development)\n- Auth: NextAuth.js v5 beta with JWT sessions\n- ORM: Prisma for type-safe database access\n- Validation: Zod schemas for all form inputs\n- UI: Tailwind CSS 3 + custom components\n\n## Progress\n\nClassified as a prototype by Dev Stage; evidence and scope remain early-stage.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n- This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document.",
+      "ar": "# hikayat\n\nHikayat is an Arabic-first (Egyptian Arabic) web application for recording, managing, searching, and archiving oral histories and folk tales. It replaces fragmented WhatsApp groups, spreadsheets, and paper notes used by Egypt's culture sector.\n\n## Project snapshot\n\n- Status: prototype\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Docker (for PostgreSQL)\n- Database: PostgreSQL 16 via Docker (local development)\n- Auth: NextAuth.js v5 beta with JWT sessions\n- ORM: Prisma for type-safe database access\n- Validation: Zod schemas for all form inputs\n- UI: Tailwind CSS 3 + custom components\n\n## Progress\n\nClassified as a prototype by Dev Stage; evidence and scope remain early-stage.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n- This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document."
     },
     "isPublished": true,
     "featured": false,
@@ -2154,8 +2109,8 @@ export const PORTFOLIO_PROJECTS = [
       }
     ],
     "progress": {
-      "en": "Classified as a prototype by Apex Yard; evidence and scope remain early-stage.",
-      "ar": "Classified as a prototype by Apex Yard; evidence and scope remain early-stage."
+      "en": "Classified as a prototype by Dev Stage; evidence and scope remain early-stage.",
+      "ar": "Classified as a prototype by Dev Stage; evidence and scope remain early-stage."
     },
     "issues": [
       {
@@ -2163,8 +2118,8 @@ export const PORTFOLIO_PROJECTS = [
         "ar": "No conventional test directory was detected."
       },
       {
-        "en": "This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.",
-        "ar": "This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace."
+        "en": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.",
+        "ar": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace."
       }
     ],
     "suggestions": [
@@ -2186,12 +2141,12 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-khareeta",
     "slug": "khareeta",
     "title": {
-      "en": "Khareeta",
-      "ar": "Khareeta"
+      "en": "khareeta",
+      "ar": "khareeta"
     },
     "description": {
-      "en": "A project managed in the Apex Yard workspace.",
-      "ar": "A project managed in the Apex Yard workspace."
+      "en": "A project managed in the Dev Stage workspace.",
+      "ar": "A project managed in the Dev Stage workspace."
     },
     "meta": {
       "en": "PROTOTYPE",
@@ -2199,8 +2154,8 @@ export const PORTFOLIO_PROJECTS = [
     },
     "category": "Tools",
     "client": {
-      "en": "Apex Yard / Hany-Labs",
-      "ar": "Apex Yard / Hany-Labs"
+      "en": "Independent",
+      "ar": "مستقل"
     },
     "role": {
       "en": "Founder & Builder",
@@ -2210,8 +2165,8 @@ export const PORTFOLIO_PROJECTS = [
     "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EKH%3C%2Ftext%3E%3C%2Fsvg%3E",
     "galleryImages": [],
     "contentMDX": {
-      "en": "# Khareeta\n\nA project managed in the Apex Yard workspace.\n\n## Apex Yard snapshot\n\n- Status: prototype\n- Category: Tools\n- Tech stack: Not detected\n\n## Features\n\n- Current feature inventory: Unknown / verify.\n\n## Progress\n\nClassified as a prototype by Apex Yard; evidence and scope remain early-stage.\n\n## Issues / troubles\n\n- No application manifest was detected in the workspace.\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n- This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Record the next milestone and known blockers in this portfolio document.",
-      "ar": "# Khareeta\n\nA project managed in the Apex Yard workspace.\n\n## Apex Yard snapshot\n\n- Status: prototype\n- Category: Tools\n- Tech stack: Not detected\n\n## Features\n\n- Current feature inventory: Unknown / verify.\n\n## Progress\n\nClassified as a prototype by Apex Yard; evidence and scope remain early-stage.\n\n## Issues / troubles\n\n- No application manifest was detected in the workspace.\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n- This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Record the next milestone and known blockers in this portfolio document."
+      "en": "# khareeta\n\nA project managed in the Dev Stage workspace.\n\n## Project snapshot\n\n- Status: prototype\n- Category: Tools\n- Tech stack: Not detected\n\n## Features\n\n- Current feature inventory: Unknown / verify.\n\n## Progress\n\nClassified as a prototype by Dev Stage; evidence and scope remain early-stage.\n\n## Issues / troubles\n\n- No application manifest was detected in the workspace.\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n- This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Record the next milestone and known blockers in this portfolio document.",
+      "ar": "# khareeta\n\nA project managed in the Dev Stage workspace.\n\n## Project snapshot\n\n- Status: prototype\n- Category: Tools\n- Tech stack: Not detected\n\n## Features\n\n- Current feature inventory: Unknown / verify.\n\n## Progress\n\nClassified as a prototype by Dev Stage; evidence and scope remain early-stage.\n\n## Issues / troubles\n\n- No application manifest was detected in the workspace.\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n- This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Record the next milestone and known blockers in this portfolio document."
     },
     "isPublished": true,
     "featured": false,
@@ -2226,8 +2181,8 @@ export const PORTFOLIO_PROJECTS = [
       }
     ],
     "progress": {
-      "en": "Classified as a prototype by Apex Yard; evidence and scope remain early-stage.",
-      "ar": "Classified as a prototype by Apex Yard; evidence and scope remain early-stage."
+      "en": "Classified as a prototype by Dev Stage; evidence and scope remain early-stage.",
+      "ar": "Classified as a prototype by Dev Stage; evidence and scope remain early-stage."
     },
     "issues": [
       {
@@ -2243,8 +2198,8 @@ export const PORTFOLIO_PROJECTS = [
         "ar": "No conventional test directory was detected."
       },
       {
-        "en": "This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.",
-        "ar": "This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace."
+        "en": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.",
+        "ar": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace."
       }
     ],
     "suggestions": [
@@ -2270,12 +2225,12 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-loop-engineer",
     "slug": "loop-engineer",
     "title": {
-      "en": "Loop Engineer",
-      "ar": "Loop Engineer"
+      "en": "loop-engineer",
+      "ar": "loop-engineer"
     },
     "description": {
-      "en": "A project managed in the Apex Yard workspace.",
-      "ar": "A project managed in the Apex Yard workspace."
+      "en": "A project managed in the Dev Stage workspace.",
+      "ar": "A project managed in the Dev Stage workspace."
     },
     "meta": {
       "en": "IN-PROGRESS",
@@ -2283,8 +2238,8 @@ export const PORTFOLIO_PROJECTS = [
     },
     "category": "Tools",
     "client": {
-      "en": "Apex Yard / Hany-Labs",
-      "ar": "Apex Yard / Hany-Labs"
+      "en": "Independent",
+      "ar": "مستقل"
     },
     "role": {
       "en": "Founder & Builder",
@@ -2294,8 +2249,8 @@ export const PORTFOLIO_PROJECTS = [
     "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3ELE%3C%2Ftext%3E%3C%2Fsvg%3E",
     "galleryImages": [],
     "contentMDX": {
-      "en": "# Loop Engineer\n\nA project managed in the Apex Yard workspace.\n\n## Apex Yard snapshot\n\n- Status: in-progress\n- Category: Tools\n- Tech stack: Not detected\n\n## Features\n\n- Current feature inventory: Unknown / verify.\n\n## Progress\n\nClassified as in progress by Apex Yard; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No application manifest was detected in the workspace.\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n- This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Record the next milestone and known blockers in this portfolio document.",
-      "ar": "# Loop Engineer\n\nA project managed in the Apex Yard workspace.\n\n## Apex Yard snapshot\n\n- Status: in-progress\n- Category: Tools\n- Tech stack: Not detected\n\n## Features\n\n- Current feature inventory: Unknown / verify.\n\n## Progress\n\nClassified as in progress by Apex Yard; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No application manifest was detected in the workspace.\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n- This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Record the next milestone and known blockers in this portfolio document."
+      "en": "# loop-engineer\n\nA project managed in the Dev Stage workspace.\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Tools\n- Tech stack: Not detected\n\n## Features\n\n- Current feature inventory: Unknown / verify.\n\n## Progress\n\nClassified as in progress by Dev Stage; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No application manifest was detected in the workspace.\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n- This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Record the next milestone and known blockers in this portfolio document.",
+      "ar": "# loop-engineer\n\nA project managed in the Dev Stage workspace.\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Tools\n- Tech stack: Not detected\n\n## Features\n\n- Current feature inventory: Unknown / verify.\n\n## Progress\n\nClassified as in progress by Dev Stage; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No application manifest was detected in the workspace.\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n- This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Record the next milestone and known blockers in this portfolio document."
     },
     "isPublished": true,
     "featured": false,
@@ -2310,8 +2265,8 @@ export const PORTFOLIO_PROJECTS = [
       }
     ],
     "progress": {
-      "en": "Classified as in progress by Apex Yard; implementation and scope are still evolving.",
-      "ar": "Classified as in progress by Apex Yard; implementation and scope are still evolving."
+      "en": "Classified as in progress by Dev Stage; implementation and scope are still evolving.",
+      "ar": "Classified as in progress by Dev Stage; implementation and scope are still evolving."
     },
     "issues": [
       {
@@ -2327,8 +2282,8 @@ export const PORTFOLIO_PROJECTS = [
         "ar": "No conventional test directory was detected."
       },
       {
-        "en": "This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.",
-        "ar": "This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace."
+        "en": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.",
+        "ar": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace."
       }
     ],
     "suggestions": [
@@ -2354,12 +2309,12 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-masar-ci",
     "slug": "masar-ci",
     "title": {
-      "en": "Masar Ci",
-      "ar": "Masar Ci"
+      "en": "masar-ci",
+      "ar": "masar-ci"
     },
     "description": {
-      "en": "A project managed in the Apex Yard workspace.",
-      "ar": "A project managed in the Apex Yard workspace."
+      "en": "A project managed in the Dev Stage workspace.",
+      "ar": "A project managed in the Dev Stage workspace."
     },
     "meta": {
       "en": "SHOWCASE",
@@ -2367,8 +2322,8 @@ export const PORTFOLIO_PROJECTS = [
     },
     "category": "Tools",
     "client": {
-      "en": "Apex Yard / Hany-Labs",
-      "ar": "Apex Yard / Hany-Labs"
+      "en": "Independent",
+      "ar": "مستقل"
     },
     "role": {
       "en": "Founder & Builder",
@@ -2378,8 +2333,8 @@ export const PORTFOLIO_PROJECTS = [
     "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EMC%3C%2Ftext%3E%3C%2Fsvg%3E",
     "galleryImages": [],
     "contentMDX": {
-      "en": "# Masar Ci\n\nA project managed in the Apex Yard workspace.\n\n## Apex Yard snapshot\n\n- Status: showcase\n- Category: Tools\n- Tech stack: Not detected\n\n## Features\n\n- Current feature inventory: Unknown / verify.\n\n## Progress\n\nClassified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No application manifest was detected in the workspace.\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
-      "ar": "# Masar Ci\n\nA project managed in the Apex Yard workspace.\n\n## Apex Yard snapshot\n\n- Status: showcase\n- Category: Tools\n- Tech stack: Not detected\n\n## Features\n\n- Current feature inventory: Unknown / verify.\n\n## Progress\n\nClassified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No application manifest was detected in the workspace.\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
+      "en": "# masar-ci\n\nA project managed in the Dev Stage workspace.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Tools\n- Tech stack: Not detected\n\n## Features\n\n- Current feature inventory: Unknown / verify.\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No application manifest was detected in the workspace.\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
+      "ar": "# masar-ci\n\nA project managed in the Dev Stage workspace.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Tools\n- Tech stack: Not detected\n\n## Features\n\n- Current feature inventory: Unknown / verify.\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No application manifest was detected in the workspace.\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
     },
     "isPublished": true,
     "featured": false,
@@ -2394,8 +2349,8 @@ export const PORTFOLIO_PROJECTS = [
       }
     ],
     "progress": {
-      "en": "Classified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.",
-      "ar": "Classified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence."
+      "en": "Classified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.",
+      "ar": "Classified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence."
     },
     "issues": [
       {
@@ -2435,8 +2390,8 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-memory-book",
     "slug": "memory-book",
     "title": {
-      "en": "MemoryBookHub — Family Memory Archive",
-      "ar": "MemoryBookHub — Family Memory Archive"
+      "en": "memory-book",
+      "ar": "memory-book"
     },
     "description": {
       "en": "A private local family memory archive with milestones, stories, photos, tags, and exportable albums. Runs entirely on your device — no cloud, no paid services.",
@@ -2448,19 +2403,19 @@ export const PORTFOLIO_PROJECTS = [
     },
     "category": "Web",
     "client": {
-      "en": "Apex Yard / Hany-Labs",
-      "ar": "Apex Yard / Hany-Labs"
+      "en": "Independent",
+      "ar": "مستقل"
     },
     "role": {
       "en": "Founder & Builder",
       "ar": "المؤسس والمطور"
     },
     "year": "2026",
-    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EMFM%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EMB%3C%2Ftext%3E%3C%2Fsvg%3E",
     "galleryImages": [],
     "contentMDX": {
-      "en": "# MemoryBookHub — Family Memory Archive\n\nA private local family memory archive with milestones, stories, photos, tags, and exportable albums. Runs entirely on your device — no cloud, no paid services.\n\n## Apex Yard snapshot\n\n- Status: in-progress\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Frontend: Next.js 16 App Router + React 19 + TypeScript\n- Styling: Tailwind CSS v4 with custom design tokens (amber primary, warm neutrals, dark mode)\n- Database: SQLite via `better-sqlite3` (zero-config, file-based)\n- Validation: Zod schemas on both client and server\n- File Storage: Local filesystem (`data/photos/`)\n- State: React client components with fetch-based data loading\n\n## Progress\n\nClassified as in progress by Apex Yard; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n- No GitHub remote is configured; updates remain local.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document.",
-      "ar": "# MemoryBookHub — Family Memory Archive\n\nA private local family memory archive with milestones, stories, photos, tags, and exportable albums. Runs entirely on your device — no cloud, no paid services.\n\n## Apex Yard snapshot\n\n- Status: in-progress\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Frontend: Next.js 16 App Router + React 19 + TypeScript\n- Styling: Tailwind CSS v4 with custom design tokens (amber primary, warm neutrals, dark mode)\n- Database: SQLite via `better-sqlite3` (zero-config, file-based)\n- Validation: Zod schemas on both client and server\n- File Storage: Local filesystem (`data/photos/`)\n- State: React client components with fetch-based data loading\n\n## Progress\n\nClassified as in progress by Apex Yard; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n- No GitHub remote is configured; updates remain local.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document."
+      "en": "# memory-book\n\nA private local family memory archive with milestones, stories, photos, tags, and exportable albums. Runs entirely on your device — no cloud, no paid services.\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Frontend: Next.js 16 App Router + React 19 + TypeScript\n- Styling: Tailwind CSS v4 with custom design tokens (amber primary, warm neutrals, dark mode)\n- Database: SQLite via `better-sqlite3` (zero-config, file-based)\n- Validation: Zod schemas on both client and server\n- File Storage: Local filesystem (`data/photos/`)\n- State: React client components with fetch-based data loading\n\n## Progress\n\nClassified as in progress by Dev Stage; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n- No GitHub remote is configured; updates remain local.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document.",
+      "ar": "# memory-book\n\nA private local family memory archive with milestones, stories, photos, tags, and exportable albums. Runs entirely on your device — no cloud, no paid services.\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Frontend: Next.js 16 App Router + React 19 + TypeScript\n- Styling: Tailwind CSS v4 with custom design tokens (amber primary, warm neutrals, dark mode)\n- Database: SQLite via `better-sqlite3` (zero-config, file-based)\n- Validation: Zod schemas on both client and server\n- File Storage: Local filesystem (`data/photos/`)\n- State: React client components with fetch-based data loading\n\n## Progress\n\nClassified as in progress by Dev Stage; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n- No GitHub remote is configured; updates remain local.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document."
     },
     "isPublished": true,
     "featured": false,
@@ -2501,8 +2456,8 @@ export const PORTFOLIO_PROJECTS = [
       }
     ],
     "progress": {
-      "en": "Classified as in progress by Apex Yard; implementation and scope are still evolving.",
-      "ar": "Classified as in progress by Apex Yard; implementation and scope are still evolving."
+      "en": "Classified as in progress by Dev Stage; implementation and scope are still evolving.",
+      "ar": "Classified as in progress by Dev Stage; implementation and scope are still evolving."
     },
     "issues": [
       {
@@ -2533,8 +2488,8 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-mohakat",
     "slug": "mohakat",
     "title": {
-      "en": "or",
-      "ar": "or"
+      "en": "mohakat",
+      "ar": "mohakat"
     },
     "description": {
       "en": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).",
@@ -2546,19 +2501,19 @@ export const PORTFOLIO_PROJECTS = [
     },
     "category": "Web",
     "client": {
-      "en": "Apex Yard / Hany-Labs",
-      "ar": "Apex Yard / Hany-Labs"
+      "en": "Independent",
+      "ar": "مستقل"
     },
     "role": {
       "en": "Founder & Builder",
       "ar": "المؤسس والمطور"
     },
     "year": "2026",
-    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EOR%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EMO%3C%2Ftext%3E%3C%2Fsvg%3E",
     "galleryImages": [],
     "contentMDX": {
-      "en": "# or\n\nThis is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).\n\n## Apex Yard snapshot\n\n- Status: prototype\n- Category: Web\n- Tech stack: Next.js, React, TypeScript, Tailwind\n\n## Features\n\n- Next.js Documentation - learn about Next.js features and API.\n- Learn Next.js - an interactive Next.js tutorial.\n\n## Progress\n\nClassified as a prototype by Apex Yard; evidence and scope remain early-stage.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n- This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Record the next milestone and known blockers in this portfolio document.",
-      "ar": "# or\n\nThis is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).\n\n## Apex Yard snapshot\n\n- Status: prototype\n- Category: Web\n- Tech stack: Next.js, React, TypeScript, Tailwind\n\n## Features\n\n- Next.js Documentation - learn about Next.js features and API.\n- Learn Next.js - an interactive Next.js tutorial.\n\n## Progress\n\nClassified as a prototype by Apex Yard; evidence and scope remain early-stage.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n- This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Record the next milestone and known blockers in this portfolio document."
+      "en": "# mohakat\n\nThis is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).\n\n## Project snapshot\n\n- Status: prototype\n- Category: Web\n- Tech stack: Next.js, React, TypeScript, Tailwind\n\n## Features\n\n- Next.js Documentation - learn about Next.js features and API.\n- Learn Next.js - an interactive Next.js tutorial.\n\n## Progress\n\nClassified as a prototype by Dev Stage; evidence and scope remain early-stage.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n- This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Record the next milestone and known blockers in this portfolio document.",
+      "ar": "# mohakat\n\nThis is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).\n\n## Project snapshot\n\n- Status: prototype\n- Category: Web\n- Tech stack: Next.js, React, TypeScript, Tailwind\n\n## Features\n\n- Next.js Documentation - learn about Next.js features and API.\n- Learn Next.js - an interactive Next.js tutorial.\n\n## Progress\n\nClassified as a prototype by Dev Stage; evidence and scope remain early-stage.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n- This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Record the next milestone and known blockers in this portfolio document."
     },
     "isPublished": true,
     "featured": false,
@@ -2581,8 +2536,8 @@ export const PORTFOLIO_PROJECTS = [
       }
     ],
     "progress": {
-      "en": "Classified as a prototype by Apex Yard; evidence and scope remain early-stage.",
-      "ar": "Classified as a prototype by Apex Yard; evidence and scope remain early-stage."
+      "en": "Classified as a prototype by Dev Stage; evidence and scope remain early-stage.",
+      "ar": "Classified as a prototype by Dev Stage; evidence and scope remain early-stage."
     },
     "issues": [
       {
@@ -2594,8 +2549,8 @@ export const PORTFOLIO_PROJECTS = [
         "ar": "No conventional test directory was detected."
       },
       {
-        "en": "This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.",
-        "ar": "This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace."
+        "en": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.",
+        "ar": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace."
       }
     ],
     "suggestions": [
@@ -2621,8 +2576,8 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-mrkb",
     "slug": "mrkb",
     "title": {
-      "en": "RepairMaintenanceForge",
-      "ar": "RepairMaintenanceForge"
+      "en": "mrkb",
+      "ar": "mrkb"
     },
     "description": {
       "en": "A cross-platform (iOS, Android, Web) repair and maintenance knowledge base app. Create step-by-step repair guides with parts, tools, photos, and safety notes. Track maintenance history for items you care for. Built with Expo + Fastify + PostgreSQL.",
@@ -2634,19 +2589,19 @@ export const PORTFOLIO_PROJECTS = [
     },
     "category": "Tools",
     "client": {
-      "en": "Apex Yard / Hany-Labs",
-      "ar": "Apex Yard / Hany-Labs"
+      "en": "Independent",
+      "ar": "مستقل"
     },
     "role": {
       "en": "Founder & Builder",
       "ar": "المؤسس والمطور"
     },
     "year": "2026",
-    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3ERE%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EMR%3C%2Ftext%3E%3C%2Fsvg%3E",
     "galleryImages": [],
     "contentMDX": {
-      "en": "# RepairMaintenanceForge\n\nA cross-platform (iOS, Android, Web) repair and maintenance knowledge base app. Create step-by-step repair guides with parts, tools, photos, and safety notes. Track maintenance history for items you care for. Built with Expo + Fastify + PostgreSQL.\n\n## Apex Yard snapshot\n\n- Status: prototype\n- Category: Tools\n- Tech stack: Not detected\n\n## Features\n\n- Docker Desktop\n- Guide editor: Create and edit repair guides with reorderable steps, difficulty/safety/visibility levels\n- Search: Full-text search across guides with debounced input (250ms)\n- Favorites: Save guides for quick access (offline-capable with AsyncStorage)\n- Maintenance logs: Track work done on items with dates and costs\n- Markdown export: Share guides as Markdown files\n\n## Progress\n\nClassified as a prototype by Apex Yard; evidence and scope remain early-stage.\n\n## Issues / troubles\n\n- No application manifest was detected in the workspace.\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n- This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Record the next milestone and known blockers in this portfolio document.",
-      "ar": "# RepairMaintenanceForge\n\nA cross-platform (iOS, Android, Web) repair and maintenance knowledge base app. Create step-by-step repair guides with parts, tools, photos, and safety notes. Track maintenance history for items you care for. Built with Expo + Fastify + PostgreSQL.\n\n## Apex Yard snapshot\n\n- Status: prototype\n- Category: Tools\n- Tech stack: Not detected\n\n## Features\n\n- Docker Desktop\n- Guide editor: Create and edit repair guides with reorderable steps, difficulty/safety/visibility levels\n- Search: Full-text search across guides with debounced input (250ms)\n- Favorites: Save guides for quick access (offline-capable with AsyncStorage)\n- Maintenance logs: Track work done on items with dates and costs\n- Markdown export: Share guides as Markdown files\n\n## Progress\n\nClassified as a prototype by Apex Yard; evidence and scope remain early-stage.\n\n## Issues / troubles\n\n- No application manifest was detected in the workspace.\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n- This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Record the next milestone and known blockers in this portfolio document."
+      "en": "# mrkb\n\nA cross-platform (iOS, Android, Web) repair and maintenance knowledge base app. Create step-by-step repair guides with parts, tools, photos, and safety notes. Track maintenance history for items you care for. Built with Expo + Fastify + PostgreSQL.\n\n## Project snapshot\n\n- Status: prototype\n- Category: Tools\n- Tech stack: Not detected\n\n## Features\n\n- Docker Desktop\n- Guide editor: Create and edit repair guides with reorderable steps, difficulty/safety/visibility levels\n- Search: Full-text search across guides with debounced input (250ms)\n- Favorites: Save guides for quick access (offline-capable with AsyncStorage)\n- Maintenance logs: Track work done on items with dates and costs\n- Markdown export: Share guides as Markdown files\n\n## Progress\n\nClassified as a prototype by Dev Stage; evidence and scope remain early-stage.\n\n## Issues / troubles\n\n- No application manifest was detected in the workspace.\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n- This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Record the next milestone and known blockers in this portfolio document.",
+      "ar": "# mrkb\n\nA cross-platform (iOS, Android, Web) repair and maintenance knowledge base app. Create step-by-step repair guides with parts, tools, photos, and safety notes. Track maintenance history for items you care for. Built with Expo + Fastify + PostgreSQL.\n\n## Project snapshot\n\n- Status: prototype\n- Category: Tools\n- Tech stack: Not detected\n\n## Features\n\n- Docker Desktop\n- Guide editor: Create and edit repair guides with reorderable steps, difficulty/safety/visibility levels\n- Search: Full-text search across guides with debounced input (250ms)\n- Favorites: Save guides for quick access (offline-capable with AsyncStorage)\n- Maintenance logs: Track work done on items with dates and costs\n- Markdown export: Share guides as Markdown files\n\n## Progress\n\nClassified as a prototype by Dev Stage; evidence and scope remain early-stage.\n\n## Issues / troubles\n\n- No application manifest was detected in the workspace.\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n- This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Record the next milestone and known blockers in this portfolio document."
     },
     "isPublished": true,
     "featured": false,
@@ -2681,8 +2636,8 @@ export const PORTFOLIO_PROJECTS = [
       }
     ],
     "progress": {
-      "en": "Classified as a prototype by Apex Yard; evidence and scope remain early-stage.",
-      "ar": "Classified as a prototype by Apex Yard; evidence and scope remain early-stage."
+      "en": "Classified as a prototype by Dev Stage; evidence and scope remain early-stage.",
+      "ar": "Classified as a prototype by Dev Stage; evidence and scope remain early-stage."
     },
     "issues": [
       {
@@ -2698,8 +2653,8 @@ export const PORTFOLIO_PROJECTS = [
         "ar": "No conventional test directory was detected."
       },
       {
-        "en": "This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.",
-        "ar": "This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace."
+        "en": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.",
+        "ar": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace."
       }
     ],
     "suggestions": [
@@ -2725,8 +2680,8 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-mzawedi",
     "slug": "mzawedi",
     "title": {
-      "en": "مزودي — Mzawedi",
-      "ar": "مزودي — Mzawedi"
+      "en": "mzawedi",
+      "ar": "mzawedi"
     },
     "description": {
       "en": "Arabic Freelancer Service Rate Card Builder (Starter tier).",
@@ -2738,19 +2693,19 @@ export const PORTFOLIO_PROJECTS = [
     },
     "category": "Web",
     "client": {
-      "en": "Apex Yard / Hany-Labs",
-      "ar": "Apex Yard / Hany-Labs"
+      "en": "Independent",
+      "ar": "مستقل"
     },
     "role": {
       "en": "Founder & Builder",
       "ar": "المؤسس والمطور"
     },
     "year": "2026",
-    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3E%D9%85M%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EMZ%3C%2Ftext%3E%3C%2Fsvg%3E",
     "galleryImages": [],
     "contentMDX": {
-      "en": "# مزودي — Mzawedi\n\nArabic Freelancer Service Rate Card Builder (Starter tier).\n\n## Apex Yard snapshot\n\n- Status: in-progress\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Next.js 14 (App Router)\n- @react-pdf/renderer (A4 RTL PDF export)\n- @dnd-kit (drag-to-reorder)\n- localStorage (persistence, no backend)\n- Vitest + Testing Library (TDD on pure logic)\n- Service form — up to 12 services, drag to reorder.\n\n## Progress\n\nClassified as in progress by Apex Yard; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n- No GitHub remote is configured; updates remain local.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document.",
-      "ar": "# مزودي — Mzawedi\n\nArabic Freelancer Service Rate Card Builder (Starter tier).\n\n## Apex Yard snapshot\n\n- Status: in-progress\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Next.js 14 (App Router)\n- @react-pdf/renderer (A4 RTL PDF export)\n- @dnd-kit (drag-to-reorder)\n- localStorage (persistence, no backend)\n- Vitest + Testing Library (TDD on pure logic)\n- Service form — up to 12 services, drag to reorder.\n\n## Progress\n\nClassified as in progress by Apex Yard; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n- No GitHub remote is configured; updates remain local.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document."
+      "en": "# mzawedi\n\nArabic Freelancer Service Rate Card Builder (Starter tier).\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Next.js 14 (App Router)\n- @react-pdf/renderer (A4 RTL PDF export)\n- @dnd-kit (drag-to-reorder)\n- localStorage (persistence, no backend)\n- Vitest + Testing Library (TDD on pure logic)\n- Service form — up to 12 services, drag to reorder.\n\n## Progress\n\nClassified as in progress by Dev Stage; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n- No GitHub remote is configured; updates remain local.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document.",
+      "ar": "# mzawedi\n\nArabic Freelancer Service Rate Card Builder (Starter tier).\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Next.js 14 (App Router)\n- @react-pdf/renderer (A4 RTL PDF export)\n- @dnd-kit (drag-to-reorder)\n- localStorage (persistence, no backend)\n- Vitest + Testing Library (TDD on pure logic)\n- Service form — up to 12 services, drag to reorder.\n\n## Progress\n\nClassified as in progress by Dev Stage; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n- No GitHub remote is configured; updates remain local.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document."
     },
     "isPublished": true,
     "featured": false,
@@ -2791,8 +2746,8 @@ export const PORTFOLIO_PROJECTS = [
       }
     ],
     "progress": {
-      "en": "Classified as in progress by Apex Yard; implementation and scope are still evolving.",
-      "ar": "Classified as in progress by Apex Yard; implementation and scope are still evolving."
+      "en": "Classified as in progress by Dev Stage; implementation and scope are still evolving.",
+      "ar": "Classified as in progress by Dev Stage; implementation and scope are still evolving."
     },
     "issues": [
       {
@@ -2823,8 +2778,8 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-notes-library",
     "slug": "notes-library",
     "title": {
-      "en": "📚 ReadingNotesFlow",
-      "ar": "📚 ReadingNotesFlow"
+      "en": "notes-library",
+      "ar": "notes-library"
     },
     "description": {
       "en": "Organize books, articles, highlights, quotes, and personal notes into a searchable reading knowledge base.",
@@ -2836,19 +2791,19 @@ export const PORTFOLIO_PROJECTS = [
     },
     "category": "Tools",
     "client": {
-      "en": "Apex Yard / Hany-Labs",
-      "ar": "Apex Yard / Hany-Labs"
+      "en": "Independent",
+      "ar": "مستقل"
     },
     "role": {
       "en": "Founder & Builder",
       "ar": "المؤسس والمطور"
     },
     "year": "2026",
-    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3ERE%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3ENL%3C%2Ftext%3E%3C%2Fsvg%3E",
     "galleryImages": [],
     "contentMDX": {
-      "en": "# 📚 ReadingNotesFlow\n\nOrganize books, articles, highlights, quotes, and personal notes into a searchable reading knowledge base.\n\n## Apex Yard snapshot\n\n- Status: in-progress\n- Category: Tools\n- Tech stack: Not detected\n\n## Features\n\n- Monorepo with npm workspaces (`packages/server`, `packages/app`)\n- Expo + React Native Web for cross-platform (iOS, Android, Web) from one codebase\n- Express + TypeScript backend — lightweight, portable, no paid services\n- Drizzle ORM for type-safe PostgreSQL queries and migrations\n- JWT + bcrypt for local authentication — no third-party auth dependency\n- Local-first with optional cloud sync (not yet implemented)\n\n## Progress\n\nClassified as in progress by Apex Yard; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n- This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document.",
-      "ar": "# 📚 ReadingNotesFlow\n\nOrganize books, articles, highlights, quotes, and personal notes into a searchable reading knowledge base.\n\n## Apex Yard snapshot\n\n- Status: in-progress\n- Category: Tools\n- Tech stack: Not detected\n\n## Features\n\n- Monorepo with npm workspaces (`packages/server`, `packages/app`)\n- Expo + React Native Web for cross-platform (iOS, Android, Web) from one codebase\n- Express + TypeScript backend — lightweight, portable, no paid services\n- Drizzle ORM for type-safe PostgreSQL queries and migrations\n- JWT + bcrypt for local authentication — no third-party auth dependency\n- Local-first with optional cloud sync (not yet implemented)\n\n## Progress\n\nClassified as in progress by Apex Yard; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n- This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document."
+      "en": "# notes-library\n\nOrganize books, articles, highlights, quotes, and personal notes into a searchable reading knowledge base.\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Tools\n- Tech stack: Not detected\n\n## Features\n\n- Monorepo with npm workspaces (`packages/server`, `packages/app`)\n- Expo + React Native Web for cross-platform (iOS, Android, Web) from one codebase\n- Express + TypeScript backend — lightweight, portable, no paid services\n- Drizzle ORM for type-safe PostgreSQL queries and migrations\n- JWT + bcrypt for local authentication — no third-party auth dependency\n- Local-first with optional cloud sync (not yet implemented)\n\n## Progress\n\nClassified as in progress by Dev Stage; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n- This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document.",
+      "ar": "# notes-library\n\nOrganize books, articles, highlights, quotes, and personal notes into a searchable reading knowledge base.\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Tools\n- Tech stack: Not detected\n\n## Features\n\n- Monorepo with npm workspaces (`packages/server`, `packages/app`)\n- Expo + React Native Web for cross-platform (iOS, Android, Web) from one codebase\n- Express + TypeScript backend — lightweight, portable, no paid services\n- Drizzle ORM for type-safe PostgreSQL queries and migrations\n- JWT + bcrypt for local authentication — no third-party auth dependency\n- Local-first with optional cloud sync (not yet implemented)\n\n## Progress\n\nClassified as in progress by Dev Stage; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n- This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document."
     },
     "isPublished": true,
     "featured": false,
@@ -2883,8 +2838,8 @@ export const PORTFOLIO_PROJECTS = [
       }
     ],
     "progress": {
-      "en": "Classified as in progress by Apex Yard; implementation and scope are still evolving.",
-      "ar": "Classified as in progress by Apex Yard; implementation and scope are still evolving."
+      "en": "Classified as in progress by Dev Stage; implementation and scope are still evolving.",
+      "ar": "Classified as in progress by Dev Stage; implementation and scope are still evolving."
     },
     "issues": [
       {
@@ -2892,8 +2847,8 @@ export const PORTFOLIO_PROJECTS = [
         "ar": "No conventional test directory was detected."
       },
       {
-        "en": "This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.",
-        "ar": "This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace."
+        "en": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.",
+        "ar": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace."
       }
     ],
     "suggestions": [
@@ -2915,8 +2870,8 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-qessati",
     "slug": "qessati",
     "title": {
-      "en": "Qessati (قصتي) — Markdown Daily Journal with Obsidian Sync",
-      "ar": "Qessati (قصتي) — Markdown Daily Journal with Obsidian Sync"
+      "en": "qessati",
+      "ar": "qessati"
     },
     "description": {
       "en": "> Egyptian Arabic-first, fully offline, local-first Markdown daily journal. Sync to your own Obsidian vault through n8n.",
@@ -2928,19 +2883,19 @@ export const PORTFOLIO_PROJECTS = [
     },
     "category": "Mobile",
     "client": {
-      "en": "Apex Yard / Hany-Labs",
-      "ar": "Apex Yard / Hany-Labs"
+      "en": "Independent",
+      "ar": "مستقل"
     },
     "role": {
       "en": "Founder & Builder",
       "ar": "المؤسس والمطور"
     },
     "year": "2026",
-    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EQ%D9%82M%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EQE%3C%2Ftext%3E%3C%2Fsvg%3E",
     "galleryImages": [],
     "contentMDX": {
-      "en": "# Qessati (قصتي) — Markdown Daily Journal with Obsidian Sync\n\n> Egyptian Arabic-first, fully offline, local-first Markdown daily journal. Sync to your own Obsidian vault through n8n.\n\n## Apex Yard snapshot\n\n- Status: in-progress\n- Category: Mobile\n- Tech stack: Expo, React Native, React, TypeScript\n\n## Features\n\n- Almarai font files (Google Fonts, OFL) are bundled at `assets/fonts/`.\n- A development build is acceptable for native features; the brief does not require a release-grade `eas build`.\n- iOS + Android are both targets; web runs but is not the primary focus.\n- The user supplies their own n8n endpoint; the app does not provide one.\n- Light theme is the default; dark is offered as a user setting.\n- PRODUCT.md — durable product truth\n\n## Progress\n\nClassified as in progress by Apex Yard; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document.",
-      "ar": "# Qessati (قصتي) — Markdown Daily Journal with Obsidian Sync\n\n> Egyptian Arabic-first, fully offline, local-first Markdown daily journal. Sync to your own Obsidian vault through n8n.\n\n## Apex Yard snapshot\n\n- Status: in-progress\n- Category: Mobile\n- Tech stack: Expo, React Native, React, TypeScript\n\n## Features\n\n- Almarai font files (Google Fonts, OFL) are bundled at `assets/fonts/`.\n- A development build is acceptable for native features; the brief does not require a release-grade `eas build`.\n- iOS + Android are both targets; web runs but is not the primary focus.\n- The user supplies their own n8n endpoint; the app does not provide one.\n- Light theme is the default; dark is offered as a user setting.\n- PRODUCT.md — durable product truth\n\n## Progress\n\nClassified as in progress by Apex Yard; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document."
+      "en": "# qessati\n\n> Egyptian Arabic-first, fully offline, local-first Markdown daily journal. Sync to your own Obsidian vault through n8n.\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Mobile\n- Tech stack: Expo, React Native, React, TypeScript\n\n## Features\n\n- Almarai font files (Google Fonts, OFL) are bundled at `assets/fonts/`.\n- A development build is acceptable for native features; the brief does not require a release-grade `eas build`.\n- iOS + Android are both targets; web runs but is not the primary focus.\n- The user supplies their own n8n endpoint; the app does not provide one.\n- Light theme is the default; dark is offered as a user setting.\n- PRODUCT.md — durable product truth\n\n## Progress\n\nClassified as in progress by Dev Stage; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document.",
+      "ar": "# qessati\n\n> Egyptian Arabic-first, fully offline, local-first Markdown daily journal. Sync to your own Obsidian vault through n8n.\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Mobile\n- Tech stack: Expo, React Native, React, TypeScript\n\n## Features\n\n- Almarai font files (Google Fonts, OFL) are bundled at `assets/fonts/`.\n- A development build is acceptable for native features; the brief does not require a release-grade `eas build`.\n- iOS + Android are both targets; web runs but is not the primary focus.\n- The user supplies their own n8n endpoint; the app does not provide one.\n- Light theme is the default; dark is offered as a user setting.\n- PRODUCT.md — durable product truth\n\n## Progress\n\nClassified as in progress by Dev Stage; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document."
     },
     "isPublished": true,
     "featured": false,
@@ -2979,13 +2934,13 @@ export const PORTFOLIO_PROJECTS = [
       }
     ],
     "progress": {
-      "en": "Classified as in progress by Apex Yard; implementation and scope are still evolving.",
-      "ar": "Classified as in progress by Apex Yard; implementation and scope are still evolving."
+      "en": "Classified as in progress by Dev Stage; implementation and scope are still evolving.",
+      "ar": "Classified as in progress by Dev Stage; implementation and scope are still evolving."
     },
     "issues": [
       {
-        "en": "This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.",
-        "ar": "This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace."
+        "en": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.",
+        "ar": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace."
       }
     ],
     "suggestions": [
@@ -3007,8 +2962,8 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-retro-board",
     "slug": "retro-board",
     "title": {
-      "en": "TeamRetrospectiveKit",
-      "ar": "TeamRetrospectiveKit"
+      "en": "retro-board",
+      "ar": "retro-board"
     },
     "description": {
       "en": "Run private team retrospectives with categorized prompts, anonymous note capture, grouping, dot-voting, discussion timers, and action items.",
@@ -3020,19 +2975,19 @@ export const PORTFOLIO_PROJECTS = [
     },
     "category": "Web",
     "client": {
-      "en": "Apex Yard / Hany-Labs",
-      "ar": "Apex Yard / Hany-Labs"
+      "en": "Independent",
+      "ar": "مستقل"
     },
     "role": {
       "en": "Founder & Builder",
       "ar": "المؤسس والمطور"
     },
     "year": "2026",
-    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3ETE%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3ERB%3C%2Ftext%3E%3C%2Fsvg%3E",
     "galleryImages": [],
     "contentMDX": {
-      "en": "# TeamRetrospectiveKit\n\nRun private team retrospectives with categorized prompts, anonymous note capture, grouping, dot-voting, discussion timers, and action items.\n\n## Apex Yard snapshot\n\n- Status: in-progress\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Frontend: Next.js 16 (App Router), React 19, TypeScript, Tailwind CSS v4, shadcn/ui (Base UI)\n- Database: PostgreSQL with Drizzle ORM\n- Dev tools: pnpm, Docker Compose (optional)\n- PostgreSQL (local or Docker)\n- Capture — Team adds anonymous notes by category. Content hidden from others.\n- Reveal — All notes become visible in their categories.\n\n## Progress\n\nClassified as in progress by Apex Yard; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document.",
-      "ar": "# TeamRetrospectiveKit\n\nRun private team retrospectives with categorized prompts, anonymous note capture, grouping, dot-voting, discussion timers, and action items.\n\n## Apex Yard snapshot\n\n- Status: in-progress\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Frontend: Next.js 16 (App Router), React 19, TypeScript, Tailwind CSS v4, shadcn/ui (Base UI)\n- Database: PostgreSQL with Drizzle ORM\n- Dev tools: pnpm, Docker Compose (optional)\n- PostgreSQL (local or Docker)\n- Capture — Team adds anonymous notes by category. Content hidden from others.\n- Reveal — All notes become visible in their categories.\n\n## Progress\n\nClassified as in progress by Apex Yard; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document."
+      "en": "# retro-board\n\nRun private team retrospectives with categorized prompts, anonymous note capture, grouping, dot-voting, discussion timers, and action items.\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Frontend: Next.js 16 (App Router), React 19, TypeScript, Tailwind CSS v4, shadcn/ui (Base UI)\n- Database: PostgreSQL with Drizzle ORM\n- Dev tools: pnpm, Docker Compose (optional)\n- PostgreSQL (local or Docker)\n- Capture — Team adds anonymous notes by category. Content hidden from others.\n- Reveal — All notes become visible in their categories.\n\n## Progress\n\nClassified as in progress by Dev Stage; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document.",
+      "ar": "# retro-board\n\nRun private team retrospectives with categorized prompts, anonymous note capture, grouping, dot-voting, discussion timers, and action items.\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Frontend: Next.js 16 (App Router), React 19, TypeScript, Tailwind CSS v4, shadcn/ui (Base UI)\n- Database: PostgreSQL with Drizzle ORM\n- Dev tools: pnpm, Docker Compose (optional)\n- PostgreSQL (local or Docker)\n- Capture — Team adds anonymous notes by category. Content hidden from others.\n- Reveal — All notes become visible in their categories.\n\n## Progress\n\nClassified as in progress by Dev Stage; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document."
     },
     "isPublished": true,
     "featured": false,
@@ -3073,13 +3028,13 @@ export const PORTFOLIO_PROJECTS = [
       }
     ],
     "progress": {
-      "en": "Classified as in progress by Apex Yard; implementation and scope are still evolving.",
-      "ar": "Classified as in progress by Apex Yard; implementation and scope are still evolving."
+      "en": "Classified as in progress by Dev Stage; implementation and scope are still evolving.",
+      "ar": "Classified as in progress by Dev Stage; implementation and scope are still evolving."
     },
     "issues": [
       {
-        "en": "This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.",
-        "ar": "This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace."
+        "en": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.",
+        "ar": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace."
       }
     ],
     "suggestions": [
@@ -3101,12 +3056,12 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-rihla",
     "slug": "rihla",
     "title": {
-      "en": "Rihla",
-      "ar": "Rihla"
+      "en": "rihla",
+      "ar": "rihla"
     },
     "description": {
-      "en": "A project managed in the Apex Yard workspace.",
-      "ar": "A project managed in the Apex Yard workspace."
+      "en": "A project managed in the Dev Stage workspace.",
+      "ar": "A project managed in the Dev Stage workspace."
     },
     "meta": {
       "en": "IN-PROGRESS",
@@ -3114,8 +3069,8 @@ export const PORTFOLIO_PROJECTS = [
     },
     "category": "Tools",
     "client": {
-      "en": "Apex Yard / Hany-Labs",
-      "ar": "Apex Yard / Hany-Labs"
+      "en": "Independent",
+      "ar": "مستقل"
     },
     "role": {
       "en": "Founder & Builder",
@@ -3125,8 +3080,8 @@ export const PORTFOLIO_PROJECTS = [
     "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3ERI%3C%2Ftext%3E%3C%2Fsvg%3E",
     "galleryImages": [],
     "contentMDX": {
-      "en": "# Rihla\n\nA project managed in the Apex Yard workspace.\n\n## Apex Yard snapshot\n\n- Status: in-progress\n- Category: Tools\n- Tech stack: Not detected\n\n## Features\n\n- Current feature inventory: Unknown / verify.\n\n## Progress\n\nClassified as in progress by Apex Yard; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No application manifest was detected in the workspace.\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n- This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Record the next milestone and known blockers in this portfolio document.",
-      "ar": "# Rihla\n\nA project managed in the Apex Yard workspace.\n\n## Apex Yard snapshot\n\n- Status: in-progress\n- Category: Tools\n- Tech stack: Not detected\n\n## Features\n\n- Current feature inventory: Unknown / verify.\n\n## Progress\n\nClassified as in progress by Apex Yard; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No application manifest was detected in the workspace.\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n- This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Record the next milestone and known blockers in this portfolio document."
+      "en": "# rihla\n\nA project managed in the Dev Stage workspace.\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Tools\n- Tech stack: Not detected\n\n## Features\n\n- Current feature inventory: Unknown / verify.\n\n## Progress\n\nClassified as in progress by Dev Stage; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No application manifest was detected in the workspace.\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n- This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Record the next milestone and known blockers in this portfolio document.",
+      "ar": "# rihla\n\nA project managed in the Dev Stage workspace.\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Tools\n- Tech stack: Not detected\n\n## Features\n\n- Current feature inventory: Unknown / verify.\n\n## Progress\n\nClassified as in progress by Dev Stage; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No application manifest was detected in the workspace.\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n- This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Record the next milestone and known blockers in this portfolio document."
     },
     "isPublished": true,
     "featured": false,
@@ -3141,8 +3096,8 @@ export const PORTFOLIO_PROJECTS = [
       }
     ],
     "progress": {
-      "en": "Classified as in progress by Apex Yard; implementation and scope are still evolving.",
-      "ar": "Classified as in progress by Apex Yard; implementation and scope are still evolving."
+      "en": "Classified as in progress by Dev Stage; implementation and scope are still evolving.",
+      "ar": "Classified as in progress by Dev Stage; implementation and scope are still evolving."
     },
     "issues": [
       {
@@ -3158,8 +3113,8 @@ export const PORTFOLIO_PROJECTS = [
         "ar": "No conventional test directory was detected."
       },
       {
-        "en": "This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.",
-        "ar": "This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace."
+        "en": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.",
+        "ar": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace."
       }
     ],
     "suggestions": [
@@ -3185,12 +3140,12 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-ship-sink",
     "slug": "ship-sink",
     "title": {
-      "en": "Ship Sink",
-      "ar": "Ship Sink"
+      "en": "ship-sink",
+      "ar": "ship-sink"
     },
     "description": {
-      "en": "A project managed in the Apex Yard workspace.",
-      "ar": "A project managed in the Apex Yard workspace."
+      "en": "A project managed in the Dev Stage workspace.",
+      "ar": "A project managed in the Dev Stage workspace."
     },
     "meta": {
       "en": "IN-PROGRESS",
@@ -3198,8 +3153,8 @@ export const PORTFOLIO_PROJECTS = [
     },
     "category": "Tools",
     "client": {
-      "en": "Apex Yard / Hany-Labs",
-      "ar": "Apex Yard / Hany-Labs"
+      "en": "Independent",
+      "ar": "مستقل"
     },
     "role": {
       "en": "Founder & Builder",
@@ -3209,8 +3164,8 @@ export const PORTFOLIO_PROJECTS = [
     "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3ESS%3C%2Ftext%3E%3C%2Fsvg%3E",
     "galleryImages": [],
     "contentMDX": {
-      "en": "# Ship Sink\n\nA project managed in the Apex Yard workspace.\n\n## Apex Yard snapshot\n\n- Status: in-progress\n- Category: Tools\n- Tech stack: Not detected\n\n## Features\n\n- Current feature inventory: Unknown / verify.\n\n## Progress\n\nClassified as in progress by Apex Yard; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No application manifest was detected in the workspace.\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n- This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Record the next milestone and known blockers in this portfolio document.",
-      "ar": "# Ship Sink\n\nA project managed in the Apex Yard workspace.\n\n## Apex Yard snapshot\n\n- Status: in-progress\n- Category: Tools\n- Tech stack: Not detected\n\n## Features\n\n- Current feature inventory: Unknown / verify.\n\n## Progress\n\nClassified as in progress by Apex Yard; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No application manifest was detected in the workspace.\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n- This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Record the next milestone and known blockers in this portfolio document."
+      "en": "# ship-sink\n\nA project managed in the Dev Stage workspace.\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Tools\n- Tech stack: Not detected\n\n## Features\n\n- Current feature inventory: Unknown / verify.\n\n## Progress\n\nClassified as in progress by Dev Stage; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No application manifest was detected in the workspace.\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n- This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Record the next milestone and known blockers in this portfolio document.",
+      "ar": "# ship-sink\n\nA project managed in the Dev Stage workspace.\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Tools\n- Tech stack: Not detected\n\n## Features\n\n- Current feature inventory: Unknown / verify.\n\n## Progress\n\nClassified as in progress by Dev Stage; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No application manifest was detected in the workspace.\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n- This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Record the next milestone and known blockers in this portfolio document."
     },
     "isPublished": true,
     "featured": false,
@@ -3225,8 +3180,8 @@ export const PORTFOLIO_PROJECTS = [
       }
     ],
     "progress": {
-      "en": "Classified as in progress by Apex Yard; implementation and scope are still evolving.",
-      "ar": "Classified as in progress by Apex Yard; implementation and scope are still evolving."
+      "en": "Classified as in progress by Dev Stage; implementation and scope are still evolving.",
+      "ar": "Classified as in progress by Dev Stage; implementation and scope are still evolving."
     },
     "issues": [
       {
@@ -3242,8 +3197,8 @@ export const PORTFOLIO_PROJECTS = [
         "ar": "No conventional test directory was detected."
       },
       {
-        "en": "This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.",
-        "ar": "This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace."
+        "en": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.",
+        "ar": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace."
       }
     ],
     "suggestions": [
@@ -3269,8 +3224,8 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-solo-consultants",
     "slug": "solo-consultants",
     "title": {
-      "en": "MicroCrmForge",
-      "ar": "MicroCrmForge"
+      "en": "solo-consultants",
+      "ar": "solo-consultants"
     },
     "description": {
       "en": "MicroCrmForge is a local-first CRM for solo consultants. MVP v1 is a device-only Expo app with one local workspace, durable task-first work, core CRM records, planning, local export/import, and privacy/reset controls.",
@@ -3282,19 +3237,19 @@ export const PORTFOLIO_PROJECTS = [
     },
     "category": "Mobile",
     "client": {
-      "en": "Apex Yard / Hany-Labs",
-      "ar": "Apex Yard / Hany-Labs"
+      "en": "Independent",
+      "ar": "مستقل"
     },
     "role": {
       "en": "Founder & Builder",
       "ar": "المؤسس والمطور"
     },
     "year": "2026",
-    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EMI%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3ESC%3C%2Ftext%3E%3C%2Fsvg%3E",
     "galleryImages": [],
     "contentMDX": {
-      "en": "# MicroCrmForge\n\nMicroCrmForge is a local-first CRM for solo consultants. MVP v1 is a device-only Expo app with one local workspace, durable task-first work, core CRM records, planning, local export/import, and privacy/reset controls.\n\n## Apex Yard snapshot\n\n- Status: in-progress\n- Category: Mobile\n- Tech stack: Expo, React Native, React, TypeScript\n\n## Features\n\n- Expo React Native + TypeScript + Expo Router + React Native Web.\n- Responsive five-area navigation: Home, Tasks, Records, Planning, Settings.\n- Bento-derived semantic tokens and shared UI primitives.\n- AsyncStorage local repository seam.\n- Task create, link, edit, complete, reopen, search, filter, sort, and basic recovery states.\n- Core contacts, companies, opportunities, projects, interactions, task history, planning, archive/restore, local export/import, and privacy/reset flows.\n\n## Progress\n\nClassified as in progress by Apex Yard; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document.",
-      "ar": "# MicroCrmForge\n\nMicroCrmForge is a local-first CRM for solo consultants. MVP v1 is a device-only Expo app with one local workspace, durable task-first work, core CRM records, planning, local export/import, and privacy/reset controls.\n\n## Apex Yard snapshot\n\n- Status: in-progress\n- Category: Mobile\n- Tech stack: Expo, React Native, React, TypeScript\n\n## Features\n\n- Expo React Native + TypeScript + Expo Router + React Native Web.\n- Responsive five-area navigation: Home, Tasks, Records, Planning, Settings.\n- Bento-derived semantic tokens and shared UI primitives.\n- AsyncStorage local repository seam.\n- Task create, link, edit, complete, reopen, search, filter, sort, and basic recovery states.\n- Core contacts, companies, opportunities, projects, interactions, task history, planning, archive/restore, local export/import, and privacy/reset flows.\n\n## Progress\n\nClassified as in progress by Apex Yard; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document."
+      "en": "# solo-consultants\n\nMicroCrmForge is a local-first CRM for solo consultants. MVP v1 is a device-only Expo app with one local workspace, durable task-first work, core CRM records, planning, local export/import, and privacy/reset controls.\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Mobile\n- Tech stack: Expo, React Native, React, TypeScript\n\n## Features\n\n- Expo React Native + TypeScript + Expo Router + React Native Web.\n- Responsive five-area navigation: Home, Tasks, Records, Planning, Settings.\n- Bento-derived semantic tokens and shared UI primitives.\n- AsyncStorage local repository seam.\n- Task create, link, edit, complete, reopen, search, filter, sort, and basic recovery states.\n- Core contacts, companies, opportunities, projects, interactions, task history, planning, archive/restore, local export/import, and privacy/reset flows.\n\n## Progress\n\nClassified as in progress by Dev Stage; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document.",
+      "ar": "# solo-consultants\n\nMicroCrmForge is a local-first CRM for solo consultants. MVP v1 is a device-only Expo app with one local workspace, durable task-first work, core CRM records, planning, local export/import, and privacy/reset controls.\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Mobile\n- Tech stack: Expo, React Native, React, TypeScript\n\n## Features\n\n- Expo React Native + TypeScript + Expo Router + React Native Web.\n- Responsive five-area navigation: Home, Tasks, Records, Planning, Settings.\n- Bento-derived semantic tokens and shared UI primitives.\n- AsyncStorage local repository seam.\n- Task create, link, edit, complete, reopen, search, filter, sort, and basic recovery states.\n- Core contacts, companies, opportunities, projects, interactions, task history, planning, archive/restore, local export/import, and privacy/reset flows.\n\n## Progress\n\nClassified as in progress by Dev Stage; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document."
     },
     "isPublished": true,
     "featured": false,
@@ -3333,13 +3288,13 @@ export const PORTFOLIO_PROJECTS = [
       }
     ],
     "progress": {
-      "en": "Classified as in progress by Apex Yard; implementation and scope are still evolving.",
-      "ar": "Classified as in progress by Apex Yard; implementation and scope are still evolving."
+      "en": "Classified as in progress by Dev Stage; implementation and scope are still evolving.",
+      "ar": "Classified as in progress by Dev Stage; implementation and scope are still evolving."
     },
     "issues": [
       {
-        "en": "This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.",
-        "ar": "This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace."
+        "en": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.",
+        "ar": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace."
       }
     ],
     "suggestions": [
@@ -3361,8 +3316,8 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-squad-tactics",
     "slug": "squad-tactics",
     "title": {
-      "en": "SquadTactics",
-      "ar": "SquadTactics"
+      "en": "squad-tactics",
+      "ar": "squad-tactics"
     },
     "description": {
       "en": "SquadTactics — Turn-Based 3D Team Tactics Battle on a Hex Grid",
@@ -3374,19 +3329,19 @@ export const PORTFOLIO_PROJECTS = [
     },
     "category": "Web",
     "client": {
-      "en": "Apex Yard / Hany-Labs",
-      "ar": "Apex Yard / Hany-Labs"
+      "en": "Independent",
+      "ar": "مستقل"
     },
     "role": {
       "en": "Founder & Builder",
       "ar": "المؤسس والمطور"
     },
     "year": "2026",
-    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3ESQ%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EST%3C%2Ftext%3E%3C%2Fsvg%3E",
     "galleryImages": [],
     "contentMDX": {
-      "en": "# SquadTactics\n\nSquadTactics — Turn-Based 3D Team Tactics Battle on a Hex Grid\n\n## Apex Yard snapshot\n\n- Status: in-progress\n- Category: Web\n- Tech stack: Vite, TypeScript, Vitest\n\n## Features\n\n- Stack: TypeScript 5, Vite 5, Three.js, GSAP 3, PeerJS 1.5, Vitest, Playwright\n- No React, no framework, no UI library — raw TypeScript\n- No accounts, no central server, no auth — WebRTC peer-to-peer with PeerJS public STUN\n- `dist/index.html` opens without a server (file:// — single-player / hot-seat / inspection only; multiplayer needs internet for the PeerJS broker)\n- Tap a hex to move / an enemy to attack\n- Virtual controls in the bottom HUD\n\n## Progress\n\nClassified as in progress by Apex Yard; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document.",
-      "ar": "# SquadTactics\n\nSquadTactics — Turn-Based 3D Team Tactics Battle on a Hex Grid\n\n## Apex Yard snapshot\n\n- Status: in-progress\n- Category: Web\n- Tech stack: Vite, TypeScript, Vitest\n\n## Features\n\n- Stack: TypeScript 5, Vite 5, Three.js, GSAP 3, PeerJS 1.5, Vitest, Playwright\n- No React, no framework, no UI library — raw TypeScript\n- No accounts, no central server, no auth — WebRTC peer-to-peer with PeerJS public STUN\n- `dist/index.html` opens without a server (file:// — single-player / hot-seat / inspection only; multiplayer needs internet for the PeerJS broker)\n- Tap a hex to move / an enemy to attack\n- Virtual controls in the bottom HUD\n\n## Progress\n\nClassified as in progress by Apex Yard; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document."
+      "en": "# squad-tactics\n\nSquadTactics — Turn-Based 3D Team Tactics Battle on a Hex Grid\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Web\n- Tech stack: Vite, TypeScript, Vitest\n\n## Features\n\n- Stack: TypeScript 5, Vite 5, Three.js, GSAP 3, PeerJS 1.5, Vitest, Playwright\n- No React, no framework, no UI library — raw TypeScript\n- No accounts, no central server, no auth — WebRTC peer-to-peer with PeerJS public STUN\n- `dist/index.html` opens without a server (file:// — single-player / hot-seat / inspection only; multiplayer needs internet for the PeerJS broker)\n- Tap a hex to move / an enemy to attack\n- Virtual controls in the bottom HUD\n\n## Progress\n\nClassified as in progress by Dev Stage; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document.",
+      "ar": "# squad-tactics\n\nSquadTactics — Turn-Based 3D Team Tactics Battle on a Hex Grid\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Web\n- Tech stack: Vite, TypeScript, Vitest\n\n## Features\n\n- Stack: TypeScript 5, Vite 5, Three.js, GSAP 3, PeerJS 1.5, Vitest, Playwright\n- No React, no framework, no UI library — raw TypeScript\n- No accounts, no central server, no auth — WebRTC peer-to-peer with PeerJS public STUN\n- `dist/index.html` opens without a server (file:// — single-player / hot-seat / inspection only; multiplayer needs internet for the PeerJS broker)\n- Tap a hex to move / an enemy to attack\n- Virtual controls in the bottom HUD\n\n## Progress\n\nClassified as in progress by Dev Stage; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document."
     },
     "isPublished": true,
     "featured": false,
@@ -3424,13 +3379,13 @@ export const PORTFOLIO_PROJECTS = [
       }
     ],
     "progress": {
-      "en": "Classified as in progress by Apex Yard; implementation and scope are still evolving.",
-      "ar": "Classified as in progress by Apex Yard; implementation and scope are still evolving."
+      "en": "Classified as in progress by Dev Stage; implementation and scope are still evolving.",
+      "ar": "Classified as in progress by Dev Stage; implementation and scope are still evolving."
     },
     "issues": [
       {
-        "en": "This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.",
-        "ar": "This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace."
+        "en": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.",
+        "ar": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace."
       }
     ],
     "suggestions": [
@@ -3452,8 +3407,8 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-study-circle",
     "slug": "study-circle",
     "title": {
-      "en": "Welcome to your Expo app 👋",
-      "ar": "Welcome to your Expo app 👋"
+      "en": "study-circle",
+      "ar": "study-circle"
     },
     "description": {
       "en": "This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).",
@@ -3465,19 +3420,19 @@ export const PORTFOLIO_PROJECTS = [
     },
     "category": "Mobile",
     "client": {
-      "en": "Apex Yard / Hany-Labs",
-      "ar": "Apex Yard / Hany-Labs"
+      "en": "Independent",
+      "ar": "مستقل"
     },
     "role": {
       "en": "Founder & Builder",
       "ar": "المؤسس والمطور"
     },
     "year": "2026",
-    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EWTY%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3ESC%3C%2Ftext%3E%3C%2Fsvg%3E",
     "galleryImages": [],
     "contentMDX": {
-      "en": "# Welcome to your Expo app 👋\n\nThis is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).\n\n## Apex Yard snapshot\n\n- Status: prototype\n- Category: Mobile\n- Tech stack: Expo, React Native, React, TypeScript\n\n## Features\n\n- Install dependencies\n- Start the app\n- development build\n- Android emulator\n- iOS simulator\n- Expo Go, a limited sandbox for trying out app development with Expo\n\n## Progress\n\nClassified as a prototype by Apex Yard; evidence and scope remain early-stage.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n- No GitHub remote is configured; updates remain local.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document.",
-      "ar": "# Welcome to your Expo app 👋\n\nThis is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).\n\n## Apex Yard snapshot\n\n- Status: prototype\n- Category: Mobile\n- Tech stack: Expo, React Native, React, TypeScript\n\n## Features\n\n- Install dependencies\n- Start the app\n- development build\n- Android emulator\n- iOS simulator\n- Expo Go, a limited sandbox for trying out app development with Expo\n\n## Progress\n\nClassified as a prototype by Apex Yard; evidence and scope remain early-stage.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n- No GitHub remote is configured; updates remain local.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document."
+      "en": "# study-circle\n\nThis is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).\n\n## Project snapshot\n\n- Status: prototype\n- Category: Mobile\n- Tech stack: Expo, React Native, React, TypeScript\n\n## Features\n\n- Install dependencies\n- Start the app\n- development build\n- Android emulator\n- iOS simulator\n- Expo Go, a limited sandbox for trying out app development with Expo\n\n## Progress\n\nClassified as a prototype by Dev Stage; evidence and scope remain early-stage.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n- No GitHub remote is configured; updates remain local.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document.",
+      "ar": "# study-circle\n\nThis is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).\n\n## Project snapshot\n\n- Status: prototype\n- Category: Mobile\n- Tech stack: Expo, React Native, React, TypeScript\n\n## Features\n\n- Install dependencies\n- Start the app\n- development build\n- Android emulator\n- iOS simulator\n- Expo Go, a limited sandbox for trying out app development with Expo\n\n## Progress\n\nClassified as a prototype by Dev Stage; evidence and scope remain early-stage.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n- No GitHub remote is configured; updates remain local.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document."
     },
     "isPublished": true,
     "featured": false,
@@ -3516,8 +3471,8 @@ export const PORTFOLIO_PROJECTS = [
       }
     ],
     "progress": {
-      "en": "Classified as a prototype by Apex Yard; evidence and scope remain early-stage.",
-      "ar": "Classified as a prototype by Apex Yard; evidence and scope remain early-stage."
+      "en": "Classified as a prototype by Dev Stage; evidence and scope remain early-stage.",
+      "ar": "Classified as a prototype by Dev Stage; evidence and scope remain early-stage."
     },
     "issues": [
       {
@@ -3548,8 +3503,8 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-sub-tracker",
     "slug": "sub-tracker",
     "title": {
-      "en": "SubscriptionRenewalFlow",
-      "ar": "SubscriptionRenewalFlow"
+      "en": "sub-tracker",
+      "ar": "sub-tracker"
     },
     "description": {
       "en": "> See every renewal before it hits. Track subscriptions, trials, price > changes, and cancellation notes — locally on your device. Your data > stays yours.",
@@ -3561,19 +3516,19 @@ export const PORTFOLIO_PROJECTS = [
     },
     "category": "Mobile",
     "client": {
-      "en": "Apex Yard / Hany-Labs",
-      "ar": "Apex Yard / Hany-Labs"
+      "en": "Independent",
+      "ar": "مستقل"
     },
     "role": {
       "en": "Founder & Builder",
       "ar": "المؤسس والمطور"
     },
     "year": "2026",
-    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3ESU%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EST%3C%2Ftext%3E%3C%2Fsvg%3E",
     "galleryImages": [],
     "contentMDX": {
-      "en": "# SubscriptionRenewalFlow\n\n> See every renewal before it hits. Track subscriptions, trials, price > changes, and cancellation notes — locally on your device. Your data > stays yours.\n\n## Apex Yard snapshot\n\n- Status: in-progress\n- Category: Mobile\n- Tech stack: Expo, React Native, React\n\n## Features\n\n- Onboarding — first-run choice of sample data or empty start.\n- Dashboard — estimated monthly/quarterly/yearly totals, next\n- Subscriptions list — debounced search, status and category\n- Subscription detail — header, next renewal, price history,\n- Add/Edit form — zod-validated, duplicate-submit guard,\n- Renewal schedule — upcoming and overdue events grouped by month.\n\n## Progress\n\nClassified as in progress by Apex Yard; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document.",
-      "ar": "# SubscriptionRenewalFlow\n\n> See every renewal before it hits. Track subscriptions, trials, price > changes, and cancellation notes — locally on your device. Your data > stays yours.\n\n## Apex Yard snapshot\n\n- Status: in-progress\n- Category: Mobile\n- Tech stack: Expo, React Native, React\n\n## Features\n\n- Onboarding — first-run choice of sample data or empty start.\n- Dashboard — estimated monthly/quarterly/yearly totals, next\n- Subscriptions list — debounced search, status and category\n- Subscription detail — header, next renewal, price history,\n- Add/Edit form — zod-validated, duplicate-submit guard,\n- Renewal schedule — upcoming and overdue events grouped by month.\n\n## Progress\n\nClassified as in progress by Apex Yard; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document."
+      "en": "# sub-tracker\n\n> See every renewal before it hits. Track subscriptions, trials, price > changes, and cancellation notes — locally on your device. Your data > stays yours.\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Mobile\n- Tech stack: Expo, React Native, React\n\n## Features\n\n- Onboarding — first-run choice of sample data or empty start.\n- Dashboard — estimated monthly/quarterly/yearly totals, next\n- Subscriptions list — debounced search, status and category\n- Subscription detail — header, next renewal, price history,\n- Add/Edit form — zod-validated, duplicate-submit guard,\n- Renewal schedule — upcoming and overdue events grouped by month.\n\n## Progress\n\nClassified as in progress by Dev Stage; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document.",
+      "ar": "# sub-tracker\n\n> See every renewal before it hits. Track subscriptions, trials, price > changes, and cancellation notes — locally on your device. Your data > stays yours.\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Mobile\n- Tech stack: Expo, React Native, React\n\n## Features\n\n- Onboarding — first-run choice of sample data or empty start.\n- Dashboard — estimated monthly/quarterly/yearly totals, next\n- Subscriptions list — debounced search, status and category\n- Subscription detail — header, next renewal, price history,\n- Add/Edit form — zod-validated, duplicate-submit guard,\n- Renewal schedule — upcoming and overdue events grouped by month.\n\n## Progress\n\nClassified as in progress by Dev Stage; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document."
     },
     "isPublished": true,
     "featured": false,
@@ -3611,13 +3566,13 @@ export const PORTFOLIO_PROJECTS = [
       }
     ],
     "progress": {
-      "en": "Classified as in progress by Apex Yard; implementation and scope are still evolving.",
-      "ar": "Classified as in progress by Apex Yard; implementation and scope are still evolving."
+      "en": "Classified as in progress by Dev Stage; implementation and scope are still evolving.",
+      "ar": "Classified as in progress by Dev Stage; implementation and scope are still evolving."
     },
     "issues": [
       {
-        "en": "This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.",
-        "ar": "This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace."
+        "en": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.",
+        "ar": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace."
       }
     ],
     "suggestions": [
@@ -3639,8 +3594,8 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-supabase-bootstrap",
     "slug": "supabase-bootstrap",
     "title": {
-      "en": "SupabaseBootstrap",
-      "ar": "SupabaseBootstrap"
+      "en": "supabase-bootstrap",
+      "ar": "supabase-bootstrap"
     },
     "description": {
       "en": "A local setup assistant that inspects a web project and generates a minimal portable Supabase or local-PostgreSQL backend foundation",
@@ -3652,19 +3607,19 @@ export const PORTFOLIO_PROJECTS = [
     },
     "category": "Web",
     "client": {
-      "en": "Apex Yard / Hany-Labs",
-      "ar": "Apex Yard / Hany-Labs"
+      "en": "Independent",
+      "ar": "مستقل"
     },
     "role": {
       "en": "Founder & Builder",
       "ar": "المؤسس والمطور"
     },
     "year": "2026",
-    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3ESU%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3ESB%3C%2Ftext%3E%3C%2Fsvg%3E",
     "galleryImages": [],
     "contentMDX": {
-      "en": "# SupabaseBootstrap\n\nA local setup assistant that inspects a web project and generates a minimal portable Supabase or local-PostgreSQL backend foundation\n\n## Apex Yard snapshot\n\n- Status: in-progress\n- Category: Web\n- Tech stack: Vite, TypeScript, Vitest\n\n## Features\n\n- Plans a minimal backend: proposes tables, indexes, environment variables, and an auth provider based on what the target actually needs.\n- Generates portable PostgreSQL `CREATE TABLE` migrations, deterministic seed SQL (using fictional users), and a least-privilege auth rules document.\n- Verifies the plan: structural checks, env-var coverage, \"no real secrets embedded\" guardrail, migration/seed/auth completeness.\n- Exports the plan as a reviewable Markdown or JSON document, with secrets redacted.\n- `inspections` — one row per inspected project path (unique on path)\n- `plans` — the backend plan; tracks target, auth provider, status, version\n\n## Progress\n\nClassified as in progress by Apex Yard; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document.",
-      "ar": "# SupabaseBootstrap\n\nA local setup assistant that inspects a web project and generates a minimal portable Supabase or local-PostgreSQL backend foundation\n\n## Apex Yard snapshot\n\n- Status: in-progress\n- Category: Web\n- Tech stack: Vite, TypeScript, Vitest\n\n## Features\n\n- Plans a minimal backend: proposes tables, indexes, environment variables, and an auth provider based on what the target actually needs.\n- Generates portable PostgreSQL `CREATE TABLE` migrations, deterministic seed SQL (using fictional users), and a least-privilege auth rules document.\n- Verifies the plan: structural checks, env-var coverage, \"no real secrets embedded\" guardrail, migration/seed/auth completeness.\n- Exports the plan as a reviewable Markdown or JSON document, with secrets redacted.\n- `inspections` — one row per inspected project path (unique on path)\n- `plans` — the backend plan; tracks target, auth provider, status, version\n\n## Progress\n\nClassified as in progress by Apex Yard; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document."
+      "en": "# supabase-bootstrap\n\nA local setup assistant that inspects a web project and generates a minimal portable Supabase or local-PostgreSQL backend foundation\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Web\n- Tech stack: Vite, TypeScript, Vitest\n\n## Features\n\n- Plans a minimal backend: proposes tables, indexes, environment variables, and an auth provider based on what the target actually needs.\n- Generates portable PostgreSQL `CREATE TABLE` migrations, deterministic seed SQL (using fictional users), and a least-privilege auth rules document.\n- Verifies the plan: structural checks, env-var coverage, \"no real secrets embedded\" guardrail, migration/seed/auth completeness.\n- Exports the plan as a reviewable Markdown or JSON document, with secrets redacted.\n- `inspections` — one row per inspected project path (unique on path)\n- `plans` — the backend plan; tracks target, auth provider, status, version\n\n## Progress\n\nClassified as in progress by Dev Stage; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document.",
+      "ar": "# supabase-bootstrap\n\nA local setup assistant that inspects a web project and generates a minimal portable Supabase or local-PostgreSQL backend foundation\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Web\n- Tech stack: Vite, TypeScript, Vitest\n\n## Features\n\n- Plans a minimal backend: proposes tables, indexes, environment variables, and an auth provider based on what the target actually needs.\n- Generates portable PostgreSQL `CREATE TABLE` migrations, deterministic seed SQL (using fictional users), and a least-privilege auth rules document.\n- Verifies the plan: structural checks, env-var coverage, \"no real secrets embedded\" guardrail, migration/seed/auth completeness.\n- Exports the plan as a reviewable Markdown or JSON document, with secrets redacted.\n- `inspections` — one row per inspected project path (unique on path)\n- `plans` — the backend plan; tracks target, auth provider, status, version\n\n## Progress\n\nClassified as in progress by Dev Stage; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document."
     },
     "isPublished": true,
     "featured": false,
@@ -3702,13 +3657,13 @@ export const PORTFOLIO_PROJECTS = [
       }
     ],
     "progress": {
-      "en": "Classified as in progress by Apex Yard; implementation and scope are still evolving.",
-      "ar": "Classified as in progress by Apex Yard; implementation and scope are still evolving."
+      "en": "Classified as in progress by Dev Stage; implementation and scope are still evolving.",
+      "ar": "Classified as in progress by Dev Stage; implementation and scope are still evolving."
     },
     "issues": [
       {
-        "en": "This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.",
-        "ar": "This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace."
+        "en": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.",
+        "ar": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace."
       }
     ],
     "suggestions": [
@@ -3730,8 +3685,8 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-wajba",
     "slug": "wajba",
     "title": {
-      "en": "Wajba",
-      "ar": "Wajba"
+      "en": "wajba",
+      "ar": "wajba"
     },
     "description": {
       "en": "Wajba is a local-first bilingual Arabic/English MENA meal-planning web app. It combines a static recipe catalog with weekly and monthly planning, Ramadan mode, dietary filters, pantry quantity matching, grocery aggregation, cooking timers, browser persistence, family URL sharing,",
@@ -3743,8 +3698,8 @@ export const PORTFOLIO_PROJECTS = [
     },
     "category": "Web",
     "client": {
-      "en": "Apex Yard / Hany-Labs",
-      "ar": "Apex Yard / Hany-Labs"
+      "en": "Independent",
+      "ar": "مستقل"
     },
     "role": {
       "en": "Founder & Builder",
@@ -3754,8 +3709,8 @@ export const PORTFOLIO_PROJECTS = [
     "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EWA%3C%2Ftext%3E%3C%2Fsvg%3E",
     "galleryImages": [],
     "contentMDX": {
-      "en": "# Wajba\n\nWajba is a local-first bilingual Arabic/English MENA meal-planning web app. It combines a static recipe catalog with weekly and monthly planning, Ramadan mode, dietary filters, pantry quantity matching, grocery aggregation, cooking timers, browser persistence, family URL sharing,\n\n## Apex Yard snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Vite, React, TypeScript, Tailwind\n\n## Features\n\n- Project Structure\n- Local Development\n- AI Agent Guide\n- Team Decisions\n- Deployment target, CI ownership, and the intended Gemini/Express runtime are `Unknown / verify`.\n- Recipe JSON files are checked-in data artifacts; the running app imports `src/data/recipes.ts` directly.\n\n## Progress\n\nClassified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- Unknown / verify — no issue inventory was found in the current repository sources.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
-      "ar": "# Wajba\n\nWajba is a local-first bilingual Arabic/English MENA meal-planning web app. It combines a static recipe catalog with weekly and monthly planning, Ramadan mode, dietary filters, pantry quantity matching, grocery aggregation, cooking timers, browser persistence, family URL sharing,\n\n## Apex Yard snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Vite, React, TypeScript, Tailwind\n\n## Features\n\n- Project Structure\n- Local Development\n- AI Agent Guide\n- Team Decisions\n- Deployment target, CI ownership, and the intended Gemini/Express runtime are `Unknown / verify`.\n- Recipe JSON files are checked-in data artifacts; the running app imports `src/data/recipes.ts` directly.\n\n## Progress\n\nClassified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- Unknown / verify — no issue inventory was found in the current repository sources.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
+      "en": "# wajba\n\nWajba is a local-first bilingual Arabic/English MENA meal-planning web app. It combines a static recipe catalog with weekly and monthly planning, Ramadan mode, dietary filters, pantry quantity matching, grocery aggregation, cooking timers, browser persistence, family URL sharing,\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Vite, React, TypeScript, Tailwind\n\n## Features\n\n- Project Structure\n- Local Development\n- AI Agent Guide\n- Team Decisions\n- Deployment target, CI ownership, and the intended Gemini/Express runtime are `Unknown / verify`.\n- Recipe JSON files are checked-in data artifacts; the running app imports `src/data/recipes.ts` directly.\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- Unknown / verify — no issue inventory was found in the current repository sources.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
+      "ar": "# wajba\n\nWajba is a local-first bilingual Arabic/English MENA meal-planning web app. It combines a static recipe catalog with weekly and monthly planning, Ramadan mode, dietary filters, pantry quantity matching, grocery aggregation, cooking timers, browser persistence, family URL sharing,\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Vite, React, TypeScript, Tailwind\n\n## Features\n\n- Project Structure\n- Local Development\n- AI Agent Guide\n- Team Decisions\n- Deployment target, CI ownership, and the intended Gemini/Express runtime are `Unknown / verify`.\n- Recipe JSON files are checked-in data artifacts; the running app imports `src/data/recipes.ts` directly.\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- Unknown / verify — no issue inventory was found in the current repository sources.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
     },
     "isPublished": true,
     "featured": false,
@@ -3794,8 +3749,8 @@ export const PORTFOLIO_PROJECTS = [
       }
     ],
     "progress": {
-      "en": "Classified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence.",
-      "ar": "Classified as showcase-ready by Apex Yard; this snapshot reflects the current repository evidence."
+      "en": "Classified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.",
+      "ar": "Classified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence."
     },
     "issues": [
       {
@@ -3823,8 +3778,8 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-hafiz",
     "slug": "hafiz",
     "title": {
-      "en": "Hafiz — Quran Recitation Memorization & Repetition Tracker",
-      "ar": "Hafiz — Quran Recitation Memorization & Repetition Tracker"
+      "en": "hafiz",
+      "ar": "hafiz"
     },
     "description": {
       "en": "Egyptian-Arabic-first React Native (Expo) app for tracking Quran memorization and repetition. Fully offline, RTL, Almarai typography, local SQLite persistence, JSON/CSV/Markdown export, optional n8n webhook sync.",
@@ -3836,19 +3791,19 @@ export const PORTFOLIO_PROJECTS = [
     },
     "category": "Mobile",
     "client": {
-      "en": "Apex Yard / Hany-Labs",
-      "ar": "Apex Yard / Hany-Labs"
+      "en": "Independent",
+      "ar": "مستقل"
     },
     "role": {
       "en": "Founder & Builder",
       "ar": "المؤسس والمطور"
     },
     "year": "2026",
-    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EHQR%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EHA%3C%2Ftext%3E%3C%2Fsvg%3E",
     "galleryImages": [],
     "contentMDX": {
-      "en": "# Hafiz — Quran Recitation Memorization & Repetition Tracker\n\nEgyptian-Arabic-first React Native (Expo) app for tracking Quran memorization and repetition. Fully offline, RTL, Almarai typography, local SQLite persistence, JSON/CSV/Markdown export, optional n8n webhook sync.\n\n## Apex Yard snapshot\n\n- Status: prototype\n- Category: Mobile\n- Tech stack: Expo, React Native, React, TypeScript\n\n## Features\n\n- `primaryrecords` — title, description, category, status, amountminor, repetitions, tagsjson, timestamps, deletedat.\n- `usersettings` — singleton row holding theme, language, webhook URL/token, export preference.\n- `auditlog` — per-record create/update/delete/restore/archive events with optional JSON payload.\n- Repository / schema / adapter layer (`tests/product-critical.test.ts`,\n- Visual / config layer (`tests/product-critical.test.ts`\n- Test 1 — creating a valid record persists, appears in the list, and writes an audit log entry.\n\n## Progress\n\nClassified as a prototype by Apex Yard; evidence and scope remain early-stage.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document.",
-      "ar": "# Hafiz — Quran Recitation Memorization & Repetition Tracker\n\nEgyptian-Arabic-first React Native (Expo) app for tracking Quran memorization and repetition. Fully offline, RTL, Almarai typography, local SQLite persistence, JSON/CSV/Markdown export, optional n8n webhook sync.\n\n## Apex Yard snapshot\n\n- Status: prototype\n- Category: Mobile\n- Tech stack: Expo, React Native, React, TypeScript\n\n## Features\n\n- `primaryrecords` — title, description, category, status, amountminor, repetitions, tagsjson, timestamps, deletedat.\n- `usersettings` — singleton row holding theme, language, webhook URL/token, export preference.\n- `auditlog` — per-record create/update/delete/restore/archive events with optional JSON payload.\n- Repository / schema / adapter layer (`tests/product-critical.test.ts`,\n- Visual / config layer (`tests/product-critical.test.ts`\n- Test 1 — creating a valid record persists, appears in the list, and writes an audit log entry.\n\n## Progress\n\nClassified as a prototype by Apex Yard; evidence and scope remain early-stage.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document."
+      "en": "# hafiz\n\nEgyptian-Arabic-first React Native (Expo) app for tracking Quran memorization and repetition. Fully offline, RTL, Almarai typography, local SQLite persistence, JSON/CSV/Markdown export, optional n8n webhook sync.\n\n## Project snapshot\n\n- Status: prototype\n- Category: Mobile\n- Tech stack: Expo, React Native, React, TypeScript\n\n## Features\n\n- `primaryrecords` — title, description, category, status, amountminor, repetitions, tagsjson, timestamps, deletedat.\n- `usersettings` — singleton row holding theme, language, webhook URL/token, export preference.\n- `auditlog` — per-record create/update/delete/restore/archive events with optional JSON payload.\n- Repository / schema / adapter layer (`tests/product-critical.test.ts`,\n- Visual / config layer (`tests/product-critical.test.ts`\n- Test 1 — creating a valid record persists, appears in the list, and writes an audit log entry.\n\n## Progress\n\nClassified as a prototype by Dev Stage; evidence and scope remain early-stage.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document.",
+      "ar": "# hafiz\n\nEgyptian-Arabic-first React Native (Expo) app for tracking Quran memorization and repetition. Fully offline, RTL, Almarai typography, local SQLite persistence, JSON/CSV/Markdown export, optional n8n webhook sync.\n\n## Project snapshot\n\n- Status: prototype\n- Category: Mobile\n- Tech stack: Expo, React Native, React, TypeScript\n\n## Features\n\n- `primaryrecords` — title, description, category, status, amountminor, repetitions, tagsjson, timestamps, deletedat.\n- `usersettings` — singleton row holding theme, language, webhook URL/token, export preference.\n- `auditlog` — per-record create/update/delete/restore/archive events with optional JSON payload.\n- Repository / schema / adapter layer (`tests/product-critical.test.ts`,\n- Visual / config layer (`tests/product-critical.test.ts`\n- Test 1 — creating a valid record persists, appears in the list, and writes an audit log entry.\n\n## Progress\n\nClassified as a prototype by Dev Stage; evidence and scope remain early-stage.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document."
     },
     "isPublished": true,
     "featured": false,
@@ -3887,13 +3842,13 @@ export const PORTFOLIO_PROJECTS = [
       }
     ],
     "progress": {
-      "en": "Classified as a prototype by Apex Yard; evidence and scope remain early-stage.",
-      "ar": "Classified as a prototype by Apex Yard; evidence and scope remain early-stage."
+      "en": "Classified as a prototype by Dev Stage; evidence and scope remain early-stage.",
+      "ar": "Classified as a prototype by Dev Stage; evidence and scope remain early-stage."
     },
     "issues": [
       {
-        "en": "This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace.",
-        "ar": "This workspace is not an independent Git repository; it is managed by the Apex Yard parent workspace."
+        "en": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.",
+        "ar": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace."
       }
     ],
     "suggestions": [

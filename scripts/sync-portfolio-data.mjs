@@ -1,6 +1,6 @@
 import { execFileSync } from 'node:child_process';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
-import { dirname, join, resolve } from 'node:path';
+import { basename, dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const scriptDirectory = dirname(fileURLToPath(import.meta.url));
@@ -63,15 +63,6 @@ const parseRegistry = (content) => {
   return projects.filter((project) => project.workspace);
 };
 
-const humanize = (value) => value
-  .replace(/[-_]+/g, ' ')
-  .replace(/\b\w/g, (letter) => letter.toUpperCase());
-
-const firstHeading = (content) => {
-  const heading = content.split(/\r?\n/).find((line) => /^#\s+/.test(line.trim()));
-  return heading ? heading.replace(/^#\s+/, '').trim() : '';
-};
-
 const firstParagraph = (content) => {
   const paragraphs = content
     .split(/\r?\n\s*\r?\n/)
@@ -91,6 +82,10 @@ const dependencyNames = (packageJson) => [
   ...Object.keys(packageJson.dependencies ?? {}),
   ...Object.keys(packageJson.devDependencies ?? {}),
 ];
+
+const sanitizePortfolioText = (value) => value
+  .replace(/\bApex Yard(?:\s*\/\s*Hany-Labs)?\b/gi, 'Dev Stage')
+  .replace(/\bHany-Labs\b/gi, 'Dev Stage');
 
 const detectStack = (packageJson) => {
   const dependencies = dependencyNames(packageJson);
@@ -127,14 +122,18 @@ const detectCategory = (packageJson, stack) => {
 };
 
 const bilingualText = (value, fallback = '') => {
-  if (typeof value === 'string') return { en: value, ar: value };
+  if (typeof value === 'string') {
+    const text = sanitizePortfolioText(value);
+    return { en: text, ar: text };
+  }
   if (value && typeof value === 'object') {
     return {
-      en: typeof value.en === 'string' ? value.en : fallback,
-      ar: typeof value.ar === 'string' ? value.ar : (typeof value.en === 'string' ? value.en : fallback),
+      en: sanitizePortfolioText(typeof value.en === 'string' ? value.en : fallback),
+      ar: sanitizePortfolioText(typeof value.ar === 'string' ? value.ar : (typeof value.en === 'string' ? value.en : fallback)),
     };
   }
-  return { en: fallback, ar: fallback };
+  const text = sanitizePortfolioText(fallback);
+  return { en: text, ar: text };
 };
 
 const bilingualList = (value) => (Array.isArray(value)
@@ -190,7 +189,7 @@ const publicContent = ({ title, description, category, stack, status, features, 
   '',
   description,
   '',
-  '## Apex Yard snapshot',
+  '## Project snapshot',
   '',
   `- Status: ${status}`,
   `- Category: ${category}`,
@@ -215,14 +214,14 @@ const publicContent = ({ title, description, category, stack, status, features, 
 
 const buildProject = (registryProject, apexyardRoot, index) => {
   const workspacePath = join(apexyardRoot, registryProject.workspace);
+  const projectName = basename(registryProject.workspace);
   const packageJson = readJson(join(workspacePath, 'package.json'));
   const portfolioDoc = readJson(join(workspacePath, 'docs', 'portfolio.json'));
   const readme = readText(join(workspacePath, 'README.md'));
   const fallbackReadme = readText(join(apexyardRoot, registryProject.docs ?? '', 'README.md'));
   const sourceText = readme || fallbackReadme;
-  const fallbackTitle = firstHeading(sourceText) || packageJson.name || humanize(registryProject.name);
-  const fallbackDescription = firstParagraph(sourceText) || packageJson.description || 'A project managed in the Apex Yard portfolio.';
-  const title = bilingualText(portfolioDoc.title, fallbackTitle);
+  const fallbackDescription = firstParagraph(sourceText) || packageJson.description || 'A project managed in this portfolio.';
+  const title = { en: projectName, ar: projectName };
   const description = bilingualText(portfolioDoc.summary, fallbackDescription);
   const stack = Array.isArray(portfolioDoc.tech_stack) && portfolioDoc.tech_stack.length > 0
     ? portfolioDoc.tech_stack
@@ -265,7 +264,7 @@ const buildProject = (registryProject, apexyardRoot, index) => {
     description,
     meta: { en: stack.join(' • ') || status.toUpperCase(), ar: stack.join(' • ') || status.toUpperCase() },
     category,
-    client: { en: 'Apex Yard / Hany-Labs', ar: 'Apex Yard / Hany-Labs' },
+    client: { en: 'Independent', ar: 'مستقل' },
     role: { en: 'Founder & Builder', ar: 'المؤسس والمطور' },
     year: lastCommitYear(workspacePath),
     imageSrc: imageOverride.imageSrc ?? placeholderImage(label),
@@ -291,10 +290,10 @@ const projects = registryProjects
   .filter((project) => readJson(join(apexyardRoot, project.workspace, 'docs', 'portfolio.json')).portfolio !== false)
   .map((project, index) => buildProject(project, apexyardRoot, index));
 const profile = {
-  name: { en: 'Hany', ar: 'هاني' },
-  title: { en: 'Founder & Builder at Apex Yard', ar: 'مؤسس ومطور في Apex Yard' },
+  name: { en: 'Hany Mahmoud', ar: 'هاني' },
+  title: { en: 'Software Engineer | Agentic coding | React Native, Next.js & TypeScript | Fintech, Secure Auth & AI-Assisted Development', ar: 'المؤسس والمطور' },
   bio: {
-    en: 'Building projects of varied sizes and categories while exploring AI-assisted engineering.',
+    en: 'Once a doctor, always a doctor',
     ar: 'أبني مشاريع متنوعة في الحجم والمجال مع استكشاف هندسة البرمجيات بمساعدة الذكاء الاصطناعي.',
   },
   location: { en: 'Egypt • Middle East', ar: 'مصر • الشرق الأوسط' },
@@ -313,4 +312,4 @@ writeFileSync(
   `import type { Profile, Project } from '../types';\n\nexport const PORTFOLIO_PROFILE = ${JSON.stringify(profile, null, 2)} satisfies Profile;\n\nexport const PORTFOLIO_PROJECTS = ${JSON.stringify(projects, null, 2)} satisfies Project[];\n`,
 );
 
-console.log(`Synced ${projects.length} Apex Yard projects into ${outputPath}`);
+console.log(`Synced ${projects.length} projects into ${outputPath}`);

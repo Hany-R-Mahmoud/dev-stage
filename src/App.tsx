@@ -143,14 +143,28 @@ export default function App() {
     return PORTFOLIO_PROJECTS.map((project) => {
       const savedProject = savedById.get(project.id);
       return savedProject
-        ? { ...savedProject, imageSrc: project.imageSrc, galleryImages: project.galleryImages }
+        ? {
+            ...savedProject,
+            title: project.title,
+            description: project.description,
+            client: project.client,
+            contentMDX: project.contentMDX,
+            features: project.features,
+            progress: project.progress,
+            issues: project.issues,
+            suggestions: project.suggestions,
+            imageSrc: project.imageSrc,
+            galleryImages: project.galleryImages,
+          }
         : project;
     });
   });
 
   const [profile, setProfile] = useState<Profile>(() => {
     const saved = localStorage.getItem(storageKeys.profile);
-    return saved ? JSON.parse(saved) : PORTFOLIO_PROFILE;
+    return saved
+      ? { ...JSON.parse(saved), title: PORTFOLIO_PROFILE.title }
+      : PORTFOLIO_PROFILE;
   });
 
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
