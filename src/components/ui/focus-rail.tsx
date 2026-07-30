@@ -151,7 +151,7 @@ export function FocusRail({
   return (
     <div
       className={cn(
-        "group relative flex h-[560px] md:h-[620px] w-full flex-col overflow-hidden bg-[#F9F8F6] dark:bg-[#0E0D0C] text-[#1A1A1A] dark:text-[#F4F2ED] outline-none select-none overflow-x-hidden border-t-4 border-t-[#D4AF37] border-x border-b border-[#1A1A1A]/20 dark:border-white/15 shadow-[0_4px_24px_rgba(0,0,0,0.04)] dark:shadow-[0_8px_32px_rgba(0,0,0,0.5)] font-sans-luxury transition-colors duration-300",
+        "group relative flex h-[560px] md:h-[700px] w-full flex-col overflow-hidden bg-[#F9F8F6] dark:bg-[#0E0D0C] text-[#1A1A1A] dark:text-[#F4F2ED] outline-none select-none overflow-x-hidden border-t-4 border-t-[#D4AF37] border-x border-b border-[#1A1A1A]/20 dark:border-white/15 shadow-[0_4px_24px_rgba(0,0,0,0.04)] dark:shadow-[0_8px_32px_rgba(0,0,0,0.5)] font-sans-luxury transition-colors duration-300",
         className
       )}
       onMouseEnter={() => setIsHovering(true)}
@@ -185,7 +185,7 @@ export function FocusRail({
       <div className="relative z-10 flex flex-1 flex-col justify-center px-4 md:px-8">
         {/* DRAGGABLE RAIL CONTAINER */}
         <motion.div
-          className="relative mx-auto flex h-[340px] md:h-[400px] w-full max-w-6xl items-center justify-center perspective-[1200px] cursor-grab active:cursor-grabbing"
+          className="relative mx-auto flex h-[340px] md:h-[460px] w-full max-w-6xl items-center justify-center perspective-[1200px] cursor-grab active:cursor-grabbing"
           drag="x"
           dragConstraints={{ left: 0, right: 0 }}
           dragElastic={0.2}
@@ -202,7 +202,7 @@ export function FocusRail({
             const dist = Math.abs(offset);
 
             // Dynamic transforms
-            const xOffset = offset * 380;
+            const xOffset = offset * 460;
             const zOffset = -dist * 180;
             const scale = isCenter ? 1 : 0.85;
             const rotateY = offset * -20;
@@ -215,7 +215,7 @@ export function FocusRail({
               <motion.div
                 key={absIndex}
                 className={cn(
-                  "absolute aspect-[16/10] w-[min(92vw,420px)] md:w-[540px] border bg-[#1A1A1A] dark:bg-[#0E0D0C] shadow-xl transition-all duration-300 overflow-hidden",
+                  "absolute aspect-[16/10] w-[min(94vw,460px)] md:w-[620px] border bg-[#1A1A1A] dark:bg-[#0E0D0C] shadow-xl transition-all duration-300 overflow-hidden",
                   isCenter 
                     ? "z-20 border-2 border-[#D4AF37] shadow-[0_12px_32px_rgba(0,0,0,0.25)] ring-1 ring-[#1A1A1A]/20 dark:ring-white/20 cursor-grab active:cursor-grabbing" 
                     : "z-10 border-[#1A1A1A]/20 dark:border-white/15 cursor-pointer"
@@ -247,21 +247,13 @@ export function FocusRail({
                   src={item.imageSrc}
                   alt={item.title}
                   className={cn(
-                    "h-full w-full object-contain pointer-events-none transition-all duration-700",
+                    "h-full w-full object-cover pointer-events-none transition-all duration-700",
                     isCenter ? "grayscale-0" : "grayscale"
                   )}
                 />
 
                 {/* Lighting layers */}
                 <div className="absolute inset-0 bg-gradient-to-b from-black/5 via-transparent to-black/60 pointer-events-none" />
-
-                {isCenter && (
-                  <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between pointer-events-none">
-                    <span className="text-[9px] font-mono tracking-widest uppercase px-3 py-1 bg-[#1A1A1A] dark:bg-[#F4F2ED] text-[#D4AF37] dark:text-[#0E0D0C] border border-[#1A1A1A] dark:border-white/20">
-                      {isArabic ? 'مشروع مميز' : 'FEATURED WORK'}
-                    </span>
-                  </div>
-                )}
               </motion.div>
             );
           })}

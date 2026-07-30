@@ -65,7 +65,7 @@ Spacing follows a 4px base. The working scale is 4, 8, 12, 16, 24, 32, 40, 48, 6
 
 - **Structure**: the carousel, directory cards, and project detail media use a 16:10 landscape frame suited to webpage screenshots.
 - **Surface**: dark matte backing with a restrained border so screenshots with different source ratios remain legible.
-- **Sizing**: the frame owns layout sizing; images use `object-contain` to preserve the complete supplied screenshot without distortion or unpredictable cropping.
+- **Sizing**: the frame owns layout sizing; carousel images use `object-cover` to fill the landscape frame, while directory and detail media use `object-contain` to preserve complete screenshots.
 - **States**: default, hover scale on cards, active gallery selection, and modal thumbnail selection.
 - **Accessibility**: meaningful project images use the project title or a numbered screenshot description as alt text; decorative ambience remains empty-alt.
 
