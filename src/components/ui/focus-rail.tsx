@@ -214,7 +214,7 @@ export function FocusRail({
               <motion.div
                 key={absIndex}
                 className={cn(
-                  "absolute aspect-[16/10] w-[280px] md:w-[360px] border bg-[#1A1A1A] dark:bg-[#0E0D0C] shadow-xl transition-all duration-300 overflow-hidden",
+                  "absolute aspect-[3/4] w-[250px] md:w-[290px] border bg-[#1A1A1A] dark:bg-[#0E0D0C] shadow-xl transition-all duration-300 overflow-hidden",
                   isCenter 
                     ? "z-20 border-2 border-[#D4AF37] shadow-[0_12px_32px_rgba(0,0,0,0.25)] ring-1 ring-[#1A1A1A]/20 dark:ring-white/20 cursor-grab active:cursor-grabbing" 
                     : "z-10 border-[#1A1A1A]/20 dark:border-white/15 cursor-pointer"
@@ -300,7 +300,6 @@ export function FocusRail({
               <a
                 href={activeItem.href || "#"}
                 onClick={(e) => {
-                  if (activeItem.href) return;
                   if (onSelectProject) {
                     e.preventDefault();
                     onSelectProject(activeItem);

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Project, Language } from '../types';
 import { X, Calendar, User, Building, Tag, Image as ImageIcon, Code, Sparkles, Feather, ListChecks, AlertTriangle, Lightbulb } from 'lucide-react';
 
@@ -15,6 +15,10 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
 }) => {
   const [activeImage, setActiveImage] = useState<string | null>(null);
 
+  useEffect(() => {
+    setActiveImage(null);
+  }, [project?.id]);
+
   if (!project) return null;
 
   const isAr = language === 'ar';
@@ -25,7 +29,10 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 lg:p-8 bg-black/80 backdrop-blur-md overflow-y-auto">
-      <div 
+      <div
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby={`project-modal-title-${project.id}`}
         className="relative w-full max-w-4xl max-h-[92vh] overflow-y-auto bg-[#F9F8F6] dark:bg-[#141312] text-[#1A1A1A] dark:text-[#F4F2ED] border-t-4 border-t-[#D4AF37] border-x border-b border-[#1A1A1A]/20 dark:border-white/15 shadow-[0_16px_48px_rgba(0,0,0,0.3)] dark:shadow-[0_16px_48px_rgba(0,0,0,0.8)] p-5 sm:p-8 md:p-10 space-y-6 sm:space-y-8 font-sans-luxury paper-noise-bg transition-colors duration-300"
         dir={isAr ? 'rtl' : 'ltr'}
       >
@@ -57,7 +64,7 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
             </span>
           </div>
 
-          <h2 className="font-serif-luxury text-2xl sm:text-3xl md:text-4xl font-bold text-[#1A1A1A] dark:text-[#F4F2ED] leading-tight">
+          <h2 id={`project-modal-title-${project.id}`} className="font-serif-luxury text-2xl sm:text-3xl md:text-4xl font-bold text-[#1A1A1A] dark:text-[#F4F2ED] leading-tight">
             {project.title[language]}
           </h2>
         </div>

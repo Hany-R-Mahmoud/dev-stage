@@ -61,12 +61,12 @@ Spacing follows a 4px base. The working scale is 4, 8, 12, 16, 24, 32, 40, 48, 6
 - **Motion**: 300ms color or transform transition.
 - **Layout**: horizontal cluster; the header remains the scroll-pinned owner.
 
-### Project Media Frame
+### Project Media Frames
 
-- **Structure**: fixed 16:10 landscape frame used for carousel cards, directory cards, and project detail media.
+- **Structure**: the carousel uses a taller 3:4 showcase frame; directory cards and project detail media use a 16:10 landscape frame.
 - **Surface**: dark matte backing with a restrained border so screenshots with different source ratios remain legible.
 - **Sizing**: the frame owns layout sizing; images use `object-contain` to preserve the complete supplied screenshot without distortion or unpredictable cropping.
-- **States**: default, hover scale on linked cards, and active gallery selection.
+- **States**: default, hover scale on cards, active gallery selection, and modal thumbnail selection.
 - **Accessibility**: meaningful project images use the project title or a numbered screenshot description as alt text; decorative ambience remains empty-alt.
 
 ## 6. Motion & Interaction

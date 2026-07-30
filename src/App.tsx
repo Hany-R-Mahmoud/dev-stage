@@ -4,6 +4,7 @@ import { PORTFOLIO_PROJECTS, PORTFOLIO_PROFILE } from './data/portfolioData';
 import { FocusRail, FocusRailItem } from './components/ui/focus-rail';
 import { Navbar } from './components/Navbar';
 import { ProfileCard } from './components/ProfileCard';
+import { ProjectDetailModal } from './components/ProjectDetailModal';
 import { ProjectDetailPage } from './components/ProjectDetailPage';
 import { Dashboard } from './components/Dashboard';
 import { ThemeWaveOverlay } from './components/ThemeWaveOverlay';
@@ -153,6 +154,7 @@ export default function App() {
   });
 
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   // Sync state to localStorage
   useEffect(() => {
@@ -337,6 +339,10 @@ export default function App() {
                   autoPlay={true}
                   interval={10000}
                   loop={true}
+                  onSelectProject={(item) => {
+                    const project = projects.find((candidate) => candidate.id === item.id);
+                    if (project) setSelectedProject(project);
+                  }}
                 />
               </section>
 
@@ -389,10 +395,11 @@ export default function App() {
                 {/* Grid Items: Immersive Image-First Presentation */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                   {filteredProjects.map((proj) => (
-                    <a
+                    <button
+                      type="button"
                       key={proj.id}
-                      href={localizedPath(language, 'portfolio', proj.slug)}
-                      className="group relative flex flex-col justify-between overflow-hidden bg-[#F9F8F6] dark:bg-[#141312] border border-[#1A1A1A]/20 dark:border-white/20 hover:border-[#D4AF37] dark:hover:border-[#D4AF37] p-5 transition-all duration-500 hover:shadow-2xl dark:hover:shadow-[0_12px_40px_rgba(212,175,55,0.15)] cursor-pointer"
+                      onClick={() => setSelectedProject(proj)}
+                      className="group relative flex w-full flex-col justify-between overflow-hidden bg-[#F9F8F6] text-left dark:bg-[#141312] rtl:text-right border border-[#1A1A1A]/20 dark:border-white/20 hover:border-[#D4AF37] dark:hover:border-[#D4AF37] p-5 transition-all duration-500 hover:shadow-2xl dark:hover:shadow-[0_12px_40px_rgba(212,175,55,0.15)] cursor-pointer"
                     >
                       <div className="space-y-4">
                         {/* Dominant Image Container */}
@@ -433,7 +440,7 @@ export default function App() {
                           <ArrowUpRight className="h-4 w-4 text-[#D4AF37] ltr:group-hover:translate-x-0.5 rtl:group-hover:-translate-x-0.5 transition-transform" />
                         </span>
                       </div>
-                    </a>
+                    </button>
                   ))}
                 </div>
               </section>
@@ -463,6 +470,12 @@ export default function App() {
             />
           )}
         </div>
+
+        <ProjectDetailModal
+          project={selectedProject}
+          language={language}
+          onClose={() => setSelectedProject(null)}
+        />
 
     </>
   );
