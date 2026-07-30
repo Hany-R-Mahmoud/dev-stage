@@ -4,6 +4,7 @@ import * as React from "react";
 import { motion, AnimatePresence, type PanInfo } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { ProjectLogo } from "@/components/ProjectLogo";
 
 export type FocusRailItem = {
   id: string | number;
@@ -276,9 +277,12 @@ export function FocusRail({
                     {activeItem.meta}
                   </span>
                 )}
-                <h2 className="font-serif-luxury text-3xl font-bold tracking-tight md:text-4xl text-[#1A1A1A] dark:text-[#F4F2ED]">
-                  {activeItem.title}
-                </h2>
+                <div className="flex items-center gap-3">
+                  <ProjectLogo name={activeItem.title} liveUrl={activeItem.liveUrl} className="h-9 w-9" />
+                  <h2 className="font-serif-luxury text-3xl font-bold tracking-tight md:text-4xl text-[#1A1A1A] dark:text-[#F4F2ED]">
+                    {activeItem.title}
+                  </h2>
+                </div>
                 {activeItem.liveUrl ? (
                   <a
                     href={activeItem.liveUrl}

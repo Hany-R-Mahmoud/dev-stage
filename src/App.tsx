@@ -4,6 +4,7 @@ import { PORTFOLIO_PROJECTS, PORTFOLIO_PROFILE } from './data/portfolioData';
 import { FocusRail, FocusRailItem } from './components/ui/focus-rail';
 import { Navbar } from './components/Navbar';
 import { ProfileCard } from './components/ProfileCard';
+import { ProjectLogo } from './components/ProjectLogo';
 import { ProjectDetailModal } from './components/ProjectDetailModal';
 import { ProjectDetailPage } from './components/ProjectDetailPage';
 import { Dashboard } from './components/Dashboard';
@@ -451,9 +452,12 @@ export default function App() {
                               {proj.year}
                             </span>
                           </div>
-                          <h3 className="font-serif-luxury text-2xl font-bold text-[#1A1A1A] dark:text-[#F4F2ED] group-hover:text-[#D4AF37] transition-colors duration-300">
-                            {proj.title[language]}
-                          </h3>
+                          <div className="flex items-center gap-3">
+                            <ProjectLogo name={proj.title[language]} liveUrl={proj.liveUrl} className="h-10 w-10" />
+                            <h3 className="font-serif-luxury text-2xl font-bold text-[#1A1A1A] dark:text-[#F4F2ED] group-hover:text-[#D4AF37] transition-colors duration-300">
+                              {proj.title[language]}
+                            </h3>
+                          </div>
                           <p className="text-xs sm:text-sm text-[#6C6863] dark:text-[#A39E98] line-clamp-2 leading-relaxed font-sans-luxury">
                             {proj.description[language]}
                           </p>

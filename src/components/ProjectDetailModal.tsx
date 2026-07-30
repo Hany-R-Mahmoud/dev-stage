@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Project, Language } from '../types';
+import { ProjectLogo } from './ProjectLogo';
 import { X, Calendar, User, Building, Tag, Image as ImageIcon, Code, Sparkles, Feather, ListChecks, AlertTriangle, Lightbulb, ArrowUpRight } from 'lucide-react';
 
 interface ProjectDetailModalProps {
@@ -64,9 +65,12 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
             </span>
           </div>
 
-          <h2 id={`project-modal-title-${project.id}`} className="font-serif-luxury text-2xl sm:text-3xl md:text-4xl font-bold text-[#1A1A1A] dark:text-[#F4F2ED] leading-tight">
-            {project.title[language]}
-          </h2>
+          <div className="flex items-center gap-3">
+            <ProjectLogo name={project.title[language]} liveUrl={project.liveUrl} className="h-10 w-10" />
+            <h2 id={`project-modal-title-${project.id}`} className="font-serif-luxury text-2xl sm:text-3xl md:text-4xl font-bold text-[#1A1A1A] dark:text-[#F4F2ED] leading-tight">
+              {project.title[language]}
+            </h2>
+          </div>
           {project.liveUrl && (
             <a
               href={project.liveUrl}

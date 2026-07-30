@@ -1,5 +1,6 @@
 import React from 'react';
 import type { Language, Project } from '../types';
+import { ProjectLogo } from './ProjectLogo';
 
 interface ProjectDetailPageProps {
   project: Project;
@@ -39,9 +40,12 @@ export function ProjectDetailPage({ project, language }: ProjectDetailPageProps)
       <article className="mt-8 space-y-8" dir={isAr ? 'rtl' : 'ltr'}>
         <header className="space-y-4 border-b border-[#1A1A1A]/15 dark:border-white/15 pb-8">
           <p className="text-xs font-mono uppercase tracking-[0.2em] text-[#D4AF37]">{project.meta[language]}</p>
-          <h1 className="font-serif-luxury text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-[#1A1A1A] dark:text-[#F4F2ED]">
-            {project.title[language]}
-          </h1>
+          <div className="flex items-center gap-4">
+            <ProjectLogo name={project.title[language]} liveUrl={project.liveUrl} className="h-12 w-12 sm:h-14 sm:w-14" />
+            <h1 className="font-serif-luxury text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-[#1A1A1A] dark:text-[#F4F2ED]">
+              {project.title[language]}
+            </h1>
+          </div>
           <p className="max-w-3xl text-lg leading-relaxed text-[#6C6863] dark:text-[#A39E98]">{project.description[language]}</p>
           {project.liveUrl && (
             <a
