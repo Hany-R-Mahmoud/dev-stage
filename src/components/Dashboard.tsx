@@ -118,7 +118,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
       
       {/* Toast Notification */}
       {savedNotification && (
-        <div className="fixed bottom-8 ltr:right-8 rtl:left-8 z-50 flex items-center gap-3 bg-[#1A1A1A] dark:bg-[#F4F2ED] text-[#D4AF37] dark:text-[#0E0D0C] border-2 border-[#D4AF37] px-6 py-4 text-xs font-mono tracking-widest uppercase shadow-2xl">
+        <div className="fixed bottom-24 ltr:right-8 rtl:left-8 z-50 flex items-center gap-3 bg-[#1A1A1A] dark:bg-[#F4F2ED] text-[#D4AF37] dark:text-[#0E0D0C] border-2 border-[#D4AF37] px-6 py-4 text-xs font-mono tracking-widest uppercase shadow-2xl md:bottom-8">
           <Check className="h-4 w-4" />
           <span>{isAr ? 'تم حفظ التغييرات بنجاح!' : 'CHANGES SAVED TO STUDIO ARCHIVE!'}</span>
         </div>

@@ -11,6 +11,7 @@ import { Dashboard } from './components/Dashboard';
 import { ThemeWaveOverlay } from './components/ThemeWaveOverlay';
 import { PwaInstallHelpDialog } from './components/PwaInstallHelpDialog';
 import { PwaStatusBar } from './components/PwaStatusBar';
+import { MobileBottomNav } from './components/MobileBottomNav';
 import { toAbsoluteUrl, updateSeoMetadata } from './lib/seo';
 import { 
   Sparkles, Layers, ArrowUpRight, Feather, Filter, ChevronDown
@@ -316,7 +317,7 @@ export default function App() {
 
   return (
     <>
-      <div className="min-h-screen bg-[#F9F8F6] dark:bg-[#0E0D0C] text-[#1A1A1A] dark:text-[#F4F2ED] font-sans-luxury selection:bg-[#D4AF37] selection:text-[#1A1A1A] antialiased paper-noise-bg relative transition-colors duration-300">
+      <div className="min-h-screen bg-[#F9F8F6] dark:bg-[#0E0D0C] pb-20 text-[#1A1A1A] dark:text-[#F4F2ED] font-sans-luxury selection:bg-[#D4AF37] selection:text-[#1A1A1A] antialiased paper-noise-bg relative transition-colors duration-300 md:pb-0">
           
           {/* Falling Wave Background Theme Skin Layer */}
           <ThemeWaveOverlay
@@ -387,10 +388,12 @@ export default function App() {
               </section>
 
               {/* Profile Author Editorial Card */}
-              <ProfileCard profile={profile} language={language} />
+              <div id="profile-card" className="scroll-mt-24">
+                <ProfileCard profile={profile} language={language} />
+              </div>
 
               {/* FILTERABLE PROJECT DIRECTORY GRID */}
-              <section className="space-y-8 pt-6">
+              <section id="project-showroom" className="scroll-mt-24 space-y-8 pt-6">
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 border-b border-[#1A1A1A]/15 dark:border-white/15 pb-6">
                   <div>
                     <span className="text-xs font-mono tracking-[0.25em] rtl:tracking-normal text-[#D4AF37] uppercase">
@@ -532,6 +535,12 @@ export default function App() {
               onSaveProfile={setProfile}
             />
           )}
+
+          <MobileBottomNav
+            language={language}
+            activeView={activeView}
+            onViewChange={handleViewChange}
+          />
         </div>
 
         <PwaInstallHelpDialog language={language} dark={theme === 'dark'} />
