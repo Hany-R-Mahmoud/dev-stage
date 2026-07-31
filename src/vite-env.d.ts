@@ -1,5 +1,6 @@
 interface ImportMetaEnv {
   readonly DEV: boolean;
+  readonly PROD: boolean;
   readonly VITE_SITE_URL?: string;
 }
 

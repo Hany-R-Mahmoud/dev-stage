@@ -9,6 +9,8 @@ import { ProjectDetailModal } from './components/ProjectDetailModal';
 import { ProjectDetailPage } from './components/ProjectDetailPage';
 import { Dashboard } from './components/Dashboard';
 import { ThemeWaveOverlay } from './components/ThemeWaveOverlay';
+import { PwaInstallHelpDialog } from './components/PwaInstallHelpDialog';
+import { PwaStatusBar } from './components/PwaStatusBar';
 import { toAbsoluteUrl, updateSeoMetadata } from './lib/seo';
 import { 
   Sparkles, Layers, ArrowUpRight, Feather, Filter, ChevronDown
@@ -344,6 +346,8 @@ export default function App() {
             }}
           />
 
+          <PwaStatusBar language={language} dark={theme === 'dark'} />
+
           {/* VIEW 1: PUBLIC PORTFOLIO SHOWCASE (/home) */}
           {activeView === 'portfolio' ? (
             projectRouteProject ? (
@@ -529,6 +533,8 @@ export default function App() {
             />
           )}
         </div>
+
+        <PwaInstallHelpDialog language={language} dark={theme === 'dark'} />
 
         <ProjectDetailModal
           project={selectedProject}

@@ -2,6 +2,7 @@ import React from 'react';
 import { Language } from '../types';
 import { Plus, Moon, Sun } from 'lucide-react';
 import { DevStageLogoMark } from './DevStageLogoMark';
+import { PwaInstallMenuAction } from './PwaInstallMenuAction';
 
 interface NavbarProps {
   language: Language;
@@ -68,6 +69,8 @@ export const Navbar: React.FC<NavbarProps> = ({
           )}
 
           {/* Theme Mode Switcher */}
+          <PwaInstallMenuAction language={language} dark={isDark} />
+
           {onToggleTheme && (
             <button
               onClick={onToggleTheme}

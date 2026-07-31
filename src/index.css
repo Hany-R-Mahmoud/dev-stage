@@ -60,6 +60,16 @@
   }
 }
 
+body {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+button,
+a,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .dev-stage-mark {
   overflow: visible;
 }

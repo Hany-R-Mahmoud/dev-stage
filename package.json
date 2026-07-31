@@ -9,6 +9,7 @@
     "seo:generate": "tsx scripts/generate-sitemap.ts",
     "build:seo": "npm run seo:generate && npm run build",
     "build": "vite build",
+    "pwa:check": "node --import tsx --test src/pwa/pwa.test.ts",
     "preview": "vite preview",
     "clean": "rm -rf dist server.js",
     "lint": "tsc --noEmit",

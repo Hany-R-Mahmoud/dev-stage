@@ -163,6 +163,7 @@ const portfolioTitleOverrides = {
   focussessionflow: 'Focus Flow',
   'spec-flow': 'Spec Flow AI',
   minarets_of_cairo: 'Minaretes of Cairo',
+  'emojie-crack': 'Emojie-Crack',
 };
 
 const portfolioImageOverrides = {
@@ -267,6 +268,15 @@ const portfolioImageOverrides = {
       'https://ik.imagekit.io/hrim/images/al-rawi/al-rawi2.png',
       'https://ik.imagekit.io/hrim/images/al-rawi/al-rawi3.png',
       'https://ik.imagekit.io/hrim/images/al-rawi/al-rawi4.png',
+    ],
+  },
+  'emojie-crack': {
+    liveUrl: 'https://emojie-crack.vercel.app/',
+    imageSrc: 'https://ik.imagekit.io/hrim/images/emojie/emojie1.png',
+    galleryImages: [
+      'https://ik.imagekit.io/hrim/images/emojie/emojie2.png',
+      'https://ik.imagekit.io/hrim/images/emojie/emojie3.png',
+      'https://ik.imagekit.io/hrim/images/emojie/emojie4.png',
     ],
   },
 };

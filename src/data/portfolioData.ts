@@ -1823,6 +1823,60 @@ export const PORTFOLIO_PROJECTS = [
     }
   },
   {
+    "id": "apexyard-emojie-crack",
+    "slug": "emojie-crack",
+    "title": {
+      "en": "Emojie-Crack",
+      "ar": "Emojie-Crack"
+    },
+    "description": {
+      "en": "EmojiCrack is an Arabic, RTL React game for solving Egyptian emoji puzzles about proverbs, films, food, places, expressions, and trends. Player progress, scores, and custom puzzles are stored locally in the browser; no backend API is defined in the current source.",
+      "ar": "EmojiCrack is an Arabic, RTL React game for solving Egyptian emoji puzzles about proverbs, films, food, places, expressions, and trends. Player progress, scores, and custom puzzles are stored locally in the browser; no backend API is defined in the current source."
+    },
+    "meta": {
+      "en": "Vite • React • TypeScript • Tailwind",
+      "ar": "Vite • React • TypeScript • Tailwind"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://emojie-crack.vercel.app/",
+    "imageSrc": "https://ik.imagekit.io/hrim/images/emojie/emojie1.png",
+    "galleryImages": [
+      "https://ik.imagekit.io/hrim/images/emojie/emojie2.png",
+      "https://ik.imagekit.io/hrim/images/emojie/emojie3.png",
+      "https://ik.imagekit.io/hrim/images/emojie/emojie4.png"
+    ],
+    "contentMDX": {
+      "en": "# Emojie-Crack\n\nEmojiCrack is an Arabic, RTL React game for solving Egyptian emoji puzzles about proverbs, films, food, places, expressions, and trends. Player progress, scores, and custom puzzles are stored locally in the browser; no backend API is defined in the current source.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Vite, React, TypeScript, Tailwind\n\n## Features\n\n- Unknown / verify\n\n## Progress\n\nStatus recorded as showcase.\n\n## Issues / troubles\n\n- Unknown / verify\n\n## Suggested next steps\n\n- Unknown / verify",
+      "ar": "# Emojie-Crack\n\nEmojiCrack is an Arabic, RTL React game for solving Egyptian emoji puzzles about proverbs, films, food, places, expressions, and trends. Player progress, scores, and custom puzzles are stored locally in the browser; no backend API is defined in the current source.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Vite, React, TypeScript, Tailwind\n\n## Features\n\n- Unknown / verify\n\n## Progress\n\nStatus recorded as showcase.\n\n## Issues / troubles\n\n- Unknown / verify\n\n## Suggested next steps\n\n- Unknown / verify"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "Vite",
+      "React",
+      "TypeScript",
+      "Tailwind",
+      "showcase"
+    ],
+    "status": "showcase",
+    "features": [],
+    "progress": {
+      "en": "Status recorded as showcase.",
+      "ar": "Status recorded as showcase."
+    },
+    "issues": [],
+    "suggestions": []
+  },
+  {
     "id": "apexyard-fihrist",
     "slug": "fihrist",
     "title": {

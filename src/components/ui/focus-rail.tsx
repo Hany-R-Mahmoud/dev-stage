@@ -153,7 +153,7 @@ export function FocusRail({
   return (
     <div
       className={cn(
-        "group relative flex h-[560px] md:h-[700px] w-full flex-col overflow-hidden bg-[#F9F8F6] dark:bg-[#0E0D0C] text-[#1A1A1A] dark:text-[#F4F2ED] outline-none select-none overflow-x-hidden border-t-4 border-t-[#D4AF37] border-x border-b border-[#1A1A1A]/20 dark:border-white/15 shadow-[0_4px_24px_rgba(0,0,0,0.04)] dark:shadow-[0_8px_32px_rgba(0,0,0,0.5)] font-sans-luxury transition-colors duration-300",
+        "group relative flex h-[620px] md:h-[740px] w-full flex-col overflow-hidden bg-[#F9F8F6] dark:bg-[#0E0D0C] text-[#1A1A1A] dark:text-[#F4F2ED] outline-none select-none overflow-x-hidden border-t-4 border-t-[#D4AF37] border-x border-b border-[#1A1A1A]/20 dark:border-white/15 shadow-[0_4px_24px_rgba(0,0,0,0.04)] dark:shadow-[0_8px_32px_rgba(0,0,0,0.5)] font-sans-luxury transition-colors duration-300",
         className
       )}
       aria-label={isArabic ? "معرض المشاريع المختارة" : "Featured project carousel"}
@@ -273,8 +273,8 @@ export function FocusRail({
         </motion.div>
 
         {/* Info & Controls */}
-        <div className="mx-auto mt-8 flex w-full max-w-4xl flex-col items-center justify-between gap-6 md:flex-row pointer-events-auto">
-          <div className="flex min-h-28 w-full flex-1 flex-col items-center justify-center text-center md:items-start ltr:md:text-left rtl:md:text-right">
+        <div className="mx-auto mt-8 flex min-h-[204px] w-full max-w-4xl flex-col items-center justify-between gap-6 md:min-h-[136px] md:flex-row pointer-events-auto">
+          <div className="flex min-h-[136px] w-full flex-1 flex-col items-center justify-center text-center md:items-start ltr:md:text-left rtl:md:text-right">
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeItem.id}
@@ -282,10 +282,10 @@ export function FocusRail({
                 animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                 exit={{ opacity: 0, y: -10, filter: "blur(4px)" }}
                 transition={{ duration: 0.3 }}
-                className="w-full space-y-1.5"
+                className="flex min-h-[136px] w-full flex-col justify-center space-y-3"
               >
                 {activeItem.meta && (
-                  <span className="inline-block max-w-full break-words px-3 py-1 text-center text-[10px] font-mono tracking-widest uppercase text-[#F9F8F6] dark:text-[#0E0D0C] bg-[#1A1A1A] dark:bg-[#F4F2ED] border border-[#1A1A1A] dark:border-white/20">
+                  <span className="inline-block w-fit max-w-full self-center break-words px-3 py-1 text-center text-[10px] font-mono tracking-widest uppercase text-[#F9F8F6] dark:text-[#0E0D0C] bg-[#1A1A1A] dark:bg-[#F4F2ED] border border-[#1A1A1A] dark:border-white/20 md:self-start">
                     {activeItem.meta}
                   </span>
                 )}
@@ -304,13 +304,13 @@ export function FocusRail({
             </AnimatePresence>
           </div>
 
-          <div className="flex flex-wrap items-center justify-center gap-3 md:justify-end">
+          <div className="flex min-h-11 shrink-0 flex-wrap items-center justify-center gap-3 md:justify-end">
             {activeItem.liveUrl && (
               <a
                 href={activeItem.liveUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="group inline-flex items-center gap-1 border border-[#D4AF37] px-3 py-2 text-[10px] font-mono uppercase tracking-[0.15em] text-[#1A1A1A] dark:text-[#F4F2ED] hover:bg-[#D4AF37] hover:text-[#1A1A1A] transition-colors md:gap-1.5 md:px-4 md:py-2.5 md:text-xs md:tracking-widest"
+                className="group inline-flex min-h-11 items-center gap-1 border border-[#D4AF37] px-3 py-2 text-[10px] font-mono uppercase tracking-[0.15em] text-[#1A1A1A] dark:text-[#F4F2ED] hover:bg-[#D4AF37] hover:text-[#1A1A1A] transition-colors md:gap-1.5 md:px-4 md:py-2.5 md:text-xs md:tracking-widest"
               >
                 <span>{isArabic ? 'زيارة الموقع' : 'Visit the website'}</span>
                 <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 ltr:group-hover:translate-x-0.5 rtl:group-hover:-translate-x-0.5 rtl:-scale-x-100" />
@@ -328,7 +328,7 @@ export function FocusRail({
                     activeItem.onClick();
                   }
                 }}
-                className="group flex items-center gap-1 bg-[#1A1A1A] dark:bg-[#F4F2ED] text-white dark:text-[#0E0D0C] hover:bg-[#D4AF37] hover:text-[#1A1A1A] dark:hover:bg-[#D4AF37] dark:hover:text-[#0E0D0C] px-3 py-2 text-[10px] font-mono uppercase tracking-[0.15em] transition-colors duration-300 shadow-md cursor-pointer border border-[#1A1A1A] dark:border-white/20 md:gap-2 md:px-6 md:py-2.5 md:text-xs md:tracking-[0.2em]"
+                className="group flex min-h-11 items-center gap-1 bg-[#1A1A1A] dark:bg-[#F4F2ED] text-white dark:text-[#0E0D0C] hover:bg-[#D4AF37] hover:text-[#1A1A1A] dark:hover:bg-[#D4AF37] dark:hover:text-[#0E0D0C] px-3 py-2 text-[10px] font-mono uppercase tracking-[0.15em] transition-colors duration-300 shadow-md cursor-pointer border border-[#1A1A1A] dark:border-white/20 md:gap-2 md:px-6 md:py-2.5 md:text-xs md:tracking-[0.2em]"
               >
                 <span>
                   {isArabic ? 'التفاصيل' : 'DETAILS'}
