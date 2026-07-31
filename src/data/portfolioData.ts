@@ -349,12 +349,12 @@ export const PORTFOLIO_PROJECTS = [
       "ar": "js2next"
     },
     "description": {
-      "en": "A project managed in the Dev Stage workspace.",
-      "ar": "A project managed in the Dev Stage workspace."
+      "en": "A Next.js learning platform for guided JavaScript and React curriculum, assessments, progress tracking, and review.",
+      "ar": "منصة تعليمية مبنية بـ Next.js لمنهج JavaScript وReact الموجّه، والتقييمات، ومتابعة التقدم، والمراجعة."
     },
     "meta": {
-      "en": "Next.js • Vite • React • TypeScript • Tailwind • Vitest",
-      "ar": "Next.js • Vite • React • TypeScript • Tailwind • Vitest"
+      "en": "Next.js • React • TypeScript • Zustand • Tailwind",
+      "ar": "Next.js • React • TypeScript • Zustand • Tailwind"
     },
     "category": "Web",
     "client": {
@@ -384,11 +384,10 @@ export const PORTFOLIO_PROJECTS = [
     "featured": true,
     "tags": [
       "Next.js",
-      "Vite",
       "React",
       "TypeScript",
+      "Zustand",
       "Tailwind",
-      "Vitest",
       "showcase"
     ],
     "status": "showcase",
@@ -436,12 +435,12 @@ export const PORTFOLIO_PROJECTS = [
       "ar": "Etamini"
     },
     "description": {
-      "en": "A project managed in the Dev Stage workspace.",
-      "ar": "A project managed in the Dev Stage workspace."
+      "en": "A TanStack Start and React application for the Etamini product experience, with a Vite-based web build and Capacitor mobile targets.",
+      "ar": "تطبيق مبني بـ TanStack Start وReact لتجربة منتج Etamini، مع بناء ويب عبر Vite وأهداف هاتف عبر Capacitor."
     },
     "meta": {
-      "en": "Vite • React • TypeScript • Tailwind • Capacitor • Vitest",
-      "ar": "Vite • React • TypeScript • Tailwind • Capacitor • Vitest"
+      "en": "TanStack Start • React • TypeScript • Vite • Capacitor",
+      "ar": "TanStack Start • React • TypeScript • Vite • Capacitor"
     },
     "category": "Web",
     "client": {
@@ -468,29 +467,32 @@ export const PORTFOLIO_PROJECTS = [
     "isPublished": true,
     "featured": true,
     "tags": [
+      "TanStack Start",
       "Vite",
       "React",
       "TypeScript",
-      "Tailwind",
       "Capacitor",
-      "Vitest",
       "showcase"
     ],
     "status": "showcase",
     "features": [
       {
-        "en": "Current feature inventory: Unknown / verify.",
-        "ar": "Current feature inventory: Unknown / verify."
+        "en": "Route-based React application with TanStack Start and TanStack Router.",
+        "ar": "تطبيق React قائم على المسارات باستخدام TanStack Start وTanStack Router."
+      },
+      {
+        "en": "Shared web and mobile delivery path through Capacitor packaging.",
+        "ar": "مسار تسليم مشترك للويب والهاتف عبر حزم Capacitor."
       }
     ],
     "progress": {
-      "en": "Classified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.",
-      "ar": "Classified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence."
+      "en": "The showcase surface is live, while dependency resolution, lint, and production build work remain before a clean release baseline.",
+      "ar": "واجهة المعرض متاحة، بينما لا تزال معالجة الاعتماديات وlint وبناء الإنتاج مطلوبة قبل خط أساس إصدار نظيف."
     },
     "issues": [
       {
-        "en": "No conventional test directory was detected.",
-        "ar": "No conventional test directory was detected."
+        "en": "The production build is blocked by a missing @tanstack/query-core resolution; lint also reports a large existing formatting backlog.",
+        "ar": "يتعطل بناء الإنتاج بسبب تعذر حل @tanstack/query-core؛ كما يحتوي lint على عدد كبير من أخطاء التنسيق الحالية."
       }
     ],
     "suggestions": [

@@ -281,6 +281,14 @@ const portfolioImageOverrides = {
   },
 };
 
+const stageForStatus = (status) => ({
+  showcase: 'published',
+  'in-progress': 'not-published',
+  prototype: 'early',
+  dropped: 'early',
+  internal: 'not-published',
+}[status] ?? 'early');
+
 const lastCommitYear = (workspacePath) => {
   try {
     return execFileSync('git', ['-C', workspacePath, 'log', '-1', '--format=%cs'], {
@@ -325,24 +333,29 @@ const publicContent = ({ title, description, category, stack, status, features, 
 const buildProject = (registryProject, apexyardRoot, index) => {
   const workspacePath = join(apexyardRoot, registryProject.workspace);
   const projectName = basename(registryProject.workspace);
-  const packageJson = readJson(join(workspacePath, 'package.json'));
+  const documentationPath = join(apexyardRoot, registryProject.docs ?? '');
+  const sourcePath = existsSync(workspacePath) ? workspacePath : documentationPath;
+  const packageJson = readJson(join(sourcePath, 'package.json'));
   const portfolioDoc = readJson(join(workspacePath, 'docs', 'portfolio.json'));
-  const readme = readText(join(workspacePath, 'README.md'));
+  const documentedPortfolio = Object.keys(portfolioDoc).length > 0
+    ? portfolioDoc
+    : readJson(join(documentationPath, 'docs', 'portfolio.json'));
+  const readme = readText(join(sourcePath, 'README.md'));
   const fallbackReadme = readText(join(apexyardRoot, registryProject.docs ?? '', 'README.md'));
   const sourceText = readme || fallbackReadme;
   const fallbackDescription = firstParagraph(sourceText) || packageJson.description || 'A project managed in this portfolio.';
   const displayTitle = portfolioTitleOverrides[registryProject.name] ?? projectName;
   const title = { en: displayTitle, ar: displayTitle };
-  const description = bilingualText(portfolioDoc.summary, fallbackDescription);
-  const stack = Array.isArray(portfolioDoc.tech_stack) && portfolioDoc.tech_stack.length > 0
-    ? portfolioDoc.tech_stack
+  const description = bilingualText(documentedPortfolio.summary, fallbackDescription);
+  const stack = Array.isArray(documentedPortfolio.tech_stack) && documentedPortfolio.tech_stack.length > 0
+    ? documentedPortfolio.tech_stack
     : detectStack(packageJson);
-  const category = portfolioDoc.category || detectCategory(packageJson, stack);
-  const status = portfolioDoc.status || registryProject.status || 'prototype';
-  const features = bilingualList(portfolioDoc.features);
-  const progress = bilingualText(portfolioDoc.progress, `Status recorded as ${status}.`);
-  const issues = bilingualList(portfolioDoc.issues);
-  const suggestions = bilingualList(portfolioDoc.suggestions);
+  const category = documentedPortfolio.category || detectCategory(packageJson, stack);
+  const status = documentedPortfolio.status || registryProject.status || 'prototype';
+  const features = bilingualList(documentedPortfolio.features);
+  const progress = bilingualText(documentedPortfolio.progress, `Status recorded as ${status}.`);
+  const issues = bilingualList(documentedPortfolio.issues);
+  const suggestions = bilingualList(documentedPortfolio.suggestions);
   const label = initials(title.en, registryProject.name);
   const content = publicContent({
     title: title.en,
@@ -387,12 +400,13 @@ const buildProject = (registryProject, apexyardRoot, index) => {
     featured: status === 'showcase' && index < 5,
     tags: [...stack, status],
     status,
+    stage: documentedPortfolio.stage || stageForStatus(status),
     features,
     progress,
     issues,
     suggestions,
-    repository: portfolioDoc.repository,
-    source: portfolioDoc.source,
+    repository: documentedPortfolio.repository,
+    source: documentedPortfolio.source,
   };
 };
 

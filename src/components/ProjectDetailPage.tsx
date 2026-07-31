@@ -1,32 +1,15 @@
 import React from 'react';
 import type { Language, Project } from '../types';
 import { ProjectLogo } from './ProjectLogo';
+import { VisitorCounter } from './VisitorCounter';
 
 interface ProjectDetailPageProps {
   project: Project;
   language: Language;
 }
 
-function renderContentLine(line: string, index: number): React.ReactNode {
-  const heading = line.match(/^#{1,3}\s+(.+)$/);
-  if (heading) {
-    return (
-      <h2 key={`${line}-${index}`} className="font-serif-luxury text-xl sm:text-2xl font-bold text-[#1A1A1A] dark:text-[#F4F2ED] pt-4">
-        {heading[1]}
-      </h2>
-    );
-  }
-
-  return (
-    <p key={`${line}-${index}`} className="text-sm sm:text-base leading-relaxed text-[#6C6863] dark:text-[#A39E98]">
-      {line.replace(/^[-*]\s+/, '• ')}
-    </p>
-  );
-}
-
 export function ProjectDetailPage({ project, language }: ProjectDetailPageProps) {
   const isAr = language === 'ar';
-  const contentLines = project.contentMDX[language].split(/\n+/).filter(Boolean);
 
   return (
     <main className="relative z-10 mx-auto max-w-[1120px] px-6 md:px-16 py-10 md:py-16">
@@ -47,6 +30,7 @@ export function ProjectDetailPage({ project, language }: ProjectDetailPageProps)
             </h1>
           </div>
           <p className="max-w-3xl text-lg leading-relaxed text-[#6C6863] dark:text-[#A39E98]">{project.description[language]}</p>
+          <VisitorCounter language={language} projectSlug={project.slug} />
           {project.liveUrl && (
             <a
               href={project.liveUrl}
@@ -108,9 +92,11 @@ export function ProjectDetailPage({ project, language }: ProjectDetailPageProps)
           </section>
         )}
 
-        <section className="space-y-3">
-          <h2 className="font-serif-luxury text-2xl font-bold text-[#1A1A1A] dark:text-[#F4F2ED]">{isAr ? 'دراسة الحالة' : 'Case study'}</h2>
-          {contentLines.map(renderContentLine)}
+        <section className="border-y border-[#1A1A1A]/15 dark:border-white/15 py-5">
+          <h2 className="text-xs font-mono uppercase tracking-[0.2em] text-[#D4AF37]">{isAr ? 'مبني باستخدام' : 'Built with'}</h2>
+          <p className="mt-3 text-sm leading-relaxed text-[#6C6863] dark:text-[#A39E98]">
+            {project.tags.filter((tag) => tag !== project.status).join(' · ')}
+          </p>
         </section>
       </article>
     </main>

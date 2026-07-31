@@ -1,6 +1,7 @@
 export type Language = 'en' | 'ar';
 
 export type ProjectStatus = 'showcase' | 'in-progress' | 'prototype' | 'dropped' | 'internal';
+export type ProjectStage = 'early' | 'not-published' | 'published' | 'wide-distributed' | 'sold';
 
 export interface BilingualText {
   en: string;
@@ -37,6 +38,7 @@ export interface Project {
   featured: boolean;
   tags: string[];
   status?: ProjectStatus;
+  stage?: ProjectStage;
   features?: BilingualText[];
   progress?: BilingualText;
   issues?: BilingualText[];

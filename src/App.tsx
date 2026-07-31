@@ -12,6 +12,7 @@ import { ThemeWaveOverlay } from './components/ThemeWaveOverlay';
 import { PwaInstallHelpDialog } from './components/PwaInstallHelpDialog';
 import { PwaStatusBar } from './components/PwaStatusBar';
 import { MobileBottomNav } from './components/MobileBottomNav';
+import { VisitorCounter } from './components/VisitorCounter';
 import { toAbsoluteUrl, updateSeoMetadata } from './lib/seo';
 import { 
   Sparkles, Layers, ArrowUpRight, Feather, Filter, ChevronDown
@@ -151,7 +152,12 @@ export default function App() {
             ...savedProject,
             title: project.title,
             description: project.description,
+            meta: project.meta,
             client: project.client,
+            role: project.role,
+            tags: project.tags,
+            status: project.status,
+            stage: 'stage' in project ? project.stage : undefined,
             liveUrl: project.liveUrl,
             logoSrc: project.logoSrc,
             contentMDX: project.contentMDX,
@@ -521,6 +527,7 @@ export default function App() {
                 <p dir="ltr" className="font-mono text-[11px] text-[#6C6863] dark:text-[#A39E98] tracking-widest uppercase">
                   © {new Date().getFullYear()} {profile.name[language]} — ALL RIGHTS RESERVED.
                 </p>
+                <VisitorCounter language={language} className="justify-center pt-2" />
               </footer>
 
             </main>
