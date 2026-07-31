@@ -68,41 +68,43 @@ export const Navbar: React.FC<NavbarProps> = ({
             </button>
           )}
 
-          {/* Theme Mode Switcher */}
-          <PwaInstallMenuAction language={language} dark={isDark} />
+          <div className="hidden items-center gap-3 sm:gap-4 md:flex">
+            {/* Theme Mode Switcher */}
+            <PwaInstallMenuAction language={language} dark={isDark} />
 
-          {onToggleTheme && (
+            {onToggleTheme && (
+              <button
+                onClick={onToggleTheme}
+                className={`flex items-center justify-center h-8 w-8 border transition-colors duration-300 cursor-pointer ${
+                  isDark
+                    ? 'border-white/20 hover:border-white text-[#F4F2ED] bg-[#181716]'
+                    : 'border-[#1A1A1A]/30 hover:border-[#1A1A1A] text-[#1A1A1A] bg-[#EBE5DE]/60'
+                }`}
+                title={isDark ? 'Switch to Light Theme' : 'Switch to Dark Theme'}
+              >
+                {isDark ? (
+                  <Sun className="h-4 w-4 text-[#D4AF37]" />
+                ) : (
+                  <Moon className="h-4 w-4 text-[#D4AF37]" />
+                )}
+              </button>
+            )}
+
+            {/* Language Toggle */}
             <button
-              onClick={onToggleTheme}
-              className={`flex items-center justify-center h-8 w-8 border transition-colors duration-300 cursor-pointer ${
+              onClick={() => onLanguageChange(isAr ? 'en' : 'ar')}
+              className={`flex items-center justify-center h-8 min-w-[34px] border px-2.5 text-xs font-bold tracking-wider uppercase transition-colors duration-300 cursor-pointer ${
                 isDark
-                  ? 'border-white/20 hover:border-white text-[#F4F2ED] bg-[#181716]'
-                  : 'border-[#1A1A1A]/30 hover:border-[#1A1A1A] text-[#1A1A1A] bg-[#EBE5DE]/60'
+                  ? 'border-white/20 hover:border-white text-[#F4F2ED]'
+                  : 'border-[#1A1A1A]/30 hover:border-[#1A1A1A] text-[#1A1A1A]'
               }`}
-              title={isDark ? 'Switch to Light Theme' : 'Switch to Dark Theme'}
+              title={isAr ? 'Switch to English' : 'التحويل للعربية'}
             >
-              {isDark ? (
-                <Sun className="h-4 w-4 text-[#D4AF37]" />
-              ) : (
-                <Moon className="h-4 w-4 text-[#D4AF37]" />
-              )}
+              <span className={`inline-flex items-center justify-center leading-none ${!isAr ? 'relative -top-[1.5px]' : ''}`}>
+                {isAr ? 'EN' : 'ع'}
+              </span>
             </button>
-          )}
-
-          {/* Language Toggle */}
-          <button
-            onClick={() => onLanguageChange(isAr ? 'en' : 'ar')}
-            className={`flex items-center justify-center h-8 min-w-[34px] border px-2.5 text-xs font-bold tracking-wider uppercase transition-colors duration-300 cursor-pointer ${
-              isDark
-                ? 'border-white/20 hover:border-white text-[#F4F2ED]'
-                : 'border-[#1A1A1A]/30 hover:border-[#1A1A1A] text-[#1A1A1A]'
-            }`}
-            title={isAr ? 'Switch to English' : 'التحويل للعربية'}
-          >
-            <span className={`inline-flex items-center justify-center leading-none ${!isAr ? 'relative -top-[1.5px]' : ''}`}>
-              {isAr ? 'EN' : 'ع'}
-            </span>
-          </button>
+          </div>
 
         </div>
       </nav>

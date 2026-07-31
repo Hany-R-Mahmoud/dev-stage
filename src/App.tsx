@@ -540,6 +540,9 @@ export default function App() {
             language={language}
             activeView={activeView}
             onViewChange={handleViewChange}
+            onLanguageChange={handleLanguageChange}
+            theme={theme}
+            onToggleTheme={toggleTheme}
           />
         </div>
 
