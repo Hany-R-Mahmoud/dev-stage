@@ -87,6 +87,13 @@ const sanitizePortfolioText = (value) => value
   .replace(/\bApex Yard(?:\s*\/\s*Hany-Labs)?\b/gi, 'Dev Stage')
   .replace(/\bHany-Labs\b/gi, 'Dev Stage');
 
+const portfolioDescriptionOverrides = {
+  'spec-flow': {
+    en: 'SpecFlow AI turns scattered product input into a guided workflow for breakdowns, structured stories, review, and export-ready handoff.',
+    ar: 'يحوّل SpecFlow AI مدخلات المنتجات المبعثرة إلى سير عمل موجّه للتقسيم والقصص المنظمة والمراجعة والتسليم الجاهز للتصدير.',
+  },
+};
+
 const detectStack = (packageJson) => {
   const dependencies = dependencyNames(packageJson);
   const stack = [];
@@ -367,7 +374,8 @@ const buildProject = (registryProject, apexyardRoot, index) => {
   const fallbackDescription = firstParagraph(sourceText) || packageJson.description || 'A project managed in this portfolio.';
   const displayTitle = portfolioTitleOverrides[registryProject.name] ?? projectName;
   const title = { en: displayTitle, ar: displayTitle };
-  const description = bilingualText(documentedPortfolio.summary, fallbackDescription);
+  const description = portfolioDescriptionOverrides[registryProject.name]
+    ?? bilingualText(documentedPortfolio.summary, fallbackDescription);
   const stack = Array.isArray(documentedPortfolio.tech_stack) && documentedPortfolio.tech_stack.length > 0
     ? documentedPortfolio.tech_stack
     : detectStack(packageJson);
