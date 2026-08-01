@@ -1487,17 +1487,17 @@ export const PORTFOLIO_PROJECTS = [
     "slug": "yalla-goal",
     "title": {
       "en": "yalla-goal",
-      "ar": "yalla-goal"
+      "ar": "يلا جول"
     },
     "description": {
-      "en": "GoalReviewBase — turn quarterly goals into measurable outcomes with weekly check-ins, confidence scoring, evidence attachments, and progress charts. Local-first personal productivity.",
-      "ar": "GoalReviewBase — turn quarterly goals into measurable outcomes with weekly check-ins, confidence scoring, evidence attachments, and progress charts. Local-first personal productivity."
+      "en": "Yalla-goal is a calm, local-first workspace for turning meaningful goals into daily action, decisions, and weekly reviews.",
+      "ar": "يلا جول مساحة عمل هادئة ومحلية أولاً لتحويل الأهداف المهمة إلى خطوات يومية وقرارات ومراجعات أسبوعية."
     },
     "meta": {
-      "en": "IN-PROGRESS",
-      "ar": "IN-PROGRESS"
+      "en": "Vite • React • TypeScript • IndexedDB • PWA",
+      "ar": "Vite • React • TypeScript • IndexedDB • PWA"
     },
-    "category": "Tools",
+    "category": "Web",
     "client": {
       "en": "Independent",
       "ar": "مستقل"
@@ -1507,25 +1507,85 @@ export const PORTFOLIO_PROJECTS = [
       "ar": "المؤسس والمطور"
     },
     "year": "2026",
-    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EYG%3C%2Ftext%3E%3C%2Fsvg%3E",
-    "galleryImages": [],
+    "liveUrl": "https://yalla-bina-yalla.vercel.app/",
+    "logoSrc": "https://yalla-bina-yalla.vercel.app/brand/yalla-goal-logo.png",
+    "imageSrc": "https://ik.imagekit.io/hrim/images/yalla-goal/yalla1.png",
+    "galleryImages": [
+      "https://ik.imagekit.io/hrim/images/yalla-goal/yalla2.png",
+      "https://ik.imagekit.io/hrim/images/yalla-goal/yalla3.png",
+      "https://ik.imagekit.io/hrim/images/yalla-goal/yalla4.png"
+    ],
     "contentMDX": {
-      "en": "# yalla-goal\n\nGoalReviewBase — turn quarterly goals into measurable outcomes with weekly check-ins, confidence scoring, evidence attachments, and progress charts. Local-first personal productivity.\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Tools\n- Tech stack: Not detected\n\n## Features\n\n- Unknown / verify\n\n## Progress\n\nStatus recorded as in-progress.\n\n## Issues / troubles\n\n- Unknown / verify\n\n## Suggested next steps\n\n- Unknown / verify",
-      "ar": "# yalla-goal\n\nGoalReviewBase — turn quarterly goals into measurable outcomes with weekly check-ins, confidence scoring, evidence attachments, and progress charts. Local-first personal productivity.\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Tools\n- Tech stack: Not detected\n\n## Features\n\n- Unknown / verify\n\n## Progress\n\nStatus recorded as in-progress.\n\n## Issues / troubles\n\n- Unknown / verify\n\n## Suggested next steps\n\n- Unknown / verify"
+      "en": "# yalla-goal\n\nYalla-goal — يلا جول — is a calm, local-first workspace for turning meaningful goals into daily action, decisions, and weekly reviews.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Vite, React, TypeScript, IndexedDB, PWA\n\n## Features\n\n- Goal shaping: define an outcome, horizon, and usable definition of progress.\n- Milestones and daily plans: turn milestones into a focused next move.\n- Today workspace: capture tasks and keep a top-five focus list.\n- Review Center and Decision Journal: keep weekly evidence and decisions close to the work.\n- Search and archive: revisit stored work without a cloud workspace.\n- Local-first privacy: goals, tasks, decisions, and reviews stay in browser storage with no account required.\n- Backup, restore, export, and installable PWA support.\n\n## Progress\n\nClassified as showcase-ready after reviewing the live landing page and workspace on 2026-08-01.\n\n## Issues / troubles\n\n- The public deployment was reviewed through its live UI; repository-level test coverage and internal implementation details were not available in this portfolio workspace.\n\n## Suggested next steps\n\n- Add a fuller case study and reviewed mobile/desktop screenshots when repository evidence is available.",
+      "ar": "# يلا جول\n\nيلا جول مساحة عمل هادئة ومحلية أولاً لتحويل الأهداف المهمة إلى خطوات يومية وقرارات ومراجعات أسبوعية.\n\n## ملخص المشروع\n\n- الحالة: معرض\n- الفئة: ويب\n- التقنيات: Vite، React، TypeScript، IndexedDB، PWA\n\n## الميزات\n\n- صياغة الهدف: تحديد النتيجة والأفق الزمني وتعريف عملي للتقدم.\n- المراحل والخطط اليومية: تحويل المراحل إلى خطوة تالية مركزة.\n- مساحة اليوم: التقاط المهام والحفاظ على قائمة تركيز من خمسة عناصر.\n- مركز المراجعة ومذكرات القرارات: إبقاء الأدلة الأسبوعية والقرارات قريبة من العمل.\n- البحث والأرشيف: العودة إلى الأعمال المحفوظة بدون مساحة سحابية.\n- الخصوصية المحلية أولاً: تبقى الأهداف والمهام والقرارات والمراجعات في تخزين المتصفح بدون الحاجة إلى حساب.\n- النسخ الاحتياطي والاستعادة والتصدير ودعم التثبيت كتطبيق PWA.\n\n## التقدم\n\nتم تصنيف المشروع كجاهز للعرض بعد مراجعة الصفحة التعريفية ومساحة العمل المباشرة في 2026-08-01.\n\n## المشكلات والصعوبات\n\n- تمت مراجعة النشر العام من خلال واجهته المباشرة؛ ولم تتوفر تفاصيل اختبارات المستودع والتنفيذ الداخلي داخل مساحة معرض المشاريع.\n\n## الخطوات المقترحة\n\n- إضافة دراسة حالة أوسع ولقطات شاشة مراجعة للهاتف وسطح المكتب عند توفر أدلة المستودع."
     },
     "isPublished": true,
     "featured": false,
     "tags": [
-      "in-progress"
+      "Vite",
+      "React",
+      "TypeScript",
+      "IndexedDB",
+      "PWA",
+      "showcase"
     ],
-    "status": "in-progress",
-    "features": [],
+    "status": "showcase",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Goal shaping: define an outcome, horizon, and usable definition of progress.",
+        "ar": "صياغة الهدف: تحديد النتيجة والأفق الزمني وتعريف عملي للتقدم."
+      },
+      {
+        "en": "Milestones and daily plans: turn milestones into a focused next move.",
+        "ar": "المراحل والخطط اليومية: تحويل المراحل إلى خطوة تالية مركزة."
+      },
+      {
+        "en": "Today workspace: capture tasks and keep a top-five focus list.",
+        "ar": "مساحة اليوم: التقاط المهام والحفاظ على قائمة تركيز من خمسة عناصر."
+      },
+      {
+        "en": "Review Center and Decision Journal: keep weekly evidence and decisions close to the work.",
+        "ar": "مركز المراجعة ومذكرات القرارات: إبقاء الأدلة الأسبوعية والقرارات قريبة من العمل."
+      },
+      {
+        "en": "Search and archive: revisit stored work without a cloud workspace.",
+        "ar": "البحث والأرشيف: العودة إلى الأعمال المحفوظة بدون مساحة سحابية."
+      },
+      {
+        "en": "Local-first privacy: goals, tasks, decisions, and reviews stay in browser storage with no account required.",
+        "ar": "الخصوصية المحلية أولاً: تبقى الأهداف والمهام والقرارات والمراجعات في تخزين المتصفح بدون الحاجة إلى حساب."
+      },
+      {
+        "en": "Backup, restore, export, and installable PWA support.",
+        "ar": "النسخ الاحتياطي والاستعادة والتصدير ودعم التثبيت كتطبيق PWA."
+      }
+    ],
     "progress": {
-      "en": "Status recorded as in-progress.",
-      "ar": "Status recorded as in-progress."
+      "en": "Classified as showcase-ready after reviewing the live landing page and workspace on 2026-08-01.",
+      "ar": "تم تصنيف المشروع كجاهز للعرض بعد مراجعة الصفحة التعريفية ومساحة العمل المباشرة في 2026-08-01."
     },
-    "issues": [],
-    "suggestions": []
+    "issues": [
+      {
+        "en": "The public deployment was reviewed through its live UI; repository-level test coverage and internal implementation details were not available in this portfolio workspace.",
+        "ar": "تمت مراجعة النشر العام من خلال واجهته المباشرة؛ ولم تتوفر تفاصيل اختبارات المستودع والتنفيذ الداخلي داخل مساحة معرض المشاريع."
+      }
+    ],
+    "suggestions": [
+      {
+        "en": "Add a fuller case study and reviewed mobile/desktop screenshots when repository evidence is available.",
+        "ar": "إضافة دراسة حالة أوسع ولقطات شاشة مراجعة للهاتف وسطح المكتب عند توفر أدلة المستودع."
+      }
+    ],
+    "repository": {
+      "branch": "main",
+      "sync": "github",
+      "github": "https://github.com/Hany-R-Mahmoud/yalla-goal"
+    },
+    "source": {
+      "workspace": "workspace/yalla-goal",
+      "last_reviewed": "2026-08-01"
+    }
   },
   {
     "id": "apexyard-al-rawi",

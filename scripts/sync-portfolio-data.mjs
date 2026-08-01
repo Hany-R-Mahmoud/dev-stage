@@ -230,6 +230,16 @@ const portfolioImageOverrides = {
       'https://ik.imagekit.io/hrim/images/wajba/wajba6.png',
     ],
   },
+  'yalla-goal': {
+    liveUrl: 'https://yalla-bina-yalla.vercel.app/',
+    logoSrc: 'https://yalla-bina-yalla.vercel.app/brand/yalla-goal-logo.png',
+    imageSrc: 'https://ik.imagekit.io/hrim/images/yalla-goal/yalla1.png',
+    galleryImages: [
+      'https://ik.imagekit.io/hrim/images/yalla-goal/yalla2.png',
+      'https://ik.imagekit.io/hrim/images/yalla-goal/yalla3.png',
+      'https://ik.imagekit.io/hrim/images/yalla-goal/yalla4.png',
+    ],
+  },
   yahya: {
     liveUrl: 'https://yah-ya.vercel.app/',
     logoSrc: 'https://yah-ya.vercel.app/brand/yahya-favicon.svg',
