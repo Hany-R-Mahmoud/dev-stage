@@ -164,6 +164,7 @@ const portfolioTitleOverrides = {
   'spec-flow': 'Spec Flow AI',
   minarets_of_cairo: 'Minaretes of Cairo',
   'emojie-crack': 'Emojie-Crack',
+  dev2ops: 'Dev2ops',
 };
 
 const portfolioImageOverrides = {
@@ -238,6 +239,16 @@ const portfolioImageOverrides = {
       'https://ik.imagekit.io/hrim/images/yalla-goal/yalla2.png',
       'https://ik.imagekit.io/hrim/images/yalla-goal/yalla3.png',
       'https://ik.imagekit.io/hrim/images/yalla-goal/yalla4.png',
+    ],
+  },
+  dev2ops: {
+    liveUrl: 'https://dev2ops.vercel.app/',
+    logoSrc: 'https://dev2ops.vercel.app/brand/dev2ops-logo.png',
+    imageSrc: 'https://ik.imagekit.io/hrim/images/devops/devops1.png',
+    galleryImages: [
+      'https://ik.imagekit.io/hrim/images/devops/devops2.png',
+      'https://ik.imagekit.io/hrim/images/devops/devops3.png',
+      'https://ik.imagekit.io/hrim/images/devops/devops4.png',
     ],
   },
   yahya: {

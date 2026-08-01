@@ -1793,16 +1793,16 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-dev2ops",
     "slug": "dev2ops",
     "title": {
-      "en": "dev2ops",
+      "en": "Dev2ops",
       "ar": "dev2ops"
     },
     "description": {
-      "en": "dev2ops is a responsive React learning game for practical DevOps, SRE, infrastructure, and platform skills. Learners inspect and repair deterministic virtual systems in a browser-simulated terminal; learner commands never execute on the host or a real infrastructure service.",
-      "ar": "dev2ops is a responsive React learning game for practical DevOps, SRE, infrastructure, and platform skills. Learners inspect and repair deterministic virtual systems in a browser-simulated terminal; learner commands never execute on the host or a real infrastructure service."
+      "en": "dev2ops is a browser-simulated DevOps learning game for safe, evidence-led operational practice. It turns real operational moments into guided terminal quests without executing commands on a host.",
+      "ar": "dev2ops لعبة تعليمية في DevOps تحاكي الطرفية داخل المتصفح لتدريب آمن قائم على الأدلة، وتحول المواقف التشغيلية الواقعية إلى مهام إرشادية دون تنفيذ الأوامر على جهاز حقيقي."
     },
     "meta": {
-      "en": "Next.js • Vite • React • TypeScript • Tailwind • Vitest",
-      "ar": "Next.js • Vite • React • TypeScript • Tailwind • Vitest"
+      "en": "React • TypeScript • Vite • Express • tRPC • Tailwind CSS",
+      "ar": "React • TypeScript • Vite • Express • tRPC • Tailwind CSS"
     },
     "category": "Web",
     "client": {
@@ -1814,64 +1814,84 @@ export const PORTFOLIO_PROJECTS = [
       "ar": "المؤسس والمطور"
     },
     "year": "2026",
-    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EDE%3C%2Ftext%3E%3C%2Fsvg%3E",
-    "galleryImages": [],
+    "liveUrl": "https://dev2ops.vercel.app/",
+    "logoSrc": "https://dev2ops.vercel.app/brand/dev2ops-logo.png",
+    "imageSrc": "https://ik.imagekit.io/hrim/images/devops/devops1.png",
+    "galleryImages": [
+      "https://ik.imagekit.io/hrim/images/devops/devops2.png",
+      "https://ik.imagekit.io/hrim/images/devops/devops3.png",
+      "https://ik.imagekit.io/hrim/images/devops/devops4.png"
+    ],
     "contentMDX": {
-      "en": "# dev2ops\n\ndev2ops is a responsive React learning game for practical DevOps, SRE, infrastructure, and platform skills. Learners inspect and repair deterministic virtual systems in a browser-simulated terminal; learner commands never execute on the host or a real infrastructure service.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Project Structure\n- Local Development\n- AI Agent Guide\n- Team Decisions\n- No CI workflow, container definition, deployment manifest, or committed environment example was found. Verify deployment-specific setup before release.\n- Project Structure\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
-      "ar": "# dev2ops\n\ndev2ops is a responsive React learning game for practical DevOps, SRE, infrastructure, and platform skills. Learners inspect and repair deterministic virtual systems in a browser-simulated terminal; learner commands never execute on the host or a real infrastructure service.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Project Structure\n- Local Development\n- AI Agent Guide\n- Team Decisions\n- No CI workflow, container definition, deployment manifest, or committed environment example was found. Verify deployment-specific setup before release.\n- Project Structure\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
+      "en": "# Dev2ops\n\ndev2ops is a browser-simulated DevOps learning game for safe, evidence-led operational practice. Learners turn real operational moments into guided terminal quests in a complete browser simulation.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: React, TypeScript, Vite, Express, tRPC, Tailwind CSS, Vitest\n- Scale: 15 learning tracks, 45+ quests, and 0 real execution\n\n## Features\n\n- Deterministic browser simulator with state-based validation.\n- Source-backed DevOps curriculum with prerequisite-aware learning paths.\n- Guided practice across Linux, Git, networking, automation, CI/CD, containers, Kubernetes, and related operational domains.\n- Responsive quest workspace with command reference, evidence checks, hints, weekly goals, and learning-path recommendations.\n- Local progress with JSON backup and restore; no account is required for the current release.\n- Installable PWA with branded icons, splash screen, bounded offline shell, and install guidance.\n\n## Progress\n\nClassified as showcase-ready after reviewing the live deployment and repository evidence on 2026-08-01.\n\n## Issues / troubles\n\n- Learner progress is browser-local; account synchronization and server persistence are not part of the current release.\n- CI policy, production secret provisioning, and release artifacts remain Unknown / verify; the Vercel target and repository deployment configuration are documented in vercel.json.\n\n## Suggested next steps\n\n- Consider optional account-backed sync if cross-device learning becomes a requirement.\n- Keep curriculum references and simulation command coverage under periodic review as tracks expand.",
+      "ar": "# Dev2ops\n\ndev2ops لعبة تعليمية في DevOps تحاكي الطرفية داخل المتصفح لتدريب آمن قائم على الأدلة. يحوّل المشروع المواقف التشغيلية الواقعية إلى مهام إرشادية ضمن محاكاة كاملة داخل المتصفح.\n\n## ملخص المشروع\n\n- الحالة: معرض\n- الفئة: ويب\n- التقنيات: React، TypeScript، Vite، Express، tRPC، Tailwind CSS، Vitest\n- الحجم: 15 مسار تعلم، وأكثر من 45 مهمة، و0 تنفيذ حقيقي\n\n## الميزات\n\n- محاكي متصفح حتمي مع تحقق قائم على الحالة.\n- منهج DevOps موثق بالمصادر مع مسارات تعلم تراعي المتطلبات السابقة.\n- تدريب إرشادي على Linux وGit والشبكات والأتمتة وCI/CD والحاويات وKubernetes ومجالات تشغيلية مرتبطة.\n- مساحة مهام متجاوبة مع مرجع للأوامر وأدلة تحقق وتلميحات وأهداف أسبوعية وتوصيات لمسارات التعلم.\n- حفظ التقدم محليًا مع النسخ الاحتياطي والاستعادة بصيغة JSON، دون الحاجة إلى حساب في الإصدار الحالي.\n- تطبيق ويب تقدمي قابل للتثبيت مع أيقونات وشاشة بداية ذات هوية بصرية وقشرة عمل دون اتصال محدودة وإرشادات للتثبيت.\n\n## التقدم\n\nتم تصنيف المشروع كجاهز للعرض بعد مراجعة النشر المباشر وأدلة المستودع في 2026-08-01.\n\n## المشكلات والصعوبات\n\n- تقدم المتعلم محلي داخل المتصفح؛ ولا يتضمن الإصدار الحالي مزامنة الحسابات أو التخزين على الخادم.\n- لا تزال سياسة CI وتجهيز أسرار الإنتاج وملفات الإصدار بحاجة إلى التحقق؛ بينما تم توثيق هدف Vercel وإعدادات النشر في ملف vercel.json.\n\n## الخطوات المقترحة\n\n- دراسة إضافة مزامنة اختيارية مرتبطة بالحساب إذا أصبح التعلم عبر أجهزة متعددة مطلبًا.\n- مراجعة مراجع المنهج وتغطية أوامر المحاكاة دوريًا مع توسع مسارات التعلم."
     },
     "isPublished": true,
     "featured": false,
     "tags": [
-      "Next.js",
-      "Vite",
       "React",
       "TypeScript",
-      "Tailwind",
+      "Vite",
+      "Express",
+      "tRPC",
+      "Tailwind CSS",
       "Vitest",
       "showcase"
     ],
     "status": "showcase",
+    "stage": "published",
     "features": [
       {
-        "en": "Project Structure",
-        "ar": "Project Structure"
+        "en": "Deterministic browser simulator with state-based validation",
+        "ar": "محاكي متصفح حتمي مع تحقق قائم على الحالة"
       },
       {
-        "en": "Local Development",
-        "ar": "Local Development"
+        "en": "Source-backed DevOps curriculum",
+        "ar": "منهج DevOps موثق بالمصادر"
       },
       {
-        "en": "AI Agent Guide",
-        "ar": "AI Agent Guide"
+        "en": "Prerequisite-aware learning paths across connected tracks",
+        "ar": "مسارات تعلم تراعي المتطلبات السابقة عبر مسارات مترابطة"
       },
       {
-        "en": "Team Decisions",
-        "ar": "Team Decisions"
+        "en": "Responsive accessible quest workspace with command reference and evidence",
+        "ar": "مساحة مهام متجاوبة وميسّرة مع مرجع للأوامر وأدلة تحقق"
       },
       {
-        "en": "No CI workflow, container definition, deployment manifest, or committed environment example was found. Verify deployment-specific setup before release.",
-        "ar": "No CI workflow, container definition, deployment manifest, or committed environment example was found. Verify deployment-specific setup before release."
+        "en": "Local progress with JSON backup and restore",
+        "ar": "تقدم محلي مع نسخ JSON احتياطية واستعادة"
       },
       {
-        "en": "Project Structure",
-        "ar": "Project Structure"
+        "en": "Dashboard analytics, weekly goals, hints, and learning-path recommendations",
+        "ar": "تحليلات لوحة التحكم والأهداف الأسبوعية والتلميحات وتوصيات مسارات التعلم"
+      },
+      {
+        "en": "Installable PWA with bounded offline shell and install guidance",
+        "ar": "تطبيق ويب تقدمي قابل للتثبيت مع قشرة عمل دون اتصال محدودة وإرشادات للتثبيت"
       }
     ],
     "progress": {
-      "en": "Classified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.",
-      "ar": "Classified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence."
+      "en": "Classified as showcase-ready after reviewing the live deployment and repository evidence on 2026-08-01.",
+      "ar": "تم تصنيف المشروع كجاهز للعرض بعد مراجعة النشر المباشر وأدلة المستودع في 2026-08-01."
     },
     "issues": [
       {
-        "en": "No conventional test directory was detected.",
-        "ar": "No conventional test directory was detected."
+        "en": "Learner progress is browser-local; account synchronization and server persistence are not part of the current release.",
+        "ar": "تقدم المتعلم محلي داخل المتصفح؛ ولا يتضمن الإصدار الحالي مزامنة الحسابات أو التخزين على الخادم."
+      },
+      {
+        "en": "CI policy, production secret provisioning, and release artifacts remain Unknown / verify; the Vercel target and repository deployment configuration are documented in vercel.json.",
+        "ar": "لا تزال سياسة CI وتجهيز أسرار الإنتاج وملفات الإصدار بحاجة إلى التحقق؛ بينما تم توثيق هدف Vercel وإعدادات النشر في ملف vercel.json."
       }
     ],
     "suggestions": [
       {
-        "en": "Add reviewed screenshots and a fuller case study when visual evidence is available.",
-        "ar": "Add reviewed screenshots and a fuller case study when visual evidence is available."
+        "en": "Consider optional account-backed sync if cross-device learning becomes a requirement.",
+        "ar": "دراسة إضافة مزامنة اختيارية مرتبطة بالحساب إذا أصبح التعلم عبر أجهزة متعددة مطلبًا."
+      },
+      {
+        "en": "Keep curriculum references and simulation command coverage under periodic review as tracks expand.",
+        "ar": "مراجعة مراجع المنهج وتغطية أوامر المحاكاة دوريًا مع توسع مسارات التعلم."
       }
     ],
     "repository": {
@@ -1881,7 +1901,7 @@ export const PORTFOLIO_PROJECTS = [
     },
     "source": {
       "workspace": "workspace/dev2ops",
-      "last_reviewed": "2026-07-29"
+      "last_reviewed": "2026-08-01"
     }
   },
   {
