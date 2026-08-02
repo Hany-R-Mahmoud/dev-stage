@@ -4,6 +4,26 @@ import {existsSync, readFileSync} from 'node:fs';
 import path from 'path';
 import {defineConfig} from 'vite';
 
+const siteUrl = (process.env.VITE_SITE_URL ?? '').replace(/\/$/, '');
+
+function seoMetadataPlugin() {
+  return {
+    name: 'dev-stage-seo-metadata',
+    transformIndexHtml(html: string) {
+      if (!siteUrl) return html;
+
+      const replacements: Array<[RegExp, string]> = [
+        [/(<meta property="og:image" content=")[^"]*("\s*\/?>)/, `$1${siteUrl}/og-image.png$2`],
+        [/(<meta property="og:url" content=")[^"]*("\s*\/?>)/, `$1${siteUrl}/$2`],
+        [/(<meta name="twitter:image" content=")[^"]*("\s*\/?>)/, `$1${siteUrl}/og-image.png$2`],
+        [/(<link rel="canonical" href=")[^"]*("\s*\/?>)/, `$1${siteUrl}/$2`],
+      ];
+
+      return replacements.reduce((result, [pattern, replacement]) => result.replace(pattern, replacement), html);
+    },
+  };
+}
+
 function pwaServiceWorkerPlugin() {
   return {
     name: 'dev-stage-pwa-service-worker',
@@ -26,7 +46,7 @@ function pwaServiceWorkerPlugin() {
 
 export default defineConfig(() => {
   return {
-    plugins: [pwaServiceWorkerPlugin(), react(), tailwindcss()],
+    plugins: [pwaServiceWorkerPlugin(), seoMetadataPlugin(), react(), tailwindcss()],
     resolve: {
       alias: {
         '@': path.resolve(__dirname, './src'),
