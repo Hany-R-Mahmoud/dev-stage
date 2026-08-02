@@ -70,7 +70,7 @@ function removeAlternateLinks(): void {
 export function updateSeoMetadata(page: SeoPage): void {
   if (typeof document === 'undefined') return;
 
-  const imageUrl = absoluteUrl(page.imagePath ?? '/og-image.svg');
+  const imageUrl = absoluteUrl(page.imagePath ?? '/og-image.png');
   document.title = page.title;
   document.documentElement.lang = page.language;
   upsertMeta('name', 'description', page.description);
@@ -79,11 +79,16 @@ export function updateSeoMetadata(page: SeoPage): void {
   upsertMeta('property', 'og:description', page.description);
   upsertMeta('property', 'og:type', page.type ?? 'website');
   upsertMeta('property', 'og:image', imageUrl);
+  upsertMeta('property', 'og:image:type', 'image/png');
+  upsertMeta('property', 'og:image:width', '1200');
+  upsertMeta('property', 'og:image:height', '630');
+  upsertMeta('property', 'og:image:alt', page.title);
   upsertMeta('property', 'og:locale', page.language === 'ar' ? 'ar_EG' : 'en_US');
   upsertMeta('name', 'twitter:card', 'summary_large_image');
   upsertMeta('name', 'twitter:title', page.title);
   upsertMeta('name', 'twitter:description', page.description);
   upsertMeta('name', 'twitter:image', imageUrl);
+  upsertMeta('name', 'twitter:image:alt', page.title);
 
   if (siteUrl) {
     const canonicalUrl = absoluteUrl(page.path);
