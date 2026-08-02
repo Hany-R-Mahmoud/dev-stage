@@ -33,6 +33,90 @@ export const PORTFOLIO_PROFILE = {
 
 export const PORTFOLIO_PROJECTS = [
   {
+    "id": "apexyard-tabeeb-flow",
+    "slug": "tabeeb-flow",
+    "title": {
+      "en": "Tabeeb Flow",
+      "ar": "Tabeeb Flow"
+    },
+    "description": {
+      "en": "A connected clinic workspace for doctors and reception teams, with an interactive demo for exploring fictional clinic workflows.",
+      "ar": "مساحة عمل متصلة للعيادات تجمع الأطباء وفرق الاستقبال، مع عرض تفاعلي لاستكشاف سير العمل ببيانات عيادة تجريبية."
+    },
+    "meta": {
+      "en": "React • TypeScript • Vite • Supabase",
+      "ar": "React • TypeScript • Vite • Supabase"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://tabeeb-flow.vercel.app/",
+    "logoSrc": "https://tabeeb-flow.vercel.app/favicon.png",
+    "imageSrc": "https://ik.imagekit.io/hrim/images/tabeeb-flow/tabeeb1.png",
+    "galleryImages": [
+      "https://ik.imagekit.io/hrim/images/tabeeb-flow/tabeeb2.png",
+      "https://ik.imagekit.io/hrim/images/tabeeb-flow/tabeeb3.png",
+      "https://ik.imagekit.io/hrim/images/tabeeb-flow/tabeeb4.png",
+      "https://ik.imagekit.io/hrim/images/tabeeb-flow/tabeeb5.png"
+    ],
+    "contentMDX": {
+      "en": "# Tabeeb Flow\n\nA connected clinic workspace for doctors and reception teams, with an interactive demo for exploring fictional clinic workflows.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: React, TypeScript, Vite, Supabase\n\n## Features\n\n- Connected clinic workspace for doctors and reception teams.\n- Interactive product tour with fictional clinic data and no account required.\n- Dedicated doctor portal and reception portal demo workflows.\n\n## Progress\n\nClassified as showcase-ready after reviewing the live deployment and supplied project screenshots on 2026-08-02.\n\n## Issues / troubles\n\n- Unknown / verify — no issue inventory was provided with the showcase materials.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
+      "ar": "# Tabeeb Flow\n\nمساحة عمل متصلة للعيادات تجمع الأطباء وفرق الاستقبال، مع عرض تفاعلي لاستكشاف سير العمل ببيانات عيادة تجريبية.\n\n## ملخص المشروع\n\n- الحالة: معرض\n- الفئة: ويب\n- التقنيات: React، TypeScript، Vite، Supabase\n\n## الميزات\n\n- مساحة عمل متصلة للعيادات والأطباء وفرق الاستقبال.\n- جولة تفاعلية ببيانات عيادة تجريبية دون الحاجة إلى حساب.\n- مسارات تجريبية مخصصة للطبيب والاستقبال.\n\n## التقدم\n\nتم تصنيف المشروع كجاهز للعرض بعد مراجعة النشر المباشر ولقطات المشروع المقدمة في 2026-08-02.\n\n## المشكلات والصعوبات\n\n- لا توجد قائمة مشكلات مؤكدة ضمن مواد العرض المتاحة.\n\n## الخطوات المقترحة\n\n- إضافة لقطات شاشة مراجعة ودراسة حالة أوسع عند توفر الأدلة البصرية."
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Supabase",
+      "showcase"
+    ],
+    "status": "showcase",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Connected clinic workspace for doctors and reception teams",
+        "ar": "مساحة عمل متصلة للعيادات والأطباء وفرق الاستقبال"
+      },
+      {
+        "en": "Interactive product tour with fictional clinic data and no account required",
+        "ar": "جولة تفاعلية ببيانات عيادة تجريبية دون الحاجة إلى حساب"
+      },
+      {
+        "en": "Dedicated doctor portal and reception portal demo workflows",
+        "ar": "مسارات تجريبية مخصصة للطبيب والاستقبال"
+      }
+    ],
+    "progress": {
+      "en": "Classified as showcase-ready after reviewing the live deployment and supplied project screenshots on 2026-08-02.",
+      "ar": "تم تصنيف المشروع كجاهز للعرض بعد مراجعة النشر المباشر ولقطات المشروع المقدمة في 2026-08-02."
+    },
+    "issues": [
+      {
+        "en": "Unknown / verify — no issue inventory was provided with the showcase materials.",
+        "ar": "لا توجد قائمة مشكلات مؤكدة ضمن مواد العرض المتاحة."
+      }
+    ],
+    "suggestions": [
+      {
+        "en": "Add reviewed screenshots and a fuller case study when visual evidence is available.",
+        "ar": "إضافة لقطات شاشة مراجعة ودراسة حالة أوسع عند توفر الأدلة البصرية."
+      }
+    ],
+    "source": {
+      "workspace": "external/tabeeb-flow",
+      "last_reviewed": "2026-08-02"
+    }
+  },
+  {
     "id": "apexyard-bawaba",
     "slug": "bawaba",
     "title": {
