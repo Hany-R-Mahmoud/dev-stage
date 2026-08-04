@@ -1,7 +1,6 @@
 import {useState} from 'react';
-import {Download, Grid2X2, Home, Menu, Moon, Sun, UserRound} from 'lucide-react';
+import {Grid2X2, Home, Menu, Moon, Sun, UserRound} from 'lucide-react';
 import type {Language} from '../types';
-import {usePwa} from '../pwa/PwaContext';
 
 type MobileBottomNavProps = Readonly<{
   language: Language;
@@ -21,7 +20,6 @@ const navItems = [
 
 export function MobileBottomNav({language, onLanguageChange, theme, onToggleTheme}: MobileBottomNavProps) {
   const isAr = language === 'ar';
-  const {isStandalone, installedHint, canInstall, install, openHelp} = usePwa();
   const [activeItem, setActiveItem] = useState<NavItemId>('home');
   const [isMoreOpen, setIsMoreOpen] = useState(false);
 
@@ -94,17 +92,6 @@ export function MobileBottomNav({language, onLanguageChange, theme, onToggleThem
               <span className="flex h-4 w-4 items-center justify-center text-[#D4AF37]">ع</span>
               <span>{isAr ? 'English' : 'العربية'}</span>
             </button>
-            {!isStandalone && !installedHint && (
-              <button
-                type="button"
-                role="menuitem"
-                onClick={() => { if (canInstall) void install(); else openHelp(); closeMore(); }}
-                className="flex min-h-12 items-center gap-3 px-3 text-start text-xs font-mono uppercase tracking-[0.12em] text-[#A39E98] transition-colors hover:bg-white/5 hover:text-[#F4F2ED] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#D4AF37]"
-              >
-                <Download className="h-4 w-4 text-[#D4AF37]" aria-hidden="true" />
-                <span>{isAr ? 'تثبيت ديف ستيج' : 'Install Dev Stage'}</span>
-              </button>
-            )}
           </div>
         </div>
       )}

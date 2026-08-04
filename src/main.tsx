@@ -8,18 +8,20 @@ import {createRoot} from 'react-dom/client';
 import {Analytics} from '@vercel/analytics/react';
 import App from './App.tsx';
 import {initializeMonitoring} from './lib/monitoring';
-import {PwaProvider} from './pwa/PwaContext';
-import {restoreHashFromLocation} from './pwa/pwa';
 import './index.css';
 
-if (typeof window !== 'undefined') restoreHashFromLocation();
 initializeMonitoring();
+
+if (import.meta.env.PROD && 'serviceWorker' in navigator) {
+  void navigator.serviceWorker.getRegistrations().then((registrations) => {
+    // Remove service workers from the former installable-app version.
+    return Promise.all(registrations.map((registration) => registration.unregister()));
+  });
+}
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <PwaProvider>
-      <App />
-    </PwaProvider>
+    <App />
     <Analytics />
   </StrictMode>,
 );

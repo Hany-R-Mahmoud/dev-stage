@@ -8,8 +8,6 @@ import { ProjectLogo } from './components/ProjectLogo';
 import { ProjectDetailModal } from './components/ProjectDetailModal';
 import { ProjectDetailPage } from './components/ProjectDetailPage';
 import { ThemeWaveOverlay } from './components/ThemeWaveOverlay';
-import { PwaInstallHelpDialog } from './components/PwaInstallHelpDialog';
-import { PwaStatusBar } from './components/PwaStatusBar';
 import { MobileBottomNav } from './components/MobileBottomNav';
 import { VisitorCounter } from './components/VisitorCounter';
 import { toAbsoluteUrl, updateSeoMetadata } from './lib/seo';
@@ -326,10 +324,6 @@ export default function App() {
             />
           </div>
 
-          <div className={projectRouteProject ? 'hidden md:block' : undefined}>
-            <PwaStatusBar language={language} dark={theme === 'dark'} />
-          </div>
-
           {/* PUBLIC PORTFOLIO SHOWCASE */}
           {projectRouteProject ? (
               <ProjectDetailPage
@@ -538,8 +532,6 @@ export default function App() {
             onToggleTheme={toggleTheme}
           />
         </div>
-
-        <PwaInstallHelpDialog language={language} dark={theme === 'dark'} />
 
         <ProjectDetailModal
           project={selectedProject}
