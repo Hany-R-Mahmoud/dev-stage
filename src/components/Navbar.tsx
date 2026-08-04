@@ -1,15 +1,12 @@
 import React from 'react';
 import { Language } from '../types';
-import { Plus, Moon, Sun } from 'lucide-react';
+import { Moon, Sun } from 'lucide-react';
 import { DevStageLogoMark } from './DevStageLogoMark';
 import { PwaInstallMenuAction } from './PwaInstallMenuAction';
 
 interface NavbarProps {
   language: Language;
   onLanguageChange: (lang: Language) => void;
-  activeView: 'portfolio' | 'dashboard';
-  onViewChange: (view: 'portfolio' | 'dashboard') => void;
-  onNewProject?: () => void;
   theme?: 'dark' | 'light';
   onToggleTheme?: () => void;
 }
@@ -17,9 +14,6 @@ interface NavbarProps {
 export const Navbar: React.FC<NavbarProps> = ({
   language,
   onLanguageChange,
-  activeView,
-  onViewChange,
-  onNewProject,
   theme = 'dark',
   onToggleTheme,
 }) => {
@@ -35,8 +29,8 @@ export const Navbar: React.FC<NavbarProps> = ({
       <nav aria-label={isAr ? 'التنقل الرئيسي' : 'Primary navigation'} className="mx-auto flex max-w-[1600px] items-center justify-between px-6 py-4 md:px-16">
         
         {/* Logo & Brand Monogram */}
-        <button 
-          onClick={() => onViewChange('portfolio')}
+        <a
+          href={isAr ? '/ar/' : '/en/'}
           className="flex items-center gap-3 text-start cursor-pointer group"
           aria-label={isAr ? 'العودة إلى معرض ديف ستيج' : 'Return to Dev Stage portfolio'}
         >
@@ -52,22 +46,11 @@ export const Navbar: React.FC<NavbarProps> = ({
               )}
             </span>
           </div>
-        </button>
+        </a>
 
         {/* Action Controls */}
         <div className="flex items-center gap-3 sm:gap-4">
           
-          {/* New Project Quick Button if in Dashboard */}
-          {activeView === 'dashboard' && onNewProject && (
-            <button
-              onClick={onNewProject}
-              className="flex items-center gap-1.5 bg-[#D4AF37] text-[#1A1A1A] px-4 py-2 text-xs tracking-[0.2em] font-bold uppercase transition hover:bg-white hover:text-[#1A1A1A] cursor-pointer"
-            >
-              <Plus className="h-3.5 w-3.5" />
-              <span>{isAr ? 'مشروع جديد' : 'NEW PROJECT'}</span>
-            </button>
-          )}
-
           <div className="hidden items-center gap-3 sm:gap-4 md:flex">
             {/* Theme Mode Switcher */}
             <PwaInstallMenuAction language={language} dark={isDark} />

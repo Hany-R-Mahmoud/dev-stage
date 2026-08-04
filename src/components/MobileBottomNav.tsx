@@ -1,42 +1,37 @@
 import {useState} from 'react';
-import {Download, Grid2X2, Home, LayoutDashboard, Menu, Moon, Sun, UserRound} from 'lucide-react';
+import {Download, Grid2X2, Home, Menu, Moon, Sun, UserRound} from 'lucide-react';
 import type {Language} from '../types';
 import {usePwa} from '../pwa/PwaContext';
 
 type MobileBottomNavProps = Readonly<{
   language: Language;
-  activeView: 'portfolio' | 'dashboard';
-  onViewChange: (view: 'portfolio' | 'dashboard') => void;
   onLanguageChange: (language: Language) => void;
   theme: 'dark' | 'light';
   onToggleTheme: () => void;
 }>;
 
-type NavItemId = 'home' | 'works' | 'profile' | 'studio' | 'more';
+type NavItemId = 'home' | 'works' | 'profile' | 'more';
 
 const navItems = [
   {id: 'home' as const, Icon: Home, en: 'Home', ar: 'الرئيسية'},
   {id: 'works' as const, Icon: Grid2X2, en: 'Works', ar: 'الأعمال'},
   {id: 'profile' as const, Icon: UserRound, en: 'Profile', ar: 'الملف'},
-  {id: 'studio' as const, Icon: LayoutDashboard, en: 'Studio', ar: 'الاستوديو'},
   {id: 'more' as const, Icon: Menu, en: 'More', ar: 'المزيد'},
 ];
 
-export function MobileBottomNav({language, activeView, onViewChange, onLanguageChange, theme, onToggleTheme}: MobileBottomNavProps) {
+export function MobileBottomNav({language, onLanguageChange, theme, onToggleTheme}: MobileBottomNavProps) {
   const isAr = language === 'ar';
   const {isStandalone, installedHint, canInstall, install, openHelp} = usePwa();
-  const [activeItem, setActiveItem] = useState<NavItemId>(activeView === 'dashboard' ? 'studio' : 'home');
+  const [activeItem, setActiveItem] = useState<NavItemId>('home');
   const [isMoreOpen, setIsMoreOpen] = useState(false);
-  const portfolioActiveItem = activeItem === 'studio' ? 'home' : activeItem;
 
   const closeMore = () => {
     setIsMoreOpen(false);
-    setActiveItem(activeView === 'dashboard' ? 'studio' : 'home');
+    setActiveItem('home');
   };
 
   const goToPortfolioSection = (id: NavItemId, targetId?: string) => {
     setActiveItem(id);
-    onViewChange('portfolio');
 
     window.setTimeout(() => {
       if (!targetId) {
@@ -51,20 +46,13 @@ export function MobileBottomNav({language, activeView, onViewChange, onLanguageC
   const handleNavigation = (id: NavItemId) => {
     if (id === 'more') {
       setIsMoreOpen((isOpen) => {
-        setActiveItem(isOpen ? (activeView === 'dashboard' ? 'studio' : 'home') : 'more');
+        setActiveItem(isOpen ? 'home' : 'more');
         return !isOpen;
       });
       return;
     }
 
     closeMore();
-
-    if (id === 'studio') {
-      setActiveItem('studio');
-      onViewChange('dashboard');
-      window.scrollTo({top: 0, behavior: 'smooth'});
-      return;
-    }
 
     if (id === 'works') {
       goToPortfolioSection('works', 'project-showroom');
@@ -120,11 +108,10 @@ export function MobileBottomNav({language, activeView, onViewChange, onLanguageC
           </div>
         </div>
       )}
-      <div className="mx-auto grid max-w-xl grid-cols-5 px-2 pb-[env(safe-area-inset-bottom)]">
+      <div className="mx-auto grid max-w-xl grid-cols-4 px-2 pb-[env(safe-area-inset-bottom)]">
         {navItems.map(({id, Icon, en, ar}) => {
           const isActive = (id === 'more' && isMoreOpen)
-            || (activeView === 'dashboard' && id === 'studio')
-            || (activeView === 'portfolio' && id === portfolioActiveItem);
+            || id === activeItem;
 
           return (
             <button

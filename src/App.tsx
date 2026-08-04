@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Project, Profile, Language } from './types';
+import { Project, Language } from './types';
 import { PORTFOLIO_PROJECTS, PORTFOLIO_PROFILE } from './data/portfolioData';
 import { FocusRail, FocusRailItem } from './components/ui/focus-rail';
 import { Navbar } from './components/Navbar';
@@ -7,55 +7,65 @@ import { ProfileCard } from './components/ProfileCard';
 import { ProjectLogo } from './components/ProjectLogo';
 import { ProjectDetailModal } from './components/ProjectDetailModal';
 import { ProjectDetailPage } from './components/ProjectDetailPage';
-import { Dashboard } from './components/Dashboard';
 import { ThemeWaveOverlay } from './components/ThemeWaveOverlay';
 import { PwaInstallHelpDialog } from './components/PwaInstallHelpDialog';
 import { PwaStatusBar } from './components/PwaStatusBar';
 import { MobileBottomNav } from './components/MobileBottomNav';
 import { VisitorCounter } from './components/VisitorCounter';
 import { toAbsoluteUrl, updateSeoMetadata } from './lib/seo';
-import { 
-  Sparkles, Layers, ArrowUpRight, Feather, Filter, ChevronDown
-} from 'lucide-react';
+import { ArrowUpRight, Feather, Filter, ChevronDown } from 'lucide-react';
 
 type RouteState = Readonly<{
-  view: 'portfolio' | 'dashboard';
   projectSlug: string | null;
   language: Language;
 }>;
 
+function useCompactViewport() {
+  const [isCompactViewport, setIsCompactViewport] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 767px)');
+    const updateViewport = () => setIsCompactViewport(mediaQuery.matches);
+
+    updateViewport();
+    mediaQuery.addEventListener('change', updateViewport);
+    return () => mediaQuery.removeEventListener('change', updateViewport);
+  }, []);
+
+  return isCompactViewport;
+}
+
 function readRoute(): RouteState {
   if (typeof window === 'undefined') {
-    return { view: 'portfolio', projectSlug: null, language: 'en' };
+    return { projectSlug: null, language: 'en' };
   }
 
   const segments = window.location.pathname.toLowerCase().split('/').filter(Boolean);
   const language: Language = segments[0] === 'ar' ? 'ar' : 'en';
   const routeSegments = segments[0] === 'ar' || segments[0] === 'en' ? segments.slice(1) : segments;
 
-  if (routeSegments[0] === 'dashboard') {
-    return { view: 'dashboard', projectSlug: null, language };
-  }
-
   if (routeSegments[0] === 'projects' && routeSegments[1]) {
-    return { view: 'portfolio', projectSlug: routeSegments[1], language };
+    return { projectSlug: routeSegments[1], language };
   }
 
-  return { view: 'portfolio', projectSlug: null, language };
+  return { projectSlug: null, language };
 }
 
-function localizedPath(language: Language, view: 'portfolio' | 'dashboard', projectSlug?: string | null): string {
+function localizedPath(language: Language, projectSlug?: string | null): string {
   const prefix = language === 'ar' ? '/ar' : '/en';
-  if (view === 'dashboard') return `${prefix}/dashboard`;
   if (projectSlug) return `${prefix}/projects/${projectSlug}`;
   return `${prefix}/`;
 }
 
+function isLegacyDashboardPath(): boolean {
+  if (typeof window === 'undefined') return false;
+
+  const segments = window.location.pathname.toLowerCase().split('/').filter(Boolean);
+  const routeSegments = segments[0] === 'ar' || segments[0] === 'en' ? segments.slice(1) : segments;
+  return routeSegments[0] === 'dashboard';
+}
+
 export default function App() {
-  const storageKeys = {
-    projects: 'apexyard_projects_v1',
-    profile: 'apexyard_profile_v1',
-  };
   const initialRoute = readRoute();
   const [language, setLanguage] = useState<Language>(initialRoute.language);
   const [theme, setTheme] = useState<'light' | 'dark'>(() => {
@@ -105,21 +115,12 @@ export default function App() {
     });
   };
 
-  const [activeView, setActiveView] = useState<'portfolio' | 'dashboard'>(initialRoute.view);
   const [projectSlug, setProjectSlug] = useState<string | null>(initialRoute.projectSlug);
-
-  const handleViewChange = (view: 'portfolio' | 'dashboard') => {
-    setActiveView(view);
-    setProjectSlug(null);
-    const targetPath = localizedPath(language, view);
-    if (window.location.pathname !== targetPath) {
-      window.history.pushState({}, '', targetPath);
-    }
-  };
+  const isCompactViewport = useCompactViewport();
 
   const handleLanguageChange = (nextLanguage: Language) => {
     setLanguage(nextLanguage);
-    const targetPath = localizedPath(nextLanguage, activeView, projectSlug);
+    const targetPath = localizedPath(nextLanguage, projectSlug);
     if (window.location.pathname !== targetPath) {
       window.history.pushState({}, '', targetPath);
     }
@@ -130,7 +131,6 @@ export default function App() {
     const handlePopState = () => {
       const route = readRoute();
       setLanguage(route.language);
-      setActiveView(route.view);
       setProjectSlug(route.projectSlug);
     };
 
@@ -138,68 +138,46 @@ export default function App() {
     return () => window.removeEventListener('popstate', handlePopState);
   }, []);
 
-  const [projects, setProjects] = useState<Project[]>(() => {
-    const saved = localStorage.getItem(storageKeys.projects);
-    if (!saved) return PORTFOLIO_PROJECTS;
+  useEffect(() => {
+    if (!isLegacyDashboardPath()) return;
 
-    const savedProjects = JSON.parse(saved) as Project[];
-    const savedById = new Map(savedProjects.map((project) => [project.id, project]));
+    const targetPath = localizedPath(language);
+    if (window.location.pathname !== targetPath) {
+      window.history.replaceState({}, '', targetPath);
+    }
+  }, [language]);
 
-    return PORTFOLIO_PROJECTS.map((project) => {
-      const savedProject = savedById.get(project.id);
-      return savedProject
-        ? {
-            ...savedProject,
-            title: project.title,
-            description: project.description,
-            meta: project.meta,
-            category: project.category,
-            client: project.client,
-            role: project.role,
-            year: project.year,
-            tags: project.tags,
-            status: project.status,
-            stage: 'stage' in project ? project.stage : undefined,
-            liveUrl: project.liveUrl,
-            logoSrc: project.logoSrc,
-            contentMDX: project.contentMDX,
-            features: project.features,
-            progress: project.progress,
-            issues: project.issues,
-            suggestions: project.suggestions,
-            imageSrc: project.imageSrc,
-            galleryImages: project.galleryImages,
-          }
-        : project;
-    });
-  });
-
-  const [profile, setProfile] = useState<Profile>(() => {
-    const saved = localStorage.getItem(storageKeys.profile);
-    return saved
-      ? {
-          ...JSON.parse(saved),
-          name: PORTFOLIO_PROFILE.name,
-          title: PORTFOLIO_PROFILE.title,
-          bio: PORTFOLIO_PROFILE.bio,
-          avatar: PORTFOLIO_PROFILE.avatar,
-          email: PORTFOLIO_PROFILE.email,
-          linkedin: PORTFOLIO_PROFILE.linkedin,
-        }
-      : PORTFOLIO_PROFILE;
-  });
+  const projects = PORTFOLIO_PROJECTS;
+  const profile = PORTFOLIO_PROFILE;
 
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
-  // Sync state to localStorage
-  useEffect(() => {
-    localStorage.setItem(storageKeys.projects, JSON.stringify(projects));
-  }, [projects]);
+  const openProjectDetails = (project: Project) => {
+    if (!isCompactViewport) {
+      setSelectedProject(project);
+      return;
+    }
 
-  useEffect(() => {
-    localStorage.setItem(storageKeys.profile, JSON.stringify(profile));
-  }, [profile]);
+    setSelectedProject(null);
+    setProjectSlug(project.slug);
+
+    const targetPath = localizedPath(language, project.slug);
+    if (window.location.pathname !== targetPath) {
+      window.history.pushState({}, '', targetPath);
+    }
+    window.scrollTo({top: 0, behavior: 'instant'});
+  };
+
+  const handleProjectBack = () => {
+    setSelectedProject(null);
+    setProjectSlug(null);
+    const targetPath = localizedPath(language);
+    if (window.location.pathname !== targetPath) {
+      window.history.pushState({}, '', targetPath);
+    }
+    window.scrollTo({top: 0, behavior: 'instant'});
+  };
 
   // Handle document direction and language attributes
   useEffect(() => {
@@ -210,8 +188,8 @@ export default function App() {
   const isAr = language === 'ar';
 
   // Public showcase entries need both a real cover image and a live destination.
-  // In-progress projects remain available in the dashboard, but should not appear
-  // in the public portfolio until their presentation is ready.
+  // In-progress projects are not part of the public portfolio until their
+  // presentation is ready.
   const hasShowcaseImage = (project: Project) => Boolean(
     project.imageSrc && !project.imageSrc.startsWith('data:image/svg+xml'),
   );
@@ -224,22 +202,11 @@ export default function App() {
     : null;
 
   useEffect(() => {
-    if (activeView === 'dashboard') {
-      updateSeoMetadata({
-        title: language === 'ar' ? 'استوديو إدارة المحتوى — ديف ستيج' : 'Dev Stage Editorial CMS Studio',
-        description: language === 'ar' ? 'مساحة إدارة داخلية لمعرض مشاريع ديف ستيج.' : 'Internal content management workspace for the Dev Stage project portfolio.',
-        path: localizedPath(language, 'dashboard'),
-        language,
-        noindex: true,
-      });
-      return;
-    }
-
     if (projectRouteProject) {
       updateSeoMetadata({
         title: `${projectRouteProject.title[language]} | Dev Stage`,
         description: projectRouteProject.description[language],
-        path: localizedPath(language, 'portfolio', projectRouteProject.slug),
+        path: localizedPath(language, projectRouteProject.slug),
         language,
         type: 'article',
         jsonLd: {
@@ -249,7 +216,7 @@ export default function App() {
           headline: projectRouteProject.title[language],
           description: projectRouteProject.description[language],
           image: toAbsoluteUrl('/og-image.svg'),
-          url: toAbsoluteUrl(localizedPath(language, 'portfolio', projectRouteProject.slug)),
+          url: toAbsoluteUrl(localizedPath(language, projectRouteProject.slug)),
           inLanguage: language,
           creator: { '@type': 'Person', name: profile.name[language] },
         },
@@ -262,7 +229,7 @@ export default function App() {
       description: language === 'ar'
         ? 'معرض ثنائي اللغة لمشاريع الويب والهاتف والأنظمة التي صممها وبناها هاني.'
         : 'A bilingual project portfolio and showroom for thoughtful web, mobile, and systems work.',
-      path: localizedPath(language, 'portfolio'),
+      path: localizedPath(language),
       language,
       jsonLd: {
         '@context': 'https://schema.org',
@@ -271,7 +238,7 @@ export default function App() {
         description: language === 'ar'
           ? 'معرض ثنائي اللغة لمشاريع الويب والهاتف والأنظمة.'
           : 'A bilingual portfolio of web, mobile, and systems projects.',
-        url: toAbsoluteUrl(localizedPath(language, 'portfolio')),
+        url: toAbsoluteUrl(localizedPath(language)),
         inLanguage: language,
         author: { '@type': 'Person', name: profile.name[language] },
         mainEntity: {
@@ -279,13 +246,13 @@ export default function App() {
           itemListElement: publishedProjects.slice(0, 50).map((project, index) => ({
             '@type': 'ListItem',
             position: index + 1,
-            url: toAbsoluteUrl(localizedPath(language, 'portfolio', project.slug)),
+            url: toAbsoluteUrl(localizedPath(language, project.slug)),
             name: project.title[language],
           })),
         },
       },
     });
-  }, [activeView, language, profile, projectRouteProject, publishedProjects, projectSlug]);
+  }, [language, profile, projectRouteProject, publishedProjects]);
   const categoryLabels: Record<string, { en: string; ar: string }> = {
     Web: { en: 'Web Projects', ar: 'مشاريع الويب' },
     Mobile: { en: 'Mobile Projects', ar: 'مشاريع الهاتف' },
@@ -320,7 +287,7 @@ export default function App() {
     logoSrc: p.logoSrc,
     category: p.category,
     client: p.client[language],
-    href: localizedPath(language, 'portfolio', p.slug),
+    href: localizedPath(language, p.slug),
   }));
 
   return (
@@ -343,24 +310,26 @@ export default function App() {
           </div>
 
           {/* Navigation Header */}
-          <Navbar
-            language={language}
-            onLanguageChange={handleLanguageChange}
-            activeView={activeView}
-            onViewChange={handleViewChange}
-            theme={theme}
-            onToggleTheme={toggleTheme}
-            onNewProject={() => {
-              handleViewChange('dashboard');
-            }}
-          />
+          <div className={projectRouteProject ? 'hidden md:block' : undefined}>
+            <Navbar
+              language={language}
+              onLanguageChange={handleLanguageChange}
+              theme={theme}
+              onToggleTheme={toggleTheme}
+            />
+          </div>
 
-          <PwaStatusBar language={language} dark={theme === 'dark'} />
+          <div className={projectRouteProject ? 'hidden md:block' : undefined}>
+            <PwaStatusBar language={language} dark={theme === 'dark'} />
+          </div>
 
-          {/* VIEW 1: PUBLIC PORTFOLIO SHOWCASE (/home) */}
-          {activeView === 'portfolio' ? (
-            projectRouteProject ? (
-              <ProjectDetailPage project={projectRouteProject} language={language} />
+          {/* PUBLIC PORTFOLIO SHOWCASE */}
+          {projectRouteProject ? (
+              <ProjectDetailPage
+                project={projectRouteProject}
+                language={language}
+                onBack={handleProjectBack}
+              />
             ) : (
             <main className="relative z-10 mx-auto max-w-[1600px] px-6 md:px-16 py-8 space-y-16">
               <h1 className="sr-only">
@@ -390,7 +359,7 @@ export default function App() {
                   loop={true}
                   onSelectProject={(item) => {
                     const project = projects.find((candidate) => candidate.id === item.id);
-                    if (project) setSelectedProject(project);
+                    if (project) openProjectDetails(project);
                   }}
                 />
               </section>
@@ -453,7 +422,7 @@ export default function App() {
                     >
                       <button
                         type="button"
-                        onClick={() => setSelectedProject(proj)}
+                        onClick={() => openProjectDetails(proj)}
                         className="flex w-full flex-1 flex-col space-y-4 p-5 text-left rtl:text-right focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#D4AF37]"
                       >
                         {/* Dominant Image Container */}
@@ -507,7 +476,7 @@ export default function App() {
                         )}
                         <button
                           type="button"
-                          onClick={() => setSelectedProject(proj)}
+                          onClick={() => openProjectDetails(proj)}
                           className="flex min-h-11 items-center gap-1 font-mono text-xs font-bold tracking-wider text-[#1A1A1A] dark:text-[#F4F2ED] hover:text-[#D4AF37] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] transition-colors"
                         >
                           {isAr ? 'التفاصيل' : 'DETAILS'}
@@ -533,22 +502,10 @@ export default function App() {
               </footer>
 
             </main>
-            )
-          ) : (
-            /* VIEW 2: CMS DASHBOARD (/dashboard) */
-            <Dashboard
-              projects={projects}
-              profile={profile}
-              language={language}
-              onSaveProjects={setProjects}
-              onSaveProfile={setProfile}
-            />
           )}
 
           <MobileBottomNav
             language={language}
-            activeView={activeView}
-            onViewChange={handleViewChange}
             onLanguageChange={handleLanguageChange}
             theme={theme}
             onToggleTheme={toggleTheme}
