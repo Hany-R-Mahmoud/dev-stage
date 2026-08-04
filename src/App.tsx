@@ -11,7 +11,6 @@ import { ThemeWaveOverlay } from './components/ThemeWaveOverlay';
 import { MobileBottomNav } from './components/MobileBottomNav';
 import { VisitorCounter } from './components/VisitorCounter';
 import { toAbsoluteUrl, updateSeoMetadata } from './lib/seo';
-import { trackEvent } from './lib/monitoring';
 import { ArrowUpRight, Feather, Filter, ChevronDown } from 'lucide-react';
 
 type RouteState = Readonly<{
@@ -153,12 +152,6 @@ export default function App() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   const openProjectDetails = (project: Project) => {
-    trackEvent('project_detail_opened', {
-      project_slug: project.slug,
-      category: project.category,
-      source: isCompactViewport ? 'mobile' : 'desktop',
-    });
-
     if (!isCompactViewport) {
       setSelectedProject(project);
       return;
@@ -478,11 +471,6 @@ export default function App() {
                             rel="noreferrer"
                             onClick={(event) => {
                               event.stopPropagation();
-                              trackEvent('project_live_site_clicked', {
-                                project_slug: proj.slug,
-                                category: proj.category,
-                                source: 'project_grid',
-                              });
                             }}
                             className="inline-flex min-h-11 items-center gap-1 font-mono text-[10px] font-semibold tracking-wider text-[#6C6863] dark:text-[#A39E98] hover:text-[#D4AF37] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37]"
                           >
