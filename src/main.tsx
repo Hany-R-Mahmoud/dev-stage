@@ -7,10 +7,7 @@ import {StrictMode} from 'react';
 import {createRoot} from 'react-dom/client';
 import {Analytics} from '@vercel/analytics/react';
 import App from './App.tsx';
-import {initializeMonitoring} from './lib/monitoring';
 import './index.css';
-
-initializeMonitoring();
 
 if (import.meta.env.PROD && 'serviceWorker' in navigator) {
   void navigator.serviceWorker.getRegistrations().then((registrations) => {

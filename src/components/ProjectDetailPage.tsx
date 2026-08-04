@@ -2,7 +2,6 @@ import React from 'react';
 import type { Language, Project } from '../types';
 import { ProjectLogo } from './ProjectLogo';
 import { VisitorCounter } from './VisitorCounter';
-import { trackEvent } from '../lib/monitoring';
 import { ArrowLeft } from 'lucide-react';
 
 interface ProjectDetailPageProps {
@@ -59,11 +58,6 @@ export function ProjectDetailPage({ project, language, onBack }: ProjectDetailPa
               href={project.liveUrl}
               target="_blank"
               rel="noreferrer"
-              onClick={() => trackEvent('project_live_site_clicked', {
-                project_slug: project.slug,
-                category: project.category,
-                source: 'project_detail',
-              })}
               className="inline-flex items-center border border-[#D4AF37] px-4 py-2 text-xs font-mono uppercase tracking-widest text-[#1A1A1A] dark:text-[#F4F2ED] hover:bg-[#D4AF37] hover:text-[#1A1A1A] transition-colors"
             >
               {isAr ? 'زيارة المشروع' : 'Visit project'} ↗
