@@ -23,3 +23,7 @@ createRoot(document.getElementById('root')!).render(
     <Analytics />
   </StrictMode>,
 );
+
+// Keep a semantic HTML shell available to crawlers and assistive technology
+// until the client application has mounted, then avoid duplicate content.
+document.getElementById('seo-fallback')?.remove();
