@@ -13,6 +13,7 @@ import { PwaStatusBar } from './components/PwaStatusBar';
 import { MobileBottomNav } from './components/MobileBottomNav';
 import { VisitorCounter } from './components/VisitorCounter';
 import { toAbsoluteUrl, updateSeoMetadata } from './lib/seo';
+import { trackEvent } from './lib/monitoring';
 import { ArrowUpRight, Feather, Filter, ChevronDown } from 'lucide-react';
 
 type RouteState = Readonly<{
@@ -154,6 +155,12 @@ export default function App() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   const openProjectDetails = (project: Project) => {
+    trackEvent('project_detail_opened', {
+      project_slug: project.slug,
+      category: project.category,
+      source: isCompactViewport ? 'mobile' : 'desktop',
+    });
+
     if (!isCompactViewport) {
       setSelectedProject(project);
       return;
@@ -332,9 +339,19 @@ export default function App() {
               />
             ) : (
             <main className="relative z-10 mx-auto max-w-[1600px] px-6 md:px-16 py-8 space-y-16">
-              <h1 className="sr-only">
-                {isAr ? 'معرض مشاريع ديف ستيج' : 'Dev Stage Project Portfolio'}
-              </h1>
+              <header className="max-w-4xl space-y-4">
+                <p className="text-xs font-mono tracking-[0.25em] rtl:tracking-normal text-[#D4AF37] uppercase">
+                  {isAr ? 'ديف ستيج / معرض رقمي' : 'DEV STAGE / DIGITAL SHOWROOM'}
+                </p>
+                <h1 className="max-w-3xl font-serif-luxury text-4xl font-bold leading-tight text-[#1A1A1A] dark:text-[#F4F2ED] sm:text-6xl">
+                  {isAr ? 'منتجات رقمية واضحة ومفيدة' : 'Thoughtful digital products, built with clarity'}
+                </h1>
+                <p className="max-w-2xl text-base leading-relaxed text-[#6C6863] dark:text-[#A39E98] sm:text-lg">
+                  {isAr
+                    ? 'معرض هاني محمود لمشاريع الويب والهاتف والأنظمة، من الفكرة إلى التنفيذ.'
+                    : 'A portfolio by Hany Mahmoud featuring web, mobile, and systems work—from first idea to useful shipped product.'}
+                </p>
+              </header>
               
               {/* 3D FOCUS RAIL FEATURED SHOWCASE (TOP CENTERPIECE) */}
               <section className="space-y-4">
@@ -465,7 +482,14 @@ export default function App() {
                             href={proj.liveUrl}
                             target="_blank"
                             rel="noreferrer"
-                            onClick={(event) => event.stopPropagation()}
+                            onClick={(event) => {
+                              event.stopPropagation();
+                              trackEvent('project_live_site_clicked', {
+                                project_slug: proj.slug,
+                                category: proj.category,
+                                source: 'project_grid',
+                              });
+                            }}
                             className="inline-flex min-h-11 items-center gap-1 font-mono text-[10px] font-semibold tracking-wider text-[#6C6863] dark:text-[#A39E98] hover:text-[#D4AF37] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37]"
                           >
                             {isAr ? 'زيارة الموقع' : 'VISIT WEBSITE'}
@@ -474,14 +498,17 @@ export default function App() {
                         ) : (
                           <span className="font-mono text-[10px] text-[#6C6863] dark:text-[#A39E98]">{proj.client[language]}</span>
                         )}
-                        <button
-                          type="button"
-                          onClick={() => openProjectDetails(proj)}
+                        <a
+                          href={localizedPath(language, proj.slug)}
+                          onClick={(event) => {
+                            event.preventDefault();
+                            openProjectDetails(proj);
+                          }}
                           className="flex min-h-11 items-center gap-1 font-mono text-xs font-bold tracking-wider text-[#1A1A1A] dark:text-[#F4F2ED] hover:text-[#D4AF37] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] transition-colors"
                         >
                           {isAr ? 'التفاصيل' : 'DETAILS'}
                           <ArrowUpRight className="h-4 w-4 text-[#D4AF37] ltr:group-hover:translate-x-0.5 rtl:group-hover:-translate-x-0.5 transition-transform" />
-                        </button>
+                        </a>
                       </div>
                     </article>
                   ))}

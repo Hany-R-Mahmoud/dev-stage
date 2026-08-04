@@ -2,7 +2,9 @@ import { mkdir, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { PORTFOLIO_PROJECTS } from '../src/data/portfolioData';
 
-const siteUrl = process.env.SITE_URL?.trim().replace(/\/$/, '');
+const siteUrl = (process.env.SITE_URL ?? process.env.VITE_SITE_URL ?? 'https://dev2stage.vercel.app')
+  .trim()
+  .replace(/\/$/, '');
 
 if (!siteUrl || !/^https?:\/\/[^\s/]+/.test(siteUrl)) {
   throw new Error('SITE_URL must be a real absolute http(s) production URL.');
@@ -10,7 +12,7 @@ if (!siteUrl || !/^https?:\/\/[^\s/]+/.test(siteUrl)) {
 
 const publicDirectory = join(process.cwd(), 'public');
 const projectUrls = PORTFOLIO_PROJECTS
-  .filter((project) => project.isPublished)
+  .filter((project) => project.isPublished && project.liveUrl && project.imageSrc && !project.imageSrc.startsWith('data:image/svg+xml'))
   .flatMap((project) => [`/en/projects/${project.slug}`, `/ar/projects/${project.slug}`]);
 const urls = ['/', '/en/', '/ar/', ...projectUrls];
 const xml = `<?xml version="1.0" encoding="UTF-8"?>

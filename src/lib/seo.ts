@@ -11,7 +11,7 @@ type SeoPage = Readonly<{
   jsonLd?: unknown;
 }>;
 
-const siteUrl = (import.meta.env.VITE_SITE_URL ?? '').replace(/\/$/, '');
+const siteUrl = (import.meta.env.VITE_SITE_URL ?? 'https://dev2stage.vercel.app').replace(/\/$/, '');
 
 function absoluteUrl(path: string): string {
   return siteUrl ? `${siteUrl}${path.startsWith('/') ? path : `/${path}`}` : path;

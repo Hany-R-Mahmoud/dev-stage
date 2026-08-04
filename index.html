@@ -9,18 +9,21 @@
     <meta property="og:title" content="Dev Stage — Project Portfolio" />
     <meta property="og:description" content="A bilingual project portfolio and showroom for thoughtful web, mobile, and systems work." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="/og-image.png" />
+    <meta property="og:image" content="https://dev2stage.vercel.app/og-image.png" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Dev Stage — Project Portfolio" />
-    <meta property="og:url" content="/" />
+    <meta property="og:url" content="https://dev2stage.vercel.app/en/" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Dev Stage — Project Portfolio" />
     <meta name="twitter:description" content="A bilingual project portfolio and showroom for thoughtful web, mobile, and systems work." />
-    <meta name="twitter:image" content="/og-image.png" />
+    <meta name="twitter:image" content="https://dev2stage.vercel.app/og-image.png" />
     <meta name="twitter:image:alt" content="Dev Stage — Project Portfolio" />
-    <link rel="canonical" href="/" />
+    <link rel="canonical" href="https://dev2stage.vercel.app/en/" />
+    <link rel="alternate" hreflang="en" href="https://dev2stage.vercel.app/en/" />
+    <link rel="alternate" hreflang="ar" href="https://dev2stage.vercel.app/ar/" />
+    <link rel="alternate" hreflang="x-default" href="https://dev2stage.vercel.app/en/" />
     <link rel="icon" href="/favicon-dark.svg" type="image/svg+xml">
     <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -36,8 +39,33 @@
       <main>
         <h1>Dev Stage — Project Portfolio</h1>
         <p>Dev Stage is a bilingual project portfolio and showroom for thoughtful web, mobile, and systems work. Explore selected projects, read the thinking behind each build, and see how ideas become clear, useful digital products.</p>
+        <nav aria-label="Portfolio languages">
+          <a href="/en/">English portfolio</a>
+          <a href="/ar/">المعرض بالعربية</a>
+        </nav>
       </main>
     </noscript>
+    <script id="dev-stage-jsonld" type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "@id": "https://dev2stage.vercel.app/en/#collection",
+        "name": "Dev Stage Project Portfolio",
+        "description": "A bilingual project portfolio and showroom for thoughtful web, mobile, and systems work.",
+        "url": "https://dev2stage.vercel.app/en/",
+        "inLanguage": "en",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "Dev Stage",
+          "url": "https://dev2stage.vercel.app/"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Hany Mahmoud",
+          "url": "https://dev2stage.vercel.app/en/"
+        }
+      }
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

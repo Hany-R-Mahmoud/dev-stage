@@ -8,7 +8,7 @@
     "sync:portfolio": "node scripts/sync-portfolio-data.mjs",
     "seo:generate": "tsx scripts/generate-sitemap.ts",
     "build:seo": "npm run seo:generate && npm run build",
-    "build": "vite build",
+    "build": "npm run seo:generate && vite build",
     "pwa:check": "node --import tsx --test src/pwa/pwa.test.ts",
     "preview": "vite preview",
     "clean": "rm -rf dist server.js",
@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@google/genai": "^2.4.0",
+    "@heronsignal/web": "^0.1.0",
     "@tailwindcss/vite": "^4.1.14",
     "@vercel/analytics": "^2.0.1",
     "@vitejs/plugin-react": "^5.0.4",
