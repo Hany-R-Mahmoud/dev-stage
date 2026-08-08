@@ -4145,5 +4145,43 @@ export const PORTFOLIO_PROJECTS = [
       "workspace": "workspace/hafiz",
       "last_reviewed": "2026-07-29"
     }
+  },
+  {
+    "id": "apexyard-rihlaty",
+    "slug": "rihlaty",
+    "title": { "en": "Rihlaty", "ar": "رحلتي" },
+    "description": {
+      "en": "A local Egypt trip planner for organizing destinations, itineraries, fuel, expenses, bookings, and packing lists.",
+      "ar": "مخطط رحلات محلي داخل مصر لتنظيم الوجهات والبرامج والوقود والمصروفات والحجوزات وقوائم التجهيزات."
+    },
+    "meta": { "en": "React • Vite • TypeScript", "ar": "React • Vite • TypeScript" },
+    "category": "Web",
+    "client": { "en": "Independent", "ar": "مستقل" },
+    "role": { "en": "Founder & Builder", "ar": "المؤسس والمطور" },
+    "year": "2026",
+    "liveUrl": "https://rihlaty.vercel.app/",
+    "logoSrc": "https://rihlaty.vercel.app/icons/icon-32.png",
+    "imageSrc": "https://ik.imagekit.io/hrim/images/rihlaty/rihlaty1.png",
+    "galleryImages": [
+      "https://ik.imagekit.io/hrim/images/rihlaty/rihlaty2.png",
+      "https://ik.imagekit.io/hrim/images/rihlaty/rihlaty3.png",
+      "https://ik.imagekit.io/hrim/images/rihlaty/rihlaty4.png",
+      "https://ik.imagekit.io/hrim/images/rihlaty/rihlaty5.png"
+    ],
+    "contentMDX": {
+      "en": "# Rihlaty\n\nA local Egypt trip planner for organizing destinations, itineraries, fuel, expenses, bookings, and packing lists.\n\n## Features\n\n- Organize Egypt destinations and day-by-day itineraries.\n- Estimate fuel costs and track trip expenses.\n- Keep bookings and packing checklists in one place.",
+      "ar": "# رحلتي\n\nمخطط رحلات محلي داخل مصر لتنظيم الوجهات والبرامج والوقود والمصروفات والحجوزات وقوائم التجهيزات.\n\n## الميزات\n\n- تنظيم الوجهات المصرية والبرامج اليومية.\n- تقدير تكلفة الوقود وتتبع مصروفات الرحلة.\n- جمع الحجوزات وقوائم التجهيزات في مكان واحد."
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": ["React", "Vite", "TypeScript", "showcase"],
+    "status": "showcase",
+    "stage": "published",
+    "features": [
+      { "en": "Organize Egypt destinations and day-by-day itineraries", "ar": "تنظيم الوجهات المصرية والبرامج اليومية" },
+      { "en": "Estimate fuel costs and track trip expenses", "ar": "تقدير تكلفة الوقود وتتبع مصروفات الرحلة" },
+      { "en": "Keep bookings and packing checklists in one place", "ar": "جمع الحجوزات وقوائم التجهيزات في مكان واحد" }
+    ],
+    "source": { "workspace": "external/rihlaty", "last_reviewed": "2026-08-08" }
   }
 ] satisfies Project[];
