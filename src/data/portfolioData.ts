@@ -33,6 +33,90 @@ export const PORTFOLIO_PROFILE = {
 
 export const PORTFOLIO_PROJECTS = [
   {
+    "id": "apexyard-dev2ops",
+    "slug": "dev2ops",
+    "title": {
+      "en": "dev2ops",
+      "ar": "dev2ops"
+    },
+    "description": {
+      "en": "A browser-simulated DevOps learning game for practicing safe, evidence-led operational thinking through guided terminal quests.",
+      "ar": "لعبة تعليمية لمحاكاة DevOps داخل المتصفح، تتيح ممارسة التفكير التشغيلي الآمن القائم على الأدلة عبر مهام طرفية موجهة."
+    },
+    "meta": {
+      "en": "React • TypeScript • Vite • PWA",
+      "ar": "React • TypeScript • Vite • PWA"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://dev2ops.vercel.app/",
+    "logoSrc": "https://dev2ops.vercel.app/icons/favicon-32.png",
+    "imageSrc": "https://ik.imagekit.io/hrim/images/dev2ops/dev2ops1.png",
+    "galleryImages": [
+      "https://ik.imagekit.io/hrim/images/dev2ops/dev2ops2.png",
+      "https://ik.imagekit.io/hrim/images/dev2ops/dev2ops3.png",
+      "https://ik.imagekit.io/hrim/images/dev2ops/dev2ops4.png"
+    ],
+    "contentMDX": {
+      "en": "# dev2ops\n\nA browser-simulated DevOps learning game for practicing safe, evidence-led operational thinking through guided terminal quests.\n\n## Features\n\n- Practice 45+ operational quests across 15 connected learning tracks.\n- Diagnose, repair, and verify incidents in a deterministic browser-only shell with zero host execution.\n- Explore a searchable curriculum with prerequisites, difficulty levels, XP, and mastery progression.",
+      "ar": "# dev2ops\n\nلعبة تعليمية لمحاكاة DevOps داخل المتصفح، تتيح ممارسة التفكير التشغيلي الآمن القائم على الأدلة عبر مهام طرفية موجهة.\n\n## الميزات\n\n- ممارسة أكثر من 45 مهمة تشغيلية ضمن 15 مسارًا تعليميًا مترابطًا.\n- تشخيص الأعطال وإصلاحها والتحقق منها داخل طرفية حتمية تعمل في المتصفح فقط دون تنفيذ على الجهاز المضيف.\n- استكشاف منهج قابل للبحث يوضح المتطلبات السابقة ومستويات الصعوبة ونقاط الخبرة والتقدم."
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "React",
+      "TypeScript",
+      "Vite",
+      "PWA",
+      "DevOps",
+      "showcase"
+    ],
+    "status": "showcase",
+    "stage": "published",
+    "features": [
+      {
+        "en": "45+ operational quests across 15 connected learning tracks",
+        "ar": "أكثر من 45 مهمة تشغيلية ضمن 15 مسارًا تعليميًا مترابطًا"
+      },
+      {
+        "en": "Deterministic browser-only shell with zero host execution",
+        "ar": "طرفية حتمية داخل المتصفح فقط دون تنفيذ على الجهاز المضيف"
+      },
+      {
+        "en": "Searchable curriculum with prerequisites, difficulty, XP, and mastery progression",
+        "ar": "منهج قابل للبحث مع المتطلبات السابقة والصعوبة ونقاط الخبرة والتقدم"
+      }
+    ],
+    "progress": {
+      "en": "Classified as showcase-ready after reviewing the live deployment and supplied project screenshots on 2026-08-12.",
+      "ar": "تم تصنيف المشروع كجاهز للعرض بعد مراجعة النشر المباشر ولقطات المشروع المقدمة في 2026-08-12."
+    },
+    "issues": [
+      {
+        "en": "Unknown / verify — no issue inventory was provided with the showcase materials.",
+        "ar": "لا توجد قائمة مشكلات مؤكدة ضمن مواد العرض المتاحة."
+      }
+    ],
+    "suggestions": [
+      {
+        "en": "Continue expanding advanced and capstone operational scenarios.",
+        "ar": "مواصلة توسيع السيناريوهات التشغيلية المتقدمة والختامية."
+      }
+    ],
+    "source": {
+      "workspace": "external/dev2ops",
+      "last_reviewed": "2026-08-12"
+    }
+  },
+  {
     "id": "apexyard-tabeeb-flow",
     "slug": "tabeeb-flow",
     "title": {
