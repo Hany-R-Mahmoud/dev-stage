@@ -244,18 +244,18 @@ Bring clarity to your next build: https://spec-flow-ai.vercel.app/
 #إدارة_المنتجات #ذكاء_اصطناعي #تطوير_البرمجيات
 ```
 
-## 9. yalla-goal
+## 9. jadwal
 
 ### English
 
 ```text
 ✅ A meaningful goal becomes real when it has a clear next move.
 
-Yalla Goal helps you shape outcomes, define progress, break work into milestones, create daily plans, and keep a top-five focus list. Weekly reviews and a decision journal keep evidence and important choices close to the work—all in a calm, local-first experience.
+jadwal helps you shape outcomes, define progress, break work into milestones, create daily plans, and keep a top-five focus list. Weekly reviews and a decision journal keep evidence and important choices close to the work—all in a calm, local-first experience.
 
 Built with: React, TypeScript, Vite, IndexedDB, and PWA technology.
 
-Move your goal forward: https://yalla-bina-yalla.vercel.app/
+Move your goal forward: https://jad-wal.vercel.app/
 
 #GoalSetting #Productivity #PWA
 ```
@@ -265,11 +265,11 @@ Move your goal forward: https://yalla-bina-yalla.vercel.app/
 ```text
 ✅ يتحول الهدف المهم إلى واقع عندما تكون خطوته التالية واضحة.
 
-يساعدك «يلا جول» على صياغة النتيجة وتعريف التقدم وتقسيم العمل إلى مراحل ووضع خطط يومية والحفاظ على قائمة تركيز من خمسة عناصر. وتُبقي المراجعات الأسبوعية ومذكرات القرارات الأدلة والاختيارات المهمة قريبة من العمل، في تجربة هادئة ومحلية أولاً.
+يساعدك «جدول» على صياغة النتيجة وتعريف التقدم وتقسيم العمل إلى مراحل ووضع خطط يومية والحفاظ على قائمة تركيز من خمسة عناصر. وتُبقي المراجعات الأسبوعية ومذكرات القرارات الأدلة والاختيارات المهمة قريبة من العمل، في تجربة هادئة ومحلية أولاً.
 
 التقنيات: React وTypeScript وVite وIndexedDB وتقنيات PWA.
 
-حرّك هدفك إلى الأمام: https://yalla-bina-yalla.vercel.app/
+حرّك هدفك إلى الأمام: https://jad-wal.vercel.app/
 
 #تحقيق_الأهداف #إنتاجية #تخطيط
 ```

@@ -174,6 +174,18 @@ const portfolioTitleOverrides = {
   dev2ops: 'Dev2ops',
 };
 
+// Maps the legacy workspace registry key to the project's public identity.
+const portfolioIdentityOverrides = {
+  'yalla-goal': {
+    slug: 'jadwal',
+    title: { en: 'jadwal', ar: 'جدول' },
+    description: {
+      en: 'jadwal is a calm, local-first workspace for turning meaningful goals into daily action, decisions, and weekly reviews.',
+      ar: 'جدول مساحة عمل هادئة ومحلية أولاً لتحويل الأهداف المهمة إلى خطوات يومية وقرارات ومراجعات أسبوعية.',
+    },
+  },
+};
+
 const portfolioImageOverrides = {
   focussessionflow: {
     liveUrl: 'https://focus-session-flow.vercel.app/',
@@ -238,14 +250,14 @@ const portfolioImageOverrides = {
       'https://ik.imagekit.io/hrim/images/wajba/wajba6.png',
     ],
   },
-  'yalla-goal': {
-    liveUrl: 'https://yalla-bina-yalla.vercel.app/',
-    logoSrc: 'https://yalla-bina-yalla.vercel.app/brand/yalla-goal-logo.png',
-    imageSrc: 'https://ik.imagekit.io/hrim/images/yalla-goal/yalla1.png',
+  jadwal: {
+    liveUrl: 'https://jad-wal.vercel.app/',
+    logoSrc: 'https://jad-wal.vercel.app/favicon.svg',
+    imageSrc: 'https://ik.imagekit.io/hrim/images/jadwal/jadwal1.png',
     galleryImages: [
-      'https://ik.imagekit.io/hrim/images/yalla-goal/yalla2.png',
-      'https://ik.imagekit.io/hrim/images/yalla-goal/yalla3.png',
-      'https://ik.imagekit.io/hrim/images/yalla-goal/yalla4.png',
+      'https://ik.imagekit.io/hrim/images/jadwal/jadwal2.png',
+      'https://ik.imagekit.io/hrim/images/jadwal/jadwal3.png',
+      'https://ik.imagekit.io/hrim/images/jadwal/jadwal4.png',
     ],
   },
   dev2ops: {
@@ -385,10 +397,14 @@ const buildProject = (registryProject, apexyardRoot, index) => {
   const progress = bilingualText(documentedPortfolio.progress, `Status recorded as ${status}.`);
   const issues = bilingualList(documentedPortfolio.issues);
   const suggestions = bilingualList(documentedPortfolio.suggestions);
-  const label = initials(title.en, registryProject.name);
+  const identityOverride = portfolioIdentityOverrides[registryProject.name];
+  const publicSlug = identityOverride?.slug ?? registryProject.name;
+  const publicTitle = identityOverride?.title ?? title;
+  const publicDescription = identityOverride?.description ?? description;
+  const label = initials(publicTitle.en, publicSlug);
   const content = publicContent({
-    title: title.en,
-    description: description.en,
+    title: publicTitle.en,
+    description: publicDescription.en,
     category,
     stack,
     status,
@@ -398,8 +414,8 @@ const buildProject = (registryProject, apexyardRoot, index) => {
     suggestions: suggestions.map((suggestion) => suggestion.en),
   });
   const arabicContent = publicContent({
-    title: title.ar,
-    description: description.ar,
+    title: publicTitle.ar,
+    description: publicDescription.ar,
     category,
     stack,
     status,
@@ -408,13 +424,13 @@ const buildProject = (registryProject, apexyardRoot, index) => {
     issues: issues.map((issue) => issue.ar),
     suggestions: suggestions.map((suggestion) => suggestion.ar),
   });
-  const imageOverride = portfolioImageOverrides[registryProject.name] ?? {};
+  const imageOverride = portfolioImageOverrides[publicSlug] ?? {};
 
   return {
-    id: `apexyard-${registryProject.name}`,
-    slug: registryProject.name,
-    title,
-    description,
+    id: `apexyard-${publicSlug}`,
+    slug: publicSlug,
+    title: publicTitle,
+    description: publicDescription,
     meta: { en: stack.join(' • ') || status.toUpperCase(), ar: stack.join(' • ') || status.toUpperCase() },
     category,
     client: { en: 'Independent', ar: 'مستقل' },

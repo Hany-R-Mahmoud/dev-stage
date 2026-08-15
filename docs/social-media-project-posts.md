@@ -114,18 +114,18 @@ Thirty copy-ready posts for LinkedIn, Facebook, and X/Twitter: one English and o
 🧩 أفكار المنتجات تصل مبعثرة، لكن التسليم لا يجب أن يكون كذلك. يحوّل Spec Flow AI المدخلات المتفرقة إلى تقسيم موجّه وقصص منظمة ومراجعة ومخرجات جاهزة للتصدير. ابدأ بوضوح: https://spec-flow-ai.vercel.app/
 ```
 
-## 9. yalla-goal
+## 9. jadwal
 
 ### English
 
 ```text
-✅ Big goals rarely fail from lack of ambition—they fade without a next step. Yalla Goal turns outcomes into milestones, daily focus, decisions, and weekly reviews in a calm local-first workspace. Move forward today: https://yalla-bina-yalla.vercel.app/
+✅ Big goals rarely fail from lack of ambition—they fade without a next step. jadwal turns outcomes into milestones, daily focus, decisions, and weekly reviews in a calm local-first workspace. Move forward today: https://jad-wal.vercel.app/
 ```
 
 ### العربية
 
 ```text
-✅ الأهداف الكبيرة لا ينقصها الطموح؛ ما ينقصها غالباً هو الخطوة التالية. يحوّل «يلا جول» هدفك إلى مراحل وتركيز يومي وقرارات ومراجعات أسبوعية، في مساحة هادئة ومحلية أولاً. تحرّك اليوم: https://yalla-bina-yalla.vercel.app/
+✅ الأهداف الكبيرة لا ينقصها الطموح؛ ما ينقصها غالباً هو الخطوة التالية. يحوّل «جدول» هدفك إلى مراحل وتركيز يومي وقرارات ومراجعات أسبوعية، في مساحة هادئة ومحلية أولاً. تحرّك اليوم: https://jad-wal.vercel.app/
 ```
 
 ## 10. Al-Rawi

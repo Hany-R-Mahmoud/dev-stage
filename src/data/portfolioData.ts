@@ -1734,15 +1734,15 @@ export const PORTFOLIO_PROJECTS = [
     }
   },
   {
-    "id": "apexyard-yalla-goal",
-    "slug": "yalla-goal",
+    "id": "apexyard-jadwal",
+    "slug": "jadwal",
     "title": {
-      "en": "yalla-goal",
-      "ar": "يلا جول"
+      "en": "jadwal",
+      "ar": "جدول"
     },
     "description": {
-      "en": "Yalla-goal is a calm, local-first workspace for turning meaningful goals into daily action, decisions, and weekly reviews.",
-      "ar": "يلا جول مساحة عمل هادئة ومحلية أولاً لتحويل الأهداف المهمة إلى خطوات يومية وقرارات ومراجعات أسبوعية."
+      "en": "jadwal is a calm, local-first workspace for turning meaningful goals into daily action, decisions, and weekly reviews.",
+      "ar": "جدول مساحة عمل هادئة ومحلية أولاً لتحويل الأهداف المهمة إلى خطوات يومية وقرارات ومراجعات أسبوعية."
     },
     "meta": {
       "en": "Vite • React • TypeScript • IndexedDB • PWA",
@@ -1758,17 +1758,17 @@ export const PORTFOLIO_PROJECTS = [
       "ar": "المؤسس والمطور"
     },
     "year": "2026",
-    "liveUrl": "https://yalla-bina-yalla.vercel.app/",
-    "logoSrc": "https://yalla-bina-yalla.vercel.app/brand/yalla-goal-logo.png",
-    "imageSrc": "https://ik.imagekit.io/hrim/images/yalla-goal/yalla1.png",
+    "liveUrl": "https://jad-wal.vercel.app/",
+    "logoSrc": "https://jad-wal.vercel.app/favicon.svg",
+    "imageSrc": "https://ik.imagekit.io/hrim/images/jadwal/jadwal1.png",
     "galleryImages": [
-      "https://ik.imagekit.io/hrim/images/yalla-goal/yalla2.png",
-      "https://ik.imagekit.io/hrim/images/yalla-goal/yalla3.png",
-      "https://ik.imagekit.io/hrim/images/yalla-goal/yalla4.png"
+      "https://ik.imagekit.io/hrim/images/jadwal/jadwal2.png",
+      "https://ik.imagekit.io/hrim/images/jadwal/jadwal3.png",
+      "https://ik.imagekit.io/hrim/images/jadwal/jadwal4.png"
     ],
     "contentMDX": {
-      "en": "# yalla-goal\n\nYalla-goal — يلا جول — is a calm, local-first workspace for turning meaningful goals into daily action, decisions, and weekly reviews.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Vite, React, TypeScript, IndexedDB, PWA\n\n## Features\n\n- Goal shaping: define an outcome, horizon, and usable definition of progress.\n- Milestones and daily plans: turn milestones into a focused next move.\n- Today workspace: capture tasks and keep a top-five focus list.\n- Review Center and Decision Journal: keep weekly evidence and decisions close to the work.\n- Search and archive: revisit stored work without a cloud workspace.\n- Local-first privacy: goals, tasks, decisions, and reviews stay in browser storage with no account required.\n- Backup, restore, export, and installable PWA support.\n\n## Progress\n\nClassified as showcase-ready after reviewing the live landing page and workspace on 2026-08-01.\n\n## Issues / troubles\n\n- The public deployment was reviewed through its live UI; repository-level test coverage and internal implementation details were not available in this portfolio workspace.\n\n## Suggested next steps\n\n- Add a fuller case study and reviewed mobile/desktop screenshots when repository evidence is available.",
-      "ar": "# يلا جول\n\nيلا جول مساحة عمل هادئة ومحلية أولاً لتحويل الأهداف المهمة إلى خطوات يومية وقرارات ومراجعات أسبوعية.\n\n## ملخص المشروع\n\n- الحالة: معرض\n- الفئة: ويب\n- التقنيات: Vite، React، TypeScript، IndexedDB، PWA\n\n## الميزات\n\n- صياغة الهدف: تحديد النتيجة والأفق الزمني وتعريف عملي للتقدم.\n- المراحل والخطط اليومية: تحويل المراحل إلى خطوة تالية مركزة.\n- مساحة اليوم: التقاط المهام والحفاظ على قائمة تركيز من خمسة عناصر.\n- مركز المراجعة ومذكرات القرارات: إبقاء الأدلة الأسبوعية والقرارات قريبة من العمل.\n- البحث والأرشيف: العودة إلى الأعمال المحفوظة بدون مساحة سحابية.\n- الخصوصية المحلية أولاً: تبقى الأهداف والمهام والقرارات والمراجعات في تخزين المتصفح بدون الحاجة إلى حساب.\n- النسخ الاحتياطي والاستعادة والتصدير ودعم التثبيت كتطبيق PWA.\n\n## التقدم\n\nتم تصنيف المشروع كجاهز للعرض بعد مراجعة الصفحة التعريفية ومساحة العمل المباشرة في 2026-08-01.\n\n## المشكلات والصعوبات\n\n- تمت مراجعة النشر العام من خلال واجهته المباشرة؛ ولم تتوفر تفاصيل اختبارات المستودع والتنفيذ الداخلي داخل مساحة معرض المشاريع.\n\n## الخطوات المقترحة\n\n- إضافة دراسة حالة أوسع ولقطات شاشة مراجعة للهاتف وسطح المكتب عند توفر أدلة المستودع."
+      "en": "# jadwal\n\njadwal — جدول — is a calm, local-first workspace for turning meaningful goals into daily action, decisions, and weekly reviews.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Vite, React, TypeScript, IndexedDB, PWA\n\n## Features\n\n- Goal shaping: define an outcome, horizon, and usable definition of progress.\n- Milestones and daily plans: turn milestones into a focused next move.\n- Today workspace: capture tasks and keep a top-five focus list.\n- Review Center and Decision Journal: keep weekly evidence and decisions close to the work.\n- Search and archive: revisit stored work without a cloud workspace.\n- Local-first privacy: goals, tasks, decisions, and reviews stay in browser storage with no account required.\n- Backup, restore, export, and installable PWA support.\n\n## Progress\n\nClassified as showcase-ready after reviewing the rebranded live product and its updated visual assets on 2026-08-15.\n\n## Issues / troubles\n\n- The public deployment was reviewed through its live UI; repository-level test coverage and internal implementation details were not available in this portfolio workspace.\n\n## Suggested next steps\n\n- Add a fuller case study with measurable workflow outcomes and usage insights.",
+      "ar": "# جدول\n\nجدول مساحة عمل هادئة ومحلية أولاً لتحويل الأهداف المهمة إلى خطوات يومية وقرارات ومراجعات أسبوعية.\n\n## ملخص المشروع\n\n- الحالة: معرض\n- الفئة: ويب\n- التقنيات: Vite، React، TypeScript، IndexedDB، PWA\n\n## الميزات\n\n- صياغة الهدف: تحديد النتيجة والأفق الزمني وتعريف عملي للتقدم.\n- المراحل والخطط اليومية: تحويل المراحل إلى خطوة تالية مركزة.\n- مساحة اليوم: التقاط المهام والحفاظ على قائمة تركيز من خمسة عناصر.\n- مركز المراجعة ومذكرات القرارات: إبقاء الأدلة الأسبوعية والقرارات قريبة من العمل.\n- البحث والأرشيف: العودة إلى الأعمال المحفوظة بدون مساحة سحابية.\n- الخصوصية المحلية أولاً: تبقى الأهداف والمهام والقرارات والمراجعات في تخزين المتصفح بدون الحاجة إلى حساب.\n- النسخ الاحتياطي والاستعادة والتصدير ودعم التثبيت كتطبيق PWA.\n\n## التقدم\n\nتم تصنيف المشروع كجاهز للعرض بعد مراجعة المنتج المباشر بهويته الجديدة وأصوله المرئية المحدثة في 2026-08-15.\n\n## المشكلات والصعوبات\n\n- تمت مراجعة النشر العام من خلال واجهته المباشرة؛ ولم تتوفر تفاصيل اختبارات المستودع والتنفيذ الداخلي داخل مساحة معرض المشاريع.\n\n## الخطوات المقترحة\n\n- إضافة دراسة حالة أوسع تتضمن نتائج قابلة للقياس ورؤى حول الاستخدام."
     },
     "isPublished": true,
     "featured": false,
@@ -1813,8 +1813,8 @@ export const PORTFOLIO_PROJECTS = [
       }
     ],
     "progress": {
-      "en": "Classified as showcase-ready after reviewing the live landing page and workspace on 2026-08-01.",
-      "ar": "تم تصنيف المشروع كجاهز للعرض بعد مراجعة الصفحة التعريفية ومساحة العمل المباشرة في 2026-08-01."
+      "en": "Classified as showcase-ready after reviewing the rebranded live product and its updated visual assets on 2026-08-15.",
+      "ar": "تم تصنيف المشروع كجاهز للعرض بعد مراجعة المنتج المباشر بهويته الجديدة وأصوله المرئية المحدثة في 2026-08-15."
     },
     "issues": [
       {
@@ -1824,19 +1824,10 @@ export const PORTFOLIO_PROJECTS = [
     ],
     "suggestions": [
       {
-        "en": "Add a fuller case study and reviewed mobile/desktop screenshots when repository evidence is available.",
-        "ar": "إضافة دراسة حالة أوسع ولقطات شاشة مراجعة للهاتف وسطح المكتب عند توفر أدلة المستودع."
+        "en": "Add a fuller case study with measurable workflow outcomes and usage insights.",
+        "ar": "إضافة دراسة حالة أوسع تتضمن نتائج قابلة للقياس ورؤى حول الاستخدام."
       }
-    ],
-    "repository": {
-      "branch": "main",
-      "sync": "github",
-      "github": "https://github.com/Hany-R-Mahmoud/yalla-goal"
-    },
-    "source": {
-      "workspace": "workspace/yalla-goal",
-      "last_reviewed": "2026-08-01"
-    }
+    ]
   },
   {
     "id": "apexyard-al-rawi",

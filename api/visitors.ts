@@ -22,7 +22,7 @@ const standaloneAppSlugs = new Set([
   'yahya',
   'skills-agency',
   'spec-flow-ai',
-  'yalla-goal',
+  'jadwal',
   'al-rawi',
   'dev2ops',
   'emojie-crack',
