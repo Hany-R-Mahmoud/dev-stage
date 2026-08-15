@@ -33,6 +33,89 @@ export const PORTFOLIO_PROFILE = {
 
 export const PORTFOLIO_PROJECTS = [
   {
+    "id": "apexyard-react2native",
+    "slug": "react2native",
+    "title": {
+      "en": "React2Native",
+      "ar": "React2Native"
+    },
+    "description": {
+      "en": "A local-first React Native and Expo learning companion for developers moving from React web to native app development.",
+      "ar": "رفيق تعليمي محلي أولًا لـ React Native وExpo، يساعد مطوري React للويب على الانتقال إلى تطوير التطبيقات الأصلية."
+    },
+    "meta": {
+      "en": "Expo • React Native • TypeScript • Local-first",
+      "ar": "Expo • React Native • TypeScript • محلي أولًا"
+    },
+    "category": "Mobile",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://react-2native.vercel.app/",
+    "imageSrc": "https://ik.imagekit.io/hrim/images/r2n/r2n1.png",
+    "galleryImages": [
+      "https://ik.imagekit.io/hrim/images/r2n/r2n2.png",
+      "https://ik.imagekit.io/hrim/images/r2n/r2n3.png",
+      "https://ik.imagekit.io/hrim/images/r2n/r2n4.png"
+    ],
+    "contentMDX": {
+      "en": "# React2Native\n\nA local-first React Native and Expo learning companion for developers moving from React web to native app development.\n\n## Features\n\n- Learn native platform mental models through a bundled curriculum.\n- Practice concepts and prepare for React Native interviews.\n- Keep bookmarks, notes, progress, and review history on the local device or browser.",
+      "ar": "# React2Native\n\nرفيق تعليمي محلي أولًا لـ React Native وExpo، يساعد مطوري React للويب على الانتقال إلى تطوير التطبيقات الأصلية.\n\n## الميزات\n\n- تعلم النماذج الذهنية للمنصات الأصلية عبر منهج مدمج.\n- ممارسة المفاهيم والاستعداد لمقابلات React Native.\n- حفظ العلامات والملاحظات والتقدم وسجل المراجعة محليًا على الجهاز أو المتصفح."
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "Expo",
+      "React Native",
+      "TypeScript",
+      "Education",
+      "Local-first",
+      "showcase"
+    ],
+    "status": "showcase",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Bundled curriculum focused on native platform mental models",
+        "ar": "منهج مدمج يركز على النماذج الذهنية للمنصات الأصلية"
+      },
+      {
+        "en": "Practice and interview preparation for React Native developers",
+        "ar": "تدريب واستعداد لمقابلات مطوري React Native"
+      },
+      {
+        "en": "Local bookmarks, notes, progress, and review history",
+        "ar": "علامات وملاحظات وتقدم وسجل مراجعة محفوظ محليًا"
+      }
+    ],
+    "progress": {
+      "en": "Classified as showcase-ready after reviewing the project repository, live deployment, and supplied screenshots on 2026-08-15.",
+      "ar": "تم تصنيف المشروع كجاهز للعرض بعد مراجعة المستودع والنشر المباشر ولقطات الشاشة المقدمة في 2026-08-15."
+    },
+    "issues": [
+      {
+        "en": "Unknown / verify — no issue inventory was provided with the showcase materials.",
+        "ar": "لا توجد قائمة مشكلات مؤكدة ضمن مواد العرض المتاحة."
+      }
+    ],
+    "suggestions": [
+      {
+        "en": "Continue expanding advanced native-platform lessons and practice scenarios.",
+        "ar": "مواصلة توسيع دروس المنصات الأصلية المتقدمة وسيناريوهات التدريب."
+      }
+    ],
+    "source": {
+      "workspace": "workspace/react2native",
+      "last_reviewed": "2026-08-15"
+    }
+  },
+  {
     "id": "apexyard-dev2ops",
     "slug": "dev2ops",
     "title": {
