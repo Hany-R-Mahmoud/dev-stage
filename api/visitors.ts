@@ -26,6 +26,7 @@ const standaloneAppSlugs = new Set([
   'al-rawi',
   'dev2ops',
   'emojie-crack',
+  'map-crack',
   'masar-ci',
   'wajjba',
 ]);
