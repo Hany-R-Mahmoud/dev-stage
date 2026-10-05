@@ -312,14 +312,134 @@ const portfolioImageOverrides = {
   },
   'emojie-crack': {
     liveUrl: 'https://emojie-crack.vercel.app/',
-    imageSrc: 'https://ik.imagekit.io/hrim/images/emojie/emojie1.png',
+    logoSrc: '/projects/emojie-crack/logo.png',
+    imageSrc: '/projects/emojie-crack/cover.jpg',
     galleryImages: [
-      'https://ik.imagekit.io/hrim/images/emojie/emojie2.png',
-      'https://ik.imagekit.io/hrim/images/emojie/emojie3.png',
-      'https://ik.imagekit.io/hrim/images/emojie/emojie4.png',
+      '/projects/emojie-crack/gameplay.jpg',
+      '/projects/emojie-crack/categories.jpg',
+      '/projects/emojie-crack/tutorial.jpg',
+      '/projects/emojie-crack/landing.jpg',
     ],
   },
 };
+
+// Reviewed campaign assets: keep local media when refreshing registry data.
+const campaignImageOverrides = {
+  "map-crack": {
+    "imageSrc": "/projects/map-crack/cover.jpg",
+    "galleryImages": [
+      "/projects/map-crack/gameplay.jpg",
+      "/projects/map-crack/answer-reveal.jpg",
+      "/projects/map-crack/briefing.jpg",
+      "/projects/map-crack/arabic.jpg",
+      "/projects/map-crack/landing.jpg"
+    ]
+  },
+  "yahya": {
+    "imageSrc": "/projects/yahya/cover.jpg",
+    "galleryImages": [
+      "/projects/yahya/experience.jpg",
+      "/projects/yahya/landing.jpg"
+    ]
+  },
+  "new-etamini": {
+    "imageSrc": "/projects/new-etamini/cover.jpg",
+    "galleryImages": [
+      "/projects/new-etamini/experience.jpg",
+      "/projects/new-etamini/landing.jpg"
+    ]
+  },
+  "minarets_of_cairo": {
+    "imageSrc": "/projects/minarets_of_cairo/cover.jpg"
+  },
+  "masar-ci": {
+    "imageSrc": "/projects/masar-ci/cover.jpg",
+    "galleryImages": [
+      "/projects/masar-ci/experience.jpg",
+      "/projects/masar-ci/landing.jpg"
+    ]
+  },
+  "js2next": {
+    "imageSrc": "/projects/js2next/cover.jpg",
+    "galleryImages": [
+      "/projects/js2next/experience.jpg",
+      "/projects/js2next/landing.jpg"
+    ]
+  },
+  "focussessionflow": {
+    "imageSrc": "/projects/focussessionflow/cover.jpg",
+    "galleryImages": [
+      "/projects/focussessionflow/experience.jpg",
+      "/projects/focussessionflow/landing.jpg"
+    ]
+  },
+  "al-rawi": {
+    "imageSrc": "/projects/al-rawi/cover.jpg",
+    "galleryImages": [
+      "/projects/al-rawi/experience.jpg",
+      "/projects/al-rawi/landing.jpg"
+    ]
+  },
+  "react2native": {
+    "imageSrc": "/projects/react2native/cover.jpg",
+    "galleryImages": [
+      "/projects/react2native/experience.jpg",
+      "/projects/react2native/landing.jpg"
+    ]
+  },
+  "dev2ops": {
+    "imageSrc": "/projects/dev2ops/cover.jpg",
+    "galleryImages": [
+      "/projects/dev2ops/experience.jpg",
+      "/projects/dev2ops/landing.jpg"
+    ]
+  },
+  "wajba": {
+    "imageSrc": "/projects/wajba/cover.jpg",
+    "galleryImages": [
+      "/projects/wajba/experience.jpg",
+      "/projects/wajba/landing.jpg"
+    ]
+  },
+  "jadwal": {
+    "imageSrc": "/projects/jadwal/cover.jpg",
+    "galleryImages": [
+      "/projects/jadwal/experience.jpg",
+      "/projects/jadwal/landing.jpg"
+    ]
+  },
+  "tabeeb-flow": {
+    "imageSrc": "/projects/tabeeb-flow/cover.jpg",
+    "galleryImages": [
+      "/projects/tabeeb-flow/experience.jpg",
+      "/projects/tabeeb-flow/landing.jpg"
+    ]
+  },
+  "rihlaty": {
+    "imageSrc": "/projects/rihlaty/cover.jpg",
+    "galleryImages": [
+      "/projects/rihlaty/experience.jpg",
+      "/projects/rihlaty/landing.jpg"
+    ]
+  },
+  "spec-flow": {
+    "imageSrc": "/projects/spec-flow/cover.jpg",
+    "galleryImages": [
+      "/projects/spec-flow/experience.jpg",
+      "/projects/spec-flow/landing.jpg"
+    ]
+  },
+  "skills-agency": {
+    "imageSrc": "/projects/skills-agency/cover.jpg",
+    "galleryImages": [
+      "/projects/skills-agency/experience.jpg",
+      "/projects/skills-agency/landing.jpg"
+    ]
+  }
+};
+for (const [slug, media] of Object.entries(campaignImageOverrides)) {
+  portfolioImageOverrides[slug] = { ...portfolioImageOverrides[slug], ...media };
+}
 
 const stageForStatus = (status) => ({
   showcase: 'published',

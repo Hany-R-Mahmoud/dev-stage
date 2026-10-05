@@ -1,0 +1,38 @@
+import fs from 'node:fs';
+import path from 'node:path';
+const root = process.cwd();
+const dataPath = path.join(root, 'src/data/portfolioData.ts');
+const source = fs.readFileSync(dataPath, 'utf8');
+const projects = JSON.parse(source.split('export const PORTFOLIO_PROJECTS = ')[1].split(' satisfies Project[];')[0]);
+const rows = [
+  ['map-crack','Find the place. Crack the map.','Geography puzzles, clues, and a reveal.','#eff5e7','#253d2b','#d2ec66','game','gameplay.jpg'],
+  ['yahya','معلومة أوضح. خطوة أهدى.','دليل عربي لفهم المعلومات عن السرطان.','#f4eee2','#203d30','#b9c4a5','care','experience.jpg'],
+  ['new-etamini','كل مرحلة. سؤال أوضح.','دليل عربي للأم والطفل، من النفاس إلى نمو الصغير.','#fff3e9','#234f4b','#efb49a','care','experience.jpg'],
+  ['minarets_of_cairo','Cairo has more stories to tell.','A bilingual field guide to monuments, walks, and heritage.','#f2e3cd','#49372b','#c2764b','editorial',projects.find(p=>p.slug==='minarets_of_cairo').imageSrc],
+  ['masar-ci','Shape the workflow. Read the change.','A visual DevOps workbench for authoring and review.','#17191d','#f6f2eb','#ef8b48','technical','experience.jpg'],
+  ['js2next','One concept. One next step.','Learn JavaScript, React, and Next.js through practice.','#171719','#f9f4ed','#f25c54','technical','experience.jpg'],
+  ['focussessionflow','Make room for focused work.','Plan a session. Protect the time. Review the day.','#edf6f3','#153a35','#6ec6b8','planner','experience.jpg'],
+  ['al-rawi','Your feeds. Your reading desk.','Bring public RSS sources into one calm reading space.','#f4eee1','#292721','#bf7051','editorial','experience.jpg'],
+  ['react2native','Think React. Build native.','A learning path into React Native and Expo.','#edf2f9','#171b24','#608adf','technical','experience.jpg'],
+  ['dev2ops','Learn the command. Understand the system.','Guided DevOps quests in a simulated terminal.','#ecf5f8','#173046','#51bfb4','technical','experience.jpg'],
+  ['wajba','أسبوعك على السفرة.','وصفات، خطة وجبات، وقائمة مشتريات في مكان واحد.','#fff2e5','#65382a','#d98152','editorial','experience.jpg'],
+  ['jadwal','Give today a clear plan.','Tasks, goals, decisions, and reviews in a local workspace.','#f4f4ee','#242a32','#7d9cce','planner','experience.jpg'],
+  ['tabeeb-flow','يوم العيادة. بصورة أوضح.','مساحة مترابطة للطبيب والاستقبال — عرض ببيانات تجريبية.','#121b23','#f0f4f5','#8ec2dc','care','experience.jpg'],
+  ['rihlaty','كل طريق له حكاية.','خطط لرحلات مصر، وجهز حقيبتك، وراجع مصاريف الطريق.','#f4f1e8','#303b32','#adc0a3','editorial','landing.jpg'],
+  ['spec-flow','Turn the rough idea into a readable plan.','A guided flow for stories, review, and export.','#171c28','#f0f2fc','#ada9ff','technical','landing.jpg'],
+  ['skills-agency','Find the specialist for the work.','Explore a public roster by department, scope, and expertise.','#f0eee8','#252720','#a5b799','editorial','experience.jpg'],
+];
+const manifest = rows.map(([slug,hook,summary,bg,ink,accent,style,image])=>({slug,hook,summary,bg,ink,accent,style,image:image.startsWith('https:')?image:`/projects/${slug}/${image}`,name:projects.find(p=>p.slug===slug).title.en,proof:slug==='minarets_of_cairo'?'ARCHIVED PRODUCT VIEW':slug==='spec-flow'?'PUBLIC WORKFLOW PREVIEW':slug==='tabeeb-flow'?'DEMO DATA':slug==='skills-agency'?'PUBLIC CAPABILITY ROSTER':'REAL PRODUCT VIEW'}));
+fs.writeFileSync(path.join(root,'docs/campaigns/collection/manifest.json'),JSON.stringify(manifest,null,2)+'\n');
+const esc = text=>text.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;');
+for (const p of manifest) {
+ const rtl=/[\u0600-\u06ff]/.test(p.hook);
+ const html=`<!doctype html><html><head><meta charset="utf-8"><title>${esc(p.name)} campaign</title><style>
+ *{box-sizing:border-box}body{margin:0;width:1280px;height:800px;background:${p.bg};color:${p.ink};font-family:Arial,sans-serif;overflow:hidden}.canvas{position:relative;padding:44px 50px;height:100%;display:flex;flex-direction:column;gap:22px}.brand{display:flex;justify-content:space-between;align-items:center;font-size:20px;font-weight:bold;letter-spacing:1px}.label{font-size:12px;letter-spacing:2px;border:1px solid currentColor;padding:10px 14px;border-radius:20px}.intro{display:grid;grid-template-columns:1.1fr 1fr;gap:34px;align-items:center}h1{font-size:53px;letter-spacing:-2px;line-height:1.1;margin:0;max-width:850px}p{font-size:22px;line-height:1.45;margin:0;max-width:600px}.rule{width:85px;height:9px;background:${p.accent};margin-bottom:14px}.shot{flex:1;min-height:0;border:1px solid ${p.ink}44;border-radius:${p.style==='technical'?'8':'20'}px;padding:10px;background:${p.ink}12;box-shadow:0 18px 35px ${p.ink}15;display:flex;align-items:center;justify-content:center}.shot img{width:100%;height:100%;object-fit:contain;border-radius:8px}.footer{display:flex;justify-content:space-between;font-size:12px;letter-spacing:2px}.editorial h1{font-family:Georgia,Arial,serif}.technical .label{border-radius:3px}.square{width:1080px;height:1080px}.square .canvas{padding:60px;gap:30px}.square .intro,.story .intro{display:block}.square h1{font-size:66px}.square p{margin-top:20px;font-size:25px}.square .shot{max-height:555px}.story{width:1080px;height:1920px}.story .canvas{padding:100px 64px;gap:60px}.story h1{font-size:92px;line-height:1.12}.story p{margin-top:35px;font-size:33px;max-width:840px}.story .shot{max-height:880px}.story .brand{font-size:27px}.story .footer{font-size:18px}.arabic h1{letter-spacing:0;line-height:1.35}.arabic .intro{direction:rtl}.arabic p{font-size:25px}.story.arabic p{font-size:37px}
+ </style></head><body class="${p.style} ${rtl?'arabic':''}"><main class="canvas"><div class="brand"><span>${esc(p.name)}</span><span class="label">${p.proof}</span></div><div class="intro"><div><div class="rule"></div><h1>${esc(p.hook)}</h1></div><p>${esc(p.summary)}</p></div><div class="shot"><img src="${esc(p.image)}" alt="${esc(p.name)} interface"></div><div class="footer"><span>DEV STAGE / PROJECT COLLECTION</span><span>${p.style==='care'?'EXPLORE THE GUIDE':'EXPLORE THE PROJECT'} ↗</span></div></main><script>const f=new URLSearchParams(location.search).get('format');if(['square','story'].includes(f))document.body.classList.add(f);</script></body></html>`;
+ const folder=path.join(root,'docs/campaigns',p.slug);fs.mkdirSync(folder,{recursive:true});fs.writeFileSync(path.join(folder,'creative.html'),html);
+ fs.mkdirSync(path.join(root,'public/projects',p.slug),{recursive:true});
+}
+const all=['emojie-crack',...manifest.map(p=>p.slug)];
+fs.writeFileSync(path.join(root,'docs/campaigns/collection/index.html'),`<!doctype html><html><head><meta charset="utf-8"><title>Dev Stage campaign collection</title><style>body{margin:0;padding:36px;background:#edeae3;font:16px Arial;color:#242424}h1{font-size:38px}main{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}article{background:white;padding:12px;border-radius:12px}img{width:100%;aspect-ratio:1.6;object-fit:contain}a{color:inherit}p{line-height:1.5}</style></head><body><h1>Dev Stage · Project campaign collection</h1><p>Real interfaces. Individual creative directions. Cover, square, and story formats.<br>Minarets uses an archived view. Tabeeb uses demo data. SpecFlow shows its public preview.</p><main>${all.map(slug=>`<article><a href="/docs/campaigns/${slug}/creative.html"><img src="/projects/${slug}/cover.jpg" alt="${slug}"><h2>${slug}</h2></a><a href="/projects/${slug}/social-square.jpg">Square</a> · <a href="/projects/${slug}/social-story.jpg">Story</a></article>`).join('')}</main></body></html>`);
+console.log(`Prepared ${manifest.length} creative sources and collection preview.`);

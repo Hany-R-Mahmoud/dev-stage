@@ -40,8 +40,8 @@ export const PORTFOLIO_PROJECTS = [
       "ar": "Emojie-Crack"
     },
     "description": {
-      "en": "EmojiCrack is an Arabic, RTL React game for solving Egyptian emoji puzzles about proverbs, films, food, places, expressions, and trends. Player progress, scores, and custom puzzles are stored locally in the browser; no backend API is defined in the current source.",
-      "ar": "EmojiCrack is an Arabic, RTL React game for solving Egyptian emoji puzzles about proverbs, films, food, places, expressions, and trends. Player progress, scores, and custom puzzles are stored locally in the browser; no backend API is defined in the current source."
+      "en": "An Arabic emoji puzzle game inspired by Egyptian proverbs, films, food, and trends. Read the clue, connect the meaning, and crack the phrase.",
+      "ar": "لعبة ألغاز إيموجي بالعربية مستوحاة من الأمثال والأفلام والأكلات والترندات المصرية. شوف الرموز، اربط المعنى، وفك الشفرة."
     },
     "meta": {
       "en": "Vite • React • TypeScript • Tailwind",
@@ -58,15 +58,16 @@ export const PORTFOLIO_PROJECTS = [
     },
     "year": "2026",
     "liveUrl": "https://emojie-crack.vercel.app/",
-    "imageSrc": "https://ik.imagekit.io/hrim/images/emojie/emojie1.png",
+    "imageSrc": "/projects/emojie-crack/cover.jpg",
     "galleryImages": [
-      "https://ik.imagekit.io/hrim/images/emojie/emojie2.png",
-      "https://ik.imagekit.io/hrim/images/emojie/emojie3.png",
-      "https://ik.imagekit.io/hrim/images/emojie/emojie4.png"
+      "/projects/emojie-crack/gameplay.jpg",
+      "/projects/emojie-crack/categories.jpg",
+      "/projects/emojie-crack/tutorial.jpg",
+      "/projects/emojie-crack/landing.jpg"
     ],
     "contentMDX": {
-      "en": "# Emojie-Crack\n\nEmojiCrack is an Arabic, RTL React game for solving Egyptian emoji puzzles about proverbs, films, food, places, expressions, and trends. Player progress, scores, and custom puzzles are stored locally in the browser; no backend API is defined in the current source.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Vite, React, TypeScript, Tailwind\n\n## Features\n\n- Unknown / verify\n\n## Progress\n\nStatus recorded as showcase.\n\n## Issues / troubles\n\n- Unknown / verify\n\n## Suggested next steps\n\n- Unknown / verify",
-      "ar": "# Emojie-Crack\n\nEmojiCrack is an Arabic, RTL React game for solving Egyptian emoji puzzles about proverbs, films, food, places, expressions, and trends. Player progress, scores, and custom puzzles are stored locally in the browser; no backend API is defined in the current source.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Vite, React, TypeScript, Tailwind\n\n## Features\n\n- Unknown / verify\n\n## Progress\n\nStatus recorded as showcase.\n\n## Issues / troubles\n\n- Unknown / verify\n\n## Suggested next steps\n\n- Unknown / verify"
+      "en": "# Emojie-Crack\n\nAn Arabic emoji puzzle game inspired by Egyptian proverbs, films, food, and trends. Read the clue, connect the meaning, and crack the phrase.\n\n## Features\n\n- Egyptian proverbs, films, food, places, and popular expressions\n- Timed emoji puzzles with hints and answer-length cues\n- Arabic interface with right-to-left layout\n- Interactive tutorial and guest entry",
+      "ar": "# Emojie-Crack\n\nلعبة ألغاز إيموجي بالعربية مستوحاة من الأمثال والأفلام والأكلات والترندات المصرية. شوف الرموز، اربط المعنى، وفك الشفرة.\n\n## الميزات\n\n- أمثال وأفلام وأكلات وأماكن وتعبيرات مصرية شعبية\n- ألغاز إيموجي بوقت محدد مع تلميحات ومؤشرات لطول الإجابة\n- واجهة عربية بتخطيط من اليمين لليسار\n- عرض توضيحي تفاعلي وإمكانية الدخول كضيف"
     },
     "isPublished": true,
     "featured": false,
@@ -78,13 +79,40 @@ export const PORTFOLIO_PROJECTS = [
       "showcase"
     ],
     "status": "showcase",
-    "features": [],
+    "features": [
+      {
+        "en": "Egyptian proverbs, films, food, places, and popular expressions",
+        "ar": "أمثال وأفلام وأكلات وأماكن وتعبيرات مصرية شعبية"
+      },
+      {
+        "en": "Timed emoji puzzles with hints and answer-length cues",
+        "ar": "ألغاز إيموجي بوقت محدد مع تلميحات ومؤشرات لطول الإجابة"
+      },
+      {
+        "en": "Arabic interface with right-to-left layout",
+        "ar": "واجهة عربية بتخطيط من اليمين لليسار"
+      },
+      {
+        "en": "Interactive tutorial and guest entry",
+        "ar": "عرض توضيحي تفاعلي وإمكانية الدخول كضيف"
+      }
+    ],
     "progress": {
-      "en": "Status recorded as showcase.",
-      "ar": "Status recorded as showcase."
+      "en": "Presentation refreshed with real product screenshots and coordinated portfolio/social artwork on 2026-10-06.",
+      "ar": "تم تحديث العرض بلقطات حقيقية من المنتج وتصميمات متناسقة للمعرض ومنصات التواصل في 2026-10-06."
     },
-    "issues": [],
-    "suggestions": []
+    "issues": [
+      {
+        "en": "Live guest answer submission returned an account-round validation error during the 2026-10-06 visual review. Verify before promoting guest gameplay.",
+        "ar": "ظهر خطأ في التحقق من جولة الحساب عند إرسال إجابة كضيف أثناء المراجعة البصرية في 2026-10-06. يجب التحقق قبل الترويج للعب كضيف."
+      }
+    ],
+    "suggestions": [],
+    "logoSrc": "/projects/emojie-crack/logo.png",
+    "source": {
+      "workspace": "workspace/emojie-crack",
+      "last_reviewed": "2026-10-06"
+    }
   },
   {
     "id": "apexyard-map-crack",
@@ -113,12 +141,13 @@ export const PORTFOLIO_PROJECTS = [
     "year": "2026",
     "liveUrl": "https://mapcrack.vercel.app/",
     "logoSrc": "/projects/map-crack/logo.png",
-    "imageSrc": "/projects/map-crack/landing.jpg",
+    "imageSrc": "/projects/map-crack/cover.jpg",
     "galleryImages": [
-      "/projects/map-crack/briefing.jpg",
       "/projects/map-crack/gameplay.jpg",
       "/projects/map-crack/answer-reveal.jpg",
-      "/projects/map-crack/arabic.jpg"
+      "/projects/map-crack/briefing.jpg",
+      "/projects/map-crack/arabic.jpg",
+      "/projects/map-crack/landing.jpg"
     ],
     "contentMDX": {
       "en": "# Map-Crack\n\nA survival geography game: rotate a real 3D globe, locate countries and capitals, and keep playing until three mistakes end the run.\n\n## Features\n\n- Countries, Capitals, and Random Mix survival modes\n- Interactive 3D globe with pin placement and answer-distance feedback\n- English and Arabic, RTL layout, keyboard controls, and local guest progress\n- Offline solo play and installable PWA",
@@ -197,11 +226,10 @@ export const PORTFOLIO_PROJECTS = [
     "year": "2026",
     "liveUrl": "https://yah-ya.vercel.app/",
     "logoSrc": "https://yah-ya.vercel.app/brand/yahya-favicon.svg",
-    "imageSrc": "https://ik.imagekit.io/hrim/images/yahya/yahya1.png",
+    "imageSrc": "/projects/yahya/cover.jpg",
     "galleryImages": [
-      "https://ik.imagekit.io/hrim/images/yahya/yahya2.png",
-      "https://ik.imagekit.io/hrim/images/yahya/yahya3.png",
-      "https://ik.imagekit.io/hrim/images/yahya/yahya4.png"
+      "/projects/yahya/experience.jpg",
+      "/projects/yahya/landing.jpg"
     ],
     "contentMDX": {
       "en": "# yahya\n\nArabic-first, Egypt-focused cancer awareness and navigation platform.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Capacitor, Vitest\n\n## Features\n\n- Project Structure\n- AI Agent Guide\n- Team Decisions\n- Known gaps: exact deployment pipeline, prod data-source verification, and cur test coverage details.\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
@@ -272,8 +300,8 @@ export const PORTFOLIO_PROJECTS = [
       "ar": "Etamini"
     },
     "description": {
-      "en": "A TanStack Start and React application for the Etamini product experience, with a Vite-based web build and Capacitor mobile targets.",
-      "ar": "تطبيق مبني بـ TanStack Start وReact لتجربة منتج Etamini، مع بناء ويب عبر Vite وأهداف هاتف عبر Capacitor."
+      "en": "An Arabic guide for mothers and young children, bringing newborn care, postpartum information, vaccines, and growth topics into one calm place.",
+      "ar": "دليل عربي للأم والطفل يجمع معلومات حديثي الولادة والنفاس والتطعيمات والنمو في مكان هادئ وواضح."
     },
     "meta": {
       "en": "TanStack Start • React • TypeScript • Vite • Capacitor",
@@ -291,11 +319,10 @@ export const PORTFOLIO_PROJECTS = [
     "year": "2026",
     "liveUrl": "https://etamini.vercel.app/",
     "logoSrc": "https://etamini.vercel.app/etamini-favicon.png",
-    "imageSrc": "https://ik.imagekit.io/hrim/images/etamini/etamini1.png?updatedAt=1785378921365",
+    "imageSrc": "/projects/new-etamini/cover.jpg",
     "galleryImages": [
-      "https://ik.imagekit.io/hrim/images/etamini/etamini2.png?updatedAt=1785378921423",
-      "https://ik.imagekit.io/hrim/images/etamini/etamini3.png?updatedAt=1785378920690",
-      "https://ik.imagekit.io/hrim/images/etamini/etamini4.png?updatedAt=1785378921697"
+      "/projects/new-etamini/experience.jpg",
+      "/projects/new-etamini/landing.jpg"
     ],
     "contentMDX": {
       "en": "# Etamini\n\nA project managed in the Dev Stage workspace.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Vite, React, TypeScript, Tailwind, Capacitor, Vitest\n\n## Features\n\n- Current feature inventory: Unknown / verify.\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
@@ -356,8 +383,8 @@ export const PORTFOLIO_PROJECTS = [
       "ar": "Minaretes of Cairo"
     },
     "description": {
-      "en": "Minarets of Cairo is a bilingual English/Arabic field guide to Cairo's Islamic heritage. The React app presents monuments, periods, stories, walks, maps, comparisons, and personal itinerary/notebook tools through an Express + tRPC server.",
-      "ar": "Minarets of Cairo is a bilingual English/Arabic field guide to Cairo's Islamic heritage. The React app presents monuments, periods, stories, walks, maps, comparisons, and personal itinerary/notebook tools through an Express + tRPC server."
+      "en": "A bilingual field guide to Cairo's Islamic heritage, with monuments, stories, walks, maps, and personal itinerary tools.",
+      "ar": "دليل بالعربية والإنجليزية لتراث القاهرة الإسلامي، يجمع المعالم والحكايات ومسارات المشي والخرائط وأدوات تخطيط الزيارة."
     },
     "meta": {
       "en": "Vite • React • TypeScript • Tailwind • Vitest",
@@ -375,15 +402,15 @@ export const PORTFOLIO_PROJECTS = [
     "year": "2026",
     "liveUrl": "https://minaretes.vercel.app/",
     "logoSrc": "https://minaretes.vercel.app/branding/minarets-logo.png",
-    "imageSrc": "https://ik.imagekit.io/hrim/images/minaretes/minaretes1.png",
+    "imageSrc": "/projects/minarets_of_cairo/cover.jpg",
     "galleryImages": [
       "https://ik.imagekit.io/hrim/images/minaretes/minaretes2.png",
       "https://ik.imagekit.io/hrim/images/minaretes/minaretes3.png",
       "https://ik.imagekit.io/hrim/images/minaretes/minaretes4.png"
     ],
     "contentMDX": {
-      "en": "# Minaretes of Cairo\n\nMinarets of Cairo is a bilingual English/Arabic field guide to Cairo's Islamic heritage. The React app presents monuments, periods, stories, walks, maps, comparisons, and personal itinerary/notebook tools through an Express + tRPC server.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Project structure\n- Local development\n- AI agent guide\n- Team decisions\n- ImageKit media workflow\n- Database notes\n- NotebookLM research enrichment workflow\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; the repository now includes a source-grounded NotebookLM enrichment workflow and 38 generated public place records.\n\n## Issues / troubles\n\n- Vitest coverage is concentrated in server/heritage.test.ts; broader client and end-to-end coverage is Unknown / verify.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
-      "ar": "# Minaretes of Cairo\n\nMinarets of Cairo is a bilingual English/Arabic field guide to Cairo's Islamic heritage. The React app presents monuments, periods, stories, walks, maps, comparisons, and personal itinerary/notebook tools through an Express + tRPC server.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Project structure\n- Local development\n- AI agent guide\n- Team decisions\n- ImageKit media workflow\n- Database notes\n- NotebookLM research enrichment workflow\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; the repository now includes a source-grounded NotebookLM enrichment workflow and 38 generated public place records.\n\n## Issues / troubles\n\n- Vitest coverage is concentrated in server/heritage.test.ts; broader client and end-to-end coverage is Unknown / verify.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
+      "en": "# Minaretes of Cairo\n\nA bilingual field guide to Cairo's Islamic heritage, with monuments, stories, walks, maps, and personal itinerary tools.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Project structure\n- Local development\n- AI agent guide\n- Team decisions\n- ImageKit media workflow\n- Database notes\n- NotebookLM research enrichment workflow\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; the repository now includes a source-grounded NotebookLM enrichment workflow and 38 generated public place records.\n\n## Issues / troubles\n\n- Vitest coverage is concentrated in server/heritage.test.ts; broader client and end-to-end coverage is Unknown / verify.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available.\n\n## Media review — October 2026\n\nThe live homepage failed to load during the October 2026 media review. The campaign cover uses a clearly labeled archived screenshot.",
+      "ar": "# Minaretes of Cairo\n\nدليل بالعربية والإنجليزية لتراث القاهرة الإسلامي، يجمع المعالم والحكايات ومسارات المشي والخرائط وأدوات تخطيط الزيارة.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Project structure\n- Local development\n- AI agent guide\n- Team decisions\n- ImageKit media workflow\n- Database notes\n- NotebookLM research enrichment workflow\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; the repository now includes a source-grounded NotebookLM enrichment workflow and 38 generated public place records.\n\n## Issues / troubles\n\n- Vitest coverage is concentrated in server/heritage.test.ts; broader client and end-to-end coverage is Unknown / verify.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available.\n\n## Media review — October 2026\n\nتعذر تحميل الصفحة الرئيسية أثناء مراجعة الصور في أكتوبر ٢٠٢٦. يستخدم الغلاف لقطة أرشيفية موضحة بوضوح."
     },
     "isPublished": true,
     "featured": true,
@@ -434,6 +461,10 @@ export const PORTFOLIO_PROJECTS = [
       {
         "en": "Vitest coverage is concentrated in server/heritage.test.ts; broader client and end-to-end coverage is Unknown / verify.",
         "ar": "Vitest coverage is concentrated in server/heritage.test.ts; broader client and end-to-end coverage is Unknown / verify."
+      },
+      {
+        "en": "The live homepage failed to load during the October 2026 media review. The campaign cover uses a clearly labeled archived screenshot.",
+        "ar": "تعذر تحميل الصفحة الرئيسية أثناء مراجعة الصور في أكتوبر ٢٠٢٦. يستخدم الغلاف لقطة أرشيفية موضحة بوضوح."
       }
     ],
     "suggestions": [
@@ -460,8 +491,8 @@ export const PORTFOLIO_PROJECTS = [
       "ar": "masar-ci"
     },
     "description": {
-      "en": "A project managed in the Dev Stage workspace.",
-      "ar": "A project managed in the Dev Stage workspace."
+      "en": "A visual DevOps workbench for authoring GitHub Actions, Docker, and Kubernetes artifacts and reviewing Terraform plans.",
+      "ar": "مساحة عمل مرئية لكتابة ملفات GitHub Actions وDocker وKubernetes ومراجعة خطط Terraform."
     },
     "meta": {
       "en": "SHOWCASE",
@@ -479,13 +510,14 @@ export const PORTFOLIO_PROJECTS = [
     "year": "2026",
     "liveUrl": "https://masar-ci.vercel.app/",
     "logoSrc": "https://masar-ci.vercel.app/masar-ci.png",
-    "imageSrc": "https://ik.imagekit.io/hrim/images/masar-ci/masar-ci1.png?updatedAt=1785378253740",
+    "imageSrc": "/projects/masar-ci/cover.jpg",
     "galleryImages": [
-      "https://ik.imagekit.io/hrim/images/masar-ci/masar-ci2.png?updatedAt=1785378253551"
+      "/projects/masar-ci/experience.jpg",
+      "/projects/masar-ci/landing.jpg"
     ],
     "contentMDX": {
-      "en": "# masar-ci\n\nA project managed in the Dev Stage workspace.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Tools\n- Tech stack: Not detected\n\n## Features\n\n- Current feature inventory: Unknown / verify.\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No application manifest was detected in the workspace.\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
-      "ar": "# masar-ci\n\nA project managed in the Dev Stage workspace.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Tools\n- Tech stack: Not detected\n\n## Features\n\n- Current feature inventory: Unknown / verify.\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No application manifest was detected in the workspace.\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
+      "en": "# masar-ci\n\nA visual DevOps workbench for authoring GitHub Actions, Docker, and Kubernetes artifacts and reviewing Terraform plans.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Tools\n- Tech stack: Not detected\n\n## Features\n\n- Current feature inventory: Unknown / verify.\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No application manifest was detected in the workspace.\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
+      "ar": "# masar-ci\n\nمساحة عمل مرئية لكتابة ملفات GitHub Actions وDocker وKubernetes ومراجعة خطط Terraform.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Tools\n- Tech stack: Not detected\n\n## Features\n\n- Current feature inventory: Unknown / verify.\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No application manifest was detected in the workspace.\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
     },
     "isPublished": true,
     "featured": false,
@@ -760,13 +792,10 @@ export const PORTFOLIO_PROJECTS = [
     "year": "2026",
     "liveUrl": "https://js2next.vercel.app/",
     "logoSrc": "https://js2next.vercel.app/brand/js2next-icon.png",
-    "imageSrc": "https://ik.imagekit.io/hrim/images/js2next/js2next1.png?updatedAt=1785375141944",
+    "imageSrc": "/projects/js2next/cover.jpg",
     "galleryImages": [
-      "https://ik.imagekit.io/hrim/images/js2next/js2next2.png?updatedAt=1785375140517",
-      "https://ik.imagekit.io/hrim/images/js2next/js2next3.png?updatedAt=1785375140760",
-      "https://ik.imagekit.io/hrim/images/js2next/js2next4.png?updatedAt=1785375141166",
-      "https://ik.imagekit.io/hrim/images/js2next/js2next5.png?updatedAt=1785375141467",
-      "https://ik.imagekit.io/hrim/images/js2next/js2next6.png?updatedAt=1785375140980"
+      "/projects/js2next/experience.jpg",
+      "/projects/js2next/landing.jpg"
     ],
     "contentMDX": {
       "en": "# js2next\n\nA project managed in the Dev Stage workspace.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- 79 source-backed learning packets with three-level learner guidance and Egyptian Arabic notes.\n- 632 assessment questions with code-first practice coverage for coding and hybrid tracks.\n\n## Progress\n\nFull content rewrite applied across the packet source, Markdown previews, and shared question bank; production build passes.\n\n## Issues / troubles\n\n- 205 source claims remain pending human review; rewritten content remains draft and unpublished.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
@@ -1304,12 +1333,10 @@ export const PORTFOLIO_PROJECTS = [
     "year": "2026",
     "liveUrl": "https://focus-session-flow.vercel.app/",
     "logoSrc": "https://focus-session-flow.vercel.app/brand/focus-flow-mark.png",
-    "imageSrc": "https://ik.imagekit.io/hrim/images/focus-flow/focus-flow1.png",
+    "imageSrc": "/projects/focussessionflow/cover.jpg",
     "galleryImages": [
-      "https://ik.imagekit.io/hrim/images/focus-flow/focus-flow2.png",
-      "https://ik.imagekit.io/hrim/images/focus-flow/focus-flow3.png",
-      "https://ik.imagekit.io/hrim/images/focus-flow/focus-flow4.png",
-      "https://ik.imagekit.io/hrim/images/focus-flow/focus-flow5.png"
+      "/projects/focussessionflow/experience.jpg",
+      "/projects/focussessionflow/landing.jpg"
     ],
     "contentMDX": {
       "en": "# Focus Flow\n\nAn offline-first focus session planner for students, freelancers, and knowledge workers. Plan focused work sessions, track your time, capture distractions, and review patterns—all locally, without requiring an account or internet connection. Coordinate focus sessions with others \n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Supabase, Tailwind, Vitest\n\n## Features\n\n- Session Templates: Create reusable focus session templates (e.g., \"Deep Work 90min\", \"Quick Focus 25min\")\n- Active Timer: Start sessions with a countdown timer, pause/resume, and track elapsed time\n- Distraction Capture: Log distractions during sessions (phone, email, social media, thoughts, other)\n- Task Intention & Outcome: Record what you're focusing on and what you accomplished\n- Session History: View all completed sessions with details, outcomes, and distraction counts\n- Daily Review: Reflect on your focus day with session stats and personal notes\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- Unknown / verify — no issue inventory was found in the current repository sources.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
@@ -1782,15 +1809,14 @@ export const PORTFOLIO_PROJECTS = [
     "year": "2026",
     "liveUrl": "https://al-rawi-rss.vercel.app/",
     "logoSrc": "/al-rawi-logo.png",
-    "imageSrc": "https://ik.imagekit.io/hrim/images/al-rawi/al-rawi1.png",
+    "imageSrc": "/projects/al-rawi/cover.jpg",
     "galleryImages": [
-      "https://ik.imagekit.io/hrim/images/al-rawi/al-rawi2.png",
-      "https://ik.imagekit.io/hrim/images/al-rawi/al-rawi3.png",
-      "https://ik.imagekit.io/hrim/images/al-rawi/al-rawi4.png"
+      "/projects/al-rawi/experience.jpg",
+      "/projects/al-rawi/landing.jpg"
     ],
     "contentMDX": {
-      "en": "# al-rawi\n\nAl-Rawi is a bilingual, local-first RSS reader. Feed subscriptions and preferences stay in the browser; fresh articles are fetched into memory and discarded when the session ends.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, React, TypeScript, Tailwind\n\n## Features\n\n- Next.js App Router, TypeScript, Tailwind CSS\n- LocalStorage for feed URLs, folders, and OPML-compatible subscriptions\n- Stateless Next.js routes for public RSS and article extraction\n- `rss-parser`, `iconv-lite`, `@mozilla/readability`, and `jsdom`\n- Only feed subscriptions are persisted locally.\n- Article lists and extracted article HTML are memory-only.\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n- No GitHub remote is configured; updates remain local.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
-      "ar": "# al-rawi\n\nAl-Rawi is a bilingual, local-first RSS reader. Feed subscriptions and preferences stay in the browser; fresh articles are fetched into memory and discarded when the session ends.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, React, TypeScript, Tailwind\n\n## Features\n\n- Next.js App Router, TypeScript, Tailwind CSS\n- LocalStorage for feed URLs, folders, and OPML-compatible subscriptions\n- Stateless Next.js routes for public RSS and article extraction\n- `rss-parser`, `iconv-lite`, `@mozilla/readability`, and `jsdom`\n- Only feed subscriptions are persisted locally.\n- Article lists and extracted article HTML are memory-only.\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n- No GitHub remote is configured; updates remain local.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
+      "en": "# al-rawi\n\nAl-Rawi is a bilingual, local-first RSS reader. Feed subscriptions and preferences stay in the browser; fresh articles are fetched into memory and discarded when the session ends.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, React, TypeScript, Tailwind\n\n## Features\n\n- Next.js App Router, TypeScript, Tailwind CSS\n- LocalStorage for feed URLs, folders, and OPML-compatible subscriptions\n- Stateless Next.js routes for public RSS and article extraction\n- `rss-parser`, `iconv-lite`, `@mozilla/readability`, and `jsdom`\n- Only feed subscriptions are persisted locally.\n- Article lists and extracted article HTML are memory-only.\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n- No GitHub remote is configured; updates remain local.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available.\n\n## Media review — October 2026\n\nPublic feeds loaded, but the clean article pane remained loading during the media review. Screenshots show the working feed list.",
+      "ar": "# al-rawi\n\nAl-Rawi is a bilingual, local-first RSS reader. Feed subscriptions and preferences stay in the browser; fresh articles are fetched into memory and discarded when the session ends.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, React, TypeScript, Tailwind\n\n## Features\n\n- Next.js App Router, TypeScript, Tailwind CSS\n- LocalStorage for feed URLs, folders, and OPML-compatible subscriptions\n- Stateless Next.js routes for public RSS and article extraction\n- `rss-parser`, `iconv-lite`, `@mozilla/readability`, and `jsdom`\n- Only feed subscriptions are persisted locally.\n- Article lists and extracted article HTML are memory-only.\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n- No GitHub remote is configured; updates remain local.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available.\n\n## Media review — October 2026\n\nتم تحميل الخلاصات العامة، لكن عرض المقال المبسط ظل قيد التحميل أثناء مراجعة الصور. تعرض اللقطات قائمة المقالات التي عملت."
     },
     "isPublished": true,
     "featured": false,
@@ -1844,6 +1870,10 @@ export const PORTFOLIO_PROJECTS = [
       {
         "en": "No GitHub remote is configured; updates remain local.",
         "ar": "No GitHub remote is configured; updates remain local."
+      },
+      {
+        "en": "Public feeds loaded, but the clean article pane remained loading during the media review. Screenshots show the working feed list.",
+        "ar": "تم تحميل الخلاصات العامة، لكن عرض المقال المبسط ظل قيد التحميل أثناء مراجعة الصور. تعرض اللقطات قائمة المقالات التي عملت."
       }
     ],
     "suggestions": [
@@ -1891,11 +1921,10 @@ export const PORTFOLIO_PROJECTS = [
     },
     "year": "2026",
     "liveUrl": "https://react-2native.vercel.app/",
-    "imageSrc": "https://ik.imagekit.io/hrim/images/r2n/r2n1.png",
+    "imageSrc": "/projects/react2native/cover.jpg",
     "galleryImages": [
-      "https://ik.imagekit.io/hrim/images/r2n/r2n2.png",
-      "https://ik.imagekit.io/hrim/images/r2n/r2n3.png",
-      "https://ik.imagekit.io/hrim/images/r2n/r2n4.png"
+      "/projects/react2native/experience.jpg",
+      "/projects/react2native/landing.jpg"
     ],
     "contentMDX": {
       "en": "# React2Native\n\nA local-first React Native and Expo learning companion for developers moving from React web to native app development.\n\n## Features\n\n- Learn native platform mental models through a bundled curriculum.\n- Practice concepts and prepare for React Native interviews.\n- Keep bookmarks, notes, progress, and review history on the local device or browser.",
@@ -2245,11 +2274,10 @@ export const PORTFOLIO_PROJECTS = [
     "year": "2026",
     "liveUrl": "https://dev2ops.vercel.app/",
     "logoSrc": "https://dev2ops.vercel.app/icons/favicon-32.png",
-    "imageSrc": "https://ik.imagekit.io/hrim/images/dev2ops/dev2ops1.png",
+    "imageSrc": "/projects/dev2ops/cover.jpg",
     "galleryImages": [
-      "https://ik.imagekit.io/hrim/images/dev2ops/dev2ops2.png",
-      "https://ik.imagekit.io/hrim/images/dev2ops/dev2ops3.png",
-      "https://ik.imagekit.io/hrim/images/dev2ops/dev2ops4.png"
+      "/projects/dev2ops/experience.jpg",
+      "/projects/dev2ops/landing.jpg"
     ],
     "contentMDX": {
       "en": "# dev2ops\n\nA browser-simulated DevOps learning game for practicing safe, evidence-led operational thinking through guided terminal quests.\n\n## Features\n\n- Practice 45+ operational quests across 15 connected learning tracks.\n- Diagnose, repair, and verify incidents in a deterministic browser-only shell with zero host execution.\n- Explore a searchable curriculum with prerequisites, difficulty levels, XP, and mastery progression.",
@@ -2329,13 +2357,10 @@ export const PORTFOLIO_PROJECTS = [
     "year": "2026",
     "liveUrl": "https://wajjba.vercel.app/",
     "logoSrc": "https://wajjba.vercel.app/favicon-32x32.png?v=2",
-    "imageSrc": "https://ik.imagekit.io/hrim/images/wajba/wajba1.png",
+    "imageSrc": "/projects/wajba/cover.jpg",
     "galleryImages": [
-      "https://ik.imagekit.io/hrim/images/wajba/wajba2.png",
-      "https://ik.imagekit.io/hrim/images/wajba/wajba3.png",
-      "https://ik.imagekit.io/hrim/images/wajba/wajba4.png",
-      "https://ik.imagekit.io/hrim/images/wajba/wajba5.png",
-      "https://ik.imagekit.io/hrim/images/wajba/wajba6.png"
+      "/projects/wajba/experience.jpg",
+      "/projects/wajba/landing.jpg"
     ],
     "contentMDX": {
       "en": "# wajba\n\nWajba is a local-first bilingual Arabic/English MENA meal-planning web app. It combines a static recipe catalog with weekly and monthly planning, Ramadan mode, dietary filters, pantry quantity matching, grocery aggregation, cooking timers, browser persistence, family URL sharing,\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Vite, React, TypeScript, Tailwind\n\n## Features\n\n- Project Structure\n- Local Development\n- AI Agent Guide\n- Team Decisions\n- Deployment target, CI ownership, and the intended Gemini/Express runtime are `Unknown / verify`.\n- Recipe JSON files are checked-in data artifacts; the running app imports `src/data/recipes.ts` directly.\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- Unknown / verify — no issue inventory was found in the current repository sources.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
@@ -2521,11 +2546,10 @@ export const PORTFOLIO_PROJECTS = [
     "year": "2026",
     "liveUrl": "https://jad-wal.vercel.app/",
     "logoSrc": "https://jad-wal.vercel.app/favicon.svg",
-    "imageSrc": "https://ik.imagekit.io/hrim/images/jadwal/jadwal1.png",
+    "imageSrc": "/projects/jadwal/cover.jpg",
     "galleryImages": [
-      "https://ik.imagekit.io/hrim/images/jadwal/jadwal2.png",
-      "https://ik.imagekit.io/hrim/images/jadwal/jadwal3.png",
-      "https://ik.imagekit.io/hrim/images/jadwal/jadwal4.png"
+      "/projects/jadwal/experience.jpg",
+      "/projects/jadwal/landing.jpg"
     ],
     "contentMDX": {
       "en": "# jadwal\n\njadwal — جدول — is a calm, local-first workspace for turning meaningful goals into daily action, decisions, and weekly reviews.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Vite, React, TypeScript, IndexedDB, PWA\n\n## Features\n\n- Goal shaping: define an outcome, horizon, and usable definition of progress.\n- Milestones and daily plans: turn milestones into a focused next move.\n- Today workspace: capture tasks and keep a top-five focus list.\n- Review Center and Decision Journal: keep weekly evidence and decisions close to the work.\n- Search and archive: revisit stored work without a cloud workspace.\n- Local-first privacy: goals, tasks, decisions, and reviews stay in browser storage with no account required.\n- Backup, restore, export, and installable PWA support.\n\n## Progress\n\nClassified as showcase-ready after reviewing the rebranded live product and its updated visual assets on 2026-08-15.\n\n## Issues / troubles\n\n- The public deployment was reviewed through its live UI; repository-level test coverage and internal implementation details were not available in this portfolio workspace.\n\n## Suggested next steps\n\n- Add a fuller case study with measurable workflow outcomes and usage insights.",
@@ -2617,12 +2641,10 @@ export const PORTFOLIO_PROJECTS = [
     "year": "2026",
     "liveUrl": "https://tabeeb-flow.vercel.app/",
     "logoSrc": "https://tabeeb-flow.vercel.app/favicon.png",
-    "imageSrc": "https://ik.imagekit.io/hrim/images/tabeeb-flow/tabeeb1.png",
+    "imageSrc": "/projects/tabeeb-flow/cover.jpg",
     "galleryImages": [
-      "https://ik.imagekit.io/hrim/images/tabeeb-flow/tabeeb2.png",
-      "https://ik.imagekit.io/hrim/images/tabeeb-flow/tabeeb3.png",
-      "https://ik.imagekit.io/hrim/images/tabeeb-flow/tabeeb4.png",
-      "https://ik.imagekit.io/hrim/images/tabeeb-flow/tabeeb5.png"
+      "/projects/tabeeb-flow/experience.jpg",
+      "/projects/tabeeb-flow/landing.jpg"
     ],
     "contentMDX": {
       "en": "# Tabeeb Flow\n\nA connected clinic workspace for doctors and reception teams, with an interactive demo for exploring fictional clinic workflows.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: React, TypeScript, Vite, Supabase\n\n## Features\n\n- Connected clinic workspace for doctors and reception teams.\n- Interactive product tour with fictional clinic data and no account required.\n- Dedicated doctor portal and reception portal demo workflows.\n\n## Progress\n\nClassified as showcase-ready after reviewing the live deployment and supplied project screenshots on 2026-08-02.\n\n## Issues / troubles\n\n- Unknown / verify — no issue inventory was provided with the showcase materials.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
@@ -3177,12 +3199,10 @@ export const PORTFOLIO_PROJECTS = [
     "year": "2026",
     "liveUrl": "https://rihlaty.vercel.app/",
     "logoSrc": "https://rihlaty.vercel.app/icons/icon-32.png",
-    "imageSrc": "https://ik.imagekit.io/hrim/images/rihlaty/rihlaty1.png",
+    "imageSrc": "/projects/rihlaty/cover.jpg",
     "galleryImages": [
-      "https://ik.imagekit.io/hrim/images/rihlaty/rihlaty2.png",
-      "https://ik.imagekit.io/hrim/images/rihlaty/rihlaty3.png",
-      "https://ik.imagekit.io/hrim/images/rihlaty/rihlaty4.png",
-      "https://ik.imagekit.io/hrim/images/rihlaty/rihlaty5.png"
+      "/projects/rihlaty/experience.jpg",
+      "/projects/rihlaty/landing.jpg"
     ],
     "contentMDX": {
       "en": "# Rihlaty\n\nA local Egypt trip planner for organizing destinations, itineraries, fuel, expenses, bookings, and packing lists.\n\n## Features\n\n- Organize Egypt destinations and day-by-day itineraries.\n- Estimate fuel costs and track trip expenses.\n- Keep bookings and packing checklists in one place.",
@@ -3516,15 +3536,14 @@ export const PORTFOLIO_PROJECTS = [
     "year": "2026",
     "liveUrl": "https://spec-flow-ai.vercel.app/",
     "logoSrc": "https://spec-flow-ai.vercel.app/favicon.svg",
-    "imageSrc": "https://ik.imagekit.io/hrim/images/spec-flo/spec-flow1.png",
+    "imageSrc": "/projects/spec-flow/cover.jpg",
     "galleryImages": [
-      "https://ik.imagekit.io/hrim/images/spec-flo/spec-flo2.png",
-      "https://ik.imagekit.io/hrim/images/spec-flow3.png",
-      "https://ik.imagekit.io/hrim/images/spec-flow4.png"
+      "/projects/spec-flow/experience.jpg",
+      "/projects/spec-flow/landing.jpg"
     ],
     "contentMDX": {
-      "en": "# Spec Flow AI\n\nSpecFlow AI turns scattered product input into a guided workflow for breakdowns, structured stories, review, and export-ready handoff.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Tools\n- Tech stack: TypeScript\n\n## Features\n\n- Public landing experience for explaining the product and routing users into the app\n- Authenticated web app for running breakdown workflows\n- Express API server for auth-scoped application behavior\n- Shared API contracts and generated client packages\n- Shared database schema package for the Supabase-hosted Postgres runtime\n- Repo-owned docs in `docs/`\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
-      "ar": "# Spec Flow AI\n\nيحوّل SpecFlow AI مدخلات المنتجات المبعثرة إلى سير عمل موجّه للتقسيم والقصص المنظمة والمراجعة والتسليم الجاهز للتصدير.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Tools\n- Tech stack: TypeScript\n\n## Features\n\n- Public landing experience for explaining the product and routing users into the app\n- Authenticated web app for running breakdown workflows\n- Express API server for auth-scoped application behavior\n- Shared API contracts and generated client packages\n- Shared database schema package for the Supabase-hosted Postgres runtime\n- Repo-owned docs in `docs/`\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
+      "en": "# Spec Flow AI\n\nSpecFlow AI turns scattered product input into a guided workflow for breakdowns, structured stories, review, and export-ready handoff.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Tools\n- Tech stack: TypeScript\n\n## Features\n\n- Public landing experience for explaining the product and routing users into the app\n- Authenticated web app for running breakdown workflows\n- Express API server for auth-scoped application behavior\n- Shared API contracts and generated client packages\n- Shared database schema package for the Supabase-hosted Postgres runtime\n- Repo-owned docs in `docs/`\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available.\n\n## Media review — October 2026\n\nCampaign screenshots show the public landing and workflow preview; authenticated breakdown and export flows were not verified.",
+      "ar": "# Spec Flow AI\n\nيحوّل SpecFlow AI مدخلات المنتجات المبعثرة إلى سير عمل موجّه للتقسيم والقصص المنظمة والمراجعة والتسليم الجاهز للتصدير.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Tools\n- Tech stack: TypeScript\n\n## Features\n\n- Public landing experience for explaining the product and routing users into the app\n- Authenticated web app for running breakdown workflows\n- Express API server for auth-scoped application behavior\n- Shared API contracts and generated client packages\n- Shared database schema package for the Supabase-hosted Postgres runtime\n- Repo-owned docs in `docs/`\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available.\n\n## Media review — October 2026\n\nتعرض صور الحملة الصفحة العامة ومعاينة سير العمل؛ لم يتم التحقق من خطوات التقسيم والتصدير بعد تسجيل الدخول."
     },
     "isPublished": true,
     "featured": false,
@@ -3571,6 +3590,10 @@ export const PORTFOLIO_PROJECTS = [
       {
         "en": "No conventional test directory was detected.",
         "ar": "No conventional test directory was detected."
+      },
+      {
+        "en": "Campaign screenshots show the public landing and workflow preview; authenticated breakdown and export flows were not verified.",
+        "ar": "تعرض صور الحملة الصفحة العامة ومعاينة سير العمل؛ لم يتم التحقق من خطوات التقسيم والتصدير بعد تسجيل الدخول."
       }
     ],
     "suggestions": [
@@ -3601,8 +3624,8 @@ export const PORTFOLIO_PROJECTS = [
       "ar": "skills-agency"
     },
     "description": {
-      "en": "Next.js 16 + App Router scaffold for The Agency v2, built with TypeScript, Ant Design, SCSS modules, and spec-kit initialization for both Codex and OpenCode workflows.",
-      "ar": "Next.js 16 + App Router scaffold for The Agency v2, built with TypeScript, Ant Design, SCSS modules, and spec-kit initialization for both Codex and OpenCode workflows."
+      "en": "A public directory of AI agent capabilities. Explore departments and specialist profiles to understand their scope, expertise, and fit for the work.",
+      "ar": "دليل عام لقدرات وكلاء الذكاء الاصطناعي. استكشف الأقسام وملفات المتخصصين لمعرفة نطاق العمل والخبرة والاختيار المناسب للمهمة."
     },
     "meta": {
       "en": "Next.js • React • TypeScript",
@@ -3620,15 +3643,14 @@ export const PORTFOLIO_PROJECTS = [
     "year": "2026",
     "liveUrl": "https://skills-agency.vercel.app/",
     "logoSrc": "https://skills-agency.vercel.app/favicon.ico?favicon.0x3dzn~oxb6tn.ico",
-    "imageSrc": "https://ik.imagekit.io/hrim/images/skills-agency/skills-agency1.png?updatedAt=1785378533772",
+    "imageSrc": "/projects/skills-agency/cover.jpg",
     "galleryImages": [
-      "https://ik.imagekit.io/hrim/images/skills-agency/skills-agency2.png?updatedAt=1785378535198",
-      "https://ik.imagekit.io/hrim/images/skills-agency/skills-agency3.png?updatedAt=1785378534959",
-      "https://ik.imagekit.io/hrim/images/skills-agency/skills-agency4.png?updatedAt=1785378533142"
+      "/projects/skills-agency/experience.jpg",
+      "/projects/skills-agency/landing.jpg"
     ],
     "contentMDX": {
-      "en": "# skills-agency\n\nNext.js 16 + App Router scaffold for The Agency v2, built with TypeScript, Ant Design, SCSS modules, and spec-kit initialization for both Codex and OpenCode workflows.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, React, TypeScript\n\n## Features\n\n- spec-kit (`.specify`, `.agents`, `.opencode`)\n- `src/app`: app routes and root layout\n- `src/components`: layout, department, agent, and shared UI components\n- `src/data/skills.json`: starter agency data\n- `src/lib`: types, utilities, and future audio placeholder\n- `src/styles`: global theme tokens and Ant Design config\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
-      "ar": "# skills-agency\n\nNext.js 16 + App Router scaffold for The Agency v2, built with TypeScript, Ant Design, SCSS modules, and spec-kit initialization for both Codex and OpenCode workflows.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, React, TypeScript\n\n## Features\n\n- spec-kit (`.specify`, `.agents`, `.opencode`)\n- `src/app`: app routes and root layout\n- `src/components`: layout, department, agent, and shared UI components\n- `src/data/skills.json`: starter agency data\n- `src/lib`: types, utilities, and future audio placeholder\n- `src/styles`: global theme tokens and Ant Design config\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
+      "en": "# skills-agency\n\nA public directory of AI agent capabilities. Explore departments and specialist profiles to understand their scope, expertise, and fit for the work.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, React, TypeScript\n\n## Features\n\n- spec-kit (`.specify`, `.agents`, `.opencode`)\n- `src/app`: app routes and root layout\n- `src/components`: layout, department, agent, and shared UI components\n- `src/data/skills.json`: starter agency data\n- `src/lib`: types, utilities, and future audio placeholder\n- `src/styles`: global theme tokens and Ant Design config\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
+      "ar": "# skills-agency\n\nدليل عام لقدرات وكلاء الذكاء الاصطناعي. استكشف الأقسام وملفات المتخصصين لمعرفة نطاق العمل والخبرة والاختيار المناسب للمهمة.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, React, TypeScript\n\n## Features\n\n- spec-kit (`.specify`, `.agents`, `.opencode`)\n- `src/app`: app routes and root layout\n- `src/components`: layout, department, agent, and shared UI components\n- `src/data/skills.json`: starter agency data\n- `src/lib`: types, utilities, and future audio placeholder\n- `src/styles`: global theme tokens and Ant Design config\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
     },
     "isPublished": true,
     "featured": false,
@@ -3726,11 +3748,10 @@ export const PORTFOLIO_PROJECTS = [
     "year": "2026",
     "liveUrl": "https://dev2ops.vercel.app/",
     "logoSrc": "https://dev2ops.vercel.app/brand/dev2ops-logo.png",
-    "imageSrc": "https://ik.imagekit.io/hrim/images/devops/devops1.png",
+    "imageSrc": "/projects/dev2ops/cover.jpg",
     "galleryImages": [
-      "https://ik.imagekit.io/hrim/images/devops/devops2.png",
-      "https://ik.imagekit.io/hrim/images/devops/devops3.png",
-      "https://ik.imagekit.io/hrim/images/devops/devops4.png"
+      "/projects/dev2ops/experience.jpg",
+      "/projects/dev2ops/landing.jpg"
     ],
     "contentMDX": {
       "en": "# Dev2ops\n\ndev2ops is a browser-simulated DevOps learning game for safe, evidence-led operational practice. Learners turn real operational moments into guided terminal quests in a complete browser simulation.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: React, TypeScript, Vite, Express, tRPC, Tailwind CSS, Vitest\n- Scale: 15 learning tracks, 45+ quests, and 0 real execution\n\n## Features\n\n- Deterministic browser simulator with state-based validation.\n- Source-backed DevOps curriculum with prerequisite-aware learning paths.\n- Guided practice across Linux, Git, networking, automation, CI/CD, containers, Kubernetes, and related operational domains.\n- Responsive quest workspace with command reference, evidence checks, hints, weekly goals, and learning-path recommendations.\n- Local progress with JSON backup and restore; no account is required for the current release.\n- Installable PWA with branded icons, splash screen, bounded offline shell, and install guidance.\n\n## Progress\n\nClassified as showcase-ready after reviewing the live deployment and repository evidence on 2026-08-01.\n\n## Issues / troubles\n\n- Learner progress is browser-local; account synchronization and server persistence are not part of the current release.\n- CI policy, production secret provisioning, and release artifacts remain Unknown / verify; the Vercel target and repository deployment configuration are documented in vercel.json.\n\n## Suggested next steps\n\n- Consider optional account-backed sync if cross-device learning becomes a requirement.\n- Keep curriculum references and simulation command coverage under periodic review as tracks expand.",
