@@ -33,6 +33,1438 @@ export const PORTFOLIO_PROFILE = {
 
 export const PORTFOLIO_PROJECTS = [
   {
+    "id": "apexyard-dev-hq",
+    "slug": "dev-hq",
+    "title": {
+      "en": "Dev HQ",
+      "ar": "مرصد المشاريع"
+    },
+    "description": {
+      "en": "A project observatory bringing uptime monitoring, visitor feedback, and website checks into one owner workspace.",
+      "ar": "مرصد يجمع متابعة تشغيل المشاريع وآراء الزوار وفحوص المواقع في مساحة واحدة لصاحب المشاريع."
+    },
+    "meta": {
+      "en": "Vite • React • TypeScript",
+      "ar": "Vite • React • TypeScript"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://the-dev-hq.vercel.app/",
+    "imageSrc": "/projects/dev-hq/cover.webp",
+    "galleryImages": [],
+    "contentMDX": {
+      "en": "# Dev HQ\n\nA project observatory bringing uptime monitoring, visitor feedback, and website checks into one owner workspace.\n\n## Features\n\n- Uptime monitoring\n- Visitor feedback and Telegram alerts\n- Performance, links, and Arabic SEO checks",
+      "ar": "# مرصد المشاريع\n\nمرصد يجمع متابعة تشغيل المشاريع وآراء الزوار وفحوص المواقع في مساحة واحدة لصاحب المشاريع.\n\n## الميزات\n\n- متابعة تشغيل المشاريع\n- آراء الزوار وتنبيهات تيليجرام\n- فحوص الأداء والروابط وتهيئة البحث بالعربية"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "Vite",
+      "React",
+      "TypeScript",
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Uptime monitoring",
+        "ar": "متابعة تشغيل المشاريع"
+      },
+      {
+        "en": "Visitor feedback and Telegram alerts",
+        "ar": "آراء الزوار وتنبيهات تيليجرام"
+      },
+      {
+        "en": "Performance, links, and Arabic SEO checks",
+        "ar": "فحوص الأداء والروابط وتهيئة البحث بالعربية"
+      }
+    ],
+    "progress": {
+      "en": "Live public page reviewed and product screenshots captured on 2026-10-28.",
+      "ar": "تمت مراجعة الصفحة العامة والتقاط صور حقيقية للمشروع في ٢٨ أكتوبر ٢٠٢٦."
+    },
+    "issues": [],
+    "suggestions": [],
+    "source": {
+      "workspace": "workspace/dev-hq",
+      "last_reviewed": "2026-10-28"
+    }
+  },
+  {
+    "id": "apexyard-yalla-nakol",
+    "slug": "yalla-nakol",
+    "title": {
+      "en": "Yalla Nakol",
+      "ar": "يلا ناكل"
+    },
+    "description": {
+      "en": "Organize group food orders, vote on restaurants, collect each person's choices, and review how the bill is split.",
+      "ar": "نظّم طلبات الأكل الجماعية وصوّت على المطعم واجمع اختيارات كل شخص وراجع تقسيم الفاتورة."
+    },
+    "meta": {
+      "en": "TanStack Start • React • TypeScript",
+      "ar": "TanStack Start • React • TypeScript"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://yalla-nakoll.vercel.app/",
+    "imageSrc": "/projects/yalla-nakol/cover.webp",
+    "galleryImages": [],
+    "contentMDX": {
+      "en": "# Yalla Nakol\n\nOrganize group food orders, vote on restaurants, collect each person's choices, and review how the bill is split.\n\n## Features\n\n- Restaurant voting\n- Individual orders and instructions\n- Shared bill review",
+      "ar": "# يلا ناكل\n\nنظّم طلبات الأكل الجماعية وصوّت على المطعم واجمع اختيارات كل شخص وراجع تقسيم الفاتورة.\n\n## الميزات\n\n- تصويت على المطعم\n- طلبات وتعليمات كل شخص\n- مراجعة الفاتورة المشتركة"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "TanStack Start",
+      "React",
+      "TypeScript",
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Restaurant voting",
+        "ar": "تصويت على المطعم"
+      },
+      {
+        "en": "Individual orders and instructions",
+        "ar": "طلبات وتعليمات كل شخص"
+      },
+      {
+        "en": "Shared bill review",
+        "ar": "مراجعة الفاتورة المشتركة"
+      }
+    ],
+    "progress": {
+      "en": "Live public page reviewed and product screenshots captured on 2026-10-28.",
+      "ar": "تمت مراجعة الصفحة العامة والتقاط صور حقيقية للمشروع في ٢٨ أكتوبر ٢٠٢٦."
+    },
+    "issues": [],
+    "suggestions": [],
+    "source": {
+      "workspace": "workspace/yalla-nakol",
+      "last_reviewed": "2026-10-28"
+    }
+  },
+  {
+    "id": "apexyard-harness-atlas",
+    "slug": "harness-atlas",
+    "title": {
+      "en": "Harness Atlas",
+      "ar": "أطلس هارنس"
+    },
+    "description": {
+      "en": "An interactive map of the tools, memory, permissions, and other capabilities that make an AI agent work.",
+      "ar": "خريطة تفاعلية للأدوات والذاكرة والصلاحيات والقدرات التي تساعد وكيل الذكاء الاصطناعي على العمل."
+    },
+    "meta": {
+      "en": "Vite • React • TypeScript",
+      "ar": "Vite • React • TypeScript"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://harnessatlas.vercel.app/",
+    "imageSrc": "/projects/harness-atlas/cover.webp",
+    "galleryImages": [],
+    "contentMDX": {
+      "en": "# Harness Atlas\n\nAn interactive map of the tools, memory, permissions, and other capabilities that make an AI agent work.\n\n## Features\n\n- Interactive capability map\n- Explore agent hosts and tools\n- Analyze and organize your stack",
+      "ar": "# أطلس هارنس\n\nخريطة تفاعلية للأدوات والذاكرة والصلاحيات والقدرات التي تساعد وكيل الذكاء الاصطناعي على العمل.\n\n## الميزات\n\n- خريطة تفاعلية للقدرات\n- استكشاف بيئات الوكلاء وأدواتها\n- تحليل مجموعة أدواتك وتنظيمها"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "Vite",
+      "React",
+      "TypeScript",
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Interactive capability map",
+        "ar": "خريطة تفاعلية للقدرات"
+      },
+      {
+        "en": "Explore agent hosts and tools",
+        "ar": "استكشاف بيئات الوكلاء وأدواتها"
+      },
+      {
+        "en": "Analyze and organize your stack",
+        "ar": "تحليل مجموعة أدواتك وتنظيمها"
+      }
+    ],
+    "progress": {
+      "en": "Live public page reviewed and product screenshots captured on 2026-10-28.",
+      "ar": "تمت مراجعة الصفحة العامة والتقاط صور حقيقية للمشروع في ٢٨ أكتوبر ٢٠٢٦."
+    },
+    "issues": [],
+    "suggestions": [],
+    "source": {
+      "workspace": "workspace/harness-atlas",
+      "last_reviewed": "2026-10-28"
+    }
+  },
+  {
+    "id": "apexyard-bikheer",
+    "slug": "bikheer",
+    "title": {
+      "en": "Bikheer",
+      "ar": "بخير"
+    },
+    "description": {
+      "en": "A calm daily wellbeing journal for water, breaks, movement, sleep, meals, and how you feel.",
+      "ar": "دفتر يومي هادئ للمياه والاستراحات والحركة والنوم والأكل وتسجيل إحساسك."
+    },
+    "meta": {
+      "en": "Vite • React • TypeScript",
+      "ar": "Vite • React • TypeScript"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://bikheer.vercel.app/",
+    "imageSrc": "/projects/bikheer/cover.webp",
+    "galleryImages": [],
+    "contentMDX": {
+      "en": "# Bikheer\n\nA calm daily wellbeing journal for water, breaks, movement, sleep, meals, and how you feel.\n\n## Features\n\n- Daily timeline and wellbeing logs\n- Routines, circles, and summaries\n- Arabic and English interface",
+      "ar": "# بخير\n\nدفتر يومي هادئ للمياه والاستراحات والحركة والنوم والأكل وتسجيل إحساسك.\n\n## الميزات\n\n- خط يومي وتسجيلات للعادات اليومية\n- روتينات ودوائر وملخصات\n- واجهة عربية وإنجليزية"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "Vite",
+      "React",
+      "TypeScript",
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Daily timeline and wellbeing logs",
+        "ar": "خط يومي وتسجيلات للعادات اليومية"
+      },
+      {
+        "en": "Routines, circles, and summaries",
+        "ar": "روتينات ودوائر وملخصات"
+      },
+      {
+        "en": "Arabic and English interface",
+        "ar": "واجهة عربية وإنجليزية"
+      }
+    ],
+    "progress": {
+      "en": "Live public page reviewed and product screenshots captured on 2026-10-28.",
+      "ar": "تمت مراجعة الصفحة العامة والتقاط صور حقيقية للمشروع في ٢٨ أكتوبر ٢٠٢٦."
+    },
+    "issues": [],
+    "suggestions": [],
+    "source": {
+      "workspace": "workspace/bikheer",
+      "last_reviewed": "2026-10-28"
+    }
+  },
+  {
+    "id": "apexyard-lost-island",
+    "slug": "lost-island",
+    "title": {
+      "en": "The Returning Island",
+      "ar": "الجزيرة العائدة"
+    },
+    "description": {
+      "en": "A story adventure on the fictional island of Nerida, where exploration, crafts, and shared decisions shape a return home.",
+      "ar": "مغامرة قصصية على جزيرة نيريدا الخيالية، يتشكل فيها الرجوع للبيت بالاستكشاف والحِرف والقرارات المشتركة."
+    },
+    "meta": {
+      "en": "TanStack Start • React • TypeScript",
+      "ar": "TanStack Start • React • TypeScript"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://lost-island-zeta.vercel.app/",
+    "imageSrc": "/projects/lost-island/cover.webp",
+    "galleryImages": [
+      "/projects/lost-island/gameplay.webp"
+    ],
+    "contentMDX": {
+      "en": "# The Returning Island\n\nA story adventure on the fictional island of Nerida, where exploration, crafts, and shared decisions shape a return home.\n\n## Features\n\n- Explore illustrated island locations\n- Quests, tides, and local characters\n- Save slots, journal, and achievements",
+      "ar": "# الجزيرة العائدة\n\nمغامرة قصصية على جزيرة نيريدا الخيالية، يتشكل فيها الرجوع للبيت بالاستكشاف والحِرف والقرارات المشتركة.\n\n## الميزات\n\n- استكشاف أماكن الجزيرة المصوّرة\n- مهام ومد وجزر وشخصيات محلية\n- خانات حفظ ودفتر وإنجازات"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "TanStack Start",
+      "React",
+      "TypeScript",
+      "Games",
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Explore illustrated island locations",
+        "ar": "استكشاف أماكن الجزيرة المصوّرة"
+      },
+      {
+        "en": "Quests, tides, and local characters",
+        "ar": "مهام ومد وجزر وشخصيات محلية"
+      },
+      {
+        "en": "Save slots, journal, and achievements",
+        "ar": "خانات حفظ ودفتر وإنجازات"
+      }
+    ],
+    "progress": {
+      "en": "Live public page reviewed and product screenshots captured on 2026-10-28.",
+      "ar": "تمت مراجعة الصفحة العامة والتقاط صور حقيقية للمشروع في ٢٨ أكتوبر ٢٠٢٦."
+    },
+    "issues": [],
+    "suggestions": [],
+    "source": {
+      "workspace": "workspace/lost-island",
+      "last_reviewed": "2026-10-28"
+    }
+  },
+  {
+    "id": "apexyard-meuseum-impossible-journeys",
+    "slug": "meuseum-impossible-journeys",
+    "title": {
+      "en": "The Museum of Impossible Journeys",
+      "ar": "متحف الرحلات المستحيلة"
+    },
+    "description": {
+      "en": "An evidence adventure about six museum objects, conflicting records, and the care needed to tell their stories honestly.",
+      "ar": "مغامرة أدلة عن ست قطع متحفية وسجلات متعارضة وكيف نحكي قصصها بأمانة."
+    },
+    "meta": {
+      "en": "TanStack Start • React • TypeScript",
+      "ar": "TanStack Start • React • TypeScript"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://meuseum-impossible-journeys.vercel.app/",
+    "imageSrc": "/projects/meuseum-impossible-journeys/cover.webp",
+    "galleryImages": [
+      "/projects/meuseum-impossible-journeys/gameplay.webp"
+    ],
+    "contentMDX": {
+      "en": "# The Museum of Impossible Journeys\n\nAn evidence adventure about six museum objects, conflicting records, and the care needed to tell their stories honestly.\n\n## Features\n\n- Six object dossiers\n- Evidence reading and imagined reconstructions\n- Guided difficulty and save slots",
+      "ar": "# متحف الرحلات المستحيلة\n\nمغامرة أدلة عن ست قطع متحفية وسجلات متعارضة وكيف نحكي قصصها بأمانة.\n\n## الميزات\n\n- ستة ملفات لقطع متحفية\n- قراءة الأدلة وإعادة تصورات خيالية\n- مستوى إرشادي وخانات حفظ"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "TanStack Start",
+      "React",
+      "TypeScript",
+      "Games",
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Six object dossiers",
+        "ar": "ستة ملفات لقطع متحفية"
+      },
+      {
+        "en": "Evidence reading and imagined reconstructions",
+        "ar": "قراءة الأدلة وإعادة تصورات خيالية"
+      },
+      {
+        "en": "Guided difficulty and save slots",
+        "ar": "مستوى إرشادي وخانات حفظ"
+      }
+    ],
+    "progress": {
+      "en": "Live public page reviewed and product screenshots captured on 2026-10-28.",
+      "ar": "تمت مراجعة الصفحة العامة والتقاط صور حقيقية للمشروع في ٢٨ أكتوبر ٢٠٢٦."
+    },
+    "issues": [],
+    "suggestions": [],
+    "source": {
+      "workspace": "workspace/meuseum-impossible-journeys",
+      "last_reviewed": "2026-10-28"
+    }
+  },
+  {
+    "id": "apexyard-mi3ad",
+    "slug": "mi3ad",
+    "title": {
+      "en": "Mi3ad",
+      "ar": "ميعاد"
+    },
+    "description": {
+      "en": "Arabic scheduling polls: suggest times, share a link, and find a time that works for everyone in their own timezone.",
+      "ar": "استطلاعات مواعيد بالعربي: اقترح أوقات وشارك الرابط واختار الوقت المناسب للجميع بتوقيت كل شخص."
+    },
+    "meta": {
+      "en": "TanStack Start • React • TypeScript",
+      "ar": "TanStack Start • React • TypeScript"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://mi3ad.vercel.app/",
+    "imageSrc": "/projects/mi3ad/cover.webp",
+    "galleryImages": [],
+    "contentMDX": {
+      "en": "# Mi3ad\n\nArabic scheduling polls: suggest times, share a link, and find a time that works for everyone in their own timezone.\n\n## Features\n\n- Account-free scheduling polls\n- Timezone-aware time choices\n- Live votes and availability",
+      "ar": "# ميعاد\n\nاستطلاعات مواعيد بالعربي: اقترح أوقات وشارك الرابط واختار الوقت المناسب للجميع بتوقيت كل شخص.\n\n## الميزات\n\n- استطلاعات مواعيد دون حساب\n- مواعيد حسب المنطقة الزمنية\n- أصوات وتوافر لحظي"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "TanStack Start",
+      "React",
+      "TypeScript",
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Account-free scheduling polls",
+        "ar": "استطلاعات مواعيد دون حساب"
+      },
+      {
+        "en": "Timezone-aware time choices",
+        "ar": "مواعيد حسب المنطقة الزمنية"
+      },
+      {
+        "en": "Live votes and availability",
+        "ar": "أصوات وتوافر لحظي"
+      }
+    ],
+    "progress": {
+      "en": "Live public page reviewed and product screenshots captured on 2026-10-28.",
+      "ar": "تمت مراجعة الصفحة العامة والتقاط صور حقيقية للمشروع في ٢٨ أكتوبر ٢٠٢٦."
+    },
+    "issues": [],
+    "suggestions": [],
+    "source": {
+      "workspace": "workspace/mi3ad",
+      "last_reviewed": "2026-10-28"
+    }
+  },
+  {
+    "id": "apexyard-dayra",
+    "slug": "dayra",
+    "title": {
+      "en": "Dayra",
+      "ar": "دايرة"
+    },
+    "description": {
+      "en": "An invitation-only space for a community to coordinate needs, shifts, and shared decisions.",
+      "ar": "مساحة بالدعوة فقط لتنسيق احتياجات المجموعة والورديات والقرارات المشتركة."
+    },
+    "meta": {
+      "en": "Vite • React • TypeScript",
+      "ar": "Vite • React • TypeScript"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://al-dayra.vercel.app/",
+    "imageSrc": "/projects/dayra/cover.webp",
+    "galleryImages": [],
+    "contentMDX": {
+      "en": "# Dayra\n\nAn invitation-only space for a community to coordinate needs, shifts, and shared decisions.\n\n## Features\n\n- Private community circles\n- Shared needs and shifts\n- Arabic and English landing page",
+      "ar": "# دايرة\n\nمساحة بالدعوة فقط لتنسيق احتياجات المجموعة والورديات والقرارات المشتركة.\n\n## الميزات\n\n- دوائر خاصة للمجموعات\n- احتياجات وورديات مشتركة\n- صفحة عربية وإنجليزية"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "Vite",
+      "React",
+      "TypeScript",
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Private community circles",
+        "ar": "دوائر خاصة للمجموعات"
+      },
+      {
+        "en": "Shared needs and shifts",
+        "ar": "احتياجات وورديات مشتركة"
+      },
+      {
+        "en": "Arabic and English landing page",
+        "ar": "صفحة عربية وإنجليزية"
+      }
+    ],
+    "progress": {
+      "en": "Live public page reviewed and product screenshots captured on 2026-10-28.",
+      "ar": "تمت مراجعة الصفحة العامة والتقاط صور حقيقية للمشروع في ٢٨ أكتوبر ٢٠٢٦."
+    },
+    "issues": [],
+    "suggestions": [],
+    "source": {
+      "workspace": "workspace/dayra",
+      "last_reviewed": "2026-10-28"
+    }
+  },
+  {
+    "id": "apexyard-stollen-constillation",
+    "slug": "stollen-constillation",
+    "title": {
+      "en": "The Stolen Constellations",
+      "ar": "الكوكبات المسروقة"
+    },
+    "description": {
+      "en": "A celestial navigation mystery: the stars remain, but their map is missing.",
+      "ar": "لغز في الملاحة السماوية: النجوم ما زالت موجودة، لكن خريطتها مفقودة."
+    },
+    "meta": {
+      "en": "TanStack Start • React • TypeScript",
+      "ar": "TanStack Start • React • TypeScript"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://stollen-constillation.vercel.app/",
+    "imageSrc": "/projects/stollen-constillation/cover.webp",
+    "galleryImages": [],
+    "contentMDX": {
+      "en": "# The Stolen Constellations\n\nA celestial navigation mystery: the stars remain, but their map is missing.\n\n## Features\n\n- Celestial navigation mystery\n- Three local save slots\n- Language and theme controls",
+      "ar": "# الكوكبات المسروقة\n\nلغز في الملاحة السماوية: النجوم ما زالت موجودة، لكن خريطتها مفقودة.\n\n## الميزات\n\n- لغز ملاحة سماوية\n- ثلاث خانات حفظ محلية\n- اختيار اللغة والمظهر"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "TanStack Start",
+      "React",
+      "TypeScript",
+      "Games",
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Celestial navigation mystery",
+        "ar": "لغز ملاحة سماوية"
+      },
+      {
+        "en": "Three local save slots",
+        "ar": "ثلاث خانات حفظ محلية"
+      },
+      {
+        "en": "Language and theme controls",
+        "ar": "اختيار اللغة والمظهر"
+      }
+    ],
+    "progress": {
+      "en": "Live public page reviewed and product screenshots captured on 2026-10-28.",
+      "ar": "تمت مراجعة الصفحة العامة والتقاط صور حقيقية للمشروع في ٢٨ أكتوبر ٢٠٢٦."
+    },
+    "issues": [],
+    "suggestions": [],
+    "source": {
+      "workspace": "workspace/stollen-constillation",
+      "last_reviewed": "2026-10-28"
+    }
+  },
+  {
+    "id": "apexyard-minasat-nashr",
+    "slug": "minasat-nashr",
+    "title": {
+      "en": "Minasat",
+      "ar": "منصات"
+    },
+    "description": {
+      "en": "An Arabic directory of product launch platforms with audience filters, dated information, and a personal launch plan.",
+      "ar": "دليل عربي لمنصات إطلاق المنتجات مع تصفية الجمهور ومعلومات مؤرخة وخطة إطلاق شخصية."
+    },
+    "meta": {
+      "en": "TanStack Start • React • TypeScript",
+      "ar": "TanStack Start • React • TypeScript"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://minasat-nashr.vercel.app/",
+    "imageSrc": "/projects/minasat-nashr/cover.webp",
+    "galleryImages": [],
+    "contentMDX": {
+      "en": "# Minasat\n\nAn Arabic directory of product launch platforms with audience filters, dated information, and a personal launch plan.\n\n## Features\n\n- Curated launch-platform directory\n- Audience and pricing filters\n- Build a launch plan",
+      "ar": "# منصات\n\nدليل عربي لمنصات إطلاق المنتجات مع تصفية الجمهور ومعلومات مؤرخة وخطة إطلاق شخصية.\n\n## الميزات\n\n- دليل منسّق لمنصات الإطلاق\n- تصفية الجمهور والتكلفة\n- تجميع خطة إطلاق"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "TanStack Start",
+      "React",
+      "TypeScript",
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Curated launch-platform directory",
+        "ar": "دليل منسّق لمنصات الإطلاق"
+      },
+      {
+        "en": "Audience and pricing filters",
+        "ar": "تصفية الجمهور والتكلفة"
+      },
+      {
+        "en": "Build a launch plan",
+        "ar": "تجميع خطة إطلاق"
+      }
+    ],
+    "progress": {
+      "en": "Live public page reviewed and product screenshots captured on 2026-10-28.",
+      "ar": "تمت مراجعة الصفحة العامة والتقاط صور حقيقية للمشروع في ٢٨ أكتوبر ٢٠٢٦."
+    },
+    "issues": [],
+    "suggestions": [],
+    "source": {
+      "workspace": "workspace/minasat-nashr",
+      "last_reviewed": "2026-10-28"
+    }
+  },
+  {
+    "id": "apexyard-cork-shot",
+    "slug": "cork-shot",
+    "title": {
+      "en": "CorkShot",
+      "ar": "كورك شوت"
+    },
+    "description": {
+      "en": "A flick-to-shoot puzzle game: bounce corks into targets and chain blasts across levels and challenges.",
+      "ar": "لعبة ألغاز تصويب بالسحب: وجّه الفلين نحو الأهداف واستغل الارتدادات والانفجارات المتتابعة."
+    },
+    "meta": {
+      "en": "TanStack Start • React • TypeScript",
+      "ar": "TanStack Start • React • TypeScript"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://cork-shot.vercel.app/",
+    "imageSrc": "/projects/cork-shot/cover.webp",
+    "galleryImages": [
+      "/projects/cork-shot/gameplay.webp"
+    ],
+    "contentMDX": {
+      "en": "# CorkShot\n\nA flick-to-shoot puzzle game: bounce corks into targets and chain blasts across levels and challenges.\n\n## Features\n\n- Flick and bounce target puzzles\n- Levels, daily challenges, and drills\n- Level editor and watchable demo",
+      "ar": "# كورك شوت\n\nلعبة ألغاز تصويب بالسحب: وجّه الفلين نحو الأهداف واستغل الارتدادات والانفجارات المتتابعة.\n\n## الميزات\n\n- ألغاز تصويب وارتداد\n- مراحل وتحديات يومية وتدريبات\n- محرر مراحل وعرض تجريبي"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "TanStack Start",
+      "React",
+      "TypeScript",
+      "Games",
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Flick and bounce target puzzles",
+        "ar": "ألغاز تصويب وارتداد"
+      },
+      {
+        "en": "Levels, daily challenges, and drills",
+        "ar": "مراحل وتحديات يومية وتدريبات"
+      },
+      {
+        "en": "Level editor and watchable demo",
+        "ar": "محرر مراحل وعرض تجريبي"
+      }
+    ],
+    "progress": {
+      "en": "Live public page reviewed and product screenshots captured on 2026-10-28.",
+      "ar": "تمت مراجعة الصفحة العامة والتقاط صور حقيقية للمشروع في ٢٨ أكتوبر ٢٠٢٦."
+    },
+    "issues": [],
+    "suggestions": [],
+    "source": {
+      "workspace": "workspace/cork-shot",
+      "last_reviewed": "2026-10-28"
+    }
+  },
+  {
+    "id": "apexyard-wazin",
+    "slug": "wazin",
+    "title": {
+      "en": "Wazin",
+      "ar": "وازن"
+    },
+    "description": {
+      "en": "A personal planning workspace for understanding what your money needs to cover, based on your own records.",
+      "ar": "مساحة تخطيط شخصي لفهم ما يحتاج مالك لتغطيته بناءً على سجلاتك."
+    },
+    "meta": {
+      "en": "Next.js • React • TypeScript",
+      "ar": "Next.js • React • TypeScript"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://wazzin.vercel.app/",
+    "imageSrc": "/projects/wazin/cover.webp",
+    "galleryImages": [],
+    "contentMDX": {
+      "en": "# Wazin\n\nA personal planning workspace for understanding what your money needs to cover, based on your own records.\n\n## Features\n\n- Personal money planning\n- Account sign-in and plan setup\n- Arabic and English",
+      "ar": "# وازن\n\nمساحة تخطيط شخصي لفهم ما يحتاج مالك لتغطيته بناءً على سجلاتك.\n\n## الميزات\n\n- تخطيط المال الشخصي\n- تسجيل الدخول وإعداد الخطة\n- العربية والإنجليزية"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Personal money planning",
+        "ar": "تخطيط المال الشخصي"
+      },
+      {
+        "en": "Account sign-in and plan setup",
+        "ar": "تسجيل الدخول وإعداد الخطة"
+      },
+      {
+        "en": "Arabic and English",
+        "ar": "العربية والإنجليزية"
+      }
+    ],
+    "progress": {
+      "en": "Live public page reviewed and product screenshots captured on 2026-10-28.",
+      "ar": "تمت مراجعة الصفحة العامة والتقاط صور حقيقية للمشروع في ٢٨ أكتوبر ٢٠٢٦."
+    },
+    "issues": [],
+    "suggestions": [],
+    "source": {
+      "workspace": "workspace/wazin",
+      "last_reviewed": "2026-10-28"
+    }
+  },
+  {
+    "id": "apexyard-old-market",
+    "slug": "old-market",
+    "title": {
+      "en": "The Old Market",
+      "ar": "السوق القديم"
+    },
+    "description": {
+      "en": "Ten specialist market studios for comparing specifications, reviewing clear quotes, and preparing orders.",
+      "ar": "عشرة استوديوهات متخصصة لمقارنة المواصفات ومراجعة عروض الأسعار الواضحة وتجهيز الطلبات."
+    },
+    "meta": {
+      "en": "TanStack Start • React • TypeScript",
+      "ar": "TanStack Start • React • TypeScript"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://old-market.vercel.app/",
+    "imageSrc": "/projects/old-market/cover.webp",
+    "galleryImages": [],
+    "contentMDX": {
+      "en": "# The Old Market\n\nTen specialist market studios for comparing specifications, reviewing clear quotes, and preparing orders.\n\n## Features\n\n- Specialist product studios\n- Specification and quote review\n- Catalogue, cart, and orders",
+      "ar": "# السوق القديم\n\nعشرة استوديوهات متخصصة لمقارنة المواصفات ومراجعة عروض الأسعار الواضحة وتجهيز الطلبات.\n\n## الميزات\n\n- استوديوهات منتجات متخصصة\n- مراجعة المواصفات وعروض الأسعار\n- كتالوج وسلة وطلبات"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "TanStack Start",
+      "React",
+      "TypeScript",
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Specialist product studios",
+        "ar": "استوديوهات منتجات متخصصة"
+      },
+      {
+        "en": "Specification and quote review",
+        "ar": "مراجعة المواصفات وعروض الأسعار"
+      },
+      {
+        "en": "Catalogue, cart, and orders",
+        "ar": "كتالوج وسلة وطلبات"
+      }
+    ],
+    "progress": {
+      "en": "Live public page reviewed and product screenshots captured on 2026-10-28.",
+      "ar": "تمت مراجعة الصفحة العامة والتقاط صور حقيقية للمشروع في ٢٨ أكتوبر ٢٠٢٦."
+    },
+    "issues": [],
+    "suggestions": [],
+    "source": {
+      "workspace": "workspace/old-market",
+      "last_reviewed": "2026-10-28"
+    }
+  },
+  {
+    "id": "apexyard-workbench",
+    "slug": "workbench",
+    "title": {
+      "en": "Workbench",
+      "ar": "ورك بنش"
+    },
+    "description": {
+      "en": "One workspace for sales, support, inventory, onboarding, spending, and product feedback, with a public test workspace.",
+      "ar": "مساحة واحدة للمبيعات والدعم والمخزون والتهيئة والمصروفات وآراء المستخدمين، مع مساحة تجربة عامة."
+    },
+    "meta": {
+      "en": "TanStack Start • React • TypeScript",
+      "ar": "TanStack Start • React • TypeScript"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://bench4work.vercel.app/",
+    "imageSrc": "/projects/workbench/cover.webp",
+    "galleryImages": [
+      "/projects/workbench/demo.webp"
+    ],
+    "contentMDX": {
+      "en": "# Workbench\n\nOne workspace for sales, support, inventory, onboarding, spending, and product feedback, with a public test workspace.\n\n## Features\n\n- Six operations modules\n- Shared roles and change history\n- Public demo with fictional data",
+      "ar": "# ورك بنش\n\nمساحة واحدة للمبيعات والدعم والمخزون والتهيئة والمصروفات وآراء المستخدمين، مع مساحة تجربة عامة.\n\n## الميزات\n\n- ست وحدات تشغيل\n- أدوار وسجل تغييرات مشترك\n- عرض تجريبي ببيانات خيالية"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "TanStack Start",
+      "React",
+      "TypeScript",
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Six operations modules",
+        "ar": "ست وحدات تشغيل"
+      },
+      {
+        "en": "Shared roles and change history",
+        "ar": "أدوار وسجل تغييرات مشترك"
+      },
+      {
+        "en": "Public demo with fictional data",
+        "ar": "عرض تجريبي ببيانات خيالية"
+      }
+    ],
+    "progress": {
+      "en": "Live public page reviewed and product screenshots captured on 2026-10-28.",
+      "ar": "تمت مراجعة الصفحة العامة والتقاط صور حقيقية للمشروع في ٢٨ أكتوبر ٢٠٢٦."
+    },
+    "issues": [],
+    "suggestions": [],
+    "source": {
+      "workspace": "workspace/workbench",
+      "last_reviewed": "2026-10-28"
+    }
+  },
+  {
+    "id": "apexyard-lab-by-lab",
+    "slug": "lab-by-lab",
+    "title": {
+      "en": "Taalam Lab",
+      "ar": "تعلم لاب"
+    },
+    "description": {
+      "en": "Ten interactive learning labs covering measurement, probability, vectors, proofs, language, logic, and maps.",
+      "ar": "عشرة معامل تعليمية تفاعلية للقياس والاحتمالات والمتجهات والبراهين واللغة والمنطق والخرائط."
+    },
+    "meta": {
+      "en": "TanStack Start • React • TypeScript",
+      "ar": "TanStack Start • React • TypeScript"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://lab-by-lab.vercel.app/",
+    "imageSrc": "/projects/lab-by-lab/cover.webp",
+    "galleryImages": [],
+    "contentMDX": {
+      "en": "# Taalam Lab\n\nTen interactive learning labs covering measurement, probability, vectors, proofs, language, logic, and maps.\n\n## Features\n\n- Ten bilingual learning labs\n- Visible assumptions and explanations\n- Local browser storage",
+      "ar": "# تعلم لاب\n\nعشرة معامل تعليمية تفاعلية للقياس والاحتمالات والمتجهات والبراهين واللغة والمنطق والخرائط.\n\n## الميزات\n\n- عشرة معامل تعليمية باللغتين\n- افتراضات وشروحات واضحة\n- حفظ محلي في المتصفح"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "TanStack Start",
+      "React",
+      "TypeScript",
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Ten bilingual learning labs",
+        "ar": "عشرة معامل تعليمية باللغتين"
+      },
+      {
+        "en": "Visible assumptions and explanations",
+        "ar": "افتراضات وشروحات واضحة"
+      },
+      {
+        "en": "Local browser storage",
+        "ar": "حفظ محلي في المتصفح"
+      }
+    ],
+    "progress": {
+      "en": "Live public page reviewed and product screenshots captured on 2026-10-28.",
+      "ar": "تمت مراجعة الصفحة العامة والتقاط صور حقيقية للمشروع في ٢٨ أكتوبر ٢٠٢٦."
+    },
+    "issues": [],
+    "suggestions": [],
+    "source": {
+      "workspace": "workspace/lab-by-lab",
+      "last_reviewed": "2026-10-28"
+    }
+  },
+  {
+    "id": "apexyard-musharreh-elcode",
+    "slug": "musharreh-elcode",
+    "title": {
+      "en": "Musharreh Elcode",
+      "ar": "مشرّح الكود"
+    },
+    "description": {
+      "en": "An Arabic and RTL code review lab presenting source-linked diagnoses, evidence, and verified fixes.",
+      "ar": "مختبر مراجعة للكود العربي واتجاه RTL يعرض تشخيصات مرتبطة بالمصدر وأدلة وإصلاحات متحققًا منها."
+    },
+    "meta": {
+      "en": "TanStack Start • React • TypeScript",
+      "ar": "TanStack Start • React • TypeScript"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://musharreh-elcode.vercel.app/",
+    "imageSrc": "/projects/musharreh-elcode/cover.webp",
+    "galleryImages": [],
+    "contentMDX": {
+      "en": "# Musharreh Elcode\n\nAn Arabic and RTL code review lab presenting source-linked diagnoses, evidence, and verified fixes.\n\n## Features\n\n- Arabic and RTL review patterns\n- Code inspection lab\n- Open evaluation set and setup docs",
+      "ar": "# مشرّح الكود\n\nمختبر مراجعة للكود العربي واتجاه RTL يعرض تشخيصات مرتبطة بالمصدر وأدلة وإصلاحات متحققًا منها.\n\n## الميزات\n\n- أنماط مراجعة العربية واتجاه RTL\n- مختبر لفحص الكود\n- مجموعة تقييم مفتوحة ودليل تركيب"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "TanStack Start",
+      "React",
+      "TypeScript",
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Arabic and RTL review patterns",
+        "ar": "أنماط مراجعة العربية واتجاه RTL"
+      },
+      {
+        "en": "Code inspection lab",
+        "ar": "مختبر لفحص الكود"
+      },
+      {
+        "en": "Open evaluation set and setup docs",
+        "ar": "مجموعة تقييم مفتوحة ودليل تركيب"
+      }
+    ],
+    "progress": {
+      "en": "Live public page reviewed and product screenshots captured on 2026-10-28.",
+      "ar": "تمت مراجعة الصفحة العامة والتقاط صور حقيقية للمشروع في ٢٨ أكتوبر ٢٠٢٦."
+    },
+    "issues": [],
+    "suggestions": [],
+    "source": {
+      "workspace": "workspace/musharreh-elcode",
+      "last_reviewed": "2026-10-28"
+    }
+  },
+  {
+    "id": "apexyard-radar",
+    "slug": "radar",
+    "title": {
+      "en": "Radar",
+      "ar": "الرادار"
+    },
+    "description": {
+      "en": "A quiet daily technology reading workspace with source filters, saved items, interests, and opportunities.",
+      "ar": "مساحة هادئة لقراءة نشرة التقنية اليومية مع تصفية المصادر والمحفوظات والاهتمامات والفرص."
+    },
+    "meta": {
+      "en": "Vite • React • TypeScript",
+      "ar": "Vite • React • TypeScript"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://hanyrm-radar.vercel.app/",
+    "imageSrc": "/projects/radar/cover.webp",
+    "galleryImages": [],
+    "contentMDX": {
+      "en": "# Radar\n\nA quiet daily technology reading workspace with source filters, saved items, interests, and opportunities.\n\n## Features\n\n- Four-source daily digest interface\n- Saved items, folders, and interests\n- Local personal workspace",
+      "ar": "# الرادار\n\nمساحة هادئة لقراءة نشرة التقنية اليومية مع تصفية المصادر والمحفوظات والاهتمامات والفرص.\n\n## الميزات\n\n- واجهة نشرة يومية من أربعة مصادر\n- محفوظات ومجلدات واهتمامات\n- مساحة شخصية محلية"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "Vite",
+      "React",
+      "TypeScript",
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Four-source daily digest interface",
+        "ar": "واجهة نشرة يومية من أربعة مصادر"
+      },
+      {
+        "en": "Saved items, folders, and interests",
+        "ar": "محفوظات ومجلدات واهتمامات"
+      },
+      {
+        "en": "Local personal workspace",
+        "ar": "مساحة شخصية محلية"
+      }
+    ],
+    "progress": {
+      "en": "Live public page reviewed and product screenshots captured on 2026-10-28.",
+      "ar": "تمت مراجعة الصفحة العامة والتقاط صور حقيقية للمشروع في ٢٨ أكتوبر ٢٠٢٦."
+    },
+    "issues": [
+      {
+        "en": "The daily feed was empty during the visual review; content fetching was not verified.",
+        "ar": "كانت النشرة اليومية فارغة أثناء المراجعة البصرية؛ لم يتم التحقق من جلب المحتوى."
+      }
+    ],
+    "suggestions": [],
+    "source": {
+      "workspace": "workspace/radar",
+      "last_reviewed": "2026-10-28"
+    }
+  },
+  {
+    "id": "apexyard-last-recipe",
+    "slug": "last-recipe",
+    "title": {
+      "en": "The Last Recipe",
+      "ar": "الوصفة الأخيرة"
+    },
+    "description": {
+      "en": "A family culinary investigation that follows a shared dish through a story of memory and discovery.",
+      "ar": "تحقيق قصصي عائلي يتتبع طبقًا مشتركًا في رحلة من الذكريات والاكتشاف."
+    },
+    "meta": {
+      "en": "TanStack Start • React • TypeScript",
+      "ar": "TanStack Start • React • TypeScript"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://last-recipe.vercel.app/",
+    "imageSrc": "/projects/last-recipe/cover.webp",
+    "galleryImages": [],
+    "contentMDX": {
+      "en": "# The Last Recipe\n\nA family culinary investigation that follows a shared dish through a story of memory and discovery.\n\n## Features\n\n- Story-led culinary mystery\n- Difficulty and seed controls\n- Three save slots",
+      "ar": "# الوصفة الأخيرة\n\nتحقيق قصصي عائلي يتتبع طبقًا مشتركًا في رحلة من الذكريات والاكتشاف.\n\n## الميزات\n\n- لغز طهي قائم على القصة\n- اختيار الصعوبة والبذرة\n- ثلاث خانات حفظ"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "TanStack Start",
+      "React",
+      "TypeScript",
+      "Games",
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Story-led culinary mystery",
+        "ar": "لغز طهي قائم على القصة"
+      },
+      {
+        "en": "Difficulty and seed controls",
+        "ar": "اختيار الصعوبة والبذرة"
+      },
+      {
+        "en": "Three save slots",
+        "ar": "ثلاث خانات حفظ"
+      }
+    ],
+    "progress": {
+      "en": "Live public page reviewed and product screenshots captured on 2026-10-28.",
+      "ar": "تمت مراجعة الصفحة العامة والتقاط صور حقيقية للمشروع في ٢٨ أكتوبر ٢٠٢٦."
+    },
+    "issues": [],
+    "suggestions": [],
+    "source": {
+      "workspace": "workspace/last-recipe",
+      "last_reviewed": "2026-10-28"
+    }
+  },
+  {
+    "id": "apexyard-fihrist",
+    "slug": "fihrist",
+    "title": {
+      "en": "Fihrist",
+      "ar": "فِهرست"
+    },
+    "description": {
+      "en": "A bookmark library for collecting links, organizing shelves, and checking which saved pages still work.",
+      "ar": "مكتبة روابط لحفظ الصفحات وتنظيم الرفوف وفحص الروابط التي ما زالت تعمل."
+    },
+    "meta": {
+      "en": "Vite • React • TypeScript",
+      "ar": "Vite • React • TypeScript"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://fihristy.vercel.app/",
+    "imageSrc": "/projects/fihrist/cover.webp",
+    "galleryImages": [],
+    "contentMDX": {
+      "en": "# Fihrist\n\nA bookmark library for collecting links, organizing shelves, and checking which saved pages still work.\n\n## Features\n\n- Bookmark shelves and collections\n- Link-health review\n- Guest mode and account sync",
+      "ar": "# فِهرست\n\nمكتبة روابط لحفظ الصفحات وتنظيم الرفوف وفحص الروابط التي ما زالت تعمل.\n\n## الميزات\n\n- رفوف ومجموعات روابط\n- مراجعة صحة الروابط\n- وضع ضيف ومزامنة بالحساب"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "Vite",
+      "React",
+      "TypeScript",
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Bookmark shelves and collections",
+        "ar": "رفوف ومجموعات روابط"
+      },
+      {
+        "en": "Link-health review",
+        "ar": "مراجعة صحة الروابط"
+      },
+      {
+        "en": "Guest mode and account sync",
+        "ar": "وضع ضيف ومزامنة بالحساب"
+      }
+    ],
+    "progress": {
+      "en": "Live public page reviewed and product screenshots captured on 2026-10-28.",
+      "ar": "تمت مراجعة الصفحة العامة والتقاط صور حقيقية للمشروع في ٢٨ أكتوبر ٢٠٢٦."
+    },
+    "issues": [],
+    "suggestions": [],
+    "source": {
+      "workspace": "workspace/fihrist",
+      "last_reviewed": "2026-10-28"
+    },
+    "repository": {
+      "branch": "main",
+      "sync": "github",
+      "github": "https://github.com/Hany-R-Mahmoud/fihrist"
+    }
+  },
+  {
+    "id": "apexyard-tools-lab",
+    "slug": "tools-lab",
+    "title": {
+      "en": "Tools Lab",
+      "ar": "مختبر الأدوات"
+    },
+    "description": {
+      "en": "Ten local tools for text direction, cutting layouts, measurements, timecodes, printing, geometry, and route privacy.",
+      "ar": "عشر أدوات محلية لاتجاه النص وتخطيط التقطيع والقياسات والتايم كود والطباعة والهندسة وخصوصية المسارات."
+    },
+    "meta": {
+      "en": "TanStack Start • React • TypeScript",
+      "ar": "TanStack Start • React • TypeScript"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://lab4tools.vercel.app/",
+    "imageSrc": "/projects/tools-lab/cover.webp",
+    "galleryImages": [],
+    "contentMDX": {
+      "en": "# Tools Lab\n\nTen local tools for text direction, cutting layouts, measurements, timecodes, printing, geometry, and route privacy.\n\n## Features\n\n- Ten precision utilities\n- Browser-local file processing\n- Arabic and English",
+      "ar": "# مختبر الأدوات\n\nعشر أدوات محلية لاتجاه النص وتخطيط التقطيع والقياسات والتايم كود والطباعة والهندسة وخصوصية المسارات.\n\n## الميزات\n\n- عشر أدوات دقيقة\n- معالجة الملفات محليًا في المتصفح\n- العربية والإنجليزية"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "TanStack Start",
+      "React",
+      "TypeScript",
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Ten precision utilities",
+        "ar": "عشر أدوات دقيقة"
+      },
+      {
+        "en": "Browser-local file processing",
+        "ar": "معالجة الملفات محليًا في المتصفح"
+      },
+      {
+        "en": "Arabic and English",
+        "ar": "العربية والإنجليزية"
+      }
+    ],
+    "progress": {
+      "en": "Live public page reviewed and product screenshots captured on 2026-10-28.",
+      "ar": "تمت مراجعة الصفحة العامة والتقاط صور حقيقية للمشروع في ٢٨ أكتوبر ٢٠٢٦."
+    },
+    "issues": [],
+    "suggestions": [],
+    "source": {
+      "workspace": "workspace/tools-lab",
+      "last_reviewed": "2026-10-28"
+    }
+  },
+  {
+    "id": "apexyard-ateleet-10",
+    "slug": "ateleet-10",
+    "title": {
+      "en": "Atelier Ten",
+      "ar": "أتيليه عشرة"
+    },
+    "description": {
+      "en": "Ten creative studios for motion, audio, patterns, color, print, and stop-frame planning, saved locally in the browser.",
+      "ar": "عشرة استوديوهات للإبداع في الحركة والصوت والنقوش والألوان والطباعة وتخطيط الكادرات، مع حفظ محلي في المتصفح."
+    },
+    "meta": {
+      "en": "TanStack Start • React • TypeScript",
+      "ar": "TanStack Start • React • TypeScript"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://ateleet-10.vercel.app/",
+    "imageSrc": "/projects/ateleet-10/cover.webp",
+    "galleryImages": [
+      "/projects/ateleet-10/studio.webp"
+    ],
+    "contentMDX": {
+      "en": "# Atelier Ten\n\nTen creative studios for motion, audio, patterns, color, print, and stop-frame planning, saved locally in the browser.\n\n## Features\n\n- Ten creative studios\n- Studio examples and export formats\n- Local projects without file uploads",
+      "ar": "# أتيليه عشرة\n\nعشرة استوديوهات للإبداع في الحركة والصوت والنقوش والألوان والطباعة وتخطيط الكادرات، مع حفظ محلي في المتصفح.\n\n## الميزات\n\n- عشرة استوديوهات إبداعية\n- أمثلة وصيغ تصدير لكل استوديو\n- مشاريع محلية دون رفع ملفات"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "TanStack Start",
+      "React",
+      "TypeScript",
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Ten creative studios",
+        "ar": "عشرة استوديوهات إبداعية"
+      },
+      {
+        "en": "Studio examples and export formats",
+        "ar": "أمثلة وصيغ تصدير لكل استوديو"
+      },
+      {
+        "en": "Local projects without file uploads",
+        "ar": "مشاريع محلية دون رفع ملفات"
+      }
+    ],
+    "progress": {
+      "en": "Live public page reviewed and product screenshots captured on 2026-10-28.",
+      "ar": "تمت مراجعة الصفحة العامة والتقاط صور حقيقية للمشروع في ٢٨ أكتوبر ٢٠٢٦."
+    },
+    "issues": [],
+    "suggestions": [],
+    "source": {
+      "workspace": "workspace/ateleet-10",
+      "last_reviewed": "2026-10-28"
+    }
+  },
+  {
     "id": "apexyard-emojie-crack",
     "slug": "emojie-crack",
     "title": {
@@ -4218,81 +5650,6 @@ export const PORTFOLIO_PROJECTS = [
     },
     "source": {
       "workspace": "workspace/memory-book",
-      "last_reviewed": "2026-07-29"
-    }
-  },
-  {
-    "id": "apexyard-fihrist",
-    "slug": "fihrist",
-    "title": {
-      "en": "fihrist",
-      "ar": "fihrist"
-    },
-    "description": {
-      "en": "A project managed in the Dev Stage workspace.",
-      "ar": "A project managed in the Dev Stage workspace."
-    },
-    "meta": {
-      "en": "Next.js • Vite • React • TypeScript • Tailwind • Vitest",
-      "ar": "Next.js • Vite • React • TypeScript • Tailwind • Vitest"
-    },
-    "category": "Web",
-    "client": {
-      "en": "Independent",
-      "ar": "مستقل"
-    },
-    "role": {
-      "en": "Founder & Builder",
-      "ar": "المؤسس والمطور"
-    },
-    "year": "2026",
-    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EFI%3C%2Ftext%3E%3C%2Fsvg%3E",
-    "galleryImages": [],
-    "contentMDX": {
-      "en": "# fihrist\n\nA project managed in the Dev Stage workspace.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Current feature inventory: Unknown / verify.\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
-      "ar": "# fihrist\n\nA project managed in the Dev Stage workspace.\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Current feature inventory: Unknown / verify.\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
-    },
-    "isPublished": true,
-    "featured": false,
-    "tags": [
-      "Next.js",
-      "Vite",
-      "React",
-      "TypeScript",
-      "Tailwind",
-      "Vitest",
-      "showcase"
-    ],
-    "status": "showcase",
-    "features": [
-      {
-        "en": "Current feature inventory: Unknown / verify.",
-        "ar": "Current feature inventory: Unknown / verify."
-      }
-    ],
-    "progress": {
-      "en": "Classified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.",
-      "ar": "Classified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence."
-    },
-    "issues": [
-      {
-        "en": "No conventional test directory was detected.",
-        "ar": "No conventional test directory was detected."
-      }
-    ],
-    "suggestions": [
-      {
-        "en": "Add reviewed screenshots and a fuller case study when visual evidence is available.",
-        "ar": "Add reviewed screenshots and a fuller case study when visual evidence is available."
-      }
-    ],
-    "repository": {
-      "branch": "main",
-      "sync": "github",
-      "github": "https://github.com/Hany-R-Mahmoud/fihrist"
-    },
-    "source": {
-      "workspace": "workspace/fihrist",
       "last_reviewed": "2026-07-29"
     }
   },

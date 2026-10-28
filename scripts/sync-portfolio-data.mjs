@@ -577,10 +577,13 @@ const buildProject = (registryProject, apexyardRoot, index) => {
 
 const apexyardRoot = resolveApexyardRoot();
 const registryProjects = parseRegistry(readText(join(apexyardRoot, 'apexyard.projects.yaml')));
-const projects = registryProjects
+const generatedProjects = registryProjects
   .filter((project) => project.portfolio !== 'false')
   .filter((project) => readJson(join(apexyardRoot, project.workspace, 'docs', 'portfolio.json')).portfolio !== false)
   .map((project, index) => buildProject(project, apexyardRoot, index));
+const curatedProjects = JSON.parse(readFileSync(join(projectRoot, 'src/data/vercel-projects.json'), 'utf8'));
+const curatedSlugs = new Set(curatedProjects.map((project) => project.slug));
+const projects = [...curatedProjects, ...generatedProjects.filter((project) => !curatedSlugs.has(project.slug))];
 const profile = {
   name: { en: 'Hany Mahmoud', ar: 'هاني' },
   title: {
