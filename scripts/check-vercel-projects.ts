@@ -4,7 +4,10 @@ import curated from '../src/data/vercel-projects.json';
 import { PORTFOLIO_PROJECTS } from '../src/data/portfolioData';
 const slugs = PORTFOLIO_PROJECTS.map(project => project.slug);
 assert.equal(new Set(curated.map(project => project.slug)).size, curated.length, 'Reviewed project routes must be unique');
-assert.equal(curated.length, 21, 'All requested projects must be included');
+assert.equal(curated.length, 61, 'All requested projects must be included');
+const curatedSlugs = new Set(curated.map(project => project.slug));
+assert.deepEqual(slugs.slice(-curated.length), curated.map(project => project.slug), 'Today’s additions must follow the previous arrangement');
+assert.ok(PORTFOLIO_PROJECTS.slice(0, -curated.length).every(project => !curatedSlugs.has(project.slug)));
 for (const project of curated) {
   assert.equal(slugs.filter(slug => slug === project.slug).length, 1, project.slug + ' must have one route');
   const entry = PORTFOLIO_PROJECTS.find(candidate => candidate.slug === project.slug);
@@ -22,5 +25,5 @@ for (const project of curated) {
   }
 }
 assert.deepEqual(JSON.parse(readFileSync('vercel.json', 'utf8')).git.deploymentEnabled, { '*': false, main: true });
-console.log('Verified 21 reviewed project entries, unique routes, bilingual content, screenshot files, and deployment policy.');
+console.log('Verified 61 reviewed project entries, appended order, unique routes, bilingual content, screenshot files, and deployment policy.');
 

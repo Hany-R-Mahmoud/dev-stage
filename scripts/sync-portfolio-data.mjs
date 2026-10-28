@@ -583,7 +583,7 @@ const generatedProjects = registryProjects
   .map((project, index) => buildProject(project, apexyardRoot, index));
 const curatedProjects = JSON.parse(readFileSync(join(projectRoot, 'src/data/vercel-projects.json'), 'utf8'));
 const curatedSlugs = new Set(curatedProjects.map((project) => project.slug));
-const projects = [...curatedProjects, ...generatedProjects.filter((project) => !curatedSlugs.has(project.slug))];
+const projects = [...generatedProjects.filter((project) => !curatedSlugs.has(project.slug)), ...curatedProjects];
 const profile = {
   name: { en: 'Hany Mahmoud', ar: 'هاني' },
   title: {
