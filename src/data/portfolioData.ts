@@ -6530,7 +6530,7 @@ export const PORTFOLIO_PROJECTS = [
       "ar": "المؤسس والمطور"
     },
     "year": "2026",
-    "liveUrl": "https://growth4kit.vercel.app/",
+    "liveUrl": "https://pulse2kit.vercel.app/",
     "imageSrc": "/projects/growth-kit/cover.webp",
     "galleryImages": [],
     "contentMDX": {
