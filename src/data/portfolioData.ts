@@ -6162,49 +6162,6 @@ export const PORTFOLIO_PROJECTS = [
     "stage": "published"
   },
   {
-    "id": "apexyard-mohtaway",
-    "slug": "mohtaway",
-    "title": {
-      "en": "Mohtaway",
-      "ar": "محتواي"
-    },
-    "description": {
-      "en": "A content-creation workspace connecting ideas, production, calendars and a personal asset library.",
-      "ar": "مساحة لصناعة المحتوى تربط الأفكار والإنتاج والتقويم ومكتبة الملفات الشخصية."
-    },
-    "meta": {
-      "en": "Vite • React • TypeScript",
-      "ar": "Vite • React • TypeScript"
-    },
-    "category": "Web",
-    "client": {
-      "en": "Independent",
-      "ar": "مستقل"
-    },
-    "role": {
-      "en": "Founder & Builder",
-      "ar": "المؤسس والمطور"
-    },
-    "year": "2026",
-    "liveUrl": "https://moh-taway.vercel.app/",
-    "imageSrc": "/projects/mohtaway/cover.webp",
-    "galleryImages": [],
-    "contentMDX": {
-      "en": "# Mohtaway\n\nA content-creation workspace connecting ideas, production, calendars and a personal asset library.",
-      "ar": "# محتواي\n\nمساحة لصناعة المحتوى تربط الأفكار والإنتاج والتقويم ومكتبة الملفات الشخصية."
-    },
-    "isPublished": true,
-    "featured": false,
-    "tags": [
-      "Vite",
-      "React",
-      "TypeScript",
-      "in-progress"
-    ],
-    "status": "in-progress",
-    "stage": "published"
-  },
-  {
     "id": "apexyard-tajheez",
     "slug": "tajheez",
     "title": {
@@ -7450,5 +7407,393 @@ export const PORTFOLIO_PROJECTS = [
     ],
     "status": "in-progress",
     "stage": "published"
+  },
+  {
+    "id": "apexyard-monasabati",
+    "slug": "monasabati",
+    "title": {
+      "en": "Monasabati",
+      "ar": "مناسباتي"
+    },
+    "description": {
+      "en": "Plan gatherings with invitations, guest responses, and shared event checklists.",
+      "ar": "نظّم اللمّة بالدعوات وردود الضيوف وقوائم تجهيزات مشتركة."
+    },
+    "meta": {
+      "en": "Vite • React • TypeScript",
+      "ar": "Vite • React • TypeScript"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://monasabatti.vercel.app/",
+    "imageSrc": "/projects/monasabati/cover.jpg",
+    "galleryImages": [
+      "/projects/monasabati/overview.jpg"
+    ],
+    "contentMDX": {
+      "en": "# Monasabati\n\nPlan gatherings with invitations, guest responses, and shared event checklists.\n\n## Features\n\n- Invitations and guest responses\n- Shared checklists and preparations\n- Arabic and English interface",
+      "ar": "# مناسباتي\n\nنظّم اللمّة بالدعوات وردود الضيوف وقوائم تجهيزات مشتركة.\n\n## الميزات\n\n- الدعوات وردود الضيوف\n- قوائم التجهيزات والتحضير المشترك\n- واجهة عربية وإنجليزية"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "Vite",
+      "React",
+      "TypeScript",
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Invitations and guest responses",
+        "ar": "الدعوات وردود الضيوف"
+      },
+      {
+        "en": "Shared checklists and preparations",
+        "ar": "قوائم التجهيزات والتحضير المشترك"
+      },
+      {
+        "en": "Arabic and English interface",
+        "ar": "واجهة عربية وإنجليزية"
+      }
+    ],
+    "progress": {
+      "en": "Public interface reviewed and screenshots captured on 2026-10-29. Account and backend workflows were not tested.",
+      "ar": "تمت مراجعة الواجهة العامة والتقاط صور في ٢٩ أكتوبر ٢٠٢٦. لم تُختبر مهام الحساب والخادم."
+    },
+    "issues": [],
+    "suggestions": []
+  },
+  {
+    "id": "apexyard-mohtaway",
+    "slug": "mohtaway",
+    "title": {
+      "en": "Mohtaway",
+      "ar": "محتواي"
+    },
+    "description": {
+      "en": "A content workspace connecting ideas, drafts, production, publishing calendars, and a personal asset library.",
+      "ar": "مساحة لصناعة المحتوى تربط الأفكار والمسودات والإنتاج وتقويم النشر ومكتبة الملفات الشخصية."
+    },
+    "meta": {
+      "en": "Vite • React • TypeScript",
+      "ar": "Vite • React • TypeScript"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://moh-taway.vercel.app/",
+    "imageSrc": "/projects/mohtaway/cover.jpg",
+    "galleryImages": [
+      "/projects/mohtaway/overview.jpg"
+    ],
+    "contentMDX": {
+      "en": "# Mohtaway\n\nA content workspace connecting ideas, drafts, production, publishing calendars, and a personal asset library.\n\n## Features\n\n- Idea vault and content workflow\n- Publishing calendar\n- Personal asset library",
+      "ar": "# محتواي\n\nمساحة لصناعة المحتوى تربط الأفكار والمسودات والإنتاج وتقويم النشر ومكتبة الملفات الشخصية.\n\n## الميزات\n\n- خزنة الأفكار ومراحل المحتوى\n- تقويم النشر\n- مكتبة الملفات الشخصية"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "Vite",
+      "React",
+      "TypeScript",
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Idea vault and content workflow",
+        "ar": "خزنة الأفكار ومراحل المحتوى"
+      },
+      {
+        "en": "Publishing calendar",
+        "ar": "تقويم النشر"
+      },
+      {
+        "en": "Personal asset library",
+        "ar": "مكتبة الملفات الشخصية"
+      }
+    ],
+    "progress": {
+      "en": "Public interface reviewed and screenshots captured on 2026-10-29. Account and backend workflows were not tested.",
+      "ar": "تمت مراجعة الواجهة العامة والتقاط صور في ٢٩ أكتوبر ٢٠٢٦. لم تُختبر مهام الحساب والخادم."
+    },
+    "issues": [],
+    "suggestions": []
+  },
+  {
+    "id": "apexyard-mohaki",
+    "slug": "mohaki",
+    "title": {
+      "en": "Mohaki",
+      "ar": "المحاكي"
+    },
+    "description": {
+      "en": "Rehearse marketing messages with simulated personas and A/B comparisons before launch. Simulations are not real user research.",
+      "ar": "جرّب رسائلك التسويقية مع شخصيات محاكاة ومقارنة A/B قبل الإطلاق. النتائج محاكاة وليست بحثًا مع مستخدمين حقيقيين."
+    },
+    "meta": {
+      "en": "Vite • React • TypeScript",
+      "ar": "Vite • React • TypeScript"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://mohaki-wheat.vercel.app/",
+    "imageSrc": "/projects/mohaki/cover.jpg",
+    "galleryImages": [
+      "/projects/mohaki/overview.jpg"
+    ],
+    "contentMDX": {
+      "en": "# Mohaki\n\nRehearse marketing messages with simulated personas and A/B comparisons before launch. Simulations are not real user research.\n\n## Features\n\n- Text and public-page inputs\n- Ten simulated personas and A/B comparison\n- Simulation history and model settings",
+      "ar": "# المحاكي\n\nجرّب رسائلك التسويقية مع شخصيات محاكاة ومقارنة A/B قبل الإطلاق. النتائج محاكاة وليست بحثًا مع مستخدمين حقيقيين.\n\n## الميزات\n\n- إدخال النصوص والصفحات العامة\n- عشر شخصيات محاكاة ومقارنة A/B\n- سجل المحاكاة وإعدادات النماذج"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "Vite",
+      "React",
+      "TypeScript",
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Text and public-page inputs",
+        "ar": "إدخال النصوص والصفحات العامة"
+      },
+      {
+        "en": "Ten simulated personas and A/B comparison",
+        "ar": "عشر شخصيات محاكاة ومقارنة A/B"
+      },
+      {
+        "en": "Simulation history and model settings",
+        "ar": "سجل المحاكاة وإعدادات النماذج"
+      }
+    ],
+    "progress": {
+      "en": "Public interface reviewed and screenshots captured on 2026-10-29. Account and backend workflows were not tested.",
+      "ar": "تمت مراجعة الواجهة العامة والتقاط صور في ٢٩ أكتوبر ٢٠٢٦. لم تُختبر مهام الحساب والخادم."
+    },
+    "issues": [],
+    "suggestions": []
+  },
+  {
+    "id": "apexyard-hadir-remote-work",
+    "slug": "hadir-remote-work",
+    "title": {
+      "en": "Hadir",
+      "ar": "حاضر"
+    },
+    "description": {
+      "en": "A shared workspace for distributed teams, with standups, focus rooms, time zones, retrospectives, and handoffs.",
+      "ar": "مساحة للفرق عن بُعد تجمع تحديثات الفريق وغرف التركيز والمناطق الزمنية والمراجعات وتسليم المهام."
+    },
+    "meta": {
+      "en": "Next.js • React • TypeScript",
+      "ar": "Next.js • React • TypeScript"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://hadir-remote-work.vercel.app/",
+    "imageSrc": "/projects/hadir-remote-work/cover.jpg",
+    "galleryImages": [
+      "/projects/hadir-remote-work/overview.jpg"
+    ],
+    "contentMDX": {
+      "en": "# Hadir\n\nA shared workspace for distributed teams, with standups, focus rooms, time zones, retrospectives, and handoffs.\n\n## Features\n\n- Standups, team map, and focus rooms\n- Retrospectives, action items, and handoffs\n- Onboarding and weekly digests",
+      "ar": "# حاضر\n\nمساحة للفرق عن بُعد تجمع تحديثات الفريق وغرف التركيز والمناطق الزمنية والمراجعات وتسليم المهام.\n\n## الميزات\n\n- تحديثات الفريق وخريطته وغرف التركيز\n- المراجعات والإجراءات وتسليم المهام\n- تهيئة الأعضاء والملخصات الأسبوعية"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Standups, team map, and focus rooms",
+        "ar": "تحديثات الفريق وخريطته وغرف التركيز"
+      },
+      {
+        "en": "Retrospectives, action items, and handoffs",
+        "ar": "المراجعات والإجراءات وتسليم المهام"
+      },
+      {
+        "en": "Onboarding and weekly digests",
+        "ar": "تهيئة الأعضاء والملخصات الأسبوعية"
+      }
+    ],
+    "progress": {
+      "en": "Public interface reviewed and screenshots captured on 2026-10-29. Account and backend workflows were not tested.",
+      "ar": "تمت مراجعة الواجهة العامة والتقاط صور في ٢٩ أكتوبر ٢٠٢٦. لم تُختبر مهام الحساب والخادم."
+    },
+    "issues": [],
+    "suggestions": []
+  },
+  {
+    "id": "apexyard-athar-nonprofit",
+    "slug": "athar-nonprofit",
+    "title": {
+      "en": "Athar",
+      "ar": "أثر"
+    },
+    "description": {
+      "en": "A nonprofit workspace connecting programs, grants, volunteers, beneficiaries, and evidence for impact reporting.",
+      "ar": "مساحة للجمعيات تربط البرامج والمنح والمتطوعين والمستفيدين وأدلة تقارير الأثر."
+    },
+    "meta": {
+      "en": "TanStack Start • React • TypeScript",
+      "ar": "TanStack Start • React • TypeScript"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://athar-nonprofit.vercel.app/",
+    "imageSrc": "/projects/athar-nonprofit/cover.jpg",
+    "galleryImages": [
+      "/projects/athar-nonprofit/overview.jpg"
+    ],
+    "contentMDX": {
+      "en": "# Athar\n\nA nonprofit workspace connecting programs, grants, volunteers, beneficiaries, and evidence for impact reporting.\n\n## Features\n\n- Programs, grants, and volunteer coordination\n- Beneficiaries and documented volunteer hours\n- Impact packages and board follow-ups",
+      "ar": "# أثر\n\nمساحة للجمعيات تربط البرامج والمنح والمتطوعين والمستفيدين وأدلة تقارير الأثر.\n\n## الميزات\n\n- البرامج والمنح وتنسيق المتطوعين\n- المستفيدون وساعات التطوع الموثقة\n- حزم الأثر ومتابعة قرارات المجلس"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "TanStack Start",
+      "React",
+      "TypeScript",
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Programs, grants, and volunteer coordination",
+        "ar": "البرامج والمنح وتنسيق المتطوعين"
+      },
+      {
+        "en": "Beneficiaries and documented volunteer hours",
+        "ar": "المستفيدون وساعات التطوع الموثقة"
+      },
+      {
+        "en": "Impact packages and board follow-ups",
+        "ar": "حزم الأثر ومتابعة قرارات المجلس"
+      }
+    ],
+    "progress": {
+      "en": "Public interface reviewed and screenshots captured on 2026-10-29. Account and backend workflows were not tested.",
+      "ar": "تمت مراجعة الواجهة العامة والتقاط صور في ٢٩ أكتوبر ٢٠٢٦. لم تُختبر مهام الحساب والخادم."
+    },
+    "issues": [],
+    "suggestions": []
+  },
+  {
+    "id": "apexyard-studio-crm",
+    "slug": "studio-crm",
+    "title": {
+      "en": "StudioCRM",
+      "ar": "ستوديو CRM"
+    },
+    "description": {
+      "en": "A bilingual sales CRM for small teams to manage companies, contacts, deals, tasks, follow-ups, and sales reports.",
+      "ar": "نظام مبيعات بالعربية والإنجليزية للفرق الصغيرة لإدارة الشركات وجهات الاتصال والصفقات والمهام والمتابعات وتقارير المبيعات."
+    },
+    "meta": {
+      "en": "Next.js • React • TypeScript",
+      "ar": "Next.js • React • TypeScript"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://cee-arr-emm.vercel.app/",
+    "imageSrc": "/projects/studio-crm/cover.jpg",
+    "galleryImages": [],
+    "contentMDX": {
+      "en": "# StudioCRM\n\nA bilingual sales CRM for small teams to manage companies, contacts, deals, tasks, follow-ups, and sales reports.\n\n## Features\n\n- Companies, contacts, deals, and tasks\n- Follow-up preparation and sales reports\n- CSV import/export and organization permissions",
+      "ar": "# ستوديو CRM\n\nنظام مبيعات بالعربية والإنجليزية للفرق الصغيرة لإدارة الشركات وجهات الاتصال والصفقات والمهام والمتابعات وتقارير المبيعات.\n\n## الميزات\n\n- الشركات وجهات الاتصال والصفقات والمهام\n- تجهيز المتابعات وتقارير المبيعات\n- استيراد وتصدير CSV وصلاحيات المؤسسة"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Companies, contacts, deals, and tasks",
+        "ar": "الشركات وجهات الاتصال والصفقات والمهام"
+      },
+      {
+        "en": "Follow-up preparation and sales reports",
+        "ar": "تجهيز المتابعات وتقارير المبيعات"
+      },
+      {
+        "en": "CSV import/export and organization permissions",
+        "ar": "استيراد وتصدير CSV وصلاحيات المؤسسة"
+      }
+    ],
+    "progress": {
+      "en": "Public sign-in screenshot captured on 2026-10-29. Features described from project documentation; authenticated workflows were not tested.",
+      "ar": "تم تصوير صفحة الدخول في ٢٩ أكتوبر ٢٠٢٦. وصف الميزات من توثيق المشروع؛ لم تُختبر المهام داخل الحساب."
+    },
+    "issues": [],
+    "suggestions": []
   }
 ] satisfies Project[];

@@ -101,8 +101,6 @@
   <url><loc>https://dev2stage.vercel.app/ar/projects/pillar-pace</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/zakerat-alkholod</loc></url>
   <url><loc>https://dev2stage.vercel.app/ar/projects/zakerat-alkholod</loc></url>
-  <url><loc>https://dev2stage.vercel.app/en/projects/mohtaway</loc></url>
-  <url><loc>https://dev2stage.vercel.app/ar/projects/mohtaway</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/tajheez</loc></url>
   <url><loc>https://dev2stage.vercel.app/ar/projects/tajheez</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/mozakarti</loc></url>
@@ -161,4 +159,16 @@
   <url><loc>https://dev2stage.vercel.app/ar/projects/storychain</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/sakkala-studio</loc></url>
   <url><loc>https://dev2stage.vercel.app/ar/projects/sakkala-studio</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/monasabati</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/monasabati</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/mohtaway</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/mohtaway</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/mohaki</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/mohaki</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/hadir-remote-work</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/hadir-remote-work</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/athar-nonprofit</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/athar-nonprofit</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/studio-crm</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/studio-crm</loc></url>
 </urlset>
