@@ -3495,5 +3495,902 @@
     },
     "issues": [],
     "suggestions": []
+  },
+  {
+    "id": "apexyard-mahfazzti",
+    "slug": "mahfazzti",
+    "title": {
+      "en": "Mahfazzti",
+      "ar": "محفظتي"
+    },
+    "description": {
+      "en": "A personal and household expense ledger for tracking spending, upcoming commitments, and available versus reserved money.",
+      "ar": "دفتر للمصاريف الشخصية والعائلية يجمع الإنفاق والالتزامات القادمة والمبالغ المتاحة والمحجوزة."
+    },
+    "meta": {
+      "en": "Next.js • React • TypeScript",
+      "ar": "Next.js • React • TypeScript"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://mahfazzti.vercel.app/",
+    "imageSrc": "/projects/mahfazzti/cover.webp",
+    "galleryImages": [
+      "/projects/mahfazzti/overview.webp"
+    ],
+    "contentMDX": {
+      "en": "# Mahfazzti\n\nA personal and household expense ledger for tracking spending, upcoming commitments, and available versus reserved money.\n\n## Features\n\n- Expenses, commitments, and budget reviews\n- Private personal spaces and invited households\n- Data export and a labelled illustrative preview",
+      "ar": "# محفظتي\n\nدفتر للمصاريف الشخصية والعائلية يجمع الإنفاق والالتزامات القادمة والمبالغ المتاحة والمحجوزة.\n\n## الميزات\n\n- المصروفات والالتزامات ومراجعة الميزانية\n- مساحات شخصية خاصة ومشاركة العائلة بالدعوة\n- تصدير البيانات ومعاينة ببيانات توضيحية"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Expenses, commitments, and budget reviews",
+        "ar": "المصروفات والالتزامات ومراجعة الميزانية"
+      },
+      {
+        "en": "Private personal spaces and invited households",
+        "ar": "مساحات شخصية خاصة ومشاركة العائلة بالدعوة"
+      },
+      {
+        "en": "Data export and a labelled illustrative preview",
+        "ar": "تصدير البيانات ومعاينة ببيانات توضيحية"
+      }
+    ],
+    "progress": {
+      "en": "Public interface reviewed and screenshots captured on 2026-11-07. Features cross-checked with project documentation; authenticated and backend workflows were not tested.",
+      "ar": "تمت مراجعة الواجهة العامة والتقاط الصور في ٧ نوفمبر ٢٠٢٦. روجعت الميزات مع توثيق المشروع؛ لم تُختبر المهام داخل الحساب أو الخادم."
+    },
+    "issues": [],
+    "suggestions": [],
+    "source": {
+      "workspace": "workspace/published/mahfazzti",
+      "last_reviewed": "2026-11-07"
+    }
+  },
+  {
+    "id": "apexyard-al-dukkan",
+    "slug": "al-dukkan",
+    "title": {
+      "en": "Dukkan",
+      "ar": "دكّان"
+    },
+    "description": {
+      "en": "A neighbourhood shop workspace connecting the seller’s daily records with a public single-shop catalog.",
+      "ar": "مساحة لتنظيم يوم المحل تربط سجلات البائع بكتالوج عام لمحل واحد."
+    },
+    "meta": {
+      "en": "Vite • React • TypeScript",
+      "ar": "Vite • React • TypeScript"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://al-dukkan.vercel.app/",
+    "imageSrc": "/projects/al-dukkan/cover.webp",
+    "galleryImages": [
+      "/projects/al-dukkan/overview.webp"
+    ],
+    "contentMDX": {
+      "en": "# Dukkan\n\nA neighbourhood shop workspace connecting the seller’s daily records with a public single-shop catalog.\n\n## Features\n\n- Sales, stock movements, reservations, and returns\n- Guest catalog and pickup requests\n- Recorded dues and internal shop documents",
+      "ar": "# دكّان\n\nمساحة لتنظيم يوم المحل تربط سجلات البائع بكتالوج عام لمحل واحد.\n\n## الميزات\n\n- المبيعات وحركة المخزون والحجوزات والمرتجعات\n- كتالوج للزوار وطلبات الاستلام\n- تسجيل المستحقات ومستندات المحل الداخلية"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "Vite",
+      "React",
+      "TypeScript",
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Sales, stock movements, reservations, and returns",
+        "ar": "المبيعات وحركة المخزون والحجوزات والمرتجعات"
+      },
+      {
+        "en": "Guest catalog and pickup requests",
+        "ar": "كتالوج للزوار وطلبات الاستلام"
+      },
+      {
+        "en": "Recorded dues and internal shop documents",
+        "ar": "تسجيل المستحقات ومستندات المحل الداخلية"
+      }
+    ],
+    "progress": {
+      "en": "Public interface reviewed and screenshots captured on 2026-11-07. Features cross-checked with project documentation; authenticated and backend workflows were not tested.",
+      "ar": "تمت مراجعة الواجهة العامة والتقاط الصور في ٧ نوفمبر ٢٠٢٦. روجعت الميزات مع توثيق المشروع؛ لم تُختبر المهام داخل الحساب أو الخادم."
+    },
+    "issues": [],
+    "suggestions": [],
+    "source": {
+      "workspace": "workspace/published/al-dukkan",
+      "last_reviewed": "2026-11-07"
+    }
+  },
+  {
+    "id": "apexyard-zakarti",
+    "slug": "zakarti",
+    "title": {
+      "en": "Zakarti",
+      "ar": "ذاكرتي"
+    },
+    "description": {
+      "en": "An Arabic daily memory-exercise game with a daily set, eight stages, and spaced word-pair retrieval.",
+      "ar": "لعبة عربية لتمارين الذاكرة تجمع مجموعة يومية وثماني مراحل واسترجاع أزواج الكلمات بمراجعة متباعدة."
+    },
+    "meta": {
+      "en": "TanStack Start • React • TypeScript",
+      "ar": "TanStack Start • React • TypeScript"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://zakarti.vercel.app/",
+    "imageSrc": "/projects/zakarti/cover.webp",
+    "galleryImages": [
+      "/projects/zakarti/overview.webp"
+    ],
+    "contentMDX": {
+      "en": "# Zakarti\n\nAn Arabic daily memory-exercise game with a daily set, eight stages, and spaced word-pair retrieval.\n\n## Features\n\n- Four daily exercises with separate activity scores\n- Eight stages and four word-pair decks\n- Guest play and clearly separated extra practice",
+      "ar": "# ذاكرتي\n\nلعبة عربية لتمارين الذاكرة تجمع مجموعة يومية وثماني مراحل واسترجاع أزواج الكلمات بمراجعة متباعدة.\n\n## الميزات\n\n- أربعة تمارين يومية بنتائج منفصلة لكل نشاط\n- ثماني مراحل وأربع مجموعات لأزواج الكلمات\n- اللعب كضيف وفصل التمرين الإضافي عن الجولات المحسوبة"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "TanStack Start",
+      "React",
+      "TypeScript",
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Four daily exercises with separate activity scores",
+        "ar": "أربعة تمارين يومية بنتائج منفصلة لكل نشاط"
+      },
+      {
+        "en": "Eight stages and four word-pair decks",
+        "ar": "ثماني مراحل وأربع مجموعات لأزواج الكلمات"
+      },
+      {
+        "en": "Guest play and clearly separated extra practice",
+        "ar": "اللعب كضيف وفصل التمرين الإضافي عن الجولات المحسوبة"
+      }
+    ],
+    "progress": {
+      "en": "Public interface reviewed and screenshots captured on 2026-11-07. Features cross-checked with project documentation; authenticated and backend workflows were not tested.",
+      "ar": "تمت مراجعة الواجهة العامة والتقاط الصور في ٧ نوفمبر ٢٠٢٦. روجعت الميزات مع توثيق المشروع؛ لم تُختبر المهام داخل الحساب أو الخادم."
+    },
+    "issues": [],
+    "suggestions": [],
+    "source": {
+      "workspace": "workspace/published/zakarti",
+      "last_reviewed": "2026-11-07"
+    }
+  },
+  {
+    "id": "apexyard-daftar-eilti-el-sehhi",
+    "slug": "daftar-eilti-el-sehhi",
+    "title": {
+      "en": "Daftar Eilti El Sehhi",
+      "ar": "دفتر عيلتي الصحي"
+    },
+    "description": {
+      "en": "A private family organizer for each member’s health paperwork, documents, and manually chosen reminder dates.",
+      "ar": "دفتر عائلي خاص لتنظيم أوراق كل فرد ومستنداته الصحية ومواعيد التذكير التي تحددها العائلة."
+    },
+    "meta": {
+      "en": "TanStack Start • React • TypeScript",
+      "ar": "TanStack Start • React • TypeScript"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://daftar-el-eila.vercel.app/",
+    "imageSrc": "/projects/daftar-eilti-el-sehhi/cover.webp",
+    "galleryImages": [
+      "/projects/daftar-eilti-el-sehhi/overview.webp"
+    ],
+    "contentMDX": {
+      "en": "# Daftar Eilti El Sehhi\n\nA private family organizer for each member’s health paperwork, documents, and manually chosen reminder dates.\n\n## Features\n\n- Separate member files and six record types\n- Documents and user-entered reminder dates\n- Family roles and a labelled guest preview",
+      "ar": "# دفتر عيلتي الصحي\n\nدفتر عائلي خاص لتنظيم أوراق كل فرد ومستنداته الصحية ومواعيد التذكير التي تحددها العائلة.\n\n## الميزات\n\n- ملفات منفصلة للأفراد وستة أنواع من السجلات\n- المستندات ومواعيد التذكير المدخلة يدويًا\n- صلاحيات للعائلة وتجربة للزوار ببيانات توضيحية"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "TanStack Start",
+      "React",
+      "TypeScript",
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Separate member files and six record types",
+        "ar": "ملفات منفصلة للأفراد وستة أنواع من السجلات"
+      },
+      {
+        "en": "Documents and user-entered reminder dates",
+        "ar": "المستندات ومواعيد التذكير المدخلة يدويًا"
+      },
+      {
+        "en": "Family roles and a labelled guest preview",
+        "ar": "صلاحيات للعائلة وتجربة للزوار ببيانات توضيحية"
+      }
+    ],
+    "progress": {
+      "en": "Public interface reviewed and screenshots captured on 2026-11-07. Features cross-checked with project documentation; authenticated and backend workflows were not tested.",
+      "ar": "تمت مراجعة الواجهة العامة والتقاط الصور في ٧ نوفمبر ٢٠٢٦. روجعت الميزات مع توثيق المشروع؛ لم تُختبر المهام داخل الحساب أو الخادم."
+    },
+    "issues": [],
+    "suggestions": [],
+    "source": {
+      "workspace": "workspace/published/daftar-eilti-el-sehhi",
+      "last_reviewed": "2026-11-07"
+    }
+  },
+  {
+    "id": "apexyard-mofakker",
+    "slug": "mofakker",
+    "title": {
+      "en": "Mofakker",
+      "ar": "مفكر"
+    },
+    "description": {
+      "en": "An Arabic planning workspace for a solo creator to turn ideas into drafts, weekly plans, and manually tracked published posts.",
+      "ar": "مساحة عربية لصانع المحتوى الفردي تحول الأفكار إلى مسودات وخطة أسبوعية ومتابعة النشر اليدوي."
+    },
+    "meta": {
+      "en": "TanStack Start • React • TypeScript",
+      "ar": "TanStack Start • React • TypeScript"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://mofakker.vercel.app/",
+    "imageSrc": "/projects/mofakker/cover.webp",
+    "galleryImages": [
+      "/projects/mofakker/overview.webp"
+    ],
+    "contentMDX": {
+      "en": "# Mofakker\n\nAn Arabic planning workspace for a solo creator to turn ideas into drafts, weekly plans, and manually tracked published posts.\n\n## Features\n\n- Idea bank and content preparation steps\n- Saturday–Friday planning and series cadence\n- Local guest workspace with data export",
+      "ar": "# مفكر\n\nمساحة عربية لصانع المحتوى الفردي تحول الأفكار إلى مسودات وخطة أسبوعية ومتابعة النشر اليدوي.\n\n## الميزات\n\n- بنك أفكار وخطوات تجهيز المحتوى\n- خطة من السبت للجمعة وإيقاع للسلاسل\n- مساحة محلية للضيف مع تصدير البيانات"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "TanStack Start",
+      "React",
+      "TypeScript",
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Idea bank and content preparation steps",
+        "ar": "بنك أفكار وخطوات تجهيز المحتوى"
+      },
+      {
+        "en": "Saturday–Friday planning and series cadence",
+        "ar": "خطة من السبت للجمعة وإيقاع للسلاسل"
+      },
+      {
+        "en": "Local guest workspace with data export",
+        "ar": "مساحة محلية للضيف مع تصدير البيانات"
+      }
+    ],
+    "progress": {
+      "en": "Public interface reviewed and screenshots captured on 2026-11-07. Features cross-checked with project documentation; authenticated and backend workflows were not tested.",
+      "ar": "تمت مراجعة الواجهة العامة والتقاط الصور في ٧ نوفمبر ٢٠٢٦. روجعت الميزات مع توثيق المشروع؛ لم تُختبر المهام داخل الحساب أو الخادم."
+    },
+    "issues": [],
+    "suggestions": [],
+    "source": {
+      "workspace": "workspace/published/mofakker",
+      "last_reviewed": "2026-11-07"
+    }
+  },
+  {
+    "id": "apexyard-ahwagi",
+    "slug": "ahwagi",
+    "title": {
+      "en": "Ahwagi",
+      "ar": "قهوجي"
+    },
+    "description": {
+      "en": "An Egyptian coffeehouse arcade game about preparing and serving drink orders through a ten-shift campaign.",
+      "ar": "لعبة أركيد في قهوة مصرية لتحضير طلبات المشروبات وتقديمها عبر حملة من عشر ورديات."
+    },
+    "meta": {
+      "en": "TanStack Start • React • TypeScript",
+      "ar": "TanStack Start • React • TypeScript"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://ahwaggi.vercel.app/",
+    "imageSrc": "/projects/ahwagi/cover.webp",
+    "galleryImages": [
+      "/projects/ahwagi/overview.webp"
+    ],
+    "contentMDX": {
+      "en": "# Ahwagi\n\nAn Egyptian coffeehouse arcade game about preparing and serving drink orders through a ten-shift campaign.\n\n## Features\n\n- Ten campaign shifts and twelve drinks\n- Timed orders, patience, and shift scores\n- Guest play and local pass-the-phone scores",
+      "ar": "# قهوجي\n\nلعبة أركيد في قهوة مصرية لتحضير طلبات المشروبات وتقديمها عبر حملة من عشر ورديات.\n\n## الميزات\n\n- عشر ورديات واثنا عشر مشروبًا\n- طلبات بوقت محدد وصبر الزبائن ونتائج الوردية\n- اللعب كضيف ونتائج محلية عند تبادل الهاتف"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "TanStack Start",
+      "React",
+      "TypeScript",
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Ten campaign shifts and twelve drinks",
+        "ar": "عشر ورديات واثنا عشر مشروبًا"
+      },
+      {
+        "en": "Timed orders, patience, and shift scores",
+        "ar": "طلبات بوقت محدد وصبر الزبائن ونتائج الوردية"
+      },
+      {
+        "en": "Guest play and local pass-the-phone scores",
+        "ar": "اللعب كضيف ونتائج محلية عند تبادل الهاتف"
+      }
+    ],
+    "progress": {
+      "en": "Public interface reviewed and screenshots captured on 2026-11-07. Features cross-checked with project documentation; authenticated and backend workflows were not tested.",
+      "ar": "تمت مراجعة الواجهة العامة والتقاط الصور في ٧ نوفمبر ٢٠٢٦. روجعت الميزات مع توثيق المشروع؛ لم تُختبر المهام داخل الحساب أو الخادم."
+    },
+    "issues": [],
+    "suggestions": [],
+    "source": {
+      "workspace": "workspace/published/ahwagi",
+      "last_reviewed": "2026-11-07"
+    }
+  },
+  {
+    "id": "apexyard-fisal",
+    "slug": "fisal",
+    "title": {
+      "en": "Fisal",
+      "ar": "فِصال"
+    },
+    "description": {
+      "en": "An Arabic haggling game set in Cairo markets, with a scripted campaign and private friend-duel interfaces.",
+      "ar": "لعبة فصال عربية في أسواق القاهرة، بحملة مكتوبة وواجهات لمبارزات خاصة مع الأصدقاء."
+    },
+    "meta": {
+      "en": "Next.js • React • TypeScript",
+      "ar": "Next.js • React • TypeScript"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://playfisal.vercel.app/",
+    "imageSrc": "/projects/fisal/cover.webp",
+    "galleryImages": [
+      "/projects/fisal/overview.webp"
+    ],
+    "contentMDX": {
+      "en": "# Fisal\n\nAn Arabic haggling game set in Cairo markets, with a scripted campaign and private friend-duel interfaces.\n\n## Features\n\n- Twenty-five campaign levels across six districts\n- Scripted negotiation and timed deals\n- Guest campaign and invite-code duel interfaces",
+      "ar": "# فِصال\n\nلعبة فصال عربية في أسواق القاهرة، بحملة مكتوبة وواجهات لمبارزات خاصة مع الأصدقاء.\n\n## الميزات\n\n- خمسة وعشرون مستوى في ست مناطق\n- تفاوض مكتوب وصفقات محددة الوقت\n- حملة للضيف وواجهات مبارزات بكود دعوة"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Twenty-five campaign levels across six districts",
+        "ar": "خمسة وعشرون مستوى في ست مناطق"
+      },
+      {
+        "en": "Scripted negotiation and timed deals",
+        "ar": "تفاوض مكتوب وصفقات محددة الوقت"
+      },
+      {
+        "en": "Guest campaign and invite-code duel interfaces",
+        "ar": "حملة للضيف وواجهات مبارزات بكود دعوة"
+      }
+    ],
+    "progress": {
+      "en": "Public interface reviewed and screenshots captured on 2026-11-07. Features cross-checked with project documentation; authenticated and backend workflows were not tested.",
+      "ar": "تمت مراجعة الواجهة العامة والتقاط الصور في ٧ نوفمبر ٢٠٢٦. روجعت الميزات مع توثيق المشروع؛ لم تُختبر المهام داخل الحساب أو الخادم."
+    },
+    "issues": [],
+    "suggestions": [],
+    "source": {
+      "workspace": "workspace/published/hina-el-souq",
+      "last_reviewed": "2026-11-07"
+    }
+  },
+  {
+    "id": "apexyard-souqna-el-osboui",
+    "slug": "souqna-el-osboui",
+    "title": {
+      "en": "Souqna El Osboui",
+      "ar": "سوقنا الأسبوعي"
+    },
+    "description": {
+      "en": "An Arabic guide to Greater Cairo’s weekly and permanent markets, organized by day, area, and practical notes.",
+      "ar": "دليل عربي للأسواق الأسبوعية والدائمة في القاهرة الكبرى حسب اليوم والمنطقة والملاحظات العملية."
+    },
+    "meta": {
+      "en": "TanStack Start • React • TypeScript",
+      "ar": "TanStack Start • React • TypeScript"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://souqna-el-osboui.vercel.app/",
+    "imageSrc": "/projects/souqna-el-osboui/cover.webp",
+    "galleryImages": [
+      "/projects/souqna-el-osboui/overview.webp"
+    ],
+    "contentMDX": {
+      "en": "# Souqna El Osboui\n\nAn Arabic guide to Greater Cairo’s weekly and permanent markets, organized by day, area, and practical notes.\n\n## Features\n\n- Day selector for weekly markets\n- Separate permanent-market directory and area filters\n- Market detail pages and private-favourites interface",
+      "ar": "# سوقنا الأسبوعي\n\nدليل عربي للأسواق الأسبوعية والدائمة في القاهرة الكبرى حسب اليوم والمنطقة والملاحظات العملية.\n\n## الميزات\n\n- اختيار اليوم لعرض الأسواق الأسبوعية\n- دليل مستقل للأسواق الدائمة وتصفية حسب المنطقة\n- صفحات تفاصيل الأسواق وواجهة للمفضلة الخاصة"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "TanStack Start",
+      "React",
+      "TypeScript",
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Day selector for weekly markets",
+        "ar": "اختيار اليوم لعرض الأسواق الأسبوعية"
+      },
+      {
+        "en": "Separate permanent-market directory and area filters",
+        "ar": "دليل مستقل للأسواق الدائمة وتصفية حسب المنطقة"
+      },
+      {
+        "en": "Market detail pages and private-favourites interface",
+        "ar": "صفحات تفاصيل الأسواق وواجهة للمفضلة الخاصة"
+      }
+    ],
+    "progress": {
+      "en": "Public interface reviewed and screenshots captured on 2026-11-07. Features cross-checked with project documentation; authenticated and backend workflows were not tested.",
+      "ar": "تمت مراجعة الواجهة العامة والتقاط الصور في ٧ نوفمبر ٢٠٢٦. روجعت الميزات مع توثيق المشروع؛ لم تُختبر المهام داخل الحساب أو الخادم."
+    },
+    "issues": [],
+    "suggestions": [],
+    "source": {
+      "workspace": "workspace/published/souqna",
+      "last_reviewed": "2026-11-07"
+    }
+  },
+  {
+    "id": "apexyard-masrquiz-league-rebuild",
+    "slug": "masrquiz-league-rebuild",
+    "title": {
+      "en": "MasrQuiz League",
+      "ar": "مصر كويز"
+    },
+    "description": {
+      "en": "An Arabic Egypt-knowledge quiz built around a shared daily five-question challenge, seasons, and separate practice.",
+      "ar": "لعبة معرفة عربية عن مصر، بتحدٍّ يومي مشترك من خمسة أسئلة ومواسم وتدريب منفصل."
+    },
+    "meta": {
+      "en": "TanStack Start • React • TypeScript",
+      "ar": "TanStack Start • React • TypeScript"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://masrquiz-league-rebuild.vercel.app/",
+    "imageSrc": "/projects/masrquiz-league-rebuild/cover.webp",
+    "galleryImages": [
+      "/projects/masrquiz-league-rebuild/overview.webp"
+    ],
+    "contentMDX": {
+      "en": "# MasrQuiz League\n\nAn Arabic Egypt-knowledge quiz built around a shared daily five-question challenge, seasons, and separate practice.\n\n## Features\n\n- Daily Egypt-knowledge challenge\n- Public standings and private-friends league interfaces\n- Separate practice and question-source information",
+      "ar": "# مصر كويز\n\nلعبة معرفة عربية عن مصر، بتحدٍّ يومي مشترك من خمسة أسئلة ومواسم وتدريب منفصل.\n\n## الميزات\n\n- تحدٍّ يومي في المعرفة عن مصر\n- واجهات للترتيب العام ودوري الأصدقاء الخاص\n- تدريب منفصل ومعلومات عن مصادر الأسئلة"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "TanStack Start",
+      "React",
+      "TypeScript",
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Daily Egypt-knowledge challenge",
+        "ar": "تحدٍّ يومي في المعرفة عن مصر"
+      },
+      {
+        "en": "Public standings and private-friends league interfaces",
+        "ar": "واجهات للترتيب العام ودوري الأصدقاء الخاص"
+      },
+      {
+        "en": "Separate practice and question-source information",
+        "ar": "تدريب منفصل ومعلومات عن مصادر الأسئلة"
+      }
+    ],
+    "progress": {
+      "en": "Public interface reviewed and screenshots captured on 2026-11-07. Features cross-checked with project documentation; authenticated and backend workflows were not tested.",
+      "ar": "تمت مراجعة الواجهة العامة والتقاط الصور في ٧ نوفمبر ٢٠٢٦. روجعت الميزات مع توثيق المشروع؛ لم تُختبر المهام داخل الحساب أو الخادم."
+    },
+    "issues": [],
+    "suggestions": [],
+    "source": {
+      "workspace": "workspace/published/masrquiz",
+      "last_reviewed": "2026-11-07"
+    }
+  },
+  {
+    "id": "apexyard-mafhoom",
+    "slug": "mafhoom",
+    "title": {
+      "en": "Mafhoom",
+      "ar": "مفهوم"
+    },
+    "description": {
+      "en": "Turn a message or notice into a reviewed, temporary action page for deciding, comparing, confirming, or acting.",
+      "ar": "حوّل رسالة أو إعلانًا إلى صفحة تفاعل مؤقتة تراجع محتواها للاختيار أو المقارنة أو التأكيد أو التنفيذ."
+    },
+    "meta": {
+      "en": "Vite • React • TypeScript",
+      "ar": "Vite • React • TypeScript"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://mafhoom-psi.vercel.app/",
+    "imageSrc": "/projects/mafhoom/cover.webp",
+    "galleryImages": [
+      "/projects/mafhoom/overview.webp"
+    ],
+    "contentMDX": {
+      "en": "# Mafhoom\n\nTurn a message or notice into a reviewed, temporary action page for deciding, comparing, confirming, or acting.\n\n## Features\n\n- Four focused response modes\n- Creator-approved facts and private source material\n- Expiring links, closure, and source-linked outcomes",
+      "ar": "# مفهوم\n\nحوّل رسالة أو إعلانًا إلى صفحة تفاعل مؤقتة تراجع محتواها للاختيار أو المقارنة أو التأكيد أو التنفيذ.\n\n## الميزات\n\n- أربعة أنماط محددة للرد\n- معلومات يوافق عليها المنشئ مع خصوصية المصدر\n- روابط بصلاحية محددة وإغلاق ونتائج مرتبطة بالمصدر"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "Vite",
+      "React",
+      "TypeScript",
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Four focused response modes",
+        "ar": "أربعة أنماط محددة للرد"
+      },
+      {
+        "en": "Creator-approved facts and private source material",
+        "ar": "معلومات يوافق عليها المنشئ مع خصوصية المصدر"
+      },
+      {
+        "en": "Expiring links, closure, and source-linked outcomes",
+        "ar": "روابط بصلاحية محددة وإغلاق ونتائج مرتبطة بالمصدر"
+      }
+    ],
+    "progress": {
+      "en": "Public interface reviewed and screenshots captured on 2026-11-07. Features cross-checked with project documentation; authenticated and backend workflows were not tested.",
+      "ar": "تمت مراجعة الواجهة العامة والتقاط الصور في ٧ نوفمبر ٢٠٢٦. روجعت الميزات مع توثيق المشروع؛ لم تُختبر المهام داخل الحساب أو الخادم."
+    },
+    "issues": [],
+    "suggestions": [],
+    "source": {
+      "workspace": "workspace/published/mafhoom",
+      "last_reviewed": "2026-11-07"
+    }
+  },
+  {
+    "id": "apexyard-mawsimha",
+    "slug": "mawsimha",
+    "title": {
+      "en": "Mawsimha",
+      "ar": "موسمها"
+    },
+    "description": {
+      "en": "An Egyptian seasonal-produce guide for finding what is in season, browsing the year, and preparing a shopping checklist.",
+      "ar": "دليل مصري للخضار والفاكهة في موسمها، مع تصفح شهور السنة وتجهيز قائمة للسوق."
+    },
+    "meta": {
+      "en": "TanStack Start • React • TypeScript",
+      "ar": "TanStack Start • React • TypeScript"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://mawsimha.vercel.app/",
+    "imageSrc": "/projects/mawsimha/cover.webp",
+    "galleryImages": [
+      "/projects/mawsimha/overview.webp"
+    ],
+    "contentMDX": {
+      "en": "# Mawsimha\n\nAn Egyptian seasonal-produce guide for finding what is in season, browsing the year, and preparing a shopping checklist.\n\n## Features\n\n- Current-month produce with peak-season labels\n- Search, category filters, and year-round season details\n- Cooking hints and a private-checklist interface",
+      "ar": "# موسمها\n\nدليل مصري للخضار والفاكهة في موسمها، مع تصفح شهور السنة وتجهيز قائمة للسوق.\n\n## الميزات\n\n- أصناف الشهر الحالي وعلامات ذروة الموسم\n- بحث وتصفية حسب النوع وتفاصيل المواسم طوال السنة\n- أفكار للاستخدام في الطبخ وواجهة لقائمة خاصة"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "TanStack Start",
+      "React",
+      "TypeScript",
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Current-month produce with peak-season labels",
+        "ar": "أصناف الشهر الحالي وعلامات ذروة الموسم"
+      },
+      {
+        "en": "Search, category filters, and year-round season details",
+        "ar": "بحث وتصفية حسب النوع وتفاصيل المواسم طوال السنة"
+      },
+      {
+        "en": "Cooking hints and a private-checklist interface",
+        "ar": "أفكار للاستخدام في الطبخ وواجهة لقائمة خاصة"
+      }
+    ],
+    "progress": {
+      "en": "Public interface reviewed and screenshots captured on 2026-11-07. Features cross-checked with project documentation; authenticated and backend workflows were not tested.",
+      "ar": "تمت مراجعة الواجهة العامة والتقاط الصور في ٧ نوفمبر ٢٠٢٦. روجعت الميزات مع توثيق المشروع؛ لم تُختبر المهام داخل الحساب أو الخادم."
+    },
+    "issues": [],
+    "suggestions": [],
+    "source": {
+      "workspace": "workspace/published/mawsimha",
+      "last_reviewed": "2026-11-07"
+    }
+  },
+  {
+    "id": "apexyard-ala-mahli",
+    "slug": "ala-mahli",
+    "title": {
+      "en": "Ala Mahli",
+      "ar": "على مهلي"
+    },
+    "description": {
+      "en": "Short Egyptian-Arabic lessons for everyday digital life, with safe practice and spaced reviews.",
+      "ar": "دروس قصيرة بالمصري للحياة الرقمية اليومية، مع تدريب آمن ومراجعة متباعدة."
+    },
+    "meta": {
+      "en": "TanStack Start • React • TypeScript",
+      "ar": "TanStack Start • React • TypeScript"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://ala-mahli.vercel.app/",
+    "imageSrc": "/projects/ala-mahli/cover.webp",
+    "galleryImages": [
+      "/projects/ala-mahli/overview.webp"
+    ],
+    "contentMDX": {
+      "en": "# Ala Mahli\n\nShort Egyptian-Arabic lessons for everyday digital life, with safe practice and spaced reviews.\n\n## Features\n\n- Eighty lessons across eight everyday tracks\n- Guest lessons, read-aloud, and adjustable text size\n- Safe simulations and scheduled reviews",
+      "ar": "# على مهلي\n\nدروس قصيرة بالمصري للحياة الرقمية اليومية، مع تدريب آمن ومراجعة متباعدة.\n\n## الميزات\n\n- ثمانون درسًا في ثمانية مسارات يومية\n- دروس للضيف وقراءة صوتية وحجم خط قابل للتعديل\n- محاكاة آمنة ومراجعات مجدولة"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "TanStack Start",
+      "React",
+      "TypeScript",
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Eighty lessons across eight everyday tracks",
+        "ar": "ثمانون درسًا في ثمانية مسارات يومية"
+      },
+      {
+        "en": "Guest lessons, read-aloud, and adjustable text size",
+        "ar": "دروس للضيف وقراءة صوتية وحجم خط قابل للتعديل"
+      },
+      {
+        "en": "Safe simulations and scheduled reviews",
+        "ar": "محاكاة آمنة ومراجعات مجدولة"
+      }
+    ],
+    "progress": {
+      "en": "Public interface reviewed and screenshots captured on 2026-11-07. Features cross-checked with project documentation; authenticated and backend workflows were not tested.",
+      "ar": "تمت مراجعة الواجهة العامة والتقاط الصور في ٧ نوفمبر ٢٠٢٦. روجعت الميزات مع توثيق المشروع؛ لم تُختبر المهام داخل الحساب أو الخادم."
+    },
+    "issues": [],
+    "suggestions": [],
+    "source": {
+      "workspace": "workspace/published/ala-mahli",
+      "last_reviewed": "2026-11-07"
+    }
+  },
+  {
+    "id": "apexyard-arabity",
+    "slug": "arabity",
+    "title": {
+      "en": "Arabity",
+      "ar": "عربيتي"
+    },
+    "description": {
+      "en": "A car-care organizer for service and fuel history, renewal dates, and a printable resale record.",
+      "ar": "منظم للعناية بالعربية يجمع سجل الصيانة والبنزين ومواعيد التجديد وملفًا قابلًا للطباعة وقت البيع."
+    },
+    "meta": {
+      "en": "TanStack Start • React • TypeScript",
+      "ar": "TanStack Start • React • TypeScript"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://arabity.vercel.app/",
+    "imageSrc": "/projects/arabity/cover.webp",
+    "galleryImages": [
+      "/projects/arabity/overview.webp"
+    ],
+    "contentMDX": {
+      "en": "# Arabity\n\nA car-care organizer for service and fuel history, renewal dates, and a printable resale record.\n\n## Features\n\n- Car files with service and fuel histories\n- Renewal dates and upcoming-deadline states\n- Printable resale file and labelled guest demo",
+      "ar": "# عربيتي\n\nمنظم للعناية بالعربية يجمع سجل الصيانة والبنزين ومواعيد التجديد وملفًا قابلًا للطباعة وقت البيع.\n\n## الميزات\n\n- ملفات للعربيات بسجلات الصيانة والبنزين\n- مواعيد التجديد وحالات المواعيد القريبة\n- ملف بيع قابل للطباعة وتجربة للضيف ببيانات توضيحية"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "TanStack Start",
+      "React",
+      "TypeScript",
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "stage": "published",
+    "features": [
+      {
+        "en": "Car files with service and fuel histories",
+        "ar": "ملفات للعربيات بسجلات الصيانة والبنزين"
+      },
+      {
+        "en": "Renewal dates and upcoming-deadline states",
+        "ar": "مواعيد التجديد وحالات المواعيد القريبة"
+      },
+      {
+        "en": "Printable resale file and labelled guest demo",
+        "ar": "ملف بيع قابل للطباعة وتجربة للضيف ببيانات توضيحية"
+      }
+    ],
+    "progress": {
+      "en": "Public interface reviewed and screenshots captured on 2026-11-07. Features cross-checked with project documentation; authenticated and backend workflows were not tested.",
+      "ar": "تمت مراجعة الواجهة العامة والتقاط الصور في ٧ نوفمبر ٢٠٢٦. روجعت الميزات مع توثيق المشروع؛ لم تُختبر المهام داخل الحساب أو الخادم."
+    },
+    "issues": [],
+    "suggestions": [],
+    "source": {
+      "workspace": "workspace/published/arabity",
+      "last_reviewed": "2026-11-07"
+    }
   }
 ]

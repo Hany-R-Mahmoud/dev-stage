@@ -4,7 +4,7 @@ import curated from '../src/data/vercel-projects.json';
 import { PORTFOLIO_PROJECTS } from '../src/data/portfolioData';
 const slugs = PORTFOLIO_PROJECTS.map(project => project.slug);
 assert.equal(new Set(curated.map(project => project.slug)).size, curated.length, 'Reviewed project routes must be unique');
-assert.equal(curated.length, 61, 'All requested projects must be included');
+assert.equal(curated.length, 79, 'All requested projects must be included');
 const curatedSlugs = new Set(curated.map(project => project.slug));
 assert.deepEqual(slugs.slice(-curated.length), curated.map(project => project.slug), 'Today’s additions must follow the previous arrangement');
 assert.ok(PORTFOLIO_PROJECTS.slice(0, -curated.length).every(project => !curatedSlugs.has(project.slug)));
@@ -20,10 +20,11 @@ for (const project of curated) {
     const file = 'public' + image;
     assert.ok(existsSync(file), 'Missing image: ' + file);
     const bytes = readFileSync(file);
-    assert.equal(bytes.toString('ascii', 0, 4), 'RIFF');
-    assert.equal(bytes.toString('ascii', 8, 12), 'WEBP');
+    const isWebP = bytes.toString('ascii', 0, 4) === 'RIFF' && bytes.toString('ascii', 8, 12) === 'WEBP';
+    const isJpeg = bytes[0] === 0xff && bytes[1] === 0xd8 && bytes[2] === 0xff;
+    assert.ok(isWebP || isJpeg, 'Expected a WebP or JPEG screenshot: ' + file);
   }
 }
 assert.deepEqual(JSON.parse(readFileSync('vercel.json', 'utf8')).git.deploymentEnabled, { '*': false, main: true });
-console.log('Verified 61 reviewed project entries, appended order, unique routes, bilingual content, screenshot files, and deployment policy.');
+console.log(`Verified ${curated.length} reviewed project entries, appended order, unique routes, bilingual content, screenshot files, and deployment policy.`);
 
