@@ -88,12 +88,16 @@ export function FocusRail({
   const activeIndex = count > 0 ? wrap(0, count, active) : 0;
   const activeItem = items[activeIndex];
   const previousCategoryRef = React.useRef<string | number | undefined>(items[initialIndex]?.id);
+  const itemIds = items.map(item => String(item.id)).join('|');
+  const previousItemIdsRef = React.useRef(itemIds);
   React.useEffect(() => {
-    if (!count) return;
-    const oldIndex = items.findIndex(item => item.id === previousCategoryRef.current);
-    const nextIndex = oldIndex >= 0 ? oldIndex : Math.min(activeIndex,count-1);
+    // Reconcile only on dataset changes, never when a user changes slides.
+    if (itemIds === previousItemIdsRef.current) return;
+    previousItemIdsRef.current = itemIds;
+    const matched = items.findIndex(item => item.id === previousCategoryRef.current);
+    const nextIndex = matched >= 0 ? matched : Math.min(activeIndex, Math.max(0,count-1));
     if (activeIndex !== nextIndex) setActive(nextIndex);
-  }, [items, count]);
+  }, [itemIds, count]);
   React.useEffect(() => {
     if (!activeItem) return;
     previousCategoryRef.current = activeItem.id;
