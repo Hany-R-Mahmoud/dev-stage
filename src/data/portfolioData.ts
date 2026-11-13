@@ -112,7 +112,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/emojie-crack",
       "last_reviewed": "2026-10-06"
-    }
+    },
+    "primaryCategoryId": "games"
   },
   {
     "id": "apexyard-map-crack",
@@ -197,7 +198,9 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/map-crack",
       "last_reviewed": "2026-10-06"
-    }
+    },
+    "primaryCategoryId": "games",
+    "showcasePriority": 0
   },
   {
     "id": "apexyard-yahya",
@@ -290,7 +293,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/yahya",
       "last_reviewed": "2026-07-29"
-    }
+    },
+    "primaryCategoryId": "health"
   },
   {
     "id": "apexyard-new-etamini",
@@ -373,7 +377,9 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/new-etamini",
       "last_reviewed": "2026-07-29"
-    }
+    },
+    "primaryCategoryId": "health",
+    "showcasePriority": 0
   },
   {
     "id": "apexyard-minarets_of_cairo",
@@ -481,7 +487,9 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/minarets_of_cairo",
       "last_reviewed": "2026-07-30"
-    }
+    },
+    "primaryCategoryId": "community",
+    "showcasePriority": 0
   },
   {
     "id": "apexyard-masar-ci",
@@ -567,7 +575,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/masar-ci",
       "last_reviewed": "2026-07-29"
-    }
+    },
+    "primaryCategoryId": "developer"
   },
   {
     "id": "apexyard-mrkb",
@@ -671,7 +680,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/mrkb",
       "last_reviewed": "2026-07-29"
-    }
+    },
+    "primaryCategoryId": "life"
   },
   {
     "id": "apexyard-notes-library",
@@ -763,7 +773,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/notes-library",
       "last_reviewed": "2026-07-29"
-    }
+    },
+    "primaryCategoryId": "learning"
   },
   {
     "id": "apexyard-js2next",
@@ -846,7 +857,9 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/js2next",
       "last_reviewed": "2026-07-30"
-    }
+    },
+    "primaryCategoryId": "learning",
+    "showcasePriority": 0
   },
   {
     "id": "apexyard-galsat",
@@ -944,7 +957,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/galsat",
       "last_reviewed": "2026-07-29"
-    }
+    },
+    "primaryCategoryId": "business"
   },
   {
     "id": "apexyard-qessati",
@@ -1036,7 +1050,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/qessati",
       "last_reviewed": "2026-07-29"
-    }
+    },
+    "primaryCategoryId": "productivity"
   },
   {
     "id": "apexyard-branch-scope",
@@ -1128,7 +1143,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/branch-scope",
       "last_reviewed": "2026-07-29"
-    }
+    },
+    "primaryCategoryId": "developer"
   },
   {
     "id": "apexyard-loop-engineer",
@@ -1212,7 +1228,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/loop-engineer",
       "last_reviewed": "2026-07-29"
-    }
+    },
+    "portfolioVisibility": "unlisted"
   },
   {
     "id": "apexyard-linkedin-project",
@@ -1304,7 +1321,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/linkedin-project",
       "last_reviewed": "2026-07-29"
-    }
+    },
+    "primaryCategoryId": "creative"
   },
   {
     "id": "apexyard-focussessionflow",
@@ -1405,7 +1423,9 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/focussessionflow",
       "last_reviewed": "2026-07-29"
-    }
+    },
+    "primaryCategoryId": "productivity",
+    "showcasePriority": 0
   },
   {
     "id": "apexyard-sub-tracker",
@@ -1496,7 +1516,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/sub-tracker",
       "last_reviewed": "2026-07-29"
-    }
+    },
+    "primaryCategoryId": "finance"
   },
   {
     "id": "apexyard-rihla",
@@ -1580,7 +1601,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/rihla",
       "last_reviewed": "2026-07-29"
-    }
+    },
+    "portfolioVisibility": "unlisted"
   },
   {
     "id": "apexyard-hikayat",
@@ -1678,7 +1700,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/hikayat",
       "last_reviewed": "2026-07-29"
-    }
+    },
+    "primaryCategoryId": "life"
   },
   {
     "id": "apexyard-al-rawi",
@@ -1791,7 +1814,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/al-rawi",
       "last_reviewed": "2026-07-29"
-    }
+    },
+    "primaryCategoryId": "productivity"
   },
   {
     "id": "apexyard-react2native",
@@ -1873,7 +1897,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/react2native",
       "last_reviewed": "2026-08-15"
-    }
+    },
+    "primaryCategoryId": "learning"
   },
   {
     "id": "apexyard-khareeta",
@@ -1957,7 +1982,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/khareeta",
       "last_reviewed": "2026-07-29"
-    }
+    },
+    "portfolioVisibility": "unlisted"
   },
   {
     "id": "apexyard-hesab",
@@ -2049,7 +2075,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/hesab",
       "last_reviewed": "2026-07-29"
-    }
+    },
+    "primaryCategoryId": "business"
   },
   {
     "id": "apexyard-routine",
@@ -2143,90 +2170,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/routine",
       "last_reviewed": "2026-07-29"
-    }
-  },
-  {
-    "id": "apexyard-dev2ops",
-    "slug": "dev2ops",
-    "title": {
-      "en": "dev2ops",
-      "ar": "dev2ops"
     },
-    "description": {
-      "en": "A browser-simulated DevOps learning game for practicing safe, evidence-led operational thinking through guided terminal quests.",
-      "ar": "لعبة تعليمية لمحاكاة DevOps داخل المتصفح، تتيح ممارسة التفكير التشغيلي الآمن القائم على الأدلة عبر مهام طرفية موجهة."
-    },
-    "meta": {
-      "en": "React • TypeScript • Vite • PWA",
-      "ar": "React • TypeScript • Vite • PWA"
-    },
-    "category": "Web",
-    "client": {
-      "en": "Independent",
-      "ar": "مستقل"
-    },
-    "role": {
-      "en": "Founder & Builder",
-      "ar": "المؤسس والمطور"
-    },
-    "year": "2026",
-    "liveUrl": "https://dev2ops.vercel.app/",
-    "logoSrc": "https://dev2ops.vercel.app/icons/favicon-32.png",
-    "imageSrc": "/projects/dev2ops/cover.jpg",
-    "galleryImages": [
-      "/projects/dev2ops/experience.jpg",
-      "/projects/dev2ops/landing.jpg"
-    ],
-    "contentMDX": {
-      "en": "# dev2ops\n\nA browser-simulated DevOps learning game for practicing safe, evidence-led operational thinking through guided terminal quests.\n\n## Features\n\n- Practice 45+ operational quests across 15 connected learning tracks.\n- Diagnose, repair, and verify incidents in a deterministic browser-only shell with zero host execution.\n- Explore a searchable curriculum with prerequisites, difficulty levels, XP, and mastery progression.",
-      "ar": "# dev2ops\n\nلعبة تعليمية لمحاكاة DevOps داخل المتصفح، تتيح ممارسة التفكير التشغيلي الآمن القائم على الأدلة عبر مهام طرفية موجهة.\n\n## الميزات\n\n- ممارسة أكثر من 45 مهمة تشغيلية ضمن 15 مسارًا تعليميًا مترابطًا.\n- تشخيص الأعطال وإصلاحها والتحقق منها داخل طرفية حتمية تعمل في المتصفح فقط دون تنفيذ على الجهاز المضيف.\n- استكشاف منهج قابل للبحث يوضح المتطلبات السابقة ومستويات الصعوبة ونقاط الخبرة والتقدم."
-    },
-    "isPublished": true,
-    "featured": false,
-    "tags": [
-      "React",
-      "TypeScript",
-      "Vite",
-      "PWA",
-      "DevOps",
-      "showcase"
-    ],
-    "status": "showcase",
-    "stage": "published",
-    "features": [
-      {
-        "en": "45+ operational quests across 15 connected learning tracks",
-        "ar": "أكثر من 45 مهمة تشغيلية ضمن 15 مسارًا تعليميًا مترابطًا"
-      },
-      {
-        "en": "Deterministic browser-only shell with zero host execution",
-        "ar": "طرفية حتمية داخل المتصفح فقط دون تنفيذ على الجهاز المضيف"
-      },
-      {
-        "en": "Searchable curriculum with prerequisites, difficulty, XP, and mastery progression",
-        "ar": "منهج قابل للبحث مع المتطلبات السابقة والصعوبة ونقاط الخبرة والتقدم"
-      }
-    ],
-    "progress": {
-      "en": "Classified as showcase-ready after reviewing the live deployment and supplied project screenshots on 2026-08-12.",
-      "ar": "تم تصنيف المشروع كجاهز للعرض بعد مراجعة النشر المباشر ولقطات المشروع المقدمة في 2026-08-12."
-    },
-    "issues": [
-      {
-        "en": "Unknown / verify — no issue inventory was provided with the showcase materials.",
-        "ar": "لا توجد قائمة مشكلات مؤكدة ضمن مواد العرض المتاحة."
-      }
-    ],
-    "suggestions": [
-      {
-        "en": "Continue expanding advanced and capstone operational scenarios.",
-        "ar": "مواصلة توسيع السيناريوهات التشغيلية المتقدمة والختامية."
-      }
-    ],
-    "source": {
-      "workspace": "external/dev2ops",
-      "last_reviewed": "2026-08-12"
-    }
+    "primaryCategoryId": "productivity"
   },
   {
     "id": "apexyard-wajba",
@@ -2324,7 +2269,9 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/wajba",
       "last_reviewed": "2026-07-29"
-    }
+    },
+    "primaryCategoryId": "life",
+    "showcasePriority": 0
   },
   {
     "id": "apexyard-supabase-bootstrap",
@@ -2415,7 +2362,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/supabase-bootstrap",
       "last_reviewed": "2026-07-29"
-    }
+    },
+    "primaryCategoryId": "developer"
   },
   {
     "id": "apexyard-jadwal",
@@ -2510,7 +2458,8 @@ export const PORTFOLIO_PROJECTS = [
         "en": "Add a fuller case study with measurable workflow outcomes and usage insights.",
         "ar": "إضافة دراسة حالة أوسع تتضمن نتائج قابلة للقياس ورؤى حول الاستخدام."
       }
-    ]
+    ],
+    "primaryCategoryId": "productivity"
   },
   {
     "id": "apexyard-tabeeb-flow",
@@ -2592,7 +2541,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "external/tabeeb-flow",
       "last_reviewed": "2026-08-02"
-    }
+    },
+    "primaryCategoryId": "health"
   },
   {
     "id": "apexyard-squad-tactics",
@@ -2683,7 +2633,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/squad-tactics",
       "last_reviewed": "2026-07-29"
-    }
+    },
+    "primaryCategoryId": "games"
   },
   {
     "id": "apexyard-mzawedi",
@@ -2781,7 +2732,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/mzawedi",
       "last_reviewed": "2026-07-29"
-    }
+    },
+    "primaryCategoryId": "business"
   },
   {
     "id": "apexyard-the-agency-mobile-game",
@@ -2882,7 +2834,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/the-agency-mobile-game",
       "last_reviewed": "2026-07-29"
-    }
+    },
+    "primaryCategoryId": "games"
   },
   {
     "id": "apexyard-dep-audit",
@@ -2973,7 +2926,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/dependency-audit",
       "last_reviewed": "2026-07-29"
-    }
+    },
+    "primaryCategoryId": "developer"
   },
   {
     "id": "apexyard-token-tracker-dashboard",
@@ -3068,7 +3022,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/token-tracker-dashboard",
       "last_reviewed": "2026-07-29"
-    }
+    },
+    "primaryCategoryId": "developer"
   },
   {
     "id": "apexyard-rihlaty",
@@ -3133,7 +3088,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "external/rihlaty",
       "last_reviewed": "2026-08-08"
-    }
+    },
+    "primaryCategoryId": "community"
   },
   {
     "id": "apexyard-study-circle",
@@ -3229,7 +3185,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/study-circle",
       "last_reviewed": "2026-07-29"
-    }
+    },
+    "portfolioVisibility": "unlisted"
   },
   {
     "id": "apexyard-solo-consultants",
@@ -3321,7 +3278,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/solo-consultants",
       "last_reviewed": "2026-07-29"
-    }
+    },
+    "primaryCategoryId": "business"
   },
   {
     "id": "apexyard-ship-sink",
@@ -3405,7 +3363,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/ship-sink",
       "last_reviewed": "2026-07-29"
-    }
+    },
+    "portfolioVisibility": "unlisted"
   },
   {
     "id": "apexyard-spec-flow",
@@ -3512,7 +3471,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/spec-flow",
       "last_reviewed": "2026-07-29"
-    }
+    },
+    "primaryCategoryId": "developer"
   },
   {
     "id": "apexyard-skills-agency",
@@ -3617,7 +3577,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/skills-agency",
       "last_reviewed": "2026-07-29"
-    }
+    },
+    "primaryCategoryId": "developer"
   },
   {
     "id": "apexyard-dev2ops",
@@ -3731,7 +3692,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/dev2ops",
       "last_reviewed": "2026-08-01"
-    }
+    },
+    "primaryCategoryId": "games"
   },
   {
     "id": "apexyard-token-tracker-mobile",
@@ -3832,7 +3794,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/token-tracker-mobile",
       "last_reviewed": "2026-07-29"
-    }
+    },
+    "primaryCategoryId": "developer"
   },
   {
     "id": "apexyard-skills-agency-mobile",
@@ -3925,7 +3888,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/skills-agency-mobile",
       "last_reviewed": "2026-07-29"
-    }
+    },
+    "primaryCategoryId": "developer"
   },
   {
     "id": "apexyard-retro-board",
@@ -4019,7 +3983,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/retro-board",
       "last_reviewed": "2026-07-29"
-    }
+    },
+    "primaryCategoryId": "business"
   },
   {
     "id": "apexyard-memory-book",
@@ -4117,7 +4082,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/memory-book",
       "last_reviewed": "2026-07-29"
-    }
+    },
+    "primaryCategoryId": "life"
   },
   {
     "id": "apexyard-mohakat",
@@ -4205,7 +4171,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/mohakat",
       "last_reviewed": "2026-07-29"
-    }
+    },
+    "portfolioVisibility": "unlisted"
   },
   {
     "id": "apexyard-hafiz",
@@ -4297,7 +4264,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/hafiz",
       "last_reviewed": "2026-07-29"
-    }
+    },
+    "primaryCategoryId": "learning"
   },
   {
     "id": "apexyard-dev-hq",
@@ -4380,7 +4348,9 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/dev-hq",
       "last_reviewed": "2026-10-28"
-    }
+    },
+    "primaryCategoryId": "developer",
+    "showcasePriority": 0
   },
   {
     "id": "apexyard-yalla-nakol",
@@ -4447,7 +4417,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/yalla-nakol",
       "last_reviewed": "2026-10-28"
-    }
+    },
+    "primaryCategoryId": "life"
   },
   {
     "id": "apexyard-harness-atlas",
@@ -4514,7 +4485,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/harness-atlas",
       "last_reviewed": "2026-10-28"
-    }
+    },
+    "primaryCategoryId": "developer"
   },
   {
     "id": "apexyard-bikheer",
@@ -4581,7 +4553,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/bikheer",
       "last_reviewed": "2026-10-28"
-    }
+    },
+    "primaryCategoryId": "health"
   },
   {
     "id": "apexyard-lost-island",
@@ -4651,7 +4624,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/lost-island",
       "last_reviewed": "2026-10-28"
-    }
+    },
+    "primaryCategoryId": "games"
   },
   {
     "id": "apexyard-meuseum-impossible-journeys",
@@ -4721,7 +4695,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/meuseum-impossible-journeys",
       "last_reviewed": "2026-10-28"
-    }
+    },
+    "primaryCategoryId": "games"
   },
   {
     "id": "apexyard-mi3ad",
@@ -4788,7 +4763,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/mi3ad",
       "last_reviewed": "2026-10-28"
-    }
+    },
+    "primaryCategoryId": "community"
   },
   {
     "id": "apexyard-dayra",
@@ -4855,7 +4831,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/dayra",
       "last_reviewed": "2026-10-28"
-    }
+    },
+    "primaryCategoryId": "community"
   },
   {
     "id": "apexyard-stollen-constillation",
@@ -4923,7 +4900,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/stollen-constillation",
       "last_reviewed": "2026-10-28"
-    }
+    },
+    "primaryCategoryId": "games"
   },
   {
     "id": "apexyard-minasat-nashr",
@@ -4990,7 +4968,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/minasat-nashr",
       "last_reviewed": "2026-10-28"
-    }
+    },
+    "primaryCategoryId": "creative"
   },
   {
     "id": "apexyard-cork-shot",
@@ -5060,7 +5039,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/cork-shot",
       "last_reviewed": "2026-10-28"
-    }
+    },
+    "primaryCategoryId": "games"
   },
   {
     "id": "apexyard-wazin",
@@ -5127,7 +5107,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/wazin",
       "last_reviewed": "2026-10-28"
-    }
+    },
+    "primaryCategoryId": "finance"
   },
   {
     "id": "apexyard-old-market",
@@ -5194,7 +5175,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/old-market",
       "last_reviewed": "2026-10-28"
-    }
+    },
+    "primaryCategoryId": "business"
   },
   {
     "id": "apexyard-workbench",
@@ -5263,7 +5245,9 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/workbench",
       "last_reviewed": "2026-10-28"
-    }
+    },
+    "primaryCategoryId": "business",
+    "showcasePriority": 0
   },
   {
     "id": "apexyard-lab-by-lab",
@@ -5330,7 +5314,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/lab-by-lab",
       "last_reviewed": "2026-10-28"
-    }
+    },
+    "primaryCategoryId": "learning"
   },
   {
     "id": "apexyard-musharreh-elcode",
@@ -5397,7 +5382,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/musharreh-elcode",
       "last_reviewed": "2026-10-28"
-    }
+    },
+    "primaryCategoryId": "developer"
   },
   {
     "id": "apexyard-radar",
@@ -5469,7 +5455,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/radar",
       "last_reviewed": "2026-10-28"
-    }
+    },
+    "primaryCategoryId": "productivity"
   },
   {
     "id": "apexyard-last-recipe",
@@ -5537,7 +5524,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/last-recipe",
       "last_reviewed": "2026-10-28"
-    }
+    },
+    "primaryCategoryId": "games"
   },
   {
     "id": "apexyard-fihrist",
@@ -5609,7 +5597,8 @@ export const PORTFOLIO_PROJECTS = [
       "branch": "main",
       "sync": "github",
       "github": "https://github.com/Hany-R-Mahmoud/fihrist"
-    }
+    },
+    "primaryCategoryId": "productivity"
   },
   {
     "id": "apexyard-tools-lab",
@@ -5676,7 +5665,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/tools-lab",
       "last_reviewed": "2026-10-28"
-    }
+    },
+    "primaryCategoryId": "productivity"
   },
   {
     "id": "apexyard-ateleet-10",
@@ -5745,7 +5735,9 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/ateleet-10",
       "last_reviewed": "2026-10-28"
-    }
+    },
+    "primaryCategoryId": "creative",
+    "showcasePriority": 0
   },
   {
     "id": "apexyard-ashwai",
@@ -5788,7 +5780,8 @@ export const PORTFOLIO_PROJECTS = [
       "in-progress"
     ],
     "status": "in-progress",
-    "stage": "published"
+    "stage": "published",
+    "primaryCategoryId": "games"
   },
   {
     "id": "apexyard-sayyad-execution-hub",
@@ -5831,7 +5824,8 @@ export const PORTFOLIO_PROJECTS = [
       "in-progress"
     ],
     "status": "in-progress",
-    "stage": "published"
+    "stage": "published",
+    "primaryCategoryId": "business"
   },
   {
     "id": "apexyard-daftar-haraka",
@@ -5874,7 +5868,8 @@ export const PORTFOLIO_PROJECTS = [
       "in-progress"
     ],
     "status": "in-progress",
-    "stage": "published"
+    "stage": "published",
+    "primaryCategoryId": "health"
   },
   {
     "id": "apexyard-meshwary",
@@ -5917,7 +5912,8 @@ export const PORTFOLIO_PROJECTS = [
       "in-progress"
     ],
     "status": "in-progress",
-    "stage": "published"
+    "stage": "published",
+    "primaryCategoryId": "community"
   },
   {
     "id": "apexyard-productivity-tool",
@@ -5960,7 +5956,8 @@ export const PORTFOLIO_PROJECTS = [
       "in-progress"
     ],
     "status": "in-progress",
-    "stage": "published"
+    "stage": "published",
+    "primaryCategoryId": "productivity"
   },
   {
     "id": "apexyard-financial-ateleet",
@@ -6003,7 +6000,8 @@ export const PORTFOLIO_PROJECTS = [
       "in-progress"
     ],
     "status": "in-progress",
-    "stage": "published"
+    "stage": "published",
+    "primaryCategoryId": "finance"
   },
   {
     "id": "apexyard-lifestyle-ateleet",
@@ -6046,7 +6044,8 @@ export const PORTFOLIO_PROJECTS = [
       "in-progress"
     ],
     "status": "in-progress",
-    "stage": "published"
+    "stage": "published",
+    "primaryCategoryId": "life"
   },
   {
     "id": "apexyard-social-ateleet",
@@ -6089,7 +6088,8 @@ export const PORTFOLIO_PROJECTS = [
       "in-progress"
     ],
     "status": "in-progress",
-    "stage": "published"
+    "stage": "published",
+    "primaryCategoryId": "community"
   },
   {
     "id": "apexyard-pillar-pace",
@@ -6132,7 +6132,8 @@ export const PORTFOLIO_PROJECTS = [
       "in-progress"
     ],
     "status": "in-progress",
-    "stage": "published"
+    "stage": "published",
+    "primaryCategoryId": "games"
   },
   {
     "id": "apexyard-zakerat-alkholod",
@@ -6175,7 +6176,8 @@ export const PORTFOLIO_PROJECTS = [
       "in-progress"
     ],
     "status": "in-progress",
-    "stage": "published"
+    "stage": "published",
+    "primaryCategoryId": "developer"
   },
   {
     "id": "apexyard-tajheez",
@@ -6218,7 +6220,8 @@ export const PORTFOLIO_PROJECTS = [
       "in-progress"
     ],
     "status": "in-progress",
-    "stage": "published"
+    "stage": "published",
+    "primaryCategoryId": "developer"
   },
   {
     "id": "apexyard-mozakarti",
@@ -6261,7 +6264,8 @@ export const PORTFOLIO_PROJECTS = [
       "in-progress"
     ],
     "status": "in-progress",
-    "stage": "published"
+    "stage": "published",
+    "primaryCategoryId": "learning"
   },
   {
     "id": "apexyard-mahfazti",
@@ -6304,7 +6308,9 @@ export const PORTFOLIO_PROJECTS = [
       "in-progress"
     ],
     "status": "in-progress",
-    "stage": "published"
+    "stage": "published",
+    "primaryCategoryId": "finance",
+    "showcasePriority": 0
   },
   {
     "id": "apexyard-bawaba",
@@ -6347,7 +6353,8 @@ export const PORTFOLIO_PROJECTS = [
       "in-progress"
     ],
     "status": "in-progress",
-    "stage": "published"
+    "stage": "published",
+    "primaryCategoryId": "business"
   },
   {
     "id": "apexyard-social-party-games",
@@ -6390,7 +6397,8 @@ export const PORTFOLIO_PROJECTS = [
       "in-progress"
     ],
     "status": "in-progress",
-    "stage": "published"
+    "stage": "published",
+    "primaryCategoryId": "games"
   },
   {
     "id": "apexyard-madar",
@@ -6433,7 +6441,8 @@ export const PORTFOLIO_PROJECTS = [
       "in-progress"
     ],
     "status": "in-progress",
-    "stage": "published"
+    "stage": "published",
+    "primaryCategoryId": "productivity"
   },
   {
     "id": "apexyard-audit-tool",
@@ -6477,11 +6486,12 @@ export const PORTFOLIO_PROJECTS = [
     ],
     "status": "in-progress",
     "stage": "published",
-    "mergedInto": {
-      "projectSlug": "dev-hq"
-    },
     "repository": {
       "github": "https://github.com/Hany-R-Mahmoud/audit-tool"
+    },
+    "primaryCategoryId": "developer",
+    "mergedInto": {
+      "projectSlug": "dev-hq"
     }
   },
   {
@@ -6526,11 +6536,12 @@ export const PORTFOLIO_PROJECTS = [
     ],
     "status": "in-progress",
     "stage": "published",
-    "mergedInto": {
-      "projectSlug": "dev-hq"
-    },
     "repository": {
       "github": "https://github.com/Hany-R-Mahmoud/repo-health"
+    },
+    "primaryCategoryId": "developer",
+    "mergedInto": {
+      "projectSlug": "dev-hq"
     }
   },
   {
@@ -6574,7 +6585,8 @@ export const PORTFOLIO_PROJECTS = [
       "in-progress"
     ],
     "status": "in-progress",
-    "stage": "published"
+    "stage": "published",
+    "primaryCategoryId": "creative"
   },
   {
     "id": "apexyard-daqiqalearn",
@@ -6617,7 +6629,8 @@ export const PORTFOLIO_PROJECTS = [
       "in-progress"
     ],
     "status": "in-progress",
-    "stage": "published"
+    "stage": "published",
+    "primaryCategoryId": "learning"
   },
   {
     "id": "apexyard-arabic-auditor",
@@ -6661,11 +6674,12 @@ export const PORTFOLIO_PROJECTS = [
     ],
     "status": "in-progress",
     "stage": "published",
-    "mergedInto": {
-      "projectSlug": "dev-hq"
-    },
     "repository": {
       "github": "https://github.com/Hany-R-Mahmoud/arabic-auditor"
+    },
+    "primaryCategoryId": "developer",
+    "mergedInto": {
+      "projectSlug": "dev-hq"
     }
   },
   {
@@ -6709,7 +6723,8 @@ export const PORTFOLIO_PROJECTS = [
       "in-progress"
     ],
     "status": "in-progress",
-    "stage": "published"
+    "stage": "published",
+    "primaryCategoryId": "developer"
   },
   {
     "id": "apexyard-build-brief",
@@ -6753,11 +6768,12 @@ export const PORTFOLIO_PROJECTS = [
     ],
     "status": "in-progress",
     "stage": "published",
-    "mergedInto": {
-      "projectSlug": "dev-hq"
-    },
     "repository": {
       "github": "https://github.com/Hany-R-Mahmoud/build-brief"
+    },
+    "primaryCategoryId": "developer",
+    "mergedInto": {
+      "projectSlug": "dev-hq"
     }
   },
   {
@@ -6801,7 +6817,8 @@ export const PORTFOLIO_PROJECTS = [
       "in-progress"
     ],
     "status": "in-progress",
-    "stage": "published"
+    "stage": "published",
+    "primaryCategoryId": "learning"
   },
   {
     "id": "apexyard-pr-masry",
@@ -6844,7 +6861,8 @@ export const PORTFOLIO_PROJECTS = [
       "in-progress"
     ],
     "status": "in-progress",
-    "stage": "published"
+    "stage": "published",
+    "primaryCategoryId": "developer"
   },
   {
     "id": "apexyard-brainleague",
@@ -6887,7 +6905,8 @@ export const PORTFOLIO_PROJECTS = [
       "in-progress"
     ],
     "status": "in-progress",
-    "stage": "published"
+    "stage": "published",
+    "primaryCategoryId": "games"
   },
   {
     "id": "apexyard-seyaq",
@@ -6930,7 +6949,8 @@ export const PORTFOLIO_PROJECTS = [
       "in-progress"
     ],
     "status": "in-progress",
-    "stage": "published"
+    "stage": "published",
+    "primaryCategoryId": "developer"
   },
   {
     "id": "apexyard-screen-shota",
@@ -6973,7 +6993,8 @@ export const PORTFOLIO_PROJECTS = [
       "in-progress"
     ],
     "status": "in-progress",
-    "stage": "published"
+    "stage": "published",
+    "primaryCategoryId": "creative"
   },
   {
     "id": "apexyard-codebreaker",
@@ -7016,7 +7037,8 @@ export const PORTFOLIO_PROJECTS = [
       "in-progress"
     ],
     "status": "in-progress",
-    "stage": "published"
+    "stage": "published",
+    "primaryCategoryId": "games"
   },
   {
     "id": "apexyard-model-cost",
@@ -7059,7 +7081,8 @@ export const PORTFOLIO_PROJECTS = [
       "in-progress"
     ],
     "status": "in-progress",
-    "stage": "published"
+    "stage": "published",
+    "primaryCategoryId": "developer"
   },
   {
     "id": "apexyard-dalel-el-models",
@@ -7102,7 +7125,8 @@ export const PORTFOLIO_PROJECTS = [
       "in-progress"
     ],
     "status": "in-progress",
-    "stage": "published"
+    "stage": "published",
+    "primaryCategoryId": "developer"
   },
   {
     "id": "apexyard-spygrid",
@@ -7145,7 +7169,8 @@ export const PORTFOLIO_PROJECTS = [
       "in-progress"
     ],
     "status": "in-progress",
-    "stage": "published"
+    "stage": "published",
+    "primaryCategoryId": "games"
   },
   {
     "id": "apexyard-icona",
@@ -7188,7 +7213,8 @@ export const PORTFOLIO_PROJECTS = [
       "in-progress"
     ],
     "status": "in-progress",
-    "stage": "published"
+    "stage": "published",
+    "primaryCategoryId": "developer"
   },
   {
     "id": "apexyard-speedscholar",
@@ -7231,7 +7257,8 @@ export const PORTFOLIO_PROJECTS = [
       "in-progress"
     ],
     "status": "in-progress",
-    "stage": "published"
+    "stage": "published",
+    "primaryCategoryId": "games"
   },
   {
     "id": "apexyard-landgrap",
@@ -7274,7 +7301,8 @@ export const PORTFOLIO_PROJECTS = [
       "in-progress"
     ],
     "status": "in-progress",
-    "stage": "published"
+    "stage": "published",
+    "primaryCategoryId": "games"
   },
   {
     "id": "apexyard-laqta",
@@ -7317,7 +7345,8 @@ export const PORTFOLIO_PROJECTS = [
       "in-progress"
     ],
     "status": "in-progress",
-    "stage": "published"
+    "stage": "published",
+    "primaryCategoryId": "creative"
   },
   {
     "id": "apexyard-bombparty",
@@ -7360,7 +7389,8 @@ export const PORTFOLIO_PROJECTS = [
       "in-progress"
     ],
     "status": "in-progress",
-    "stage": "published"
+    "stage": "published",
+    "primaryCategoryId": "games"
   },
   {
     "id": "apexyard-storychain",
@@ -7403,7 +7433,8 @@ export const PORTFOLIO_PROJECTS = [
       "in-progress"
     ],
     "status": "in-progress",
-    "stage": "published"
+    "stage": "published",
+    "primaryCategoryId": "games"
   },
   {
     "id": "apexyard-sakkala-studio",
@@ -7446,7 +7477,8 @@ export const PORTFOLIO_PROJECTS = [
       "in-progress"
     ],
     "status": "in-progress",
-    "stage": "published"
+    "stage": "published",
+    "primaryCategoryId": "developer"
   },
   {
     "id": "apexyard-monasabati",
@@ -7511,7 +7543,8 @@ export const PORTFOLIO_PROJECTS = [
       "ar": "تمت مراجعة الواجهة العامة والتقاط صور في ٢٩ أكتوبر ٢٠٢٦. لم تُختبر مهام الحساب والخادم."
     },
     "issues": [],
-    "suggestions": []
+    "suggestions": [],
+    "primaryCategoryId": "community"
   },
   {
     "id": "apexyard-mohtaway",
@@ -7576,7 +7609,8 @@ export const PORTFOLIO_PROJECTS = [
       "ar": "تمت مراجعة الواجهة العامة والتقاط صور في ٢٩ أكتوبر ٢٠٢٦. لم تُختبر مهام الحساب والخادم."
     },
     "issues": [],
-    "suggestions": []
+    "suggestions": [],
+    "primaryCategoryId": "creative"
   },
   {
     "id": "apexyard-mohaki",
@@ -7641,7 +7675,8 @@ export const PORTFOLIO_PROJECTS = [
       "ar": "تمت مراجعة الواجهة العامة والتقاط صور في ٢٩ أكتوبر ٢٠٢٦. لم تُختبر مهام الحساب والخادم."
     },
     "issues": [],
-    "suggestions": []
+    "suggestions": [],
+    "primaryCategoryId": "creative"
   },
   {
     "id": "apexyard-hadir-remote-work",
@@ -7706,7 +7741,8 @@ export const PORTFOLIO_PROJECTS = [
       "ar": "تمت مراجعة الواجهة العامة والتقاط صور في ٢٩ أكتوبر ٢٠٢٦. لم تُختبر مهام الحساب والخادم."
     },
     "issues": [],
-    "suggestions": []
+    "suggestions": [],
+    "primaryCategoryId": "business"
   },
   {
     "id": "apexyard-athar-nonprofit",
@@ -7771,7 +7807,8 @@ export const PORTFOLIO_PROJECTS = [
       "ar": "تمت مراجعة الواجهة العامة والتقاط صور في ٢٩ أكتوبر ٢٠٢٦. لم تُختبر مهام الحساب والخادم."
     },
     "issues": [],
-    "suggestions": []
+    "suggestions": [],
+    "primaryCategoryId": "community"
   },
   {
     "id": "apexyard-studio-crm",
@@ -7834,7 +7871,8 @@ export const PORTFOLIO_PROJECTS = [
       "ar": "تم تصوير صفحة الدخول في ٢٩ أكتوبر ٢٠٢٦. وصف الميزات من توثيق المشروع؛ لم تُختبر المهام داخل الحساب."
     },
     "issues": [],
-    "suggestions": []
+    "suggestions": [],
+    "primaryCategoryId": "business"
   },
   {
     "id": "apexyard-mahfazzti",
@@ -7903,7 +7941,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/published/mahfazzti",
       "last_reviewed": "2026-11-07"
-    }
+    },
+    "primaryCategoryId": "finance"
   },
   {
     "id": "apexyard-al-dukkan",
@@ -7972,7 +8011,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/published/al-dukkan",
       "last_reviewed": "2026-11-07"
-    }
+    },
+    "primaryCategoryId": "business"
   },
   {
     "id": "apexyard-zakarti",
@@ -8041,7 +8081,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/published/zakarti",
       "last_reviewed": "2026-11-07"
-    }
+    },
+    "primaryCategoryId": "games"
   },
   {
     "id": "apexyard-daftar-eilti-el-sehhi",
@@ -8110,7 +8151,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/published/daftar-eilti-el-sehhi",
       "last_reviewed": "2026-11-07"
-    }
+    },
+    "primaryCategoryId": "health"
   },
   {
     "id": "apexyard-mofakker",
@@ -8179,7 +8221,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/published/mofakker",
       "last_reviewed": "2026-11-07"
-    }
+    },
+    "primaryCategoryId": "creative"
   },
   {
     "id": "apexyard-ahwagi",
@@ -8248,7 +8291,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/published/ahwagi",
       "last_reviewed": "2026-11-07"
-    }
+    },
+    "primaryCategoryId": "games"
   },
   {
     "id": "apexyard-fisal",
@@ -8317,7 +8361,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/published/hina-el-souq",
       "last_reviewed": "2026-11-07"
-    }
+    },
+    "primaryCategoryId": "games"
   },
   {
     "id": "apexyard-souqna-el-osboui",
@@ -8386,7 +8431,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/published/souqna",
       "last_reviewed": "2026-11-07"
-    }
+    },
+    "primaryCategoryId": "community"
   },
   {
     "id": "apexyard-masrquiz-league-rebuild",
@@ -8455,7 +8501,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/published/masrquiz",
       "last_reviewed": "2026-11-07"
-    }
+    },
+    "primaryCategoryId": "games"
   },
   {
     "id": "apexyard-mafhoom",
@@ -8524,7 +8571,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/published/mafhoom",
       "last_reviewed": "2026-11-07"
-    }
+    },
+    "primaryCategoryId": "productivity"
   },
   {
     "id": "apexyard-mawsimha",
@@ -8593,7 +8641,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/published/mawsimha",
       "last_reviewed": "2026-11-07"
-    }
+    },
+    "primaryCategoryId": "life"
   },
   {
     "id": "apexyard-ala-mahli",
@@ -8662,7 +8711,8 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/published/ala-mahli",
       "last_reviewed": "2026-11-07"
-    }
+    },
+    "primaryCategoryId": "learning"
   },
   {
     "id": "apexyard-arabity",
@@ -8731,6 +8781,7 @@ export const PORTFOLIO_PROJECTS = [
     "source": {
       "workspace": "workspace/published/arabity",
       "last_reviewed": "2026-11-07"
-    }
+    },
+    "primaryCategoryId": "life"
   }
 ] satisfies Project[];

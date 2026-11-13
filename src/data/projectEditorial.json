@@ -1,0 +1,396 @@
+{
+  "masar-ci": {
+    "primaryCategoryId": "developer"
+  },
+  "branch-scope": {
+    "primaryCategoryId": "developer"
+  },
+  "supabase-bootstrap": {
+    "primaryCategoryId": "developer"
+  },
+  "dep-audit": {
+    "primaryCategoryId": "developer"
+  },
+  "token-tracker-dashboard": {
+    "primaryCategoryId": "developer"
+  },
+  "token-tracker-mobile": {
+    "primaryCategoryId": "developer"
+  },
+  "spec-flow": {
+    "primaryCategoryId": "developer"
+  },
+  "skills-agency": {
+    "primaryCategoryId": "developer"
+  },
+  "skills-agency-mobile": {
+    "primaryCategoryId": "developer"
+  },
+  "dev-hq": {
+    "primaryCategoryId": "developer",
+    "showcasePriority": 0
+  },
+  "harness-atlas": {
+    "primaryCategoryId": "developer"
+  },
+  "musharreh-elcode": {
+    "primaryCategoryId": "developer"
+  },
+  "zakerat-alkholod": {
+    "primaryCategoryId": "developer"
+  },
+  "tajheez": {
+    "primaryCategoryId": "developer"
+  },
+  "audit-tool": {
+    "primaryCategoryId": "developer",
+    "mergedInto": {
+      "projectSlug": "dev-hq"
+    }
+  },
+  "repo-health": {
+    "primaryCategoryId": "developer",
+    "mergedInto": {
+      "projectSlug": "dev-hq"
+    }
+  },
+  "arabic-auditor": {
+    "primaryCategoryId": "developer",
+    "mergedInto": {
+      "projectSlug": "dev-hq"
+    }
+  },
+  "agent-ledger": {
+    "primaryCategoryId": "developer"
+  },
+  "build-brief": {
+    "primaryCategoryId": "developer",
+    "mergedInto": {
+      "projectSlug": "dev-hq"
+    }
+  },
+  "pr-masry": {
+    "primaryCategoryId": "developer"
+  },
+  "seyaq": {
+    "primaryCategoryId": "developer"
+  },
+  "model-cost": {
+    "primaryCategoryId": "developer"
+  },
+  "dalel-el-models": {
+    "primaryCategoryId": "developer"
+  },
+  "icona": {
+    "primaryCategoryId": "developer"
+  },
+  "sakkala-studio": {
+    "primaryCategoryId": "developer"
+  },
+  "emojie-crack": {
+    "primaryCategoryId": "games"
+  },
+  "map-crack": {
+    "primaryCategoryId": "games",
+    "showcasePriority": 0
+  },
+  "dev2ops": {
+    "primaryCategoryId": "games"
+  },
+  "squad-tactics": {
+    "primaryCategoryId": "games"
+  },
+  "the-agency-mobile-game": {
+    "primaryCategoryId": "games"
+  },
+  "lost-island": {
+    "primaryCategoryId": "games"
+  },
+  "meuseum-impossible-journeys": {
+    "primaryCategoryId": "games"
+  },
+  "stollen-constillation": {
+    "primaryCategoryId": "games"
+  },
+  "cork-shot": {
+    "primaryCategoryId": "games"
+  },
+  "last-recipe": {
+    "primaryCategoryId": "games"
+  },
+  "ashwai": {
+    "primaryCategoryId": "games"
+  },
+  "pillar-pace": {
+    "primaryCategoryId": "games"
+  },
+  "social-party-games": {
+    "primaryCategoryId": "games"
+  },
+  "brainleague": {
+    "primaryCategoryId": "games"
+  },
+  "codebreaker": {
+    "primaryCategoryId": "games"
+  },
+  "spygrid": {
+    "primaryCategoryId": "games"
+  },
+  "speedscholar": {
+    "primaryCategoryId": "games"
+  },
+  "landgrap": {
+    "primaryCategoryId": "games"
+  },
+  "bombparty": {
+    "primaryCategoryId": "games"
+  },
+  "storychain": {
+    "primaryCategoryId": "games"
+  },
+  "zakarti": {
+    "primaryCategoryId": "games"
+  },
+  "ahwagi": {
+    "primaryCategoryId": "games"
+  },
+  "fisal": {
+    "primaryCategoryId": "games"
+  },
+  "masrquiz-league-rebuild": {
+    "primaryCategoryId": "games"
+  },
+  "notes-library": {
+    "primaryCategoryId": "learning"
+  },
+  "js2next": {
+    "primaryCategoryId": "learning",
+    "showcasePriority": 0
+  },
+  "react2native": {
+    "primaryCategoryId": "learning"
+  },
+  "hafiz": {
+    "primaryCategoryId": "learning"
+  },
+  "lab-by-lab": {
+    "primaryCategoryId": "learning"
+  },
+  "mozakarti": {
+    "primaryCategoryId": "learning"
+  },
+  "daqiqalearn": {
+    "primaryCategoryId": "learning"
+  },
+  "sahab-cloud-school": {
+    "primaryCategoryId": "learning"
+  },
+  "ala-mahli": {
+    "primaryCategoryId": "learning"
+  },
+  "qessati": {
+    "primaryCategoryId": "productivity"
+  },
+  "focussessionflow": {
+    "primaryCategoryId": "productivity",
+    "showcasePriority": 0
+  },
+  "jadwal": {
+    "primaryCategoryId": "productivity"
+  },
+  "al-rawi": {
+    "primaryCategoryId": "productivity"
+  },
+  "radar": {
+    "primaryCategoryId": "productivity"
+  },
+  "fihrist": {
+    "primaryCategoryId": "productivity"
+  },
+  "productivity-tool": {
+    "primaryCategoryId": "productivity"
+  },
+  "madar": {
+    "primaryCategoryId": "productivity"
+  },
+  "tools-lab": {
+    "primaryCategoryId": "productivity"
+  },
+  "routine": {
+    "primaryCategoryId": "productivity"
+  },
+  "mafhoom": {
+    "primaryCategoryId": "productivity"
+  },
+  "galsat": {
+    "primaryCategoryId": "business"
+  },
+  "hesab": {
+    "primaryCategoryId": "business"
+  },
+  "solo-consultants": {
+    "primaryCategoryId": "business"
+  },
+  "retro-board": {
+    "primaryCategoryId": "business"
+  },
+  "mzawedi": {
+    "primaryCategoryId": "business"
+  },
+  "old-market": {
+    "primaryCategoryId": "business"
+  },
+  "workbench": {
+    "primaryCategoryId": "business",
+    "showcasePriority": 0
+  },
+  "sayyad-execution-hub": {
+    "primaryCategoryId": "business"
+  },
+  "bawaba": {
+    "primaryCategoryId": "business"
+  },
+  "hadir-remote-work": {
+    "primaryCategoryId": "business"
+  },
+  "studio-crm": {
+    "primaryCategoryId": "business"
+  },
+  "al-dukkan": {
+    "primaryCategoryId": "business"
+  },
+  "linkedin-project": {
+    "primaryCategoryId": "creative"
+  },
+  "minasat-nashr": {
+    "primaryCategoryId": "creative"
+  },
+  "ateleet-10": {
+    "primaryCategoryId": "creative",
+    "showcasePriority": 0
+  },
+  "growth-kit": {
+    "primaryCategoryId": "creative"
+  },
+  "screen-shota": {
+    "primaryCategoryId": "creative"
+  },
+  "laqta": {
+    "primaryCategoryId": "creative"
+  },
+  "mohtaway": {
+    "primaryCategoryId": "creative"
+  },
+  "mohaki": {
+    "primaryCategoryId": "creative"
+  },
+  "mofakker": {
+    "primaryCategoryId": "creative"
+  },
+  "yahya": {
+    "primaryCategoryId": "health"
+  },
+  "new-etamini": {
+    "primaryCategoryId": "health",
+    "showcasePriority": 0
+  },
+  "tabeeb-flow": {
+    "primaryCategoryId": "health"
+  },
+  "bikheer": {
+    "primaryCategoryId": "health"
+  },
+  "daftar-haraka": {
+    "primaryCategoryId": "health"
+  },
+  "daftar-eilti-el-sehhi": {
+    "primaryCategoryId": "health"
+  },
+  "mrkb": {
+    "primaryCategoryId": "life"
+  },
+  "hikayat": {
+    "primaryCategoryId": "life"
+  },
+  "wajba": {
+    "primaryCategoryId": "life",
+    "showcasePriority": 0
+  },
+  "memory-book": {
+    "primaryCategoryId": "life"
+  },
+  "yalla-nakol": {
+    "primaryCategoryId": "life"
+  },
+  "lifestyle-ateleet": {
+    "primaryCategoryId": "life"
+  },
+  "mawsimha": {
+    "primaryCategoryId": "life"
+  },
+  "arabity": {
+    "primaryCategoryId": "life"
+  },
+  "minarets_of_cairo": {
+    "primaryCategoryId": "community",
+    "showcasePriority": 0
+  },
+  "rihlaty": {
+    "primaryCategoryId": "community"
+  },
+  "mi3ad": {
+    "primaryCategoryId": "community"
+  },
+  "dayra": {
+    "primaryCategoryId": "community"
+  },
+  "meshwary": {
+    "primaryCategoryId": "community"
+  },
+  "social-ateleet": {
+    "primaryCategoryId": "community"
+  },
+  "monasabati": {
+    "primaryCategoryId": "community"
+  },
+  "athar-nonprofit": {
+    "primaryCategoryId": "community"
+  },
+  "souqna-el-osboui": {
+    "primaryCategoryId": "community"
+  },
+  "sub-tracker": {
+    "primaryCategoryId": "finance"
+  },
+  "wazin": {
+    "primaryCategoryId": "finance"
+  },
+  "financial-ateleet": {
+    "primaryCategoryId": "finance"
+  },
+  "mahfazti": {
+    "primaryCategoryId": "finance",
+    "showcasePriority": 0
+  },
+  "mahfazzti": {
+    "primaryCategoryId": "finance"
+  },
+  "loop-engineer": {
+    "portfolioVisibility": "unlisted"
+  },
+  "rihla": {
+    "portfolioVisibility": "unlisted"
+  },
+  "khareeta": {
+    "portfolioVisibility": "unlisted"
+  },
+  "study-circle": {
+    "portfolioVisibility": "unlisted"
+  },
+  "ship-sink": {
+    "portfolioVisibility": "unlisted"
+  },
+  "mohakat": {
+    "portfolioVisibility": "unlisted"
+  }
+}

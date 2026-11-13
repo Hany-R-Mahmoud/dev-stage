@@ -1,3 +1,5 @@
+import type { ProjectCategoryId } from './data/projectCategories';
+
 export type Language = 'en' | 'ar';
 
 export type ProjectStatus = 'showcase' | 'in-progress' | 'prototype' | 'dropped' | 'internal';
@@ -25,7 +27,10 @@ export interface Project {
   title: BilingualText;
   description: BilingualText;
   meta: BilingualText;
-  category: string; // e.g., 'Branding', 'UI/UX', 'Architecture', 'Web'
+  category: string; // legacy platform/category metadata, not public domain grouping
+  primaryCategoryId?: ProjectCategoryId;
+  portfolioVisibility?: 'listed' | 'unlisted' | 'removed';
+  showcasePriority?: number;
   client: BilingualText;
   role: BilingualText;
   year: string;
