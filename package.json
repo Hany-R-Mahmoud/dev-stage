@@ -13,7 +13,8 @@
     "clean": "rm -rf dist server.js",
     "lint": "tsc --noEmit",
     "doctor": "npx react-doctor@latest",
-    "verify:merged": "tsx scripts/verify-merged-projects.mjs"
+    "verify:merged": "tsx scripts/verify-merged-projects.mjs",
+    "verify:directory": "tsx scripts/verify-directory.mts"
   },
   "dependencies": {
     "@google/genai": "^2.4.0",

@@ -88,3 +88,13 @@ The project uses a mixed strategy: tonal shifts and fine borders define interfac
 - Target: WCAG 2.2 AA, including 4.5:1 body-text contrast, 3:1 large-text contrast, visible focus, keyboard reachability, and reduced-motion support.
 - The logo must remain recognizable without color and must not carry essential text.
 - Accepted debt: none for the logo integration.
+
+
+## 9. Public domain directory & archive (2026-11-13)
+
+- Visitors browse ten **use-case/domain** groups rather than technology platforms. The old technical `Web/Mobile/Tools` field remains legacy metadata only.
+- Each active category uses a quiet full-width disclosure row with bilingual name/description and unique count. The same gold/stone theme and 16:10 screenshots remain.
+- Accordion header is a native `h3 > button` with `aria-expanded`, `aria-controls`, clear focus ring and closed panels unmounted to prevent hidden keyboard focus.
+- The introduction retains the 3D focus rail, with one deterministic representative per active category and a separate category-exploration button.
+- The final merged archive is an independent, initially collapsed disclosure. Original donor detail routes remain.
+- Filter/expansion and merged toggle use session storage to survive mobile detail navigation. No rebrand or new UI dependencies.
