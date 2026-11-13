@@ -10,6 +10,8 @@ import { ProjectDetailPage } from './components/ProjectDetailPage';
 import { ThemeWaveOverlay } from './components/ThemeWaveOverlay';
 import { MobileBottomNav } from './components/MobileBottomNav';
 import { VisitorCounter } from './components/VisitorCounter';
+import { MergedProjectsSection } from './components/MergedProjectsSection';
+import { getShowcaseCollections } from './lib/merged-projects';
 import { toAbsoluteUrl, updateSeoMetadata } from './lib/seo';
 import { ArrowUpRight, Feather, Filter, ChevronDown } from 'lucide-react';
 
@@ -185,25 +187,15 @@ export default function App() {
 
   const isAr = language === 'ar';
 
-  // Public showcase entries need both a real cover image and a live destination.
-  // In-progress projects are not part of the public portfolio until their
-  // presentation is ready.
-  const hasShowcaseImage = (project: Project) => Boolean(
-    project.imageSrc && !project.imageSrc.startsWith('data:image/svg+xml'),
-  );
-  const isShowcaseReady = (project: Project) => Boolean(
-    project.isPublished && project.liveUrl && hasShowcaseImage(project),
-  );
-  const publishedProjects = projects.filter(isShowcaseReady);
-  const projectRouteProject = projectSlug
-    ? projects.find((project) => project.slug === projectSlug && isShowcaseReady(project))
-    : null;
+  const { active: publishedProjects, routable: routableProjects, groups: mergedGroups } = getShowcaseCollections(projects);
+  const projectRouteProject = projectSlug ? routableProjects.find(project => project.slug === projectSlug) : null;
+  const projectRouteDestination = projectRouteProject?.mergedInto ? projects.find(project => project.slug === projectRouteProject.mergedInto?.projectSlug) : undefined;
 
   useEffect(() => {
     if (projectRouteProject) {
       updateSeoMetadata({
-        title: `${projectRouteProject.title[language]} | Dev Stage`,
-        description: projectRouteProject.description[language],
+        title: `${projectRouteProject.title[language]}${projectRouteProject.mergedInto ? (language === 'ar' ? ' — مشروع مدمج' : ' — Merged project') : ''} | Dev Stage`,
+        description: projectRouteProject.mergedInto && projectRouteDestination ? `${projectRouteProject.description[language]} ${language === 'ar' ? 'تم دمجه داخل' : 'Merged into'} ${projectRouteDestination.title[language]}.` : projectRouteProject.description[language],
         path: localizedPath(language, projectRouteProject.slug),
         language,
         type: 'article',
@@ -212,7 +204,8 @@ export default function App() {
           '@type': 'CreativeWork',
           name: projectRouteProject.title[language],
           headline: projectRouteProject.title[language],
-          description: projectRouteProject.description[language],
+          description: projectRouteProject.mergedInto && projectRouteDestination ? `${projectRouteProject.description[language]} ${language === 'ar' ? 'تم دمجه داخل' : 'Merged into'} ${projectRouteDestination.title[language]}.` : projectRouteProject.description[language],
+          ...(projectRouteDestination ? { isPartOf: { '@type': 'CreativeWork', name: projectRouteDestination.title[language], url: toAbsoluteUrl(localizedPath(language, projectRouteDestination.slug)) } } : {}),
           image: toAbsoluteUrl('/og-image.svg'),
           url: toAbsoluteUrl(localizedPath(language, projectRouteProject.slug)),
           inLanguage: language,
@@ -250,7 +243,7 @@ export default function App() {
         },
       },
     });
-  }, [language, profile, projectRouteProject, publishedProjects]);
+  }, [language, profile, projectRouteProject, projectRouteDestination, publishedProjects]);
   const categoryLabels: Record<string, { en: string; ar: string }> = {
     Web: { en: 'Web Projects', ar: 'مشاريع الويب' },
     Mobile: { en: 'Mobile Projects', ar: 'مشاريع الهاتف' },
@@ -321,6 +314,7 @@ export default function App() {
           {projectRouteProject ? (
               <ProjectDetailPage
                 project={projectRouteProject}
+                mergeDestination={projectRouteDestination}
                 language={language}
                 onBack={handleProjectBack}
               />
@@ -497,6 +491,8 @@ export default function App() {
                 </div>
               </section>
 
+              <MergedProjectsSection groups={mergedGroups} language={language} onOpenDetails={openProjectDetails} />
+
               {/* Luxury Editorial Footer */}
               <footer className="border-t border-[#1A1A1A]/15 dark:border-white/15 pt-12 pb-16 text-center text-xs text-[#6C6863] dark:text-[#A39E98] space-y-3 font-sans-luxury">
                 <p className="font-serif-luxury text-base text-[#1A1A1A] dark:text-[#F4F2ED]">
@@ -523,6 +519,7 @@ export default function App() {
 
         <ProjectDetailModal
           project={selectedProject}
+          mergeDestination={selectedProject?.mergedInto ? projects.find(project => project.slug === selectedProject.mergedInto?.projectSlug) : undefined}
           language={language}
           onClose={() => setSelectedProject(null)}
         />

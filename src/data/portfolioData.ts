@@ -4307,8 +4307,8 @@ export const PORTFOLIO_PROJECTS = [
       "ar": "مرصد المشاريع"
     },
     "description": {
-      "en": "A project observatory bringing uptime monitoring, visitor feedback, and website checks into one owner workspace.",
-      "ar": "مرصد يجمع متابعة تشغيل المشاريع وآراء الزوار وفحوص المواقع في مساحة واحدة لصاحب المشاريع."
+      "en": "A private Dev HQ workspace combining uptime monitoring, visitor feedback, repository health, performance audits, Arabic/RTL code review, and structured build briefs.",
+      "ar": "مساحة خاصة لكل مستخدم تجمع متابعة تشغيل المشاريع وآراء الزوار وصحة المستودعات وتدقيق الأداء وكود الواجهات العربية وكراسات البناء."
     },
     "meta": {
       "en": "Vite • React • TypeScript",
@@ -4353,6 +4353,22 @@ export const PORTFOLIO_PROJECTS = [
       {
         "en": "Performance, links, and Arabic SEO checks",
         "ar": "فحوص الأداء والروابط وتهيئة البحث بالعربية"
+      },
+      {
+        "en": "Repository Health: dependency, security and maintenance insights",
+        "ar": "صحة المستودعات: التبعيات والأمان ومؤشرات الصيانة"
+      },
+      {
+        "en": "Mobile and desktop website performance audits",
+        "ar": "تدقيق أداء المواقع على الموبايل والكمبيوتر"
+      },
+      {
+        "en": "Arabic and RTL React code auditing",
+        "ar": "مراجعة كود React للعربية واتجاه الواجهة"
+      },
+      {
+        "en": "Guided build briefs with saved drafts",
+        "ar": "كراسات بناء موجّهة مع حفظ المسودات"
       }
     ],
     "progress": {
@@ -6460,7 +6476,13 @@ export const PORTFOLIO_PROJECTS = [
       "in-progress"
     ],
     "status": "in-progress",
-    "stage": "published"
+    "stage": "published",
+    "mergedInto": {
+      "projectSlug": "dev-hq"
+    },
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/audit-tool"
+    }
   },
   {
     "id": "apexyard-repo-health",
@@ -6503,7 +6525,13 @@ export const PORTFOLIO_PROJECTS = [
       "in-progress"
     ],
     "status": "in-progress",
-    "stage": "published"
+    "stage": "published",
+    "mergedInto": {
+      "projectSlug": "dev-hq"
+    },
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/repo-health"
+    }
   },
   {
     "id": "apexyard-growth-kit",
@@ -6632,7 +6660,13 @@ export const PORTFOLIO_PROJECTS = [
       "in-progress"
     ],
     "status": "in-progress",
-    "stage": "published"
+    "stage": "published",
+    "mergedInto": {
+      "projectSlug": "dev-hq"
+    },
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/arabic-auditor"
+    }
   },
   {
     "id": "apexyard-agent-ledger",
@@ -6718,7 +6752,13 @@ export const PORTFOLIO_PROJECTS = [
       "in-progress"
     ],
     "status": "in-progress",
-    "stage": "published"
+    "stage": "published",
+    "mergedInto": {
+      "projectSlug": "dev-hq"
+    },
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/build-brief"
+    }
   },
   {
     "id": "apexyard-sahab-cloud-school",
