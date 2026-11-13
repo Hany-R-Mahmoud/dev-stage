@@ -3,7 +3,10 @@ import { readFileSync } from 'node:fs';
 import { PORTFOLIO_PROJECTS } from '../src/data/portfolioData.ts';
 import { getShowcaseCollections } from '../src/lib/merged-projects.ts';
 
-const curated = JSON.parse(readFileSync(new URL('../src/data/vercel-projects.json', import.meta.url), 'utf8'));
+const editorial = JSON.parse(readFileSync(new URL('../src/data/projectEditorial.json', import.meta.url), 'utf8'));
+// Curated records intentionally contain content only; the generator applies editorial metadata once.
+const curated = JSON.parse(readFileSync(new URL('../src/data/vercel-projects.json', import.meta.url), 'utf8'))
+  .map(project => ({ ...project, ...(editorial[project.slug] ?? {}) }));
 const donors = ['repo-health', 'audit-tool', 'arabic-auditor', 'build-brief'];
 const find = (items, slug) => items.find(project => project.slug === slug);
 
