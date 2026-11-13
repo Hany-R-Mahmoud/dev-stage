@@ -162,6 +162,9 @@ export default function App() {
   };
 
   const openProjectDetails = (project: Project) => {
+    // The exploration command has already updated the session-backed filter.
+    // Clear it before detail navigation so Back does not replay a stale scroll.
+    setExploreRequest(null);
     if (!isCompactViewport) {
       setSelectedProject(project);
       return;
