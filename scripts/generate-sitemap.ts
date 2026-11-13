@@ -1,6 +1,7 @@
 import { mkdir, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { PORTFOLIO_PROJECTS } from '../src/data/portfolioData';
+import { getShowcaseCollections } from '../src/lib/merged-projects';
 
 const siteUrl = (process.env.SITE_URL ?? process.env.VITE_SITE_URL ?? 'https://dev2stage.vercel.app')
   .trim()
@@ -11,8 +12,7 @@ if (!siteUrl || !/^https?:\/\/[^\s/]+/.test(siteUrl)) {
 }
 
 const publicDirectory = join(process.cwd(), 'public');
-const projectUrls = PORTFOLIO_PROJECTS
-  .filter((project) => project.isPublished && project.liveUrl && project.imageSrc && !project.imageSrc.startsWith('data:image/svg+xml'))
+const projectUrls = getShowcaseCollections(PORTFOLIO_PROJECTS).routable
   .flatMap((project) => [`/en/projects/${project.slug}`, `/ar/projects/${project.slug}`]);
 const urls = ['/', '/en/', '/ar/', ...projectUrls];
 const xml = `<?xml version="1.0" encoding="UTF-8"?>

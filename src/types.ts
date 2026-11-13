@@ -44,6 +44,11 @@ export interface Project {
   issues?: BilingualText[];
   suggestions?: BilingualText[];
   repository?: PortfolioRepository;
+  mergedInto?: {
+    projectSlug: string;
+    toolUrl?: string;
+    mergedAt?: string;
+  };
   source?: PortfolioSource;
 }
 

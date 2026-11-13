@@ -2,16 +2,19 @@ import React, { useEffect, useState } from 'react';
 import { Project, Language } from '../types';
 import { ProjectLogo } from './ProjectLogo';
 import { VisitorCounter } from './VisitorCounter';
+import { MergedProjectNotice } from './MergedProjectNotice';
 import { X, Image as ImageIcon, Sparkles, ListChecks, AlertTriangle, Lightbulb, ArrowUpRight } from 'lucide-react';
 
 interface ProjectDetailModalProps {
   project: Project | null;
+  mergeDestination?: Project;
   language: Language;
   onClose: () => void;
 }
 
 export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
   project,
+  mergeDestination,
   language,
   onClose,
 }) => {
@@ -80,7 +83,7 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
                 {project.title[language]}
               </h2>
             </div>
-            {project.liveUrl && (
+            {!project.mergedInto && project.liveUrl && (
               <a
                 href={project.liveUrl}
                 target="_blank"
@@ -93,6 +96,8 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
             )}
           </div>
         </div>
+
+        <MergedProjectNotice project={project} destination={mergeDestination} language={language} />
 
         {/* PRIMARY VISUAL SHOWCASE & GALLERY ARCHIVE */}
         <div className={`grid grid-cols-1 ${project.galleryImages && project.galleryImages.length > 0 ? 'md:grid-cols-4' : ''} gap-4 items-start`}>

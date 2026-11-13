@@ -2,15 +2,17 @@ import React from 'react';
 import type { Language, Project } from '../types';
 import { ProjectLogo } from './ProjectLogo';
 import { VisitorCounter } from './VisitorCounter';
+import { MergedProjectNotice } from './MergedProjectNotice';
 import { ArrowLeft } from 'lucide-react';
 
 interface ProjectDetailPageProps {
   project: Project;
+  mergeDestination?: Project;
   language: Language;
   onBack: () => void;
 }
 
-export function ProjectDetailPage({ project, language, onBack }: ProjectDetailPageProps) {
+export function ProjectDetailPage({ project, mergeDestination, language, onBack }: ProjectDetailPageProps) {
   const isAr = language === 'ar';
 
   return (
@@ -53,7 +55,7 @@ export function ProjectDetailPage({ project, language, onBack }: ProjectDetailPa
           </div>
           <p className="max-w-3xl text-lg leading-relaxed text-[#6C6863] dark:text-[#A39E98]">{project.description[language]}</p>
           <VisitorCounter language={language} projectSlug={project.slug} />
-          {project.liveUrl && (
+          {!project.mergedInto && project.liveUrl && (
             <a
               href={project.liveUrl}
               target="_blank"
@@ -69,6 +71,8 @@ export function ProjectDetailPage({ project, language, onBack }: ProjectDetailPa
             <span>{project.client[language]}</span>
           </div>
         </header>
+
+        <MergedProjectNotice project={project} destination={mergeDestination} language={language} />
 
         <figure className="aspect-[16/10] overflow-hidden border-2 border-[#D4AF37]/50 bg-[#1A1A1A]">
           <img src={project.imageSrc} alt={project.title[language]} className="h-full w-full object-contain" />
