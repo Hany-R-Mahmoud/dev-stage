@@ -106,7 +106,9 @@ export function ProjectDirectory({groups,language,onOpenDetails,exploreRequest}:
               </button>
             </h3>
             {expanded&&<div id={panelId} className="grid grid-cols-1 gap-8 pb-8 md:grid-cols-2 lg:grid-cols-3">
-              {group.projects.map(project=><ProjectCard key={project.slug} project={project} language={language} onOpenDetails={onOpenDetails}/>)}
+              {group.projects.map(project=><div key={project.slug} className="flex min-w-0">
+                <ProjectCard project={project} language={language} onOpenDetails={onOpenDetails}/>
+              </div>)}
             </div>}
           </section>;
         })}
