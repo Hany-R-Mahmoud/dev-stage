@@ -1,41 +1,73 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
+import { PORTFOLIO_PROJECTS } from '../src/data/portfolioData.ts';
+import { getShowcaseCollections } from '../src/lib/merged-projects.ts';
 
 const curated = JSON.parse(readFileSync(new URL('../src/data/vercel-projects.json', import.meta.url), 'utf8'));
-const raw = readFileSync(new URL('../src/data/portfolioData.ts', import.meta.url), 'utf8');
-const generated = JSON.parse(raw.split('export const PORTFOLIO_PROJECTS = ')[1].split(' satisfies Project[];')[0]);
 const donors = ['repo-health', 'audit-tool', 'arabic-auditor', 'build-brief'];
-const validImage = p => p.imageSrc && !p.imageSrc.startsWith('data:image/svg+xml');
-const find = (projects, slug) => projects.find(p => p.slug === slug);
-function classify(projects) {
-  const map = new Map(projects.map(p => [p.slug, p]));
-  assert.equal(map.size, projects.length);
-  for (const p of projects.filter(p => p.mergedInto)) {
-    assert.notEqual(p.slug, p.mergedInto.projectSlug);
-    const destination = map.get(p.mergedInto.projectSlug);
-    assert.ok(destination, 'destination must exist');
-    assert.ok(!destination.mergedInto, 'terminal destination only');
-    assert.ok(destination.isPublished && destination.liveUrl && validImage(destination), 'destination must be active');
-  }
-  const active = projects.filter(p => p.isPublished && validImage(p) && p.liveUrl && !p.mergedInto);
-  const merged = projects.filter(p => p.isPublished && validImage(p) && p.mergedInto);
-  return { active, merged, routable: [...active, ...merged] };
-}
-for (const projects of [curated, generated]) {
-  const { active, merged, routable } = classify(projects);
-  assert.deepEqual(merged.filter(p => p.mergedInto.projectSlug === 'dev-hq').map(p => p.slug).sort(), [...donors].sort());
-  assert.equal(find(active, 'dev-hq')?.slug, 'dev-hq');
+const find = (items, slug) => items.find(project => project.slug === slug);
+
+for (const projects of [curated, PORTFOLIO_PROJECTS]) {
+  const {active, merged, routable, groups} = getShowcaseCollections(projects);
+  assert.deepEqual(
+    merged.filter(project => project.mergedInto.projectSlug === 'dev-hq').map(project => project.slug).sort(),
+    [...donors].sort(),
+    'The four original donors must belong to Dev HQ',
+  );
+  assert.equal(groups.find(group => group.destination.slug === 'dev-hq')?.donors.length, 4);
+  assert.equal(find(active, 'dev-hq')?.slug, 'dev-hq', 'Destination stays active');
+  assert.equal(new Set(merged.map(project => project.slug)).size, merged.length, 'Merged donors are unique');
+
   for (const slug of donors) {
-    assert.ok(!find(active, slug));
-    assert.ok(find(routable, slug));
-    assert.ok(find(merged, slug)?.repository?.github);
-    const noOldUrl = projects.map(p => p.slug === slug ? {...p, liveUrl: undefined} : p);
-    assert.ok(find(classify(noOldUrl).routable, slug));
+    const donor = find(merged, slug);
+    assert.ok(donor, slug + ' is shown only in merged projects');
+    assert.ok(!find(active, slug), slug + ' cannot enter active carousel, grid, or category filters');
+    assert.ok(find(routable, slug), slug + ' remains a route');
+    assert.ok(donor.repository?.github, 'Original repository remains available');
+    assert.ok(donor.imageSrc, 'Original cover remains available');
+    const withoutPreviousVersion = projects.map(project =>
+      project.slug === slug ? {...project, liveUrl: undefined} : project
+    );
+    assert.ok(find(getShowcaseCollections(withoutPreviousVersion).merged, slug), 'Old deployment is optional');
   }
-  assert.throws(() => classify(projects.map(p => p.slug === 'repo-health' ? {...p, mergedInto: {projectSlug: 'invalid'}} : p)));
-  assert.throws(() => classify(projects.map(p => p.slug === 'repo-health' ? {...p, mergedInto: {projectSlug: 'repo-health'}} : p)));
-  assert.throws(() => classify(projects.map(p => p.slug === 'dev-hq' ? {...p, mergedInto: {projectSlug: 'repo-health'}} : p)));
-  const extra = {...find(projects, 'repo-health'), slug: 'extra-donor', id: 'extra-donor', mergedInto: {projectSlug: 'dev-hq'}};
-  assert.ok(find(classify([...projects, extra]).merged, 'extra-donor'));
+
+  assert.throws(() => getShowcaseCollections(projects.map(project =>
+    project.slug === 'repo-health' ? {...project, mergedInto: {projectSlug: 'missing-destination'}} : project
+  )), /Missing merge destination/);
+  assert.throws(() => getShowcaseCollections(projects.map(project =>
+    project.slug === 'repo-health' ? {...project, mergedInto: {projectSlug: 'repo-health'}} : project
+  )), /Self-merge/);
+  assert.throws(() => getShowcaseCollections(projects.map(project =>
+    project.slug === 'dev-hq' ? {...project, mergedInto: {projectSlug: 'repo-health'}} : project
+  )), /terminal destinations/);
+
+  const repeatedDonor = {...find(projects, 'repo-health'), id: 'repeated-donor'};
+  assert.throws(() => getShowcaseCollections([...projects, repeatedDonor]), /Ambiguous merge participant/);
+  const repeatedDestination = {...find(projects, 'dev-hq'), id: 'repeated-destination'};
+  assert.throws(() => getShowcaseCollections([...projects, repeatedDestination]), /Ambiguous merge participant/);
+
+  const otherDestination = active.find(project => project.slug !== 'dev-hq' && !project.mergedInto);
+  assert.ok(otherDestination, 'Another destination exists for future groups');
+  const additionalDonor = {
+    ...find(projects, 'repo-health'),
+    id: 'future-merged-donor',
+    slug: 'future-merged-donor',
+    mergedInto: {projectSlug: otherDestination.slug}
+  };
+  assert.equal(
+    getShowcaseCollections([...projects, additionalDonor]).groups.find(group => group.destination.slug === otherDestination.slug)?.donors.length,
+    1,
+    'Adding future destination groups must be data only',
+  );
 }
-console.log('PASS merged donors, active filters, original routes, optional links, destination validation, data regeneration parity');
+
+// An existing duplicate unrelated to any merger must not break the build.
+const legacyProjects = [
+  {slug: 'dev2ops', id: 'old-1'},
+  {slug: 'dev2ops', id: 'old-2'},
+  {slug: 'dev-hq', id: 'destination', isPublished: true, imageSrc: '/cover.webp', liveUrl: 'https://the-dev-hq.vercel.app/'},
+  {slug: 'repo-health', id: 'donor', isPublished: true, imageSrc: '/repo.webp', mergedInto: {projectSlug: 'dev-hq'}},
+];
+assert.equal(getShowcaseCollections(legacyProjects).groups[0].donors.length, 1);
+
+console.log('PASS: merged portfolio, legacy duplicate tolerance, strict participant ambiguity, original routes, and sitemap eligibility');
