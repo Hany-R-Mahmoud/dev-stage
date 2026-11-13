@@ -2,6 +2,7 @@ import { execFileSync } from 'node:child_process';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { basename, dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { validateProjectRecords } from '../src/lib/projectDirectory.ts';
 
 const scriptDirectory = dirname(fileURLToPath(import.meta.url));
 const projectRoot = resolve(scriptDirectory, '..');
@@ -582,8 +583,23 @@ const generatedProjects = registryProjects
   .filter((project) => readJson(join(apexyardRoot, project.workspace, 'docs', 'portfolio.json')).portfolio !== false)
   .map((project, index) => buildProject(project, apexyardRoot, index));
 const curatedProjects = JSON.parse(readFileSync(join(projectRoot, 'src/data/vercel-projects.json'), 'utf8'));
+// Registry has two historical dev2ops source rows. workspace/dev2ops is the canonical
+// maintained entry; external/dev2ops is an obsolete mirror. No global deduplicator.
+const canonicalGenerated = generatedProjects.filter((project) =>
+  project.slug !== 'dev2ops' || project.source?.workspace === 'workspace/dev2ops'
+);
 const curatedSlugs = new Set(curatedProjects.map((project) => project.slug));
-const projects = [...generatedProjects.filter((project) => !curatedSlugs.has(project.slug)), ...curatedProjects];
+const sourceProjects = [...canonicalGenerated.filter((project) => !curatedSlugs.has(project.slug)), ...curatedProjects];
+const editorial = readJson(join(projectRoot, 'src/data/projectEditorial.json'));
+const knownSlugs = new Set(sourceProjects.map((project) => project.slug));
+for (const slug of Object.keys(editorial)) {
+  if (!knownSlugs.has(slug)) throw new Error(`Stale portfolio editorial slug: ${slug}`);
+}
+const projects = sourceProjects.map(({ primaryCategoryId, portfolioVisibility, mergedInto, showcasePriority, ...source }) => ({
+  ...source,
+  ...(editorial[source.slug] ?? {}),
+}));
+validateProjectRecords(projects);
 const profile = {
   name: { en: 'Hany Mahmoud', ar: 'هاني' },
   title: {

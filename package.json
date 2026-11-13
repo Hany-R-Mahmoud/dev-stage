@@ -5,15 +5,16 @@
   "type": "module",
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
-    "sync:portfolio": "node scripts/sync-portfolio-data.mjs",
+    "sync:portfolio": "tsx scripts/sync-portfolio-data.mjs",
     "seo:generate": "tsx scripts/generate-sitemap.ts",
     "build:seo": "npm run seo:generate && npm run build",
-    "build": "npm run seo:generate && vite build",
+    "build": "npm run verify:directory && npm run verify:merged && npm run lint && npm run seo:generate && vite build",
     "preview": "vite preview",
     "clean": "rm -rf dist server.js",
     "lint": "tsc --noEmit",
     "doctor": "npx react-doctor@latest",
-    "verify:merged": "tsx scripts/verify-merged-projects.mjs"
+    "verify:merged": "tsx scripts/verify-merged-projects.mjs",
+    "verify:directory": "tsx scripts/verify-directory.mts"
   },
   "dependencies": {
     "@google/genai": "^2.4.0",

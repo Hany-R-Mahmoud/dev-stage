@@ -2177,9 +2177,6 @@
     ],
     "status": "in-progress",
     "stage": "published",
-    "mergedInto": {
-      "projectSlug": "dev-hq"
-    },
     "repository": {
       "github": "https://github.com/Hany-R-Mahmoud/audit-tool"
     }
@@ -2226,9 +2223,6 @@
     ],
     "status": "in-progress",
     "stage": "published",
-    "mergedInto": {
-      "projectSlug": "dev-hq"
-    },
     "repository": {
       "github": "https://github.com/Hany-R-Mahmoud/repo-health"
     }
@@ -2361,9 +2355,6 @@
     ],
     "status": "in-progress",
     "stage": "published",
-    "mergedInto": {
-      "projectSlug": "dev-hq"
-    },
     "repository": {
       "github": "https://github.com/Hany-R-Mahmoud/arabic-auditor"
     }
@@ -2453,9 +2444,6 @@
     ],
     "status": "in-progress",
     "stage": "published",
-    "mergedInto": {
-      "projectSlug": "dev-hq"
-    },
     "repository": {
       "github": "https://github.com/Hany-R-Mahmoud/build-brief"
     }

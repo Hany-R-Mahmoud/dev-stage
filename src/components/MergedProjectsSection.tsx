@@ -1,19 +1,38 @@
+import React from 'react';
+import { ChevronDown } from 'lucide-react';
 import type { Language, Project } from '../types';
-import type { MergeGroup } from '../lib/merged-projects';
+import type { MergedGroup } from '../lib/projectDirectory';
 import { ProjectLogo } from './ProjectLogo';
 
-type Props = { groups: MergeGroup[]; language: Language; onOpenDetails: (project: Project) => void };
+type Props = { groups: MergedGroup[]; language: Language; onOpenDetails: (project: Project) => void };
 
 export function MergedProjectsSection({ groups, language, onOpenDetails }: Props) {
+  const [expanded,setExpanded] = React.useState(() => {
+    if (typeof window === 'undefined') return false;
+    try { return window.sessionStorage.getItem('devstage-merged-open-v2') === '1'; } catch { return false; }
+  });
+  const toggle = () => setExpanded(current => {
+    const next = !current;
+    try { window.sessionStorage.setItem('devstage-merged-open-v2',next?'1':'0'); } catch { /* optional storage */ }
+    return next;
+  });
   if (!groups.length) return null;
+  const donorTotal = groups.reduce((sum,group)=>sum+group.donors.length,0);
   const isAr = language === 'ar';
   return (
     <section id="merged-projects" className="scroll-mt-24 space-y-8 pt-6" aria-labelledby="merged-projects-heading">
       <div className="space-y-3 border-b border-[#1A1A1A]/15 pb-6 dark:border-white/15">
         <p className="text-xs font-mono uppercase tracking-wider text-[#D4AF37]">{isAr ? 'سجل المشاريع' : 'PROJECT ARCHIVE'}</p>
-        <h2 id="merged-projects-heading" className="font-serif-luxury text-3xl font-bold sm:text-4xl">{isAr ? 'مشاريع تم دمجها' : 'Merged projects'}</h2>
+        <h2 id="merged-projects-heading" className="font-serif-luxury text-3xl font-bold sm:text-4xl">
+          <button type="button" aria-expanded={expanded} aria-controls="merged-projects-list" onClick={toggle}
+            className="flex min-h-11 w-full items-center justify-between gap-3 text-start focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37]">
+            <span>{isAr ? 'مشاريع تم دمجها' : 'Merged projects'} <span className="text-base font-normal text-[#6C6863] dark:text-[#A39E98]">({donorTotal})</span></span>
+            <ChevronDown aria-hidden="true" className={`h-6 w-6 shrink-0 text-[#A88620] transition-transform motion-reduce:transition-none dark:text-[#D4AF37] ${expanded ? 'rotate-180' : ''}`}/>
+          </button>
+        </h2>
         <p className="max-w-3xl text-sm leading-relaxed text-[#6C6863] dark:text-[#A39E98]">{isAr ? 'مشاريع بدأت مستقلة، وأصبحت جزءًا من مشاريع أكبر. تفاصيلها وروابطها الأصلية محفوظة هنا.' : 'Projects that began independently and are now part of larger products. Their original details and links remain available here.'}</p>
       </div>
+      {expanded && <div id="merged-projects-list" className="space-y-8">
       {groups.map(({destination,donors}) => (
         <div key={destination.slug} className="space-y-5" aria-label={destination.title[language]}>
           <div className="flex flex-wrap items-center justify-between gap-4 border-s-2 border-[#D4AF37] ps-4">
@@ -45,6 +64,7 @@ export function MergedProjectsSection({ groups, language, onOpenDetails }: Props
           </div>
         </div>
       ))}
+      </div>}
     </section>
   );
 }
