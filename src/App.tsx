@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Project, Language } from './types';
 import { PORTFOLIO_PROJECTS, PORTFOLIO_PROFILE } from './data/portfolioData';
 import { FocusRail, FocusRailItem } from './components/ui/focus-rail';
@@ -11,9 +11,11 @@ import { ThemeWaveOverlay } from './components/ThemeWaveOverlay';
 import { MobileBottomNav } from './components/MobileBottomNav';
 import { VisitorCounter } from './components/VisitorCounter';
 import { MergedProjectsSection } from './components/MergedProjectsSection';
-import { getShowcaseCollections } from './lib/merged-projects';
+import { ProjectDirectory } from './components/ProjectDirectory';
+import { getProjectDirectory, visibilityOf } from './lib/projectDirectory';
+import type { ProjectCategoryId } from './data/projectCategories';
 import { toAbsoluteUrl, updateSeoMetadata } from './lib/seo';
-import { ArrowUpRight, Feather, Filter, ChevronDown } from 'lucide-react';
+import { Feather } from 'lucide-react';
 
 type RouteState = Readonly<{
   projectSlug: string | null;
@@ -150,8 +152,15 @@ export default function App() {
   const projects = PORTFOLIO_PROJECTS;
   const profile = PORTFOLIO_PROFILE;
 
-  const [selectedCategory, setSelectedCategory] = useState<string>('All');
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [exploreRequest, setExploreRequest] = useState<{id: ProjectCategoryId; token: number} | null>(null);
+  const [savedCarouselCategory, setSavedCarouselCategory] = useState<string>(() => {
+    try { return window.sessionStorage.getItem('devstage-carousel-v2') ?? ''; } catch { return ''; }
+  });
+  const directoryScrollRef = useRef(0);
+  const handleExploreCategory = (id: string) => {
+    setExploreRequest(previous => ({id:id as ProjectCategoryId, token:(previous?.token ?? 0)+1}));
+  };
 
   const openProjectDetails = (project: Project) => {
     if (!isCompactViewport) {
@@ -160,6 +169,7 @@ export default function App() {
     }
 
     setSelectedProject(null);
+    directoryScrollRef.current = window.scrollY;
     setProjectSlug(project.slug);
 
     const targetPath = localizedPath(language, project.slug);
@@ -176,7 +186,7 @@ export default function App() {
     if (window.location.pathname !== targetPath) {
       window.history.pushState({}, '', targetPath);
     }
-    window.scrollTo({top: 0, behavior: 'instant'});
+    window.requestAnimationFrame(() => window.scrollTo({top: directoryScrollRef.current, behavior: 'instant'}));
   };
 
   // Handle document direction and language attributes
@@ -187,11 +197,26 @@ export default function App() {
 
   const isAr = language === 'ar';
 
-  const { active: publishedProjects, routable: routableProjects, groups: mergedGroups } = getShowcaseCollections(projects);
+  const {
+    active: publishedProjects, routable: routableProjects, removed: removedProjects,
+    unlisted: unlistedProjects, categoryGroups, representatives, mergedGroups,
+  } = getProjectDirectory(projects);
   const projectRouteProject = projectSlug ? routableProjects.find(project => project.slug === projectSlug) : null;
+  const removedRouteProject = projectSlug ? removedProjects.find(project => project.slug === projectSlug) : undefined;
+  const unlistedRoute = projectRouteProject ? unlistedProjects.some(p => p.slug === projectRouteProject.slug) : false;
   const projectRouteDestination = projectRouteProject?.mergedInto ? projects.find(project => project.slug === projectRouteProject.mergedInto?.projectSlug) : undefined;
 
   useEffect(() => {
+    if (removedRouteProject) {
+      updateSeoMetadata({
+        title: language === 'ar' ? 'المشروع غير متاح | ديف ستيج' : 'Project unavailable | Dev Stage',
+        description: language === 'ar' ? 'هذا المشروع لم يعد معروضًا في المعرض.' : 'This project is no longer available in the portfolio.',
+        path: localizedPath(language, removedRouteProject.slug),
+        language,
+        noindex: true,
+      });
+      return;
+    }
     if (projectRouteProject) {
       updateSeoMetadata({
         title: `${projectRouteProject.title[language]}${projectRouteProject.mergedInto ? (language === 'ar' ? ' — مشروع مدمج' : ' — Merged project') : ''} | Dev Stage`,
@@ -199,7 +224,8 @@ export default function App() {
         path: localizedPath(language, projectRouteProject.slug),
         language,
         type: 'article',
-        jsonLd: {
+        noindex: unlistedRoute,
+        jsonLd: unlistedRoute ? undefined : {
           '@context': 'https://schema.org',
           '@type': 'CreativeWork',
           name: projectRouteProject.title[language],
@@ -243,43 +269,22 @@ export default function App() {
         },
       },
     });
-  }, [language, profile, projectRouteProject, projectRouteDestination, publishedProjects]);
-  const categoryLabels: Record<string, { en: string; ar: string }> = {
-    Web: { en: 'Web Projects', ar: 'مشاريع الويب' },
-    Mobile: { en: 'Mobile Projects', ar: 'مشاريع الهاتف' },
-    Tools: { en: 'Tools & Systems', ar: 'أدوات وأنظمة' },
-  };
-  const projectCategories = publishedProjects.reduce<string[]>((categories, project) => (
-    categories.includes(project.category) ? categories : [...categories, project.category]
-  ), []);
-  const categories = [
-    { id: 'All', en: 'All Works', ar: 'كل الأعمال' },
-    ...projectCategories
-      .sort()
-      .map((category) => ({
-        id: category,
-        en: categoryLabels[category]?.en ?? category,
-        ar: categoryLabels[category]?.ar ?? category,
-      })),
-  ];
-
-  const filteredProjects = selectedCategory === 'All'
-    ? publishedProjects
-    : publishedProjects.filter(p => p.category === selectedCategory);
-
-  const carouselProjects = publishedProjects;
-  const focusRailItems: FocusRailItem[] = carouselProjects.map(p => ({
-    id: p.id,
-    title: p.title[language],
-    description: p.description[language],
-    meta: p.meta[language],
-    imageSrc: p.imageSrc,
-    liveUrl: p.liveUrl,
-    logoSrc: p.logoSrc,
-    category: p.category,
-    client: p.client[language],
-    href: localizedPath(language, p.slug),
+  }, [language, profile, projectRouteProject, projectRouteDestination, removedRouteProject, unlistedRoute, publishedProjects]);
+  const focusRailItems: FocusRailItem[] = representatives.map(({category,project}) => ({
+    id: category.id,
+    projectSlug: project.slug,
+    categoryId: category.id,
+    title: project.title[language],
+    description: project.description[language],
+    meta: project.meta[language],
+    imageSrc: project.imageSrc,
+    liveUrl: project.liveUrl,
+    logoSrc: project.logoSrc,
+    category: category.title[language],
+    client: project.client[language],
+    href: localizedPath(language, project.slug),
   }));
+  const initialCarouselIndex = Math.max(0, focusRailItems.findIndex(item => item.categoryId === savedCarouselCategory));
 
   return (
     <>
@@ -301,7 +306,7 @@ export default function App() {
           </div>
 
           {/* Navigation Header */}
-          <div className={projectRouteProject ? 'hidden md:block' : undefined}>
+          <div className={projectRouteProject || removedRouteProject ? 'hidden md:block' : undefined}>
             <Navbar
               language={language}
               onLanguageChange={handleLanguageChange}
@@ -311,7 +316,13 @@ export default function App() {
           </div>
 
           {/* PUBLIC PORTFOLIO SHOWCASE */}
-          {projectRouteProject ? (
+          {removedRouteProject ? (
+            <main dir={isAr ? 'rtl' : 'ltr'} className="relative z-10 mx-auto min-h-[60vh] max-w-[900px] space-y-5 px-6 py-20 md:px-16">
+              <h1 className="font-serif-luxury text-3xl font-bold sm:text-4xl">{isAr ? 'المشروع غير متاح' : 'Project unavailable'}</h1>
+              <p className="text-[#6C6863] dark:text-[#A39E98]">{isAr ? 'هذا المشروع لم يعد معروضًا في المعرض. يمكنك استكشاف المشاريع الأخرى.' : 'This project is no longer listed in the public portfolio. Explore the available projects instead.'}</p>
+              <button type="button" onClick={handleProjectBack} className="min-h-11 border border-[#D4AF37] px-4 py-2 font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37]">{isAr ? 'العودة للمشاريع' : 'Back to projects'}</button>
+            </main>
+          ) : projectRouteProject ? (
               <ProjectDetailPage
                 project={projectRouteProject}
                 mergeDestination={projectRouteDestination}
@@ -334,162 +345,42 @@ export default function App() {
                 </p>
               </header>
               
-              {/* 3D FOCUS RAIL FEATURED SHOWCASE (TOP CENTERPIECE) */}
-              <section className="space-y-4">
-                <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-[#1A1A1A]/15 dark:border-white/15 pb-4">
+              {/* One representative from every nonempty active category. */}
+              {focusRailItems.length>0 && <section className="space-y-4" aria-label={isAr?'معرض الأقسام':'Category representatives'}>
+                <div className="flex flex-col justify-between gap-4 border-b border-[#1A1A1A]/15 pb-4 dark:border-white/15 md:flex-row md:items-end">
                   <div>
-                    <span className="text-xs font-mono tracking-[0.25em] rtl:tracking-normal text-[#D4AF37] uppercase flex items-center gap-2">
-                      <Feather className="h-4 w-4 shrink-0" />
-                      {isAr ? 'المشاريع المختارة' : 'CURATED WORK'}
+                    <span className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-[#A88620] dark:text-[#D4AF37]">
+                      <Feather className="h-4 w-4" aria-hidden="true"/>{isAr?'المشاريع المختارة':'CURATED WORK'}
                     </span>
-                    <h2 className="font-serif-luxury text-3xl sm:text-4xl font-bold text-[#1A1A1A] dark:text-[#F4F2ED] mt-2 leading-tight sm:leading-snug">
-                      {isAr ? 'معرض الأعمال الرئيسي' : 'Featured Gallery'}
-                    </h2>
+                    <h2 className="mt-2 font-serif-luxury text-3xl font-bold sm:text-4xl">{isAr?'مشروع من كل قسم':'One project from each category'}</h2>
                   </div>
                 </div>
-
-                {/* The FocusRail Carousel Component */}
                 <FocusRail
-                  items={focusRailItems}
-                  isArabic={isAr}
-                  autoPlay={true}
-                  interval={10000}
-                  loop={true}
-                  onSelectProject={(item) => {
-                    const project = projects.find((candidate) => candidate.id === item.id);
-                    if (project) openProjectDetails(project);
+                  items={focusRailItems} initialIndex={initialCarouselIndex}
+                  isArabic={isAr} autoPlay={true} interval={10000} loop={focusRailItems.length>1}
+                  onActiveCategoryChange={id=>{
+                    setSavedCarouselCategory(id);
+                    try {window.sessionStorage.setItem('devstage-carousel-v2',id)} catch {/* optional */}
+                  }}
+                  onExploreCategory={handleExploreCategory}
+                  onSelectProject={item=>{
+                    const project=projects.find(candidate=>candidate.slug===item.projectSlug);
+                    if(project)openProjectDetails(project);
                   }}
                 />
-              </section>
+              </section>}
 
               {/* Profile Author Editorial Card */}
               <div id="profile-card" className="scroll-mt-24">
                 <ProfileCard profile={profile} language={language} />
               </div>
 
-              {/* FILTERABLE PROJECT DIRECTORY GRID */}
-              <section id="project-showroom" className="scroll-mt-24 space-y-8 pt-6">
-                <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 border-b border-[#1A1A1A]/15 dark:border-white/15 pb-6">
-                  <div>
-                    <span className="text-xs font-mono tracking-[0.25em] rtl:tracking-normal text-[#D4AF37] uppercase">
-                      {isAr ? 'أعمال مختارة' : 'SELECTED WORKS'}
-                    </span>
-                    <h2 className="font-serif-luxury text-3xl sm:text-4xl font-bold text-[#1A1A1A] dark:text-[#F4F2ED] mt-2 leading-tight sm:leading-snug">
-                      {isAr ? 'معرض المشاريع' : 'Project Showroom'}
-                    </h2>
-                  </div>
-
-                  {/* Category Filter Dropdown Menu */}
-                  <div className="relative w-full sm:w-auto min-w-[220px] sm:min-w-[260px]">
-                    <div className="relative flex items-center bg-[#EBE5DE] dark:bg-[#1A1918] border border-[#1A1A1A]/20 dark:border-white/20 hover:border-[#D4AF37] dark:hover:border-[#D4AF37] transition-colors duration-300 shadow-sm">
-                      <div className="flex items-center gap-2 ltr:pl-3.5 ltr:pr-2 rtl:pr-3.5 rtl:pl-2 py-2.5 text-[#D4AF37] pointer-events-none shrink-0">
-                        <Filter className="h-4 w-4" />
-                        <span className="text-[11px] font-mono tracking-wider rtl:tracking-normal uppercase text-[#6C6863] dark:text-[#A39E98] shrink-0">
-                          {isAr ? 'التصنيف:' : 'Category:'}
-                        </span>
-                      </div>
-                      <select
-                        value={selectedCategory}
-                        onChange={(e) => setSelectedCategory(e.target.value)}
-                        aria-label={isAr ? 'تصفية المشاريع حسب التصنيف' : 'Filter projects by category'}
-                        className="w-full bg-transparent py-2.5 ltr:pl-1 ltr:pr-9 rtl:pr-1 rtl:pl-9 text-xs font-mono tracking-wider rtl:tracking-normal uppercase text-[#1A1A1A] dark:text-[#F4F2ED] focus:outline-none cursor-pointer appearance-none font-semibold"
-                      >
-                        {categories.map((cat) => (
-                          <option
-                            key={cat.id}
-                            value={cat.id}
-                            className="bg-[#F9F8F6] dark:bg-[#141312] text-[#1A1A1A] dark:text-[#F4F2ED] py-2"
-                          >
-                            {isAr ? cat.ar : cat.en}
-                          </option>
-                        ))}
-                      </select>
-                      <div className="absolute ltr:right-3 rtl:left-3 top-1/2 -translate-y-1/2 pointer-events-none text-[#D4AF37]">
-                        <ChevronDown className="h-4 w-4" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Grid Items: Immersive Image-First Presentation */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {filteredProjects.map((proj) => (
-                    <article
-                      key={proj.id}
-                      className="group relative flex w-full flex-col overflow-hidden bg-[#F9F8F6] text-left dark:bg-[#141312] rtl:text-right border border-[#1A1A1A]/20 dark:border-white/20 hover:border-[#D4AF37] dark:hover:border-[#D4AF37] transition-all duration-500 hover:shadow-2xl dark:hover:shadow-[0_12px_40px_rgba(212,175,55,0.15)]"
-                    >
-                      <button
-                        type="button"
-                        onClick={() => openProjectDetails(proj)}
-                        className="flex w-full flex-1 flex-col space-y-4 p-5 text-left rtl:text-right focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#D4AF37]"
-                      >
-                        {/* Dominant Image Container */}
-                        <div className="relative aspect-[16/10] overflow-hidden bg-[#1A1A1A] border border-[#1A1A1A]/20 dark:border-white/20">
-                          <img
-                            src={proj.imageSrc}
-                            alt={proj.title[language]}
-                            className="h-full w-full object-contain transition-all duration-700 group-hover:scale-105"
-                          />
-                          <div className="absolute top-2.5 ltr:right-2.5 rtl:left-2.5 bg-[#1A1A1A]/90 dark:bg-[#0E0D0C]/90 text-[#F4F2ED] px-2.5 py-1 text-[10px] font-mono tracking-widest uppercase border border-[#D4AF37]/40">
-                            {proj.category}
-                          </div>
-                        </div>
-
-                        {/* Title and Metadata */}
-                        <div className="space-y-1.5">
-                          <div className="flex items-start justify-between gap-3">
-                            <span className="min-w-0 flex-1 text-[10px] font-mono tracking-[0.2em] uppercase text-[#D4AF37] font-semibold">
-                              {proj.meta[language]}
-                            </span>
-                            <span className="shrink-0 pt-0.5 text-[10px] font-mono text-[#6C6863] dark:text-[#A39E98]">
-                              {proj.year}
-                            </span>
-                          </div>
-                          <div className="flex items-center gap-3">
-                            <ProjectLogo name={proj.title[language]} logoSrc={proj.logoSrc} className="h-10 w-10" />
-                            <h3 className="font-serif-luxury text-2xl font-bold text-[#1A1A1A] dark:text-[#F4F2ED] group-hover:text-[#D4AF37] transition-colors duration-300">
-                              {proj.title[language]}
-                            </h3>
-                          </div>
-                          <p className="text-xs sm:text-sm text-[#6C6863] dark:text-[#A39E98] line-clamp-2 leading-relaxed font-sans-luxury">
-                            {proj.description[language]}
-                          </p>
-                        </div>
-                      </button>
-
-                      <div className="flex items-center justify-between gap-4 border-t border-[#1A1A1A]/10 dark:border-white/10 px-5 py-3.5 text-xs">
-                        {proj.liveUrl ? (
-                          <a
-                            href={proj.liveUrl}
-                            target="_blank"
-                            rel="noreferrer"
-                            onClick={(event) => {
-                              event.stopPropagation();
-                            }}
-                            className="inline-flex min-h-11 items-center gap-1 font-mono text-[10px] font-semibold tracking-wider text-[#6C6863] dark:text-[#A39E98] hover:text-[#D4AF37] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37]"
-                          >
-                            {isAr ? 'زيارة الموقع' : 'VISIT WEBSITE'}
-                            <ArrowUpRight className="h-3.5 w-3.5 text-[#D4AF37]" />
-                          </a>
-                        ) : (
-                          <span className="font-mono text-[10px] text-[#6C6863] dark:text-[#A39E98]">{proj.client[language]}</span>
-                        )}
-                        <a
-                          href={localizedPath(language, proj.slug)}
-                          onClick={(event) => {
-                            event.preventDefault();
-                            openProjectDetails(proj);
-                          }}
-                          className="flex min-h-11 items-center gap-1 font-mono text-xs font-bold tracking-wider text-[#1A1A1A] dark:text-[#F4F2ED] hover:text-[#D4AF37] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] transition-colors"
-                        >
-                          {isAr ? 'التفاصيل' : 'DETAILS'}
-                          <ArrowUpRight className="h-4 w-4 text-[#D4AF37] ltr:group-hover:translate-x-0.5 rtl:group-hover:-translate-x-0.5 transition-transform" />
-                        </a>
-                      </div>
-                    </article>
-                  ))}
-                </div>
-              </section>
+              <ProjectDirectory
+                groups={categoryGroups}
+                language={language}
+                onOpenDetails={openProjectDetails}
+                exploreRequest={exploreRequest}
+              />
 
               <MergedProjectsSection groups={mergedGroups} language={language} onOpenDetails={openProjectDetails} />
 

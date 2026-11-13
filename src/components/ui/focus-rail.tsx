@@ -8,6 +8,8 @@ import { ProjectLogo } from "@/components/ProjectLogo";
 
 export type FocusRailItem = {
   id: string | number;
+  projectSlug?: string;
+  categoryId?: string;
   title: string;
   description?: string;
   imageSrc: string;
@@ -32,6 +34,8 @@ interface FocusRailProps {
   interval?: number;
   className?: string;
   onSelectProject?: (item: FocusRailItem) => void;
+  onExploreCategory?: (categoryId: string) => void;
+  onActiveCategoryChange?: (categoryId: string) => void;
 }
 
 /**
@@ -73,6 +77,8 @@ export function FocusRail({
   interval = 10000,
   className,
   onSelectProject,
+  onExploreCategory,
+  onActiveCategoryChange,
 }: FocusRailProps) {
   const [active, setActive] = React.useState(initialIndex);
   const [isHovering, setIsHovering] = React.useState(false);
@@ -81,15 +87,27 @@ export function FocusRail({
   const count = items.length;
   const activeIndex = count > 0 ? wrap(0, count, active) : 0;
   const activeItem = items[activeIndex];
+  const previousCategoryRef = React.useRef<string | number | undefined>(items[initialIndex]?.id);
+  React.useEffect(() => {
+    if (!count) return;
+    const oldIndex = items.findIndex(item => item.id === previousCategoryRef.current);
+    const nextIndex = oldIndex >= 0 ? oldIndex : Math.min(activeIndex,count-1);
+    if (activeIndex !== nextIndex) setActive(nextIndex);
+  }, [items, count]);
+  React.useEffect(() => {
+    if (!activeItem) return;
+    previousCategoryRef.current = activeItem.id;
+    if (activeItem.categoryId) onActiveCategoryChange?.(activeItem.categoryId);
+  }, [activeItem?.id, activeItem?.categoryId, onActiveCategoryChange]);
 
   // --- NAVIGATION HANDLERS ---
   const handlePrev = React.useCallback(() => {
-    if (!loop && active === 0) return;
+    if (count < 2 || (!loop && active === 0)) return;
     setActive((p) => p - 1);
-  }, [loop, active]);
+  }, [loop, active, count]);
 
   const handleNext = React.useCallback(() => {
-    if (!loop && active === count - 1) return;
+    if (count < 2 || (!loop && active === count - 1)) return;
     setActive((p) => p + 1);
   }, [loop, active, count]);
 
@@ -191,7 +209,7 @@ export function FocusRail({
         {/* DRAGGABLE RAIL CONTAINER */}
         <motion.div
           className="relative mx-auto flex h-[340px] md:h-[460px] w-full max-w-6xl items-center justify-center perspective-[1200px] cursor-grab active:cursor-grabbing"
-          drag="x"
+          drag={count > 1 ? "x" : false}
           dragConstraints={{ left: 0, right: 0 }}
           dragElastic={0.2}
           onDragEnd={onDragEnd}
@@ -284,6 +302,11 @@ export function FocusRail({
                 transition={{ duration: 0.3 }}
                 className="flex min-h-[136px] w-full flex-col justify-center space-y-3"
               >
+                {activeItem.category && (
+                  <span className="inline-block w-fit self-center border border-[#D4AF37]/50 px-3 py-1 text-xs font-semibold text-[#A88620] dark:text-[#D4AF37] md:self-start">
+                    {activeItem.category}
+                  </span>
+                )}
                 {activeItem.meta && (
                   <span className="inline-block w-fit max-w-full self-center break-words px-3 py-1 text-center text-[10px] font-mono tracking-widest uppercase text-[#F9F8F6] dark:text-[#0E0D0C] bg-[#1A1A1A] dark:bg-[#F4F2ED] border border-[#1A1A1A] dark:border-white/20 md:self-start">
                     {activeItem.meta}
@@ -305,6 +328,12 @@ export function FocusRail({
           </div>
 
           <div className="flex min-h-11 shrink-0 flex-wrap items-center justify-center gap-3 md:justify-end">
+            {activeItem.categoryId && onExploreCategory && (
+              <button type="button" onClick={() => onExploreCategory(activeItem.categoryId!)}
+                className="inline-flex min-h-11 items-center border border-[#1A1A1A]/20 px-3 py-2 text-xs font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] dark:border-white/20">
+                {isArabic ? 'استكشف القسم' : 'Explore this category'}
+              </button>
+            )}
             {activeItem.liveUrl && (
               <a
                 href={activeItem.liveUrl}
