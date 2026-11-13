@@ -36,18 +36,18 @@ for (const projects of [curated, PORTFOLIO_PROJECTS]) {
 
   assert.throws(() => getShowcaseCollections(projects.map(project =>
     project.slug === 'repo-health' ? {...project, mergedInto: {projectSlug: 'missing-destination'}} : project
-  )), /Missing merge destination/);
+  )), /Unknown merge destination/);
   assert.throws(() => getShowcaseCollections(projects.map(project =>
     project.slug === 'repo-health' ? {...project, mergedInto: {projectSlug: 'repo-health'}} : project
-  )), /Self-merge/);
+  )), /Invalid self/);
   assert.throws(() => getShowcaseCollections(projects.map(project =>
     project.slug === 'dev-hq' ? {...project, mergedInto: {projectSlug: 'repo-health'}} : project
-  )), /terminal destinations/);
+  )), /Merge chain/);
 
   const repeatedDonor = {...find(projects, 'repo-health'), id: 'repeated-donor'};
-  assert.throws(() => getShowcaseCollections([...projects, repeatedDonor]), /Ambiguous merge participant/);
+  assert.throws(() => getShowcaseCollections([...projects, repeatedDonor]), /Duplicate project slug/);
   const repeatedDestination = {...find(projects, 'dev-hq'), id: 'repeated-destination'};
-  assert.throws(() => getShowcaseCollections([...projects, repeatedDestination]), /Ambiguous merge participant/);
+  assert.throws(() => getShowcaseCollections([...projects, repeatedDestination]), /Duplicate project slug/);
 
   const otherDestination = active.find(project => project.slug !== 'dev-hq' && !project.mergedInto);
   assert.ok(otherDestination, 'Another destination exists for future groups');
@@ -64,13 +64,9 @@ for (const projects of [curated, PORTFOLIO_PROJECTS]) {
   );
 }
 
-// An existing duplicate unrelated to any merger must not break the build.
-const legacyProjects = [
-  {slug: 'dev2ops', id: 'old-1'},
-  {slug: 'dev2ops', id: 'old-2'},
-  {slug: 'dev-hq', id: 'destination', isPublished: true, imageSrc: '/cover.webp', liveUrl: 'https://the-dev-hq.vercel.app/'},
-  {slug: 'repo-health', id: 'donor', isPublished: true, imageSrc: '/repo.webp', mergedInto: {projectSlug: 'dev-hq'}},
-];
-assert.equal(getShowcaseCollections(legacyProjects).groups[0].donors.length, 1);
+// Legacy dev2ops mirror is resolved at generation; duplicate effective slugs now fail.
+assert.equal(PORTFOLIO_PROJECTS.filter(project => project.slug === 'dev2ops').length,1);
+const duplicate = {...PORTFOLIO_PROJECTS.find(project => project.slug === 'dev2ops'), id:'obsolete-mirror'};
+assert.throws(()=>getShowcaseCollections([...PORTFOLIO_PROJECTS,duplicate]),/Duplicate project slug/);
 
-console.log('PASS: merged portfolio, legacy duplicate tolerance, strict participant ambiguity, original routes, and sitemap eligibility');
+console.log('PASS: merged portfolio, canonical dev2ops, strict participant validation, original routes, and sitemap eligibility');
