@@ -63,7 +63,7 @@ assert.ok(getProjectDirectory(removed).removed.some(p=>p.slug==='one'));
 assert.ok(!getProjectDirectory(removed).routable.some(p=>p.slug==='one'));
 assert.equal(getProjectDirectory([second]).representatives.length,1,'last member removed from another category');
 assert.equal(getProjectDirectory([]).representatives.length,0,'zero-slide case');
-assert.equal(getProjectDirectory([first,second]).representatives.find(r=>r.category.id==='games')?.project.slug,'one','slug tie-break');
+assert.equal(getProjectDirectory([first,{...second,showcasePriority:undefined}]).representatives.find(r=>r.category.id==='games')?.project.slug,'one','slug tie-break when priorities are equal');
 assert.equal(getProjectDirectory([{...second,showcasePriority:undefined},destination]).representatives.length,2);
 
 const rejects=(items:Project[],pattern:RegExp)=>{
