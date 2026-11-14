@@ -20,6 +20,10 @@ for (const projects of [curated, PORTFOLIO_PROJECTS]) {
   assert.equal(groups.find(group => group.destination.slug === 'dev-hq')?.donors.length, 4);
   assert.equal(find(active, 'dev-hq')?.slug, 'dev-hq', 'Destination stays active');
   assert.equal(new Set(merged.map(project => project.slug)).size, merged.length, 'Merged donors are unique');
+  assert.equal(find(merged, 'mi3ad')?.mergedInto?.projectSlug, 'monasabati');
+  assert.equal(groups.find(group => group.destination.slug === 'monasabati')?.donors.length, 1);
+  assert.ok(!find(active, 'mi3ad'), 'Mi3ad cannot enter active categories or carousel');
+  assert.ok(find(routable, 'mi3ad'), 'Mi3ad keeps its original route');
 
   for (const slug of donors) {
     const donor = find(merged, slug);

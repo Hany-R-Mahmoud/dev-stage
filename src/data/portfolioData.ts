@@ -4701,6 +4701,7 @@ export const PORTFOLIO_PROJECTS = [
   {
     "id": "apexyard-mi3ad",
     "slug": "mi3ad",
+    "mergedInto": { "projectSlug": "monasabati" },
     "title": {
       "en": "Mi3ad",
       "ar": "ميعاد"
