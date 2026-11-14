@@ -2545,98 +2545,6 @@ export const PORTFOLIO_PROJECTS = [
     "primaryCategoryId": "health"
   },
   {
-    "id": "apexyard-squad-tactics",
-    "slug": "squad-tactics",
-    "title": {
-      "en": "squad-tactics",
-      "ar": "squad-tactics"
-    },
-    "description": {
-      "en": "SquadTactics — Turn-Based 3D Team Tactics Battle on a Hex Grid",
-      "ar": "SquadTactics — Turn-Based 3D Team Tactics Battle on a Hex Grid"
-    },
-    "meta": {
-      "en": "Vite • TypeScript • Vitest",
-      "ar": "Vite • TypeScript • Vitest"
-    },
-    "category": "Web",
-    "client": {
-      "en": "Independent",
-      "ar": "مستقل"
-    },
-    "role": {
-      "en": "Founder & Builder",
-      "ar": "المؤسس والمطور"
-    },
-    "year": "2026",
-    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EST%3C%2Ftext%3E%3C%2Fsvg%3E",
-    "galleryImages": [],
-    "contentMDX": {
-      "en": "# squad-tactics\n\nSquadTactics — Turn-Based 3D Team Tactics Battle on a Hex Grid\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Web\n- Tech stack: Vite, TypeScript, Vitest\n\n## Features\n\n- Stack: TypeScript 5, Vite 5, Three.js, GSAP 3, PeerJS 1.5, Vitest, Playwright\n- No React, no framework, no UI library — raw TypeScript\n- No accounts, no central server, no auth — WebRTC peer-to-peer with PeerJS public STUN\n- `dist/index.html` opens without a server (file:// — single-player / hot-seat / inspection only; multiplayer needs internet for the PeerJS broker)\n- Tap a hex to move / an enemy to attack\n- Virtual controls in the bottom HUD\n\n## Progress\n\nClassified as in progress by Dev Stage; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document.",
-      "ar": "# squad-tactics\n\nSquadTactics — Turn-Based 3D Team Tactics Battle on a Hex Grid\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Web\n- Tech stack: Vite, TypeScript, Vitest\n\n## Features\n\n- Stack: TypeScript 5, Vite 5, Three.js, GSAP 3, PeerJS 1.5, Vitest, Playwright\n- No React, no framework, no UI library — raw TypeScript\n- No accounts, no central server, no auth — WebRTC peer-to-peer with PeerJS public STUN\n- `dist/index.html` opens without a server (file:// — single-player / hot-seat / inspection only; multiplayer needs internet for the PeerJS broker)\n- Tap a hex to move / an enemy to attack\n- Virtual controls in the bottom HUD\n\n## Progress\n\nClassified as in progress by Dev Stage; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document."
-    },
-    "isPublished": true,
-    "featured": false,
-    "tags": [
-      "Vite",
-      "TypeScript",
-      "Vitest",
-      "in-progress"
-    ],
-    "status": "in-progress",
-    "features": [
-      {
-        "en": "Stack: TypeScript 5, Vite 5, Three.js, GSAP 3, PeerJS 1.5, Vitest, Playwright",
-        "ar": "Stack: TypeScript 5, Vite 5, Three.js, GSAP 3, PeerJS 1.5, Vitest, Playwright"
-      },
-      {
-        "en": "No React, no framework, no UI library — raw TypeScript",
-        "ar": "No React, no framework, no UI library — raw TypeScript"
-      },
-      {
-        "en": "No accounts, no central server, no auth — WebRTC peer-to-peer with PeerJS public STUN",
-        "ar": "No accounts, no central server, no auth — WebRTC peer-to-peer with PeerJS public STUN"
-      },
-      {
-        "en": "`dist/index.html` opens without a server (file:// — single-player / hot-seat / inspection only; multiplayer needs internet for the PeerJS broker)",
-        "ar": "`dist/index.html` opens without a server (file:// — single-player / hot-seat / inspection only; multiplayer needs internet for the PeerJS broker)"
-      },
-      {
-        "en": "Tap a hex to move / an enemy to attack",
-        "ar": "Tap a hex to move / an enemy to attack"
-      },
-      {
-        "en": "Virtual controls in the bottom HUD",
-        "ar": "Virtual controls in the bottom HUD"
-      }
-    ],
-    "progress": {
-      "en": "Classified as in progress by Dev Stage; implementation and scope are still evolving.",
-      "ar": "Classified as in progress by Dev Stage; implementation and scope are still evolving."
-    },
-    "issues": [
-      {
-        "en": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.",
-        "ar": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace."
-      }
-    ],
-    "suggestions": [
-      {
-        "en": "Record the next milestone and known blockers in this portfolio document.",
-        "ar": "Record the next milestone and known blockers in this portfolio document."
-      }
-    ],
-    "repository": {
-      "branch": "main",
-      "sync": "parent-workspace"
-    },
-    "source": {
-      "workspace": "workspace/squad-tactics",
-      "last_reviewed": "2026-07-29"
-    },
-    "primaryCategoryId": "games"
-  },
-  {
     "id": "apexyard-mzawedi",
     "slug": "mzawedi",
     "title": {
@@ -3987,194 +3895,6 @@ export const PORTFOLIO_PROJECTS = [
     "primaryCategoryId": "business"
   },
   {
-    "id": "apexyard-memory-book",
-    "slug": "memory-book",
-    "title": {
-      "en": "memory-book",
-      "ar": "memory-book"
-    },
-    "description": {
-      "en": "A private local family memory archive with milestones, stories, photos, tags, and exportable albums. Runs entirely on your device — no cloud, no paid services.",
-      "ar": "A private local family memory archive with milestones, stories, photos, tags, and exportable albums. Runs entirely on your device — no cloud, no paid services."
-    },
-    "meta": {
-      "en": "Next.js • Vite • React • TypeScript • Tailwind • Vitest",
-      "ar": "Next.js • Vite • React • TypeScript • Tailwind • Vitest"
-    },
-    "category": "Web",
-    "client": {
-      "en": "Independent",
-      "ar": "مستقل"
-    },
-    "role": {
-      "en": "Founder & Builder",
-      "ar": "المؤسس والمطور"
-    },
-    "year": "2026",
-    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EMB%3C%2Ftext%3E%3C%2Fsvg%3E",
-    "galleryImages": [],
-    "contentMDX": {
-      "en": "# memory-book\n\nA private local family memory archive with milestones, stories, photos, tags, and exportable albums. Runs entirely on your device — no cloud, no paid services.\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Frontend: Next.js 16 App Router + React 19 + TypeScript\n- Styling: Tailwind CSS v4 with custom design tokens (amber primary, warm neutrals, dark mode)\n- Database: SQLite via `better-sqlite3` (zero-config, file-based)\n- Validation: Zod schemas on both client and server\n- File Storage: Local filesystem (`data/photos/`)\n- State: React client components with fetch-based data loading\n\n## Progress\n\nClassified as in progress by Dev Stage; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n- No GitHub remote is configured; updates remain local.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document.",
-      "ar": "# memory-book\n\nA private local family memory archive with milestones, stories, photos, tags, and exportable albums. Runs entirely on your device — no cloud, no paid services.\n\n## Project snapshot\n\n- Status: in-progress\n- Category: Web\n- Tech stack: Next.js, Vite, React, TypeScript, Tailwind, Vitest\n\n## Features\n\n- Frontend: Next.js 16 App Router + React 19 + TypeScript\n- Styling: Tailwind CSS v4 with custom design tokens (amber primary, warm neutrals, dark mode)\n- Database: SQLite via `better-sqlite3` (zero-config, file-based)\n- Validation: Zod schemas on both client and server\n- File Storage: Local filesystem (`data/photos/`)\n- State: React client components with fetch-based data loading\n\n## Progress\n\nClassified as in progress by Dev Stage; implementation and scope are still evolving.\n\n## Issues / troubles\n\n- No conventional test directory was detected.\n- No GitHub remote is configured; updates remain local.\n\n## Suggested next steps\n\n- Record the next milestone and known blockers in this portfolio document."
-    },
-    "isPublished": true,
-    "featured": false,
-    "tags": [
-      "Next.js",
-      "Vite",
-      "React",
-      "TypeScript",
-      "Tailwind",
-      "Vitest",
-      "in-progress"
-    ],
-    "status": "in-progress",
-    "features": [
-      {
-        "en": "Frontend: Next.js 16 App Router + React 19 + TypeScript",
-        "ar": "Frontend: Next.js 16 App Router + React 19 + TypeScript"
-      },
-      {
-        "en": "Styling: Tailwind CSS v4 with custom design tokens (amber primary, warm neutrals, dark mode)",
-        "ar": "Styling: Tailwind CSS v4 with custom design tokens (amber primary, warm neutrals, dark mode)"
-      },
-      {
-        "en": "Database: SQLite via `better-sqlite3` (zero-config, file-based)",
-        "ar": "Database: SQLite via `better-sqlite3` (zero-config, file-based)"
-      },
-      {
-        "en": "Validation: Zod schemas on both client and server",
-        "ar": "Validation: Zod schemas on both client and server"
-      },
-      {
-        "en": "File Storage: Local filesystem (`data/photos/`)",
-        "ar": "File Storage: Local filesystem (`data/photos/`)"
-      },
-      {
-        "en": "State: React client components with fetch-based data loading",
-        "ar": "State: React client components with fetch-based data loading"
-      }
-    ],
-    "progress": {
-      "en": "Classified as in progress by Dev Stage; implementation and scope are still evolving.",
-      "ar": "Classified as in progress by Dev Stage; implementation and scope are still evolving."
-    },
-    "issues": [
-      {
-        "en": "No conventional test directory was detected.",
-        "ar": "No conventional test directory was detected."
-      },
-      {
-        "en": "No GitHub remote is configured; updates remain local.",
-        "ar": "No GitHub remote is configured; updates remain local."
-      }
-    ],
-    "suggestions": [
-      {
-        "en": "Record the next milestone and known blockers in this portfolio document.",
-        "ar": "Record the next milestone and known blockers in this portfolio document."
-      }
-    ],
-    "repository": {
-      "branch": "main",
-      "sync": "local-only"
-    },
-    "source": {
-      "workspace": "workspace/memory-book",
-      "last_reviewed": "2026-07-29"
-    },
-    "primaryCategoryId": "life"
-  },
-  {
-    "id": "apexyard-mohakat",
-    "slug": "mohakat",
-    "title": {
-      "en": "mohakat",
-      "ar": "mohakat"
-    },
-    "description": {
-      "en": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).",
-      "ar": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app)."
-    },
-    "meta": {
-      "en": "Next.js • React • TypeScript • Tailwind",
-      "ar": "Next.js • React • TypeScript • Tailwind"
-    },
-    "category": "Web",
-    "client": {
-      "en": "Independent",
-      "ar": "مستقل"
-    },
-    "role": {
-      "en": "Founder & Builder",
-      "ar": "المؤسس والمطور"
-    },
-    "year": "2026",
-    "imageSrc": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20750%22%3E%3Crect%20width%3D%221200%22%20height%3D%22750%22%20fill%3D%22%231A1A1A%22%2F%3E%3Crect%20x%3D%2232%22%20y%3D%2232%22%20width%3D%221136%22%20height%3D%22686%22%20fill%3D%22none%22%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%223%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22410%22%20fill%3D%22%23F4F2ED%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%22180%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EMO%3C%2Ftext%3E%3C%2Fsvg%3E",
-    "galleryImages": [],
-    "contentMDX": {
-      "en": "# mohakat\n\nThis is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).\n\n## Project snapshot\n\n- Status: prototype\n- Category: Web\n- Tech stack: Next.js, React, TypeScript, Tailwind\n\n## Features\n\n- Next.js Documentation - learn about Next.js features and API.\n- Learn Next.js - an interactive Next.js tutorial.\n\n## Progress\n\nClassified as a prototype by Dev Stage; evidence and scope remain early-stage.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n- This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Record the next milestone and known blockers in this portfolio document.",
-      "ar": "# mohakat\n\nThis is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).\n\n## Project snapshot\n\n- Status: prototype\n- Category: Web\n- Tech stack: Next.js, React, TypeScript, Tailwind\n\n## Features\n\n- Next.js Documentation - learn about Next.js features and API.\n- Learn Next.js - an interactive Next.js tutorial.\n\n## Progress\n\nClassified as a prototype by Dev Stage; evidence and scope remain early-stage.\n\n## Issues / troubles\n\n- No test command is declared in package.json.\n- No conventional test directory was detected.\n- This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.\n\n## Suggested next steps\n\n- Add a focused automated test command for the highest-risk behavior.\n- Record the next milestone and known blockers in this portfolio document."
-    },
-    "isPublished": true,
-    "featured": false,
-    "tags": [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "Tailwind",
-      "prototype"
-    ],
-    "status": "prototype",
-    "features": [
-      {
-        "en": "Next.js Documentation - learn about Next.js features and API.",
-        "ar": "Next.js Documentation - learn about Next.js features and API."
-      },
-      {
-        "en": "Learn Next.js - an interactive Next.js tutorial.",
-        "ar": "Learn Next.js - an interactive Next.js tutorial."
-      }
-    ],
-    "progress": {
-      "en": "Classified as a prototype by Dev Stage; evidence and scope remain early-stage.",
-      "ar": "Classified as a prototype by Dev Stage; evidence and scope remain early-stage."
-    },
-    "issues": [
-      {
-        "en": "No test command is declared in package.json.",
-        "ar": "No test command is declared in package.json."
-      },
-      {
-        "en": "No conventional test directory was detected.",
-        "ar": "No conventional test directory was detected."
-      },
-      {
-        "en": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.",
-        "ar": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace."
-      }
-    ],
-    "suggestions": [
-      {
-        "en": "Add a focused automated test command for the highest-risk behavior.",
-        "ar": "Add a focused automated test command for the highest-risk behavior."
-      },
-      {
-        "en": "Record the next milestone and known blockers in this portfolio document.",
-        "ar": "Record the next milestone and known blockers in this portfolio document."
-      }
-    ],
-    "repository": {
-      "branch": "main",
-      "sync": "parent-workspace"
-    },
-    "source": {
-      "workspace": "workspace/mohakat",
-      "last_reviewed": "2026-07-29"
-    },
-    "portfolioVisibility": "unlisted"
-  },
-  {
     "id": "apexyard-hafiz",
     "slug": "hafiz",
     "title": {
@@ -4701,7 +4421,6 @@ export const PORTFOLIO_PROJECTS = [
   {
     "id": "apexyard-mi3ad",
     "slug": "mi3ad",
-    "mergedInto": { "projectSlug": "monasabati" },
     "title": {
       "en": "Mi3ad",
       "ar": "ميعاد"
@@ -4765,7 +4484,10 @@ export const PORTFOLIO_PROJECTS = [
       "workspace": "workspace/mi3ad",
       "last_reviewed": "2026-10-28"
     },
-    "primaryCategoryId": "community"
+    "primaryCategoryId": "community",
+    "mergedInto": {
+      "projectSlug": "monasabati"
+    }
   },
   {
     "id": "apexyard-dayra",
@@ -5411,7 +5133,7 @@ export const PORTFOLIO_PROJECTS = [
       "ar": "المؤسس والمطور"
     },
     "year": "2026",
-    "liveUrl": "https://hanyrm-radar.vercel.app/",
+    "liveUrl": "https://raddarr.vercel.app/",
     "imageSrc": "/projects/radar/cover.webp",
     "galleryImages": [],
     "contentMDX": {
@@ -6205,7 +5927,7 @@ export const PORTFOLIO_PROJECTS = [
       "ar": "المؤسس والمطور"
     },
     "year": "2026",
-    "liveUrl": "https://hanyrm-tajheez.vercel.app/",
+    "liveUrl": "https://tajjheez.vercel.app/",
     "imageSrc": "/projects/tajheez/cover.webp",
     "galleryImages": [],
     "contentMDX": {
@@ -7551,12 +7273,12 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-mohtaway",
     "slug": "mohtaway",
     "title": {
-      "en": "Mohtaway",
-      "ar": "محتواي"
+      "en": "Banat Afkary",
+      "ar": "بنات أفكاري"
     },
     "description": {
-      "en": "A content workspace connecting ideas, drafts, production, publishing calendars, and a personal asset library.",
-      "ar": "مساحة لصناعة المحتوى تربط الأفكار والمسودات والإنتاج وتقويم النشر ومكتبة الملفات الشخصية."
+      "en": "Banat Afkary brings Mohtaway’s content production and asset library together with Mofakker’s weekly planning, series cadence, and publish preparation.",
+      "ar": "بنات أفكاري تجمع مراحل الإنتاج ومكتبة الملفات من محتواي مع التخطيط الأسبوعي وإيقاع السلاسل وتجهيز النشر من مفكر."
     },
     "meta": {
       "en": "Vite • React • TypeScript",
@@ -7572,14 +7294,14 @@ export const PORTFOLIO_PROJECTS = [
       "ar": "المؤسس والمطور"
     },
     "year": "2026",
-    "liveUrl": "https://moh-taway.vercel.app/",
+    "liveUrl": "https://banat-afkary.vercel.app/",
     "imageSrc": "/projects/mohtaway/cover.jpg",
     "galleryImages": [
       "/projects/mohtaway/overview.jpg"
     ],
     "contentMDX": {
-      "en": "# Mohtaway\n\nA content workspace connecting ideas, drafts, production, publishing calendars, and a personal asset library.\n\n## Features\n\n- Idea vault and content workflow\n- Publishing calendar\n- Personal asset library",
-      "ar": "# محتواي\n\nمساحة لصناعة المحتوى تربط الأفكار والمسودات والإنتاج وتقويم النشر ومكتبة الملفات الشخصية.\n\n## الميزات\n\n- خزنة الأفكار ومراحل المحتوى\n- تقويم النشر\n- مكتبة الملفات الشخصية"
+      "en": "# Banat Afkary\n\nA content workspace combining Mohtaway’s production workflow and asset library with Mofakker’s weekly planning, series cadence, and publish preparation.\n\n## Features\n\n- Idea vault and seven-stage content production workflow\n- Publishing calendar and personal asset library\n- Saturday–Friday weekly planner in Cairo time, with filters, overdue items, and quick-add\n- Cadence series with weekly targets and scheduled/published progress\n- Four publish-preparation checks for text, visuals, schedule, and links\n- Mofakker export import with preview and duplicate detection\n- Workspace migration backups and restore controls\n\n## Merge\n\nMofakker’s weekly planning layer merged into Mohtaway on 14 November 2026 (Cairo time), through GitHub PR #2. Mohtaway retains its seven-stage production lifecycle. Existing Mofakker data can be imported from an export file.\n\n## Current identity\n\nMohtaway is now called Banat Afkary. Mofakker is part of this unified product.",
+      "ar": "# بنات أفكاري\n\nمساحة لصناعة المحتوى تجمع مراحل الإنتاج ومكتبة الملفات في محتواي مع التخطيط الأسبوعي وإيقاع السلاسل وتجهيز النشر من مفكر.\n\n## الميزات\n\n- خزنة الأفكار وسير إنتاج المحتوى عبر سبع مراحل\n- تقويم النشر ومكتبة الملفات الشخصية\n- مخطط أسبوعي من السبت للجمعة بتوقيت القاهرة، مع التصفية والمتأخرات والإضافة السريعة\n- سلاسل بأهداف أسبوعية ومتابعة المحتوى المجدول والمنشور\n- أربع علامات لتجهيز النص والوسائط والموعد والروابط قبل النشر\n- استيراد ملفات تصدير مفكر مع معاينة واكتشاف التكرار\n- نسخ احتياطية قبل ترقية مساحة العمل وأدوات للاستعادة\n\n## الدمج\n\nدُمج التخطيط الأسبوعي من مفكر في محتواي يوم ١٤ نوفمبر ٢٠٢٦ بتوقيت القاهرة، عبر طلب الدمج الثاني. يحتفظ محتواي بمراحل الإنتاج السبع. يمكن استيراد بيانات مفكر من ملف تصدير.\n\n## الاسم الحالي\n\nأصبح اسم محتواي بنات أفكاري. مفكر جزء من هذا المنتج الموحد."
     },
     "isPublished": true,
     "featured": false,
@@ -7593,8 +7315,8 @@ export const PORTFOLIO_PROJECTS = [
     "stage": "published",
     "features": [
       {
-        "en": "Idea vault and content workflow",
-        "ar": "خزنة الأفكار ومراحل المحتوى"
+        "en": "Idea vault and seven-stage content production workflow",
+        "ar": "خزنة الأفكار وسير إنتاج المحتوى عبر سبع مراحل"
       },
       {
         "en": "Publishing calendar",
@@ -7603,6 +7325,26 @@ export const PORTFOLIO_PROJECTS = [
       {
         "en": "Personal asset library",
         "ar": "مكتبة الملفات الشخصية"
+      },
+      {
+        "en": "Saturday–Friday weekly planner in Cairo time, with filters, overdue items, and quick-add",
+        "ar": "مخطط أسبوعي من السبت للجمعة بتوقيت القاهرة، مع التصفية والمتأخرات والإضافة السريعة"
+      },
+      {
+        "en": "Cadence series with weekly targets and scheduled/published progress",
+        "ar": "سلاسل بأهداف أسبوعية ومتابعة المحتوى المجدول والمنشور"
+      },
+      {
+        "en": "Four publish-preparation checks for text, visuals, schedule, and links",
+        "ar": "أربع علامات لتجهيز النص والوسائط والموعد والروابط قبل النشر"
+      },
+      {
+        "en": "Mofakker export import with preview and duplicate detection",
+        "ar": "استيراد ملفات تصدير مفكر مع معاينة واكتشاف التكرار"
+      },
+      {
+        "en": "Workspace migration backups and restore controls",
+        "ar": "نسخ احتياطية قبل ترقية مساحة العمل وأدوات للاستعادة"
       }
     ],
     "progress": {
@@ -7638,7 +7380,7 @@ export const PORTFOLIO_PROJECTS = [
       "ar": "المؤسس والمطور"
     },
     "year": "2026",
-    "liveUrl": "https://mohaki-wheat.vercel.app/",
+    "liveUrl": "https://al-mohaki.vercel.app/",
     "imageSrc": "/projects/mohaki/cover.jpg",
     "galleryImages": [
       "/projects/mohaki/overview.jpg"
@@ -8223,7 +7965,11 @@ export const PORTFOLIO_PROJECTS = [
       "workspace": "workspace/published/mofakker",
       "last_reviewed": "2026-11-07"
     },
-    "primaryCategoryId": "creative"
+    "primaryCategoryId": "creative",
+    "mergedInto": {
+      "projectSlug": "mohtaway",
+      "mergedAt": "2026-11-14"
+    }
   },
   {
     "id": "apexyard-ahwagi",
@@ -8784,5 +8530,1907 @@ export const PORTFOLIO_PROJECTS = [
       "last_reviewed": "2026-11-07"
     },
     "primaryCategoryId": "life"
+  },
+  {
+    "id": "apexyard-pantry-circle",
+    "slug": "pantry-circle",
+    "title": {
+      "en": "PantryCircle",
+      "ar": "نادي أساسيات الحي"
+    },
+    "description": {
+      "en": "Neighbourhood group buying for household staples.",
+      "ar": "شراء جماعي للسلع الأساسية بين الجيران."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://pantry-circle-lime.vercel.app/",
+    "imageSrc": "/projects/pantry-circle/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/pantry-circle",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# PantryCircle\n\nNeighbourhood group buying for household staples.",
+      "ar": "# نادي أساسيات الحي\n\nشراء جماعي للسلع الأساسية بين الجيران."
+    },
+    "primaryCategoryId": "life",
+    "portfolioVisibility": "listed"
+  },
+  {
+    "id": "apexyard-bayty",
+    "slug": "bayty",
+    "title": {
+      "en": "Bayti",
+      "ar": "بيتي"
+    },
+    "description": {
+      "en": "A home board for maintenance, pantry, plants, and chores.",
+      "ar": "لوحة منزلية للصيانة والمخزون والنباتات والمهام."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://bayty.vercel.app/",
+    "imageSrc": "/projects/bayty/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/bayty",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Bayti\n\nA home board for maintenance, pantry, plants, and chores.",
+      "ar": "# بيتي\n\nلوحة منزلية للصيانة والمخزون والنباتات والمهام."
+    },
+    "primaryCategoryId": "life",
+    "portfolioVisibility": "listed"
+  },
+  {
+    "id": "apexyard-tech-hub",
+    "slug": "tech-hub",
+    "title": {
+      "en": "Nexus 26",
+      "ar": "نيكسوس ٢٦"
+    },
+    "description": {
+      "en": "An Arabic technology report with source-linked chapters and predictions.",
+      "ar": "تقرير تقني بالعربية بفصول وتوقعات مرتبطة بمصادرها."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://tech-hub-black.vercel.app/",
+    "imageSrc": "/projects/tech-hub/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/tech-hub",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Nexus 26\n\nAn Arabic technology report with source-linked chapters and predictions.",
+      "ar": "# نيكسوس ٢٦\n\nتقرير تقني بالعربية بفصول وتوقعات مرتبطة بمصادرها."
+    },
+    "primaryCategoryId": "learning",
+    "portfolioVisibility": "listed"
+  },
+  {
+    "id": "apexyard-loghz-el-hara",
+    "slug": "loghz-el-hara",
+    "title": {
+      "en": "Loghz El Hara",
+      "ar": "لغز الحارة"
+    },
+    "description": {
+      "en": "An interactive Egyptian neighbourhood mystery game.",
+      "ar": "لعبة تحقيق تفاعلية في الحارة المصرية."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [
+      {
+        "en": "The public page showed its error boundary during browser review; HTTP availability does not prove gameplay works.",
+        "ar": "ظهرت شاشة خطأ في الصفحة العامة أثناء المراجعة؛ استجابة الرابط لا تثبت أن اللعب يعمل."
+      }
+    ],
+    "suggestions": [],
+    "liveUrl": "https://loghz-el-hara.vercel.app/",
+    "imageSrc": "/projects/loghz-el-hara/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/loghz-el-hara",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Loghz El Hara\n\nAn interactive Egyptian neighbourhood mystery game.",
+      "ar": "# لغز الحارة\n\nلعبة تحقيق تفاعلية في الحارة المصرية."
+    },
+    "primaryCategoryId": "games",
+    "portfolioVisibility": "listed"
+  },
+  {
+    "id": "apexyard-waslreceipt",
+    "slug": "waslreceipt",
+    "title": {
+      "en": "WaslReceipt",
+      "ar": "وصل إيصال"
+    },
+    "description": {
+      "en": "Group-order payment records with redacted receipts and reviewed matching.",
+      "ar": "سجل لمدفوعات الطلبات الجماعية بإيصالات منقحة ومطابقة يراجعها المستخدم."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://waslreceipt.vercel.app/",
+    "imageSrc": "/projects/waslreceipt/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/waslreceipt",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# WaslReceipt\n\nGroup-order payment records with redacted receipts and reviewed matching.",
+      "ar": "# وصل إيصال\n\nسجل لمدفوعات الطلبات الجماعية بإيصالات منقحة ومطابقة يراجعها المستخدم."
+    },
+    "primaryCategoryId": "business",
+    "portfolioVisibility": "listed"
+  },
+  {
+    "id": "apexyard-turathna",
+    "slug": "turathna",
+    "title": {
+      "en": "Turathna",
+      "ar": "تراثنا"
+    },
+    "description": {
+      "en": "Shared-device games about Egyptian proverbs and heritage.",
+      "ar": "ألعاب على جهاز مشترك عن الأمثال والتراث المصري."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://turathna-eta.vercel.app/",
+    "imageSrc": "/projects/turathna/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/turathna",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Turathna\n\nShared-device games about Egyptian proverbs and heritage.",
+      "ar": "# تراثنا\n\nألعاب على جهاز مشترك عن الأمثال والتراث المصري."
+    },
+    "primaryCategoryId": "games",
+    "portfolioVisibility": "listed"
+  },
+  {
+    "id": "apexyard-medi-flow",
+    "slug": "medi-flow",
+    "title": {
+      "en": "Pharmos",
+      "ar": "فارموس"
+    },
+    "description": {
+      "en": "A pharmacy workspace for sales, stock, purchase orders, and refill follow-up.",
+      "ar": "مساحة للصيدلية تجمع المبيعات والمخزون وطلبات الشراء ومتابعة إعادة الصرف."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://medi-flow-murex.vercel.app/",
+    "imageSrc": "/projects/medi-flow/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/medi-flow",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Pharmos\n\nA pharmacy workspace for sales, stock, purchase orders, and refill follow-up.",
+      "ar": "# فارموس\n\nمساحة للصيدلية تجمع المبيعات والمخزون وطلبات الشراء ومتابعة إعادة الصرف."
+    },
+    "primaryCategoryId": "business",
+    "portfolioVisibility": "listed"
+  },
+  {
+    "id": "apexyard-hiraf-misr",
+    "slug": "hiraf-misr",
+    "title": {
+      "en": "Hiraf Misr",
+      "ar": "حرف مصر"
+    },
+    "description": {
+      "en": "A source-backed atlas of Egyptian craft heritage.",
+      "ar": "أطلس للحرف والتراث المصري بسجلات مرتبطة بمصادرها."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://hiraf-misr.vercel.app/",
+    "imageSrc": "/projects/hiraf-misr/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/hiraf-misr",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Hiraf Misr\n\nA source-backed atlas of Egyptian craft heritage.",
+      "ar": "# حرف مصر\n\nأطلس للحرف والتراث المصري بسجلات مرتبطة بمصادرها."
+    },
+    "primaryCategoryId": "community",
+    "portfolioVisibility": "listed"
+  },
+  {
+    "id": "apexyard-dawarha",
+    "slug": "dawarha",
+    "title": {
+      "en": "Dawwarha",
+      "ar": "دوّرها"
+    },
+    "description": {
+      "en": "A household register for repair, borrowing, food rescue, and reuse.",
+      "ar": "سجل منزلي للإصلاح والاستعارة وإنقاذ الطعام وإعادة الاستخدام."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://dawarha.vercel.app/",
+    "imageSrc": "/projects/dawarha/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/dawarha",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Dawwarha\n\nA household register for repair, borrowing, food rescue, and reuse.",
+      "ar": "# دوّرها\n\nسجل منزلي للإصلاح والاستعارة وإنقاذ الطعام وإعادة الاستخدام."
+    },
+    "primaryCategoryId": "life",
+    "portfolioVisibility": "listed"
+  },
+  {
+    "id": "apexyard-zera3a",
+    "slug": "zera3a",
+    "title": {
+      "en": "Zera3a",
+      "ar": "زراعة"
+    },
+    "description": {
+      "en": "A Cairo balcony garden diary and seasonal watering planner.",
+      "ar": "يوميات لزراعة البلكونة في القاهرة وتنظيم الري حسب الموسم."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://zera3a-three.vercel.app/",
+    "imageSrc": "/projects/zera3a/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/zera3a",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Zera3a\n\nA Cairo balcony garden diary and seasonal watering planner.",
+      "ar": "# زراعة\n\nيوميات لزراعة البلكونة في القاهرة وتنظيم الري حسب الموسم."
+    },
+    "primaryCategoryId": "life",
+    "portfolioVisibility": "listed"
+  },
+  {
+    "id": "apexyard-tool-gateway",
+    "slug": "tool-gateway",
+    "title": {
+      "en": "Gateway",
+      "ar": "بوابة الأدوات"
+    },
+    "description": {
+      "en": "A local console for reviewing AI-agent tool permissions and audit changes.",
+      "ar": "لوحة محلية لمراجعة صلاحيات أدوات الوكلاء وتغييراتها."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://tool-gateway-eta.vercel.app/",
+    "imageSrc": "/projects/tool-gateway/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/tool-gateway",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Gateway\n\nA local console for reviewing AI-agent tool permissions and audit changes.",
+      "ar": "# بوابة الأدوات\n\nلوحة محلية لمراجعة صلاحيات أدوات الوكلاء وتغييراتها."
+    },
+    "primaryCategoryId": "developer",
+    "portfolioVisibility": "listed"
+  },
+  {
+    "id": "apexyard-waraki",
+    "slug": "waraki",
+    "title": {
+      "en": "Waraki",
+      "ar": "ورقي"
+    },
+    "description": {
+      "en": "A family checklist for preparing documents before government-office visits.",
+      "ar": "قوائم للأسرة لتجهيز الأوراق قبل زيارة المصالح الحكومية."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://waraki.vercel.app/",
+    "imageSrc": "/projects/waraki/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/waraki",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Waraki\n\nA family checklist for preparing documents before government-office visits.",
+      "ar": "# ورقي\n\nقوائم للأسرة لتجهيز الأوراق قبل زيارة المصالح الحكومية."
+    },
+    "primaryCategoryId": "life",
+    "portfolioVisibility": "listed"
+  },
+  {
+    "id": "apexyard-coffee-scene",
+    "slug": "coffee-scene",
+    "title": {
+      "en": "CoffeeScene",
+      "ar": "مشهد القهوة"
+    },
+    "description": {
+      "en": "Cairo café quests, sourced venue records, and a private scene book.",
+      "ar": "مهام لاكتشاف مقاهي القاهرة بسجلات موثقة ودفتر زيارات خاص."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://coffee-scene.vercel.app/",
+    "imageSrc": "/projects/coffee-scene/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/coffee-scene",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# CoffeeScene\n\nCairo café quests, sourced venue records, and a private scene book.",
+      "ar": "# مشهد القهوة\n\nمهام لاكتشاف مقاهي القاهرة بسجلات موثقة ودفتر زيارات خاص."
+    },
+    "primaryCategoryId": "community",
+    "portfolioVisibility": "listed"
+  },
+  {
+    "id": "apexyard-dev-tools-toolbox",
+    "slug": "dev-tools-toolbox",
+    "title": {
+      "en": "Odda",
+      "ar": "عُدّة"
+    },
+    "description": {
+      "en": "Three local developer tools in one workspace without an account.",
+      "ar": "ثلاث أدوات محلية للمطور في مساحة واحدة بدون حساب."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://dev-tools-toolbox.vercel.app/",
+    "imageSrc": "/projects/dev-tools-toolbox/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/dev-tools-toolbox",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Odda\n\nThree local developer tools in one workspace without an account.",
+      "ar": "# عُدّة\n\nثلاث أدوات محلية للمطور في مساحة واحدة بدون حساب."
+    },
+    "primaryCategoryId": "developer",
+    "portfolioVisibility": "listed"
+  },
+  {
+    "id": "apexyard-brand-studio",
+    "slug": "brand-studio",
+    "title": {
+      "en": "Brand Studio",
+      "ar": "استوديو"
+    },
+    "description": {
+      "en": "An Arabic brand-kit and social-card studio.",
+      "ar": "استوديو عربي لإنشاء الهوية وبطاقات التواصل."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://haweya-studio.vercel.app/",
+    "imageSrc": "/projects/brand-studio/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/brand-studio",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Brand Studio\n\nAn Arabic brand-kit and social-card studio.",
+      "ar": "# استوديو\n\nاستوديو عربي لإنشاء الهوية وبطاقات التواصل."
+    },
+    "primaryCategoryId": "creative",
+    "portfolioVisibility": "listed"
+  },
+  {
+    "id": "apexyard-nuba",
+    "slug": "nuba",
+    "title": {
+      "en": "Nuba",
+      "ar": "نوبة"
+    },
+    "description": {
+      "en": "A sourced bilingual atlas of Egyptian Nubian heritage.",
+      "ar": "أطلس موثق بلغتين للتراث النوبي المصري."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://al-nuba.vercel.app/",
+    "imageSrc": "/projects/nuba/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/nuba",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Nuba\n\nA sourced bilingual atlas of Egyptian Nubian heritage.",
+      "ar": "# نوبة\n\nأطلس موثق بلغتين للتراث النوبي المصري."
+    },
+    "primaryCategoryId": "community",
+    "portfolioVisibility": "listed"
+  },
+  {
+    "id": "apexyard-memory-book",
+    "slug": "memory-book",
+    "title": {
+      "en": "memory-book",
+      "ar": "memory-book"
+    },
+    "description": {
+      "en": "A private local family memory archive with milestones, stories, photos, tags, and exportable albums. Runs entirely on your device — no cloud, no paid services.",
+      "ar": "A private local family memory archive with milestones, stories, photos, tags, and exportable albums. Runs entirely on your device — no cloud, no paid services."
+    },
+    "meta": {
+      "en": "Next.js • Vite • React • TypeScript • Tailwind • Vitest",
+      "ar": "Next.js • Vite • React • TypeScript • Tailwind • Vitest"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "imageSrc": "/projects/memory-book/publication.jpg",
+    "galleryImages": [],
+    "contentMDX": {
+      "en": "# memory-book\n\nA private local family memory archive with milestones, stories, photos, tags, and exportable albums. Runs entirely on your device — no cloud, no paid services.",
+      "ar": "# memory-book\n\nA private local family memory archive with milestones, stories, photos, tags, and exportable albums. Runs entirely on your device — no cloud, no paid services."
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "Next.js",
+      "Vite",
+      "React",
+      "TypeScript",
+      "Tailwind",
+      "Vitest",
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [
+      {
+        "en": "Frontend: Next.js 16 App Router + React 19 + TypeScript",
+        "ar": "Frontend: Next.js 16 App Router + React 19 + TypeScript"
+      },
+      {
+        "en": "Styling: Tailwind CSS v4 with custom design tokens (amber primary, warm neutrals, dark mode)",
+        "ar": "Styling: Tailwind CSS v4 with custom design tokens (amber primary, warm neutrals, dark mode)"
+      },
+      {
+        "en": "Database: SQLite via `better-sqlite3` (zero-config, file-based)",
+        "ar": "Database: SQLite via `better-sqlite3` (zero-config, file-based)"
+      },
+      {
+        "en": "Validation: Zod schemas on both client and server",
+        "ar": "Validation: Zod schemas on both client and server"
+      },
+      {
+        "en": "File Storage: Local filesystem (`data/photos/`)",
+        "ar": "File Storage: Local filesystem (`data/photos/`)"
+      },
+      {
+        "en": "State: React client components with fetch-based data loading",
+        "ar": "State: React client components with fetch-based data loading"
+      }
+    ],
+    "progress": {
+      "en": "Classified as in progress by Dev Stage; implementation and scope are still evolving.",
+      "ar": "Classified as in progress by Dev Stage; implementation and scope are still evolving."
+    },
+    "issues": [
+      {
+        "en": "No conventional test directory was detected.",
+        "ar": "No conventional test directory was detected."
+      },
+      {
+        "en": "No GitHub remote is configured; updates remain local.",
+        "ar": "No GitHub remote is configured; updates remain local."
+      }
+    ],
+    "suggestions": [
+      {
+        "en": "Record the next milestone and known blockers in this portfolio document.",
+        "ar": "Record the next milestone and known blockers in this portfolio document."
+      }
+    ],
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/memory-book",
+      "branch": "main",
+      "sync": "github"
+    },
+    "source": {
+      "workspace": "workspace/memory-book",
+      "last_reviewed": "2026-07-29"
+    },
+    "liveUrl": "https://mem-book.vercel.app/",
+    "stage": "published",
+    "primaryCategoryId": "life",
+    "portfolioVisibility": "listed"
+  },
+  {
+    "id": "apexyard-mohakat",
+    "slug": "mohakat",
+    "title": {
+      "en": "mohakat",
+      "ar": "mohakat"
+    },
+    "description": {
+      "en": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).",
+      "ar": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app)."
+    },
+    "meta": {
+      "en": "Next.js • React • TypeScript • Tailwind",
+      "ar": "Next.js • React • TypeScript • Tailwind"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "imageSrc": "/projects/mohakat/publication.jpg",
+    "galleryImages": [],
+    "contentMDX": {
+      "en": "# mohakat\n\nThis is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).",
+      "ar": "# mohakat\n\nThis is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app)."
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind",
+      "prototype"
+    ],
+    "status": "prototype",
+    "features": [
+      {
+        "en": "Next.js Documentation - learn about Next.js features and API.",
+        "ar": "Next.js Documentation - learn about Next.js features and API."
+      },
+      {
+        "en": "Learn Next.js - an interactive Next.js tutorial.",
+        "ar": "Learn Next.js - an interactive Next.js tutorial."
+      }
+    ],
+    "progress": {
+      "en": "Classified as a prototype by Dev Stage; evidence and scope remain early-stage.",
+      "ar": "Classified as a prototype by Dev Stage; evidence and scope remain early-stage."
+    },
+    "issues": [
+      {
+        "en": "No test command is declared in package.json.",
+        "ar": "No test command is declared in package.json."
+      },
+      {
+        "en": "No conventional test directory was detected.",
+        "ar": "No conventional test directory was detected."
+      },
+      {
+        "en": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.",
+        "ar": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace."
+      }
+    ],
+    "suggestions": [
+      {
+        "en": "Add a focused automated test command for the highest-risk behavior.",
+        "ar": "Add a focused automated test command for the highest-risk behavior."
+      },
+      {
+        "en": "Record the next milestone and known blockers in this portfolio document.",
+        "ar": "Record the next milestone and known blockers in this portfolio document."
+      }
+    ],
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/mohakat",
+      "branch": "main",
+      "sync": "github"
+    },
+    "source": {
+      "workspace": "workspace/mohakat",
+      "last_reviewed": "2026-07-29"
+    },
+    "liveUrl": "https://mohakat-silk.vercel.app/",
+    "stage": "published",
+    "portfolioVisibility": "listed",
+    "primaryCategoryId": "games"
+  },
+  {
+    "id": "apexyard-eldakheel",
+    "slug": "eldakheel",
+    "title": {
+      "en": "Eldakheel",
+      "ar": "الدخيل"
+    },
+    "description": {
+      "en": "An Egyptian secret-word deduction game for shared play.",
+      "ar": "لعبة استنتاج مصرية بكلمة سرية للعب الجماعي."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://eldakheel.vercel.app/",
+    "imageSrc": "/projects/eldakheel/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/eldakheel",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Eldakheel\n\nAn Egyptian secret-word deduction game for shared play.",
+      "ar": "# الدخيل\n\nلعبة استنتاج مصرية بكلمة سرية للعب الجماعي."
+    },
+    "primaryCategoryId": "games",
+    "portfolioVisibility": "listed"
+  },
+  {
+    "id": "apexyard-tahfeez",
+    "slug": "tahfeez",
+    "title": {
+      "en": "Tahfeez",
+      "ar": "تحفيز"
+    },
+    "description": {
+      "en": "An Arabic workspace for hosting trivia nights and scoring rounds.",
+      "ar": "مساحة عربية لإدارة ليالي الأسئلة والجولات والنقاط."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://tahfeez-liard.vercel.app/",
+    "imageSrc": "/projects/tahfeez/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/tahfeez",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Tahfeez\n\nAn Arabic workspace for hosting trivia nights and scoring rounds.",
+      "ar": "# تحفيز\n\nمساحة عربية لإدارة ليالي الأسئلة والجولات والنقاط."
+    },
+    "primaryCategoryId": "games",
+    "portfolioVisibility": "listed"
+  },
+  {
+    "id": "apexyard-tagseet",
+    "slug": "tagseet",
+    "title": {
+      "en": "Tagseet",
+      "ar": "تقسيط"
+    },
+    "description": {
+      "en": "An EGP installment calculator for comparing payment scenarios.",
+      "ar": "حاسبة تقسيط بالجنيه المصري لمقارنة سيناريوهات السداد."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://tagseet.vercel.app/",
+    "imageSrc": "/projects/tagseet/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/tagseet",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Tagseet\n\nAn EGP installment calculator for comparing payment scenarios.",
+      "ar": "# تقسيط\n\nحاسبة تقسيط بالجنيه المصري لمقارنة سيناريوهات السداد."
+    },
+    "primaryCategoryId": "finance",
+    "portfolioVisibility": "listed"
+  },
+  {
+    "id": "apexyard-bayan",
+    "slug": "bayan",
+    "title": {
+      "en": "Bayan",
+      "ar": "بيان"
+    },
+    "description": {
+      "en": "Collect, clean, chart, and review team data with traceable steps.",
+      "ar": "جمع بيانات الفرق وتنظيفها ورسمها ومراجعتها بخطوات قابلة للتتبع."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://bayan-mu-two.vercel.app/",
+    "imageSrc": "/projects/bayan/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/bayan",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Bayan\n\nCollect, clean, chart, and review team data with traceable steps.",
+      "ar": "# بيان\n\nجمع بيانات الفرق وتنظيفها ورسمها ومراجعتها بخطوات قابلة للتتبع."
+    },
+    "primaryCategoryId": "business",
+    "portfolioVisibility": "listed"
+  },
+  {
+    "id": "apexyard-inkdraft",
+    "slug": "inkdraft",
+    "title": {
+      "en": "InkDraft",
+      "ar": "مسودة الحبر"
+    },
+    "description": {
+      "en": "Offline team card battles on one shared device.",
+      "ar": "معارك بطاقات للفرق على جهاز مشترك بدون إنترنت."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://inkdraft-tau.vercel.app/",
+    "imageSrc": "/projects/inkdraft/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/team-strategy",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# InkDraft\n\nOffline team card battles on one shared device.",
+      "ar": "# مسودة الحبر\n\nمعارك بطاقات للفرق على جهاز مشترك بدون إنترنت."
+    },
+    "primaryCategoryId": "games",
+    "portfolioVisibility": "listed"
+  },
+  {
+    "id": "apexyard-fogofwar",
+    "slug": "fogofwar",
+    "title": {
+      "en": "Fog of War",
+      "ar": "رادار الضباب"
+    },
+    "description": {
+      "en": "An offline shared-device radar hunt for friends.",
+      "ar": "لعبة بحث بالرادار للأصدقاء على جهاز مشترك بدون إنترنت."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://fogofwar-ebon.vercel.app/",
+    "imageSrc": "/projects/fogofwar/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/team-strategy",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Fog of War\n\nAn offline shared-device radar hunt for friends.",
+      "ar": "# رادار الضباب\n\nلعبة بحث بالرادار للأصدقاء على جهاز مشترك بدون إنترنت."
+    },
+    "primaryCategoryId": "games",
+    "portfolioVisibility": "listed"
+  },
+  {
+    "id": "apexyard-3ale2",
+    "slug": "3ale2",
+    "title": {
+      "en": "3ale2",
+      "ar": "عالق"
+    },
+    "description": {
+      "en": "A context-linked discussion workspace for comments on audio, video, images, and receipt lines.",
+      "ar": "مساحة نقاش تربط التعليقات بمواضع محددة في الصوت والفيديو والصور وسطور الإيصالات."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [
+      {
+        "en": "The public deployment stayed on the context-pack loading screen during review.",
+        "ar": "ظلت النسخة العامة على شاشة تحميل حزمة السياق أثناء المراجعة."
+      }
+    ],
+    "suggestions": [],
+    "liveUrl": "https://3ale2.vercel.app/",
+    "imageSrc": "/projects/3ale2/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/3ale2",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# 3ale2\n\nA context-linked discussion workspace for comments on audio, video, images, and receipt lines.",
+      "ar": "# عالق\n\nمساحة نقاش تربط التعليقات بمواضع محددة في الصوت والفيديو والصور وسطور الإيصالات."
+    },
+    "primaryCategoryId": "productivity",
+    "portfolioVisibility": "listed"
+  },
+  {
+    "id": "apexyard-squad-tactics",
+    "slug": "squad-tactics",
+    "title": {
+      "en": "squad-tactics",
+      "ar": "squad-tactics"
+    },
+    "description": {
+      "en": "SquadTactics — Turn-Based 3D Team Tactics Battle on a Hex Grid",
+      "ar": "SquadTactics — Turn-Based 3D Team Tactics Battle on a Hex Grid"
+    },
+    "meta": {
+      "en": "Vite • TypeScript • Vitest",
+      "ar": "Vite • TypeScript • Vitest"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "imageSrc": "/projects/squad-tactics/publication.jpg",
+    "galleryImages": [],
+    "contentMDX": {
+      "en": "# squad-tactics\n\nSquadTactics — Turn-Based 3D Team Tactics Battle on a Hex Grid",
+      "ar": "# squad-tactics\n\nSquadTactics — Turn-Based 3D Team Tactics Battle on a Hex Grid"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "Vite",
+      "TypeScript",
+      "Vitest",
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [
+      {
+        "en": "Stack: TypeScript 5, Vite 5, Three.js, GSAP 3, PeerJS 1.5, Vitest, Playwright",
+        "ar": "Stack: TypeScript 5, Vite 5, Three.js, GSAP 3, PeerJS 1.5, Vitest, Playwright"
+      },
+      {
+        "en": "No React, no framework, no UI library — raw TypeScript",
+        "ar": "No React, no framework, no UI library — raw TypeScript"
+      },
+      {
+        "en": "No accounts, no central server, no auth — WebRTC peer-to-peer with PeerJS public STUN",
+        "ar": "No accounts, no central server, no auth — WebRTC peer-to-peer with PeerJS public STUN"
+      },
+      {
+        "en": "`dist/index.html` opens without a server (file:// — single-player / hot-seat / inspection only; multiplayer needs internet for the PeerJS broker)",
+        "ar": "`dist/index.html` opens without a server (file:// — single-player / hot-seat / inspection only; multiplayer needs internet for the PeerJS broker)"
+      },
+      {
+        "en": "Tap a hex to move / an enemy to attack",
+        "ar": "Tap a hex to move / an enemy to attack"
+      },
+      {
+        "en": "Virtual controls in the bottom HUD",
+        "ar": "Virtual controls in the bottom HUD"
+      }
+    ],
+    "progress": {
+      "en": "Classified as in progress by Dev Stage; implementation and scope are still evolving.",
+      "ar": "Classified as in progress by Dev Stage; implementation and scope are still evolving."
+    },
+    "issues": [
+      {
+        "en": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace.",
+        "ar": "This workspace is not an independent Git repository; it is managed by the Dev Stage parent workspace."
+      }
+    ],
+    "suggestions": [
+      {
+        "en": "Record the next milestone and known blockers in this portfolio document.",
+        "ar": "Record the next milestone and known blockers in this portfolio document."
+      }
+    ],
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/team-strategy",
+      "branch": "main",
+      "sync": "github"
+    },
+    "source": {
+      "workspace": "workspace/squad-tactics",
+      "last_reviewed": "2026-07-29"
+    },
+    "liveUrl": "https://squadtactics.vercel.app/",
+    "stage": "published",
+    "primaryCategoryId": "games",
+    "portfolioVisibility": "listed"
+  },
+  {
+    "id": "apexyard-tradefleet",
+    "slug": "tradefleet",
+    "title": {
+      "en": "TradeFleet",
+      "ar": "أسطول"
+    },
+    "description": {
+      "en": "A shared-device fleet trading strategy game.",
+      "ar": "لعبة استراتيجية لتجارة الأساطيل على جهاز مشترك."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://al-ostool.vercel.app/",
+    "imageSrc": "/projects/tradefleet/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/team-strategy",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# TradeFleet\n\nA shared-device fleet trading strategy game.",
+      "ar": "# أسطول\n\nلعبة استراتيجية لتجارة الأساطيل على جهاز مشترك."
+    },
+    "primaryCategoryId": "games",
+    "portfolioVisibility": "listed"
+  },
+  {
+    "id": "apexyard-auctionhouse",
+    "slug": "auctionhouse",
+    "title": {
+      "en": "Auction House",
+      "ar": "المزاد"
+    },
+    "description": {
+      "en": "An offline Egyptian auction game on one device.",
+      "ar": "لعبة مزايدة مصرية على جهاز واحد بدون إنترنت."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://al-mazad.vercel.app/",
+    "imageSrc": "/projects/auctionhouse/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/team-strategy",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Auction House\n\nAn offline Egyptian auction game on one device.",
+      "ar": "# المزاد\n\nلعبة مزايدة مصرية على جهاز واحد بدون إنترنت."
+    },
+    "primaryCategoryId": "games",
+    "portfolioVisibility": "listed"
+  },
+  {
+    "id": "apexyard-baytna",
+    "slug": "baytna",
+    "title": {
+      "en": "Baytna",
+      "ar": "بيتنا"
+    },
+    "description": {
+      "en": "A bilingual family board for events, tasks, schoolwork, and shopping.",
+      "ar": "لوحة عائلية بلغتين للمواعيد والمهام والمدرسة والمشتريات."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://bayt-na.vercel.app/",
+    "imageSrc": "/projects/baytna/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/baytna",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Baytna\n\nA bilingual family board for events, tasks, schoolwork, and shopping.",
+      "ar": "# بيتنا\n\nلوحة عائلية بلغتين للمواعيد والمهام والمدرسة والمشتريات."
+    },
+    "primaryCategoryId": "life",
+    "portfolioVisibility": "listed"
+  },
+  {
+    "id": "apexyard-whoami3d",
+    "slug": "whoami3d",
+    "title": {
+      "en": "WhoAmI3D",
+      "ar": "مين أنا"
+    },
+    "description": {
+      "en": "A twenty-questions party game for three to eight players.",
+      "ar": "لعبة جماعية بعشرين سؤالًا لثلاثة إلى ثمانية لاعبين."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://whoami3d.vercel.app/",
+    "imageSrc": "/projects/whoami3d/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/whoami3d",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# WhoAmI3D\n\nA twenty-questions party game for three to eight players.",
+      "ar": "# مين أنا\n\nلعبة جماعية بعشرين سؤالًا لثلاثة إلى ثمانية لاعبين."
+    },
+    "primaryCategoryId": "games",
+    "portfolioVisibility": "listed"
+  },
+  {
+    "id": "apexyard-nokhba",
+    "slug": "nokhba",
+    "title": {
+      "en": "Nokhba",
+      "ar": "نخبة"
+    },
+    "description": {
+      "en": "A bilingual local-first technical interview preparation workspace.",
+      "ar": "مساحة محلية بلغتين للتحضير للمقابلات التقنية."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://nokh-ba.vercel.app/",
+    "imageSrc": "/projects/nokhba/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/nokhba",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Nokhba\n\nA bilingual local-first technical interview preparation workspace.",
+      "ar": "# نخبة\n\nمساحة محلية بلغتين للتحضير للمقابلات التقنية."
+    },
+    "primaryCategoryId": "learning",
+    "portfolioVisibility": "listed"
+  },
+  {
+    "id": "apexyard-sahra",
+    "slug": "sahra",
+    "title": {
+      "en": "Sahra",
+      "ar": "سهرة"
+    },
+    "description": {
+      "en": "Egyptian social game nights with shared-device rounds and scores.",
+      "ar": "ليالي ألعاب اجتماعية مصرية بجولات ونقاط على جهاز مشترك."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://el-sahra.vercel.app/",
+    "imageSrc": "/projects/sahra/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/sahra",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Sahra\n\nEgyptian social game nights with shared-device rounds and scores.",
+      "ar": "# سهرة\n\nليالي ألعاب اجتماعية مصرية بجولات ونقاط على جهاز مشترك."
+    },
+    "primaryCategoryId": "games",
+    "portfolioVisibility": "listed"
+  },
+  {
+    "id": "apexyard-faker-el-efeh",
+    "slug": "faker-el-efeh",
+    "title": {
+      "en": "Faker El Efeh",
+      "ar": "فاكر الإفيه؟"
+    },
+    "description": {
+      "en": "Short Egyptian film-quote quizzes and shareable challenges.",
+      "ar": "جولات قصيرة لتخمين الإفيهات المصرية وتحديات قابلة للمشاركة."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://faker-el-efeh.vercel.app/",
+    "imageSrc": "/projects/faker-el-efeh/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/faker-el-efeh",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Faker El Efeh\n\nShort Egyptian film-quote quizzes and shareable challenges.",
+      "ar": "# فاكر الإفيه؟\n\nجولات قصيرة لتخمين الإفيهات المصرية وتحديات قابلة للمشاركة."
+    },
+    "primaryCategoryId": "games",
+    "portfolioVisibility": "listed"
+  },
+  {
+    "id": "apexyard-wanees",
+    "slug": "wanees",
+    "title": {
+      "en": "Wannas",
+      "ar": "وناس"
+    },
+    "description": {
+      "en": "An Arabic local medication-dose and reminder tracker.",
+      "ar": "متابعة عربية محلية لجرعات الدواء والتذكيرات."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://wan-nas.vercel.app/",
+    "imageSrc": "/projects/wanees/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/wannas",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Wannas\n\nAn Arabic local medication-dose and reminder tracker.",
+      "ar": "# وناس\n\nمتابعة عربية محلية لجرعات الدواء والتذكيرات."
+    },
+    "primaryCategoryId": "health",
+    "portfolioVisibility": "listed"
+  },
+  {
+    "id": "apexyard-nour-cancer-fellow",
+    "slug": "nour-cancer-fellow",
+    "title": {
+      "en": "Nour Cancer Fellow",
+      "ar": "نور"
+    },
+    "description": {
+      "en": "A published deployment of the Yahya cancer-information guide.",
+      "ar": "نسخة منشورة من دليل يحيا لمعلومات رحلة السرطان."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://nour-cancer-fellow.vercel.app/",
+    "imageSrc": "/projects/nour-cancer-fellow/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/yahya-cancer-fellow",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Nour Cancer Fellow\n\nA published deployment of the Yahya cancer-information guide.",
+      "ar": "# نور\n\nنسخة منشورة من دليل يحيا لمعلومات رحلة السرطان."
+    },
+    "primaryCategoryId": "health",
+    "portfolioVisibility": "listed"
   }
 ] satisfies Project[];

@@ -23,8 +23,6 @@
   <url><loc>https://dev2stage.vercel.app/ar/projects/al-rawi</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/react2native</loc></url>
   <url><loc>https://dev2stage.vercel.app/ar/projects/react2native</loc></url>
-  <url><loc>https://dev2stage.vercel.app/en/projects/dev2ops</loc></url>
-  <url><loc>https://dev2stage.vercel.app/ar/projects/dev2ops</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/wajba</loc></url>
   <url><loc>https://dev2stage.vercel.app/ar/projects/wajba</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/jadwal</loc></url>
@@ -51,8 +49,6 @@
   <url><loc>https://dev2stage.vercel.app/ar/projects/lost-island</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/meuseum-impossible-journeys</loc></url>
   <url><loc>https://dev2stage.vercel.app/ar/projects/meuseum-impossible-journeys</loc></url>
-  <url><loc>https://dev2stage.vercel.app/en/projects/mi3ad</loc></url>
-  <url><loc>https://dev2stage.vercel.app/ar/projects/mi3ad</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/dayra</loc></url>
   <url><loc>https://dev2stage.vercel.app/ar/projects/dayra</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/stollen-constillation</loc></url>
@@ -113,20 +109,12 @@
   <url><loc>https://dev2stage.vercel.app/ar/projects/social-party-games</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/madar</loc></url>
   <url><loc>https://dev2stage.vercel.app/ar/projects/madar</loc></url>
-  <url><loc>https://dev2stage.vercel.app/en/projects/audit-tool</loc></url>
-  <url><loc>https://dev2stage.vercel.app/ar/projects/audit-tool</loc></url>
-  <url><loc>https://dev2stage.vercel.app/en/projects/repo-health</loc></url>
-  <url><loc>https://dev2stage.vercel.app/ar/projects/repo-health</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/growth-kit</loc></url>
   <url><loc>https://dev2stage.vercel.app/ar/projects/growth-kit</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/daqiqalearn</loc></url>
   <url><loc>https://dev2stage.vercel.app/ar/projects/daqiqalearn</loc></url>
-  <url><loc>https://dev2stage.vercel.app/en/projects/arabic-auditor</loc></url>
-  <url><loc>https://dev2stage.vercel.app/ar/projects/arabic-auditor</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/agent-ledger</loc></url>
   <url><loc>https://dev2stage.vercel.app/ar/projects/agent-ledger</loc></url>
-  <url><loc>https://dev2stage.vercel.app/en/projects/build-brief</loc></url>
-  <url><loc>https://dev2stage.vercel.app/ar/projects/build-brief</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/sahab-cloud-school</loc></url>
   <url><loc>https://dev2stage.vercel.app/ar/projects/sahab-cloud-school</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/pr-masry</loc></url>
@@ -179,8 +167,6 @@
   <url><loc>https://dev2stage.vercel.app/ar/projects/zakarti</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/daftar-eilti-el-sehhi</loc></url>
   <url><loc>https://dev2stage.vercel.app/ar/projects/daftar-eilti-el-sehhi</loc></url>
-  <url><loc>https://dev2stage.vercel.app/en/projects/mofakker</loc></url>
-  <url><loc>https://dev2stage.vercel.app/ar/projects/mofakker</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/ahwagi</loc></url>
   <url><loc>https://dev2stage.vercel.app/ar/projects/ahwagi</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/fisal</loc></url>
@@ -197,4 +183,86 @@
   <url><loc>https://dev2stage.vercel.app/ar/projects/ala-mahli</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/arabity</loc></url>
   <url><loc>https://dev2stage.vercel.app/ar/projects/arabity</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/pantry-circle</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/pantry-circle</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/bayty</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/bayty</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/tech-hub</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/tech-hub</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/loghz-el-hara</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/loghz-el-hara</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/waslreceipt</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/waslreceipt</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/turathna</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/turathna</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/medi-flow</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/medi-flow</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/hiraf-misr</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/hiraf-misr</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/dawarha</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/dawarha</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/zera3a</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/zera3a</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/tool-gateway</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/tool-gateway</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/waraki</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/waraki</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/coffee-scene</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/coffee-scene</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/dev-tools-toolbox</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/dev-tools-toolbox</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/brand-studio</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/brand-studio</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/nuba</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/nuba</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/memory-book</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/memory-book</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/mohakat</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/mohakat</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/eldakheel</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/eldakheel</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/tahfeez</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/tahfeez</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/tagseet</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/tagseet</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/bayan</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/bayan</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/inkdraft</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/inkdraft</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/fogofwar</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/fogofwar</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/3ale2</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/3ale2</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/squad-tactics</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/squad-tactics</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/tradefleet</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/tradefleet</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/auctionhouse</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/auctionhouse</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/baytna</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/baytna</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/whoami3d</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/whoami3d</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/nokhba</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/nokhba</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/sahra</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/sahra</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/faker-el-efeh</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/faker-el-efeh</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/wanees</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/wanees</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/nour-cancer-fellow</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/nour-cancer-fellow</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/mi3ad</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/mi3ad</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/audit-tool</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/audit-tool</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/repo-health</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/repo-health</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/arabic-auditor</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/arabic-auditor</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/build-brief</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/build-brief</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/mofakker</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/mofakker</loc></url>
 </urlset>

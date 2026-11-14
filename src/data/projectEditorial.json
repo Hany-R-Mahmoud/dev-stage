@@ -98,7 +98,8 @@
     "primaryCategoryId": "games"
   },
   "squad-tactics": {
-    "primaryCategoryId": "games"
+    "primaryCategoryId": "games",
+    "portfolioVisibility": "listed"
   },
   "the-agency-mobile-game": {
     "primaryCategoryId": "games"
@@ -285,7 +286,11 @@
     "primaryCategoryId": "creative"
   },
   "mofakker": {
-    "primaryCategoryId": "creative"
+    "primaryCategoryId": "creative",
+    "mergedInto": {
+      "projectSlug": "mohtaway",
+      "mergedAt": "2026-11-14"
+    }
   },
   "yahya": {
     "primaryCategoryId": "health"
@@ -317,7 +322,8 @@
     "showcasePriority": 0
   },
   "memory-book": {
-    "primaryCategoryId": "life"
+    "primaryCategoryId": "life",
+    "portfolioVisibility": "listed"
   },
   "yalla-nakol": {
     "primaryCategoryId": "life"
@@ -340,7 +346,9 @@
   },
   "mi3ad": {
     "primaryCategoryId": "community",
-    "mergedInto": { "projectSlug": "monasabati" }
+    "mergedInto": {
+      "projectSlug": "monasabati"
+    }
   },
   "dayra": {
     "primaryCategoryId": "community"
@@ -392,6 +400,135 @@
     "portfolioVisibility": "unlisted"
   },
   "mohakat": {
-    "portfolioVisibility": "unlisted"
+    "portfolioVisibility": "listed",
+    "primaryCategoryId": "games"
+  },
+  "pantry-circle": {
+    "primaryCategoryId": "life",
+    "portfolioVisibility": "listed"
+  },
+  "bayty": {
+    "primaryCategoryId": "life",
+    "portfolioVisibility": "listed"
+  },
+  "tech-hub": {
+    "primaryCategoryId": "learning",
+    "portfolioVisibility": "listed"
+  },
+  "loghz-el-hara": {
+    "primaryCategoryId": "games",
+    "portfolioVisibility": "listed"
+  },
+  "waslreceipt": {
+    "primaryCategoryId": "business",
+    "portfolioVisibility": "listed"
+  },
+  "turathna": {
+    "primaryCategoryId": "games",
+    "portfolioVisibility": "listed"
+  },
+  "medi-flow": {
+    "primaryCategoryId": "business",
+    "portfolioVisibility": "listed"
+  },
+  "hiraf-misr": {
+    "primaryCategoryId": "community",
+    "portfolioVisibility": "listed"
+  },
+  "dawarha": {
+    "primaryCategoryId": "life",
+    "portfolioVisibility": "listed"
+  },
+  "zera3a": {
+    "primaryCategoryId": "life",
+    "portfolioVisibility": "listed"
+  },
+  "tool-gateway": {
+    "primaryCategoryId": "developer",
+    "portfolioVisibility": "listed"
+  },
+  "waraki": {
+    "primaryCategoryId": "life",
+    "portfolioVisibility": "listed"
+  },
+  "coffee-scene": {
+    "primaryCategoryId": "community",
+    "portfolioVisibility": "listed"
+  },
+  "dev-tools-toolbox": {
+    "primaryCategoryId": "developer",
+    "portfolioVisibility": "listed"
+  },
+  "brand-studio": {
+    "primaryCategoryId": "creative",
+    "portfolioVisibility": "listed"
+  },
+  "nuba": {
+    "primaryCategoryId": "community",
+    "portfolioVisibility": "listed"
+  },
+  "eldakheel": {
+    "primaryCategoryId": "games",
+    "portfolioVisibility": "listed"
+  },
+  "tahfeez": {
+    "primaryCategoryId": "games",
+    "portfolioVisibility": "listed"
+  },
+  "tagseet": {
+    "primaryCategoryId": "finance",
+    "portfolioVisibility": "listed"
+  },
+  "bayan": {
+    "primaryCategoryId": "business",
+    "portfolioVisibility": "listed"
+  },
+  "inkdraft": {
+    "primaryCategoryId": "games",
+    "portfolioVisibility": "listed"
+  },
+  "fogofwar": {
+    "primaryCategoryId": "games",
+    "portfolioVisibility": "listed"
+  },
+  "3ale2": {
+    "primaryCategoryId": "productivity",
+    "portfolioVisibility": "listed"
+  },
+  "tradefleet": {
+    "primaryCategoryId": "games",
+    "portfolioVisibility": "listed"
+  },
+  "auctionhouse": {
+    "primaryCategoryId": "games",
+    "portfolioVisibility": "listed"
+  },
+  "baytna": {
+    "primaryCategoryId": "life",
+    "portfolioVisibility": "listed"
+  },
+  "whoami3d": {
+    "primaryCategoryId": "games",
+    "portfolioVisibility": "listed"
+  },
+  "nokhba": {
+    "primaryCategoryId": "learning",
+    "portfolioVisibility": "listed"
+  },
+  "sahra": {
+    "primaryCategoryId": "games",
+    "portfolioVisibility": "listed"
+  },
+  "faker-el-efeh": {
+    "primaryCategoryId": "games",
+    "portfolioVisibility": "listed"
+  },
+  "wanees": {
+    "primaryCategoryId": "health",
+    "portfolioVisibility": "listed"
+  },
+  "nour-cancer-fellow": {
+    "primaryCategoryId": "health",
+    "portfolioVisibility": "listed"
   }
 }

@@ -24,6 +24,13 @@ for (const projects of [curated, PORTFOLIO_PROJECTS]) {
   assert.equal(groups.find(group => group.destination.slug === 'monasabati')?.donors.length, 1);
   assert.ok(!find(active, 'mi3ad'), 'Mi3ad cannot enter active categories or carousel');
   assert.ok(find(routable, 'mi3ad'), 'Mi3ad keeps its original route');
+  assert.equal(find(merged, 'mofakker')?.mergedInto?.projectSlug, 'mohtaway');
+  assert.ok(!find(active, 'mofakker'), 'Mofakker cannot appear as a separate active app');
+  assert.ok(find(active, 'mohtaway'), 'Mohtaway remains the active destination');
+  assert.ok(find(routable, 'mofakker'), 'Mofakker keeps its original route with merge details');
+  assert.equal(groups.find(group => group.destination.slug === 'mohtaway')?.donors.length, 1);
+  assert.equal(find(active, 'mohtaway')?.title.en, 'Banat Afkary');
+  assert.equal(find(active, 'mohtaway')?.liveUrl, 'https://banat-afkary.vercel.app/');
 
   for (const slug of donors) {
     const donor = find(merged, slug);
