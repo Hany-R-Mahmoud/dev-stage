@@ -339,7 +339,8 @@
     "primaryCategoryId": "community"
   },
   "mi3ad": {
-    "primaryCategoryId": "community"
+    "primaryCategoryId": "community",
+    "mergedInto": { "projectSlug": "monasabati" }
   },
   "dayra": {
     "primaryCategoryId": "community"
