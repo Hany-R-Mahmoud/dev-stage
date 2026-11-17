@@ -111,8 +111,6 @@
   <url><loc>https://dev2stage.vercel.app/ar/projects/madar</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/growth-kit</loc></url>
   <url><loc>https://dev2stage.vercel.app/ar/projects/growth-kit</loc></url>
-  <url><loc>https://dev2stage.vercel.app/en/projects/daqiqalearn</loc></url>
-  <url><loc>https://dev2stage.vercel.app/ar/projects/daqiqalearn</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/agent-ledger</loc></url>
   <url><loc>https://dev2stage.vercel.app/ar/projects/agent-ledger</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/sahab-cloud-school</loc></url>
@@ -259,6 +257,8 @@
   <url><loc>https://dev2stage.vercel.app/ar/projects/audit-tool</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/repo-health</loc></url>
   <url><loc>https://dev2stage.vercel.app/ar/projects/repo-health</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/daqiqalearn</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/daqiqalearn</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/arabic-auditor</loc></url>
   <url><loc>https://dev2stage.vercel.app/ar/projects/arabic-auditor</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/build-brief</loc></url>
