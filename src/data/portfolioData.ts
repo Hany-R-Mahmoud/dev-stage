@@ -6353,7 +6353,17 @@ export const PORTFOLIO_PROJECTS = [
     ],
     "status": "in-progress",
     "stage": "published",
-    "primaryCategoryId": "learning"
+    "primaryCategoryId": "learning",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/daqiqalearn",
+      "branch": "main",
+      "sync": "github"
+    },
+    "mergedInto": {
+      "projectSlug": "ala-mahli",
+      "toolUrl": "https://ala-mahli.vercel.app/app?view=tracks",
+      "mergedAt": "2026-11-17"
+    }
   },
   {
     "id": "apexyard-arabic-auditor",
@@ -8399,8 +8409,8 @@ export const PORTFOLIO_PROJECTS = [
       "ar": "على مهلي"
     },
     "description": {
-      "en": "Short Egyptian-Arabic lessons for everyday digital life, with safe practice and spaced reviews.",
-      "ar": "دروس قصيرة بالمصري للحياة الرقمية اليومية، مع تدريب آمن ومراجعة متباعدة."
+      "en": "Calm Egyptian-Arabic digital-skills learning: 80 guided lessons in 8 tracks plus 42 short DaqiqaLearn lessons, with safe practice and spaced reviews.",
+      "ar": "مساحة هادئة لتعلّم المهارات الرقمية بالمصري: ٨٠ درسًا في ٨ مسارات، ومعاها ٤٢ درسًا قصيرًا من دقيقة ليرن، وتدريب آمن ومراجعات متباعدة."
     },
     "meta": {
       "en": "TanStack Start • React • TypeScript",
@@ -8422,8 +8432,8 @@ export const PORTFOLIO_PROJECTS = [
       "/projects/ala-mahli/overview.webp"
     ],
     "contentMDX": {
-      "en": "# Ala Mahli\n\nShort Egyptian-Arabic lessons for everyday digital life, with safe practice and spaced reviews.\n\n## Features\n\n- Eighty lessons across eight everyday tracks\n- Guest lessons, read-aloud, and adjustable text size\n- Safe simulations and scheduled reviews",
-      "ar": "# على مهلي\n\nدروس قصيرة بالمصري للحياة الرقمية اليومية، مع تدريب آمن ومراجعة متباعدة.\n\n## الميزات\n\n- ثمانون درسًا في ثمانية مسارات يومية\n- دروس للضيف وقراءة صوتية وحجم خط قابل للتعديل\n- محاكاة آمنة ومراجعات مجدولة"
+      "en": "# Ala Mahli\n\nShort Egyptian-Arabic lessons for everyday digital life, with safe practice and spaced reviews.\n\n## Features\n\n- Eighty lessons across eight everyday tracks\n- Guest lessons, read-aloud, and adjustable text size\n- Safe simulations and scheduled reviews\n\n## DaqiqaLearn merge — 17 November 2026\n\n42 short lessons from DaqiqaLearn, grouped in six additional collections, joined Ala Mahli while all 80 original lessons remained. Users can browse learning paths, practise safely, use spaced reviews, and optionally archive old DaqiqaLearn history without automatic completion credit. A new responsive landing page introduces these features; the existing learning app is at https://ala-mahli.vercel.app/app .\n\n- Unified learning paths: https://ala-mahli.vercel.app/app?view=tracks\n- Merge PR: https://github.com/Hany-R-Mahmoud/ala-mahli/pull/1\n- Landing PR: https://github.com/Hany-R-Mahmoud/ala-mahli/pull/2\n",
+      "ar": "# على مهلي\n\nدروس قصيرة بالمصري للحياة الرقمية اليومية، مع تدريب آمن ومراجعة متباعدة.\n\n## الميزات\n\n- ثمانون درسًا في ثمانية مسارات يومية\n- دروس للضيف وقراءة صوتية وحجم خط قابل للتعديل\n- محاكاة آمنة ومراجعات مجدولة\n\n## دمج دقيقة ليرن — ١٧ نوفمبر ٢٠٢٦\n\nأصبحت ٤٢ درسًا قصيرًا من دقيقة ليرن، في ٦ مجموعات إضافية، جزءًا من على مهلي مع الحفاظ على الدروس الثمانين الأصلية. يمكن للزائر البدء كضيف، ومراجعة الدروس، وتجربة تدريبات آمنة، وحفظ سجل دقيقة ليرن القديم كمرجع دون احتساب النجاح تلقائيًا. صفحة التعريف الجديدة تعرض المميزات، والتطبيق التعليمي الأصلي موجود على https://ala-mahli.vercel.app/app .\n\n- المسارات والدروس القصيرة: https://ala-mahli.vercel.app/app?view=tracks\n- طلب دمج المحتوى: https://github.com/Hany-R-Mahmoud/ala-mahli/pull/1\n- طلب دمج صفحة التعريف: https://github.com/Hany-R-Mahmoud/ala-mahli/pull/2\n"
     },
     "isPublished": true,
     "featured": false,
@@ -8447,11 +8457,23 @@ export const PORTFOLIO_PROJECTS = [
       {
         "en": "Safe simulations and scheduled reviews",
         "ar": "محاكاة آمنة ومراجعات مجدولة"
+      },
+      {
+        "en": "42 extra short lessons across six DaqiqaLearn collections",
+        "ar": "٤٢ درسًا قصيرًا إضافيًا في ٦ مجموعات من دقيقة ليرن"
+      },
+      {
+        "en": "Optional DaqiqaLearn history archive without retroactive credit",
+        "ar": "أرشفة اختيارية لسجل دقيقة ليرن بدون احتساب نجاح تلقائي"
+      },
+      {
+        "en": "Responsive Arabic landing, guest-first learning and installable PWA",
+        "ar": "صفحة تعريف عربية متجاوبة وتعلّم كضيف وإمكانية تثبيت التطبيق"
       }
     ],
     "progress": {
-      "en": "Public interface reviewed and screenshots captured on 2026-11-07. Features cross-checked with project documentation; authenticated and backend workflows were not tested.",
-      "ar": "تمت مراجعة الواجهة العامة والتقاط الصور في ٧ نوفمبر ٢٠٢٦. روجعت الميزات مع توثيق المشروع؛ لم تُختبر المهام داخل الحساب أو الخادم."
+      "en": "On 17 November 2026, the DaqiqaLearn integration and landing page merged into Ala Mahli; production deployment reported READY. Latest release checks passed 25 unit tests and 15 browser tests, with one browser scenario skipped. Full editorial review of all 42 lessons and production account workflows was not claimed.",
+      "ar": "في ١٧ نوفمبر ٢٠٢٦ تم دمج محتوى دقيقة ليرن وصفحة التعريف في على مهلي، وأكد Vercel جاهزية النشر. نجح ٢٥ اختبار وحدة و١٥ اختبار متصفح، مع تخطي سيناريو واحد. لم تُعتمد مراجعة تحريرية كاملة للدروس الـ٤٢ أو اختبارات شاملة للحسابات على الإنتاج."
     },
     "issues": [],
     "suggestions": [],
@@ -8459,7 +8481,12 @@ export const PORTFOLIO_PROJECTS = [
       "workspace": "workspace/published/ala-mahli",
       "last_reviewed": "2026-11-07"
     },
-    "primaryCategoryId": "learning"
+    "primaryCategoryId": "learning",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/ala-mahli",
+      "branch": "main",
+      "sync": "github"
+    }
   },
   {
     "id": "apexyard-arabity",

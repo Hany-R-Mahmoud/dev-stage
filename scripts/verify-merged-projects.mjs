@@ -31,6 +31,23 @@ for (const projects of [curated, PORTFOLIO_PROJECTS]) {
   assert.equal(groups.find(group => group.destination.slug === 'mohtaway')?.donors.length, 1);
   assert.equal(find(active, 'mohtaway')?.title.en, 'Banat Afkary');
   assert.equal(find(active, 'mohtaway')?.liveUrl, 'https://banat-afkary.vercel.app/');
+  const shortDonor=find(merged,'daqiqalearn');
+  const learningBase=find(active,'ala-mahli');
+  assert.ok(shortDonor,'DaqiqaLearn must be in merged archive');
+  assert.equal(shortDonor.mergedInto?.projectSlug,'ala-mahli');
+  assert.equal(shortDonor.mergedInto?.mergedAt,'2026-11-17');
+  assert.equal(shortDonor.mergedInto?.toolUrl,'https://ala-mahli.vercel.app/app?view=tracks');
+  assert.equal(groups.find(g=>g.destination.slug==='ala-mahli')?.donors.length,1);
+  assert.ok(learningBase,'Ala Mahli must remain the active learning project');
+  assert.equal(learningBase.liveUrl,'https://ala-mahli.vercel.app/');
+  assert.equal(learningBase.primaryCategoryId,'learning');
+  assert.ok(!find(active,'daqiqalearn'),'Donor removed from active showcase');
+  assert.ok(find(routable,'daqiqalearn'),'Donor historical detail route preserved');
+  assert.ok(shortDonor.repository?.github?.endsWith('/daqiqalearn'),'Original donor repository preserved');
+  assert.equal(shortDonor.liveUrl,'https://daqiqalearn.vercel.app/','Old donor deployment preserved');
+  assert.ok(shortDonor.imageSrc,'Donor cover preserved');
+  assert.ok(learningBase.repository?.github?.endsWith('/ala-mahli'));
+
 
   for (const slug of donors) {
     const donor = find(merged, slug);

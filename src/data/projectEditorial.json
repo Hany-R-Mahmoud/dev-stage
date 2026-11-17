@@ -181,7 +181,12 @@
     "primaryCategoryId": "learning"
   },
   "daqiqalearn": {
-    "primaryCategoryId": "learning"
+    "primaryCategoryId": "learning",
+    "mergedInto": {
+      "projectSlug": "ala-mahli",
+      "toolUrl": "https://ala-mahli.vercel.app/app?view=tracks",
+      "mergedAt": "2026-11-17"
+    }
   },
   "sahab-cloud-school": {
     "primaryCategoryId": "learning"
