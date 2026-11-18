@@ -6686,50 +6686,6 @@ export const PORTFOLIO_PROJECTS = [
     "primaryCategoryId": "developer"
   },
   {
-    "id": "apexyard-screen-shota",
-    "slug": "screen-shota",
-    "title": {
-      "en": "Screen Shota",
-      "ar": "لقطة — Screen Shota"
-    },
-    "description": {
-      "en": "A browser-based screenshot studio with frames, backgrounds, shadows, annotations and social-size exports.",
-      "ar": "استوديو سكرين شوت داخل المتصفح بإطارات وخلفيات وظلال وتعليقات وتصدير بمقاسات السوشيال."
-    },
-    "meta": {
-      "en": "TanStack Start • React • TypeScript",
-      "ar": "TanStack Start • React • TypeScript"
-    },
-    "category": "Web",
-    "client": {
-      "en": "Independent",
-      "ar": "مستقل"
-    },
-    "role": {
-      "en": "Founder & Builder",
-      "ar": "المؤسس والمطور"
-    },
-    "year": "2026",
-    "liveUrl": "https://screen-shota.vercel.app/",
-    "imageSrc": "/projects/screen-shota/cover.webp",
-    "galleryImages": [],
-    "contentMDX": {
-      "en": "# Screen Shota\n\nA browser-based screenshot studio with frames, backgrounds, shadows, annotations and social-size exports.",
-      "ar": "# لقطة — Screen Shota\n\nاستوديو سكرين شوت داخل المتصفح بإطارات وخلفيات وظلال وتعليقات وتصدير بمقاسات السوشيال."
-    },
-    "isPublished": true,
-    "featured": false,
-    "tags": [
-      "TanStack Start",
-      "React",
-      "TypeScript",
-      "in-progress"
-    ],
-    "status": "in-progress",
-    "stage": "published",
-    "primaryCategoryId": "creative"
-  },
-  {
     "id": "apexyard-codebreaker",
     "slug": "codebreaker",
     "title": {
