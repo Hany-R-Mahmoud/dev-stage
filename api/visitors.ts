@@ -18,6 +18,7 @@ const standaloneAppSlugs = new Set([
   'focus-session-flow',
   'minaretes',
   'js2next',
+  'harness-atlas',
   'etamini',
   'yahya',
   'skills-agency',
