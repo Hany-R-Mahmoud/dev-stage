@@ -532,5 +532,145 @@
   "nour-cancer-fellow": {
     "primaryCategoryId": "health",
     "portfolioVisibility": "listed"
+  },
+  "yalla-nel3ab": {
+    "primaryCategoryId": "games",
+    "portfolioVisibility": "listed"
+  },
+  "balance-bureau": {
+    "primaryCategoryId": "games",
+    "portfolioVisibility": "listed"
+  },
+  "warsha": {
+    "primaryCategoryId": "games",
+    "portfolioVisibility": "listed"
+  },
+  "brief-match": {
+    "primaryCategoryId": "business",
+    "portfolioVisibility": "listed"
+  },
+  "shoplisting": {
+    "primaryCategoryId": "business",
+    "portfolioVisibility": "listed"
+  },
+  "side-count": {
+    "primaryCategoryId": "finance",
+    "portfolioVisibility": "listed"
+  },
+  "slide-forge": {
+    "primaryCategoryId": "creative",
+    "portfolioVisibility": "listed"
+  },
+  "tagroba-shoghl": {
+    "primaryCategoryId": "learning",
+    "portfolioVisibility": "listed"
+  },
+  "saqia": {
+    "primaryCategoryId": "games",
+    "portfolioVisibility": "listed"
+  },
+  "itfaqna-tashteeba": {
+    "primaryCategoryId": "life",
+    "portfolioVisibility": "listed"
+  },
+  "raseed": {
+    "primaryCategoryId": "productivity",
+    "portfolioVisibility": "listed"
+  },
+  "khayt": {
+    "primaryCategoryId": "creative",
+    "portfolioVisibility": "listed"
+  },
+  "rafiq-bahr": {
+    "primaryCategoryId": "life",
+    "portfolioVisibility": "listed"
+  },
+  "ui-contract": {
+    "primaryCategoryId": "developer",
+    "portfolioVisibility": "listed"
+  },
+  "al-sira-atlas": {
+    "primaryCategoryId": "creative",
+    "portfolioVisibility": "listed"
+  },
+  "hissa": {
+    "primaryCategoryId": "community",
+    "portfolioVisibility": "listed"
+  },
+  "wodoh": {
+    "primaryCategoryId": "creative",
+    "portfolioVisibility": "listed"
+  },
+  "waha-fern-rescue-garden": {
+    "primaryCategoryId": "games",
+    "portfolioVisibility": "listed"
+  },
+  "day-pilot": {
+    "primaryCategoryId": "productivity",
+    "portfolioVisibility": "listed"
+  },
+  "dof3a": {
+    "primaryCategoryId": "business",
+    "portfolioVisibility": "listed"
+  },
+  "nesma": {
+    "primaryCategoryId": "health",
+    "portfolioVisibility": "listed"
+  },
+  "rasad": {
+    "primaryCategoryId": "life",
+    "portfolioVisibility": "listed"
+  },
+  "sakanmove": {
+    "primaryCategoryId": "life",
+    "portfolioVisibility": "listed"
+  },
+  "tayseer": {
+    "primaryCategoryId": "life",
+    "portfolioVisibility": "listed"
+  },
+  "mutah": {
+    "primaryCategoryId": "developer",
+    "portfolioVisibility": "listed"
+  },
+  "release-room": {
+    "primaryCategoryId": "developer",
+    "portfolioVisibility": "listed"
+  },
+  "hibr": {
+    "primaryCategoryId": "productivity",
+    "portfolioVisibility": "listed"
+  },
+  "madrasa-link": {
+    "primaryCategoryId": "learning",
+    "portfolioVisibility": "listed"
+  },
+  "shuhra": {
+    "primaryCategoryId": "business",
+    "portfolioVisibility": "listed"
+  },
+  "el-sherka": {
+    "primaryCategoryId": "developer",
+    "portfolioVisibility": "listed"
+  },
+  "type-sync-desk": {
+    "primaryCategoryId": "developer",
+    "portfolioVisibility": "listed"
+  },
+  "mashaa": {
+    "primaryCategoryId": "community",
+    "portfolioVisibility": "listed"
+  },
+  "amana": {
+    "primaryCategoryId": "life",
+    "portfolioVisibility": "listed"
+  },
+  "trust-canvas": {
+    "primaryCategoryId": "developer",
+    "portfolioVisibility": "listed"
+  },
+  "aleef": {
+    "primaryCategoryId": "life",
+    "portfolioVisibility": "listed"
   }
 }
