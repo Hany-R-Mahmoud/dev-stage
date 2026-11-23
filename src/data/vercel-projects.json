@@ -6251,5 +6251,1685 @@
       "en": "# Nour Cancer Fellow\n\nA published deployment of the Yahya cancer-information guide.",
       "ar": "# نور\n\nنسخة منشورة من دليل يحيا لمعلومات رحلة السرطان."
     }
+  },
+  {
+    "id": "apexyard-yalla-nel3ab",
+    "slug": "yalla-nel3ab",
+    "title": {
+      "en": "Yalla Nel3ab",
+      "ar": "يلا نلعب"
+    },
+    "description": {
+      "en": "Explore classic games, learn their rules and play supported games solo or with friends.",
+      "ar": "استكشف ألعاب كلاسيكية واتعلّم قواعدها والعب الألعاب المتاحة لوحدك أو مع أصحابك."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://yalla-nel3ab-two.vercel.app/",
+    "imageSrc": "/projects/yalla-nel3ab/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/yalla-nel3ab",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Yalla Nel3ab\n\nExplore classic games, learn their rules and play supported games solo or with friends.",
+      "ar": "# يلا نلعب\n\nاستكشف ألعاب كلاسيكية واتعلّم قواعدها والعب الألعاب المتاحة لوحدك أو مع أصحابك."
+    }
+  },
+  {
+    "id": "apexyard-balance-bureau",
+    "slug": "balance-bureau",
+    "title": {
+      "en": "Balance Bureau",
+      "ar": "مكتب الميزان"
+    },
+    "description": {
+      "en": "Find a fake parcel on a balance in a series of deduction puzzles.",
+      "ar": "اكتشف الطرد المزيّف بالميزان في سلسلة ألغاز استنتاج."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://balance-bureau-jet.vercel.app/",
+    "imageSrc": "/projects/balance-bureau/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/balance-bureau",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Balance Bureau\n\nFind a fake parcel on a balance in a series of deduction puzzles.",
+      "ar": "# مكتب الميزان\n\nاكتشف الطرد المزيّف بالميزان في سلسلة ألغاز استنتاج."
+    }
+  },
+  {
+    "id": "apexyard-warsha",
+    "slug": "warsha",
+    "title": {
+      "en": "Warsha",
+      "ar": "ورشة"
+    },
+    "description": {
+      "en": "A bilingual creative party game with solo challenges and pass-the-phone rounds.",
+      "ar": "لعبة إبداعية بلغتين فيها تحديات فردية وجولات بتبادل الموبايل."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://warsha-lime.vercel.app/",
+    "imageSrc": "/projects/warsha/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/warsha",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Warsha\n\nA bilingual creative party game with solo challenges and pass-the-phone rounds.",
+      "ar": "# ورشة\n\nلعبة إبداعية بلغتين فيها تحديات فردية وجولات بتبادل الموبايل."
+    }
+  },
+  {
+    "id": "apexyard-brief-match",
+    "slug": "brief-match",
+    "title": {
+      "en": "BriefMatch",
+      "ar": "بريف ماتش"
+    },
+    "description": {
+      "en": "An Egyptian marketplace demo for brand and creator campaigns, with structured briefs and approvals.",
+      "ar": "عرض تجريبي لمنصة مصرية لحملات الشركات وصناع المحتوى بموجزات وموافقات موثّقة."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://brief-match.vercel.app/",
+    "imageSrc": "/projects/brief-match/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/brief-match",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# BriefMatch\n\nAn Egyptian marketplace demo for brand and creator campaigns, with structured briefs and approvals.",
+      "ar": "# بريف ماتش\n\nعرض تجريبي لمنصة مصرية لحملات الشركات وصناع المحتوى بموجزات وموافقات موثّقة."
+    }
+  },
+  {
+    "id": "apexyard-shoplisting",
+    "slug": "shoplisting",
+    "title": {
+      "en": "ShopListing AI",
+      "ar": "قوائم المتاجر"
+    },
+    "description": {
+      "en": "Turn product photos into listing drafts checked against marketplace rules.",
+      "ar": "حوّل صور المنتجات لمسودات قوائم بيع تتراجع حسب قواعد كل سوق."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://shoplisting.vercel.app/",
+    "imageSrc": "/projects/shoplisting/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/shoplisting",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# ShopListing AI\n\nTurn product photos into listing drafts checked against marketplace rules.",
+      "ar": "# قوائم المتاجر\n\nحوّل صور المنتجات لمسودات قوائم بيع تتراجع حسب قواعد كل سوق."
+    }
+  },
+  {
+    "id": "apexyard-side-count",
+    "slug": "side-count",
+    "title": {
+      "en": "Side Count",
+      "ar": "سايد كاونت"
+    },
+    "description": {
+      "en": "Track hours, income and expenses for side jobs and calculate what you earn per hour.",
+      "ar": "سجّل ساعات الشغل الجانبي ودخله ومصاريفه واحسب بتكسب كام في الساعة."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://side-count.vercel.app/",
+    "imageSrc": "/projects/side-count/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/side-count",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Side Count\n\nTrack hours, income and expenses for side jobs and calculate what you earn per hour.",
+      "ar": "# سايد كاونت\n\nسجّل ساعات الشغل الجانبي ودخله ومصاريفه واحسب بتكسب كام في الساعة."
+    }
+  },
+  {
+    "id": "apexyard-slide-forge",
+    "slug": "slide-forge",
+    "title": {
+      "en": "Slide Forge",
+      "ar": "صانع العروض"
+    },
+    "description": {
+      "en": "Build slides from a topic, notes or a spreadsheet in Arabic or English.",
+      "ar": "اعمل عرض من موضوع أو ملاحظات أو جدول بالعربي أو بالإنجليزي."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://slide-forger.vercel.app/",
+    "imageSrc": "/projects/slide-forge/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/slide-forge",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Slide Forge\n\nBuild slides from a topic, notes or a spreadsheet in Arabic or English.",
+      "ar": "# صانع العروض\n\nاعمل عرض من موضوع أو ملاحظات أو جدول بالعربي أو بالإنجليزي."
+    }
+  },
+  {
+    "id": "apexyard-tagroba-shoghl",
+    "slug": "tagroba-shoghl",
+    "title": {
+      "en": "Tagroba Shoghl",
+      "ar": "تجربة شغل"
+    },
+    "description": {
+      "en": "Explore work situations through short practice scenarios.",
+      "ar": "جرّب مواقف من الشغل في سيناريوهات تدريب قصيرة."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://tagroba-shoghl.vercel.app/",
+    "imageSrc": "/projects/tagroba-shoghl/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/tagroba-shoghl",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Tagroba Shoghl\n\nExplore work situations through short practice scenarios.",
+      "ar": "# تجربة شغل\n\nجرّب مواقف من الشغل في سيناريوهات تدريب قصيرة."
+    }
+  },
+  {
+    "id": "apexyard-saqia",
+    "slug": "saqia",
+    "title": {
+      "en": "Saqia",
+      "ar": "ساقية"
+    },
+    "description": {
+      "en": "Build machines to solve puzzles with gears, water, light and electricity.",
+      "ar": "ركّب آلات عشان تحل ألغاز بالتروس والمية والضوء والكهرباء."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://saqia-five.vercel.app/",
+    "imageSrc": "/projects/saqia/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/saqia",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Saqia\n\nBuild machines to solve puzzles with gears, water, light and electricity.",
+      "ar": "# ساقية\n\nركّب آلات عشان تحل ألغاز بالتروس والمية والضوء والكهرباء."
+    }
+  },
+  {
+    "id": "apexyard-itfaqna-tashteeba",
+    "slug": "itfaqna-tashteeba",
+    "title": {
+      "en": "Itfaqna Tashteeba",
+      "ar": "اتفقنا تشطيبة"
+    },
+    "description": {
+      "en": "Track contractor quotes, agreed work and changes during a renovation.",
+      "ar": "سجّل عروض المقاولين وبنود الاتفاق والتغييرات وقت التشطيب."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://itfaqna-tashteeba.vercel.app/",
+    "imageSrc": "/projects/itfaqna-tashteeba/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/itfaqna-tashteeba",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Itfaqna Tashteeba\n\nTrack contractor quotes, agreed work and changes during a renovation.",
+      "ar": "# اتفقنا تشطيبة\n\nسجّل عروض المقاولين وبنود الاتفاق والتغييرات وقت التشطيب."
+    }
+  },
+  {
+    "id": "apexyard-raseed",
+    "slug": "raseed",
+    "title": {
+      "en": "Raseed",
+      "ar": "رصيد"
+    },
+    "description": {
+      "en": "Track work evidence, credentials and mentoring for career reviews.",
+      "ar": "سجّل شواهد الشغل والشهادات والإرشاد عشان تجهّز مراجعتك المهنية."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://raseed-rho.vercel.app/",
+    "imageSrc": "/projects/raseed/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/raseed",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Raseed\n\nTrack work evidence, credentials and mentoring for career reviews.",
+      "ar": "# رصيد\n\nسجّل شواهد الشغل والشهادات والإرشاد عشان تجهّز مراجعتك المهنية."
+    }
+  },
+  {
+    "id": "apexyard-khayt",
+    "slug": "khayt",
+    "title": {
+      "en": "Khayt",
+      "ar": "خيط"
+    },
+    "description": {
+      "en": "A bilingual writing studio with a story bible and continuity checks.",
+      "ar": "مساحة كتابة بلغتين فيها مرجع للقصة وفحص لاتساق أحداثها."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://khayt-xi.vercel.app/",
+    "imageSrc": "/projects/khayt/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/khayt",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Khayt\n\nA bilingual writing studio with a story bible and continuity checks.",
+      "ar": "# خيط\n\nمساحة كتابة بلغتين فيها مرجع للقصة وفحص لاتساق أحداثها."
+    }
+  },
+  {
+    "id": "apexyard-rafiq-bahr",
+    "slug": "rafiq-bahr",
+    "title": {
+      "en": "Rafiq Bahr",
+      "ar": "رفيق بحر"
+    },
+    "description": {
+      "en": "Explore diving and fishing spots in Egypt and log trips and gear.",
+      "ar": "استكشف أماكن الغوص والصيد في مصر وسجّل رحلاتك وعدّتك."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://rafiq-bahr.vercel.app/",
+    "imageSrc": "/projects/rafiq-bahr/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/rafiq-bahr",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Rafiq Bahr\n\nExplore diving and fishing spots in Egypt and log trips and gear.",
+      "ar": "# رفيق بحر\n\nاستكشف أماكن الغوص والصيد في مصر وسجّل رحلاتك وعدّتك."
+    }
+  },
+  {
+    "id": "apexyard-ui-contract",
+    "slug": "ui-contract",
+    "title": {
+      "en": "Contract Studio",
+      "ar": "عقد الواجهة"
+    },
+    "description": {
+      "en": "Compare component APIs and design tokens to catch breaking library changes.",
+      "ar": "قارن واجهات المكونات وقيم التصميم عشان تكتشف تغييرات المكتبات اللي ممكن تكسّر التوافق."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://ui-contracts.vercel.app/",
+    "imageSrc": "/projects/ui-contract/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/ui-contract",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Contract Studio\n\nCompare component APIs and design tokens to catch breaking library changes.",
+      "ar": "# عقد الواجهة\n\nقارن واجهات المكونات وقيم التصميم عشان تكتشف تغييرات المكتبات اللي ممكن تكسّر التوافق."
+    }
+  },
+  {
+    "id": "apexyard-al-sira-atlas",
+    "slug": "al-sira-atlas",
+    "title": {
+      "en": "Al-Sira Atlas",
+      "ar": "أطلس السيرة"
+    },
+    "description": {
+      "en": "Explore Egyptian folk epics through recorded performances and their sources.",
+      "ar": "استكشف السير الشعبية المصرية من خلال تسجيلات الأداء ومصادرها."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://al-sira-atlas.vercel.app/",
+    "imageSrc": "/projects/al-sira-atlas/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/al-sira-atlas",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Al-Sira Atlas\n\nExplore Egyptian folk epics through recorded performances and their sources.",
+      "ar": "# أطلس السيرة\n\nاستكشف السير الشعبية المصرية من خلال تسجيلات الأداء ومصادرها."
+    }
+  },
+  {
+    "id": "apexyard-hissa",
+    "slug": "hissa",
+    "title": {
+      "en": "Hissa",
+      "ar": "حصة"
+    },
+    "description": {
+      "en": "A neighborhood buying-club ledger for group orders and settlement reviews.",
+      "ar": "دفتر لنادي شراء في الحي ينظّم الطلبات الجماعية ومراجعة التسويات."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://hissa-food.vercel.app/",
+    "imageSrc": "/projects/hissa/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/hissa",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Hissa\n\nA neighborhood buying-club ledger for group orders and settlement reviews.",
+      "ar": "# حصة\n\nدفتر لنادي شراء في الحي ينظّم الطلبات الجماعية ومراجعة التسويات."
+    }
+  },
+  {
+    "id": "apexyard-wodoh",
+    "slug": "wodoh",
+    "title": {
+      "en": "Wodoh",
+      "ar": "وضوح"
+    },
+    "description": {
+      "en": "Check video captions and fit audio descriptions in the browser.",
+      "ar": "راجع الترجمة النصية واضبط الوصف الصوتي للفيديو من المتصفح."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://wodoh-drab.vercel.app/",
+    "imageSrc": "/projects/wodoh/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/wodoh",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Wodoh\n\nCheck video captions and fit audio descriptions in the browser.",
+      "ar": "# وضوح\n\nراجع الترجمة النصية واضبط الوصف الصوتي للفيديو من المتصفح."
+    }
+  },
+  {
+    "id": "apexyard-waha-fern-rescue-garden",
+    "slug": "waha-fern-rescue-garden",
+    "title": {
+      "en": "Waha Fern Rescue Garden",
+      "ar": "واحة إنقاذ السرخس"
+    },
+    "description": {
+      "en": "A bilingual game about caring for a small ecosystem in a jar.",
+      "ar": "لعبة بلغتين عن رعاية نظام بيئي صغير جوه برطمان."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://waha-fern-rescue-garden.vercel.app/",
+    "imageSrc": "/projects/waha-fern-rescue-garden/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/waha-fern-rescue-garden",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Waha Fern Rescue Garden\n\nA bilingual game about caring for a small ecosystem in a jar.",
+      "ar": "# واحة إنقاذ السرخس\n\nلعبة بلغتين عن رعاية نظام بيئي صغير جوه برطمان."
+    }
+  },
+  {
+    "id": "apexyard-day-pilot",
+    "slug": "day-pilot",
+    "title": {
+      "en": "Day Pilot",
+      "ar": "داي بايلوت"
+    },
+    "description": {
+      "en": "Review a morning brief and fit tasks into the gaps in your schedule.",
+      "ar": "راجع ملخص الصبح ووزّع مهامك على الوقت الفاضي في جدولك."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://day2pilot.vercel.app/",
+    "imageSrc": "/projects/day-pilot/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/day-pilot",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Day Pilot\n\nReview a morning brief and fit tasks into the gaps in your schedule.",
+      "ar": "# داي بايلوت\n\nراجع ملخص الصبح ووزّع مهامك على الوقت الفاضي في جدولك."
+    }
+  },
+  {
+    "id": "apexyard-dof3a",
+    "slug": "dof3a",
+    "title": {
+      "en": "Dof3a",
+      "ar": "دفعة"
+    },
+    "description": {
+      "en": "Track production batches, labels and recalls for small makers.",
+      "ar": "سجّل دفعات الإنتاج والملصقات والاسترجاع للمصنّعين الصغار."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://dof3a-snowy.vercel.app/",
+    "imageSrc": "/projects/dof3a/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/dof3a",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Dof3a\n\nTrack production batches, labels and recalls for small makers.",
+      "ar": "# دفعة\n\nسجّل دفعات الإنتاج والملصقات والاسترجاع للمصنّعين الصغار."
+    }
+  },
+  {
+    "id": "apexyard-nesma",
+    "slug": "nesma",
+    "title": {
+      "en": "Nesma",
+      "ar": "نسمة"
+    },
+    "description": {
+      "en": "Plan around hourly heat risk for households, neighbors and crews.",
+      "ar": "خطّط حسب خطر الحر ساعة بساعة للأسرة والجيران وفرق العمل."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://nesma-pi.vercel.app/",
+    "imageSrc": "/projects/nesma/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/nesma",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Nesma\n\nPlan around hourly heat risk for households, neighbors and crews.",
+      "ar": "# نسمة\n\nخطّط حسب خطر الحر ساعة بساعة للأسرة والجيران وفرق العمل."
+    }
+  },
+  {
+    "id": "apexyard-rasad",
+    "slug": "rasad",
+    "title": {
+      "en": "Rasad",
+      "ar": "رصد"
+    },
+    "description": {
+      "en": "A private field journal for trees, nature and nights under the sky.",
+      "ar": "دفتر ميداني خاص لملاحظات الأشجار والطبيعة والسماء بالليل."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://rasad-omega.vercel.app/",
+    "imageSrc": "/projects/rasad/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/rasad",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Rasad\n\nA private field journal for trees, nature and nights under the sky.",
+      "ar": "# رصد\n\nدفتر ميداني خاص لملاحظات الأشجار والطبيعة والسماء بالليل."
+    }
+  },
+  {
+    "id": "apexyard-sakanmove",
+    "slug": "sakanmove",
+    "title": {
+      "en": "SakanMove",
+      "ar": "سكن موف"
+    },
+    "description": {
+      "en": "Plan a move with a checklist, a spending ledger and utility tasks.",
+      "ar": "رتّب نقلة البيت بقائمة مهام ودفتر مصاريف ومتابعة للمرافق."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://sakanmove.vercel.app/",
+    "imageSrc": "/projects/sakanmove/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/sakanmove",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# SakanMove\n\nPlan a move with a checklist, a spending ledger and utility tasks.",
+      "ar": "# سكن موف\n\nرتّب نقلة البيت بقائمة مهام ودفتر مصاريف ومتابعة للمرافق."
+    }
+  },
+  {
+    "id": "apexyard-tayseer",
+    "slug": "tayseer",
+    "title": {
+      "en": "Tayseer",
+      "ar": "تيسير"
+    },
+    "description": {
+      "en": "Organize travel documents and preparation in one place.",
+      "ar": "رتّب مستندات السفر وتجهيزاته في مكان واحد."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://tayseer-hazel.vercel.app/",
+    "imageSrc": "/projects/tayseer/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/tayseer",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Tayseer\n\nOrganize travel documents and preparation in one place.",
+      "ar": "# تيسير\n\nرتّب مستندات السفر وتجهيزاته في مكان واحد."
+    }
+  },
+  {
+    "id": "apexyard-mutah",
+    "slug": "mutah",
+    "title": {
+      "en": "Mutah",
+      "ar": "متاح"
+    },
+    "description": {
+      "en": "Review accessibility and localization issues before a product release.",
+      "ar": "راجع مشاكل سهولة الوصول والتعريب قبل إطلاق المنتج."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://mutah-xi.vercel.app/",
+    "imageSrc": "/projects/mutah/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/mutah",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Mutah\n\nReview accessibility and localization issues before a product release.",
+      "ar": "# متاح\n\nراجع مشاكل سهولة الوصول والتعريب قبل إطلاق المنتج."
+    }
+  },
+  {
+    "id": "apexyard-release-room",
+    "slug": "release-room",
+    "title": {
+      "en": "Release Room",
+      "ar": "غرفة الإصدار"
+    },
+    "description": {
+      "en": "Run a release checklist, record launch decisions and keep a rollback ledger.",
+      "ar": "تابع قائمة الإصدار وسجّل قرارات الإطلاق وخطوات الرجوع."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://releaseroom.vercel.app/",
+    "imageSrc": "/projects/release-room/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/release-room",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Release Room\n\nRun a release checklist, record launch decisions and keep a rollback ledger.",
+      "ar": "# غرفة الإصدار\n\nتابع قائمة الإصدار وسجّل قرارات الإطلاق وخطوات الرجوع."
+    }
+  },
+  {
+    "id": "apexyard-hibr",
+    "slug": "hibr",
+    "title": {
+      "en": "Hibr",
+      "ar": "حبر"
+    },
+    "description": {
+      "en": "An Arabic-first Markdown scratchpad for taking and organizing notes.",
+      "ar": "مفكرة بالعربي لكتابة الملاحظات وتنظيمها بتنسيق ماركداون."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://hibr-seven.vercel.app/",
+    "imageSrc": "/projects/hibr/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/hibr",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Hibr\n\nAn Arabic-first Markdown scratchpad for taking and organizing notes.",
+      "ar": "# حبر\n\nمفكرة بالعربي لكتابة الملاحظات وتنظيمها بتنسيق ماركداون."
+    }
+  },
+  {
+    "id": "apexyard-madrasa-link",
+    "slug": "madrasa-link",
+    "title": {
+      "en": "Madrasa Link",
+      "ar": "مدرسة لينك"
+    },
+    "description": {
+      "en": "A bilingual school–family demo for notices, permissions, attendance and appointments.",
+      "ar": "عرض تجريبي بلغتين يربط المدرسة بالأسرة للإشعارات والموافقات والحضور والمواعيد."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://madrasa-link.vercel.app/",
+    "imageSrc": "/projects/madrasa-link/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/madrasa-link",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Madrasa Link\n\nA bilingual school–family demo for notices, permissions, attendance and appointments.",
+      "ar": "# مدرسة لينك\n\nعرض تجريبي بلغتين يربط المدرسة بالأسرة للإشعارات والموافقات والحضور والمواعيد."
+    }
+  },
+  {
+    "id": "apexyard-shuhra",
+    "slug": "shuhra",
+    "title": {
+      "en": "Shuhra",
+      "ar": "شهرة"
+    },
+    "description": {
+      "en": "Turn selected projects into a shareable client pitch in Arabic or English.",
+      "ar": "حوّل مشاريع مختارة لعرض عميل قابل للمشاركة بالعربي أو بالإنجليزي."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://shuhra-livid.vercel.app/",
+    "imageSrc": "/projects/shuhra/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/shuhra",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Shuhra\n\nTurn selected projects into a shareable client pitch in Arabic or English.",
+      "ar": "# شهرة\n\nحوّل مشاريع مختارة لعرض عميل قابل للمشاركة بالعربي أو بالإنجليزي."
+    }
+  },
+  {
+    "id": "apexyard-el-sherka",
+    "slug": "el-sherka",
+    "title": {
+      "en": "Skills Agency",
+      "ar": "وكالة المهارات"
+    },
+    "description": {
+      "en": "Explore coding-agent skills and see when to use them in a workflow.",
+      "ar": "استكشف مهارات وكلاء البرمجة واعرف إمتى تستخدم كل مهارة في سير الشغل."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://el-sherka.vercel.app/",
+    "imageSrc": "/projects/el-sherka/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/el-sherka",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Skills Agency\n\nExplore coding-agent skills and see when to use them in a workflow.",
+      "ar": "# وكالة المهارات\n\nاستكشف مهارات وكلاء البرمجة واعرف إمتى تستخدم كل مهارة في سير الشغل."
+    }
+  },
+  {
+    "id": "apexyard-type-sync-desk",
+    "slug": "type-sync-desk",
+    "title": {
+      "en": "Type-Sync Desk",
+      "ar": "جسر التايبات"
+    },
+    "description": {
+      "en": "Compare a Postgres schema with TypeScript types and spot drift by table.",
+      "ar": "قارن مخطط قاعدة البيانات بأنواع تايب سكريبت واكتشف الفروق لكل جدول."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://type-sync-desk.vercel.app/",
+    "imageSrc": "/projects/type-sync-desk/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/type-sync-desk",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Type-Sync Desk\n\nCompare a Postgres schema with TypeScript types and spot drift by table.",
+      "ar": "# جسر التايبات\n\nقارن مخطط قاعدة البيانات بأنواع تايب سكريبت واكتشف الفروق لكل جدول."
+    }
+  },
+  {
+    "id": "apexyard-mashaa",
+    "slug": "mashaa",
+    "title": {
+      "en": "Mashaa",
+      "ar": "مشاع"
+    },
+    "description": {
+      "en": "Manage shared items, reservations and loans in a building or co-op.",
+      "ar": "نظّم الأدوات المشتركة والحجوزات والإعارات في العمارة أو التعاونية."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://mashaa-ten.vercel.app/",
+    "imageSrc": "/projects/mashaa/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/mashaa",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Mashaa\n\nManage shared items, reservations and loans in a building or co-op.",
+      "ar": "# مشاع\n\nنظّم الأدوات المشتركة والحجوزات والإعارات في العمارة أو التعاونية."
+    }
+  },
+  {
+    "id": "apexyard-amana",
+    "slug": "amana",
+    "title": {
+      "en": "Amana",
+      "ar": "أمانة"
+    },
+    "description": {
+      "en": "Map digital accounts, backup access and instructions for trusted people.",
+      "ar": "رتّب حساباتك الرقمية والنسخ الاحتياطية وتعليمات الوصول للأشخاص اللي بتثق فيهم."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://amana-eosin.vercel.app/",
+    "imageSrc": "/projects/amana/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/amana",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Amana\n\nMap digital accounts, backup access and instructions for trusted people.",
+      "ar": "# أمانة\n\nرتّب حساباتك الرقمية والنسخ الاحتياطية وتعليمات الوصول للأشخاص اللي بتثق فيهم."
+    }
+  },
+  {
+    "id": "apexyard-trust-canvas",
+    "slug": "trust-canvas",
+    "title": {
+      "en": "Trust Canvas",
+      "ar": "لوحة الثقة"
+    },
+    "description": {
+      "en": "Map how a feature handles data and document risks, mitigations and owners.",
+      "ar": "ارسم مسار البيانات في الميزة وسجّل المخاطر وطرق تقليلها والمسؤولين عنها."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://trust-canvas.vercel.app/",
+    "imageSrc": "/projects/trust-canvas/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/trust-canvas",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Trust Canvas\n\nMap how a feature handles data and document risks, mitigations and owners.",
+      "ar": "# لوحة الثقة\n\nارسم مسار البيانات في الميزة وسجّل المخاطر وطرق تقليلها والمسؤولين عنها."
+    }
+  },
+  {
+    "id": "apexyard-aleef",
+    "slug": "aleef",
+    "title": {
+      "en": "Aleef",
+      "ar": "أليف"
+    },
+    "description": {
+      "en": "Keep a pet passport and track daily care, vaccines and documents.",
+      "ar": "احفظ ملف حيوانك الأليف وتابع الرعاية اليومية والتطعيمات والمستندات."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://aleef-amber.vercel.app/",
+    "imageSrc": "/projects/aleef/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/aleef",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Aleef\n\nKeep a pet passport and track daily care, vaccines and documents.",
+      "ar": "# أليف\n\nاحفظ ملف حيوانك الأليف وتابع الرعاية اليومية والتطعيمات والمستندات."
+    }
   }
 ]
