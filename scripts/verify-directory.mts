@@ -9,9 +9,12 @@ const all=PORTFOLIO_PROJECTS;
 const dir=getProjectDirectory(all);
 assert.equal(new Set(all.map(p=>p.slug)).size,all.length,'unique generated slugs');
 assert.equal(new Set(all.map(p=>p.id)).size,all.length,'unique generated IDs');
-assert.equal(dir.active.length,157,'active projects after the Qahwa consolidation');
+assert.equal(dir.active.length,155,'active projects after the portfolio removals');
 assert.equal(dir.merged.length,9,'nine listed donors');
-assert.equal(dir.active.length+dir.merged.length,166,'unique public works');
+assert.equal(dir.active.length+dir.merged.length,164,'unique public works');
+for (const slug of ['mahfazti', 'nour-cancer-fellow']) {
+  assert.ok(dir.removed.some(project => project.slug === slug));
+}
 assert.deepEqual(dir.mergedGroups.find(group=>group.destination.slug==='qahwa')?.donors.map(project=>project.slug).sort(), ['ahwagi', 'coffee-scene']);
 assert.equal(dir.merged.find(p=>p.slug==='mi3ad')?.mergedInto?.projectSlug,'monasabati');
 assert.ok(!all.some(p=>p.slug==='screen-shota'),'Screen Shota removed, not archived');

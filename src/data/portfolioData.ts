@@ -6033,7 +6033,8 @@ export const PORTFOLIO_PROJECTS = [
     "status": "in-progress",
     "stage": "published",
     "primaryCategoryId": "finance",
-    "showcasePriority": 0
+    "showcasePriority": 0,
+    "portfolioVisibility": "removed"
   },
   {
     "id": "apexyard-bawaba",
@@ -10454,7 +10455,7 @@ export const PORTFOLIO_PROJECTS = [
       "ar": "# نور\n\nنسخة منشورة من دليل يحيا لمعلومات رحلة السرطان."
     },
     "primaryCategoryId": "health",
-    "portfolioVisibility": "listed"
+    "portfolioVisibility": "removed"
   },
   {
     "id": "apexyard-yalla-nel3ab",

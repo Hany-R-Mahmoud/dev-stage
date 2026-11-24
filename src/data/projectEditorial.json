@@ -385,7 +385,8 @@
   },
   "mahfazti": {
     "primaryCategoryId": "finance",
-    "showcasePriority": 0
+    "showcasePriority": 0,
+    "portfolioVisibility": "removed"
   },
   "mahfazzti": {
     "primaryCategoryId": "finance"
@@ -543,7 +544,7 @@
   },
   "nour-cancer-fellow": {
     "primaryCategoryId": "health",
-    "portfolioVisibility": "listed"
+    "portfolioVisibility": "removed"
   },
   "yalla-nel3ab": {
     "primaryCategoryId": "games",
