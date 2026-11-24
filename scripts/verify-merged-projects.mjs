@@ -47,6 +47,22 @@ for (const projects of [curated, PORTFOLIO_PROJECTS]) {
   assert.equal(shortDonor.liveUrl,'https://daqiqalearn.vercel.app/','Old donor deployment preserved');
   assert.ok(shortDonor.imageSrc,'Donor cover preserved');
   assert.ok(learningBase.repository?.github?.endsWith('/ala-mahli'));
+  const seasonDonor=find(merged,'mawsimha');
+  const mealBase=find(active,'wajba');
+  assert.ok(seasonDonor,'Mawsimha must be in merged archive');
+  assert.equal(seasonDonor.mergedInto?.projectSlug,'wajba');
+  assert.equal(seasonDonor.mergedInto?.mergedAt,'2026-11-24');
+  assert.equal(seasonDonor.mergedInto?.toolUrl,'https://wajjba.vercel.app/seasons');
+  assert.equal(groups.find(g=>g.destination.slug==='wajba')?.donors.length,1);
+  assert.ok(mealBase,'Wajba must remain the active meal-planning project');
+  assert.equal(mealBase.liveUrl,'https://wajjba.vercel.app/');
+  assert.equal(mealBase.primaryCategoryId,'life');
+  assert.ok(!find(active,'mawsimha'),'Donor removed from active showcase');
+  assert.ok(find(routable,'mawsimha'),'Donor historical detail route preserved');
+  assert.ok(seasonDonor.repository?.github?.endsWith('/mawsimha'),'Original donor repository preserved');
+  assert.equal(seasonDonor.liveUrl,'https://mawsimha.vercel.app/','Old donor deployment preserved');
+  assert.ok(seasonDonor.imageSrc,'Donor cover preserved');
+  assert.ok(mealBase.repository?.github?.endsWith('/wajba'));
 
 
   for (const slug of donors) {

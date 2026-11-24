@@ -9,8 +9,8 @@ const all=PORTFOLIO_PROJECTS;
 const dir=getProjectDirectory(all);
 assert.equal(new Set(all.map(p=>p.slug)).size,all.length,'unique generated slugs');
 assert.equal(new Set(all.map(p=>p.id)).size,all.length,'unique generated IDs');
-assert.equal(dir.active.length,155,'active projects after the portfolio removals');
-assert.equal(dir.merged.length,9,'nine listed donors');
+assert.equal(dir.active.length,154,'active projects after Mawsimha merge');
+assert.equal(dir.merged.length,10,'ten listed donors');
 assert.equal(dir.active.length+dir.merged.length,164,'unique public works');
 for (const slug of ['mahfazti', 'nour-cancer-fellow']) {
   assert.ok(dir.removed.some(project => project.slug === slug));
@@ -28,6 +28,14 @@ assert.ok(!dir.categoryGroups.some(g=>g.projects.some(p=>p.slug==='daqiqalearn')
 assert.ok(!dir.representatives.some(r=>r.project.slug==='daqiqalearn'));
 assert.ok(dir.routable.some(p=>p.slug==='daqiqalearn'),'Historical donor route preserved');
 assert.equal(dir.mergedGroups.find(g=>g.destination.slug==='ala-mahli')?.donors.length,1);
+assert.equal(dir.merged.find(p=>p.slug==='mawsimha')?.mergedInto?.projectSlug,'wajba');
+assert.ok(dir.active.some(p=>p.slug==='wajba'),'Wajba stays active');
+assert.ok(dir.categoryGroups.some(g=>g.category.id==='life'&&g.projects.some(p=>p.slug==='wajba')));
+assert.ok(!dir.active.some(p=>p.slug==='mawsimha'),'Mawsimha is not active');
+assert.ok(!dir.categoryGroups.some(g=>g.projects.some(p=>p.slug==='mawsimha')));
+assert.ok(!dir.representatives.some(r=>r.project.slug==='mawsimha'));
+assert.ok(dir.routable.some(p=>p.slug==='mawsimha'),'Historical Mawsimha route preserved');
+assert.equal(dir.mergedGroups.find(g=>g.destination.slug==='wajba')?.donors.length,1);
 
 assert.ok(!dir.categoryGroups.some(g=>g.projects.some(p=>p.slug==='mi3ad')),'Mi3ad excluded from active categories');
 assert.ok(!dir.representatives.some(r=>r.project.slug==='mi3ad'),'Mi3ad excluded from carousel');

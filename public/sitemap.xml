@@ -23,8 +23,6 @@
   <url><loc>https://dev2stage.vercel.app/ar/projects/al-rawi</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/react2native</loc></url>
   <url><loc>https://dev2stage.vercel.app/ar/projects/react2native</loc></url>
-  <url><loc>https://dev2stage.vercel.app/en/projects/wajba</loc></url>
-  <url><loc>https://dev2stage.vercel.app/ar/projects/wajba</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/jadwal</loc></url>
   <url><loc>https://dev2stage.vercel.app/ar/projects/jadwal</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/tabeeb-flow</loc></url>
@@ -101,8 +99,6 @@
   <url><loc>https://dev2stage.vercel.app/ar/projects/tajheez</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/mozakarti</loc></url>
   <url><loc>https://dev2stage.vercel.app/ar/projects/mozakarti</loc></url>
-  <url><loc>https://dev2stage.vercel.app/en/projects/mahfazti</loc></url>
-  <url><loc>https://dev2stage.vercel.app/ar/projects/mahfazti</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/bawaba</loc></url>
   <url><loc>https://dev2stage.vercel.app/ar/projects/bawaba</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/social-party-games</loc></url>
@@ -163,8 +159,6 @@
   <url><loc>https://dev2stage.vercel.app/ar/projects/zakarti</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/daftar-eilti-el-sehhi</loc></url>
   <url><loc>https://dev2stage.vercel.app/ar/projects/daftar-eilti-el-sehhi</loc></url>
-  <url><loc>https://dev2stage.vercel.app/en/projects/ahwagi</loc></url>
-  <url><loc>https://dev2stage.vercel.app/ar/projects/ahwagi</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/fisal</loc></url>
   <url><loc>https://dev2stage.vercel.app/ar/projects/fisal</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/souqna-el-osboui</loc></url>
@@ -173,8 +167,8 @@
   <url><loc>https://dev2stage.vercel.app/ar/projects/masrquiz-league-rebuild</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/mafhoom</loc></url>
   <url><loc>https://dev2stage.vercel.app/ar/projects/mafhoom</loc></url>
-  <url><loc>https://dev2stage.vercel.app/en/projects/mawsimha</loc></url>
-  <url><loc>https://dev2stage.vercel.app/ar/projects/mawsimha</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/wajba</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/wajba</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/ala-mahli</loc></url>
   <url><loc>https://dev2stage.vercel.app/ar/projects/ala-mahli</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/arabity</loc></url>
@@ -203,8 +197,8 @@
   <url><loc>https://dev2stage.vercel.app/ar/projects/tool-gateway</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/waraki</loc></url>
   <url><loc>https://dev2stage.vercel.app/ar/projects/waraki</loc></url>
-  <url><loc>https://dev2stage.vercel.app/en/projects/coffee-scene</loc></url>
-  <url><loc>https://dev2stage.vercel.app/ar/projects/coffee-scene</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/qahwa</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/qahwa</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/dev-tools-toolbox</loc></url>
   <url><loc>https://dev2stage.vercel.app/ar/projects/dev-tools-toolbox</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/brand-studio</loc></url>
@@ -247,8 +241,6 @@
   <url><loc>https://dev2stage.vercel.app/ar/projects/faker-el-efeh</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/wanees</loc></url>
   <url><loc>https://dev2stage.vercel.app/ar/projects/wanees</loc></url>
-  <url><loc>https://dev2stage.vercel.app/en/projects/nour-cancer-fellow</loc></url>
-  <url><loc>https://dev2stage.vercel.app/ar/projects/nour-cancer-fellow</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/yalla-nel3ab</loc></url>
   <url><loc>https://dev2stage.vercel.app/ar/projects/yalla-nel3ab</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/balance-bureau</loc></url>
@@ -333,4 +325,10 @@
   <url><loc>https://dev2stage.vercel.app/ar/projects/build-brief</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/mofakker</loc></url>
   <url><loc>https://dev2stage.vercel.app/ar/projects/mofakker</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/ahwagi</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/ahwagi</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/mawsimha</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/mawsimha</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/coffee-scene</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/coffee-scene</loc></url>
 </urlset>

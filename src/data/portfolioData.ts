@@ -2174,106 +2174,6 @@ export const PORTFOLIO_PROJECTS = [
     "primaryCategoryId": "productivity"
   },
   {
-    "id": "apexyard-wajba",
-    "slug": "wajba",
-    "title": {
-      "en": "wajba",
-      "ar": "wajba"
-    },
-    "description": {
-      "en": "Wajba is a local-first bilingual Arabic/English MENA meal-planning web app. It combines a static recipe catalog with weekly and monthly planning, Ramadan mode, dietary filters, pantry quantity matching, grocery aggregation, cooking timers, browser persistence, family URL sharing,",
-      "ar": "Wajba is a local-first bilingual Arabic/English MENA meal-planning web app. It combines a static recipe catalog with weekly and monthly planning, Ramadan mode, dietary filters, pantry quantity matching, grocery aggregation, cooking timers, browser persistence, family URL sharing,"
-    },
-    "meta": {
-      "en": "Vite • React • TypeScript • Tailwind",
-      "ar": "Vite • React • TypeScript • Tailwind"
-    },
-    "category": "Web",
-    "client": {
-      "en": "Independent",
-      "ar": "مستقل"
-    },
-    "role": {
-      "en": "Founder & Builder",
-      "ar": "المؤسس والمطور"
-    },
-    "year": "2026",
-    "liveUrl": "https://wajjba.vercel.app/",
-    "logoSrc": "https://wajjba.vercel.app/favicon-32x32.png?v=2",
-    "imageSrc": "/projects/wajba/cover.jpg",
-    "galleryImages": [
-      "/projects/wajba/experience.jpg",
-      "/projects/wajba/landing.jpg"
-    ],
-    "contentMDX": {
-      "en": "# wajba\n\nWajba is a local-first bilingual Arabic/English MENA meal-planning web app. It combines a static recipe catalog with weekly and monthly planning, Ramadan mode, dietary filters, pantry quantity matching, grocery aggregation, cooking timers, browser persistence, family URL sharing,\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Vite, React, TypeScript, Tailwind\n\n## Features\n\n- Project Structure\n- Local Development\n- AI Agent Guide\n- Team Decisions\n- Deployment target, CI ownership, and the intended Gemini/Express runtime are `Unknown / verify`.\n- Recipe JSON files are checked-in data artifacts; the running app imports `src/data/recipes.ts` directly.\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- Unknown / verify — no issue inventory was found in the current repository sources.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available.",
-      "ar": "# wajba\n\nWajba is a local-first bilingual Arabic/English MENA meal-planning web app. It combines a static recipe catalog with weekly and monthly planning, Ramadan mode, dietary filters, pantry quantity matching, grocery aggregation, cooking timers, browser persistence, family URL sharing,\n\n## Project snapshot\n\n- Status: showcase\n- Category: Web\n- Tech stack: Vite, React, TypeScript, Tailwind\n\n## Features\n\n- Project Structure\n- Local Development\n- AI Agent Guide\n- Team Decisions\n- Deployment target, CI ownership, and the intended Gemini/Express runtime are `Unknown / verify`.\n- Recipe JSON files are checked-in data artifacts; the running app imports `src/data/recipes.ts` directly.\n\n## Progress\n\nClassified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.\n\n## Issues / troubles\n\n- Unknown / verify — no issue inventory was found in the current repository sources.\n\n## Suggested next steps\n\n- Add reviewed screenshots and a fuller case study when visual evidence is available."
-    },
-    "isPublished": true,
-    "featured": false,
-    "tags": [
-      "Vite",
-      "React",
-      "TypeScript",
-      "Tailwind",
-      "showcase"
-    ],
-    "status": "showcase",
-    "features": [
-      {
-        "en": "Project Structure",
-        "ar": "Project Structure"
-      },
-      {
-        "en": "Local Development",
-        "ar": "Local Development"
-      },
-      {
-        "en": "AI Agent Guide",
-        "ar": "AI Agent Guide"
-      },
-      {
-        "en": "Team Decisions",
-        "ar": "Team Decisions"
-      },
-      {
-        "en": "Deployment target, CI ownership, and the intended Gemini/Express runtime are `Unknown / verify`.",
-        "ar": "Deployment target, CI ownership, and the intended Gemini/Express runtime are `Unknown / verify`."
-      },
-      {
-        "en": "Recipe JSON files are checked-in data artifacts; the running app imports `src/data/recipes.ts` directly.",
-        "ar": "Recipe JSON files are checked-in data artifacts; the running app imports `src/data/recipes.ts` directly."
-      }
-    ],
-    "progress": {
-      "en": "Classified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.",
-      "ar": "Classified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence."
-    },
-    "issues": [
-      {
-        "en": "Unknown / verify — no issue inventory was found in the current repository sources.",
-        "ar": "Unknown / verify — no issue inventory was found in the current repository sources."
-      }
-    ],
-    "suggestions": [
-      {
-        "en": "Add reviewed screenshots and a fuller case study when visual evidence is available.",
-        "ar": "Add reviewed screenshots and a fuller case study when visual evidence is available."
-      }
-    ],
-    "repository": {
-      "branch": "main",
-      "sync": "github",
-      "github": "https://github.com/Hany-R-Mahmoud/wajba"
-    },
-    "source": {
-      "workspace": "workspace/wajba",
-      "last_reviewed": "2026-07-29"
-    },
-    "primaryCategoryId": "life",
-    "showcasePriority": 0
-  },
-  {
     "id": "apexyard-supabase-bootstrap",
     "slug": "supabase-bootstrap",
     "title": {
@@ -6354,12 +6254,12 @@ export const PORTFOLIO_PROJECTS = [
     ],
     "status": "in-progress",
     "stage": "published",
-    "primaryCategoryId": "learning",
     "repository": {
       "github": "https://github.com/Hany-R-Mahmoud/daqiqalearn",
       "branch": "main",
       "sync": "github"
     },
+    "primaryCategoryId": "learning",
     "mergedInto": {
       "projectSlug": "ala-mahli",
       "toolUrl": "https://ala-mahli.vercel.app/app?view=tracks",
@@ -8357,10 +8257,124 @@ export const PORTFOLIO_PROJECTS = [
     "issues": [],
     "suggestions": [],
     "source": {
-      "workspace": "workspace/published/mawsimha",
+      "workspace": "workspace/merged/mawsimha",
       "last_reviewed": "2026-11-07"
     },
-    "primaryCategoryId": "life"
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/mawsimha",
+      "branch": "main",
+      "sync": "github"
+    },
+    "primaryCategoryId": "life",
+    "mergedInto": {
+      "projectSlug": "wajba",
+      "toolUrl": "https://wajjba.vercel.app/seasons",
+      "mergedAt": "2026-11-24"
+    }
+  },
+  {
+    "id": "apexyard-wajba",
+    "slug": "wajba",
+    "title": {
+      "en": "wajba",
+      "ar": "wajba"
+    },
+    "description": {
+      "en": "Bilingual Arabic/English meal planner for Egyptian and MENA kitchens: recipes, weekly and monthly plans, pantry matching, a grocery list, and an in-season guide for Egyptian produce.",
+      "ar": "مخطط وجبات بالعربي والإنجليزي للمطبخ المصري والعربي: وصفات وخطط أسبوعية وشهرية ومطابقة للمخزن وقائمة سوق، ودليل لما هو في موسمه من الخضار والفاكهة في مصر."
+    },
+    "meta": {
+      "en": "Vite • React • TypeScript • Tailwind",
+      "ar": "Vite • React • TypeScript • Tailwind"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "liveUrl": "https://wajjba.vercel.app/",
+    "logoSrc": "https://wajjba.vercel.app/favicon-32x32.png?v=2",
+    "imageSrc": "/projects/wajba/cover.jpg",
+    "galleryImages": [
+      "/projects/wajba/experience.jpg",
+      "/projects/wajba/landing.jpg"
+    ],
+    "contentMDX": {
+      "en": "# wajba\n\nBilingual Arabic/English meal planner for Egyptian and MENA kitchens: recipes, weekly and monthly plans, pantry matching, a grocery list, and an in-season guide for Egyptian produce.\n\n## Mawsimha merge — 24 November 2026\n\nMawsimha, the Egyptian seasonal-produce guide, was merged into Wajba on 24 November 2026. Its 36-item dataset now powers the \"In Season\" view in Wajba, a public guide at https://wajjba.vercel.app/seasons, an in-season hint on grocery rows, and a \"seasonal this month\" recipe filter. Mawsimha's separate checklist and sign-in were not carried over, because Wajba's grocery list covers that need.\n\n- In Season view: https://wajjba.vercel.app/dashboard/seasons\n- Public seasonal guide: https://wajjba.vercel.app/seasons\n",
+      "ar": "# wajba\n\nمخطط وجبات بالعربي والإنجليزي للمطبخ المصري والعربي: وصفات وخطط أسبوعية وشهرية ومطابقة للمخزن وقائمة سوق، ودليل لما هو في موسمه من الخضار والفاكهة في مصر.\n\n## دمج موسمها — ٢٤ نوفمبر ٢٠٢٦\n\nتم دمج موسمها، دليل الخضار والفاكهة في موسمها بمصر، داخل وجبة في ٢٤ نوفمبر ٢٠٢٦. بيانات موسمها (٣٦ صنفًا) أصبحت تشغّل عرض «في موسمه» داخل وجبة، وصفحة دليل عامة على https://wajjba.vercel.app/seasons ، وتنبيهًا بالموسم على صفوف قائمة السوق، ومرشّح «موسمي هذا الشهر» للوصفات. لم تُنقل قائمة موسمها المنفصلة ولا تسجيل الدخول، لأن قائمة السوق في وجبة تغطي هذه الحاجة.\n\n- عرض «في موسمه»: https://wajjba.vercel.app/dashboard/seasons\n- الدليل الموسمي العام: https://wajjba.vercel.app/seasons\n"
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "Vite",
+      "React",
+      "TypeScript",
+      "Tailwind",
+      "showcase"
+    ],
+    "status": "showcase",
+    "features": [
+      {
+        "en": "Project Structure",
+        "ar": "Project Structure"
+      },
+      {
+        "en": "Local Development",
+        "ar": "Local Development"
+      },
+      {
+        "en": "AI Agent Guide",
+        "ar": "AI Agent Guide"
+      },
+      {
+        "en": "Team Decisions",
+        "ar": "Team Decisions"
+      },
+      {
+        "en": "Deployment target, CI ownership, and the intended Gemini/Express runtime are `Unknown / verify`.",
+        "ar": "Deployment target, CI ownership, and the intended Gemini/Express runtime are `Unknown / verify`."
+      },
+      {
+        "en": "Recipe JSON files are checked-in data artifacts; the running app imports `src/data/recipes.ts` directly.",
+        "ar": "Recipe JSON files are checked-in data artifacts; the running app imports `src/data/recipes.ts` directly."
+      },
+      {
+        "en": "In-season guide for Egyptian produce (36 items), merged from Mawsimha",
+        "ar": "دليل لما هو في موسمه من الخضار والفاكهة المصرية (٣٦ صنفًا)، منقول من موسمها"
+      }
+    ],
+    "progress": {
+      "en": "Classified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence.",
+      "ar": "Classified as showcase-ready by Dev Stage; this snapshot reflects the current repository evidence."
+    },
+    "issues": [
+      {
+        "en": "Unknown / verify — no issue inventory was found in the current repository sources.",
+        "ar": "Unknown / verify — no issue inventory was found in the current repository sources."
+      }
+    ],
+    "suggestions": [
+      {
+        "en": "Add reviewed screenshots and a fuller case study when visual evidence is available.",
+        "ar": "Add reviewed screenshots and a fuller case study when visual evidence is available."
+      }
+    ],
+    "repository": {
+      "branch": "main",
+      "sync": "github",
+      "github": "https://github.com/Hany-R-Mahmoud/wajba"
+    },
+    "source": {
+      "workspace": "workspace/wajba",
+      "last_reviewed": "2026-07-29"
+    },
+    "primaryCategoryId": "life",
+    "showcasePriority": 0
   },
   {
     "id": "apexyard-ala-mahli",
@@ -8442,12 +8456,12 @@ export const PORTFOLIO_PROJECTS = [
       "workspace": "workspace/published/ala-mahli",
       "last_reviewed": "2026-11-07"
     },
-    "primaryCategoryId": "learning",
     "repository": {
       "github": "https://github.com/Hany-R-Mahmoud/ala-mahli",
       "branch": "main",
       "sync": "github"
-    }
+    },
+    "primaryCategoryId": "learning"
   },
   {
     "id": "apexyard-arabity",
@@ -9181,26 +9195,47 @@ export const PORTFOLIO_PROJECTS = [
   {
     "id": "apexyard-qahwa",
     "slug": "qahwa",
-    "title": { "en": "Qahwa", "ar": "قهوة" },
+    "title": {
+      "en": "Qahwa",
+      "ar": "قهوة"
+    },
     "description": {
       "en": "A coffee companion for brewing at home, learning about drinks, discovering Cairo cafés, and playing through café shifts.",
       "ar": "رفيق لتحضير القهوة في البيت، والتعرّف على المشروبات، واكتشاف مقاهي القاهرة، ولعب ورديات المقهى."
     },
-    "meta": { "en": "TanStack Start • React • Neon", "ar": "TanStack Start • React • Neon" },
+    "meta": {
+      "en": "TanStack Start • React • Neon",
+      "ar": "TanStack Start • React • Neon"
+    },
     "category": "Web",
-    "client": { "en": "Independent", "ar": "مستقل" },
-    "role": { "en": "Founder & Builder", "ar": "المؤسس والمطور" },
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
     "year": "2026",
     "liveUrl": "https://q-ahwa.vercel.app/",
     "imageSrc": "/projects/qahwa/home.jpg",
-    "galleryImages": ["/projects/qahwa/brew.jpg"],
+    "galleryImages": [
+      "/projects/qahwa/brew.jpg"
+    ],
     "contentMDX": {
       "en": "# Qahwa\n\nA guided brew timer and bean log, a coffee atlas, a Cairo café guide, and a café shift game.",
       "ar": "# قهوة\n\nمؤقت تحضير وسجل للبن، وأطلس لمشروبات القهوة، ودليل لمقاهي القاهرة، ولعبة ورديات المقهى."
     },
     "isPublished": true,
     "featured": false,
-    "tags": ["Coffee", "Brewing", "Cairo", "TanStack Start", "React", "Neon"],
+    "tags": [
+      "Coffee",
+      "Brewing",
+      "Cairo",
+      "TanStack Start",
+      "React",
+      "Neon"
+    ],
     "stage": "published",
     "repository": {
       "github": "https://github.com/Hany-R-Mahmoud/qahwa",
