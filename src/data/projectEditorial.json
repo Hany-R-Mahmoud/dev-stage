@@ -338,7 +338,12 @@
     "primaryCategoryId": "life"
   },
   "mawsimha": {
-    "primaryCategoryId": "life"
+    "primaryCategoryId": "life",
+    "mergedInto": {
+      "projectSlug": "wajba",
+      "toolUrl": "https://wajjba.vercel.app/seasons",
+      "mergedAt": "2026-11-24"
+    }
   },
   "arabity": {
     "primaryCategoryId": "life"
