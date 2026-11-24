@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChevronDown, Filter } from 'lucide-react';
+import { ChevronDown, Filter, Search } from 'lucide-react';
 import type { Language, Project } from '../types';
 import type { CategoryGroup } from '../lib/projectDirectory';
 import type { ProjectCategoryId } from '../data/projectCategories';
@@ -10,6 +10,7 @@ type Persisted = { selected: string; allOpen: string[]; singleOpen: boolean };
 type ExploreRequest = { id: ProjectCategoryId; token: number } | null;
 type Props = {
   groups: CategoryGroup[];
+  mergedProjects: Project[];
   language: Language;
   onOpenDetails: (project: Project) => void;
   exploreRequest: ExploreRequest;
@@ -22,8 +23,17 @@ function readPersisted(): Persisted | null {
   } catch { return null; }
 }
 
-export function ProjectDirectory({groups,language,onOpenDetails,exploreRequest}:Props) {
+const normalizeSearch = (value: string) =>
+  value.normalize('NFD').replace(/\p{M}|ـ/gu, '').toLowerCase().replace(/[-_\s]+/g, '');
+
+export function ProjectDirectory({groups,mergedProjects,language,onOpenDetails,exploreRequest}:Props) {
   const isAr=language==='ar';
+  const [query,setQuery]=React.useState('');
+  const searchTerm = normalizeSearch(query);
+  const matches = searchTerm ? [...groups.flatMap(group=>group.projects), ...mergedProjects].filter(project =>
+    [project.slug, project.title.en, project.title.ar, project.description.en, project.description.ar, ...project.tags]
+      .some(value => normalizeSearch(value).includes(searchTerm))
+  ) : [];
   const groupIds=groups.map(group=>group.category.id);
   const [selected,setSelected]=React.useState<string>(()=>readPersisted()?.selected??'all');
   const [allOpen,setAllOpen]=React.useState<string[]>(()=>{
@@ -53,6 +63,7 @@ export function ProjectDirectory({groups,language,onOpenDetails,exploreRequest}:
   React.useEffect(()=>{
     if(!exploreRequest||!groupIds.includes(exploreRequest.id))return;
     setSelected(exploreRequest.id);
+    setQuery('');
     setSingleOpen(true);
     const raf=window.requestAnimationFrame(()=>{
       const heading=document.getElementById(`category-heading-${exploreRequest.id}`);
@@ -69,22 +80,40 @@ export function ProjectDirectory({groups,language,onOpenDetails,exploreRequest}:
         <div>
           <p className="text-xs font-mono uppercase tracking-[0.16em] text-[#A88620] dark:text-[#D4AF37]">{isAr?'استكشف حسب المجال':'EXPLORE BY PURPOSE'}</p>
           <h2 id="directory-heading" className="mt-2 font-serif-luxury text-3xl font-bold sm:text-4xl">{isAr?'معرض المشاريع':'Project Showroom'}</h2>
-          <p className="mt-2 text-sm text-[#6C6863] dark:text-[#A39E98]">{isAr?`${currentTotal} مشروعًا في العرض الحالي`:`${currentTotal} projects in this view`}</p>
+          <p role="status" className="mt-2 text-sm text-[#6C6863] dark:text-[#A39E98]">{searchTerm
+            ? (isAr ? `${matches.length} نتيجة بحث` : `${matches.length} search results`)
+            : (isAr ? `${currentTotal} مشروعًا في العرض الحالي` : `${currentTotal} projects in this view`)}</p>
         </div>
         {groups.length>0&&<div className="flex w-full flex-wrap items-center gap-3 sm:w-auto">
+          <label className="flex min-h-11 flex-1 items-center gap-2 border border-[#1A1A1A]/20 bg-[#EBE5DE] px-3 focus-within:ring-2 focus-within:ring-[#D4AF37] dark:border-white/20 dark:bg-[#1A1918] sm:flex-none">
+            <Search className="h-4 w-4 shrink-0 text-[#A88620] dark:text-[#D4AF37]" aria-hidden="true"/>
+            <span className="sr-only">{isAr?'ابحث في كل المشاريع':'Search all projects'}</span>
+            <input type="search" value={query} onChange={event=>setQuery(event.target.value)}
+              placeholder={isAr?'ابحث في كل المشاريع':'Search all projects'}
+              className="min-w-0 flex-1 bg-transparent py-2 text-sm outline-none"/>
+          </label>
           <label htmlFor="project-category-filter" className="flex min-h-11 flex-1 items-center gap-2 border border-[#1A1A1A]/20 bg-[#EBE5DE] px-3 dark:border-white/20 dark:bg-[#1A1918] sm:flex-none">
             <Filter className="h-4 w-4 shrink-0 text-[#A88620] dark:text-[#D4AF37]" aria-hidden="true"/>
             <span className="sr-only">{isAr?'تصفية الأقسام':'Filter categories'}</span>
-            <select id="project-category-filter" value={validSelected} onChange={e=>setCategory(e.target.value)}
+            <select id="project-category-filter" value={validSelected} onChange={e=>{ setQuery(''); setCategory(e.target.value); }}
               className="min-w-0 flex-1 bg-transparent py-2 text-sm text-[#1A1A1A] focus-visible:outline-none dark:text-[#F4F2ED] sm:min-w-48">
               <option value="all">{isAr?'كل الأقسام':'All categories'}</option>
               {groups.map(group=><option key={group.category.id} value={group.category.id}>{group.category.title[language]} ({group.projects.length})</option>)}
             </select>
           </label>
-          <button type="button" onClick={expandAll} className="min-h-11 px-2 text-xs font-semibold underline underline-offset-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37]">{isAr?'فتح كل الأقسام':'Expand all'}</button>
-          <button type="button" onClick={collapseAll} className="min-h-11 px-2 text-xs font-semibold underline underline-offset-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37]">{isAr?'إغلاق كل الأقسام':'Collapse all'}</button>
+          {!searchTerm && <>
+            <button type="button" onClick={expandAll} className="min-h-11 px-2 text-xs font-semibold underline underline-offset-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37]">{isAr?'فتح كل الأقسام':'Expand all'}</button>
+            <button type="button" onClick={collapseAll} className="min-h-11 px-2 text-xs font-semibold underline underline-offset-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37]">{isAr?'إغلاق كل الأقسام':'Collapse all'}</button>
+          </>}
         </div>}
       </div>
+      {searchTerm ? (
+        matches.length ? <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {matches.map(project=><div key={project.slug} className="flex min-w-0">
+            <ProjectCard project={project} language={language} onOpenDetails={onOpenDetails}/>
+          </div>)}
+        </div> : <p>{isAr?'مفيش مشاريع مطابقة للبحث.':'No projects match your search.'}</p>
+      ) : <>
       {visibleGroups.length===0&&<div className="space-y-3 border border-[#1A1A1A]/15 p-5 dark:border-white/15">
         <p>{isAr?'لا توجد مشاريع نشطة في هذا القسم.':'No active projects in this category.'}</p>
         <button type="button" onClick={()=>setCategory('all')} className="min-h-11 underline underline-offset-4">{isAr?'عرض كل الأقسام':'Reset category filter'}</button>
@@ -113,6 +142,7 @@ export function ProjectDirectory({groups,language,onOpenDetails,exploreRequest}:
           </section>;
         })}
       </div>
+      </>}
     </section>
   );
 }

@@ -32,7 +32,7 @@ export function ProjectCard({ project, language, onOpenDetails }: Props) {
       <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-1 border-t border-[#1A1A1A]/10 px-5 py-3 text-xs dark:border-white/10">
         {project.liveUrl && <a href={project.liveUrl} target="_blank" rel="noreferrer"
           className="inline-flex min-h-11 items-center gap-1 font-mono text-[10px] font-semibold text-[#6C6863] underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] dark:text-[#A39E98]">
-          {isAr ? 'زيارة الموقع' : 'Visit website'} <ArrowUpRight className="h-3.5 w-3.5 text-[#A88620] dark:text-[#D4AF37]"/>
+          {project.mergedInto ? (isAr ? 'النسخة السابقة' : 'Previous version') : (isAr ? 'زيارة الموقع' : 'Visit website')} <ArrowUpRight className="h-3.5 w-3.5 text-[#A88620] dark:text-[#D4AF37]"/>
         </a>}
         <a href={`/${language}/projects/${project.slug}`} onClick={event=>{event.preventDefault();onOpenDetails(project)}}
           className="inline-flex min-h-11 items-center gap-1 font-semibold text-[#1A1A1A] underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] dark:text-[#F4F2ED]">

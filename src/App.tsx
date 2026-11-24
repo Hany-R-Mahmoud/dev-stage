@@ -201,7 +201,7 @@ export default function App() {
 
   const {
     active: publishedProjects, routable: routableProjects, removed: removedProjects,
-    unlisted: unlistedProjects, categoryGroups, representatives, mergedGroups,
+    unlisted: unlistedProjects, merged: mergedProjects, categoryGroups, representatives, mergedGroups,
   } = getProjectDirectory(projects);
   const projectRouteProject = projectSlug ? routableProjects.find(project => project.slug === projectSlug) : null;
   const removedRouteProject = projectSlug ? removedProjects.find(project => project.slug === projectSlug) : undefined;
@@ -379,6 +379,7 @@ export default function App() {
 
               <ProjectDirectory
                 groups={categoryGroups}
+                mergedProjects={mergedProjects}
                 language={language}
                 onOpenDetails={openProjectDetails}
                 exploreRequest={exploreRequest}

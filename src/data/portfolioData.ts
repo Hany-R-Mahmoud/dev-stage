@@ -8002,10 +8002,14 @@ export const PORTFOLIO_PROJECTS = [
     "issues": [],
     "suggestions": [],
     "source": {
-      "workspace": "workspace/published/ahwagi",
+      "workspace": "workspace/merged/ahwagi",
       "last_reviewed": "2026-11-07"
     },
-    "primaryCategoryId": "games"
+    "primaryCategoryId": "games",
+    "mergedInto": {
+      "projectSlug": "qahwa",
+      "toolUrl": "https://q-ahwa.vercel.app/play"
+    }
   },
   {
     "id": "apexyard-fisal",
@@ -9167,6 +9171,42 @@ export const PORTFOLIO_PROJECTS = [
       "ar": "# مشهد القهوة\n\nمهام لاكتشاف مقاهي القاهرة بسجلات موثقة ودفتر زيارات خاص."
     },
     "primaryCategoryId": "community",
+    "portfolioVisibility": "listed",
+    "mergedInto": {
+      "projectSlug": "qahwa",
+      "toolUrl": "https://q-ahwa.vercel.app/places"
+    }
+  },
+  {
+    "id": "apexyard-qahwa",
+    "slug": "qahwa",
+    "title": { "en": "Qahwa", "ar": "قهوة" },
+    "description": {
+      "en": "A coffee companion for brewing at home, learning about drinks, discovering Cairo cafés, and playing through café shifts.",
+      "ar": "رفيق لتحضير القهوة في البيت، والتعرّف على المشروبات، واكتشاف مقاهي القاهرة، ولعب ورديات المقهى."
+    },
+    "meta": { "en": "TanStack Start • React • Neon", "ar": "TanStack Start • React • Neon" },
+    "category": "Web",
+    "client": { "en": "Independent", "ar": "مستقل" },
+    "role": { "en": "Founder & Builder", "ar": "المؤسس والمطور" },
+    "year": "2026",
+    "liveUrl": "https://q-ahwa.vercel.app/",
+    "imageSrc": "/projects/qahwa/home.jpg",
+    "galleryImages": ["/projects/qahwa/brew.jpg"],
+    "contentMDX": {
+      "en": "# Qahwa\n\nA guided brew timer and bean log, a coffee atlas, a Cairo café guide, and a café shift game.",
+      "ar": "# قهوة\n\nمؤقت تحضير وسجل للبن، وأطلس لمشروبات القهوة، ودليل لمقاهي القاهرة، ولعبة ورديات المقهى."
+    },
+    "isPublished": true,
+    "featured": false,
+    "tags": ["Coffee", "Brewing", "Cairo", "TanStack Start", "React", "Neon"],
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/qahwa",
+      "branch": "main",
+      "sync": "github"
+    },
+    "primaryCategoryId": "life",
     "portfolioVisibility": "listed"
   },
   {
