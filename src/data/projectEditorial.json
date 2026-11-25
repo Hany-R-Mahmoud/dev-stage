@@ -653,7 +653,12 @@
   },
   "release-room": {
     "primaryCategoryId": "developer",
-    "portfolioVisibility": "listed"
+    "portfolioVisibility": "listed",
+    "mergedInto": {
+      "projectSlug": "growth-kit",
+      "toolUrl": "https://etlaqa-kit.vercel.app/#releases",
+      "mergedAt": "2026-11-25"
+    }
   },
   "hibr": {
     "primaryCategoryId": "productivity",

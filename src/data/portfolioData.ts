@@ -6172,12 +6172,12 @@ export const PORTFOLIO_PROJECTS = [
     "id": "apexyard-growth-kit",
     "slug": "growth-kit",
     "title": {
-      "en": "Growth Kit",
-      "ar": "عدة النمو"
+      "en": "Etlaqa Kit",
+      "ar": "إطلاقة"
     },
     "description": {
-      "en": "A project-launch toolkit for brand identity, social copy, image prompts and content planning.",
-      "ar": "عدة لإطلاق المشاريع تشمل الهوية ونصوص السوشيال وبرومبتات الصور وخطة المحتوى."
+      "en": "A local-first Arabic/English workshop for launching a project: prepare the launch kit (brand identity, image prompts, social posts, ad copy, a content plan and a landing one-pager), then run the launch with evidence checklists, a go/no-go board and a rollback ledger.",
+      "ar": "ورشة بالعربي والإنجليزي تعمل محليًا على جهازك لإطلاق مشروعك: جهّز عدة الإطلاق (الهوية وبرومبتات الصور ومنشورات السوشيال ونصوص الإعلانات وخطة المحتوى وصفحة هبوط من صفحة واحدة)، ثم نفّذ الإطلاق بقوائم تحقق بالأدلة ولوحة قرار ودفتر رجوع."
     },
     "meta": {
       "en": "Vite • React • TypeScript",
@@ -6193,12 +6193,12 @@ export const PORTFOLIO_PROJECTS = [
       "ar": "المؤسس والمطور"
     },
     "year": "2026",
-    "liveUrl": "https://pulse2kit.vercel.app/",
+    "liveUrl": "https://etlaqa-kit.vercel.app/",
     "imageSrc": "/projects/growth-kit/cover.webp",
     "galleryImages": [],
     "contentMDX": {
-      "en": "# Growth Kit\n\nA project-launch toolkit for brand identity, social copy, image prompts and content planning.",
-      "ar": "# عدة النمو\n\nعدة لإطلاق المشاريع تشمل الهوية ونصوص السوشيال وبرومبتات الصور وخطة المحتوى."
+      "en": "# Etlaqa Kit\n\nA local-first Arabic/English workshop for launching a project: prepare the launch kit (brand identity, image prompts, social posts, ad copy, a content plan and a landing one-pager), then run the launch with evidence checklists, a go/no-go board and a rollback ledger.\n\n## Release Room merge — 25 November 2026\n\nRelease Room was merged into this project on 25 November 2026 (GitHub PR #2). The project is now called Etlaqa Kit (إطلاقة). It has two parts: \"Prepare the launch kit\" and \"Run the launch\".\n\nThe Releases section brings over Release Room's launch workflow:\n\n- A checklist where each step needs evidence, with templates for web deploy, API deploy, database migration, mobile release and distribution.\n- A go/no-go board with named votes.\n- Ship with a watch window.\n- An append-only rollback ledger.\n- A Markdown report, and JSON export and import.\n\nA kit can start a launch directly, using the Distribution template, whose steps are listing submissions.\n\nThe app does not publish, deploy or roll anything back for real, does not connect ad accounts and does not spend money. Releases are stored on the device only. The optional Google sign-in cloud backup covers kits, not releases.\n\nNot carried over from Release Room: its TanStack/Lovable shell, Lovable error reporting, hero image and charts. Release Room's old browser data is not migrated, because it lived on another origin. The previous version stays live at https://releaseroom.vercel.app/, and the earlier address https://pulse2kit.vercel.app/ still points to the same deployment.\n\n- Releases: https://etlaqa-kit.vercel.app/#releases\n",
+      "ar": "# إطلاقة\n\nورشة بالعربي والإنجليزي تعمل محليًا على جهازك لإطلاق مشروعك: جهّز عدة الإطلاق (الهوية وبرومبتات الصور ومنشورات السوشيال ونصوص الإعلانات وخطة المحتوى وصفحة هبوط من صفحة واحدة)، ثم نفّذ الإطلاق بقوائم تحقق بالأدلة ولوحة قرار ودفتر رجوع.\n\n## دمج غرفة الإصدار — ٢٥ نوفمبر ٢٠٢٦\n\nتم دمج غرفة الإصدار داخل هذا المشروع في ٢٥ نوفمبر ٢٠٢٦ (طلب الدمج رقم ٢ على GitHub). صار اسم المشروع «إطلاقة» (Etlaqa Kit)، وفيه جزءان: «جهّز عدة الإطلاق» و«نفّذ الإطلاق».\n\nقسم الإصدارات ينقل سير الإطلاق من غرفة الإصدار:\n\n- قائمة تحقق تطلب دليلًا لكل خطوة، بقوالب لنشر الويب ونشر الـ API وترحيل قاعدة البيانات وإصدار الموبايل والتوزيع.\n- لوحة «ننطلق / لا ننطلق» بأصوات تحمل أسماء أصحابها.\n- الإطلاق مع نافذة مراقبة.\n- دفتر رجوع يُضاف إليه فقط ولا يُعدَّل.\n- تقرير بصيغة Markdown، وتصدير واستيراد بصيغة JSON.\n\nيمكن أن تبدأ عدة المشروع إطلاقًا مباشرة بقالب «التوزيع»، وخطواته هي تقديم الطلبات على المتاجر والقوائم.\n\nالتطبيق لا ينشر ولا يرفع ولا يرجع شيئًا فعليًا، ولا يربط حسابات إعلانية ولا يصرف أي مبلغ. الإصدارات تُحفظ على جهازك فقط. النسخة الاحتياطية السحابية الاختيارية بتسجيل الدخول عبر Google تشمل العُدد ولا تشمل الإصدارات.\n\nلم يُنقل من غرفة الإصدار: هيكلها المبني على TanStack وLovable، وتتبّع الأخطاء الخاص بـ Lovable، وصورة الواجهة، والرسوم البيانية. بيانات المتصفح القديمة لغرفة الإصدار لم تُرحَّل لأنها كانت على نطاق آخر. النسخة السابقة ما زالت تعمل على https://releaseroom.vercel.app/ ، والعنوان القديم https://pulse2kit.vercel.app/ يشير إلى النشر نفسه.\n\n- الإصدارات: https://etlaqa-kit.vercel.app/#releases\n"
     },
     "isPublished": true,
     "featured": false,
@@ -6210,6 +6210,21 @@ export const PORTFOLIO_PROJECTS = [
     ],
     "status": "in-progress",
     "stage": "published",
+    "features": [
+      {
+        "en": "Prepare the launch kit: brand DNA, image prompts, social posts, ad copy, a two-week content plan and a landing one-pager",
+        "ar": "جهّز عدة الإطلاق: هوية المشروع وبرومبتات الصور ومنشورات السوشيال ونصوص الإعلانات وخطة محتوى لأسبوعين وصفحة هبوط"
+      },
+      {
+        "en": "Run the launch: evidence checklists, go/no-go board, watch window and rollback ledger, merged from Release Room",
+        "ar": "نفّذ الإطلاق: قوائم تحقق بالأدلة ولوحة قرار ونافذة مراقبة ودفتر رجوع، منقولة من غرفة الإصدار"
+      }
+    ],
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/growth-kit",
+      "branch": "main",
+      "sync": "github"
+    },
     "primaryCategoryId": "creative"
   },
   {
@@ -11790,7 +11805,12 @@ export const PORTFOLIO_PROJECTS = [
       "ar": "# غرفة الإصدار\n\nتابع قائمة الإصدار وسجّل قرارات الإطلاق وخطوات الرجوع."
     },
     "primaryCategoryId": "developer",
-    "portfolioVisibility": "listed"
+    "portfolioVisibility": "listed",
+    "mergedInto": {
+      "projectSlug": "growth-kit",
+      "toolUrl": "https://etlaqa-kit.vercel.app/#releases",
+      "mergedAt": "2026-11-25"
+    }
   },
   {
     "id": "apexyard-hibr",

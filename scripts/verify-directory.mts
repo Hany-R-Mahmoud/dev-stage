@@ -9,8 +9,8 @@ const all=PORTFOLIO_PROJECTS;
 const dir=getProjectDirectory(all);
 assert.equal(new Set(all.map(p=>p.slug)).size,all.length,'unique generated slugs');
 assert.equal(new Set(all.map(p=>p.id)).size,all.length,'unique generated IDs');
-assert.equal(dir.active.length,154,'active projects after Mawsimha merge');
-assert.equal(dir.merged.length,10,'ten listed donors');
+assert.equal(dir.active.length,153,'active projects after Release Room merge');
+assert.equal(dir.merged.length,11,'eleven listed donors');
 assert.equal(dir.active.length+dir.merged.length,164,'unique public works');
 for (const slug of ['mahfazti', 'nour-cancer-fellow']) {
   assert.ok(dir.removed.some(project => project.slug === slug));
