@@ -63,6 +63,24 @@ for (const projects of [curated, PORTFOLIO_PROJECTS]) {
   assert.equal(seasonDonor.liveUrl,'https://mawsimha.vercel.app/','Old donor deployment preserved');
   assert.ok(seasonDonor.imageSrc,'Donor cover preserved');
   assert.ok(mealBase.repository?.github?.endsWith('/wajba'));
+  const releaseDonor=find(merged,'release-room');
+  const launchBase=find(active,'growth-kit');
+  assert.ok(releaseDonor,'Release Room must be in merged archive');
+  assert.equal(releaseDonor.mergedInto?.projectSlug,'growth-kit');
+  assert.equal(releaseDonor.mergedInto?.mergedAt,'2026-11-25');
+  assert.equal(releaseDonor.mergedInto?.toolUrl,'https://etlaqa-kit.vercel.app/#releases');
+  assert.equal(groups.find(g=>g.destination.slug==='growth-kit')?.donors.length,1);
+  assert.ok(launchBase,'Etlaqa Kit must remain active under the growth-kit slug');
+  assert.equal(launchBase.title.en,'Etlaqa Kit');
+  assert.equal(launchBase.title.ar,'إطلاقة');
+  assert.equal(launchBase.liveUrl,'https://etlaqa-kit.vercel.app/');
+  assert.equal(launchBase.primaryCategoryId,'creative');
+  assert.ok(!find(active,'release-room'),'Donor removed from active showcase');
+  assert.ok(find(routable,'release-room'),'Donor historical detail route preserved');
+  assert.ok(releaseDonor.repository?.github?.endsWith('/release-room'),'Original donor repository preserved');
+  assert.equal(releaseDonor.liveUrl,'https://releaseroom.vercel.app/','Old donor deployment preserved');
+  assert.ok(releaseDonor.imageSrc,'Donor cover preserved');
+  assert.ok(launchBase.repository?.github?.endsWith('/growth-kit'));
 
 
   for (const slug of donors) {

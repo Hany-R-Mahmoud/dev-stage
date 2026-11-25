@@ -291,8 +291,6 @@
   <url><loc>https://dev2stage.vercel.app/ar/projects/tayseer</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/mutah</loc></url>
   <url><loc>https://dev2stage.vercel.app/ar/projects/mutah</loc></url>
-  <url><loc>https://dev2stage.vercel.app/en/projects/release-room</loc></url>
-  <url><loc>https://dev2stage.vercel.app/ar/projects/release-room</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/hibr</loc></url>
   <url><loc>https://dev2stage.vercel.app/ar/projects/hibr</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/madrasa-link</loc></url>
@@ -331,4 +329,6 @@
   <url><loc>https://dev2stage.vercel.app/ar/projects/mawsimha</loc></url>
   <url><loc>https://dev2stage.vercel.app/en/projects/coffee-scene</loc></url>
   <url><loc>https://dev2stage.vercel.app/ar/projects/coffee-scene</loc></url>
+  <url><loc>https://dev2stage.vercel.app/en/projects/release-room</loc></url>
+  <url><loc>https://dev2stage.vercel.app/ar/projects/release-room</loc></url>
 </urlset>
