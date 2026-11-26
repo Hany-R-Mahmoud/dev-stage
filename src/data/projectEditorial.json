@@ -695,5 +695,37 @@
   "aleef": {
     "primaryCategoryId": "life",
     "portfolioVisibility": "listed"
+  },
+  "thabat": {
+    "primaryCategoryId": "health",
+    "portfolioVisibility": "listed"
+  },
+  "re3aya": {
+    "primaryCategoryId": "life",
+    "portfolioVisibility": "listed"
+  },
+  "sodfa": {
+    "primaryCategoryId": "life",
+    "portfolioVisibility": "listed"
+  },
+  "mujam": {
+    "primaryCategoryId": "developer",
+    "portfolioVisibility": "listed"
+  },
+  "mahatat": {
+    "primaryCategoryId": "life",
+    "portfolioVisibility": "listed"
+  },
+  "safeer": {
+    "primaryCategoryId": "life",
+    "portfolioVisibility": "listed"
+  },
+  "el-farq": {
+    "primaryCategoryId": "business",
+    "portfolioVisibility": "listed"
+  },
+  "kashf": {
+    "primaryCategoryId": "business",
+    "portfolioVisibility": "listed"
   }
 }
