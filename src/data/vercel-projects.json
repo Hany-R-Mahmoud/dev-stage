@@ -8104,5 +8104,389 @@
       "en": "# Aleef\n\nKeep a pet passport and track daily care, vaccines and documents.",
       "ar": "# أليف\n\nاحفظ ملف حيوانك الأليف وتابع الرعاية اليومية والتطعيمات والمستندات."
     }
+  },
+  {
+    "id": "apexyard-thabat",
+    "slug": "thabat",
+    "title": {
+      "en": "Thabat",
+      "ar": "ثبات"
+    },
+    "description": {
+      "en": "A calm companion for quitting betting and chasing losses — on your phone, with no account and no server.",
+      "ar": "رفيق هادي للتوقف عن المراهنات وملاحقة الخسارة — على التليفون، من غير حساب ومن غير سيرفر."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://thabat-three.vercel.app/",
+    "imageSrc": "/projects/thabat/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/thabat",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Thabat\n\nA calm companion for quitting betting and chasing losses — on your phone, with no account and no server.",
+      "ar": "# ثبات\n\nرفيق هادي للتوقف عن المراهنات وملاحقة الخسارة — على التليفون، من غير حساب ومن غير سيرفر."
+    }
+  },
+  {
+    "id": "apexyard-re3aya",
+    "slug": "re3aya",
+    "title": {
+      "en": "Re3aya",
+      "ar": "رعاية"
+    },
+    "description": {
+      "en": "One circle for siblings sharing care of their parents: visits, tasks, appointments and fair expense splits, with a family WhatsApp summary in one tap.",
+      "ar": "دايرة واحدة للإخوات: الزيارات والمهام والمواعيد والمصاريف بحساب عادل، وملخص لواتساب العيلة بضغطة."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://re3aya.vercel.app/",
+    "imageSrc": "/projects/re3aya/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/re3aya",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Re3aya\n\nOne circle for siblings sharing care of their parents: visits, tasks, appointments and fair expense splits, with a family WhatsApp summary in one tap.",
+      "ar": "# رعاية\n\nدايرة واحدة للإخوات: الزيارات والمهام والمواعيد والمصاريف بحساب عادل، وملخص لواتساب العيلة بضغطة."
+    }
+  },
+  {
+    "id": "apexyard-sodfa",
+    "slug": "sodfa",
+    "title": {
+      "en": "Sodfa",
+      "ar": "صدفة"
+    },
+    "description": {
+      "en": "One card a day — a place, craft, word, dish or person you would not have searched for — cited to its sources, under four minutes, then it stops.",
+      "ar": "كل يوم كارت واحد: مكان، حرفة، كلمة، أكلة أو شخص — موثّق بمصادره، في أقل من ٤ دقايق، وبعدين بيقف."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://sodfa-wheat.vercel.app/",
+    "imageSrc": "/projects/sodfa/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/sodfa",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Sodfa\n\nOne card a day — a place, craft, word, dish or person you would not have searched for — cited to its sources, under four minutes, then it stops.",
+      "ar": "# صدفة\n\nكل يوم كارت واحد: مكان، حرفة، كلمة، أكلة أو شخص — موثّق بمصادره، في أقل من ٤ دقايق، وبعدين بيقف."
+    }
+  },
+  {
+    "id": "apexyard-mujam",
+    "slug": "mujam",
+    "title": {
+      "en": "Mujam",
+      "ar": "معجم"
+    },
+    "description": {
+      "en": "An in-browser Arabic OpenType lab: a feature inventory by shaping role, HarfBuzz proof for each feature, a kashida report and ready-made CSS.",
+      "ar": "مختبر OpenType عربي داخل المتصفح: جرد الميزات بدورها في التشكيل، وإثبات كل ميزة بتشكيل HarfBuzz، وتقرير كشيدة، وكود CSS جاهز."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://mujam-psi.vercel.app/",
+    "imageSrc": "/projects/mujam/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/mujam",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Mujam\n\nAn in-browser Arabic OpenType lab: a feature inventory by shaping role, HarfBuzz proof for each feature, a kashida report and ready-made CSS.",
+      "ar": "# معجم\n\nمختبر OpenType عربي داخل المتصفح: جرد الميزات بدورها في التشكيل، وإثبات كل ميزة بتشكيل HarfBuzz، وتقرير كشيدة، وكود CSS جاهز."
+    }
+  },
+  {
+    "id": "apexyard-mahatat",
+    "slug": "mahatat",
+    "title": {
+      "en": "Mahatat",
+      "ar": "محطات"
+    },
+    "description": {
+      "en": "Plan a trip and price the ticket across Cairo's metro, light rail and monorail — offline and without an account.",
+      "ar": "احسب رحلتك وسعر تذكرتها في المترو والقطار الخفيف والمونوريل — من غير نت ومن غير حساب."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://mahatat.vercel.app/",
+    "imageSrc": "/projects/mahatat/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/mahatat",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Mahatat\n\nPlan a trip and price the ticket across Cairo's metro, light rail and monorail — offline and without an account.",
+      "ar": "# محطات\n\nاحسب رحلتك وسعر تذكرتها في المترو والقطار الخفيف والمونوريل — من غير نت ومن غير حساب."
+    }
+  },
+  {
+    "id": "apexyard-safeer",
+    "slug": "safeer",
+    "title": {
+      "en": "Safeer",
+      "ar": "سفير"
+    },
+    "description": {
+      "en": "A Schengen 90/180 day calculator for Egyptian travellers: count days, plan your next stay and check 91 destinations. Offline and bilingual.",
+      "ar": "حاسبة 90/180 يوم شنغن للمسافرين المصريين: احسب أيامك وخطّط لإقامتك الجاية وراجع ٩١ وجهة. تشتغل بدون نت وبالعربي والإنجليزي."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://safeer-kappa.vercel.app/",
+    "imageSrc": "/projects/safeer/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/safeer",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Safeer\n\nA Schengen 90/180 day calculator for Egyptian travellers: count days, plan your next stay and check 91 destinations. Offline and bilingual.",
+      "ar": "# سفير\n\nحاسبة 90/180 يوم شنغن للمسافرين المصريين: احسب أيامك وخطّط لإقامتك الجاية وراجع ٩١ وجهة. تشتغل بدون نت وبالعربي والإنجليزي."
+    }
+  },
+  {
+    "id": "apexyard-el-farq",
+    "slug": "el-farq",
+    "title": {
+      "en": "Farq",
+      "ar": "فرق"
+    },
+    "description": {
+      "en": "A quote desk for small-business buyers: paste supplier quotes, get one landed price per unit, check specs and split orders by need date.",
+      "ar": "مكتب عروض أسعار للمشتريات الصغيرة: الزق العروض، واحصل على سعر واصل واحد للوحدة، وراجع المواصفات وقسّم الطلب حسب ميعاد الاحتياج."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://el-farq.vercel.app/",
+    "imageSrc": "/projects/el-farq/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/el-farq",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Farq\n\nA quote desk for small-business buyers: paste supplier quotes, get one landed price per unit, check specs and split orders by need date.",
+      "ar": "# فرق\n\nمكتب عروض أسعار للمشتريات الصغيرة: الزق العروض، واحصل على سعر واصل واحد للوحدة، وراجع المواصفات وقسّم الطلب حسب ميعاد الاحتياج."
+    }
+  },
+  {
+    "id": "apexyard-kashf",
+    "slug": "kashf",
+    "title": {
+      "en": "Kashf",
+      "ar": "كشف"
+    },
+    "description": {
+      "en": "A free bilingual inspection kit: Uncertain is a real answer, with offline visits, tracked findings and evidence bundles anyone can verify.",
+      "ar": "عدّة معاينة مجانية بالعربي والإنجليزي: «مش متأكد» إجابة حقيقية، مع زيارات بدون نت وملاحظات متتبّعة وحزم أدلة يقدر أي حد يتحقق منها."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://kashf-silk.vercel.app/",
+    "imageSrc": "/projects/kashf/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/kashf",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Kashf\n\nA free bilingual inspection kit: Uncertain is a real answer, with offline visits, tracked findings and evidence bundles anyone can verify.",
+      "ar": "# كشف\n\nعدّة معاينة مجانية بالعربي والإنجليزي: «مش متأكد» إجابة حقيقية، مع زيارات بدون نت وملاحظات متتبّعة وحزم أدلة يقدر أي حد يتحقق منها."
+    }
   }
 ]
