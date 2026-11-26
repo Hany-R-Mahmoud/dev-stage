@@ -12297,7 +12297,7 @@ export const PORTFOLIO_PROJECTS = [
     "features": [],
     "issues": [],
     "suggestions": [],
-    "liveUrl": "https://thabat-three.vercel.app/",
+    "liveUrl": "https://thabbat.vercel.app/",
     "imageSrc": "/projects/thabat/publication.jpg",
     "stage": "published",
     "repository": {
@@ -12397,7 +12397,7 @@ export const PORTFOLIO_PROJECTS = [
     "features": [],
     "issues": [],
     "suggestions": [],
-    "liveUrl": "https://sodfa-wheat.vercel.app/",
+    "liveUrl": "https://sodffa.vercel.app/",
     "imageSrc": "/projects/sodfa/publication.jpg",
     "stage": "published",
     "repository": {
@@ -12447,7 +12447,7 @@ export const PORTFOLIO_PROJECTS = [
     "features": [],
     "issues": [],
     "suggestions": [],
-    "liveUrl": "https://mujam-psi.vercel.app/",
+    "liveUrl": "https://mujjam.vercel.app/",
     "imageSrc": "/projects/mujam/publication.jpg",
     "stage": "published",
     "repository": {
@@ -12547,7 +12547,7 @@ export const PORTFOLIO_PROJECTS = [
     "features": [],
     "issues": [],
     "suggestions": [],
-    "liveUrl": "https://safeer-kappa.vercel.app/",
+    "liveUrl": "https://saffeer.vercel.app/",
     "imageSrc": "/projects/safeer/publication.jpg",
     "stage": "published",
     "repository": {
@@ -12647,7 +12647,7 @@ export const PORTFOLIO_PROJECTS = [
     "features": [],
     "issues": [],
     "suggestions": [],
-    "liveUrl": "https://kashf-silk.vercel.app/",
+    "liveUrl": "https://kashff.vercel.app/",
     "imageSrc": "/projects/kashf/publication.jpg",
     "stage": "published",
     "repository": {
