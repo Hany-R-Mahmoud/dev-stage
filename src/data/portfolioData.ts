@@ -12661,5 +12661,55 @@ export const PORTFOLIO_PROJECTS = [
     },
     "primaryCategoryId": "business",
     "portfolioVisibility": "listed"
+  },
+  {
+    "id": "apexyard-elly-bena",
+    "slug": "elly-bena",
+    "title": {
+      "en": "Elly Bena",
+      "ar": "اللي بينا"
+    },
+    "description": {
+      "en": "A private 20-minute weekly sit-down for couples: question cards, a calm repair flow, goals and date ideas. Offline, with no account and no server.",
+      "ar": "جلسة أسبوعية خاصة لمدة ٢٠ دقيقة للزوجين: كروت أسئلة ومسار هادي للصلح وأهداف وأفكار خروجات. بدون نت، من غير حساب ومن غير سيرفر."
+    },
+    "meta": {
+      "en": "Web application",
+      "ar": "تطبيق ويب"
+    },
+    "category": "Web",
+    "client": {
+      "en": "Independent",
+      "ar": "مستقل"
+    },
+    "role": {
+      "en": "Founder & Builder",
+      "ar": "المؤسس والمطور"
+    },
+    "year": "2026",
+    "galleryImages": [],
+    "isPublished": true,
+    "featured": false,
+    "tags": [
+      "in-progress"
+    ],
+    "status": "in-progress",
+    "features": [],
+    "issues": [],
+    "suggestions": [],
+    "liveUrl": "https://elly-bena.vercel.app/",
+    "imageSrc": "/projects/elly-bena/publication.jpg",
+    "stage": "published",
+    "repository": {
+      "github": "https://github.com/Hany-R-Mahmoud/elly-bena",
+      "branch": "main",
+      "sync": "github"
+    },
+    "contentMDX": {
+      "en": "# Elly Bena\n\nA private 20-minute weekly sit-down for couples: question cards, a calm repair flow, goals and date ideas. Offline, with no account and no server.",
+      "ar": "# اللي بينا\n\nجلسة أسبوعية خاصة لمدة ٢٠ دقيقة للزوجين: كروت أسئلة ومسار هادي للصلح وأهداف وأفكار خروجات. بدون نت، من غير حساب ومن غير سيرفر."
+    },
+    "primaryCategoryId": "life",
+    "portfolioVisibility": "listed"
   }
 ] satisfies Project[];

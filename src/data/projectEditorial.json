@@ -727,5 +727,9 @@
   "kashf": {
     "primaryCategoryId": "business",
     "portfolioVisibility": "listed"
+  },
+  "elly-bena": {
+    "primaryCategoryId": "life",
+    "portfolioVisibility": "listed"
   }
 }
