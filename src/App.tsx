@@ -4,7 +4,6 @@ import { PORTFOLIO_PROJECTS, PORTFOLIO_PROFILE } from './data/portfolioData';
 import { FocusRail, FocusRailItem } from './components/ui/focus-rail';
 import { Navbar } from './components/Navbar';
 import { ProfileCard } from './components/ProfileCard';
-import { ProjectDetailModal } from './components/ProjectDetailModal';
 import { ProjectDetailPage } from './components/ProjectDetailPage';
 import { ThemeWaveOverlay } from './components/ThemeWaveOverlay';
 import { MobileBottomNav } from './components/MobileBottomNav';
@@ -20,21 +19,6 @@ type RouteState = Readonly<{
   projectSlug: string | null;
   language: Language;
 }>;
-
-function useCompactViewport() {
-  const [isCompactViewport, setIsCompactViewport] = useState(false);
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia('(max-width: 767px)');
-    const updateViewport = () => setIsCompactViewport(mediaQuery.matches);
-
-    updateViewport();
-    mediaQuery.addEventListener('change', updateViewport);
-    return () => mediaQuery.removeEventListener('change', updateViewport);
-  }, []);
-
-  return isCompactViewport;
-}
 
 function readRoute(): RouteState {
   if (typeof window === 'undefined') {
@@ -117,7 +101,8 @@ export default function App() {
   };
 
   const [projectSlug, setProjectSlug] = useState<string | null>(initialRoute.projectSlug);
-  const isCompactViewport = useCompactViewport();
+  const directoryScrollRef = useRef(0);
+  const listSearchRef = useRef('');
 
   const handleLanguageChange = (nextLanguage: Language) => {
     setLanguage(nextLanguage);
@@ -133,6 +118,7 @@ export default function App() {
       const route = readRoute();
       setLanguage(route.language);
       setProjectSlug(route.projectSlug);
+      if (!route.projectSlug) restoreListScroll();
     };
 
     window.addEventListener('popstate', handlePopState);
@@ -151,27 +137,21 @@ export default function App() {
   const projects = PORTFOLIO_PROJECTS;
   const profile = PORTFOLIO_PROFILE;
 
-  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [exploreRequest, setExploreRequest] = useState<{id: ProjectCategoryId; token: number} | null>(null);
   const [savedCarouselCategory, setSavedCarouselCategory] = useState<string>(() => {
     try { return window.sessionStorage.getItem('devstage-carousel-v2') ?? ''; } catch { return ''; }
   });
-  const directoryScrollRef = useRef(0);
   const handleExploreCategory = (id: string) => {
     setExploreRequest(previous => ({id:id as ProjectCategoryId, token:(previous?.token ?? 0)+1}));
   };
 
+  // Every viewport opens the routable detail page so Reload and shared links reopen the project.
   const openProjectDetails = (project: Project) => {
     // The exploration command has already updated the session-backed filter.
     // Clear it before detail navigation so Back does not replay a stale scroll.
     setExploreRequest(null);
-    if (!isCompactViewport) {
-      setSelectedProject(project);
-      return;
-    }
-
-    setSelectedProject(null);
     directoryScrollRef.current = window.scrollY;
+    listSearchRef.current = window.location.search; // keeps ?q= for the way back
     setProjectSlug(project.slug);
 
     const targetPath = localizedPath(language, project.slug);
@@ -181,14 +161,16 @@ export default function App() {
     window.scrollTo({top: 0, behavior: 'instant'});
   };
 
+  const restoreListScroll = () =>
+    window.requestAnimationFrame(() => window.scrollTo({top: directoryScrollRef.current, behavior: 'instant'}));
+
   const handleProjectBack = () => {
-    setSelectedProject(null);
     setProjectSlug(null);
-    const targetPath = localizedPath(language);
-    if (window.location.pathname !== targetPath) {
+    const targetPath = localizedPath(language) + listSearchRef.current;
+    if (window.location.pathname + window.location.search !== targetPath) {
       window.history.pushState({}, '', targetPath);
     }
-    window.requestAnimationFrame(() => window.scrollTo({top: directoryScrollRef.current, behavior: 'instant'}));
+    restoreListScroll();
   };
 
   // Handle document direction and language attributes
@@ -411,12 +393,6 @@ export default function App() {
           />
         </div>
 
-        <ProjectDetailModal
-          project={selectedProject}
-          mergeDestination={selectedProject?.mergedInto ? projects.find(project => project.slug === selectedProject.mergedInto?.projectSlug) : undefined}
-          language={language}
-          onClose={() => setSelectedProject(null)}
-        />
 
     </>
   );

@@ -28,7 +28,15 @@ const normalizeSearch = (value: string) =>
 
 export function ProjectDirectory({groups,mergedProjects,language,onOpenDetails,exploreRequest}:Props) {
   const isAr=language==='ar';
-  const [query,setQuery]=React.useState('');
+  const [query,setQuery]=React.useState(()=>typeof window==='undefined'?'':new URLSearchParams(window.location.search).get('q')??'');
+  // Mirror the search into ?q= (replace, not push) so Reload and Back restore it.
+  React.useEffect(()=>{
+    const params=new URLSearchParams(window.location.search);
+    if(query)params.set('q',query);else params.delete('q');
+    const search=params.toString();
+    const next=window.location.pathname+(search?`?${search}`:'')+window.location.hash;
+    if(next!==window.location.pathname+window.location.search+window.location.hash)window.history.replaceState(window.history.state,'',next);
+  },[query]);
   const searchTerm = normalizeSearch(query);
   const matches = searchTerm ? [...groups.flatMap(group=>group.projects), ...mergedProjects].filter(project =>
     [project.slug, project.title.en, project.title.ar, project.description.en, project.description.ar, ...project.tags]
